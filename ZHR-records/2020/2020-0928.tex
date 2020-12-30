@@ -1,0 +1,104 @@
+\section{2020 年 9 月 28 日答疑记录}
+
+\subsection{高次多项式的因式分解}
+
+因式分解时一般只需要考虑二次多项式的因式分解, 步骤为: 一提二套三十字, 即先提公因式, 接着套公式 (平方差公式, 完全平方公式); 如果无法套公式, 再考虑十字相乘法.
+
+\begin{example}
+  因式分解:
+  \begin{twocolpro}
+  (1) $x^3+x^2-2x$; & (2) $x^3-x^2 y-6xy^2$;\\
+  (3) $2x^2-2xy-24y^2$; & (4) $x^2+(3y^2-1)x- 3y^2$.
+  \end{twocolpro}
+\end{example}
+\begin{solution}
+  (1) $\text{原式}= x(x^2+x-2)= x(x-1)(x+2)$.
+  
+  (2) $\text{原式}= x(x^2-xy-6y^2)= x(x+2y)(x-3y)$.
+  
+  (3) $\text{原式}= 2(x^2-xy-12y^2)= x(x+3y)(x-4y)$.
+  
+  (3) $\text{原式}= (x+3y^2)(x-1)$.
+\end{solution}
+
+复杂一些的高次多项式, 一般也仍用上面的解法, 但有时需要结合整体思想. 注意, 有时可能需要分解多次, 直至不能继续分解.
+
+\begin{example}
+  因式分解:
+  \begin{twocolpro}
+  (1) $x^4+x^2-2$; & (2) $x^4-2x^2 y^2-8y^4$;\\
+  (3) $4x^4-37x^4y^2+9x^2y^4$; & (4) $x^6-2x^3 y^2- 3y^4$.
+  \end{twocolpro}
+\end{example}
+\begin{solution}
+  (1) 把 $x^2$ 看成整体, 则原式为关于 $x^2$ 的二次多项式, 
+  \begin{align*}
+    \text{原式}
+    &= (x^2)^2+x^2-2= (x^2-1)(x^2+2)\\
+    &= (x+1)(x-1)(x^2+2).
+  \end{align*}
+  
+  (2) 把 $x^2$ 和 $y^2$ 看成整体, 则原式为关于 $x^2$ 和 $y^2$ 的二次多项式, 
+    \begin{align*}
+      \text{原式}
+      &= (x^2)^2- 2x^2 y^2-8(y^2)^2= (x^2-4y^2)(x^2+2y^2)\\
+      &= (x+2y)(x-2y)(x^2+2y^2).
+  \end{align*}
+  
+  (3) 仍用整体思想, 
+    \begin{align*}
+      \text{原式}
+      &= x^2[4(x^2)^2- 37x^2 y^2+9(y^2)^2]\\
+      &= x^2(4x^2-y^2)(x^2-9y^2)\\
+      &= x^2(2x+y)(2x-y)(x+3y)(x-3y).
+  \end{align*}
+  
+  (4) 把 $x^3$ 和 $y^2$ 看成整体, 
+  \[\text{原式}= (x^3)^2- 2x^3 y^2- 3(y^2)^2
+      = (x^3+y^2)(x^3-3y^2).\]
+\end{solution}
+
+\subsection{比较两个式子的大小}
+
+比较 $a$ 与 $b$ 的大小一般转化为比较 $a-b$ 与 $0$ 的大小, 即把 ``比较两个变量的大小'' 转化为 ``比较一个变量与定值的大小'', 所以降低了难度. 容易知道,
+\begin{align*}
+  a>b \Leftrightarrow a-b>0,\\
+  a=b \Leftrightarrow a-b=0,\\
+  a<b \Leftrightarrow a-b<0.
+\end{align*}
+在比较 $a-b$ 与 $0$ 的大小时, 一般是判断 $a-b$ 的正负号或计算其值域 (求最大值与最小值), 然后与 $0$ 比较. 偶尔也需要将式子适当的变形, 如例~\ref{exa: 2020-1013-2030} 中的 (4).
+
+\begin{example}\label{exa: 2020-1013-2030}
+  比较下列各组式子的大小:
+  \begin{twocolpro}
+    (1) $x^2+1$, $2x$; & (2) $x^2+5x+6$, $2x^2+3x+9$;\\
+    \multicolumn{2}{l}{(3) $\dfrac{\,b\,}a$, $\dfrac{b+m}{a+m}$, 其中 $a>b>0$, $m>0$;}\\
+    \multicolumn{2}{l}{(4) $x^2+y^2+1$, $2(x+y-1)$.}\\
+  \end{twocolpro}
+\end{example}
+\begin{solution}
+  (1) 因为 $x^2+1-2x=(x-1)^2\geqslant 0$, 所以 $x^2+1\geqslant 2x$.
+  
+  (2) 因为 
+  \begin{align*}
+       &2x^2+3x+9- (x^2+5x+6)\\
+    ={}& x^2-2x+3= (x-1)^2+2>0,
+  \end{align*}
+  所以 $x^2+5x+6< 2x^2+3x+9$.
+  
+  (3) 因为 
+  \[\frac{b+m}{a+m}- \frac{\,b\,}a
+    = \frac{a(b+m)-b(a+m)}{a(a+m)}
+    = \frac{m(a-b)}{a(a+m)},\]
+  由 $a>b>0$, $m>0$ 知 $m(a-b)>0$, $a(a+m)>0$, 所以 
+  \[\frac{b+m}{a+m}- \frac{\,b\,}a>0,\quad \text{即}\quad 
+    \frac{\,b\,}a< \frac{b+m}{a+m}.\]
+  
+  (4) 因为 
+  \begin{align*}
+       &x^2+y^2+1- 2(x+y-1)\\
+    ={}& x^2-2x+y^2-2y+3\\
+    ={}& (x-1)^2+(y-1)^2+1>0,
+  \end{align*}
+  所以 $x^2+y^2+1> 2(x+y-1)$.
+\end{solution}

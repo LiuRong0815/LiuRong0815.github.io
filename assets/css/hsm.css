@@ -1,0 +1,41 @@
+#back-to-top {
+  background:#000;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  border-radius:50%;
+  bottom:20px;
+  -webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,.26);
+  -moz-box-shadow:0 2px 5px 0 rgba(0,0,0,.26);
+  box-shadow:0 2px 5px 0 rgba(0,0,0,.26);
+  color:#fff;
+  cursor:pointer;
+  display:block;
+  height:56px;
+  opacity:1;
+  outline:0;
+  position:fixed;
+  right:20px;
+  -webkit-tap-highlight-color:transparent;
+  -webkit-touch-callout:none;
+  -webkit-transition:bottom .2s,opacity .2s;
+  -o-transition:bottom .2s,opacity .2s;
+  -moz-transition:bottom .2s,opacity .2s;
+  transition:bottom .2s,opacity .2s;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  width:56px;
+  z-index:100
+}
+#back-to-top svg {
+  display:block;
+  fill:currentColor;
+  height:24px;
+  margin:16px auto 0;
+  width:24px
+}
+#back-to-top.hidden {
+  bottom:-56px;
+  opacity:0
+}
