@@ -11,7 +11,13 @@ document.addEventListener("DOMContentLoaded", function() {
        {left: "$", right: "$", display: false},
        {left: "\\(", right: "\\)", display: false},
        {left: "\\[", right: "\\]", display: true}
-    ]
+    ],
+    macros:{
+      "\\realnum": "\\mathbf{R}",
+      "\\integralnum": "\\mathbf{Z}",
+      "\\rationalnum": "\\mathbf{Q}",
+      "\\naturalnum": "\\mathbf{N}",
+      }
     });
     
     createToggler('#navToggler', '#docsNav', 'docsSliderActive');

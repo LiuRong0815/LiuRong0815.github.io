@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-cn">
+<html lang="zh">
 
 <head>
   <meta charset="utf-8">
@@ -9,15 +9,15 @@
   <title>2020 年 9 月 27 日答疑记录</title>  
   
   <!--link rel="stylesheet" href="../../css/docsearch.css"-->
-  <link rel="stylesheet" href=/assets/css/default.css><!--文本高亮-->
-  <link rel="stylesheet" href=/assets/css/main.css><!--主要样式-->
-  <link rel="stylesheet" href=/assets/css/katex.min.css><!--公式样式-->
-  <link rel="stylesheet" href=/assets/css/hsm.css type="text/css" media="all" /><!--返回按钮样式-->
+  <!--link rel="stylesheet" href=/assets/css/default.css--><!--文本高亮-->
+  <link rel="stylesheet" href="/assets/css/main.css"><!--主要样式-->
+  <link rel="stylesheet" href="/assets/css/katex.min.css"><!--公式样式-->
+  <link rel="stylesheet" href="/assets/css/hsm.css" type="text/css" media="all"> <!--返回按钮样式-->
     
-  <script src=/assets/js/buttons.js></script>
-  <script src=/assets/js/vanilla-back-to-top.js></script>
-  <script src=/assets/js/scrollSpy.js></script>
-  <script src=/assets/js/codetabs.js></script>
+  <!--script src=/assets/js/buttons.js></script-->
+  <script src="/assets/js/vanilla-back-to-top.js"></script>
+  <script src="/assets/js/scrollSpy.js"></script>
+  <script src="/assets/js/codetabs.js"></script>
 
   <!-- The loading of KaTeX is deferred to speed up page rendering -->
   <script defer src="/assets/js/katex.min.js"></script>
@@ -150,59 +150,60 @@
     </header>
     
     <article>
-      <p>\section{2020 年 9 月 27 日答疑记录}</p>
+      \section{2020 年 9 月 27 日答疑记录}
 
-<p>\begin{example}\label{exa:2020-1012-1900}
-  解关于 $x$ 的不等式 $x^2-(2+a)x+2a&lt;0$.
+\begin{example}\label{exa:2020-1012-1900}
+  解关于 $x$ 的不等式 $x^2-(2+a)x+2a<0$.
 \end{example}
 \begin{solution}
-  不等式化为 $(x-2)(x-a)&lt;0$, 所以根据二次函数 $y=(x-2)(x-a)$ 的图象知,</p>
+  不等式化为 $(x-2)(x-a)<0$, 所以根据二次函数 $y=(x-2)(x-a)$ 的图象知,
+  
+  若 $a<2$, 则 $x\in (a,2)$; 
+  
+  若 $a=2$, 则 $x\in \varnothing$; 
+  
+  若 $a>2$, 则 $x\in (2,a)$.
+\end{solution}
 
-<p>若 $a&lt;2$, 则 $x\in (a,2)$;</p>
+例~\ref{exa:2020-1012-1900} 中关于 $x$ 的不等式虽然系数中带了参数 $a$, 但是仍然可以用因式分解的方法求得其解集. 由于系数中带了参数, 所以对应的二次函数图象由参数决定, 写解集时需要分类讨论, 讨论的主要依据是图象与 $x$ 轴交点的坐标. 再看一个复杂一点的例子.
 
-<p>若 $a=2$, 则 $x\in \varnothing$;</p>
-
-<p>若 $a&gt;2$, 则 $x\in (2,a)$.
-\end{solution}</p>
-
-<p>例~\ref{exa:2020-1012-1900} 中关于 $x$ 的不等式虽然系数中带了参数 $a$, 但是仍然可以用因式分解的方法求得其解集. 由于系数中带了参数, 所以对应的二次函数图象由参数决定, 写解集时需要分类讨论, 讨论的主要依据是图象与 $x$ 轴交点的坐标. 再看一个复杂一点的例子.</p>
-
-<p>\begin{example}\label{exa:2020-1012-1910} 
+\begin{example}\label{exa:2020-1012-1910} 
   解关于 $x$ 的不等式:
   \begin{twocolpro}
-    (1) $x^2+2x+ax+2a&gt;0$; &amp; (2) $2x^2+(2+a)x+a\geqslant 0$;\ 
-    (3) $x^2+ax-6a^2\leqslant 0$. &amp;
+    (1) $x^2+2x+ax+2a>0$; & (2) $2x^2+(2+a)x+a\geqslant 0$;\\ 
+    (3) $x^2+ax-6a^2\leqslant 0$. &
   \end{twocolpro}
 \end{example}
 \begin{solution}
   (1) 不等式化为 
-  [x^2+(2+a)x+2a&gt;0\quad\text{即}\quad (x+2)(x+a)&gt;0,]
-  所以根据二次函数 $y=(x+2)(x+a)$ 的图象知,</p>
+  \[x^2+(2+a)x+2a>0\quad\text{即}\quad (x+2)(x+a)>0,\]
+  所以根据二次函数 $y=(x+2)(x+a)$ 的图象知, 
+  
+  若 $-a<-2$ 即 $a>2$, 则 $x\in (-\infty,-a)\cup (-2,+\infty)$; 
+  
+  若 $-a=-2$ 即 $a=2$, 则 $x\in \{x\mid x\neq-2\}$; 
+  
+  若 $-a>-2$ 即 $a<2$, 则 $x\in (-\infty,-2)\cup (-a,+\infty)$.
+  
+  (2) 不等式化为 $(2x+a)(x+1)\geqslant 0$, 所以根据二次函数 $y=(2x+a)(x+1)$ 的图象知, 
+  
+  若 $-\dfrac{a}2<-1$ 即 $a>2$, 则 $x\in \biggl(-\infty,-\dfrac{a}2\biggr]\cup [-1,+\infty)$; 
+  
+  若 $-\dfrac{a}2=-1$ 即 $a=2$, 则 $x\in \realnum$; 
+  
+  若 $-\dfrac{a}2>-1$ 即 $a<2$, 则 $x\in (-\infty,-1]\cup \biggl[-\dfrac{a}2,+\infty\biggr)$.
+  
+  (3) 不等式化为 $(x+3a)(x-2a)\leqslant 0$, 所以根据二次函数 $y=(x+3a)(x-2a)$ 的图象知, 
+  
+  若 $-3a<2a$ 即 $a>0$, 则 $x\in [-3a,2a]$; 
+  
+  若 $-3a=2a$ 即 $a=0$, 则 $x\in \{0\}$; 
+  
+  若 $-3a>2a$ 即 $a<0$, 则 $x\in [2a,-3a]$.
+\end{solution}
 
-<p>若 $-a&lt;-2$ 即 $a&gt;2$, 则 $x\in (-\infty,-a)\cup (-2,+\infty)$;</p>
+从例~\ref{exa:2020-1012-1910} 可以看出, 解系数带参数的关于 $x$ 的不等式, 步骤一般为: 把不等式整理为 $Ax^2+Bx+C>0$ 的形式 (建议 $A>0$), 再对二次式因式分解, 接着讨论对应二次方程的根的大小, 最后根据讨论的情况和二次函数图象写出对应的解集. 
 
-<p>若 $-a=-2$ 即 $a=2$, 则 $x\in {x\mid x\neq-2}$;</p>
-
-<p>若 $-a&gt;-2$ 即 $a&lt;2$, 则 $x\in (-\infty,-2)\cup (-a,+\infty)$.</p>
-
-<p>(2) 不等式化为 $(2x+a)(x+1)\geqslant 0$, 所以根据二次函数 $y=(2x+a)(x+1)$ 的图象知,</p>
-
-<p>若 $-\dfrac{a}2&lt;-1$ 即 $a&gt;2$, 则 $x\in \biggl(-\infty,-\dfrac{a}2\biggr]\cup [-1,+\infty)$;</p>
-
-<p>若 $-\dfrac{a}2=-1$ 即 $a=2$, 则 $x\in \realnum$;</p>
-
-<p>若 $-\dfrac{a}2&gt;-1$ 即 $a&lt;2$, 则 $x\in (-\infty,-1]\cup \biggl[-\dfrac{a}2,+\infty\biggr)$.</p>
-
-<p>(3) 不等式化为 $(x+3a)(x-2a)\leqslant 0$, 所以根据二次函数 $y=(x+3a)(x-2a)$ 的图象知,</p>
-
-<p>若 $-3a&lt;2a$ 即 $a&gt;0$, 则 $x\in [-3a,2a]$;</p>
-
-<p>若 $-3a=2a$ 即 $a=0$, 则 $x\in {0}$;</p>
-
-<p>若 $-3a&gt;2a$ 即 $a&lt;0$, 则 $x\in [2a,-3a]$.
-\end{solution}</p>
-
-<p>从例~\ref{exa:2020-1012-1910} 可以看出, 解系数带参数的关于 $x$ 的不等式, 步骤一般为: 把不等式整理为 $Ax^2+Bx+C&gt;0$ 的形式 (建议 $A&gt;0$), 再对二次式因式分解, 接着讨论对应二次方程的根的大小, 最后根据讨论的情况和二次函数图象写出对应的解集.</p>
 
 
     </article>
@@ -255,14 +256,15 @@
     </div>
     
     <div><h5>相关软件</h5>
-      <a href="https://katex.org" target="_blank">KaTeX</a>
-      <a href="https://ctan.org" target="_blank">TeX</a>
-      <a href="https://www.geogebra.org" target="_blank">GeoGebra</a>
+      <a href="https://katex.org" target="_blank"><image src="/assets/images/katex-logo.svg" height= 20px alt="KaTeX"></a>
+      <a href="https://ctan.org" target="_blank"><image src="/assets/images/CTAN.png" height= 20px> TeX </a>
+      <a href="https://www.geogebra.org" target="_blank"><image src="/assets/images/GeoGebra-logo.svg" height= 20px> GeoGebra </a>
     </div>
   </section>
       
   <section class="copyright">素材来源于网络<br>联系作者：<a href=mailto:1293764189@qq.com>1293764189@qq.com</a> </section>
 </footer>
+
         
   </div>
   

@@ -1,41 +1,44 @@
-#back-to-top {
-  background:#000;
-  -webkit-border-radius:50%;
-  -moz-border-radius:50%;
-  border-radius:50%;
-  bottom:20px;
-  -webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,.26);
-  -moz-box-shadow:0 2px 5px 0 rgba(0,0,0,.26);
-  box-shadow:0 2px 5px 0 rgba(0,0,0,.26);
-  color:#fff;
-  cursor:pointer;
-  display:block;
-  height:56px;
-  opacity:1;
-  outline:0;
-  position:fixed;
-  right:20px;
-  -webkit-tap-highlight-color:transparent;
-  -webkit-touch-callout:none;
-  -webkit-transition:bottom .2s,opacity .2s;
-  -o-transition:bottom .2s,opacity .2s;
-  -moz-transition:bottom .2s,opacity .2s;
-  transition:bottom .2s,opacity .2s;
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select:none;
-  user-select:none;
-  width:56px;
-  z-index:100
+article p {text-indent: 2em}
+
+
+.example {
+  counter-increment: exano;
+  border-style: none none none solid;
+  border-width: 5px;
+  border-color: red;
+  background: #ffddff;
 }
-#back-to-top svg {
-  display:block;
-  fill:currentColor;
-  height:24px;
-  margin:16px auto 0;
-  width:24px
+
+.example p:first-child::before {
+  content: "例 "counter(exano)"\2003";
+  font-weight: bold;
+  speak: none;
+  /*color: lightgreen;*/
 }
-#back-to-top.hidden {
-  bottom:-56px;
-  opacity:0
+
+.solution{
+  /*border-style: none none none solid;*/
+  border: 2px solid #ccc;
+  padding: 4px;
+  border-radius: 2px;
+}
+
+.solution p:first-child::before {
+  content: "解\2003";
+  speak: none;
+  font-weight: bold;
+}
+
+.remark{
+  border-style: none none none solid;
+  border-width: 5px;
+  border-color: blue;
+  background: lightblue;
+  padding-left: 8px;
+}
+
+.remark p:first-child::before {
+  content: "注\2003";
+  font-weight: bold;
+  speak: none;
 }
