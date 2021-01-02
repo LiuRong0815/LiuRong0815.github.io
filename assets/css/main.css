@@ -40,8 +40,8 @@ a:not([href]) {
   text-decoration:none
 }
 p {
-  margin-bottom:1em;
-  margin-top:0
+  margin-bottom:0.5em;
+  margin-top:0.5em
 }
 h1,h2,h3,h4,h5,h6 {
   color:inherit;
@@ -1180,7 +1180,7 @@ h2+.gridBlock {
 }
 }@media only screen and (min-width:1024px) {
   .docsNavContainer {
-  flex:0 0 240px;
+  flex:0 0 180px;
   height:calc(100vh - 50px);
   position:-webkit-sticky;
   position:sticky;
@@ -1217,7 +1217,7 @@ h2+.gridBlock {
   padding:0 10px
 }
 .separateOnPageNav .docsNavContainer {
-  flex:0 0 240px
+  flex:0 0 180px
 }
 }.navBreadcrumb a,.navBreadcrumb span {
   border:0;

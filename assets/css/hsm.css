@@ -1,7 +1,19 @@
 article p {text-indent: 2em}
 
+.katex {
+  font-size: 1.05em;
+  overflow-x: auto;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  -ms-overflow-style: none;
+}
 
-.example {
+.katex::-webkit-scrollbar {
+  display:none;
+}
+
+myexample {
+  display: block;
   counter-increment: exano;
   border-style: none none none solid;
   border-width: 5px;
@@ -9,27 +21,30 @@ article p {text-indent: 2em}
   background: #ffddff;
 }
 
-.example p:first-child::before {
+myexample p:first-child::before {
   content: "例 "counter(exano)"\2003";
   font-weight: bold;
   speak: none;
   /*color: lightgreen;*/
 }
 
-.solution{
+
+mysolution{
+  display: block;
   /*border-style: none none none solid;*/
   border: 2px solid #ccc;
   padding: 4px;
   border-radius: 2px;
 }
 
-.solution p:first-child::before {
+mysolution p:first-child::before {
   content: "解\2003";
   speak: none;
   font-weight: bold;
 }
 
-.remark{
+myremark{
+  display: block;
   border-style: none none none solid;
   border-width: 5px;
   border-color: blue;
@@ -37,8 +52,16 @@ article p {text-indent: 2em}
   padding-left: 8px;
 }
 
-.remark p:first-child::before {
+myremark p:first-child::before {
   content: "注\2003";
   font-weight: bold;
   speak: none;
+}
+
+mysubproblem{
+  display: block;
+}
+
+myindex{
+  background: lightgray;
 }
