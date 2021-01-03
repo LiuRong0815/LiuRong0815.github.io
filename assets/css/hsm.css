@@ -19,6 +19,7 @@ myexample {
   border-width: 5px;
   border-color: red;
   background: #ffddff;
+  padding-left: 8px;
 }
 
 myexample p:first-child::before {
