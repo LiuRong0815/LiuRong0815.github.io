@@ -6,7 +6,7 @@
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width">
   
-  <title>2020 年 12 月 18 日答疑记录</title>  
+  <title>2020 年 12 月 26 日答疑记录</title>  
   
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="stylesheet" href="/assets/css/katex.min.css">
@@ -199,110 +199,113 @@
     <div class="post">
     
     <header class="postHeader">
-      <h1 id="__docusaurus" class="postHeaderTitle">2020 年 12 月 18 日答疑记录</h1>
+      <h1 id="__docusaurus" class="postHeaderTitle">2020 年 12 月 26 日答疑记录</h1>
     </header>
     
     <article>
-      < p>诱导公式指的是已知角加上 $90^\circ$ (或 $\dfrac{\pi}2$) 的整数倍后,  所得角与已知角的三角函数值的关系. 最容易理解的是
-  \[\sin(2\pi+\alpha)= \sin\alpha,\quad
-        \cos(2\pi+\alpha)= \cos\alpha.\]
-  常用的还有
-  \[\begin{gathered}
-    \sin(-x)= -\sin x\ (\text{奇函数}),\quad 
-        \cos(-x)= \cos x\ (\text{偶函数}),\\
-    \sin(90^\circ-x)= \cos x,\quad \cos(90^\circ-x)= \sin x,\\
-    \sin(180^\circ-x)= \sin x,\quad \cos(180^\circ-x)= -\cos x.
-  \end{gathered}\]
-  分别对应如下图形 (为观察方便, 正弦线、余弦线的位置与通常的定义略有区别):
+      < p>根据三角函数线可以分别描点画图，从而作出正弦函数 $y=\sin x$ 和余弦函数 $y=\cos x$ 的图形. 具体做法如下:</p>
+
+<p>
+  (1) 由正弦线和余弦线可知, 正、余弦值的最小正周期为 $2\pi$, 且在 $[0,2\pi]$ (一个周期) 内的取值为
+</p>
+
+<p>
+    {\extrarowheight=7pt\small
     <center>
-  <embed src="figs/2020-1225-1900-crop.svg">
-  <embed src="figs/2020-1225-1910-crop.svg">
-  <embed src="figs/2020-1225-1920-crop.svg">
+      \begin{tabular}{c|ccccccccc}
+        $x$ & $0$ & $\dfrac\pi6$ & $\dfrac\pi4$ & $\dfrac\pi3$ 
+            & $\dfrac\pi2$ & $\dfrac{2\pi}3$ & $\dfrac{3\pi}4$ 
+            & $\dfrac{5\pi}6$ & $\pi$ \\
+        $y=\sin x$ & $0$ & $\dfrac12$ & $\dfrac{\sqrt2}2$ 
+        & $\dfrac{\sqrt3}2$ & $1$ & $\dfrac{\sqrt3}2$ 
+        & $\dfrac{\sqrt2}2$  & $\dfrac12$ & $0$\\
+        $x$ & & $\dfrac{7\pi}6$ & $\dfrac{5\pi}4$ & $\dfrac{4\pi}3$ 
+            & $\dfrac{3\pi}2$ & $\dfrac{5\pi}3$ & $\dfrac{7\pi}4$ 
+            & $\dfrac{11\pi}6$ & $2\pi$\\
+        $y=\sin x$ & & $-\dfrac12$ & $-\dfrac{\sqrt2}2$ 
+            & $-\dfrac{\sqrt3}2$ & $-1$ & $-\dfrac{\sqrt3}2$ 
+            & $-\dfrac{\sqrt2}2$  & $-\dfrac12$ & $0$
+      \end{tabular}
     </center>
-</p>
-
-<p>
-  诱导公式的记忆口诀为: 奇变偶不变, 符号看象限, 其中
-</p>
-
-<p>
-  (1) “奇”“偶”指所加 $90^\circ$ (或 $\dfrac{\pi}2$) 倍数的奇偶性; 
-</p>
-
-<p>
-  (2) “变”指函数名中“正”变“余”或“余”变“正”；
-</p>
-
-<p>
-  (3) “象限”指把已知角视为锐角时所得角对应的象限;
-</p>
-
-<p>
-  (4) “符号”是此时原式的符号. \\
-  例如:
-  \[\begin{gathered}
-    \sin(2x-\pi)= -\sin2x,\quad \tan(x+180^\circ)= \tan x, \\
-    \cos(3x-270^\circ)= -\sin 3x,\quad
-    \sin\Big(4x-\frac{\pi}2\Big)= -\cos 4x.
-  \end{gathered}\]
-    可结合如下图形理解诱导公式:
     <center>
-  <embed src="figs/2020-1225-1930-crop.svg">
+      \begin{tabular}{c|ccccccccc}
+        $x$ & $0$ & $\dfrac\pi6$ & $\dfrac\pi4$ & $\dfrac\pi3$ 
+            & $\dfrac\pi2$ & $\dfrac{2\pi}3$ & $\dfrac{3\pi}4$ 
+            & $\dfrac{5\pi}6$ & $\pi$ \\
+        $y=\cos x$ & $1$ & $\dfrac{\sqrt3}2$ 
+            & $\dfrac{\sqrt2}2$  & $\dfrac12$ & $0$ 
+            & $-\dfrac12$ & $-\dfrac{\sqrt2}2$ 
+            & $-\dfrac{\sqrt3}2$ & $-1$\\
+        $x$ & & $\dfrac{7\pi}6$ 
+            & $\dfrac{5\pi}4$ & $\dfrac{4\pi}3$ & $\dfrac{3\pi}2$ 
+            & $\dfrac{5\pi}3$ & $\dfrac{7\pi}4$ & $\dfrac{11\pi}6$ 
+            & $2\pi$\\
+        $y=\cos x$ & & $-\dfrac{\sqrt3}2$ & $-\dfrac{\sqrt2}2$
+            & $-\dfrac12$ & $0$ & $\dfrac12$ & $\dfrac{\sqrt2}2$ 
+            & $\dfrac{\sqrt3}2$ & $1$
+      \end{tabular}
     </center>
+    }
 </p>
 
 <p>
-    由上图可知:
-    \[\begin{gathered}
-        \sin\biggl(\frac\pi2+\alpha\biggr)= \cos\alpha,\quad
-            \cos\biggl(\frac\pi2+\alpha\biggr)= -\sin\alpha,\\
-        \sin(\pi+\alpha)= -\sin\alpha,\quad
-            \cos(\pi+\alpha)= -\cos\alpha,\\
-        \sin\biggl(\frac{3\pi}2+\alpha\biggr)= -\cos\alpha,\quad
-            \cos\biggl(\frac{3\pi}2+\alpha\biggr)= \sin\alpha,
-    \end{gathered}\]
-    恰好验证了诱导公式.
+  (2) 由此可以画出 $y=\sin x$ 和 $y=\cos x$ 的图形, 即
 </p>
 
 <p>
-<a class="anchor" aria-hidden="true" id="exa-2020-1218-1"></a>
-<myexample>
-<p>
-    化简: $\dfrac{\sin\biggl(\alpha-\dfrac{11}2\pi\biggr)
-        \cos\biggl(\dfrac{\pi}2-\alpha\biggr)
-        \tan(2\pi-\alpha)}{\cos\biggl(\dfrac{\pi}2+\alpha\biggr)
-        \cos(\alpha-2\pi)\tan(\alpha-5\pi)}$.
-</p>
-</myexample>
-<mysolution>
-  <p>
-    由诱导公式,
-    \[\begin{gathered}
-        \sin\biggl(\alpha-\dfrac{11}2\pi\biggr)
-        = \sin\biggl(\alpha-\dfrac{3}2\pi\biggr)
-        = \sin\biggl(\alpha+\dfrac{\pi}2\biggr)
-        = \cos\alpha,\\
-        \cos\biggl(\dfrac{\pi}2-\alpha\biggr)= \sin\alpha,\qquad
-        \tan(2\pi-\alpha)= \tan(-\alpha)= -\tan\alpha,\\
-        \cos\biggl(\dfrac{\pi}2+\alpha\biggr)= -\sin\alpha,\qquad
-        \cos(\alpha-2\pi)= \cos\alpha,\\
-        \tan(\alpha-5\pi)= \tan(\alpha+\pi)= \tan\alpha,
-    \end{gathered}\]
-    所以
-    \[\text{原式}= \frac{\cos\alpha\sin\alpha(-\tan\alpha)}{
-        -\sin\alpha\cos\alpha\tan\alpha}= 1.\]
-</p>
-</mysolution>
+  <center>\small
+    \begin{tikzpicture}[scale=0.7]
+      \draw[\myaxisarrow] (-3.5,0) -- (10,0) node[below] {$x$};
+      \draw[\myaxisarrow] (0,-1.5) -- (0,1.5) node[left] {$y$};
+      \draw[line width=0.4pt, smooth, color=red, samples=100, domain=-3.14:9.42] 
+        plot(\x,{sin(\x*180/pi)});
+      \draw[line width=0.6pt, smooth, color=blue, samples=100, domain=-3.14:9.42] 
+        plot(\x,{cos(\x*180/pi)});
 </p>
 
 <p>
-    用诱导公式解题时, 应先利用本节第一个公式, 将式中 $\pi$ 的系数的绝对值尽可能变小, 最好是将含 $\pi$ 的项化为 $[-\pi,\pi]$ 内的数.
+      \draw[densely dashed] (-3.5,1)--(9.7,1) (-3.5,-1)--(9.7,-1);
+      \draw (0,1) node[anchor=45] {$1$} (0,-1) node[anchor=45] {$-1$};
+      \draw (0.4,-0.4) node {$O$};
+      \draw (2*pi,-0.2) node[below] {$2\pi$};
+      \draw (pi,-0.2) node[below] {$\pi$};
+      \draw (3*pi,-0.2) node[below] {$3\pi$};
+      \draw (-pi,-0.2) node[below] {$-\pi$};
+      \draw (pi,1) node[above] {$y=\sin x$};
+      \draw (2.3,-1.2) node[below] {$y=\cos x$};
+    \end{tikzpicture}
+  </center>
 </p>
 
 <p>
+  图中画了两个周期内 (即 $[-\pi,3\pi]$ 上) 的图形, 该图形可根据正、余弦函数的周期性, 通过 $[0,2\pi]$ 上的图形平移得到. 正、余弦函数的图形都是 “波浪线”, 有无穷多个对称轴和对称中心, 且这两者的周期均为 $\pi$ 即原始周期 $2\pi$ 的一半. 还可以由图看出, 对称轴对应的函数值为 $\pm1$, 而对称中心对应的函数值为 $0$.
 </p>
 
 <p>
+  由图形可以列出以下性质表 (结合图形记忆, 表中 $k\in\integralnum$):
+  {\extrarowheight=7pt\small
+  <center>
+    \begin{tabular}{cccccc}
+           & 定义域 & 值域 & 最小正周期 & 对称中心 (点) & 对称轴 \\
+       \hline
+      $y=\sin x$ & $\realnum$ & $[-1,1]$ & $2\pi$ & 
+        $(k\pi,0)$ & $x=\dfrac{\pi}2+k\pi$\\
+      $y=\cos x$ & $\realnum$ & $[-1,1]$ & $2\pi$ & 
+        $\Big(\dfrac{\pi}2+k\pi,0\Big)$ & $x=k\pi$
+    \end{tabular}
+  </center>
+  <center>
+    \begin{tabular}{ccc}
+           & 奇偶性 & 单调性 \\
+       \hline
+      $y=\sin x$ & 奇 &
+        $\Bigl[-\dfrac{\pi}2+2k\pi,\dfrac{\pi}2+2k\pi\Bigr]\nearrow$,
+        $\Bigl[\dfrac{\pi}2+2k\pi,\dfrac{3\pi}2+2k\pi\Bigr]\searrow$   \\
+      $y=\cos x$ & 偶 & 
+        $\Bigl[-\pi+2k\pi,2k\pi\Bigr]\nearrow$, 
+        $\Bigl[2k\pi,\pi+2k\pi\Bigr]\searrow$
+    \end{tabular}
+  </center>}
 
     </article>
     
@@ -311,12 +314,12 @@
     <!--前后页跳转-->
         <div class="docs-prevnext">
     
-      <a class="docs-prev button" href="2020-1216.html">
-        <span class="arrow-prev">← </span><span>2020 年 12 月 16 日</span></a>
+      <a class="docs-prev button" href="2020-1222.html">
+        <span class="arrow-prev">← </span><span>2020 年 12 月 22 日</span></a>
     
     
-      <a class="docs-next button" href="2020-1222.html">
-        <span>2020 年 12 月 22 日</span><span class="arrow-next"> →</span></a>
+      <a class="docs-next button" href="2020-1228.html">
+        <span>2020 年 12 月 28 日</span><span class="arrow-next"> →</span></a>
     
     </div>     
     </div>
@@ -326,8 +329,6 @@
     <!--右侧边栏本页导航-->
     <nav class="onPageNav">
      <ul class="toc-headings">
-       
-       <li><a href="#exa-2020-1218-1">例 1</a></li>
        
      </ul>
 </nav>
