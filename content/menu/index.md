@@ -2,21 +2,12 @@
 headless: true
 ---
 
-- [**Example Site**]({{< relref "/docs/example" >}})
-- [Table of Contents]({{< relref "/docs/example/table-of-contents" >}})
-  - [With ToC]({{< relref "/docs/example/table-of-contents/with-toc" >}})
-  - [Without ToC]({{< relref "/docs/example/table-of-contents/without-toc" >}})
-- [Collapsed]({{< relref "/docs/example/collapsed" >}})
-  - [3rd]({{< relref "/docs/example/collapsed/3rd-level" >}})
-    - [4th]({{< relref "/docs/example/collapsed/3rd-level/4th-level" >}})
+- [预备知识]({{< relref "/docs/00-prerequisite" >}})
+- [集合与简易逻辑]({{< relref "/docs/01-set-logic" >}})
+  - [集合的概念与运算]({{< relref "/docs/01-set-logic/01-set-def" >}})
+  - [充要条件]({{< relref "/docs/01-set-logic/02-proposition-iff" >}})
+- [幂、指、对]({{< relref "/docs/02-pow-exp-log" >}})
+- [函数的导数]({{< relref "/docs/03-derivative" >}})
 <br />
 
-- **Shortcodes**
-- [Buttons]({{< relref "/docs/shortcodes/buttons" >}})
-- [Columns]({{< relref "/docs/shortcodes/columns" >}})
-- [Expand]({{< relref "/docs/shortcodes/expand" >}})
-- [Hints]({{< relref "/docs/shortcodes/hints" >}})
-- [Katex]({{< relref "/docs/shortcodes/katex" >}})
-- [Mermaid]({{< relref "/docs/shortcodes/mermaid" >}})
-- [Tabs]({{< relref "/docs/shortcodes/tabs" >}})
 <br />

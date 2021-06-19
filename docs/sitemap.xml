@@ -2,13 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/docs/01-set-logic/01-set-def/</loc>
+    <loc>/docs/1-prerequisite/</loc>
   </url><url>
-    <loc>/docs/00-prerequisite/</loc>
+    <loc>/docs/1-prerequisite/1-1-algebra/</loc>
   </url><url>
-    <loc>/docs/01-set-logic/02-proposition-iff/</loc>
+    <loc>/docs/2-set-logic/2-1-set-def/</loc>
   </url><url>
-    <loc>/docs/01-set-logic/</loc>
+    <loc>/docs/1-prerequisite/1-1-algebra/1-1-1-factoring/</loc>
+  </url><url>
+    <loc>/docs/2-set-logic/2-2-proposition-iff/</loc>
+  </url><url>
+    <loc>/docs/2-set-logic/</loc>
+  </url><url>
+    <loc>/docs/3-pow-exp-log/</loc>
+  </url><url>
+    <loc>/docs/4-derivative/</loc>
   </url><url>
     <loc>/posts/2021-%E5%B9%B4-6-%E6%9C%88-19-%E6%97%A5/</loc>
   </url><url>
@@ -19,6 +27,8 @@
     <loc>/docs/</loc>
   </url><url>
     <loc>/tags/</loc>
+  </url><url>
+    <loc>/docs/1-prerequisite/1-2-geometry/</loc>
   </url><url>
     <loc>/</loc>
   </url><url>

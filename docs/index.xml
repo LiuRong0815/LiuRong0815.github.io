@@ -6,11 +6,20 @@
     <description>Recent content in 本站介绍 on 高中数学资料</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>充要条件</title>
-      <link>/docs/01-set-logic/02-proposition-iff/</link>
+      <title>1.1.1 因式分解</title>
+      <link>/docs/1-prerequisite/1-1-algebra/1-1-1-factoring/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/01-set-logic/02-proposition-iff/</guid>
+      <guid>/docs/1-prerequisite/1-1-algebra/1-1-1-factoring/</guid>
+      <description>1.1.1 因式分解 #  因式分解是将多项式写成两个或多个次数较低的多项式之积，可视为多项式乘法的逆运算.</description>
+    </item>
+    
+    <item>
+      <title>充要条件</title>
+      <link>/docs/2-set-logic/2-2-proposition-iff/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/2-set-logic/2-2-proposition-iff/</guid>
       <description>集合的定义与运算 #  这里是集合的定义与运算</description>
     </item>
     
