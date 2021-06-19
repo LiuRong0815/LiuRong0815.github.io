@@ -3,7 +3,7 @@
 baseURL = '/'
 title = '高中数学资料'
 defaultContentLanguage = 'zh'
-# publishDir = 'docs'
+publishDir = 'docs'
 # languageCode = 'zh'
 # theme = 'hugo-book'
 
