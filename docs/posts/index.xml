@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>每周一题 on 高中数学资料</title>
+    <link>/posts/</link>
+    <description>Recent content in 每周一题 on 高中数学资料</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>/posts/2021-%E5%B9%B4-6-%E6%9C%88-19-%E6%97%A5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2021-%E5%B9%B4-6-%E6%9C%88-19-%E6%97%A5/</guid>
+      <description>这里是本周的题目</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/posts/2021-%E5%B9%B4-6-%E6%9C%88-26-%E6%97%A5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2021-%E5%B9%B4-6-%E6%9C%88-26-%E6%97%A5/</guid>
+      <description>这里是本周的题目</description>
+    </item>
+    
+  </channel>
+</rss>
