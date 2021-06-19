@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/docs/01-%E9%9B%86%E5%90%88%E4%B8%8E%E7%AE%80%E6%98%93%E9%80%BB%E8%BE%91/01-set-def/</loc>
+    <loc>/docs/01-set-logic/01-set-def/</loc>
   </url><url>
-    <loc>/docs/00-%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/</loc>
+    <loc>/docs/00-prerequisite/</loc>
   </url><url>
-    <loc>/docs/01-%E9%9B%86%E5%90%88%E4%B8%8E%E7%AE%80%E6%98%93%E9%80%BB%E8%BE%91/02-proposition-iff/</loc>
+    <loc>/docs/01-set-logic/02-proposition-iff/</loc>
   </url><url>
-    <loc>/docs/01-%E9%9B%86%E5%90%88%E4%B8%8E%E7%AE%80%E6%98%93%E9%80%BB%E8%BE%91/</loc>
+    <loc>/docs/01-set-logic/</loc>
   </url><url>
     <loc>/posts/2021-%E5%B9%B4-6-%E6%9C%88-19-%E6%97%A5/</loc>
   </url><url>
