@@ -1,3 +1,79 @@
 /* You can add custom styles here. */
 
 // @import "plugins/numbered";
+
+article p {text-indent: 2em}
+
+.katex {
+  font-size: 1.05em;
+  overflow-x: auto;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  -ms-overflow-style: none;
+}
+
+.katex::-webkit-scrollbar {
+  display:none;
+}
+
+myexample {
+  display: block;
+  counter-increment: exano;
+  border-style: none none none solid;
+  border-width: 5px;
+  border-color: #6bf;
+  background-color: rgba(#6bf, 0.1);
+  padding-left: 8px;
+}
+
+myexample p:first-child::before {
+  content: "例 "counter(exano)"\2003";
+  font-weight: bold;
+  speak: none;
+  /*color: lightgreen;*/
+}
+
+mysolution{
+  display: block;
+  /*border-style: none none none solid;*/
+  border-color: #fd6;
+  background-color: rgba(#fd6, 0.1);
+  padding: 4px;
+  border-radius: 2px;
+}
+
+mysolution p:first-child::before {
+  content: "解\2003";
+  speak: none;
+  font-weight: bold;
+}
+
+myproof{
+    display: block;
+    /*border-style: none none none solid;*/
+    border-color: #fd6;
+    background-color: rgba(#fd6, 0.1);
+    padding: 4px;
+    border-radius: 2px;
+  }
+  
+myproof p:first-child::before {
+    content: "证\2003";
+    speak: none;
+    font-weight: bold;
+}
+
+myremark{
+  display: block;
+  border-style: none none none solid;
+  border-width: 5px;
+  border-color: #f66;
+  background-color: rgba(#f66, 0.1);
+  padding-left: 8px;
+}
+
+myremark p:first-child::before {
+  content: "注\2003";
+  font-weight: bold;
+  speak: none;
+}
