@@ -29,7 +29,6 @@ myexample {
 myexample p:first-child::before {
   content: "例 "counter(exano)"\2003";
   font-weight: bold;
-  speak: none;
   /*color: lightgreen;*/
 }
 
@@ -44,7 +43,6 @@ mysolution{
 
 mysolution p:first-child::before {
   content: "解\2003";
-  speak: none;
   font-weight: bold;
 }
 
@@ -59,7 +57,6 @@ myproof{
   
 myproof p:first-child::before {
     content: "证\2003";
-    speak: none;
     font-weight: bold;
 }
 
@@ -75,5 +72,4 @@ myremark{
 myremark p:first-child::before {
   content: "注\2003";
   font-weight: bold;
-  speak: none;
 }
