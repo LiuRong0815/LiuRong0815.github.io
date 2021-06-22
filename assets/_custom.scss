@@ -5,7 +5,7 @@
 article p {text-indent: 2em}
 
 .katex {
-  font-size: 1.05em;
+  font-size: 1em;
   overflow-x: auto;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -71,5 +71,19 @@ myremark{
 
 myremark p:first-child::before {
   content: "注\2003";
+  font-weight: bold;
+}
+
+myexercise{
+  display: block;
+  border-style: none none none solid;
+  border-width: 5px;
+  border-color: #6f6;
+  background-color: rgba(#6f6, 0.1);
+  padding-left: 8px;
+}
+
+myexercise p:first-child::before {
+  content: "练习\2003";
   font-weight: bold;
 }

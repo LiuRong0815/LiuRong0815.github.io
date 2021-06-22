@@ -1,0 +1,17 @@
+<myexample>
+    <p>分解因式:</p>
+</myexample>
+
+<mysolution>
+    <p>(1) 常数</p>
+</mysolution>
+
+<myremark>
+    <p>(1) 常数</p>
+</myremark>
+
+\[\begin{aligned}
+        x
+        &= x\\
+        &= x.
+    \end{aligned}\]

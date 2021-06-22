@@ -3,15 +3,21 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="1.1.1 二次三项式因式分解 #  因式分解是将多项式写成两个或多个次数较低的多项式之积，可视为多项式乘法的逆运算. 对于二次三项式的因式分解, 常用方法是
- 一“提”: 提公因式 二“套”: 套公式 三“十字”: 用十字相乘法  在进行因式分解时, 应先将公因式提出, 并使得系数为整数, 以简化计算. 然后尝试套用如下公式:
- 平方差公式: $a^2-b^2= (a&#43;b)(a-b)$ 完全平方公式: $a^2\pm 2ab&#43;b^2= (a\pm b)^2$  如果无法使用上述公式, 则需考虑十字相乘法, 即利用公式 \[x^2&#43;(a&#43;b)x&#43;ab= (x&#43;a)(x&#43;b).\] 使用该公式时, 一般先将常数项分解, 然后拼凑出一次项系数.
- test 测试时   solution 再测试   remark 心测试  ">
+<meta name="description" content="1.1.1 二次三项式因式分解 #  因式分解是将多项式写成两个或多个次数较低的多项式之积, 可视为多项式乘法的逆运算. 这里简要回顾整系数二次三项式的因式分解方法.
+对于二次三项式的因式分解, 常用方法是
+ 一“提”: 提公因式 二“套”: 套公式 三“十字”: 用十字相乘法  在进行因式分解时, 应先将公因式提出, 并使得系数为整数, 以简化计算. 然后尝试套用 (1) 平方差公式 \[a^2-b^2= (a&#43;b)(a-b);\] (2) 完全平方公式 \[a^2\pm 2ab&#43;b^2= (a\pm b)^2.\]
+如果无法使用上述公式, 则需考虑十字相乘法, 即利用公式 \[x^2&#43;(a&#43;b)x&#43;ab= (x&#43;a)(x&#43;b).\] 使用该公式时, 一般先将常数项分解, 然后拼凑出一次项系数. 下面举一些应用十字相乘法的例子.
+情形一: 二次项系数为 $1$ #   分解因式:
+(1) $x^2&#43;7x&#43;6$;&emsp; (2) $x^2-13x&#43;36$.
+  (1) 常数 $6= 1\times 6= 2\times 3$, 而一次项系数 $7=1&#43;6$, 所以 \[\begin{aligned} x^2&#43;7x&#43;6 &= x^2&#43;(1&#43;6)x&#43;1\times 6\\ &= (x&#43;1)(x&#43;6).">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="1.1.1 二次三项式因式分解" />
-<meta property="og:description" content="1.1.1 二次三项式因式分解 #  因式分解是将多项式写成两个或多个次数较低的多项式之积，可视为多项式乘法的逆运算. 对于二次三项式的因式分解, 常用方法是
- 一“提”: 提公因式 二“套”: 套公式 三“十字”: 用十字相乘法  在进行因式分解时, 应先将公因式提出, 并使得系数为整数, 以简化计算. 然后尝试套用如下公式:
- 平方差公式: $a^2-b^2= (a&#43;b)(a-b)$ 完全平方公式: $a^2\pm 2ab&#43;b^2= (a\pm b)^2$  如果无法使用上述公式, 则需考虑十字相乘法, 即利用公式 \[x^2&#43;(a&#43;b)x&#43;ab= (x&#43;a)(x&#43;b).\] 使用该公式时, 一般先将常数项分解, 然后拼凑出一次项系数.
- test 测试时   solution 再测试   remark 心测试  " />
+<meta property="og:description" content="1.1.1 二次三项式因式分解 #  因式分解是将多项式写成两个或多个次数较低的多项式之积, 可视为多项式乘法的逆运算. 这里简要回顾整系数二次三项式的因式分解方法.
+对于二次三项式的因式分解, 常用方法是
+ 一“提”: 提公因式 二“套”: 套公式 三“十字”: 用十字相乘法  在进行因式分解时, 应先将公因式提出, 并使得系数为整数, 以简化计算. 然后尝试套用 (1) 平方差公式 \[a^2-b^2= (a&#43;b)(a-b);\] (2) 完全平方公式 \[a^2\pm 2ab&#43;b^2= (a\pm b)^2.\]
+如果无法使用上述公式, 则需考虑十字相乘法, 即利用公式 \[x^2&#43;(a&#43;b)x&#43;ab= (x&#43;a)(x&#43;b).\] 使用该公式时, 一般先将常数项分解, 然后拼凑出一次项系数. 下面举一些应用十字相乘法的例子.
+情形一: 二次项系数为 $1$ #   分解因式:
+(1) $x^2&#43;7x&#43;6$;&emsp; (2) $x^2-13x&#43;36$.
+  (1) 常数 $6= 1\times 6= 2\times 3$, 而一次项系数 $7=1&#43;6$, 所以 \[\begin{aligned} x^2&#43;7x&#43;6 &= x^2&#43;(1&#43;6)x&#43;1\times 6\\ &= (x&#43;1)(x&#43;6)." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/1-prerequisite/1-1-algebra/1-1-1-factoring/" /><meta property="article:section" content="docs" />
 
@@ -20,9 +26,9 @@
 <title>1.1.1 二次三项式因式分解 | 高中数学资料</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.179152f53a89951b6a4cb866d5022e4b8feccacfdcf965cf0f57c3121a8bd34b.css" >
+<link rel="stylesheet" href="/book.min.148482ac8d5193bd7b49e00e8d054d074b51eb06c7b874d59592161c94be60be.css" >
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh.search.min.09031d3c42743dc4ea902f6548df96e13461d5ac3c600df0981d21c7371807bb.js" ></script>
+  <script defer src="/zh.search.min.4ec11d3c93dc82c8414c4f5afd13d4a65c3fe0467e57a24b893bd522f406c9ae.js" ></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
 <!--
@@ -287,7 +293,12 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#111-二次三项式因式分解">1.1.1 二次三项式因式分解</a></li>
+    <li><a href="#111-二次三项式因式分解">1.1.1 二次三项式因式分解</a>
+      <ul>
+        <li><a href="#情形一-二次项系数为-1">情形一: 二次项系数为 $1$</a></li>
+        <li><a href="#情形二-二次项系数不为-1">情形二: 二次项系数不为 $1$</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -304,27 +315,72 @@ https://github.com/alex-shpak/hugo-book
   1.1.1 二次三项式因式分解
   <a class="anchor" href="#111-%e4%ba%8c%e6%ac%a1%e4%b8%89%e9%a1%b9%e5%bc%8f%e5%9b%a0%e5%bc%8f%e5%88%86%e8%a7%a3">#</a>
 </h1>
-<p>因式分解是将多项式写成两个或多个次数较低的多项式之积，可视为多项式乘法的逆运算. 对于二次三项式的因式分解, 常用方法是</p>
+<p>因式分解是将多项式写成两个或多个次数较低的多项式之积, 可视为多项式乘法的逆运算. 这里简要回顾整系数二次三项式的因式分解方法.</p>
+<p>对于二次三项式的因式分解, 常用方法是</p>
 <ul>
 <li>一“提”: 提公因式</li>
 <li>二“套”: 套公式</li>
 <li>三“十字”: 用十字相乘法</li>
 </ul>
-<p>在进行因式分解时, 应先将公因式提出, 并使得系数为整数, 以简化计算. 然后尝试套用如下公式:</p>
-<ul>
-<li>平方差公式: $a^2-b^2= (a+b)(a-b)$</li>
-<li>完全平方公式: $a^2\pm 2ab+b^2= (a\pm b)^2$</li>
-</ul>
-<p>如果无法使用上述公式, 则需考虑十字相乘法, 即利用公式 \[x^2+(a+b)x+ab= (x+a)(x+b).\] 使用该公式时, 一般先将常数项分解, 然后拼凑出一次项系数.</p>
+<p>在进行因式分解时, 应先将公因式提出, 并使得系数为<strong>整数</strong>, 以简化计算. 然后尝试套用
+(1) 平方差公式 \[a^2-b^2= (a+b)(a-b);\]
+(2) 完全平方公式 \[a^2\pm 2ab+b^2= (a\pm b)^2.\]</p>
+<p>如果无法使用上述公式, 则需考虑十字相乘法, 即利用公式 \[x^2+(a+b)x+ab= (x+a)(x+b).\] 使用该公式时, 一般先将常数项分解, 然后拼凑出一次项系数. 下面举一些应用十字相乘法的例子.</p>
+<h2 id="情形一-二次项系数为-1">
+  情形一: 二次项系数为 $1$
+  <a class="anchor" href="#%e6%83%85%e5%bd%a2%e4%b8%80-%e4%ba%8c%e6%ac%a1%e9%a1%b9%e7%b3%bb%e6%95%b0%e4%b8%ba-1">#</a>
+</h2>
 <myexample>
-    test 测试时
+    <p>分解因式:</p>
+    <p>(1) $x^2+7x+6$;&emsp;
+    (2) $x^2-13x+36$.</p>
 </myexample>
 <mysolution>
-    solution 再测试
+    <p>(1) 常数 $6= 1\times 6= 2\times 3$, 而一次项系数 $7=1+6$, 所以 \[\begin{aligned}
+        x^2+7x+6
+        &= x^2+(1+6)x+1\times 6\\
+        &= (x+1)(x+6).
+    \end{aligned}\]</p>
+    <p>(2) 常数 $36$ 有多种分解方式, 考虑到一次项系数为 $-13$, 所以选择 $36=(-4)\times(-9)$, 相应地, \[\begin{aligned}
+        x^2-13x+36
+        &= x^2-(4+9)x+(-4)\times (-9)\\
+        &= (x-4)(x-9).
+    \end{aligned}\]</p>
 </mysolution>
-<myremark>
-    remark 心测试
-</myremark>
+<p>由上例可以看出, 当常数项为正数时, 应将其分解为两个同号因数, 它们的符号与一次项系数的正负号相同.</p>
+<myexample>
+    <p>分解因式:</p>
+    <p>(1) $x^2+5x-24$;&emsp;
+    (2) $x^2-2x-15$.</p>
+</myexample>
+<mysolution>
+    <p>(1) 若将 $24$ 分解为 $3\times 8$, 恰有 $8-3=5$, 所以将 $-24$ 分解为 $(-3)\times 8$, 且 \[\begin{aligned}
+        x^2+5x-24
+        &= x^2+(-3+8)x+(-3)\times 8\\
+        &= (x-3)(x+8).
+    \end{aligned}\]</p>
+    <p>(2) 类似地, 将 $-15$ 分解为 $3\times(-5)$, 相应地, \[\begin{aligned}
+        x^2-2x-15
+        &= x^2+(3-5)x+3\times (-5)\\
+        &= (x+3)(x-5).
+    \end{aligned}\]</p>
+</mysolution>
+<p>由上例可以看出, 当常数项为负数时, 应将其分解为两个异号的因数, 其中绝对值较大的因数与一次项系数的正负号相同.</p>
+<myexercise>
+    <p>分解因式:</p>
+    <p>(1) $x^2+6x+5$;&emsp;
+    (2) $x^2-4x-21$;&emsp;
+    (3) $x^2-11x+30$;&emsp;
+    (4) $x^2-x-12$.</p>
+</myexercise>
+<details><summary>参考答案</summary>
+    (1) $(x+2)(x+3)$; (2) $(x+3)(x-7)$;
+    (3) $(x-5)(x-6)$; (4) $(x+3)(x-4)$.
+</details>
+<h2 id="情形二-二次项系数不为-1">
+  情形二: 二次项系数不为 $1$
+  <a class="anchor" href="#%e6%83%85%e5%bd%a2%e4%ba%8c-%e4%ba%8c%e6%ac%a1%e9%a1%b9%e7%b3%bb%e6%95%b0%e4%b8%8d%e4%b8%ba-1">#</a>
+</h2>
 </article>
  
       
@@ -366,7 +422,12 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#111-二次三项式因式分解">1.1.1 二次三项式因式分解</a></li>
+    <li><a href="#111-二次三项式因式分解">1.1.1 二次三项式因式分解</a>
+      <ul>
+        <li><a href="#情形一-二次项系数为-1">情形一: 二次项系数为 $1$</a></li>
+        <li><a href="#情形二-二次项系数不为-1">情形二: 二次项系数不为 $1$</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
