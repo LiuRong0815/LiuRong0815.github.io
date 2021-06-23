@@ -15,3 +15,16 @@
         &= x\\
         &= x.
     \end{aligned}\]
+
+\left\{\!\!\begin{array}{l}
+        0= a+b,\\
+        1= ab,
+    \end{array}\right.
+
+{{% katex "display"%}}
+\begin{array}{ccc}
+    a_1 & & b_1\\
+      & \Huge\times & \\
+    a_2 & & b_2
+    \end{array}
+{{% /katex %}}
