@@ -24,7 +24,7 @@
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.148482ac8d5193bd7b49e00e8d054d074b51eb06c7b874d59592161c94be60be.css" >
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh.search.min.dde41ec2966248be70b0d991bc7fd28d79f47cb5ac0d0a42c7528946e750718f.js" ></script>
+  <script defer src="/zh.search.min.c56f06fd5716ff9a7ce59a0b94b4c3ea0023c546d0eab0eca5a0afd06bf5dc3d.js" ></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
 <!--
@@ -159,7 +159,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/1-prerequisite/1-1-algebra/1-1-3-veita-theorem/" class="">1.1.3 一元二次方程的根与系数的关系</a>
+    <a href="/docs/1-prerequisite/1-1-algebra/1-1-3-veita-theorem/" class="">1.1.3 一元二次方程的韦达定理</a>
   
 
         </li>
@@ -356,6 +356,7 @@ https://github.com/alex-shpak/hugo-book
     <p>(1) 由 $x^2=n$ ($n>0$) 应得 $x=\pm\sqrt{n}$, 即不要遗漏负根;</p>
     <p>(2) 使用配方法解方程时, 变形过程与因式分解时的过程略有区别, 一般将方程改写为 $(x+m)^2=n$ ($n\geqslant0$) 的形式.</p>
 </myremark>
+<p><span id="求根公式"></span></p>
 <h2 id="求根公式法">
   求根公式法
   <a class="anchor" href="#%e6%b1%82%e6%a0%b9%e5%85%ac%e5%bc%8f%e6%b3%95">#</a>
@@ -372,7 +373,8 @@ https://github.com/alex-shpak/hugo-book
 <li>当 $\Delta=0$ 时, 方程有两个相等实根</li>
 <li>当 $\Delta&lt;0$ 时, 方程没有实根</li>
 </ul>
-<p>利用判别式 $\Delta$ 也可以判断关于 $x$ 的二次三项式 $ax^2+bx+c$ 是否可以因式分解. 如果该式可以因式分解, 必可分解为 $(Ax+B)(Cx+D)$ 的形式, 令其等于 $0$, 可解出对应的 $x$ 值. 所以“$ax^2+bx+c$ 可以因式分解”等价于“$ax^2+bx+c=0$ 有实根”, 即</p>
+<p>利用判别式 $\Delta$ 也可以判断关于 $x$ 的二次三项式 $ax^2+bx+c$ 是否可以因式分解. 如果该式可以因式分解, 必可分解为 $(Ax+B)(Cx+D)$ 的形式, 令其等于 $0$, 可解出对应的 $x$ 值. 反之, 若 $ax^2+bx+c=0$ 有实根, 则 $\Delta\geqslant 0$, 
+  <a href="/docs/1-prerequisite/1-1-algebra/1-1-1-factoring/#%e9%85%8d%e6%96%b9%e6%b3%95">配方法</a> 变形的最后一行可改写为 \[a\biggl[\biggl(x+\frac{b}{2a}\biggr)^2- \frac{\Delta}{4a^2}\biggr],\] 继而可以使用平方差公式. 所以“$ax^2+bx+c$ 可以因式分解”等价于“$ax^2+bx+c=0$ 有实根”, 即</p>
 <ul>
 <li>当 $\Delta&gt;0$ 时, $ax^2+bx+c$ 可以因式分解</li>
 <li>当 $\Delta=0$ 时, $ax^2+bx+c$ 可以因式分解且为完全平方式</li>

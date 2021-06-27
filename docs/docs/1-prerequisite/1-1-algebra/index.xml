@@ -32,15 +32,15 @@
     </item>
     
     <item>
-      <title>1.1.3 一元二次方程的根与系数的关系</title>
+      <title>1.1.3 一元二次方程的韦达定理</title>
       <link>/docs/1-prerequisite/1-1-algebra/1-1-3-veita-theorem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/1-prerequisite/1-1-algebra/1-1-3-veita-theorem/</guid>
-      <description>1.1.3 一元二次方程的根与系数的关系#设关于 $x$ 的一元二次方程 \[ax^2+bx+c=0\quad (a\neq0)\]的两根为 $x_1$, $x_2$, 则该方程必可变形为 \[(x-x_1)(x-x_2)=0.\]将后者展开,\[x^2- (x_1+x_2)x+ x_1x_2=0,\]并将前者改写为 \[x^2+ \frac{b}a x+ \frac{c}{a}=0,\]对比可知\[\left\{\!\!\begin{array}{l}- (x_1+x_2)= \dfrac{b}a,\\x_1x_2= \dfrac{c}a,\end{array}\right.\ \text{即}\quad\left\{\!\!\begin{array}{l}x_1+x_2= -\dfrac{b}a,\\x_1x_2= \dfrac{c}a,\end{array}\right.\]上述结论称为韦达 (Veite, 法国数学家) 定理, 有时也称为根与系数的关系定理.
-需要注意的是, 韦达定理中无需假设方程的根为实根, 也就是无论方程是否有实根, 韦达定理都成立. 例如, 二次方程 $x^2+x+1=0$ 的判别式 $\Delta=-3必须额外写出 $\Delta\geqslant 0$. 后续学圆锥曲线时, 基本的解题方法均利用韦达定理结合判别式, 再适当对求解的表达式变形.
-设方程 $x^2-3x-2=0$ 的两个实根为 $x_1$, $x_2$, 求 $x_1x_2$.
-此方程的判别式\[\Delta= (-3)^2-4(-2)= 170,\]所以确实有两个实根.</description>
+      <description>1.1.3 一元二次方程的韦达定理#设关于 $x$ 的一元二次方程 \[ax^2+bx+c=0\quad (a\neq0)\]的两根为 $x_1$, $x_2$, 则该方程必可变形为 \[(x-x_1)(x-x_2)=0.\]将后者展开,\[x^2- (x_1+x_2)x+ x_1x_2=0,\]并将前者改写为 \[x^2+ \frac{b}a x+ \frac{c}{a}=0,\]对比可知\[\left\{\!\!\begin{array}{l}- (x_1+x_2)= \dfrac{b}a,\\x_1x_2= \dfrac{c}a,\end{array}\right.\ \text{即}\quad\left\{\!\!\begin{array}{l}x_1+x_2= -\dfrac{b}a,\\x_1x_2= \dfrac{c}a,\end{array}\right.\]上述结论称为韦达 (Veite, 法国数学家) 定理, 也称为根与系数的关系定理.
+也可以直接用 求根公式 来验证上述结论: 由 \[x_1= \frac{-b+\sqrt{b^2-4ac}}{2a},\quad x_2= \frac{-b-\sqrt{b^2-4ac}}{2a}\] 直接计算可得一元二次方程的韦达定理.
+需要注意的是, 韦达定理中无需假设方程的根为实根, 也就是无论方程是否有实根, 韦达定理都成立. 例如, 二次方程 $x^2+x+1=0$ 的判别式 $\Delta=-3必须额外写出 $\Delta\geqslant 0$. 后续学圆锥曲线时, 基本的解题方法均是利用韦达定理结合判别式, 再适当对求解的表达式变形.
+韦达定理的简单应用#设方程 $x^2-3x-2=0$ 的两个实根为 $x_1$, $x_2$, 求下列各式的值: \[x_1x_2,\quad x_1^2+x_2^2,\quad\dfrac1{x_1}+\dfrac1{x_2}.</description>
     </item>
     
   </channel>
