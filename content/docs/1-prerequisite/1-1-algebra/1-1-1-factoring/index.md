@@ -167,7 +167,7 @@ weight: 1
         ax^2+bx+c
         &= a\biggl(x^2+\frac{b}a x\biggr)+ c\\
         &= a\biggl(x^2+\frac{b}a x+ \frac{b^2}{4a^2}\biggr)+ c-\frac{b^2}{4a}\\
-        &= a\biggl(x+\frac{b}{2a}\biggr)^2+ \frac{4ac-b^2}4.
+        &= a\biggl(x+\frac{b}{2a}\biggr)^2+ \frac{4ac-b^2}{4a}.
     \end{aligned}\] 对二次三项式配方后, 再利用平方差公式, 即可完成因式分解.</p>
 
 <myexample>
