@@ -3,14 +3,21 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="函数的导数#这里是高中数学函数的导数
-$a^2&#43;b^2=c^2$">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="函数的导数" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/docs/4-derivative/" />
+<meta name="description" content="1.2.4 平面图形的面积#平面图形的面积用于描述其边界所围区域的大小. 通常考虑三角形、四边形、圆、扇形的面积. 以下按定义的先后顺序介绍各种图形面积的计算公式.
+四边形的面积#正方形的面积定义为边长的平方. 矩形可以分解为多个正方形之和, 所以其面积为两个邻边的乘积, 一般记为“长乘宽”. 平行四边形可以用割补法拼接为矩形, 故面积为底乘高. 梯形也可以拼接为矩形, 面积为两底和乘高的一半.
+三角形的面积#三角形可以补成矩形, 面积为底乘高的一半. 三角形也可以视为退化的梯形 (上底为 $0$), 从而按梯形的面积公式, 也可得三角形的面积公式.
+圆、扇形的面积#圆可以分割为多个小扇形. 当扇形足够小时, 可将其视为三角形, 底为小弧长, 高为圆的半径. 累加求和知, 圆的面积为圆周长乘半径的一半, 即 [S_{\text{圆}}= \frac12\cdot 2\pi r\cdot r= \pi r^2.] 同样的分析可得, 扇形的面积为弧长乘半径的一半, 即 $S_{\text{扇}}= \frac12 lr$.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="1.2.4 平面图形的面积" />
+<meta property="og:description" content="1.2.4 平面图形的面积#平面图形的面积用于描述其边界所围区域的大小. 通常考虑三角形、四边形、圆、扇形的面积. 以下按定义的先后顺序介绍各种图形面积的计算公式.
+四边形的面积#正方形的面积定义为边长的平方. 矩形可以分解为多个正方形之和, 所以其面积为两个邻边的乘积, 一般记为“长乘宽”. 平行四边形可以用割补法拼接为矩形, 故面积为底乘高. 梯形也可以拼接为矩形, 面积为两底和乘高的一半.
+三角形的面积#三角形可以补成矩形, 面积为底乘高的一半. 三角形也可以视为退化的梯形 (上底为 $0$), 从而按梯形的面积公式, 也可得三角形的面积公式.
+圆、扇形的面积#圆可以分割为多个小扇形. 当扇形足够小时, 可将其视为三角形, 底为小弧长, 高为圆的半径. 累加求和知, 圆的面积为圆周长乘半径的一半, 即 [S_{\text{圆}}= \frac12\cdot 2\pi r\cdot r= \pi r^2.] 同样的分析可得, 扇形的面积为弧长乘半径的一半, 即 $S_{\text{扇}}= \frac12 lr$." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/docs/1-prerequisite/1-2-geometry/1-2-4-area/" /><meta property="article:section" content="docs" />
 
-<title>函数的导数 | 高中数学资料</title>
+
+
+<title>1.2.4 平面图形的面积 | 高中数学资料</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.148482ac8d5193bd7b49e00e8d054d074b51eb06c7b874d59592161c94be60be.css" >
@@ -18,7 +25,6 @@ $a^2&#43;b^2=c^2$">
   <script defer src="/zh.search.min.ce8cf196e65f4d3cc90353566c34c356660040a5c42b98af719a37bdd237696c.js" ></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
-<link rel="alternate" type="application/rss+xml" href="/docs/4-derivative/index.xml" title="高中数学资料" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -93,7 +99,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-f510ad2f8bc976385640056304a4b6ed" class="toggle"  />
+    <input type="checkbox" id="section-f510ad2f8bc976385640056304a4b6ed" class="toggle" checked />
     <label for="section-f510ad2f8bc976385640056304a4b6ed" class="flex justify-between">
       <a href="/docs/1-prerequisite/" class="">1 预备知识</a>
     </label>
@@ -169,7 +175,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-edffe811b0eb4d5e4475e1f0f1b4367d" class="toggle"  />
+    <input type="checkbox" id="section-edffe811b0eb4d5e4475e1f0f1b4367d" class="toggle" checked />
     <label for="section-edffe811b0eb4d5e4475e1f0f1b4367d" class="flex justify-between">
       <a href="/docs/1-prerequisite/1-2-geometry/" class="">1.2 初中几何提要</a>
     </label>
@@ -224,7 +230,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/1-prerequisite/1-2-geometry/1-2-4-area/" class="">1.2.4 平面图形的面积</a>
+    <a href="/docs/1-prerequisite/1-2-geometry/1-2-4-area/" class=" active">1.2.4 平面图形的面积</a>
   
 
         </li>
@@ -364,7 +370,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>函数的导数</strong>
+  <strong>1.2.4 平面图形的面积</strong>
 
   <label for="toc-control">
     
@@ -380,7 +386,13 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#函数的导数">函数的导数</a></li>
+    <li><a href="#124-平面图形的面积">1.2.4 平面图形的面积</a>
+      <ul>
+        <li><a href="#四边形的面积">四边形的面积</a></li>
+        <li><a href="#三角形的面积">三角形的面积</a></li>
+        <li><a href="#圆扇形的面积">圆、扇形的面积</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -393,12 +405,28 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="函数的导数">
-  函数的导数
-  <a class="anchor" href="#%e5%87%bd%e6%95%b0%e7%9a%84%e5%af%bc%e6%95%b0">#</a>
+  <article class="markdown"><h1 id="124-平面图形的面积">
+  1.2.4 平面图形的面积
+  <a class="anchor" href="#124-%e5%b9%b3%e9%9d%a2%e5%9b%be%e5%bd%a2%e7%9a%84%e9%9d%a2%e7%a7%af">#</a>
 </h1>
-<p>这里是高中数学函数的导数</p>
-<p>$a^2+b^2=c^2$</p>
+<p>平面图形的面积用于描述其边界所围区域的大小. 通常考虑三角形、四边形、圆、扇形的面积. 以下按定义的先后顺序介绍各种图形面积的计算公式.</p>
+<h2 id="四边形的面积">
+  四边形的面积
+  <a class="anchor" href="#%e5%9b%9b%e8%be%b9%e5%bd%a2%e7%9a%84%e9%9d%a2%e7%a7%af">#</a>
+</h2>
+<p>正方形的面积定义为边长的平方. 矩形可以分解为多个正方形之和, 所以其面积为两个邻边的乘积, 一般记为“长乘宽”. 平行四边形可以用割补法拼接为矩形, 故面积为底乘高. 梯形也可以拼接为矩形, 面积为两底和乘高的一半.</p>
+<h2 id="三角形的面积">
+  三角形的面积
+  <a class="anchor" href="#%e4%b8%89%e8%a7%92%e5%bd%a2%e7%9a%84%e9%9d%a2%e7%a7%af">#</a>
+</h2>
+<p>三角形可以补成矩形, 面积为底乘高的一半. 三角形也可以视为退化的梯形 (上底为 $0$), 从而按梯形的面积公式, 也可得三角形的面积公式.</p>
+<h2 id="圆扇形的面积">
+  圆、扇形的面积
+  <a class="anchor" href="#%e5%9c%86%e6%89%87%e5%bd%a2%e7%9a%84%e9%9d%a2%e7%a7%af">#</a>
+</h2>
+<p>圆可以分割为多个小扇形. 当扇形足够小时, 可将其视为三角形, 底为小弧长, 高为圆的半径. 累加求和知, 圆的面积为圆周长乘半径的一半, 即
+[S_{\text{圆}}= \frac12\cdot 2\pi r\cdot r= \pi r^2.]
+同样的分析可得, 扇形的面积为弧长乘半径的一半, 即 $S_{\text{扇}}= \frac12 lr$.</p>
 </article>
  
       
@@ -440,7 +468,13 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#函数的导数">函数的导数</a></li>
+    <li><a href="#124-平面图形的面积">1.2.4 平面图形的面积</a>
+      <ul>
+        <li><a href="#四边形的面积">四边形的面积</a></li>
+        <li><a href="#三角形的面积">三角形的面积</a></li>
+        <li><a href="#圆扇形的面积">圆、扇形的面积</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 

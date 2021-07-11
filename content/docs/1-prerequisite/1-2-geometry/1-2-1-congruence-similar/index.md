@@ -1,5 +1,5 @@
 ---
-bookCollapseSection: true
+# bookCollapseSection: true
 title: 1.2.1 平面图形的全等和相似
 weight: 1
 ---

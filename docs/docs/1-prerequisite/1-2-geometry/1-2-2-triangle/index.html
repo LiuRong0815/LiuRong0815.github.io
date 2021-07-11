@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="1.2.2 三角形#三角形其实也可称为三边形, 其边和角都有固定的约束条件. 特殊的三角形 (如等腰三角形, 直角三角形) 有更多的性质. 与三角形有关的特殊线有: 中线、中垂线、角平分线和高线, 常见的三角形的特殊点有: 重心、外心、内心和垂心.
+以下设在 $\triangle ABC$ 中, $\angle A$, $\angle B$, $\angle C$ 所对的边分别记为 $a$, $b$, $c$.
+两个约束条件#利用平行线的性质可以证明, 三角形的内角和为 $180^\circ$, 即 [\angle A&#43; \angle B&#43;\angle C= 180^\cric.] 有时也省略符号“$\angle$”而将上述结论写为 $A&#43;B&#43;C=180^\circ$. 推广可知, $n$ 边形的内角和为 $(n-1)180^\circ$, 而外角和为 $360^\circ$ (与 $n$ 无关) (图待补).
+利用“两点之间线段最短”可以说明, 三角形的任意两边之和大于第三边, 即 (只列其一) [a&#43;b&gt;c,\quad\text{或}\quad a&gt;b-c,] 因此任意两边之差小于第三边. 也可以将这两个结论整合起来, 得到 [|b-c|&lt; a&lt; b&#43;c.] 上述三个不等式都可称为“三角形不等式”.
+等腰三角形#等腰三角形中有两边相等, 这两边均称为“腰”, 第三边称为“底” (图待补).">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="1.2.2 三角形" />
+<meta property="og:description" content="1.2.2 三角形#三角形其实也可称为三边形, 其边和角都有固定的约束条件. 特殊的三角形 (如等腰三角形, 直角三角形) 有更多的性质. 与三角形有关的特殊线有: 中线、中垂线、角平分线和高线, 常见的三角形的特殊点有: 重心、外心、内心和垂心.
+以下设在 $\triangle ABC$ 中, $\angle A$, $\angle B$, $\angle C$ 所对的边分别记为 $a$, $b$, $c$.
+两个约束条件#利用平行线的性质可以证明, 三角形的内角和为 $180^\circ$, 即 [\angle A&#43; \angle B&#43;\angle C= 180^\cric.] 有时也省略符号“$\angle$”而将上述结论写为 $A&#43;B&#43;C=180^\circ$. 推广可知, $n$ 边形的内角和为 $(n-1)180^\circ$, 而外角和为 $360^\circ$ (与 $n$ 无关) (图待补).
+利用“两点之间线段最短”可以说明, 三角形的任意两边之和大于第三边, 即 (只列其一) [a&#43;b&gt;c,\quad\text{或}\quad a&gt;b-c,] 因此任意两边之差小于第三边. 也可以将这两个结论整合起来, 得到 [|b-c|&lt; a&lt; b&#43;c.] 上述三个不等式都可称为“三角形不等式”.
+等腰三角形#等腰三角形中有两边相等, 这两边均称为“腰”, 第三边称为“底” (图待补)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/docs/1-prerequisite/1-2-geometry/1-2-2-triangle/" /><meta property="article:section" content="docs" />
+
+
+
+<title>1.2.2 三角形 | 高中数学资料</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.148482ac8d5193bd7b49e00e8d054d074b51eb06c7b874d59592161c94be60be.css" >
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/zh.search.min.ce8cf196e65f4d3cc90353566c34c356660040a5c42b98af719a37bdd237696c.js" ></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+--><link rel="stylesheet" href='/katex/katex.min.css' crossorigin="anonymous">
+
+
+<script defer src='/katex/katex.min.js' crossorigin="anonymous"></script>
+
+
+<script defer src='/katex/auto-render.min.js' 
+    onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        renderMathInElement(document.body, {
+            
+            
+            delimiters: [
+                { left: '$$', right: '$$', display: true },
+                { left: '$', right: '$', display: false },
+                { left: '\\(', right: '\\)', display: false },
+                { left: '\\[', right: '\\]', display: true }
+            ],
+            
+            throwOnError: false
+        });
+    });
+</script>
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>高中数学资料</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="搜索" aria-label="搜索" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f510ad2f8bc976385640056304a4b6ed" class="toggle" checked />
+    <label for="section-f510ad2f8bc976385640056304a4b6ed" class="flex justify-between">
+      <a href="/docs/1-prerequisite/" class="">1 预备知识</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-962be45719b0cc79b38e604dfcca318f" class="toggle"  />
+    <label for="section-962be45719b0cc79b38e604dfcca318f" class="flex justify-between">
+      <a href="/docs/1-prerequisite/1-1-algebra/" class="">1.1 初中代数提要</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/1-prerequisite/1-1-algebra/1-1-1-factoring/" class="">1.1.1 二次三项式因式分解</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/1-prerequisite/1-1-algebra/1-1-2-quadratic-equation/" class="">1.1.2 一元二次方程的解法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/1-prerequisite/1-1-algebra/1-1-3-veita-theorem/" class="">1.1.3 一元二次方程的韦达定理</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-edffe811b0eb4d5e4475e1f0f1b4367d" class="toggle" checked />
+    <label for="section-edffe811b0eb4d5e4475e1f0f1b4367d" class="flex justify-between">
+      <a href="/docs/1-prerequisite/1-2-geometry/" class="">1.2 初中几何提要</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/1-prerequisite/1-2-geometry/1-2-1-congruence-similar/" class="">1.2.1 平面图形的全等和相似</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/1-prerequisite/1-2-geometry/1-2-2-triangle/" class=" active">1.2.2 三角形</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/1-prerequisite/1-2-geometry/1-2-3-quadrilateral/" class="">1.2.3 四边形</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/1-prerequisite/1-2-geometry/1-2-4-area/" class="">1.2.4 平面图形的面积</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3bde0af1c7d81159277cc406f2eaf9ed" class="toggle"  />
+    <label for="section-3bde0af1c7d81159277cc406f2eaf9ed" class="flex justify-between">
+      <a href="/docs/1-prerequisite/1-3-function/" class="">1.3 初中函数提要</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5a22e7b2aa60a7b366b8f45b9a3852c4" class="toggle"  />
+    <label for="section-5a22e7b2aa60a7b366b8f45b9a3852c4" class="flex justify-between">
+      <a href="/docs/2-set-logic/" class="">集合与简易逻辑</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-44a0b09fb99f36dc042d6bda608b7518" class="toggle"  />
+    <label for="section-44a0b09fb99f36dc042d6bda608b7518" class="flex justify-between">
+      <a href="/docs/2-set-logic/2-1-set-def/" class="">集合的定义与运算</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/2-set-logic/2-2-proposition-iff/" class="">充要条件</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/" >
+        每周一题
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>1.2.2 三角形</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#122-三角形">1.2.2 三角形</a>
+      <ul>
+        <li><a href="#两个约束条件">两个约束条件</a></li>
+        <li><a href="#等腰三角形">等腰三角形</a></li>
+        <li><a href="#直角三角形">直角三角形</a></li>
+        <li><a href="#三个特殊的三角形">三个特殊的三角形</a></li>
+        <li><a href="#三角形的特殊线和点">三角形的特殊线和点</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="122-三角形">
+  1.2.2 三角形
+  <a class="anchor" href="#122-%e4%b8%89%e8%a7%92%e5%bd%a2">#</a>
+</h1>
+<p>三角形其实也可称为三边形, 其边和角都有固定的约束条件. 特殊的三角形 (如等腰三角形, 直角三角形) 有更多的性质. 与三角形有关的特殊线有: 中线、中垂线、角平分线和高线, 常见的三角形的特殊点有: 重心、外心、内心和垂心.</p>
+<p>以下设在 $\triangle ABC$ 中, $\angle A$, $\angle B$, $\angle C$ 所对的边分别记为 $a$, $b$, $c$.</p>
+<h2 id="两个约束条件">
+  两个约束条件
+  <a class="anchor" href="#%e4%b8%a4%e4%b8%aa%e7%ba%a6%e6%9d%9f%e6%9d%a1%e4%bb%b6">#</a>
+</h2>
+<p>利用平行线的性质可以证明, 三角形的内角和为 $180^\circ$, 即
+[\angle A+ \angle B+\angle C= 180^\cric.]
+有时也省略符号“$\angle$”而将上述结论写为 $A+B+C=180^\circ$. 推广可知, $n$ 边形的内角和为 $(n-1)180^\circ$, 而外角和为 $360^\circ$ (与 $n$ 无关) (图待补).</p>
+<p>利用“两点之间线段最短”可以说明, 三角形的任意两边之和大于第三边, 即 (只列其一)
+[a+b&gt;c,\quad\text{或}\quad a&gt;b-c,]
+因此任意两边之差小于第三边. 也可以将这两个结论整合起来, 得到
+[|b-c|&lt; a&lt; b+c.]
+上述三个不等式都可称为“三角形不等式”.</p>
+<h2 id="等腰三角形">
+  等腰三角形
+  <a class="anchor" href="#%e7%ad%89%e8%85%b0%e4%b8%89%e8%a7%92%e5%bd%a2">#</a>
+</h2>
+<p>等腰三角形中有两边相等, 这两边均称为“腰”, 第三边称为“底” (图待补). 腰所对的角称为底角, 所夹的角称为顶角. 从定义可以知道, 等腰三角形为<strong>轴对称</strong>图形, 对称轴为底边上的高 (也是中线、中垂线) 所在直线.</p>
+<p>等边三角形是特殊的等腰三角形, 三边和三角均相等, 因此三个角均为 $60^\circ$. 若等边三角形的边长为 $a$, 则利用勾股定理, 高为 $\dfrac{\sqrt3}4 a$, 故面积为 $\dfrac{\sqrt3}4 a^2$.</p>
+<h2 id="直角三角形">
+  直角三角形
+  <a class="anchor" href="#%e7%9b%b4%e8%a7%92%e4%b8%89%e8%a7%92%e5%bd%a2">#</a>
+</h2>
+<p>利用切割正方形和面积法可以证明勾股定理: 直角三角形中, 直角边平方和等于斜边平方. 具体地, 设 $\mathrm{Rt}\triangle ABC$ 中, $\angle C=90^\circ$, 以 $a+b$ 为边长作正方形 $DEFG$, 并作如图所示的辅助线, 可以证明中间的四边形也是正方形. 用两种方法表示正方形 $DEFG$ 的面积, 即整体计算和分步计算, 可知
+[(a+b)^2= c^2+ 4\cdot \frac12ab,]
+整理得 $a^2+b^2=c^2$.</p>
+<p>勾股定理的逆定理也成立, 即若 $a^2+b^2= c^2$, 则 $\angle C=90^\circ$, 即 $\triangle ABC$ 为直角三角形. 利用作图可以推广此结论: 若 $a^2+b^2&lt; c^2$, 则 $\angle C&gt; 90^\circ$, 即 $\triangle ABC$ 为钝角三角形; 若 $a^2+b^2&gt; c^2$, 则 $\angle C&lt; 90^\circ$ (但此时不能判断 $\triangle ABC$ 为锐角三角形).</p>
+<p>设 $\mathrm{Rt}\triangle ABC$ 的斜边 $AB$ 上中线为 $CM$, 倍长 $CM$ 至点 $D$, 再连接 $MA$, $MB$, 则可知四边形 $ACBM$ 为矩形. 因为矩形的对角线长度相等, 所以 $CM=\dfrac12 CD= \dfrac12 AB$, 即直角三角形斜边上中线等于斜边的一半. 用坐标系中两点间距离公式也可以证明该结论.</p>
+<h2 id="三个特殊的三角形">
+  三个特殊的三角形
+  <a class="anchor" href="#%e4%b8%89%e4%b8%aa%e7%89%b9%e6%ae%8a%e7%9a%84%e4%b8%89%e8%a7%92%e5%bd%a2">#</a>
+</h2>
+<p>含 $45^\circ$ 角的直角三角形, 三个内角为 $45^\circ$, $45^\circ$, $90^\circ$. 该三角形也是等腰三角形, 故称为等腰直角三角形. 由勾股定理, 其三边比为 $1:1:\sqrt2$.</p>
+<p>含 $30^\circ$ 角的直角三角形, 三个内角为 $30^\circ$, $60^\circ$, $90^\circ$. 将其关于长直角边作对称图形, 可形成等边三角形. 因此可知该三角形的三边比为 $1:\sqrt3:2$.</p>
+<p>底角为 $30^\circ$ 的等腰三角形, 三个内角为 $30^\circ$, $30^\circ$, $120^\circ$. 该三角形可由含 $30^\circ$ 角的直角三角形关于短直角边作对称图形得到, 所以三边比为 $2:2:2\sqrt3$, 也即 $1:1:\sqrt3$.</p>
+<h2 id="三角形的特殊线和点">
+  三角形的特殊线和点
+  <a class="anchor" href="#%e4%b8%89%e8%a7%92%e5%bd%a2%e7%9a%84%e7%89%b9%e6%ae%8a%e7%ba%bf%e5%92%8c%e7%82%b9">#</a>
+</h2>
+<p>三角形的特殊线 (均为三条) 有</p>
+<ul>
+<li>中线: 顶点连接对边中点</li>
+<li>各边中垂线</li>
+<li>各内角平分线</li>
+<li>高线: 顶点到对边的垂线段</li>
+</ul>
+<p>作图可知</p>
+<ul>
+<li>三边中线交于一点, 该点称为<strong>重心</strong>, 一般记为点 $G$ (gravity)</li>
+<li>三边中垂线交于一点, 该点称为<strong>外心</strong> (外接圆圆心), 一般记为点 $O$ (outer)</li>
+<li>三条内角平分线交于一点, 该点称为<strong>内心</strong> (内切圆圆心), 一般记为点 $I$ (inner)</li>
+<li>三条高线交于一点, 该点称为<strong>垂心</strong>, 一般记为点 $H$ (height)</li>
+</ul>
+<p>上述结论中, 第二、三条可以分别由 
+  <a href="../1-2-geometry/#%e4%b8%ad%e5%9e%82%e7%ba%bf">中垂线</a> 和 
+  <a href="../1-2-geometry/#%e8%a7%92%e5%b9%b3%e5%88%86%e7%ba%bf">角平分线</a> 的性质得到. 以证明第二条结论为例, 设 $\triangle ABC$ 的 $AB$, $BC$ 边上的中垂线交于点 $O$, 连接 $OA$, $OB$ 和 $OC$. 由中垂线的定义,
+[OA=OB,\quad OB=OC,\quad \text{即}\quad OA=OC,]
+所以点 $O$ 也在 $AC$ 边的中垂线上, 表明三边中垂线交于一点. 第一、四条结论用纯几何法证明略烦琐 (较简洁的证法分别为坐标法和向量法).</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#122-三角形">1.2.2 三角形</a>
+      <ul>
+        <li><a href="#两个约束条件">两个约束条件</a></li>
+        <li><a href="#等腰三角形">等腰三角形</a></li>
+        <li><a href="#直角三角形">直角三角形</a></li>
+        <li><a href="#三个特殊的三角形">三个特殊的三角形</a></li>
+        <li><a href="#三角形的特殊线和点">三角形的特殊线和点</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
