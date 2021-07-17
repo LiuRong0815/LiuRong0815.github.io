@@ -3,13 +3,21 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="集合的定义与运算#这里是集合的定义与运算">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="集合的定义与运算" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/docs/2-set-logic/2-1-set-def/" />
+<meta name="description" content="1.3.1 数轴与平面直角坐标系#数轴与平面直角坐标系用坐标分别刻画了直线 (一维空间) 上和平面 (二维空间) 内各点的位置. 用坐标表示点的位置后, 可方便地计算线段的长度、确定线段中点的位置, 或者计算平面图形 (如三角形, 四边形) 的面积等.
+数轴#数轴是规定了原点 (记为 $O$) 和正方向 (通常由左至右) 的直线, 其上的点与实数一一对应. 数轴上的点与实数对应时,
+ 点在原点的左右对应实数的正负 点到原点的距离对应实数的绝对值  例如, 若点 $A$ 在原点左侧, 且到原点的距离为 $2$, 则点 $A$ 表示实数 $-2$; 实数 $\sqrt3$ 对应的点在原点右侧, 且到原点的距离为 $\sqrt2$.
+若点 $A$ 与实数 $x_1$ 对应, 则称 $x_1$ 为点 $A$ 的坐标, 可记为 $A(x_1)$. 对于点 $A(x_1)$ 和 $B(x_2)$, 若 $x_1&gt; x_2$, 则可验证 $AB= x_1-x_2$; 而若 $x_1&lt; x_2$, 则 $AB= x_2-x_1$ (即总是“大数减小数”), 因此可得 $A(x_1)$, $B(x_2)$ 两点间距离公式: \[AB= |x_1-x_2|.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="1.3.1 数轴与平面直角坐标系" />
+<meta property="og:description" content="1.3.1 数轴与平面直角坐标系#数轴与平面直角坐标系用坐标分别刻画了直线 (一维空间) 上和平面 (二维空间) 内各点的位置. 用坐标表示点的位置后, 可方便地计算线段的长度、确定线段中点的位置, 或者计算平面图形 (如三角形, 四边形) 的面积等.
+数轴#数轴是规定了原点 (记为 $O$) 和正方向 (通常由左至右) 的直线, 其上的点与实数一一对应. 数轴上的点与实数对应时,
+ 点在原点的左右对应实数的正负 点到原点的距离对应实数的绝对值  例如, 若点 $A$ 在原点左侧, 且到原点的距离为 $2$, 则点 $A$ 表示实数 $-2$; 实数 $\sqrt3$ 对应的点在原点右侧, 且到原点的距离为 $\sqrt2$.
+若点 $A$ 与实数 $x_1$ 对应, 则称 $x_1$ 为点 $A$ 的坐标, 可记为 $A(x_1)$. 对于点 $A(x_1)$ 和 $B(x_2)$, 若 $x_1&gt; x_2$, 则可验证 $AB= x_1-x_2$; 而若 $x_1&lt; x_2$, 则 $AB= x_2-x_1$ (即总是“大数减小数”), 因此可得 $A(x_1)$, $B(x_2)$ 两点间距离公式: \[AB= |x_1-x_2|." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/docs/1-prerequisite/1-3-function/1-3-1-axis-coordinate/" /><meta property="article:section" content="docs" />
 
-<title>集合的定义与运算 | 高中数学资料</title>
+
+
+<title>1.3.1 数轴与平面直角坐标系 | 高中数学资料</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.148482ac8d5193bd7b49e00e8d054d074b51eb06c7b874d59592161c94be60be.css" >
@@ -17,7 +25,6 @@
   <script defer src="/zh.search.min.97f6deaf39be0b62d0e42111d0841d61fd4b1ca0ea0951bdd4b32278784d2f51.js" ></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
-<link rel="alternate" type="application/rss+xml" href="/docs/2-set-logic/2-1-set-def/index.xml" title="高中数学资料" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -92,7 +99,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-f510ad2f8bc976385640056304a4b6ed" class="toggle"  />
+    <input type="checkbox" id="section-f510ad2f8bc976385640056304a4b6ed" class="toggle" checked />
     <label for="section-f510ad2f8bc976385640056304a4b6ed" class="flex justify-between">
       <a href="/docs/1-prerequisite/" class="">1 预备知识</a>
     </label>
@@ -254,7 +261,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-3bde0af1c7d81159277cc406f2eaf9ed" class="toggle"  />
+    <input type="checkbox" id="section-3bde0af1c7d81159277cc406f2eaf9ed" class="toggle" checked />
     <label for="section-3bde0af1c7d81159277cc406f2eaf9ed" class="flex justify-between">
       <a href="/docs/1-prerequisite/1-3-function/" class="">1.3 初中函数提要</a>
     </label>
@@ -270,7 +277,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/1-prerequisite/1-3-function/1-3-1-axis-coordinate/" class="">1.3.1 数轴与平面直角坐标系</a>
+    <a href="/docs/1-prerequisite/1-3-function/1-3-1-axis-coordinate/" class=" active">1.3.1 数轴与平面直角坐标系</a>
   
 
         </li>
@@ -319,7 +326,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-5a22e7b2aa60a7b366b8f45b9a3852c4" class="toggle" checked />
+    <input type="checkbox" id="section-5a22e7b2aa60a7b366b8f45b9a3852c4" class="toggle"  />
     <label for="section-5a22e7b2aa60a7b366b8f45b9a3852c4" class="flex justify-between">
       <a href="/docs/2-set-logic/" class="">集合与简易逻辑</a>
     </label>
@@ -335,9 +342,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-44a0b09fb99f36dc042d6bda608b7518" class="toggle" checked />
+    <input type="checkbox" id="section-44a0b09fb99f36dc042d6bda608b7518" class="toggle"  />
     <label for="section-44a0b09fb99f36dc042d6bda608b7518" class="flex justify-between">
-      <a href="/docs/2-set-logic/2-1-set-def/" class="active">集合的定义与运算</a>
+      <a href="/docs/2-set-logic/2-1-set-def/" class="">集合的定义与运算</a>
     </label>
   
 
@@ -415,7 +422,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>集合的定义与运算</strong>
+  <strong>1.3.1 数轴与平面直角坐标系</strong>
 
   <label for="toc-control">
     
@@ -431,7 +438,13 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#集合的定义与运算">集合的定义与运算</a></li>
+    <li><a href="#131-数轴与平面直角坐标系">1.3.1 数轴与平面直角坐标系</a>
+      <ul>
+        <li><a href="#数轴">数轴</a></li>
+        <li><a href="#平面直角坐标系">平面直角坐标系</a></li>
+        <li><a href="#点的变换">点的变换</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -444,11 +457,53 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="集合的定义与运算">
-  集合的定义与运算
-  <a class="anchor" href="#%e9%9b%86%e5%90%88%e7%9a%84%e5%ae%9a%e4%b9%89%e4%b8%8e%e8%bf%90%e7%ae%97">#</a>
+  <article class="markdown"><h1 id="131-数轴与平面直角坐标系">
+  1.3.1 数轴与平面直角坐标系
+  <a class="anchor" href="#131-%e6%95%b0%e8%bd%b4%e4%b8%8e%e5%b9%b3%e9%9d%a2%e7%9b%b4%e8%a7%92%e5%9d%90%e6%a0%87%e7%b3%bb">#</a>
 </h1>
-<p>这里是集合的定义与运算</p>
+<p>数轴与平面直角坐标系用坐标分别刻画了直线 (一维空间) 上和平面 (二维空间) 内各点的位置. 用坐标表示点的位置后, 可方便地计算线段的长度、确定线段中点的位置, 或者计算平面图形 (如三角形, 四边形) 的面积等.</p>
+<h2 id="数轴">
+  数轴
+  <a class="anchor" href="#%e6%95%b0%e8%bd%b4">#</a>
+</h2>
+<p>数轴是规定了原点 (记为 $O$) 和正方向 (通常由左至右) 的直线, 其上的点与实数一一对应. 数轴上的点与实数对应时,</p>
+<ul>
+<li>点在原点的左右对应实数的正负</li>
+<li>点到原点的距离对应实数的绝对值</li>
+</ul>
+<p>例如, 若点 $A$ 在原点左侧, 且到原点的距离为 $2$, 则点 $A$ 表示实数 $-2$; 实数 $\sqrt3$ 对应的点在原点右侧, 且到原点的距离为 $\sqrt2$.</p>
+<p>若点 $A$ 与实数 $x_1$ 对应, 则称 $x_1$ 为点 $A$ 的坐标, 可记为 $A(x_1)$. 对于点 $A(x_1)$ 和 $B(x_2)$, 若 $x_1&gt; x_2$, 则可验证 $AB= x_1-x_2$; 而若 $x_1&lt; x_2$, 则 $AB= x_2-x_1$ (即总是“大数减小数”), 因此可得 $A(x_1)$, $B(x_2)$ <strong>两点间距离公式</strong>: \[AB= |x_1-x_2|.\]</p>
+<p>设点 $A(x_1)$ 和 $B(x_2)$ 的中点为 $M(x_0)$. 若 $x_1&lt; x_2$, 由点 $M$ 在 $A$, $B$ 中间可知, $x_1&lt; x_0&lt; x_2$, 再由 $AM=MB$ 得 \[
+x_0- x_1= x_2- x_0,\quad\text{即}\quad
+x_0= \frac{x_1+x_2}2.\]
+若 $x_1&gt; x_2$, 同样可推出上式, 此即线段 $AB$ 的<strong>中点坐标公式</strong>.</p>
+<h2 id="平面直角坐标系">
+  平面直角坐标系
+  <a class="anchor" href="#%e5%b9%b3%e9%9d%a2%e7%9b%b4%e8%a7%92%e5%9d%90%e6%a0%87%e7%b3%bb">#</a>
+</h2>
+<p>在平面上作两条互相垂直且原点重合的数轴, 就得到平面直角坐标系, 原点仍记为 $O$, 两条数轴分别称为 $x$ 轴 (横轴), $y$ 轴 (纵轴), 统称为坐标轴. 任取平面上一点 $P$, 并过该点分别 $x$ 轴和 $y$ 轴作垂线段, 垂足记为 $P_x$, $P_y$, 则该点可以由一组有序实数 $(x_0, y_0)$ 表示, 其中</p>
+<ul>
+<li>$x_0$ 为点 $P_x$ 在 $x$ 轴上的坐标, 并称为横坐标</li>
+<li>$y_0$ 为点 $P_y$ 在 $y$ 轴上的坐标, 并称为纵坐标</li>
+</ul>
+<p>特别地, 点 $P_x$ 的坐标为 $(x_0,0)$, 点 $P_y$ 的坐标为 $(y_0,0)$, 即: 横轴上点地纵坐标为 $0$, 纵轴上点的横坐标为 $0$. 由定义, 纵坐标相等的点在一条水平直线上, 而横坐标相等的点在一条竖直直线上.</p>
+<p>平面直角坐标系的坐标轴将整个平面分割为四个象限 (不计坐标轴自身), 右上角为第一象限, 沿逆时针方向分别可以得到第二至四象限.</p>
+<p>取两点 $A(x_1,y_1)$, $B(x_2,y_2)$, 连接 $AB$, 并过这两点分别作 $x$ 轴和 $y$ 轴的垂线, 可得一个矩形. 由数轴上两点间距离公式可得两邻边长分别为 $|x_1-x_2|$, $|y_1-y_2|$, 再由勾股定理可知 $A(x_1,y_1)$, $B(x_2,y_2)$ <strong>两点间的距离公式</strong>: \[
+AB= \sqrt{(x_1-x_2)^2+ (y_1-y_2)^2}.\]</p>
+<p>设点 $A(x_1,y_1)$, $B(x_2,y_2)$ 的中点为 $M(x_0,y_0)$, 过这三点分别作 $x$ 轴和 $y$ 轴的垂线, 可得两个直角梯形. 由梯形中位线的性质可得线段 $AB$ 的 **中点坐标公式**: \[
+    \left\{\!\!\begin{array}{l}
+        x_0= \dfrac{x_1+x_2}2,\\[6pt]
+        y_0= \dfrac{y_1+y_2}2,
+    \end{array}\right.\quad\text{即}\quad
+    M\biggl(\frac{x_1+x_2}2, \frac{y_1+y_2}2\biggr).\]</P>
+<h2 id="点的变换">
+  点的变换
+  <a class="anchor" href="#%e7%82%b9%e7%9a%84%e5%8f%98%e6%8d%a2">#</a>
+</h2>
+<p>平移</p>
+<p>轴对称</p>
+<p>中心对称</p>
+<p>旋转</p>
 </article>
  
       
@@ -490,7 +545,13 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#集合的定义与运算">集合的定义与运算</a></li>
+    <li><a href="#131-数轴与平面直角坐标系">1.3.1 数轴与平面直角坐标系</a>
+      <ul>
+        <li><a href="#数轴">数轴</a></li>
+        <li><a href="#平面直角坐标系">平面直角坐标系</a></li>
+        <li><a href="#点的变换">点的变换</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 

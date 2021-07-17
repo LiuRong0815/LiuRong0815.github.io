@@ -5,5 +5,35 @@
     <link>/docs/1-prerequisite/1-3-function/</link>
     <description>Recent content in 1.3 初中函数提要 on 高中数学资料</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="/docs/1-prerequisite/1-3-function/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1.3.1 数轴与平面直角坐标系</title>
+      <link>/docs/1-prerequisite/1-3-function/1-3-1-axis-coordinate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/1-prerequisite/1-3-function/1-3-1-axis-coordinate/</guid>
+      <description>1.3.1 数轴与平面直角坐标系#数轴与平面直角坐标系用坐标分别刻画了直线 (一维空间) 上和平面 (二维空间) 内各点的位置. 用坐标表示点的位置后, 可方便地计算线段的长度、确定线段中点的位置, 或者计算平面图形 (如三角形, 四边形) 的面积等.
+数轴#数轴是规定了原点 (记为 $O$) 和正方向 (通常由左至右) 的直线, 其上的点与实数一一对应. 数轴上的点与实数对应时,
+ 点在原点的左右对应实数的正负 点到原点的距离对应实数的绝对值  例如, 若点 $A$ 在原点左侧, 且到原点的距离为 $2$, 则点 $A$ 表示实数 $-2$; 实数 $\sqrt3$ 对应的点在原点右侧, 且到原点的距离为 $\sqrt2$.
+若点 $A$ 与实数 $x_1$ 对应, 则称 $x_1$ 为点 $A$ 的坐标, 可记为 $A(x_1)$. 对于点 $A(x_1)$ 和 $B(x_2)$, 若 $x_1&amp;gt; x_2$, 则可验证 $AB= x_1-x_2$; 而若 $x_1&amp;lt; x_2$, 则 $AB= x_2-x_1$ (即总是“大数减小数”), 因此可得 $A(x_1)$, $B(x_2)$ 两点间距离公式: \[AB= |x_1-x_2|.</description>
+    </item>
+    
+    <item>
+      <title>1.3.2 一次函数与反比例函数</title>
+      <link>/docs/1-prerequisite/1-3-function/1-3-2-linear-inverse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/1-prerequisite/1-3-function/1-3-2-linear-inverse/</guid>
+      <description>1.3.2 一次函数与反比例函数#一次函数#反比例函数#</description>
+    </item>
+    
+    <item>
+      <title>1.3.3 二次函数</title>
+      <link>/docs/1-prerequisite/1-3-function/1-3-3-quadratic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/1-prerequisite/1-3-function/1-3-3-quadratic/</guid>
+      <description>1.3.3 二次函数#二次函数的定义#二次函数的图形#</description>
+    </item>
+    
   </channel>
 </rss>
