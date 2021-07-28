@@ -77,11 +77,13 @@ weight: 1
 ### 点的中心对称
 
 <p>设点 $P(x_1,y_1)$ 关于点 $M(x_0,y_0)$ 的对称点为 $P'(x_2,y_2) $, 则 $M$ 是线段 $PP'$ 的中点, 所以 \[\left\{\!\!\begin{array}{l}
-    x_0= \dfrac12(x_1+x_2),\\
-    y_0= \dfrac12(y_1+y_2),\right.\quad\text{解得}\quad
+    x_0= \dfrac12(x_1+x_2),\\[6pt]
+    y_0= \dfrac12(y_1+y_2),
+    \end{array}\right.\quad\text{解得}\quad
     \left\{\!\!\begin{array}{l}
     x_2= 2x_0-x_1,\\
-    y_2= 2y_0-y_1,\right.\] 表明点 $P'$ 的坐标为 $(2x_0-x_1,2y_0-y_1)$.</p>
+    y_2= 2y_0-y_1,
+    \end{array}\right.\] 表明点 $P'$ 的坐标为 $(2x_0-x_1,2y_0-y_1)$.</p>
 
 ### 点的旋转
 
