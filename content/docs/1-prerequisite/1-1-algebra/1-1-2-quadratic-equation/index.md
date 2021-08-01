@@ -28,8 +28,8 @@ weight: 2
 
 <p>一元二次方程 $ax^2+bx+c= 0$ ($a\neq 0$) 的求根公式源自配方法. 具体的变形过程为 \[\begin{aligned}
         x^2+\frac{b}a x+ \frac{c}a &= 0,\\
-        x^2+\frac{b}a x+ \frac{b^2}{4a^2} &= \frac{b^2}{4a}- \frac{c}a,\\
-        \biggl(x+\frac{b}{2a}\biggr)^2 &= \frac{b^2-4ac}{4a}.
+        x^2+\frac{b}a x+ \frac{b^2}{4a^2} &= \frac{b^2}{4a^2}- \frac{c}a,\\
+        \biggl(x+\frac{b}{2a}\biggr)^2 &= \frac{b^2-4ac}{4a^2}.
     \end{aligned}\] 所以当 (且仅当) $b^2-4ac\geqslant 0$ 时, $x+\dfrac{b}{2a}= \pm\dfrac{\sqrt{b^2-4ac}}{2a}$, 即 \[x= \frac{-b\pm\sqrt{b^2-4ac}}{2a}.
 \] 通常记 $\Delta= b^2-4ac$, 上述求根公式又可写为 (更容易记忆的) $x= \dfrac{-b\pm\sqrt{\Delta}}{2a}$.</p>
 
