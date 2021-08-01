@@ -2,6 +2,10 @@
 # bookCollapseSection: true
 title: 1.3.1 数轴与平面直角坐标系
 weight: 1
+prevPage: ../../1-3-function
+prevPageTitle: 1.3 初中函数提要
+nextPage: ../1-3-2-linear-inverse
+nextPageTitle: 1.3.2 一次函数与反比例函数
 ---
 
 # 1.3.1 数轴与平面直角坐标系

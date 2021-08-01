@@ -1,21 +1,26 @@
 ---
 title: 本站介绍
 type: docs
+prevPage: /
+prevPageTitle: 高中数学资料
+nextPage: ./docs/1-prerequisite
+nextPageTitle: 1 预备知识
 ---
 
 # 本站介绍
 
-本站收集了一些高中数学资料，大致内容如下：
+本站收集了一些高中数学资料，试图对学习高中数学提供一些帮助。网站的大致内容如下（持续更新中）：
 
-- [预备知识](/docs/1-prerequisite)
-  - [初中代数提要](/docs/1-prerequisite/1-1-algebra)
-  - [初中几何提要](/docs/1-prerequisite/1-2-geometry)
-- 高中数学知识（持续更新中）
-  - [集合与简易逻辑](/docs/2-set-logic)
+- [1 预备知识](/docs/1-prerequisite)（大致完成知识点）
+  - [1.1 初中代数提要](/docs/1-prerequisite/1-1-algebra)
+  - [1.2 初中几何提要](/docs/1-prerequisite/1-2-geometry)
+  - [1.3 初中函数提要](/docs/1-prerequisite/1-3-function)
+- 高中数学知识
+  - [2 集合与简易逻辑](/docs/2-set-logic)（待补）
   - 待补
-- [每周一题](/posts)
+<!-- - [每周一题](/posts)（待补） -->
 
-详细内容参见网站目录。
+详细内容参见网站目录。这些资料涵盖高中数学大部分内容，其中有一些不严谨之处，浏览时需酌情理解记忆。如果发现本站资料错误，或有更好的建议，可发邮件至 [rong.liu@mail.bnu.edu.cn](mailto:rong.liu@mai.bnu.edu.cn)。
 
 ## 高中数学的特点
 
@@ -35,4 +40,4 @@ type: docs
   - 熟悉常见题型的解法，并逐渐优化解题思路
 - 会从“数”与“形”考虑问题
 
-总之，学习高中数学需要花费相当多的时间。虽然如此，学好高中数学也是学会“学习”的过程。
+总之，学习高中数学需要花费相当多的时间。

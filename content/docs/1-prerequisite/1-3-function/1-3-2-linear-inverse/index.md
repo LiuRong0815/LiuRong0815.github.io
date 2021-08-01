@@ -2,6 +2,10 @@
 # bookCollapseSection: true
 title: 1.3.2 一次函数与反比例函数
 weight: 2
+prevPage: ../1-3-1-axis-coordinate
+prevPageTitle: 1.3.1 数轴与平面直角坐标系
+nextPage: ../1-3-3-quadratic
+nextPageTitle: 1.3.3 二次函数
 ---
 
 # 1.3.2 一次函数与反比例函数

@@ -2,6 +2,10 @@
 # bookCollapseSection: true
 title: 1.3.3 二次函数
 weight: 3
+prevPage: ../1-3-2-linear-inverse
+prevPageTitle: 1.3.2 一次函数与反比例函数
+nextPage: ../1-3-4-graph-tranform
+nextPageTitle: 1.3.4 函数图形的变换
 ---
 
 # 1.3.3 二次函数

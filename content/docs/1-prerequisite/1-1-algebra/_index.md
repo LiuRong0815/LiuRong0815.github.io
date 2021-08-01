@@ -2,6 +2,10 @@
 bookCollapseSection: true
 title: 1.1 初中代数提要
 weight: 1
+prevPage: ../
+prevPageTitle: 1 预备知识
+nextPage: ./1-1-1-factoring/
+nextPageTitle: 1.1.1 二次三项式因式分解
 ---
 
 # 1.1 初中代数提要

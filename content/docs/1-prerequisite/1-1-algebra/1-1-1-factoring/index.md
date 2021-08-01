@@ -2,6 +2,10 @@
 # bookCollapseSection: true
 title: 1.1.1 二次三项式因式分解
 weight: 1
+prevPage: ../
+prevPageTitle: 1.1 初中代数提要
+nextPage: ../1-1-2-quadratic-equation
+nextPageTitle: 1.1.2 一元二次方程的解法
 ---
 
 # 1.1.1 二次三项式因式分解

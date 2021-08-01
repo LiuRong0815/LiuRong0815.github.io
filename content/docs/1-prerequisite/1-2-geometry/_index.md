@@ -2,6 +2,10 @@
 bookCollapseSection: true
 title: 1.2 初中几何提要
 weight: 2
+prevPage: ../1-1-algebra/1-1-3-veita-theorem
+prevPageTitle: 1.1.3 一元二次方程的韦达定理
+nextPage: ./1-2-1-congruence-similar
+nextPageTitle: 1.2.1 平面图形的全等与相似
 ---
 
 # 1.2 初中几何提要

@@ -2,6 +2,10 @@
 # bookCollapseSection: true
 title: 1.1.3 一元二次方程的韦达定理
 weight: 3
+prevPage: ../1-1-2-quadratic-equation
+prevPageTitle: 1.1.2 一元二次方程的解法
+nextPage: ../../1-2-geometry
+nextPageTitle: 1.2 初中几何提要
 ---
 
 # 1.1.3 一元二次方程的韦达定理

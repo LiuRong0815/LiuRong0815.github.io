@@ -2,6 +2,10 @@
 # bookCollapseSection: true
 title: 1.2.4 圆
 weight: 4
+prevPage: ../1-2-3-quadrilateral
+prevPageTitle: 1.2.3 四边形
+nextPage: ../1-2-5-area
+nextPageTitle: 1.2.5 平面图形的面积
 ---
 
 # 1.2.4 圆

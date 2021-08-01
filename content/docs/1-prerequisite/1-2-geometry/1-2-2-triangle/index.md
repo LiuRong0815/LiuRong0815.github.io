@@ -2,6 +2,10 @@
 # bookCollapseSection: true
 title: 1.2.2 三角形
 weight: 2
+prevPage: ../1-2-1-congruence-similar
+prevPageTitle: 1.2.1 平面图形的全等与相似
+nextPage: ../1-2-3-quadrilateral
+nextPageTitle: 1.2.3 四边形
 ---
 
 # 1.2.2 三角形

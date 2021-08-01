@@ -2,6 +2,10 @@
 # bookCollapseSection: true
 title: 1.2.5 平面图形的面积
 weight: 5
+prevPage: ../1-2-4-circle
+prevPageTitle: 1.2.4 圆
+nextPage: ../../1-3-function
+nextPageTitle: 1.3 初中函数提要
 ---
 
 # 1.2.5 平面图形的面积

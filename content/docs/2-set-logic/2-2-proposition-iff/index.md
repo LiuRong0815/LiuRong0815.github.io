@@ -1,8 +1,9 @@
 ---
-title: 充要条件
+bookCollapseSection: true
+title: 2.2 充要条件
 weight: 2
 --- 
 
-# 集合的定义与运算
+# 2.2 充要条件
 
-这里是集合的定义与运算
+这里是充要条件

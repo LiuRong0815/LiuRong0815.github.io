@@ -2,6 +2,10 @@
 # bookCollapseSection: true
 title: 1.1.2 一元二次方程的解法
 weight: 2
+prevPage: ../1-1-1-factoring
+prevPageTitle: 1.1.1 二次三项式因式分解
+nextPage: ../1-1-3-veita-theorem
+nextPageTitle: 1.1.3 一元二次方程的韦达定理
 ---
 
 # 1.1.2 一元二次方程的解法

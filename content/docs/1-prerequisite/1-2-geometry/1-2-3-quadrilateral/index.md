@@ -2,6 +2,10 @@
 # bookCollapseSection: true
 title: 1.2.3 四边形
 weight: 3
+prevPage: ../1-2-2-triangle
+prevPageTitle: 1.2.2 三角形
+nextPage: ../1-2-4-circle
+nextPageTitle: 1.2.4 圆
 ---
 
 # 1.2.3 四边形
