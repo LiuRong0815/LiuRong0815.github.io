@@ -4,8 +4,8 @@ title: 1.3.4 函数图形的变换
 weight: 4
 prevPage: ../1-3-3-quadratic
 prevPageTitle: 1.3.3 二次函数
-nextPage: ../../../2-set-logic
-nextPageTitle: 2 集合与简易逻辑
+# nextPage: ../../../2-set-logic
+# nextPageTitle: 2 集合与简易逻辑
 ---
 
 # 1.3.4 函数图形的变换

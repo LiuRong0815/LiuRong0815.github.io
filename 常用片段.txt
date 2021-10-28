@@ -10,6 +10,27 @@
     <p>(1) 常数</p>
 </myremark>
 
+<myexercise>
+    <p>分解因式:</p>
+    <p>(1) $x^2+6x+5$;&emsp;
+    (2) $x^2-4x-21$;</p>
+    <p>(3) $x^2-11x+30$;&emsp;
+    (4) $x^2-x-12$.</p>
+</myexercise>
+
+<details><summary>参考答案</summary>
+    <p>(1) $(x+2)(x+3)$; (2) $(x+3)(x-7)$;</p>
+    <p>(3) $(x-5)(x-6)$; (4) $(x+3)(x-4)$.</p>
+</details>
+
+![二次函数 $y=x^2$ 图形的左、右平移](./figs/20210801-1550.svg)
+
+<p>\[
+    \left\{\!\!\begin{array}{l}
+        x_0= ,\\[6pt]
+        y_0= ,
+    \end{array}\right.\quad\text{即}\quad .\]</p>
+
 \[\begin{aligned}
         x
         &= x\\

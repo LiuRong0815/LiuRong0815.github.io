@@ -2,6 +2,7 @@
 bookCollapseSection: true
 title: 2 集合与简易逻辑
 weight: 2
+bookHidden: true
 prevPage: ../1-prerequisite/1-3-function/1-3-4-graph-tranform
 prevPageTitle: 1.3.4 函数图形的变换
 nextPage: ./2-1-set-def

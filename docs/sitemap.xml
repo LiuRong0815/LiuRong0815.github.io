@@ -12,6 +12,10 @@
   </url><url>
     <loc>/docs/1-prerequisite/1-3-function/1-3-1-axis-coordinate/</loc>
   </url><url>
+    <loc>/docs/10-line-circle/10-1-line/</loc>
+  </url><url>
+    <loc>/docs/10-line-circle/10-1-line/10-1-1-slope/</loc>
+  </url><url>
     <loc>/docs/2-set-logic/2-1-set-def/</loc>
   </url><url>
     <loc>/docs/1-prerequisite/1-1-algebra/1-1-2-quadratic-equation/</loc>
@@ -43,6 +47,24 @@
     <loc>/docs/4-derivative/</loc>
   </url><url>
     <loc>/docs/1-prerequisite/1-2-geometry/1-2-5-area/</loc>
+  </url><url>
+    <loc>/docs/5-trigonometry/</loc>
+  </url><url>
+    <loc>/docs/6-vector-complex/</loc>
+  </url><url>
+    <loc>/docs/7-sequence/</loc>
+  </url><url>
+    <loc>/docs/8-inequality/</loc>
+  </url><url>
+    <loc>/docs/9-solid-geometry/</loc>
+  </url><url>
+    <loc>/docs/10-line-circle/</loc>
+  </url><url>
+    <loc>/docs/11-conic-curves/</loc>
+  </url><url>
+    <loc>/docs/12-statistics-probability/</loc>
+  </url><url>
+    <loc>/docs/13-extras/</loc>
   </url><url>
     <loc>/categories/</loc>
   </url><url>
