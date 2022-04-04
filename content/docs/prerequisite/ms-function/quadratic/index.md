@@ -1,11 +1,11 @@
 ---
 # bookCollapseSection: true
-title: 1.3.3 二次函数
+title: 二次函数
 weight: 3
-prevPage: ../1-3-2-linear-inverse
-prevPageTitle: 1.3.2 一次函数与反比例函数
-nextPage: ../1-3-4-graph-tranform
-nextPageTitle: 1.3.4 函数图形的变换
+prevPage: ../linear-inverse
+prevPageTitle: 一次函数与反比例函数
+nextPage: ../graph-tranform
+nextPageTitle: 函数图形的变换
 ---
 
 # 1.3.3 二次函数
@@ -43,3 +43,16 @@ nextPageTitle: 1.3.4 函数图形的变换
 所以 $\Delta= b^2-4ac$ 也称为二次函数 $y= ax^2+bx+c$ 的判别式. 设二次函数 $y= ax^2+bx+c$ 与 $x$ 轴有两个不同交点, 横坐标分别记为 $x_1$, $x_2$, 则函数解析式可以改写为 $y=a(x-x_1)(x-x_2)$ 的形式, 并称其为**二次函数的双根式**. 二次函数的一般式、顶点式、双根式各有特点, 且都含 $3$ 个参数. 解题时, 应根据已知条件选择合适的形式以简化计算.
 
 类似地, 二次不等式 $ax^2+bx+c>0$ 的解集对应使得二次函数 $y= ax^2+bx+c$ 图形在 $x$ 轴上方部分的 $x$ 值, 而 $ax^2+bx+c\leqslant 0$ 的解集对应使得二次函数 $y= ax^2+bx+c$ 图形在 $x$ 轴上及下方部分的 $x$ 值, 所以 $a$ 和 $\Delta$ 的正、负号共同决定了二次不等式 $ax^2+bx+c>0$ 是否有解.
+
+<myexample>
+    <p>已知函数 $f(x)= (x-a)(x-b)-1$ ($a< b$) 的两个零点是 $m$, $n$ ($m< n$), 判断 $a$, $b$, $m$, $n$ 的大小.</p>
+</myexample>
+<mysolution>
+    <p>考虑函数 $g(x)= (x-a)(x-b)$ 可知, 其图形与 $x$ 轴交于点 $(a,0)$, $(b,0)$. 因为 $f(x)= g(x)-1$ 的图形可由 $g(x)$ 的图形向下平移一个单位长度得到, 所以 $f(x)$ 的图形与 $x$ 轴的交点应分布在点 $(a,0)$, $(b,0)$ 两侧, 所以 \[m< a< b< n.\]</p>
+</mysolution>
+
+<myremark>
+    <p>若上题是选择题或填空题, 则也可以取特殊值. 例如设 $a=0$, $b=2$, 可解出 \[m= 1-\sqrt2\approx -0.414,\quad 
+        n= 1+\sqrt2\approx 2.414,\]
+    同样得到 $m< a< b< n$. 该题也可以用韦达定理求解, 但并不方便.</p>
+</myremark>
