@@ -3,8 +3,8 @@
 这里是个人整理的一些高中数学资料，来源有
 
 - 近年高考题
-- 高中数学甲种本
-- 经验积累
+- 人教高中数学 A 版
+- 人教高中数学甲种本
 
 主要使用了以下工具（排名不分先后）
 
@@ -16,6 +16,7 @@
 - 几何计算软件 [Geogebra](https://www.geogebra.org)
 - 矢量绘图软件 [Inkscape](https://inkscape.org)
 - Linux 发行版 [Manjaro](https://manjaro.org)（使用 [KDE](https://kde.org) 桌面环境）
+- Windows 操作系统 [Windows 10, Windows 11](https://www.microsoft.com/)
 - [Markdown](http://daringfireball.net/projects/markdown) 语言
 
 ## 建站目的

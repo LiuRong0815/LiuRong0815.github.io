@@ -6,24 +6,11 @@
     <description>Recent content in 本站介绍 on 高中数学资料</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>1.1.1 二次三项式因式分解</title>
-      <link>/docs/1-prerequisite/1-1-algebra/1-1-1-factoring/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/1-prerequisite/1-1-algebra/1-1-1-factoring/</guid>
-      <description>1.1.1 二次三项式因式分解#因式分解是将多项式写成两个或多个次数较低的多项式之积, 可视为多项式乘法的逆运算. 这里简要回顾关于 $x$ 的整系数二次三项式 $ax^2+bx+c$ ($a\neq 0$) 的因式分解方法.
-对于二次三项式 $ax^2+bx+c$ ($a\neq 0$) 的因式分解, 常用方法是
- “提”: 提公因式 “套”: 套公式 “十字”: 用十字相乘法  在进行因式分解时, 应先将公因式提出, 并使得系数为整数, 以简化计算. 然后尝试套用 (1) 平方差公式 \[a^2-b^2= (a+b)(a-b);\] (2) 完全平方公式 \[a^2\pm 2ab+b^2= (a\pm b)^2.\]
-如果无法使用上述公式, 则可考虑十字相乘法, 即利用公式 \[x^2+(a+b)x+ab= (x+a)(x+b).\] 使用该公式时, 一般先将常数项分解, 然后拼凑出一次项系数. 对于无法快速判断系数分解方式的二次三项式, 有时也考虑用配方法或求根法来进行因式分解.
-(1) 一般来说, 平方和 (即形如 $x^2+y^2$ 的式子) 是无法因式分解的. 如若不然, 可设 \[x^2+y^2= (x+ay)(x+by),\] 其中 $a$, $b$ 是待定常数. 右边展开后与左边对比, 对应项系数应该相等, 即 \[\left\{\!</description>
-    </item>
-    
-    <item>
       <title>1.2.1 平面图形的全等与相似</title>
-      <link>/docs/1-prerequisite/1-2-geometry/1-2-1-congruence-similar/</link>
+      <link>/docs/prerequisite/ms-geometry/congruence-similar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/1-prerequisite/1-2-geometry/1-2-1-congruence-similar/</guid>
+      <guid>/docs/prerequisite/ms-geometry/congruence-similar/</guid>
       <description>1.2.1 平面图形的全等与相似#判断两个平面图形的形状和大小是否一致时, 需要用到全等和相似的性质及判定. 这里所指的图形包括但不限于: 线段, 角, 三角形, 四边形, 圆等.
 两个图形的全等#平面图形 $G$ 与 $G&#39;$ 全等是指它们的形状和大小完全一致, 严谨一点的说法是, 这两个图形经过平移、旋转、翻折后可以完全重合 (因此, 对应的边和角相等). 因此, 任意两条射线是全等的, 任意两个相同大小的角也是全等的. 初中数学里通常考虑的是两个三角形的全等关系, 而判断两个三角形是否全等, 其实就是判断需要多少条件才能唯一确定一个三角形 (的形状和大小).
 虽然三角形中有三条边和三个角 (共 $6$ 个条件), 但是至多 $5$ 条件足以唯一确定一个三角形: 由三角形内角和为 $180^\circ$ 知, 如果已知两个角, 等价于三个角全为已知. 通过作图分析可知, 通常只需 $3$ 个条件即可唯一确定一个三角形. 三角形全等的判定定理可按边的数目分类. 以下用 A 表示“角” (angle), 用 S 表示“边” (side).
@@ -32,10 +19,10 @@
     
     <item>
       <title>1.3.1 数轴与平面直角坐标系</title>
-      <link>/docs/1-prerequisite/1-3-function/1-3-1-axis-coordinate/</link>
+      <link>/docs/prerequisite/ms-function/axis-coordinate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/1-prerequisite/1-3-function/1-3-1-axis-coordinate/</guid>
+      <guid>/docs/prerequisite/ms-function/axis-coordinate/</guid>
       <description>1.3.1 数轴与平面直角坐标系#数轴与平面直角坐标系用坐标分别刻画了直线 (一维空间) 上和平面 (二维空间) 内各点的位置. 用坐标表示点的位置后, 可方便地计算线段的长度、确定线段中点的位置, 或者计算平面图形 (如三角形, 四边形) 的面积等.
 数轴#数轴是规定了原点 (记为 $O$) 和正方向 (通常由左至右) 的直线, 其上的点与实数一一对应. 数轴上的点与实数对应时,
  点在原点的左右对应实数的正负 点到原点的距离对应实数的绝对值  例如, 若点 $A$ 在原点左侧, 且到原点的距离为 $2$, 则点 $A$ 表示实数 $-2$; 实数 $\sqrt3$ 对应的点在原点右侧, 且到原点的距离为 $\sqrt2$.
@@ -44,21 +31,34 @@
     
     <item>
       <title>10.1.1 直线的倾斜角和斜率</title>
-      <link>/docs/10-line-circle/10-1-line/10-1-1-slope/</link>
+      <link>/docs/line-circle/10-1-line/10-1-1-slope/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/10-line-circle/10-1-line/10-1-1-slope/</guid>
+      <guid>/docs/line-circle/10-1-line/10-1-1-slope/</guid>
       <description>10.1.1 直线的倾斜角和斜率#在平面直角坐标系中, 点 $A(2,1)$, $B(3,2)$, 如何确定直线 $AB$ 的方程, 即如何得到直线 $AB$ 上任意点 $(x,y)$ 满足的等式?
 按初中数学的解法, 因为直线 $AB$ 可用一次函数 $y= kx+b$ 来描述, 所以将点 $A(2,1)$, $B(3,2)$ 代入, \[\left\{\!\!\begin{array}{l}1= 2k+b,\\2= 3k+b,\end{array}\right.\quad\text{解得}\quad\left\{\!\!\begin{array}{l}k= 1,\\b= -1,\end{array}\right.\]所求方程为 $y= x-1$.
 平面直角坐标系中的直线的斜率定义为其上两点间纵坐标与横坐标增量的比值. 具体地说, 设直线 $l$ 上有两点 $A(x_A,y_A)$,$B(x_B,y_B)$, 则 $l$ 的斜率 [k=\dfrac{y_A-y_B}{x_A-x_B}.] 从定义可知, 竖直的直线没有斜率 (或斜率为 $\infty$), 且斜率为正表示直线对应的函数单调增, 而斜率为负则表示直线对应的函数单调减. 直线的倾斜角定义为直线向上的方向与 $x$ 轴正向的夹角, 取值范围是 $[0^\circ,180^\circ)$. 设直线 $l$ 斜率为 $k$, 倾斜角为 $\alpha$, 则由正切和斜率定义可知 $k=\tan\alpha$.</description>
     </item>
     
     <item>
-      <title>1.1.2 一元二次方程的解法</title>
-      <link>/docs/1-prerequisite/1-1-algebra/1-1-2-quadratic-equation/</link>
+      <title>二次三项式的因式分解</title>
+      <link>/docs/prerequisite/ms-algebra/factorization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/1-prerequisite/1-1-algebra/1-1-2-quadratic-equation/</guid>
+      <guid>/docs/prerequisite/ms-algebra/factorization/</guid>
+      <description>1.1.1 二次三项式的因式分解#因式分解是将多项式写成两个或多个次数较低的多项式之积, 如 \[ x^2+3x+1= (x+1)(x+2). \] 因式分解时一般逆用多项式乘法公式. 这里简要回顾关于 $x$ 的整系数二次三项式 $ax^2+bx+c$ ($a\neq 0$) 的因式分解方法.
+对于二次三项式 $ax^2+bx+c$ ($a\neq 0$) 的因式分解, 常用方法是
+ “提”: 提公因式 “套”: 套公式 “十字”: 用十字相乘法  在进行因式分解时, 应先将公因式提出, 并使得系数为整数, 以简化计算. 然后尝试套用 (1) 平方差公式 \[a^2-b^2= (a+b)(a-b);\] (2) 完全平方公式 \[a^2\pm 2ab+b^2= (a\pm b)^2.\]
+如果无法使用上述公式, 则可考虑十字相乘法, 即利用公式 \[x^2+(a+b)x+ab= (x+a)(x+b).\] 使用该公式时, 一般先将常数项分解, 然后拼凑出一次项系数. 对于无法快速判断系数分解方式的二次三项式, 有时也考虑用配方法或求根法来进行因式分解.
+(1) 一般来说, 平方和 (即形如 $x^2+y^2$ 的式子) 是无法因式分解的. 如若不然, 可设 \[x^2+y^2= (x+ay)(x+by),\] 其中 $a$, $b$ 是待定常数.</description>
+    </item>
+    
+    <item>
+      <title>1.1.2 一元二次方程的解法</title>
+      <link>/docs/prerequisite/ms-algebra/quadratic-equation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/prerequisite/ms-algebra/quadratic-equation/</guid>
       <description>1.1.2 一元二次方程的解法#关于 $x$ 的一元二次方程 $ax^2+bx+c= 0$ ($a\neq 0$) 的解法通常有三种: 因式分解法、配方法、求根公式法. 较常用的是第一种和第三种.
 因式分解法#因式分解法是指将方程 $ax^2+bx+c= 0$ 化为 \[(Ax+B)(Cx+D)=0\] 的形式, 则 \[Ax+B=0\quad \text{或}\quad Cx+D=0,\] 再解这两个一次方程. 例如, 解方程 $x^2-2x-3=0$, 可先将方程化为 \[(x+1)(x-3)=0,\] 则 \[x+1=0\quad \text{或}\quad x-3=0,\] 解得 $x=-1$ 或 $3$.
 使用因式分解法时, 需要熟练掌握二次三项式因式分解 的常用方法.
@@ -68,10 +68,10 @@
     
     <item>
       <title>1.2.2 三角形</title>
-      <link>/docs/1-prerequisite/1-2-geometry/1-2-2-triangle/</link>
+      <link>/docs/prerequisite/ms-geometry/triangle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/1-prerequisite/1-2-geometry/1-2-2-triangle/</guid>
+      <guid>/docs/prerequisite/ms-geometry/triangle/</guid>
       <description>1.2.2 三角形#三角形其实也可称为三边形, 其边和角都有固定的约束条件. 特殊的三角形 (如等腰三角形, 直角三角形) 有更多的性质. 与三角形有关的特殊线有: 中线、中垂线、角平分线和高线, 常见的三角形的特殊点有: 重心、外心、内心和垂心.
 以下设在 $\triangle ABC$ 中, $\angle A$, $\angle B$, $\angle C$ 所对的边分别记为 $a$, $b$, $c$.
 两个约束条件#利用平行线的性质可以证明, 三角形的内角和为 $180^\circ$, 即 [\angle A+ \angle B+\angle C= 180^\cric.] 有时也省略符号“$\angle$”而将上述结论写为 $A+B+C=180^\circ$. 推广可知, $n$ 边形的内角和为 $(n-1)180^\circ$, 而外角和为 $360^\circ$ (与 $n$ 无关) (图待补).
@@ -81,10 +81,10 @@
     
     <item>
       <title>1.3.2 一次函数与反比例函数</title>
-      <link>/docs/1-prerequisite/1-3-function/1-3-2-linear-inverse/</link>
+      <link>/docs/prerequisite/ms-function/linear-inverse/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/1-prerequisite/1-3-function/1-3-2-linear-inverse/</guid>
+      <guid>/docs/prerequisite/ms-function/linear-inverse/</guid>
       <description>1.3.2 一次函数与反比例函数#函数用于表示两个变量 $x$ (自变量) 和 $y$ (因变量) 的关系, 从代数的角度得到解析式, 从几何的角度则得到图形. 从已知的函数解析式很容易得到对应的图形, 即由横坐标 $x$ 和解析式确定图形上点的纵坐标 $y$, 并绘出点 $(x,y)$. 反之, 若已知图形对应的函数类型, 也可以利用图形上的点的坐标确定对应的解析式. 例如, 常值函数 $y= C$ 的图形为平行于 $x$ 轴的直线 (图形上所有点的纵坐标均为 $C$), 而平行于 $x$ 轴的直线对应解析式 $y= C$.
 利用函数可以动态地分析问题和解决问题. 不同类型的函数有不同的性质, 一次函数与反比例函数是其中两类较简单的函数.
 一次函数#一次函数的特例为正比例函数, 即 $y=kx$ ($k\neq 0$). 通过描点绘图可知, 其图形为过原点的直线, 且当 $k&amp;gt;0$ 时, 直线过第一、三象限 (从左向右观察为上升); 当 $k&amp;lt;0$ 时, 直线过第二、四象限 (从左向右观察为下降).
@@ -93,19 +93,19 @@
     
     <item>
       <title>2.2 充要条件</title>
-      <link>/docs/2-set-logic/2-2-proposition-iff/</link>
+      <link>/docs/set-logic/2-2-proposition-iff/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/2-set-logic/2-2-proposition-iff/</guid>
+      <guid>/docs/set-logic/2-2-proposition-iff/</guid>
       <description>2.2 充要条件#这里是充要条件</description>
     </item>
     
     <item>
       <title>1.1.3 一元二次方程的韦达定理</title>
-      <link>/docs/1-prerequisite/1-1-algebra/1-1-3-veita-theorem/</link>
+      <link>/docs/prerequisite/ms-algebra/veita-theorem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/1-prerequisite/1-1-algebra/1-1-3-veita-theorem/</guid>
+      <guid>/docs/prerequisite/ms-algebra/veita-theorem/</guid>
       <description>1.1.3 一元二次方程的韦达定理#设关于 $x$ 的一元二次方程 \[ax^2+bx+c=0\quad (a\neq0)\]的两根为 $x_1$, $x_2$, 则该方程必可变形为 \[(x-x_1)(x-x_2)=0.\]将后者展开,\[x^2- (x_1+x_2)x+ x_1x_2=0,\]并将前者改写为 \[x^2+ \frac{b}a x+ \frac{c}{a}=0,\]对比可知\[\left\{\!\!\begin{array}{l}- (x_1+x_2)= \dfrac{b}a,\\x_1x_2= \dfrac{c}a,\end{array}\right.\ \text{即}\quad\left\{\!\!\begin{array}{l}x_1+x_2= -\dfrac{b}a,\\x_1x_2= \dfrac{c}a,\end{array}\right.\]上述结论称为韦达 (Veite, 法国数学家) 定理, 也称为根与系数的关系定理.
 也可以直接用 求根公式 来验证上述结论: 由 \[x_1= \frac{-b+\sqrt{b^2-4ac}}{2a},\quad x_2= \frac{-b-\sqrt{b^2-4ac}}{2a}\] 直接计算可得一元二次方程的韦达定理.
 需要注意的是, 韦达定理中无需假设方程的根为实根, 也就是无论方程是否有实根, 韦达定理都成立. 例如, 二次方程 $x^2+x+1=0$ 的判别式 $\Delta=-3必须额外写出 $\Delta\geqslant 0$. 后续学圆锥曲线时, 基本的解题方法均是利用韦达定理结合判别式, 再适当对求解的表达式变形.
@@ -114,10 +114,10 @@
     
     <item>
       <title>1.2.3 四边形</title>
-      <link>/docs/1-prerequisite/1-2-geometry/1-2-3-quadrilateral/</link>
+      <link>/docs/prerequisite/ms-geometry/quadrilateral/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/1-prerequisite/1-2-geometry/1-2-3-quadrilateral/</guid>
+      <guid>/docs/prerequisite/ms-geometry/quadrilateral/</guid>
       <description>1.2.3 四边形#四边形也可称为四角形, 内角和为 $360^\circ$. 由两点之间线段最短可知, 四边形的三边之和大于第四边. 通常考虑平行四边形 (含特殊的平行四边形, 如矩形、菱形和正方形) 和梯形的性质.
 平行四边形#平行四边形是两组对边分别平行的四边形. 对平行四边形 $ABCD$, 连接对角线 $AC$ 可将平行四边形分为 $\triangle ABC$ 和 $\triangle CDA$, 且有 $\triangle ABC\cong \triangle CDA$, 所以 $AB= CD$, $AD= BC$, 即平行四边形的两组对边分别相等. 再连接对角线 $BD$, 并设其与 $AC$ 交于点 $O$, 则 $\triangle AOB\cong \triangle COD$, 即平行四边形的对角线互相平分. 所以平行四边形是中心对称图形, 其对称中心为对角线的交点, 即将平行四边形 $ABCD$ 绕点 $O$ 旋转 $180^\circ$ 后, 得到的图形与原四边形重合.
 平行四边形的判定方法一般有如下四种:
@@ -126,10 +126,10 @@
     
     <item>
       <title>1.3.3 二次函数</title>
-      <link>/docs/1-prerequisite/1-3-function/1-3-3-quadratic/</link>
+      <link>/docs/prerequisite/ms-function/quadratic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/1-prerequisite/1-3-function/1-3-3-quadratic/</guid>
+      <guid>/docs/prerequisite/ms-function/quadratic/</guid>
       <description>1.3.3 二次函数#二次函数的图形是对称图形, 能取到最值, 且与二次方程、二次不等式都有联系.
 二次函数的定义与图形#形如 $y= ax^2+bx+c$ ($a\neq 0$) 的函数称为二次函数, 该解析式也成为二次函数的一般式. 最简单的二次函数是 $y= x^2$, 通过描点画图可知, 其图形为抛物线, 且顶点为原点, 对称轴为 $y$ 轴, 先减后增 (开口向上). 而二次函数 $y= ax^2$ ($a\neq 0$) 的图形与 $y= x^2$ 的图形类似, 且
  当 $|a|&amp;gt;1$ 时, 开口减小; 当 $|a|&amp;lt;1$ 时, 开口减小 当 $a&amp;gt;0$ 时, 开口向上; 当 $a&amp;lt;0$ 时, 开口向下  对二次函数 $y= ax^2+k$ ($a\neq 0$), 可知其图形由 $y= ax^2$ 上、下平移得到: 当 $k&amp;gt;0$ 时, 将后者的图形向上平移 $k$ 个单位长度; 当 $k&amp;lt;0$ 时, 则向下平移 $|k|$ 个单位长度.</description>
@@ -137,10 +137,10 @@
     
     <item>
       <title>1.2.4 圆</title>
-      <link>/docs/1-prerequisite/1-2-geometry/1-2-4-circle/</link>
+      <link>/docs/prerequisite/ms-geometry/circle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/1-prerequisite/1-2-geometry/1-2-4-circle/</guid>
+      <guid>/docs/prerequisite/ms-geometry/circle/</guid>
       <description>1.2.4 圆#圆是封闭的平面图形, 具有轴对称性和中心对称性.
 圆的定义#圆是到定点的距离等于定长的所有点的全体, 定点称为圆心, 定长称为半径. 连接圆心和圆上任一点得到圆的半径, 过圆心的直线被圆所截得的线段为圆的直径, 所以直径为半径的两倍.
 设圆 $C$ 的半径为 $r$, 另取一点 $P$, 则点 $P$ 与圆 $C$ 的位置关系有三种:
@@ -150,10 +150,10 @@
     
     <item>
       <title>1.3.4 函数图形的变换</title>
-      <link>/docs/1-prerequisite/1-3-function/1-3-4-graph-tranform/</link>
+      <link>/docs/prerequisite/ms-function/graph-tranform/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/1-prerequisite/1-3-function/1-3-4-graph-tranform/</guid>
+      <guid>/docs/prerequisite/ms-function/graph-tranform/</guid>
       <description>1.3.4 函数图形的变换#研究函数图形的变换时, 应考虑的是其上点坐标的变换, 并利用原函数图形解析式表示新函数图形解析式.
 平移#一次函数 $y=x$ 的图形是第一、三象限的角平分线, 将其向右平移 $1$ 个单位长度后, 新图形过点 $(1,0)$ 和 $(0,-1)$, 所以得到 $y=x-1$ 的图形. 同样分析可知, 将 $y=x$ 的图形向左平移 $1$ 个单位长度后, 得到 $y=x+1$ 的图形.
 二次函数 $y=x^2$ 的图形是开口向上、顶点为原点且对称轴为 $y$ 轴的抛物线, 将其向右平移 $1$ 个单位长度后, 新图形仍为开口向上的抛物线, 且顶点为 $(1,0)$、对称轴为直线 $x=1$, 所以解析式为 $y=(x-1)^2$. 类似地, 将二次函数 $y=x^2$ 的图形其向左平移 $1$ 个单位长度后, 得到 $y=(x+1)^2$ 的图形.
@@ -162,10 +162,10 @@
     
     <item>
       <title>1.2.5 平面图形的面积</title>
-      <link>/docs/1-prerequisite/1-2-geometry/1-2-5-area/</link>
+      <link>/docs/prerequisite/ms-geometry/area/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/1-prerequisite/1-2-geometry/1-2-5-area/</guid>
+      <guid>/docs/prerequisite/ms-geometry/area/</guid>
       <description>1.2.5 平面图形的面积#平面图形的面积用于描述其边界所围区域的大小. 通常考虑三角形、四边形、圆、扇形的面积. 以下按推理顺序介绍各种图形面积的计算公式.
 四边形的面积#正方形的面积定义为边长的平方, 即边长为 $a$ 的正方形的面积为 $a^2$. 矩形可以分解为多个正方形之和, 所以其面积为两个邻边的乘积, 一般记为“长乘宽”, 即长为 $a$, 宽为 $b$ 的矩形的面积为 $ab$. 平行四边形可以用割补法拼接为矩形, 故面积为底乘高, 即底为 $a$, 高为 $h$ 的平行四边形的面积为 $ah$. 梯形也可以拼接为平行四边形 (或矩形), 面积为两底和乘高的一半, 即底为 $a$, $b$, 高为 $h$ 的梯形的面积为 $\dfrac12(a+b)h$.
 三角形的面积#三角形可以补成平行四边形 (或矩形), 面积为底乘高的一半, 即底为 $a$, 高为 $h$ 的三角形的面积为 $\dfrac12 ah$. 三角形也可以视为退化的梯形 (上底为 $0$), 从而由梯形的面积公式也可得三角形的面积公式.

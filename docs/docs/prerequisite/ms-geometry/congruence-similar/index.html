@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="1.2.1 平面图形的全等与相似#判断两个平面图形的形状和大小是否一致时, 需要用到全等和相似的性质及判定. 这里所指的图形包括但不限于: 线段, 角, 三角形, 四边形, 圆等.
+两个图形的全等#平面图形 $G$ 与 $G&#39;$ 全等是指它们的形状和大小完全一致, 严谨一点的说法是, 这两个图形经过平移、旋转、翻折后可以完全重合 (因此, 对应的边和角相等). 因此, 任意两条射线是全等的, 任意两个相同大小的角也是全等的. 初中数学里通常考虑的是两个三角形的全等关系, 而判断两个三角形是否全等, 其实就是判断需要多少条件才能唯一确定一个三角形 (的形状和大小).
+虽然三角形中有三条边和三个角 (共 $6$ 个条件), 但是至多 $5$ 条件足以唯一确定一个三角形: 由三角形内角和为 $180^\circ$ 知, 如果已知两个角, 等价于三个角全为已知. 通过作图分析可知, 通常只需 $3$ 个条件即可唯一确定一个三角形. 三角形全等的判定定理可按边的数目分类. 以下用 A 表示“角” (angle), 用 S 表示“边” (side).
+ 边边边 (SSS), 即三边对应相等的两个三角形全等 边角边 (SAS), 即两边和夹角对应相等的两个三角形全等 角边角 (ASA), 即两角和夹边对应相等的两个三角形全等 角角边 (AAS), 即两角和邻边对应相等的两个三角形全等  最后两个判定定理等价 (都是已知三角和一边).">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="1.2.1 平面图形的全等与相似" />
+<meta property="og:description" content="1.2.1 平面图形的全等与相似#判断两个平面图形的形状和大小是否一致时, 需要用到全等和相似的性质及判定. 这里所指的图形包括但不限于: 线段, 角, 三角形, 四边形, 圆等.
+两个图形的全等#平面图形 $G$ 与 $G&#39;$ 全等是指它们的形状和大小完全一致, 严谨一点的说法是, 这两个图形经过平移、旋转、翻折后可以完全重合 (因此, 对应的边和角相等). 因此, 任意两条射线是全等的, 任意两个相同大小的角也是全等的. 初中数学里通常考虑的是两个三角形的全等关系, 而判断两个三角形是否全等, 其实就是判断需要多少条件才能唯一确定一个三角形 (的形状和大小).
+虽然三角形中有三条边和三个角 (共 $6$ 个条件), 但是至多 $5$ 条件足以唯一确定一个三角形: 由三角形内角和为 $180^\circ$ 知, 如果已知两个角, 等价于三个角全为已知. 通过作图分析可知, 通常只需 $3$ 个条件即可唯一确定一个三角形. 三角形全等的判定定理可按边的数目分类. 以下用 A 表示“角” (angle), 用 S 表示“边” (side).
+ 边边边 (SSS), 即三边对应相等的两个三角形全等 边角边 (SAS), 即两边和夹角对应相等的两个三角形全等 角边角 (ASA), 即两角和夹边对应相等的两个三角形全等 角角边 (AAS), 即两角和邻边对应相等的两个三角形全等  最后两个判定定理等价 (都是已知三角和一边)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/docs/prerequisite/ms-geometry/congruence-similar/" /><meta property="article:section" content="docs" />
+
+
+
+<title>1.2.1 平面图形的全等与相似 | 高中数学资料</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.7aa420f0d94fe6a0f12dd287ce862ffd1cee4a3bc3955ec93ce1725f6b2132b3.css" >
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/zh.search.min.584bae69a003d97b5deacb0d6ce80e4cba1404eec58e8a7e0b08f5693800a2ba.js" ></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  <link rel="stylesheet" href='/katex/katex.min.css' crossorigin="anonymous">
+
+
+<script defer src='/katex/katex.min.js' crossorigin="anonymous"></script>
+
+
+<script defer src='/katex/auto-render.min.js' 
+    onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        renderMathInElement(document.body, {
+            
+            
+            delimiters: [
+                { left: '$$', right: '$$', display: true },
+                { left: '$', right: '$', display: false },
+                { left: '\\(', right: '\\)', display: false },
+                { left: '\\[', right: '\\]', display: true }
+            ],
+            
+            throwOnError: false
+        });
+    });
+</script>
+
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>高中数学资料</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="搜索" aria-label="搜索" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7fbb26c6156d78d59d607292b53948a4" class="toggle" checked />
+    <label for="section-7fbb26c6156d78d59d607292b53948a4" class="flex justify-between">
+      <a href="/docs/prerequisite/" class="">预备知识</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1e2f9b8b873223fe63fc7221375c0eb0" class="toggle"  />
+    <label for="section-1e2f9b8b873223fe63fc7221375c0eb0" class="flex justify-between">
+      <a href="/docs/prerequisite/ms-algebra/" class="">初中代数提要</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-algebra/factorization/" class="">二次三项式的因式分解</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-algebra/quadratic-equation/" class="">1.1.2 一元二次方程的解法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-algebra/veita-theorem/" class="">1.1.3 一元二次方程的韦达定理</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c1c4f99569969342f46afcb379e41254" class="toggle" checked />
+    <label for="section-c1c4f99569969342f46afcb379e41254" class="flex justify-between">
+      <a href="/docs/prerequisite/ms-geometry/" class="">1.2 初中几何提要</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/congruence-similar/" class=" active">1.2.1 平面图形的全等与相似</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/triangle/" class="">1.2.2 三角形</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/quadrilateral/" class="">1.2.3 四边形</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/circle/" class="">1.2.4 圆</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/area/" class="">1.2.5 平面图形的面积</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-53227ed5b540c99051432d70e3c9c4da" class="toggle"  />
+    <label for="section-53227ed5b540c99051432d70e3c9c4da" class="flex justify-between">
+      <a href="/docs/prerequisite/ms-function/" class="">1.3 初中函数提要</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-function/axis-coordinate/" class="">1.3.1 数轴与平面直角坐标系</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-function/linear-inverse/" class="">1.3.2 一次函数与反比例函数</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-function/quadratic/" class="">1.3.3 二次函数</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-function/graph-tranform/" class="">1.3.4 函数图形的变换</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>1.2.1 平面图形的全等与相似</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#121-平面图形的全等与相似">1.2.1 平面图形的全等与相似</a>
+      <ul>
+        <li><a href="#两个图形的全等">两个图形的全等</a></li>
+        <li><a href="#两个图形的相似">两个图形的相似</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="121-平面图形的全等与相似">
+  1.2.1 平面图形的全等与相似
+  <a class="anchor" href="#121-%e5%b9%b3%e9%9d%a2%e5%9b%be%e5%bd%a2%e7%9a%84%e5%85%a8%e7%ad%89%e4%b8%8e%e7%9b%b8%e4%bc%bc">#</a>
+</h1>
+<p>判断两个平面图形的形状和大小是否一致时, 需要用到全等和相似的性质及判定. 这里所指的图形包括但不限于: 线段, 角, 三角形, 四边形, 圆等.</p>
+<h2 id="两个图形的全等">
+  两个图形的全等
+  <a class="anchor" href="#%e4%b8%a4%e4%b8%aa%e5%9b%be%e5%bd%a2%e7%9a%84%e5%85%a8%e7%ad%89">#</a>
+</h2>
+<p>平面图形 $G$ 与 $G'$ 全等是指它们的形状和大小完全一致, 严谨一点的说法是, 这两个图形经过平移、旋转、翻折后可以完全重合 (因此, 对应的边和角相等). 因此, 任意两条射线是全等的, 任意两个相同大小的角也是全等的. 初中数学里通常考虑的是两个三角形的全等关系, 而判断两个三角形是否全等, 其实就是判断需要多少条件才能唯一确定一个三角形 (的形状和大小).</p>
+<!-- 设 $\triangle ABC$ 中, $\angle A$, $\angle B$, $\angle C$ 所对的边分别记为 $a$, $b$, $c$.  -->
+<p>虽然三角形中有三条边和三个角 (共 $6$ 个条件), 但是至多 $5$ 条件足以唯一确定一个三角形: 由三角形内角和为 $180^\circ$ 知, 如果已知两个角, 等价于三个角全为已知. 通过作图分析可知, 通常只需 $3$ 个条件即可唯一确定一个三角形. 三角形全等的判定定理可按边的数目分类. 以下用 A 表示“角” (angle), 用 S 表示“边” (side).</p>
+<ul>
+<li>边边边 (SSS), 即三边对应相等的两个三角形全等</li>
+<li>边角边 (SAS), 即两边和夹角对应相等的两个三角形全等</li>
+<li>角边角 (ASA), 即两角和夹边对应相等的两个三角形全等</li>
+<li>角角边 (AAS), 即两角和邻边对应相等的两个三角形全等</li>
+</ul>
+<p>最后两个判定定理等价 (都是已知三角和一边).</p>
+<myremark>
+    <p>没有“边边角”判定定理. 例如 $\triangle ABC$ 三边为 $1$, $\sqrt3$, $2$, 三角为 $30^\circ$, $60^\circ$, $90^\circ$, 而 $\triangle A'B'C'$ 三边为 $1$, $1$, $\sqrt3$, 三角为 $30^\circ$, $30^\circ$, $120^\circ$, 这两个三角形符合“边边角” ($1$, $\sqrt3$, $30^\circ$) 的条件, 但明显不全等 (图待补).</p>
+    <p>对于直角三角形, 利用“斜边与一直角边分别相等”也可判定全等. 由勾股定理可知, 此时等价于使用“边边边” (而非表面上的“边边角”).</p>
+</myremark>
+<h2 id="两个图形的相似">
+  两个图形的相似
+  <a class="anchor" href="#%e4%b8%a4%e4%b8%aa%e5%9b%be%e5%bd%a2%e7%9a%84%e7%9b%b8%e4%bc%bc">#</a>
+</h2>
+<p>平面图形 $G$ 与 $G'$ 相似是指它们的形状完全一致, 即这两个图形经过平移、旋转、翻折、放缩后可以完全重合 (因此, 对应角相等, 对应边成比例). 因此, 全等是相似的特例, 任意两个正方形相似, 任意两个圆也相似. 三角形相似的判定定理可以类比全等的判定定理得到, 只需将“对应边相等”改为“对应边成比例”.</p>
+<ul>
+<li>边边边 (SSS), 即三边对应成比例的两个三角形相似</li>
+<li>边角边 (SAS), 即两边对应成比例和夹角对应相等的两个三角形相似</li>
+<li>角角 (AA), 即两角对应相等的两个三角形相似</li>
+</ul>
+<p>判断三角形相似时, 常找“A 字形”相似和“8 字形”相似. 如图 (待补), $BC\parallel DE$, 则 $\triangle ABC\sim \triangle ADE$.</p>
+<p>与三角形相似有关的常用定理是中位线定理: 三角形的中位线平行对应边且等于对应边的一半 (图待补). 该定理也可以利用全等来证明.</p>
+</article>
+ 
+          
+    
+    <div class="docs-prevnext">
+    
+        <a class="docs-prev button" href="../../1-2-geometry">
+          <span class="arrow-prev">← </span><span>1.2 初中几何提要</span></a>
+      
+      
+        <a class="docs-next button" href="../1-2-2-triangle">
+          <span>1.2.2 三角形</span><span class="arrow-next"> →</span></a>
+      
+      </div>
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#121-平面图形的全等与相似">1.2.1 平面图形的全等与相似</a>
+      <ul>
+        <li><a href="#两个图形的全等">两个图形的全等</a></li>
+        <li><a href="#两个图形的相似">两个图形的相似</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

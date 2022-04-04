@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1.3 初中函数提要 on 高中数学资料</title>
+    <link>/docs/prerequisite/ms-function/</link>
+    <description>Recent content in 1.3 初中函数提要 on 高中数学资料</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/docs/prerequisite/ms-function/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1.3.1 数轴与平面直角坐标系</title>
+      <link>/docs/prerequisite/ms-function/axis-coordinate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/prerequisite/ms-function/axis-coordinate/</guid>
+      <description>1.3.1 数轴与平面直角坐标系#数轴与平面直角坐标系用坐标分别刻画了直线 (一维空间) 上和平面 (二维空间) 内各点的位置. 用坐标表示点的位置后, 可方便地计算线段的长度、确定线段中点的位置, 或者计算平面图形 (如三角形, 四边形) 的面积等.
+数轴#数轴是规定了原点 (记为 $O$) 和正方向 (通常由左至右) 的直线, 其上的点与实数一一对应. 数轴上的点与实数对应时,
+ 点在原点的左右对应实数的正负 点到原点的距离对应实数的绝对值  例如, 若点 $A$ 在原点左侧, 且到原点的距离为 $2$, 则点 $A$ 表示实数 $-2$; 实数 $\sqrt3$ 对应的点在原点右侧, 且到原点的距离为 $\sqrt2$.
+若点 $A$ 与实数 $x_1$ 对应, 则称 $x_1$ 为点 $A$ 的坐标, 可记为 $A(x_1)$ (或将点 $A$ 称为点 $x_1$). 对于点 $A(x_1)$ 和 $B(x_2)$, 若 $x_1&amp;gt; x_2$, 则可验证 $AB= x_1-x_2$; 而若 $x_1&amp;lt; x_2$, 则 $AB= x_2-x_1$ (即总是“大数减小数”), 因此可得 $A(x_1)$, $B(x_2)$ 两点间距离公式: \[AB= |x_1-x_2|.</description>
+    </item>
+    
+    <item>
+      <title>1.3.2 一次函数与反比例函数</title>
+      <link>/docs/prerequisite/ms-function/linear-inverse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/prerequisite/ms-function/linear-inverse/</guid>
+      <description>1.3.2 一次函数与反比例函数#函数用于表示两个变量 $x$ (自变量) 和 $y$ (因变量) 的关系, 从代数的角度得到解析式, 从几何的角度则得到图形. 从已知的函数解析式很容易得到对应的图形, 即由横坐标 $x$ 和解析式确定图形上点的纵坐标 $y$, 并绘出点 $(x,y)$. 反之, 若已知图形对应的函数类型, 也可以利用图形上的点的坐标确定对应的解析式. 例如, 常值函数 $y= C$ 的图形为平行于 $x$ 轴的直线 (图形上所有点的纵坐标均为 $C$), 而平行于 $x$ 轴的直线对应解析式 $y= C$.
+利用函数可以动态地分析问题和解决问题. 不同类型的函数有不同的性质, 一次函数与反比例函数是其中两类较简单的函数.
+一次函数#一次函数的特例为正比例函数, 即 $y=kx$ ($k\neq 0$). 通过描点绘图可知, 其图形为过原点的直线, 且当 $k&amp;gt;0$ 时, 直线过第一、三象限 (从左向右观察为上升); 当 $k&amp;lt;0$ 时, 直线过第二、四象限 (从左向右观察为下降).
+函数 $y=x$ 的图形除了过原点和第一、三象限, 还与 $x$ 轴、$y$ 轴夹角均为 $45^\circ$, 通常也称为第一、三象限的角平分线. 类似地, 函数 $y=-x$ 的图形称为第二、四象限的角平分线.</description>
+    </item>
+    
+    <item>
+      <title>1.3.3 二次函数</title>
+      <link>/docs/prerequisite/ms-function/quadratic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/prerequisite/ms-function/quadratic/</guid>
+      <description>1.3.3 二次函数#二次函数的图形是对称图形, 能取到最值, 且与二次方程、二次不等式都有联系.
+二次函数的定义与图形#形如 $y= ax^2+bx+c$ ($a\neq 0$) 的函数称为二次函数, 该解析式也成为二次函数的一般式. 最简单的二次函数是 $y= x^2$, 通过描点画图可知, 其图形为抛物线, 且顶点为原点, 对称轴为 $y$ 轴, 先减后增 (开口向上). 而二次函数 $y= ax^2$ ($a\neq 0$) 的图形与 $y= x^2$ 的图形类似, 且
+ 当 $|a|&amp;gt;1$ 时, 开口减小; 当 $|a|&amp;lt;1$ 时, 开口减小 当 $a&amp;gt;0$ 时, 开口向上; 当 $a&amp;lt;0$ 时, 开口向下  对二次函数 $y= ax^2+k$ ($a\neq 0$), 可知其图形由 $y= ax^2$ 上、下平移得到: 当 $k&amp;gt;0$ 时, 将后者的图形向上平移 $k$ 个单位长度; 当 $k&amp;lt;0$ 时, 则向下平移 $|k|$ 个单位长度.</description>
+    </item>
+    
+    <item>
+      <title>1.3.4 函数图形的变换</title>
+      <link>/docs/prerequisite/ms-function/graph-tranform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/prerequisite/ms-function/graph-tranform/</guid>
+      <description>1.3.4 函数图形的变换#研究函数图形的变换时, 应考虑的是其上点坐标的变换, 并利用原函数图形解析式表示新函数图形解析式.
+平移#一次函数 $y=x$ 的图形是第一、三象限的角平分线, 将其向右平移 $1$ 个单位长度后, 新图形过点 $(1,0)$ 和 $(0,-1)$, 所以得到 $y=x-1$ 的图形. 同样分析可知, 将 $y=x$ 的图形向左平移 $1$ 个单位长度后, 得到 $y=x+1$ 的图形.
+二次函数 $y=x^2$ 的图形是开口向上、顶点为原点且对称轴为 $y$ 轴的抛物线, 将其向右平移 $1$ 个单位长度后, 新图形仍为开口向上的抛物线, 且顶点为 $(1,0)$、对称轴为直线 $x=1$, 所以解析式为 $y=(x-1)^2$. 类似地, 将二次函数 $y=x^2$ 的图形其向左平移 $1$ 个单位长度后, 得到 $y=(x+1)^2$ 的图形.
+设 $a&amp;gt;0$, 从上面两个例子可知, 将函数图形向右平移 $a$ 个单位长度, 就是将解析式中的 $x$ 换成 $x-a$; 将函数图形向左平移 $a$ 个单位长度, 就是将解析式中的 $x$ 换成 $x+a$.</description>
+    </item>
+    
+  </channel>
+</rss>

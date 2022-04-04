@@ -2,69 +2,69 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/docs/1-prerequisite/</loc>
+    <loc>/docs/prerequisite/ms-geometry/congruence-similar/</loc>
   </url><url>
-    <loc>/docs/1-prerequisite/1-1-algebra/</loc>
+    <loc>/docs/prerequisite/ms-function/axis-coordinate/</loc>
   </url><url>
-    <loc>/docs/1-prerequisite/1-1-algebra/1-1-1-factoring/</loc>
+    <loc>/docs/line-circle/10-1-line/</loc>
   </url><url>
-    <loc>/docs/1-prerequisite/1-2-geometry/1-2-1-congruence-similar/</loc>
+    <loc>/docs/line-circle/10-1-line/10-1-1-slope/</loc>
   </url><url>
-    <loc>/docs/1-prerequisite/1-3-function/1-3-1-axis-coordinate/</loc>
+    <loc>/docs/set-logic/2-1-set-def/</loc>
   </url><url>
-    <loc>/docs/10-line-circle/10-1-line/</loc>
+    <loc>/docs/prerequisite/ms-algebra/factorization/</loc>
   </url><url>
-    <loc>/docs/10-line-circle/10-1-line/10-1-1-slope/</loc>
+    <loc>/docs/prerequisite/ms-algebra/</loc>
   </url><url>
-    <loc>/docs/2-set-logic/2-1-set-def/</loc>
+    <loc>/docs/prerequisite/</loc>
   </url><url>
-    <loc>/docs/1-prerequisite/1-1-algebra/1-1-2-quadratic-equation/</loc>
+    <loc>/docs/prerequisite/ms-algebra/quadratic-equation/</loc>
   </url><url>
-    <loc>/docs/1-prerequisite/1-2-geometry/</loc>
+    <loc>/docs/prerequisite/ms-geometry/</loc>
   </url><url>
-    <loc>/docs/1-prerequisite/1-2-geometry/1-2-2-triangle/</loc>
+    <loc>/docs/prerequisite/ms-geometry/triangle/</loc>
   </url><url>
-    <loc>/docs/1-prerequisite/1-3-function/1-3-2-linear-inverse/</loc>
+    <loc>/docs/prerequisite/ms-function/linear-inverse/</loc>
   </url><url>
-    <loc>/docs/2-set-logic/</loc>
+    <loc>/docs/set-logic/</loc>
   </url><url>
-    <loc>/docs/2-set-logic/2-2-proposition-iff/</loc>
+    <loc>/docs/set-logic/2-2-proposition-iff/</loc>
   </url><url>
-    <loc>/docs/1-prerequisite/1-1-algebra/1-1-3-veita-theorem/</loc>
+    <loc>/docs/prerequisite/ms-algebra/veita-theorem/</loc>
   </url><url>
-    <loc>/docs/1-prerequisite/1-2-geometry/1-2-3-quadrilateral/</loc>
+    <loc>/docs/prerequisite/ms-geometry/quadrilateral/</loc>
   </url><url>
-    <loc>/docs/1-prerequisite/1-3-function/</loc>
+    <loc>/docs/prerequisite/ms-function/</loc>
   </url><url>
-    <loc>/docs/1-prerequisite/1-3-function/1-3-3-quadratic/</loc>
+    <loc>/docs/prerequisite/ms-function/quadratic/</loc>
   </url><url>
-    <loc>/docs/3-pow-exp-log/</loc>
+    <loc>/docs/pow-exp-log/</loc>
   </url><url>
-    <loc>/docs/1-prerequisite/1-2-geometry/1-2-4-circle/</loc>
+    <loc>/docs/prerequisite/ms-geometry/circle/</loc>
   </url><url>
-    <loc>/docs/1-prerequisite/1-3-function/1-3-4-graph-tranform/</loc>
+    <loc>/docs/prerequisite/ms-function/graph-tranform/</loc>
   </url><url>
-    <loc>/docs/4-derivative/</loc>
+    <loc>/docs/derivative/</loc>
   </url><url>
-    <loc>/docs/1-prerequisite/1-2-geometry/1-2-5-area/</loc>
+    <loc>/docs/prerequisite/ms-geometry/area/</loc>
   </url><url>
-    <loc>/docs/5-trigonometry/</loc>
+    <loc>/docs/trigonometry/</loc>
   </url><url>
-    <loc>/docs/6-vector-complex/</loc>
+    <loc>/docs/vector-complex/</loc>
   </url><url>
-    <loc>/docs/7-sequence/</loc>
+    <loc>/docs/sequence/</loc>
   </url><url>
-    <loc>/docs/8-inequality/</loc>
+    <loc>/docs/inequality/</loc>
   </url><url>
-    <loc>/docs/9-solid-geometry/</loc>
+    <loc>/docs/solid-geometry/</loc>
   </url><url>
-    <loc>/docs/10-line-circle/</loc>
+    <loc>/docs/line-circle/</loc>
   </url><url>
-    <loc>/docs/11-conic-curves/</loc>
+    <loc>/docs/conic-curves/</loc>
   </url><url>
-    <loc>/docs/12-statistics-probability/</loc>
+    <loc>/docs/statistics-probability/</loc>
   </url><url>
-    <loc>/docs/13-extras/</loc>
+    <loc>/docs/extras/</loc>
   </url><url>
     <loc>/categories/</loc>
   </url><url>

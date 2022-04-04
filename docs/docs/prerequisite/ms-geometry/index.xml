@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1.2 初中几何提要 on 高中数学资料</title>
+    <link>/docs/prerequisite/ms-geometry/</link>
+    <description>Recent content in 1.2 初中几何提要 on 高中数学资料</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/docs/prerequisite/ms-geometry/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1.2.1 平面图形的全等与相似</title>
+      <link>/docs/prerequisite/ms-geometry/congruence-similar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/prerequisite/ms-geometry/congruence-similar/</guid>
+      <description>1.2.1 平面图形的全等与相似#判断两个平面图形的形状和大小是否一致时, 需要用到全等和相似的性质及判定. 这里所指的图形包括但不限于: 线段, 角, 三角形, 四边形, 圆等.
+两个图形的全等#平面图形 $G$ 与 $G&#39;$ 全等是指它们的形状和大小完全一致, 严谨一点的说法是, 这两个图形经过平移、旋转、翻折后可以完全重合 (因此, 对应的边和角相等). 因此, 任意两条射线是全等的, 任意两个相同大小的角也是全等的. 初中数学里通常考虑的是两个三角形的全等关系, 而判断两个三角形是否全等, 其实就是判断需要多少条件才能唯一确定一个三角形 (的形状和大小).
+虽然三角形中有三条边和三个角 (共 $6$ 个条件), 但是至多 $5$ 条件足以唯一确定一个三角形: 由三角形内角和为 $180^\circ$ 知, 如果已知两个角, 等价于三个角全为已知. 通过作图分析可知, 通常只需 $3$ 个条件即可唯一确定一个三角形. 三角形全等的判定定理可按边的数目分类. 以下用 A 表示“角” (angle), 用 S 表示“边” (side).
+ 边边边 (SSS), 即三边对应相等的两个三角形全等 边角边 (SAS), 即两边和夹角对应相等的两个三角形全等 角边角 (ASA), 即两角和夹边对应相等的两个三角形全等 角角边 (AAS), 即两角和邻边对应相等的两个三角形全等  最后两个判定定理等价 (都是已知三角和一边).</description>
+    </item>
+    
+    <item>
+      <title>1.2.2 三角形</title>
+      <link>/docs/prerequisite/ms-geometry/triangle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/prerequisite/ms-geometry/triangle/</guid>
+      <description>1.2.2 三角形#三角形其实也可称为三边形, 其边和角都有固定的约束条件. 特殊的三角形 (如等腰三角形, 直角三角形) 有更多的性质. 与三角形有关的特殊线有: 中线、中垂线、角平分线和高线, 常见的三角形的特殊点有: 重心、外心、内心和垂心.
+以下设在 $\triangle ABC$ 中, $\angle A$, $\angle B$, $\angle C$ 所对的边分别记为 $a$, $b$, $c$.
+两个约束条件#利用平行线的性质可以证明, 三角形的内角和为 $180^\circ$, 即 [\angle A+ \angle B+\angle C= 180^\cric.] 有时也省略符号“$\angle$”而将上述结论写为 $A+B+C=180^\circ$. 推广可知, $n$ 边形的内角和为 $(n-1)180^\circ$, 而外角和为 $360^\circ$ (与 $n$ 无关) (图待补).
+利用“两点之间线段最短”可以说明, 三角形的任意两边之和大于第三边, 即 (只列其一) [a+b&amp;gt;c,\quad\text{或}\quad a&amp;gt;b-c,] 因此任意两边之差小于第三边. 也可以将这两个结论整合起来, 得到 [|b-c|&amp;lt; a&amp;lt; b+c.] 上述三个不等式都可称为“三角形不等式”.
+等腰三角形#等腰三角形中有两边相等, 这两边均称为“腰”, 第三边称为“底” (图待补).</description>
+    </item>
+    
+    <item>
+      <title>1.2.3 四边形</title>
+      <link>/docs/prerequisite/ms-geometry/quadrilateral/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/prerequisite/ms-geometry/quadrilateral/</guid>
+      <description>1.2.3 四边形#四边形也可称为四角形, 内角和为 $360^\circ$. 由两点之间线段最短可知, 四边形的三边之和大于第四边. 通常考虑平行四边形 (含特殊的平行四边形, 如矩形、菱形和正方形) 和梯形的性质.
+平行四边形#平行四边形是两组对边分别平行的四边形. 对平行四边形 $ABCD$, 连接对角线 $AC$ 可将平行四边形分为 $\triangle ABC$ 和 $\triangle CDA$, 且有 $\triangle ABC\cong \triangle CDA$, 所以 $AB= CD$, $AD= BC$, 即平行四边形的两组对边分别相等. 再连接对角线 $BD$, 并设其与 $AC$ 交于点 $O$, 则 $\triangle AOB\cong \triangle COD$, 即平行四边形的对角线互相平分. 所以平行四边形是中心对称图形, 其对称中心为对角线的交点, 即将平行四边形 $ABCD$ 绕点 $O$ 旋转 $180^\circ$ 后, 得到的图形与原四边形重合.
+平行四边形的判定方法一般有如下四种:
+ 两组对边分别平行 (定义) 一组对边平行且相对 (常用) 两组对边分别相等 对角线互相平分  矩形、菱形和正方形#矩形 (长方形) 是有一个内角为 $90^\circ$ 的平行四边形, 由勾股定理可以证明, 其两条对角线相等.</description>
+    </item>
+    
+    <item>
+      <title>1.2.4 圆</title>
+      <link>/docs/prerequisite/ms-geometry/circle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/prerequisite/ms-geometry/circle/</guid>
+      <description>1.2.4 圆#圆是封闭的平面图形, 具有轴对称性和中心对称性.
+圆的定义#圆是到定点的距离等于定长的所有点的全体, 定点称为圆心, 定长称为半径. 连接圆心和圆上任一点得到圆的半径, 过圆心的直线被圆所截得的线段为圆的直径, 所以直径为半径的两倍.
+设圆 $C$ 的半径为 $r$, 另取一点 $P$, 则点 $P$ 与圆 $C$ 的位置关系有三种:
+ $CP&amp;lt; r\Leftrightarrow$ 点 $P$ 在圆内 $CP= r\Leftrightarrow$ 点 $P$ 在圆上 $CP&amp;gt; r\Leftrightarrow$ 点 $P$ 在圆外  圆的性质#同弧所对的圆心角是圆周角的两倍, 也即同弧所对的圆周角是圆心角的一半, 所以同弧所对的圆周角为定值. 特例: 直径所对的圆心角为平角 ($180^\circ$), 故其所对的圆周角为直角 ($90^\circ$).
+垂径定理: 设圆 $C$ 上有一弦 $AB$, 若取其中点 $M$ 并连接 $CM$, 则 $CM\perp AB$; 若作 $CM\perp AB$ 于 $M$, 则 $M$ 为 $AB$ 的中点.</description>
+    </item>
+    
+    <item>
+      <title>1.2.5 平面图形的面积</title>
+      <link>/docs/prerequisite/ms-geometry/area/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/prerequisite/ms-geometry/area/</guid>
+      <description>1.2.5 平面图形的面积#平面图形的面积用于描述其边界所围区域的大小. 通常考虑三角形、四边形、圆、扇形的面积. 以下按推理顺序介绍各种图形面积的计算公式.
+四边形的面积#正方形的面积定义为边长的平方, 即边长为 $a$ 的正方形的面积为 $a^2$. 矩形可以分解为多个正方形之和, 所以其面积为两个邻边的乘积, 一般记为“长乘宽”, 即长为 $a$, 宽为 $b$ 的矩形的面积为 $ab$. 平行四边形可以用割补法拼接为矩形, 故面积为底乘高, 即底为 $a$, 高为 $h$ 的平行四边形的面积为 $ah$. 梯形也可以拼接为平行四边形 (或矩形), 面积为两底和乘高的一半, 即底为 $a$, $b$, 高为 $h$ 的梯形的面积为 $\dfrac12(a+b)h$.
+三角形的面积#三角形可以补成平行四边形 (或矩形), 面积为底乘高的一半, 即底为 $a$, 高为 $h$ 的三角形的面积为 $\dfrac12 ah$. 三角形也可以视为退化的梯形 (上底为 $0$), 从而由梯形的面积公式也可得三角形的面积公式.
+一般的平面图形的面积公式, 都可以由三角形的面积公式推出. 如梯形可以沿一条对角线分割为两个三角形, 所以其面积为这两个三角形的面积之和. 而一般的四边形、五边形等, 均可先沿对角线分割成一些小三角形, 然后分别计算这些小三角形的面积, 最后求和.
+圆、扇形的面积#圆的面积可以利用三角形的面积公式推出.</description>
+    </item>
+    
+  </channel>
+</rss>
