@@ -3,26 +3,24 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="1.1.3 一元二次方程的韦达定理#设关于 $x$ 的一元二次方程 \[ax^2&#43;bx&#43;c=0\quad (a\neq0)\]的两根为 $x_1$, $x_2$, 则该方程必可变形为 \[(x-x_1)(x-x_2)=0.\]将后者展开,\[x^2- (x_1&#43;x_2)x&#43; x_1x_2=0,\]并将前者改写为 \[x^2&#43; \frac{b}a x&#43; \frac{c}{a}=0,\]对比可知\[\left\{\!\!\begin{array}{l}- (x_1&#43;x_2)= \dfrac{b}a,\\x_1x_2= \dfrac{c}a,\end{array}\right.\ \text{即}\quad\left\{\!\!\begin{array}{l}x_1&#43;x_2= -\dfrac{b}a,\\x_1x_2= \dfrac{c}a,\end{array}\right.\]上述结论称为韦达 (Veite, 法国数学家) 定理, 也称为根与系数的关系定理.
-也可以直接用 求根公式 来验证上述结论: 由 \[x_1= \frac{-b&#43;\sqrt{b^2-4ac}}{2a},\quad x_2= \frac{-b-\sqrt{b^2-4ac}}{2a}\] 直接计算可得一元二次方程的韦达定理.
-需要注意的是, 韦达定理中无需假设方程的根为实根, 也就是无论方程是否有实根, 韦达定理都成立. 例如, 二次方程 $x^2&#43;x&#43;1=0$ 的判别式 $\Delta=-3必须额外写出 $\Delta\geqslant 0$. 后续学圆锥曲线时, 基本的解题方法均是利用韦达定理结合判别式, 再适当对求解的表达式变形.
-韦达定理的简单应用#设方程 $x^2-3x-2=0$ 的两个实根为 $x_1$, $x_2$, 求下列各式的值: \[x_1x_2,\quad x_1^2&#43;x_2^2,\quad\dfrac1{x_1}&#43;\dfrac1{x_2}.">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="1.1.3 一元二次方程的韦达定理" />
-<meta property="og:description" content="1.1.3 一元二次方程的韦达定理#设关于 $x$ 的一元二次方程 \[ax^2&#43;bx&#43;c=0\quad (a\neq0)\]的两根为 $x_1$, $x_2$, 则该方程必可变形为 \[(x-x_1)(x-x_2)=0.\]将后者展开,\[x^2- (x_1&#43;x_2)x&#43; x_1x_2=0,\]并将前者改写为 \[x^2&#43; \frac{b}a x&#43; \frac{c}{a}=0,\]对比可知\[\left\{\!\!\begin{array}{l}- (x_1&#43;x_2)= \dfrac{b}a,\\x_1x_2= \dfrac{c}a,\end{array}\right.\ \text{即}\quad\left\{\!\!\begin{array}{l}x_1&#43;x_2= -\dfrac{b}a,\\x_1x_2= \dfrac{c}a,\end{array}\right.\]上述结论称为韦达 (Veite, 法国数学家) 定理, 也称为根与系数的关系定理.
-也可以直接用 求根公式 来验证上述结论: 由 \[x_1= \frac{-b&#43;\sqrt{b^2-4ac}}{2a},\quad x_2= \frac{-b-\sqrt{b^2-4ac}}{2a}\] 直接计算可得一元二次方程的韦达定理.
-需要注意的是, 韦达定理中无需假设方程的根为实根, 也就是无论方程是否有实根, 韦达定理都成立. 例如, 二次方程 $x^2&#43;x&#43;1=0$ 的判别式 $\Delta=-3必须额外写出 $\Delta\geqslant 0$. 后续学圆锥曲线时, 基本的解题方法均是利用韦达定理结合判别式, 再适当对求解的表达式变形.
-韦达定理的简单应用#设方程 $x^2-3x-2=0$ 的两个实根为 $x_1$, $x_2$, 求下列各式的值: \[x_1x_2,\quad x_1^2&#43;x_2^2,\quad\dfrac1{x_1}&#43;\dfrac1{x_2}." />
+<meta name="description" content="韦达定理#设关于 $x$ 的一元二次方程 \[ax^2&#43;bx&#43;c=0\quad (a\neq0)\]的两根为 $x_1$, $x_2$, 则该方程必可变形为 \[(x-x_1)(x-x_2)=0.\]将后者展开,\[x^2- (x_1&#43;x_2)x&#43; x_1x_2=0,\]并将前者改写为 \[x^2&#43; \frac{b}a x&#43; \frac{c}{a}=0,\]对比可知\[\left\{\!\!\begin{array}{l}- (x_1&#43;x_2)= \dfrac{b}a,\\x_1x_2= \dfrac{c}a,\end{array}\right.\ \text{即}\quad\left\{\!\!\begin{array}{l}x_1&#43;x_2= -\dfrac{b}a,\\x_1x_2= \dfrac{c}a,\end{array}\right.\]上述结论称为韦达 (Veite, 法国数学家) 定理, 也称为根与系数的关系定理.
+利用上面的方法可以得到一元三次方程的韦达定理 (根与系数的关系). 例如, 若关于 $x$ 的三次方程 \[ax^3&#43;bx^2&#43;cx&#43;d=0\quad (a\neq 0)\]的三根为 $x_1$, $x_2$, $x_3$, 则该方程必可变形为 \[(x-x_1)(x-x_2)(x-x_3)=0,\]再展开后与原方程对比系数即可. 更一般的一元 $n$ 次方程的韦达定理也可以同理得出.
+也可以直接用 求根公式 来验证韦达定理: 由 \[ x_{1,2}= \frac{-b\pm\sqrt{b^2-4ac}}{2a}\] 直接计算可得结论.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="韦达定理" />
+<meta property="og:description" content="韦达定理#设关于 $x$ 的一元二次方程 \[ax^2&#43;bx&#43;c=0\quad (a\neq0)\]的两根为 $x_1$, $x_2$, 则该方程必可变形为 \[(x-x_1)(x-x_2)=0.\]将后者展开,\[x^2- (x_1&#43;x_2)x&#43; x_1x_2=0,\]并将前者改写为 \[x^2&#43; \frac{b}a x&#43; \frac{c}{a}=0,\]对比可知\[\left\{\!\!\begin{array}{l}- (x_1&#43;x_2)= \dfrac{b}a,\\x_1x_2= \dfrac{c}a,\end{array}\right.\ \text{即}\quad\left\{\!\!\begin{array}{l}x_1&#43;x_2= -\dfrac{b}a,\\x_1x_2= \dfrac{c}a,\end{array}\right.\]上述结论称为韦达 (Veite, 法国数学家) 定理, 也称为根与系数的关系定理.
+利用上面的方法可以得到一元三次方程的韦达定理 (根与系数的关系). 例如, 若关于 $x$ 的三次方程 \[ax^3&#43;bx^2&#43;cx&#43;d=0\quad (a\neq 0)\]的三根为 $x_1$, $x_2$, $x_3$, 则该方程必可变形为 \[(x-x_1)(x-x_2)(x-x_3)=0,\]再展开后与原方程对比系数即可. 更一般的一元 $n$ 次方程的韦达定理也可以同理得出.
+也可以直接用 求根公式 来验证韦达定理: 由 \[ x_{1,2}= \frac{-b\pm\sqrt{b^2-4ac}}{2a}\] 直接计算可得结论." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/prerequisite/ms-algebra/veita-theorem/" /><meta property="article:section" content="docs" />
 
 
 
-<title>1.1.3 一元二次方程的韦达定理 | 高中数学资料</title>
+<title>韦达定理 | 高中数学资料</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.7aa420f0d94fe6a0f12dd287ce862ffd1cee4a3bc3955ec93ce1725f6b2132b3.css" >
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh.search.min.584bae69a003d97b5deacb0d6ce80e4cba1404eec58e8a7e0b08f5693800a2ba.js" ></script>
+  <script defer src="/zh.search.min.87ed7289411f8761c8b2b2d994f0471eb4e119b02af531f1f2e0434dd4767eee.js" ></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
 <!--
@@ -145,7 +143,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/prerequisite/ms-algebra/quadratic-equation/" class="">1.1.2 一元二次方程的解法</a>
+    <a href="/docs/prerequisite/ms-algebra/quadratic-equation/" class="">一元二次方程的解法</a>
   
 
         </li>
@@ -158,7 +156,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/prerequisite/ms-algebra/veita-theorem/" class=" active">1.1.3 一元二次方程的韦达定理</a>
+    <a href="/docs/prerequisite/ms-algebra/veita-theorem/" class=" active">韦达定理</a>
   
 
         </li>
@@ -178,7 +176,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-c1c4f99569969342f46afcb379e41254" class="toggle"  />
     <label for="section-c1c4f99569969342f46afcb379e41254" class="flex justify-between">
-      <a href="/docs/prerequisite/ms-geometry/" class="">1.2 初中几何提要</a>
+      <a href="/docs/prerequisite/ms-geometry/" class="">初中几何提要</a>
     </label>
   
 
@@ -192,7 +190,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/prerequisite/ms-geometry/congruence-similar/" class="">1.2.1 平面图形的全等与相似</a>
+    <a href="/docs/prerequisite/ms-geometry/congruence-similar/" class="">三角形的全等与相似</a>
   
 
         </li>
@@ -264,7 +262,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-53227ed5b540c99051432d70e3c9c4da" class="toggle"  />
     <label for="section-53227ed5b540c99051432d70e3c9c4da" class="flex justify-between">
-      <a href="/docs/prerequisite/ms-function/" class="">1.3 初中函数提要</a>
+      <a href="/docs/prerequisite/ms-function/" class="">初中函数提要</a>
     </label>
   
 
@@ -304,7 +302,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/prerequisite/ms-function/quadratic/" class="">1.3.3 二次函数</a>
+    <a href="/docs/prerequisite/ms-function/quadratic/" class="">二次函数</a>
   
 
         </li>
@@ -369,7 +367,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>1.1.3 一元二次方程的韦达定理</strong>
+  <strong>韦达定理</strong>
 
   <label for="toc-control">
     
@@ -385,7 +383,7 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#113-一元二次方程的韦达定理">1.1.3 一元二次方程的韦达定理</a>
+    <li><a href="#韦达定理">韦达定理</a>
       <ul>
         <li><a href="#韦达定理的简单应用">韦达定理的简单应用</a></li>
         <li><a href="#利用韦达定理构造新的方程">利用韦达定理构造新的方程</a></li>
@@ -403,9 +401,9 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="113-一元二次方程的韦达定理">
-  1.1.3 一元二次方程的韦达定理
-  <a class="anchor" href="#113-%e4%b8%80%e5%85%83%e4%ba%8c%e6%ac%a1%e6%96%b9%e7%a8%8b%e7%9a%84%e9%9f%a6%e8%be%be%e5%ae%9a%e7%90%86">#</a>
+  <article class="markdown"><h1 id="韦达定理">
+  韦达定理
+  <a class="anchor" href="#%e9%9f%a6%e8%be%be%e5%ae%9a%e7%90%86">#</a>
 </h1>
 <p>设关于 $x$ 的一元二次方程 
 \[ax^2+bx+c=0\quad (a\neq0)\]
@@ -425,19 +423,23 @@ https://github.com/alex-shpak/hugo-book
     x_1x_2= \dfrac{c}a,
 \end{array}\right.\]
 上述结论称为<strong>韦达 (Veite, 法国数学家) 定理</strong>, 也称为<strong>根与系数的关系定理</strong>.</p>
+<myremark>
+    <p>利用上面的方法可以得到一元三次方程的韦达定理 (根与系数的关系). 例如, 若关于 $x$ 的三次方程 \[
+        ax^3+bx^2+cx+d=0\quad (a\neq 0)\]
+    的三根为 $x_1$, $x_2$, $x_3$, 则该方程必可变形为 \[
+        (x-x_1)(x-x_2)(x-x_3)=0,\]
+    再展开后与原方程对比系数即可. 更一般的一元 $n$ 次方程的韦达定理也可以同理得出.</p>
+</myremark>
 <p>也可以直接用 
-  <a href="../1-1-2-quadratic-equation#%e6%b1%82%e6%a0%b9%e5%85%ac%e5%bc%8f">求根公式</a> 来验证上述结论: 由 \[x_1= \frac{-b+\sqrt{b^2-4ac}}{2a},\quad x_2= \frac{-b-\sqrt{b^2-4ac}}{2a}\] 直接计算可得一元二次方程的韦达定理.</p>
-<!-- 利用上面的方法可以得到一元三次方程的韦达定理 (根与系数的关系). 例如, 若关于 $x$ 的三次方程 
-\[Ax^3+Bx^2+Cx+D=0\quad (A\neq0)\]
-的三根为 $x_1$, $x_2$, $x_3$, 则该方程必可变形为 
-\[(x-x_1)(x-x_2)(x-x_3)=0,\]
-再展开后与原方程对比系数即可. 更一般的一元 $n$ 次方程的韦达定理也可以同理得出. -->
-<p>需要注意的是, 韦达定理中无需假设方程的根为实根, 也就是无论方程是否有实根, 韦达定理都成立. 例如, 二次方程 $x^2+x+1=0$ 的判别式 $\Delta=-3< 0$, 所以无实根. 但通过定义复数 (包含了实数, 高二会学到), 该方程仍有两个复根. 若设这个两复根为 $x_1$, $x_2$, 则也有
+  <a href="/docs/prerequisite/ms-algebra/quadratic-equation/#%e6%b1%82%e6%a0%b9%e5%85%ac%e5%bc%8f">求根公式</a> 来验证韦达定理: 由 \[
+x_{1,2}= \frac{-b\pm\sqrt{b^2-4ac}}{2a}\]
+直接计算可得结论.</p>
+<p>需要注意的是, 韦达定理中无需假设方程的根为实根, 也即无论方程是否有实根, 韦达定理都成立. 例如, 二次方程 $x^2+x+1=0$ 的判别式 $\Delta=-3< 0$, 所以无实根. 但通过定义复数 (包含了实数, 一般高二学到), 该方程仍有两个复根. 若设这两个复根为 $x_1,x_2$, 则也有
 \[\left\{\!\!\begin{array}{l}
-    x_1+x_2= -\dfrac{1}1= -1,\\
-    x_1x_2= \dfrac{1}1=1,
+    x_1+x_2= -1,\\
+    x_1x_2= 1,
 \end{array}\right.\]
-正因为如此, 由于大部分高中题目只考虑实根, 所以用韦达定理时, <strong>必须额外写出</strong> $\Delta\geqslant 0$. 后续学圆锥曲线时, 基本的解题方法均是利用韦达定理结合判别式, 再适当对求解的表达式变形.</p>
+正因为如此, 由于大部分高中题目只考虑实根, 所以用韦达定理时, <strong>必须额外写出</strong> $\Delta\geqslant 0$.</p>
 <h2 id="韦达定理的简单应用">
   韦达定理的简单应用
   <a class="anchor" href="#%e9%9f%a6%e8%be%be%e5%ae%9a%e7%90%86%e7%9a%84%e7%ae%80%e5%8d%95%e5%ba%94%e7%94%a8">#</a>
@@ -456,8 +458,15 @@ https://github.com/alex-shpak/hugo-book
         \dfrac1{x_1}+\dfrac1{x_2}= \frac{x_1+x_2}{x_1x_2}= -\frac32.
     \end{gathered}\]</p>
 </mysolution>
+<myremark>
+    <p>上例中要求值的式子均为关于 $x_1,x_2$ 的对称式, 即将 $x_1,x_2$ 互换位置之后, 新式与原式相等. 类似的还有, \[
+        x_1^3+x_2^3,\quad \frac{x_1}{x_2}+\frac{x_2}{x_2},\]
+    等等. 可以证明, 关于 $x_1,x_2$ 的对称式一定能用 $x_1+x_2$ 和 $x_1x_2$ 表示. 所以 $x_1+x_2$ 和 $x_1x_2$ 也称为关于 $x_1,x_2$ 的“基本对称式”.</p>
+</myremark>
 <myexample>
-    <p>若关于 $x$ 的方程 $x^2- (2m^2+m-6)x+ m-2=0$ 的两个实根互为相反数, 求 $m$ 的值.</p>
+    <p>若关于 $x$ 的方程 \[
+        x^2- (2m^2+m-6)x+ m-2=0\]
+    的两个实根互为相反数, 求 $m$ 的值.</p>
 </myexample>
 <mysolution>
     <p>设两实根为 $x_1$, $x_2$, 则 \[\left\{\!\!\begin{array}{l}
@@ -470,7 +479,13 @@ https://github.com/alex-shpak/hugo-book
   利用韦达定理构造新的方程
   <a class="anchor" href="#%e5%88%a9%e7%94%a8%e9%9f%a6%e8%be%be%e5%ae%9a%e7%90%86%e6%9e%84%e9%80%a0%e6%96%b0%e7%9a%84%e6%96%b9%e7%a8%8b">#</a>
 </h2>
-<p>对关于 $x$ 的二次方程 $x^2+Bx+C=0$ (二次项系数为 $1$) 的两根 $x_1$, $x_2$, 韦达定理的结论比较简洁: \[x_1+x_2= -B,\quad x_1x_2= C.\] 用该结论也可以很快地写出两根符合一定条件的二次方程. 例如, 若二次方程的两根 $x_1$, $x_2$ 满足 \[x_1+x_2= 3,\quad x_1x_2= 1,\] 则原方程必可变形为 $x^2- 3x+ 1=0$ (为什么?).</p>
+<p>对关于 $x$ 的二次方程 $x^2+Bx+C=0$ (二次项系数为 $1$) 的两根 $x_1$, $x_2$, 韦达定理的结论比较简洁: \[x_1+x_2= -B,\quad x_1x_2= C.\] 用该结论也可以由两根之和与积写出对应的二次方程, 因为以 $x_1,x_2$ 为根的二次方程必可写为 \[
+    (x-x_1)(x-x_2)=0,\]
+即 \[
+    x^2- (x_1+x_2)x+ x_1x_2=0.\]
+例如, 若二次方程的两根 $x_1$, $x_2$ 满足 \[
+    x_1+x_2= 3,\quad x_1x_2= 1,\]
+则原方程必可变形为 $x^2- 3x+ 1=0$.</p>
 <myexample>
     <p>设方程 $x^2-3x-2=0$ 的两个实根为 $x_1$, $x_2$, 求以下列各组数为两根的一元二次方程:</p>
     <p>(1) $x_1^2$, $x_2^2$;&emsp; (2) $\dfrac1{x_1}$, $\dfrac1{x_2}$.</p>
@@ -492,28 +507,18 @@ https://github.com/alex-shpak/hugo-book
 <myremark>
     <p>上例中 (2) 还有更简洁的解法. 考虑 $\dfrac1{x_1}$, $\dfrac1{x_2}$ 的形式可知, 若 $x$ 为所求一元二次方程的根, 则 $\dfrac1x$ 为原方程的根. 所以 $x$ 满足 \[\frac1{x^2}-\frac3x-2=0,\quad\text{即}\quad 2x^2+3x-1=0.\]</p>
 </myremark>
-<!-- <myexample>
-    <p>已知函数 $f(x)= (x-a)(x-b)-1$ ($a< b$) 的两个零点是 $m$, $n$ ($m< n$), 判断 $a$, $b$, $m$, $n$ 的大小.</p>
-</myexample>
-<mysolution>
-    <p>考虑函数 $g(x)= (x-a)(x-b)$ 可知, 其图形与 $x$ 轴交于点 $(a,0)$, $(b,0)$. 因为 $f(x)= g(x)-1$ 的图形可由 $g(x)$ 的图形向下平移一个单位长度得到, 所以 $f(x)$ 的图形与 $x$ 轴的交点应分布在点 $(a,0)$, $(b,0)$ 两侧, 所以 \[m< a< b< n.\]</p>
-</mysolution>
-<myremark>
-    <p>若上题是选择题或填空题, 则也可以取特殊值. 例如设 $a=0$, $b=2$, 可解出 \[m= 1-\sqrt2\approx -0.414,\quad 
-        n= 1+\sqrt2\approx 2.414,\]
-    同样得到 $m< a< b< n$. 该题也可以用韦达定理求解, 但并不方便.</p>
-</myremark> --></article>
+</article>
  
           
     
     <div class="docs-prevnext">
     
-        <a class="docs-prev button" href="../1-1-2-quadratic-equation">
-          <span class="arrow-prev">← </span><span>1.1.2 一元二次方程的解法</span></a>
+        <a class="docs-prev button" href="../quadratic-equation">
+          <span class="arrow-prev">← </span><span>一元二次方程的解法</span></a>
       
       
-        <a class="docs-next button" href="../../1-2-geometry">
-          <span>1.2 初中几何提要</span><span class="arrow-next"> →</span></a>
+        <a class="docs-next button" href="../../geometry">
+          <span>初中几何提要</span><span class="arrow-next"> →</span></a>
       
       </div>
 
@@ -554,7 +559,7 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#113-一元二次方程的韦达定理">1.1.3 一元二次方程的韦达定理</a>
+    <li><a href="#韦达定理">韦达定理</a>
       <ul>
         <li><a href="#韦达定理的简单应用">韦达定理的简单应用</a></li>
         <li><a href="#利用韦达定理构造新的方程">利用韦达定理构造新的方程</a></li>

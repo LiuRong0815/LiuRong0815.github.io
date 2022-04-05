@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/docs/prerequisite/ms-geometry/congruence-similar/</loc>
-  </url><url>
     <loc>/docs/prerequisite/ms-function/axis-coordinate/</loc>
   </url><url>
-    <loc>/docs/line-circle/10-1-line/</loc>
+    <loc>/docs/basic-analytic-geometry/line-circle/10-1-line/</loc>
   </url><url>
-    <loc>/docs/line-circle/10-1-line/10-1-1-slope/</loc>
+    <loc>/docs/basic-analytic-geometry/line-circle/10-1-line/10-1-1-slope/</loc>
   </url><url>
-    <loc>/docs/set-logic/2-1-set-def/</loc>
+    <loc>/docs/prerequisite/set-logic/2-1-set-def/</loc>
+  </url><url>
+    <loc>/docs/prerequisite/ms-geometry/congruence-similar/</loc>
   </url><url>
     <loc>/docs/prerequisite/ms-algebra/factorization/</loc>
   </url><url>
@@ -18,53 +18,53 @@
   </url><url>
     <loc>/docs/prerequisite/</loc>
   </url><url>
-    <loc>/docs/prerequisite/ms-algebra/quadratic-equation/</loc>
-  </url><url>
-    <loc>/docs/prerequisite/ms-geometry/</loc>
-  </url><url>
     <loc>/docs/prerequisite/ms-geometry/triangle/</loc>
   </url><url>
     <loc>/docs/prerequisite/ms-function/linear-inverse/</loc>
   </url><url>
-    <loc>/docs/set-logic/</loc>
+    <loc>/docs/prerequisite/set-logic/2-2-proposition-iff/</loc>
   </url><url>
-    <loc>/docs/set-logic/2-2-proposition-iff/</loc>
+    <loc>/docs/prerequisite/ms-algebra/quadratic-equation/</loc>
   </url><url>
-    <loc>/docs/prerequisite/ms-algebra/veita-theorem/</loc>
+    <loc>/docs/prerequisite/ms-geometry/</loc>
   </url><url>
     <loc>/docs/prerequisite/ms-geometry/quadrilateral/</loc>
   </url><url>
-    <loc>/docs/prerequisite/ms-function/</loc>
-  </url><url>
     <loc>/docs/prerequisite/ms-function/quadratic/</loc>
   </url><url>
-    <loc>/docs/pow-exp-log/</loc>
+    <loc>/docs/prerequisite/ms-function/</loc>
+  </url><url>
+    <loc>/docs/basic-algebra/pow-exp-log/</loc>
+  </url><url>
+    <loc>/docs/prerequisite/ms-algebra/veita-theorem/</loc>
   </url><url>
     <loc>/docs/prerequisite/ms-geometry/circle/</loc>
   </url><url>
     <loc>/docs/prerequisite/ms-function/graph-tranform/</loc>
   </url><url>
-    <loc>/docs/derivative/</loc>
+    <loc>/docs/basic-algebra/derivative/</loc>
+  </url><url>
+    <loc>/docs/prerequisite/set-logic/</loc>
   </url><url>
     <loc>/docs/prerequisite/ms-geometry/area/</loc>
   </url><url>
-    <loc>/docs/trigonometry/</loc>
+    <loc>/docs/basic-algebra/trigonometry/</loc>
   </url><url>
-    <loc>/docs/vector-complex/</loc>
+    <loc>/docs/basic-analytic-geometry/vector-complex/</loc>
   </url><url>
-    <loc>/docs/sequence/</loc>
+    <loc>/docs/basic-algebra/sequence/</loc>
   </url><url>
-    <loc>/docs/inequality/</loc>
+    <loc>/docs/basic-algebra/inequality/</loc>
   </url><url>
-    <loc>/docs/solid-geometry/</loc>
+    <loc>/docs/basic-solid-geometry/</loc>
   </url><url>
-    <loc>/docs/line-circle/</loc>
+    <loc>/docs/basic-analytic-geometry/line-circle/</loc>
   </url><url>
-    <loc>/docs/conic-curves/</loc>
+    <loc>/docs/basic-analytic-geometry/conic-curves/</loc>
   </url><url>
-    <loc>/docs/statistics-probability/</loc>
+    <loc>/docs/basic-probability-statistics/</loc>
   </url><url>
-    <loc>/docs/extras/</loc>
+    <loc>/docs/selected-problems/</loc>
   </url><url>
     <loc>/categories/</loc>
   </url><url>

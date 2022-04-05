@@ -1,47 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>1.1 初中代数提要 on 高中数学资料</title>
-    <link>/docs/1-prerequisite/1-1-algebra/</link>
-    <description>Recent content in 1.1 初中代数提要 on 高中数学资料</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="/docs/1-prerequisite/1-1-algebra/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>1.1.1 二次三项式因式分解</title>
-      <link>/docs/1-prerequisite/1-1-algebra/1-1-1-factoring/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/1-prerequisite/1-1-algebra/1-1-1-factoring/</guid>
-      <description>1.1.1 二次三项式因式分解#因式分解是将多项式写成两个或多个次数较低的多项式之积, 可视为多项式乘法的逆运算. 这里简要回顾关于 $x$ 的整系数二次三项式 $ax^2+bx+c$ ($a\neq 0$) 的因式分解方法.
-对于二次三项式 $ax^2+bx+c$ ($a\neq 0$) 的因式分解, 常用方法是
- “提”: 提公因式 “套”: 套公式 “十字”: 用十字相乘法  在进行因式分解时, 应先将公因式提出, 并使得系数为整数, 以简化计算. 然后尝试套用 (1) 平方差公式 \[a^2-b^2= (a+b)(a-b);\] (2) 完全平方公式 \[a^2\pm 2ab+b^2= (a\pm b)^2.\]
-如果无法使用上述公式, 则可考虑十字相乘法, 即利用公式 \[x^2+(a+b)x+ab= (x+a)(x+b).\] 使用该公式时, 一般先将常数项分解, 然后拼凑出一次项系数. 对于无法快速判断系数分解方式的二次三项式, 有时也考虑用配方法或求根法来进行因式分解.
-(1) 一般来说, 平方和 (即形如 $x^2+y^2$ 的式子) 是无法因式分解的. 如若不然, 可设 \[x^2+y^2= (x+ay)(x+by),\] 其中 $a$, $b$ 是待定常数. 右边展开后与左边对比, 对应项系数应该相等, 即 \[\left\{\!</description>
-    </item>
-    
-    <item>
-      <title>1.1.2 一元二次方程的解法</title>
-      <link>/docs/1-prerequisite/1-1-algebra/1-1-2-quadratic-equation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/1-prerequisite/1-1-algebra/1-1-2-quadratic-equation/</guid>
-      <description>1.1.2 一元二次方程的解法#关于 $x$ 的一元二次方程 $ax^2+bx+c= 0$ ($a\neq 0$) 的解法通常有三种: 因式分解法、配方法、求根公式法. 较常用的是第一种和第三种.
-因式分解法#因式分解法是指将方程 $ax^2+bx+c= 0$ 化为 \[(Ax+B)(Cx+D)=0\] 的形式, 则 \[Ax+B=0\quad \text{或}\quad Cx+D=0,\] 再解这两个一次方程. 例如, 解方程 $x^2-2x-3=0$, 可先将方程化为 \[(x+1)(x-3)=0,\] 则 \[x+1=0\quad \text{或}\quad x-3=0,\] 解得 $x=-1$ 或 $3$.
-使用因式分解法时, 需要熟练掌握二次三项式因式分解 的常用方法.
-配方法#除用于因式分解外, 配方法 也可用于解一元二次方程. 仍以方程 $x^2-2x-3=0$ 为例, 用配方法求解, 则 \[(x-1)^2=4,\quad\text{即}\quad x-1=\pm2,\] 所以 $x=-1$ 或 $3$.
-(1) 由 $x^2=n$ ($n0$) 应得 $x=\pm\sqrt{n}$, 即不要遗漏负根;</description>
-    </item>
-    
-    <item>
-      <title>1.1.3 一元二次方程的韦达定理</title>
-      <link>/docs/1-prerequisite/1-1-algebra/1-1-3-veita-theorem/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/1-prerequisite/1-1-algebra/1-1-3-veita-theorem/</guid>
-      <description>1.1.3 一元二次方程的韦达定理#设关于 $x$ 的一元二次方程 \[ax^2+bx+c=0\quad (a\neq0)\]的两根为 $x_1$, $x_2$, 则该方程必可变形为 \[(x-x_1)(x-x_2)=0.\]将后者展开,\[x^2- (x_1+x_2)x+ x_1x_2=0,\]并将前者改写为 \[x^2+ \frac{b}a x+ \frac{c}{a}=0,\]对比可知\[\left\{\!\!\begin{array}{l}- (x_1+x_2)= \dfrac{b}a,\\x_1x_2= \dfrac{c}a,\end{array}\right.\ \text{即}\quad\left\{\!\!\begin{array}{l}x_1+x_2= -\dfrac{b}a,\\x_1x_2= \dfrac{c}a,\end{array}\right.\]上述结论称为韦达 (Veite, 法国数学家) 定理, 也称为根与系数的关系定理.
-也可以直接用 求根公式 来验证上述结论: 由 \[x_1= \frac{-b+\sqrt{b^2-4ac}}{2a},\quad x_2= \frac{-b-\sqrt{b^2-4ac}}{2a}\] 直接计算可得一元二次方程的韦达定理.
-需要注意的是, 韦达定理中无需假设方程的根为实根, 也就是无论方程是否有实根, 韦达定理都成立. 例如, 二次方程 $x^2+x+1=0$ 的判别式 $\Delta=-3必须额外写出 $\Delta\geqslant 0$. 后续学圆锥曲线时, 基本的解题方法均是利用韦达定理结合判别式, 再适当对求解的表达式变形.
-韦达定理的简单应用#设方程 $x^2-3x-2=0$ 的两个实根为 $x_1$, $x_2$, 求下列各式的值: \[x_1x_2,\quad x_1^2+x_2^2,\quad\dfrac1{x_1}+\dfrac1{x_2}.</description>
-    </item>
-    
-  </channel>
-</rss>
