@@ -1,14 +1,14 @@
 ---
 bookCollapseSection: true
-title: 1.2 初中几何提要
+title: 初中几何提要
 weight: 2
-prevPage: ../1-1-algebra/1-1-3-veita-theorem
-prevPageTitle: 1.1.3 一元二次方程的韦达定理
-nextPage: ./1-2-1-congruence-similar
-nextPageTitle: 1.2.1 平面图形的全等与相似
+prevPage: ../ms-algebra/veita-theorem
+prevPageTitle: 韦达定理
+nextPage: ./congruence-similar
+nextPageTitle: 平面图形的全等与相似
 ---
 
-# 1.2 初中几何提要
+# 初中几何提要
 
 初中几何的主要内容是平面图形, 如线段和角, 三角形和四边形, 圆. 以下作简要回顾.
 
@@ -17,7 +17,7 @@ nextPageTitle: 1.2.1 平面图形的全等与相似
 线段是直线的一部分, 可度量. 与线段相关的概念有
 
 - 中点: 线段上到两端距离相等的点
-- <span id="中垂线"></span>中垂线: 到线段两端距离相等的点 (并不限制在线段上)
+- <span id="中垂线"></span>中垂线: 到线段两端距离相等的所有点 (并不限制在线段上)
 
 角是由同起点的两条射线组成的图形, 也可视为由一条射线旋转得到. <span id="角平分线"></span>角平分线在角内部, 且与角两边所成的角相等. 角平分线上的点到角两边距离相等.
 

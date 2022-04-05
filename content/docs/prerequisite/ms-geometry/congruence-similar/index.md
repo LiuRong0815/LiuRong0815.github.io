@@ -1,16 +1,16 @@
 ---
 # bookCollapseSection: true
-title: 1.2.1 平面图形的全等与相似
+title: 三角形的全等与相似
 weight: 1
-prevPage: ../../1-2-geometry
-prevPageTitle: 1.2 初中几何提要
-nextPage: ../1-2-2-triangle
-nextPageTitle: 1.2.2 三角形
+prevPage: ../../ms-geometry
+prevPageTitle: 初中几何提要
+nextPage: ../triangle
+nextPageTitle: 三角形
 ---
 
-# 1.2.1 平面图形的全等与相似
+# 三角形的全等与相似
 
-判断两个平面图形的形状和大小是否一致时, 需要用到全等和相似的性质及判定. 这里所指的图形包括但不限于: 线段, 角, 三角形, 四边形, 圆等.
+判断两个三角形的形状和大小是否一致时, 需要用到全等和相似的判定定理. 对于其他图形, 如四边形, 圆等, 也可以讨论相似的概念, 但是一般是用图形变换来研究的.
 
 ## 两个图形的全等
 

@@ -1,14 +1,14 @@
 ---
 bookCollapseSection: true
-title: 1.3 初中函数提要
+title: 初中函数提要
 weight: 3
-prevPage: ../1-2-geometry/1-2-5-area
-prevPageTitle: 1.2.5 平面图形的面积
-nextPage: ./1-3-1-axis-coordinate
-nextPageTitle: 1.3.1 数轴与平面直角坐标系
+prevPage: ../ms-geometry/area
+prevPageTitle: 平面图形的面积
+nextPage: ./axis-coordinate
+nextPageTitle: 数轴与平面直角坐标系
 ---
 
-# 1.3 初中函数提要
+# 初中函数提要
 
 初中函数的主要内容是坐标系, 一次函数, 反比例函数, 二次函数等. 以下作简要回顾.
 
