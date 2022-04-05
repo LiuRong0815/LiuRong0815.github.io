@@ -1,15 +1,15 @@
 ---
 bookCollapseSection: true
-title: 10 直线与圆
+title: 直线与圆
 weight: 10
 bookHidden: true
-# prevPage: ../1-prerequisite/1-3-function/1-3-4-graph-tranform
+# prevPage: ../prerequisite/1-3-function/1-3-4-graph-tranform
 # prevPageTitle: 1.3.4 函数图形的变换
-nextPage: ./10-1-line
-nextPageTitle: 10.1 直线的方程
+nextPage: ./line
+nextPageTitle: 直线的方程
 ---
 
-# 10 直线与圆
+# 直线与圆
 
 初中数学已经介绍了直线与圆的相关概念, 也指出一次函数 (如 $y=x+1$) 的图形是直线. 高中数学将学习在平面直角坐标系中直线与圆的表示方法, 即利用图形上点 $(x,y)$ 的特征来表示直线与圆. 这些特征一般用含 $x$, $y$ 的等式描述, 并称为对应图形的方程.
 
@@ -32,7 +32,7 @@ nextPageTitle: 10.1 直线的方程
 1. (中垂线的定义) 过线段 $AB$ 的中点且与 $AB$ 垂直的直线;
 2. (中垂线的性质) 到点 $A$,$B$ 的距离相等的所有点.
 
-由上述两种不同的描述方法可以得到看似不同的方程 (变形后一致), 计算量也有区别. 运用解析法解决问题时, 常常需要选择适当的描述图形的方法. 此外, 描述图形的特征时, 常常用到两点之间的距离和中点, 在学习后面的内容之前必须熟悉在平面直角坐标系中的相关结论 (见 [1.3.1 数轴与平面直角坐标系](../1-prerequisite/1-3-function/1-3-1-axis-coordinate)).
+由上述两种不同的描述方法可以得到看似不同的方程 (变形后一致), 计算量也有区别. 运用解析法解决问题时, 常常需要选择适当的描述图形的方法. 此外, 描述图形的特征时, 常常用到两点之间的距离和中点, 在学习后面的内容之前必须熟悉在平面直角坐标系中的相关结论 (见 [数轴与平面直角坐标系](../../prerequisite/ms-function/axis-coordinate)).
 
 本章目录为
 

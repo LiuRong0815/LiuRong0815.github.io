@@ -1,14 +1,14 @@
 ---
 # bookCollapseSection: true
-title: 1.3.1 数轴与平面直角坐标系
+title: 数轴与平面直角坐标系
 weight: 1
-prevPage: ../../1-3-function
-prevPageTitle: 1.3 初中函数提要
-nextPage: ../1-3-2-linear-inverse
-nextPageTitle: 1.3.2 一次函数与反比例函数
+prevPage: ../
+prevPageTitle: 初中函数提要
+nextPage: ../linear-inverse
+nextPageTitle: 一次函数与反比例函数
 ---
 
-# 1.3.1 数轴与平面直角坐标系
+# 数轴与平面直角坐标系
 
 数轴与平面直角坐标系用坐标分别刻画了直线 (一维空间) 上和平面 (二维空间) 内各点的位置. 用坐标表示点的位置后, 可方便地计算线段的长度、确定线段中点的位置, 或者计算平面图形 (如三角形, 四边形) 的面积等.
 

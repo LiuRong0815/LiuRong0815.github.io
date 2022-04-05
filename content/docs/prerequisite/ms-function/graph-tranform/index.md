@@ -1,14 +1,14 @@
 ---
 # bookCollapseSection: true
-title: 1.3.4 函数图形的变换
+title: 函数图形的变换
 weight: 4
-prevPage: ../1-3-3-quadratic
-prevPageTitle: 1.3.3 二次函数
-# nextPage: ../../../2-set-logic
-# nextPageTitle: 2 集合与简易逻辑
+prevPage: ../quadratic
+prevPageTitle: 二次函数
+# nextPage: ../../set-logic
+# nextPageTitle: 集合与简易逻辑
 ---
 
-# 1.3.4 函数图形的变换
+# 函数图形的变换
 
 研究函数图形的变换时, 应考虑的是其上点坐标的变换, 并利用原函数图形解析式表示新函数图形解析式.
 

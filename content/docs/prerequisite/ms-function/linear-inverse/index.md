@@ -1,14 +1,14 @@
 ---
 # bookCollapseSection: true
-title: 1.3.2 一次函数与反比例函数
+title: 一次函数与反比例函数
 weight: 2
-prevPage: ../1-3-1-axis-coordinate
-prevPageTitle: 1.3.1 数轴与平面直角坐标系
-nextPage: ../1-3-3-quadratic
-nextPageTitle: 1.3.3 二次函数
+prevPage: ../axis-coordinate
+prevPageTitle: 数轴与平面直角坐标系
+nextPage: ../quadratic
+nextPageTitle: 二次函数
 ---
 
-# 1.3.2 一次函数与反比例函数
+# 一次函数与反比例函数
 
 函数用于表示两个变量 $x$ (自变量) 和 $y$ (因变量) 的关系, 从代数的角度得到解析式, 从几何的角度则得到图形. 从已知的函数解析式很容易得到对应的图形, 即由横坐标 $x$ 和解析式确定图形上点的纵坐标 $y$, 并绘出点 $(x,y)$. 反之, 若已知图形对应的函数类型, 也可以利用图形上的点的坐标确定对应的解析式. 例如, 常值函数 $y= C$ 的图形为平行于 $x$ 轴的直线 (图形上所有点的纵坐标均为 $C$), 而平行于 $x$ 轴的直线对应解析式 $y= C$.
 
