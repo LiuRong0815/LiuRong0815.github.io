@@ -1,29 +1,29 @@
 ---
 # bookCollapseSection: true
-title: 1.2.2 三角形
+title: 三角形
 weight: 2
-prevPage: ../1-2-1-congruence-similar
-prevPageTitle: 1.2.1 平面图形的全等与相似
-nextPage: ../1-2-3-quadrilateral
-nextPageTitle: 1.2.3 四边形
+prevPage: ../symmetric-congruence-similar
+prevPageTitle: 对称、全等与相似
+nextPage: ../quadrilateral
+nextPageTitle: 四边形
 ---
 
-# 1.2.2 三角形
+# 三角形
 
-三角形其实也可称为三边形, 其边和角都有固定的约束条件. 特殊的三角形 (如等腰三角形, 直角三角形) 有更多的性质. 与三角形有关的特殊线有: 中线、中垂线、角平分线和高线, 常见的三角形的特殊点有: 重心、外心、内心和垂心.
+三角形其实也可以称为三边形, 其边和角都有相应的约束条件. 特殊的三角形 (如等腰三角形, 直角三角形) 有更多的性质. 与三角形有关的特殊线有: 中线、中垂线、角平分线和高线, 常见的三角形的特殊点有: 重心、外心、内心和垂心.
 
-以下设在 $\triangle ABC$ 中, $\angle A$, $\angle B$, $\angle C$ 所对的边分别记为 $a$, $b$, $c$.
+以下均设在 $\triangle ABC$ 中, $\angle A$, $\angle B$, $\angle C$ 所对的边分别为 $a$, $b$, $c$.
 
 ## 两个约束条件
 
 利用平行线的性质可以证明, 三角形的内角和为 $180^\circ$, 即
-\[\angle A+ \angle B+\angle C= 180^\cric.\]
-有时也省略符号“$\angle$”而将上述结论写为 $A+B+C=180^\circ$. 推广可知, $n$ 边形的内角和为 $(n-1)180^\circ$, 而外角和为 $360^\circ$ (与 $n$ 无关) (图待补).
+\\[\angle A+ \angle B+\angle C= 180^\circ.\\]
+有时也省略角的符号“$\angle$”而将上述结论写为 $A+B+C=180^\circ$. 推广可知, $n$ 边形的内角和为 $(n-2)180^\circ$, 而外角和为 $360^\circ$ (与 $n$ 无关) (图待补).
 
 利用“两点之间线段最短”可以说明, 三角形的任意两边之和大于第三边, 即 (只列其一)
-\[a+b>c,\quad\text{或}\quad a>b-c,\]
+\\[a+b>c,\quad\text{或}\quad a>b-c,\\]
 因此任意两边之差小于第三边. 也可以将这两个结论整合起来, 得到
-\[|b-c|< a< b+c.\]
+\\[|b-c|< a< b+c.\\]
 上述三个不等式都可称为“三角形不等式”.
 
 ## 等腰三角形
@@ -34,8 +34,8 @@ nextPageTitle: 1.2.3 四边形
 
 ## 直角三角形
 
-利用切割正方形和面积法可以证明勾股定理: 直角三角形中, 直角边平方和等于斜边平方. 具体地, 设 $\mathrm{Rt}\triangle ABC$ 中, $\angle C=90^\circ$, 以 $a+b$ 为边长作正方形 $DEFG$, 并作如图所示的辅助线, 可以证明中间的四边形也是正方形. 用两种方法表示正方形 $DEFG$ 的面积, 即整体计算和分步计算, 可知
-\[(a+b)^2= c^2+ 4\cdot \frac12ab,\]
+利用切割正方形和面积法可以证明勾股定理: 直角三角形中, 直角边平方和等于斜边平方. 具体地, 设 $\mathrm{Rt}\triangle ABC$ 中, $\angle C=90^\circ$, 以 $a+b$ 为边长作正方形 $DEFG$, 并作如图所示的辅助线, 可以证明中间的四边形也是正方形. 用两种方法表示正方形 $DEFG$ 的面积, 即整体计算和分步计算, 可知 \\[
+    (a+b)^2= c^2+ 4\cdot \frac12ab,\\]
 整理得 $a^2+b^2=c^2$.
 
 勾股定理的逆定理也成立, 即若 $a^2+b^2= c^2$, 则 $\angle C=90^\circ$, 即 $\triangle ABC$ 为直角三角形. 利用作图可以推广此结论: 若 $a^2+b^2< c^2$, 则 $\angle C> 90^\circ$, 即 $\triangle ABC$ 为钝角三角形; 若 $a^2+b^2> c^2$, 则 $\angle C< 90^\circ$ (但此时不能判断 $\triangle ABC$ 为锐角三角形).
@@ -59,7 +59,7 @@ nextPageTitle: 1.2.3 四边形
 - 各内角平分线
 - 高线: 顶点到对边的垂线段
 
-作图可知
+作图可以验证
 
 - 三边中线交于一点, 该点称为**重心**, 一般记为点 $G$ (gravity)
 - 三边中垂线交于一点, 该点称为**外心** (外接圆圆心), 一般记为点 $O$ (outer)

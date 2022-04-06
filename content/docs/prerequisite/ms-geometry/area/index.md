@@ -1,14 +1,14 @@
 ---
 # bookCollapseSection: true
-title: 1.2.5 平面图形的面积
+title: 平面图形的面积
 weight: 5
-prevPage: ../1-2-4-circle
-prevPageTitle: 1.2.4 圆
-nextPage: ../../1-3-function
-nextPageTitle: 1.3 初中函数提要
+prevPage: ../circle
+prevPageTitle: 圆
+nextPage: ../../function
+nextPageTitle: 初中函数提要
 ---
 
-# 1.2.5 平面图形的面积
+# 平面图形的面积
 
 平面图形的面积用于描述其边界所围区域的大小. 通常考虑三角形、四边形、圆、扇形的面积. 以下按推理顺序介绍各种图形面积的计算公式.
 

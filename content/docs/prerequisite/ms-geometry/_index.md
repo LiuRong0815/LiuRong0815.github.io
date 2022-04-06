@@ -4,8 +4,8 @@ title: 初中几何提要
 weight: 2
 prevPage: ../ms-algebra/veita-theorem
 prevPageTitle: 韦达定理
-nextPage: ./congruence-similar
-nextPageTitle: 三角形的全等与相似
+nextPage: ./symmetric-congruence-similar
+nextPageTitle: 对称、全等与相似
 ---
 
 # 初中几何提要
