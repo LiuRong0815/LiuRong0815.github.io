@@ -4,7 +4,7 @@ title: 韦达定理
 weight: 3
 prevPage: ../quadratic-equation
 prevPageTitle: 一元二次方程的解法
-nextPage: ../../geometry
+nextPage: ../../ms-geometry
 nextPageTitle: 初中几何提要
 ---
 
@@ -34,7 +34,13 @@ nextPageTitle: 初中几何提要
         ax^3+bx^2+cx+d=0\quad (a\neq 0)\]
     的三根为 $x_1$, $x_2$, $x_3$, 则该方程必可变形为 \[
         (x-x_1)(x-x_2)(x-x_3)=0,\]
-    再展开后与原方程对比系数即可. 更一般的一元 $n$ 次方程的韦达定理也可以同理得出.</p>
+    再展开后与原方程对比系数, 可知 \[
+    \left\{\!\!\begin{array}{l}
+        x_1+x_2+x_3= -\dfrac{b}a,\\[6pt]
+        x_1x_2+ x_2x_3+ x_3x_1= \dfrac{c}a,\\[6pt]
+        x_1x_2x_3= -\dfrac{d}a.
+    \end{array}\right.\]
+    更一般的一元 $n$ 次方程的韦达定理也可以同理得出.</p>
 </myremark>
 
 也可以直接用 [求根公式](../quadratic-equation#求根公式) 来验证韦达定理: 由 \\[
