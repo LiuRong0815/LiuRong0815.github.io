@@ -1,6 +1,6 @@
 ---
 # bookCollapseSection: true
-title: 函数图形的变换
+title: 函数图象的变换
 weight: 4
 prevPage: ../quadratic
 prevPageTitle: 二次函数

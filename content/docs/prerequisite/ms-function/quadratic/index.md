@@ -5,7 +5,7 @@ weight: 3
 prevPage: ../linear-inverse
 prevPageTitle: 一次函数与反比例函数
 nextPage: ../graph-tranform
-nextPageTitle: 函数图形的变换
+nextPageTitle: 函数图象的变换
 ---
 
 # 二次函数

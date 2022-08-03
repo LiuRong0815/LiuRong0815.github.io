@@ -3,28 +3,26 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="1.2.5 平面图形的面积#平面图形的面积用于描述其边界所围区域的大小. 通常考虑三角形、四边形、圆、扇形的面积. 以下按推理顺序介绍各种图形面积的计算公式.
-四边形的面积#正方形的面积定义为边长的平方, 即边长为 $a$ 的正方形的面积为 $a^2$. 矩形可以分解为多个正方形之和, 所以其面积为两个邻边的乘积, 一般记为“长乘宽”, 即长为 $a$, 宽为 $b$ 的矩形的面积为 $ab$. 平行四边形可以用割补法拼接为矩形, 故面积为底乘高, 即底为 $a$, 高为 $h$ 的平行四边形的面积为 $ah$. 梯形也可以拼接为平行四边形 (或矩形), 面积为两底和乘高的一半, 即底为 $a$, $b$, 高为 $h$ 的梯形的面积为 $\dfrac12(a&#43;b)h$.
-三角形的面积#三角形可以补成平行四边形 (或矩形), 面积为底乘高的一半, 即底为 $a$, 高为 $h$ 的三角形的面积为 $\dfrac12 ah$. 三角形也可以视为退化的梯形 (上底为 $0$), 从而由梯形的面积公式也可得三角形的面积公式.
-一般的平面图形的面积公式, 都可以由三角形的面积公式推出. 如梯形可以沿一条对角线分割为两个三角形, 所以其面积为这两个三角形的面积之和. 而一般的四边形、五边形等, 均可先沿对角线分割成一些小三角形, 然后分别计算这些小三角形的面积, 最后求和.
-圆、扇形的面积#圆的面积可以利用三角形的面积公式推出.">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="1.2.5 平面图形的面积" />
-<meta property="og:description" content="1.2.5 平面图形的面积#平面图形的面积用于描述其边界所围区域的大小. 通常考虑三角形、四边形、圆、扇形的面积. 以下按推理顺序介绍各种图形面积的计算公式.
-四边形的面积#正方形的面积定义为边长的平方, 即边长为 $a$ 的正方形的面积为 $a^2$. 矩形可以分解为多个正方形之和, 所以其面积为两个邻边的乘积, 一般记为“长乘宽”, 即长为 $a$, 宽为 $b$ 的矩形的面积为 $ab$. 平行四边形可以用割补法拼接为矩形, 故面积为底乘高, 即底为 $a$, 高为 $h$ 的平行四边形的面积为 $ah$. 梯形也可以拼接为平行四边形 (或矩形), 面积为两底和乘高的一半, 即底为 $a$, $b$, 高为 $h$ 的梯形的面积为 $\dfrac12(a&#43;b)h$.
-三角形的面积#三角形可以补成平行四边形 (或矩形), 面积为底乘高的一半, 即底为 $a$, 高为 $h$ 的三角形的面积为 $\dfrac12 ah$. 三角形也可以视为退化的梯形 (上底为 $0$), 从而由梯形的面积公式也可得三角形的面积公式.
-一般的平面图形的面积公式, 都可以由三角形的面积公式推出. 如梯形可以沿一条对角线分割为两个三角形, 所以其面积为这两个三角形的面积之和. 而一般的四边形、五边形等, 均可先沿对角线分割成一些小三角形, 然后分别计算这些小三角形的面积, 最后求和.
-圆、扇形的面积#圆的面积可以利用三角形的面积公式推出." />
+<meta name="description" content="平面图形的面积 # 平面图形 $G$ 的面积描述的是其边界所围区域的大小. 将边长为 $1$ 的正方形 $Q$ 称为单位正方形, 所围区域的面积记为 $1$ 个单位. 将 $G$ 与 $Q$ 两者所围区域大小比较时, 所得的倍数就是 $G$ 的面积. 初中数学介绍了三角形、四边形、圆、扇形的面积公式. 以下回顾这些面积公式的推导方法.
+四边形的面积 # 从切割图形的角度来看, 正方形的面积为边长的平方, 即边长为 $a$ 的正方形的面积为 $a^2$. 例如, 边长为 $2$ 的正方形可以切割为 $2^2= 4$ 个单位正方形. 长为 $a$, 宽为 $b$ 的矩形可以分解为多个正方形之和, 所以其面积为 $ab$, 一般记为“长乘宽”.
+底为 $a$, 高为 $h$ 的平行四边形可以用割补法拼接为矩形, 故面积为 $ah$ (底乘高). 底为 $a$, $b$, 高为 $h$ 的梯形也可以拼接为平行四边形 (或矩形), 面积为 $\dfrac12(a&#43;b)h$ (两底之和乘高的一半).
+三角形的面积 # 底为 $a$, 高为 $h$ 的三角形可以补成平行四边形 (或矩形), 面积为 $\dfrac12 ah$ (底乘高的一半).">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="平面图形的面积" />
+<meta property="og:description" content="平面图形的面积 # 平面图形 $G$ 的面积描述的是其边界所围区域的大小. 将边长为 $1$ 的正方形 $Q$ 称为单位正方形, 所围区域的面积记为 $1$ 个单位. 将 $G$ 与 $Q$ 两者所围区域大小比较时, 所得的倍数就是 $G$ 的面积. 初中数学介绍了三角形、四边形、圆、扇形的面积公式. 以下回顾这些面积公式的推导方法.
+四边形的面积 # 从切割图形的角度来看, 正方形的面积为边长的平方, 即边长为 $a$ 的正方形的面积为 $a^2$. 例如, 边长为 $2$ 的正方形可以切割为 $2^2= 4$ 个单位正方形. 长为 $a$, 宽为 $b$ 的矩形可以分解为多个正方形之和, 所以其面积为 $ab$, 一般记为“长乘宽”.
+底为 $a$, 高为 $h$ 的平行四边形可以用割补法拼接为矩形, 故面积为 $ah$ (底乘高). 底为 $a$, $b$, 高为 $h$ 的梯形也可以拼接为平行四边形 (或矩形), 面积为 $\dfrac12(a&#43;b)h$ (两底之和乘高的一半).
+三角形的面积 # 底为 $a$, 高为 $h$ 的三角形可以补成平行四边形 (或矩形), 面积为 $\dfrac12 ah$ (底乘高的一半)." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/prerequisite/ms-geometry/area/" /><meta property="article:section" content="docs" />
 
 
 
-<title>1.2.5 平面图形的面积 | 高中数学资料</title>
+<title>平面图形的面积 | 高中数学资料</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.7aa420f0d94fe6a0f12dd287ce862ffd1cee4a3bc3955ec93ce1725f6b2132b3.css" >
+<link rel="stylesheet" href="/book.min.69f96f67de5fbb2900a311c2cbf09a1de00d85652c40f45ad2dfae5014023280.css" >
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh.search.min.87ed7289411f8761c8b2b2d994f0471eb4e119b02af531f1f2e0434dd4767eee.js" ></script>
+  <script defer src="/zh.search.min.2a60bd2122730953c0203a84cd9ca0f346fa72c36e2de85816ebacbd5a3b10cf.js" ></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
 <!--
@@ -194,7 +192,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/prerequisite/ms-geometry/congruence-similar/" class="">三角形的全等与相似</a>
+    <a href="/docs/prerequisite/ms-geometry/symmetric-congruence-similar/" class="">对称、全等与相似</a>
   
 
         </li>
@@ -207,7 +205,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/prerequisite/ms-geometry/triangle/" class="">1.2.2 三角形</a>
+    <a href="/docs/prerequisite/ms-geometry/triangle/" class="">三角形</a>
   
 
         </li>
@@ -220,7 +218,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/prerequisite/ms-geometry/quadrilateral/" class="">1.2.3 四边形</a>
+    <a href="/docs/prerequisite/ms-geometry/quadrilateral/" class="">四边形</a>
   
 
         </li>
@@ -233,7 +231,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/prerequisite/ms-geometry/circle/" class="">1.2.4 圆</a>
+    <a href="/docs/prerequisite/ms-geometry/circle/" class="">圆</a>
   
 
         </li>
@@ -246,7 +244,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/prerequisite/ms-geometry/area/" class=" active">1.2.5 平面图形的面积</a>
+    <a href="/docs/prerequisite/ms-geometry/area/" class=" active">平面图形的面积</a>
   
 
         </li>
@@ -280,7 +278,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/prerequisite/ms-function/axis-coordinate/" class="">1.3.1 数轴与平面直角坐标系</a>
+    <a href="/docs/prerequisite/ms-function/axis-coordinate/" class="">数轴与平面直角坐标系</a>
   
 
         </li>
@@ -293,7 +291,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/prerequisite/ms-function/linear-inverse/" class="">1.3.2 一次函数与反比例函数</a>
+    <a href="/docs/prerequisite/ms-function/linear-inverse/" class="">一次函数与反比例函数</a>
   
 
         </li>
@@ -319,7 +317,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/prerequisite/ms-function/graph-tranform/" class="">1.3.4 函数图形的变换</a>
+    <a href="/docs/prerequisite/ms-function/graph-tranform/" class="">函数图象的变换</a>
   
 
         </li>
@@ -356,7 +354,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
@@ -371,7 +369,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>1.2.5 平面图形的面积</strong>
+  <strong>平面图形的面积</strong>
 
   <label for="toc-control">
     
@@ -387,7 +385,7 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#125-平面图形的面积">1.2.5 平面图形的面积</a>
+    <li><a href="#平面图形的面积">平面图形的面积</a>
       <ul>
         <li><a href="#四边形的面积">四边形的面积</a></li>
         <li><a href="#三角形的面积">三角形的面积</a></li>
@@ -406,22 +404,23 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="125-平面图形的面积">
-  1.2.5 平面图形的面积
-  <a class="anchor" href="#125-%e5%b9%b3%e9%9d%a2%e5%9b%be%e5%bd%a2%e7%9a%84%e9%9d%a2%e7%a7%af">#</a>
+  <article class="markdown"><h1 id="平面图形的面积">
+  平面图形的面积
+  <a class="anchor" href="#%e5%b9%b3%e9%9d%a2%e5%9b%be%e5%bd%a2%e7%9a%84%e9%9d%a2%e7%a7%af">#</a>
 </h1>
-<p>平面图形的面积用于描述其边界所围区域的大小. 通常考虑三角形、四边形、圆、扇形的面积. 以下按推理顺序介绍各种图形面积的计算公式.</p>
+<p>平面图形 $G$ 的面积描述的是其边界所围区域的大小. 将边长为 $1$ 的正方形 $Q$ 称为单位正方形, 所围区域的面积记为 $1$ 个单位. 将 $G$ 与 $Q$ 两者所围区域大小比较时, 所得的倍数就是 $G$ 的面积. 初中数学介绍了三角形、四边形、圆、扇形的面积公式. 以下回顾这些面积公式的推导方法.</p>
 <h2 id="四边形的面积">
   四边形的面积
   <a class="anchor" href="#%e5%9b%9b%e8%be%b9%e5%bd%a2%e7%9a%84%e9%9d%a2%e7%a7%af">#</a>
 </h2>
-<p>正方形的面积定义为边长的平方, 即边长为 $a$ 的正方形的面积为 $a^2$. 矩形可以分解为多个正方形之和, 所以其面积为两个邻边的乘积, 一般记为“长乘宽”, 即长为 $a$, 宽为 $b$ 的矩形的面积为 $ab$. 平行四边形可以用割补法拼接为矩形, 故面积为底乘高, 即底为 $a$, 高为 $h$ 的平行四边形的面积为 $ah$. 梯形也可以拼接为平行四边形 (或矩形), 面积为两底和乘高的一半, 即底为 $a$, $b$, 高为 $h$ 的梯形的面积为 $\dfrac12(a+b)h$.</p>
+<p>从切割图形的角度来看, 正方形的面积为边长的平方, 即边长为 $a$ 的正方形的面积为 $a^2$. 例如, 边长为 $2$ 的正方形可以切割为 $2^2= 4$ 个单位正方形. 长为 $a$, 宽为 $b$ 的矩形可以分解为多个正方形之和, 所以其面积为 $ab$, 一般记为“长乘宽”.</p>
+<p>底为 $a$, 高为 $h$ 的平行四边形可以用割补法拼接为矩形, 故面积为 $ah$ (底乘高). 底为 $a$, $b$, 高为 $h$ 的梯形也可以拼接为平行四边形 (或矩形), 面积为 $\dfrac12(a+b)h$ (两底之和乘高的一半).</p>
 <h2 id="三角形的面积">
   三角形的面积
   <a class="anchor" href="#%e4%b8%89%e8%a7%92%e5%bd%a2%e7%9a%84%e9%9d%a2%e7%a7%af">#</a>
 </h2>
-<p>三角形可以补成平行四边形 (或矩形), 面积为底乘高的一半, 即底为 $a$, 高为 $h$ 的三角形的面积为 $\dfrac12 ah$. 三角形也可以视为退化的梯形 (上底为 $0$), 从而由梯形的面积公式也可得三角形的面积公式.</p>
-<p>一般的平面图形的面积公式, 都可以由三角形的面积公式推出. 如梯形可以沿一条对角线分割为两个三角形, 所以其面积为这两个三角形的面积之和. 而一般的四边形、五边形等, 均可先沿对角线分割成一些小三角形, 然后分别计算这些小三角形的面积, 最后求和.</p>
+<p>底为 $a$, 高为 $h$ 的三角形可以补成平行四边形 (或矩形), 面积为 $\dfrac12 ah$ (底乘高的一半). 三角形也可以视为退化的梯形 (上底为 $0$), 从而由梯形的面积公式直接得到三角形的面积公式.</p>
+<p>多边形的面积公式, 也可以由三角形的面积公式推出. 例如, 梯形和五边形均可以沿对角线分割成一些小三角形, 分别计算这些小三角形的面积之后再求和. 求更一般的平面图形 $G$ 的面积, 通常也是这种方法, 即将 $G$ 分割成一些三角形或矩形, 分别计算面积后再求和.</p>
 <h2 id="圆扇形的面积">
   圆、扇形的面积
   <a class="anchor" href="#%e5%9c%86%e6%89%87%e5%bd%a2%e7%9a%84%e9%9d%a2%e7%a7%af">#</a>
@@ -435,12 +434,12 @@ S_{\text{圆}}= \frac12\cdot 2\pi r\cdot r= \pi r^2.\]
     
     <div class="docs-prevnext">
     
-        <a class="docs-prev button" href="../1-2-4-circle">
-          <span class="arrow-prev">← </span><span>1.2.4 圆</span></a>
+        <a class="docs-prev button" href="../circle">
+          <span class="arrow-prev">← </span><span>圆</span></a>
       
       
-        <a class="docs-next button" href="../../1-3-function">
-          <span>1.3 初中函数提要</span><span class="arrow-next"> →</span></a>
+        <a class="docs-next button" href="../../ms-function">
+          <span>初中函数提要</span><span class="arrow-next"> →</span></a>
       
       </div>
 
@@ -456,7 +455,7 @@ S_{\text{圆}}= \frac12\cdot 2\pi r\cdot r= \pi r^2.\]
 
 
 
-  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
 
 
  
@@ -481,7 +480,7 @@ S_{\text{圆}}= \frac12\cdot 2\pi r\cdot r= \pi r^2.\]
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#125-平面图形的面积">1.2.5 平面图形的面积</a>
+    <li><a href="#平面图形的面积">平面图形的面积</a>
       <ul>
         <li><a href="#四边形的面积">四边形的面积</a></li>
         <li><a href="#三角形的面积">三角形的面积</a></li>
