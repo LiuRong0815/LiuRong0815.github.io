@@ -2,7 +2,7 @@
 # bookCollapseSection: true
 title: 函数图象的变换
 weight: 4
-prevPage: ../quadratic
+prevPage: ../quadratic-function-inequality
 prevPageTitle: 二次函数
 # nextPage: ../../set-logic
 # nextPageTitle: 集合与简易逻辑

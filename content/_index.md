@@ -16,7 +16,7 @@ nextPageTitle: 预备知识
 
 还有一些例题和习题为近几年的高考数学题和模拟题，或为改编题。
 
-## 站点内容结构
+## 网站内容结构
 
 高中数学比初中数学的内容要丰富得多，主要体现为
 
@@ -36,8 +36,8 @@ nextPageTitle: 预备知识
 
 - [预备知识](/docs/prerequisite)
     - [初中代数提要](/docs/prerequisite/ms-algebra)
-  <!-- - [初中几何提要](/docs/prerequisite/ms-geometry) -->
-  <!-- - [初中函数提要](/docs/prerequisite/ms-function)  -->
+    - [初中几何提要](/docs/prerequisite/ms-geometry)
+    - [初中函数提要](/docs/prerequisite/ms-function) 
   <!-- - [集合]() -->
   <!-- - [简易逻辑] -->
 <!-- - [幂函数、指数函数、对数函数](/docs/)（待补） -->

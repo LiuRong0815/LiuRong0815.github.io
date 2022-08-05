@@ -6,7 +6,7 @@
 - 人教高中数学 A 版
 - 人教高中数学甲种本
 
-主要使用了以下工具（排名不分先后）
+实际内容参看 [https://liurong0815.github.io/](https://liurong0815.github.io/)。制作内容时主要使用了以下工具（排名不分先后）
 
 - 代码编辑器 [VSCode](https://code.visualstudio.com)
 - 代码版本管理软件 [Git](https://git-scm.com)

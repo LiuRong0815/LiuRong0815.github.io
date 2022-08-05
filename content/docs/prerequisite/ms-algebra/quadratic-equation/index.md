@@ -2,7 +2,7 @@
 # bookCollapseSection: true
 title: 一元二次方程的解法
 weight: 2
-prevPage: ../factorization
+prevPage: ../quadratic-factorization
 prevPageTitle: 二次三项式的因式分解
 nextPage: ../veita-theorem
 nextPageTitle: 韦达定理
@@ -16,11 +16,11 @@ nextPageTitle: 韦达定理
 
 因式分解法是指将方程 $ax^2+bx+c= 0$ 化为 \\[(Ax+B)(Cx+D)=0\\] 的形式, 则 \\[Ax+B=0\quad \text{或}\quad Cx+D=0,\\] 再解这两个一次方程. 例如, 解方程 $x^2-2x-3=0$, 可先将方程化为 \\[(x+1)(x-3)=0,\\] 则 \\[x+1=0\quad \text{或}\quad x-3=0,\\] 解得 $x=-1$ 或 $3$.
 
-使用因式分解法时, 需要熟练掌握[二次三项式因式分解](../factorization) 的常用方法.
+使用因式分解法时, 需要熟练掌握[二次三项式因式分解](../quadratic-factorization) 的常用方法.
 
 ## 配方法
 
-除用于因式分解外, [配方法](../factorization#配方法) 也可用于解一元二次方程. 仍以方程 $x^2-2x-3=0$ 为例, 用配方法求解, 则 \\[(x-1)^2=4,\quad\text{即}\quad x-1=\pm2,\\] 所以 $x=-1$ 或 $3$.
+除用于因式分解外, [配方法](../quadratic-factorization#配方法) 也可用于解一元二次方程. 仍以方程 $x^2-2x-3=0$ 为例, 用配方法求解, 则 \\[(x-1)^2=4,\quad\text{即}\quad x-1=\pm2,\\] 所以 $x=-1$ 或 $3$.
 
 <myremark>
     <p>(1) 由 $x^2=n$ ($n>0$) 应得 $x=\pm\sqrt{n}$, 即不要遗漏负根;</p>
@@ -49,7 +49,7 @@ nextPageTitle: 韦达定理
 
 例如, 方程 $x^2+x+1= 0$ 的判别式 $\Delta= -3<0$, 所以方程无实根; 方程 $x^2+x-2= 0$ 的判别式 $\Delta= 9>0$, 所以方程有两个不等实根; 方程 $x^2+2x+1= 0$ 的判别式 $\Delta= 0$, 所以方程有两个相等实根.
 
-对关于 $x$ 的二次三项式 $ax^2+bx+c$, 令其为 $0$ 就转化成二次方程, 所以此时 $\Delta= b^2-4ac$ 也称为该二次三项式的判别式. 利用判别式 $\Delta$ 也可以判断二次三项式 $ax^2+bx+c$ 是否可以因式分解. 如果该式可以因式分解, 必可分解为 $(Ax+B)(Cx+D)$ 的形式, 令其等于 $0$, 可解出对应的 $x$ 值. 反之, 若 $ax^2+bx+c=0$ 有实根, 则 $\Delta\geqslant 0$, [配方法](../factorization#配方法) 变形的最后一行可改写为 \\[a\biggl[\biggl(x+\frac{b}{2a}\biggr)^2- \frac{\Delta}{4a^2}\biggr],\\] 继而可以使用平方差公式. 所以“$ax^2+bx+c$ 可以因式分解”等价于“$ax^2+bx+c=0$ 有实根”, 即
+对关于 $x$ 的二次三项式 $ax^2+bx+c$, 令其为 $0$ 就转化成二次方程, 所以此时 $\Delta= b^2-4ac$ 也称为该二次三项式的判别式. 利用判别式 $\Delta$ 也可以判断二次三项式 $ax^2+bx+c$ 是否可以因式分解. 如果该式可以因式分解, 必可分解为 $(Ax+B)(Cx+D)$ 的形式, 令其等于 $0$, 可解出对应的 $x$ 值. 反之, 若 $ax^2+bx+c=0$ 有实根, 则 $\Delta\geqslant 0$, [配方法](../quadratic-factorization#配方法) 变形的最后一行可改写为 \\[a\biggl[\biggl(x+\frac{b}{2a}\biggr)^2- \frac{\Delta}{4a^2}\biggr],\\] 继而可以使用平方差公式. 所以“$ax^2+bx+c$ 可以因式分解”等价于“$ax^2+bx+c=0$ 有实根”, 即
 
 - 当 $\Delta>0$ 时, $ax^2+bx+c$ 可以因式分解
 - 当 $\Delta=0$ 时, $ax^2+bx+c$ 可以因式分解且为完全平方式

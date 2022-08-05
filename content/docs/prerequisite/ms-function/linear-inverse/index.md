@@ -4,7 +4,7 @@ title: 一次函数与反比例函数
 weight: 2
 prevPage: ../axis-coordinate
 prevPageTitle: 数轴与平面直角坐标系
-nextPage: ../quadratic
+nextPage: ../quadratic-function-inequality
 nextPageTitle: 二次函数
 ---
 
