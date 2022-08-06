@@ -31,10 +31,10 @@
     
     <item>
       <title>二次函数</title>
-      <link>/docs/prerequisite/ms-function/quadratic/</link>
+      <link>/docs/prerequisite/ms-function/quadratic-function-inequality/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/prerequisite/ms-function/quadratic/</guid>
+      <guid>/docs/prerequisite/ms-function/quadratic-function-inequality/</guid>
       <description>二次函数 # 二次函数的图形是对称图形, 能取到最值, 且与二次方程、二次不等式都有联系.
 二次函数的定义与图形 # 形如 $y= ax^2+bx+c$ ($a\neq 0$) 的函数称为二次函数, 该解析式也称为二次函数的一般式. 最简单的二次函数是 $y= x^2$, 通过描点画图可知, 其图形为抛物线, 且顶点为原点, 对称轴为 $y$ 轴, 先减后增 (开口向上). 而二次函数 $y= ax^2$ ($a\neq 0$) 的图形与 $y= x^2$ 的图形类似, 且
 当 $|a|&amp;gt;1$ 时, 开口减小; 当 $|a|&amp;lt;1$ 时, 开口增大 当 $a&amp;gt;0$ 时, 开口向上; 当 $a&amp;lt;0$ 时, 开口向下 对二次函数 $y= ax^2+k$ ($a\neq 0$), 其图形可以由 $y= ax^2$ 上、下平移得到:
