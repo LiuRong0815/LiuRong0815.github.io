@@ -4,7 +4,7 @@ title: 预备知识
 weight: 1
 prevPage: /
 prevPageTitle: 本站介绍
-nextPage: ./algebra
+nextPage: ./ms-algebra
 nextPageTitle: 初中代数提要
 ---
 
