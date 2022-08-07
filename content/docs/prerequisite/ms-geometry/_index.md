@@ -2,7 +2,7 @@
 bookCollapseSection: true
 title: 初中几何提要
 weight: 2
-prevPage: ../ms-algebra/veita-theorem
+prevPage: ../ms-algebra/veite-theorem
 prevPageTitle: 韦达定理
 nextPage: ./symmetric-congruence-similar
 nextPageTitle: 对称、全等与相似
