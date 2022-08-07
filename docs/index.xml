@@ -23,7 +23,8 @@
       
       <guid>/docs/prerequisite/ms-algebra/quadratic-factorization/</guid>
       <description>二次三项式的因式分解 # 因式分解是将多项式写成两个或多个次数较低的多项式之积, 如 \[\begin{gathered} x^2+3x+2= (x+1)(x+2),\\ x^3-2x^2-3x= x(x+1)(x-3). \end{gathered}\] 因式分解时一般逆用多项式乘法公式. 这里简要回顾关于 $x$ 的整系数二次三项式 \[ ax^2+bx+c\quad (a\neq 0)\] 的因式分解方法. 在对上述二次三项式因式分解时, 常用方法是
-“提”: 提公因式 “套”: 套公式 “十字”: 用十字相乘法 具体来说, 在进行因式分解时, 应先将公因式提出, 并使得系数为整数, 以简化计算. 然后尝试套用平方差公式 \[ a^2-b^2= (a+b)(a-b)\] 或完全平方公式 \[ a^2\pm 2ab+b^2= (a\pm b)^2.\] 后一公式可以用结合图形记忆. 如果无法使用上述两个公式, 则可考虑十字相乘法, 即利用公式 \[ x^2+(a+b)x+ab= (x+a)(x+b).\] 使用该公式时, 一般先将常数项分解, 然后拼凑出一次项系数. 对于无法快速判断系数分解方式的二次三项式, 有时也考虑用配方法或求根法 (见一元二次方程的解法) 来进行因式分解. 下面先给出一些对二次三项式 $ax^2+bx+c$ ($a\neq 0$) 应用十字相乘法的例子, 然后介绍配方法. 情形一: 二次项系数 $a=1$ # 分解因式: (1) $x^2+7x+6$;&amp;emsp; (2) $x^2-13x+36$.</description>
+“提”: 提公因式 “套”: 套公式 “十字”: 用十字相乘法 具体来说, 在进行因式分解时, 应先将公因式提出, 并使得系数为整数, 以简化计算. 然后尝试套用平方差公式 \[ a^2-b^2= (a+b)(a-b)\] 或完全平方公式 \[ a^2\pm 2ab+b^2= (a\pm b)^2.\] 后一公式可以用结合图形记忆. 如果无法使用上述两个公式, 则可考虑十字相乘法, 即利用公式 \[ x^2+(a+b)x+ab= (x+a)(x+b).\] 使用该公式时, 一般先将常数项分解, 然后拼凑出一次项系数. 对于无法快速判断系数分解方式的二次三项式, 有时也考虑用配方法或求根法 (见 一元二次方程的求根公式) 来进行因式分解. 下面先给出一些对二次三项式 $ax^2+bx+c$ ($a\neq 0$) 应用十字相乘法的例子, 然后介绍配方法.
+情形一: 二次项系数 $a=1$ # 分解因式: (1) $x^2+7x+6$;&amp;emsp; (2) $x^2-13x+36$.</description>
     </item>
     
     <item>
@@ -77,7 +78,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/prerequisite/ms-algebra/quadratic-equation/</guid>
-      <description>一元二次方程的解法 # 关于 $x$ 的一元二次方程 $ax^2+bx+c= 0$ ($a\neq 0$) (此为标准形式) 的解法通常有三种: 因式分解法、配方法、求根公式法. 较常用的是第一种和第三种.
+      <description>一元二次方程的解法 # 关于 $x$ 的一元二次方程 $ax^2+bx+c= 0$ ($a\neq 0$) (此为标准形式) 的解法通常有三种: 因式分解法、配方法、求根公式法. 较常用的是第一种和第三种, 且解方程时一般先将方程化为标准形式, 如 $x^2-2=x$ 应化为 $x^2-x-2=0$, 以便于因式分解或用求根公式.
 因式分解法 # 因式分解法是指将二次方程 $ax^2+bx+c= 0$ 化为 \[ (Ax+B)(Cx+D)=0\] 的形式, 则 \[ Ax+B=0\quad \text{或}\quad Cx+D=0,\] 再解这两个一次方程. 例如, 解方程 $x^2-2x-3=0$, 可先将方程化为 \[ (x+1)(x-3)=0,\] 则 \[ x+1=0\quad \text{或}\quad x-3=0,\] 解得 $x=-1$ 或 $3$ (也可以写成 $x_1=-1$, $x_2=3$).
 使用因式分解法时, 需要熟练掌握 二次三项式因式分解 的常用方法.
 解关于 $x$ 的方程:
@@ -112,12 +113,13 @@
     
     <item>
       <title>韦达定理</title>
-      <link>/docs/prerequisite/ms-algebra/veita-theorem/</link>
+      <link>/docs/prerequisite/ms-algebra/veite-theorem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/prerequisite/ms-algebra/veita-theorem/</guid>
-      <description>韦达定理 # 设关于 $x$ 的一元二次方程 \[ax^2+bx+c=0\quad (a\neq0)\] 的两根为 $x_1$, $x_2$, 则该方程必可变形为 \[(x-x_1)(x-x_2)=0.\] 将后者展开, \[x^2- (x_1+x_2)x+ x_1x_2=0,\] 并将前者改写为 \[x^2+ \frac{b}a x+ \frac{c}{a}=0,\] 对比可知 \[\left\{\!\!\begin{array}{l} - (x_1+x_2)= \dfrac{b}a,\\ x_1x_2= \dfrac{c}a, \end{array}\right.\ \text{即}\quad \left\{\!\!\begin{array}{l} x_1+x_2= -\dfrac{b}a,\\ x_1x_2= \dfrac{c}a, \end{array}\right.\] 上述结论称为韦达 (Veite, 法国数学家) 定理, 也称为根与系数的关系定理.
-利用上面的方法可以得到一元三次方程的韦达定理 (根与系数的关系). 例如, 若关于 $x$ 的三次方程 \[ ax^3+bx^2+cx+d=0\quad (a\neq 0)\] 的三根为 $x_1$, $x_2$, $x_3$, 则该方程必可变形为 \[ (x-x_1)(x-x_2)(x-x_3)=0,\] 再展开后与原方程对比系数, 可知 \[ \left\{\!\!\begin{array}{l} x_1+x_2+x_3= -\dfrac{b}a,\\[6pt] x_1x_2+ x_2x_3+ x_3x_1= \dfrac{c}a,\\[6pt] x_1x_2x_3= -\dfrac{d}a.</description>
+      <guid>/docs/prerequisite/ms-algebra/veite-theorem/</guid>
+      <description>韦达定理 # 设关于 $x$ 的一元二次方程 \[ax^2+bx+c=0\quad (a\neq0)\] 的两根为 $x_1$, $x_2$, 则由因式分解知识可知, 该方程必可变形为 \[(x-x_1)(x-x_2)=0.\] 将前者改写为 \[x^2+ \frac{b}a x+ \frac{c}{a}=0,\] 并将后者展开, \[x^2- (x_1+x_2)x+ x_1x_2=0,\] 对比可知 \[\left\{\!\!\begin{array}{l} x_1+x_2= -\dfrac{b}a,\\ x_1x_2= \dfrac{c}a, \end{array}\right.\] 上述结论称为韦达 (Veite, 法国数学家) 定理, 也称为根与系数的关系定理.
+利用上面的方法可以得到一元三次方程的韦达定理 (根与系数的关系). 例如, 关于 $x$ 的三次方程 \[ ax^3+bx^2+cx+d=0\quad (a\neq 0)\] 的三根为 $x_1$, $x_2$, $x_3$, 等价于该方程必可变形为 \[ (x-x_1)(x-x_2)(x-x_3)=0,\] 再展开后与原方程对比系数, 可知 \[ \left\{\!\!\begin{array}{l} x_1+x_2+x_3= -\dfrac{b}a,\\[6pt] x_1x_2+ x_2x_3+ x_3x_1= \dfrac{c}a,\\[6pt] x_1x_2x_3= -\dfrac{d}a. \end{array}\right.\] 更一般的一元 $n$ 次方程的韦达定理也可以同理得出.
+也可以直接用 求根公式 来验证韦达定理: 由 \[ x_{1,2}= \frac{-b\pm\sqrt{b^2-4ac}}{2a}\] 直接计算可得结论.</description>
     </item>
     
     <item>
