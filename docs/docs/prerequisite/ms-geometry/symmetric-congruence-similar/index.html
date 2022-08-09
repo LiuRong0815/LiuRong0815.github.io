@@ -18,9 +18,9 @@
 <title>对称、全等与相似 | 高中数学资料</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.337174ba782c7c7e263783f4740cb0781960a00765c384c9f32c8e076010c16c.css" >
+<link rel="stylesheet" href="/book.min.82f11c6b8c34c24a1cf4d44f6e2be2e8d957ad7773056571d1ef6bce584b0f40.css" >
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh.search.min.9d8824eb1cb55a66bbe68918f6e71d448d84fdd9ece02e04c5120bfa86482015.js" ></script>
+  <script defer src="/zh.search.min.633f0954bc53488db72539da54455a1e0cf36df85a719735fff712fdd71abab0.js" ></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
 <!--
@@ -517,6 +517,27 @@ https://github.com/alex-shpak/hugo-book
 DE\parallel BC,\quad DE= \frac12 BC.\]</p>
 <p>
   <img src="/figs/2022/2022-08/2022-0808-2300.svg" alt="三角形中位线定理" /></p>
+<myexample>
+    <p>如下图所示, 在 $\triangle ABC$ 中, $CD$ 为 $AB$ 边上的中线, 点 $E$ 为 $CD$ 的中点, 连接 $AE$ 并延长, 交 $BC$ 于点 $F$. 求证: $BF= 2CF$.</p>
+    <img alt="相似三角形的应用" src="/figs/2022/2022-08/2022-0809-1920.svg"></img>
+</myexample>
+<myproof>
+    <p>取 $AF$ 的中点 $G$, 连接 $DG$, 则 $DG$ 为 $\triangle ABF$ 的中位线, 因此 \[
+        BF= 2DG,\quad BF\parallel DG.\] 
+    此时 $FC\parallel DG$, 则 (由 8 字形相似) \[
+        \triangle CEF\sim \triangle DEG.\]
+    因为点 $E$ 为 $CD$ 的中点, 所以 $CE=ED$, 则 $CF= DG$, 即有 $BF= 2CF$.</p>
+    <img alt="相似三角形的应用-加辅助线" src="/figs/2022/2022-08/2022-0809-1930.svg"></img>
+</myproof>
+<myremark>
+    <p>遇到中点通常构造中位线. 上题也可以取 $BF$ 中点 $H$, 再利用 $\triangle ABF$ 的中位线 $DH$ (和 A 字形相似) 来证明.</p>
+</myremark>
+<myexercise>
+    <p>如上例的图所示, 在 $\triangle ABC$ 中, $CD$ 为 $AB$ 边上的中线, 点 $F$ 为 $BC$ 的点且 $BF= 2CF$, 连接 $AF$ 交 $CD$ 于点 $E$. 求证: $CE= ED$.</p>
+</myexercise>
+<details><summary>参考答案</summary>
+    <p>仍可沿用前两种辅助线来证明.</p>
+</details>
 </article>
  
           

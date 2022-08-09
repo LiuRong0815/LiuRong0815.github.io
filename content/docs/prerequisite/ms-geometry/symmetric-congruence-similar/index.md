@@ -85,7 +85,6 @@ nextPageTitle: 三角形
     <p>(2) 对于直角三角形, 利用“斜边与一直角边分别相等”也可判定全等. 由勾股定理可知, 此时等价于使用“边边边” (而非表面上的“边边角”).</p>
 </myremark>
 
-
 <myexample>
     <p>在 $\triangle ABC$ 中, $AD$ 为 $BC$ 边上的中线, 求证: $AB+AC> 2AD$.</p>
     <img alt="中线长与边长的关系" src="/figs/2022/2022-08/2022-0808-2310.svg"></img>
@@ -130,3 +129,29 @@ nextPageTitle: 三角形
     DE\parallel BC,\quad DE= \frac12 BC.\\]
 
 ![三角形中位线定理](/figs/2022/2022-08/2022-0808-2300.svg)
+
+<myexample>
+    <p>如下图所示, 在 $\triangle ABC$ 中, $CD$ 为 $AB$ 边上的中线, 点 $E$ 为 $CD$ 的中点, 连接 $AE$ 并延长, 交 $BC$ 于点 $F$. 求证: $BF= 2CF$.</p>
+    <img alt="相似三角形的应用" src="/figs/2022/2022-08/2022-0809-1920.svg"></img>
+</myexample>
+
+<myproof>
+    <p>取 $AF$ 的中点 $G$, 连接 $DG$, 则 $DG$ 为 $\triangle ABF$ 的中位线, 因此 \[
+        BF= 2DG,\quad BF\parallel DG.\] 
+    此时 $FC\parallel DG$, 则 (由 8 字形相似) \[
+        \triangle CEF\sim \triangle DEG.\]
+    因为点 $E$ 为 $CD$ 的中点, 所以 $CE=ED$, 则 $CF= DG$, 即有 $BF= 2CF$.</p>
+    <img alt="相似三角形的应用-加辅助线" src="/figs/2022/2022-08/2022-0809-1930.svg"></img>
+</myproof>
+
+<myremark>
+    <p>遇到中点通常构造中位线. 上题也可以取 $BF$ 中点 $H$, 再利用 $\triangle ABF$ 的中位线 $DH$ (和 A 字形相似) 来证明.</p>
+</myremark>
+
+<myexercise>
+    <p>如上例的图所示, 在 $\triangle ABC$ 中, $CD$ 为 $AB$ 边上的中线, 点 $F$ 为 $BC$ 的点且 $BF= 2CF$, 连接 $AF$ 交 $CD$ 于点 $E$. 求证: $CE= ED$.</p>
+</myexercise>
+
+<details><summary>参考答案</summary>
+    <p>仍可沿用前两种辅助线来证明.</p>
+</details>
