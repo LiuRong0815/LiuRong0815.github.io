@@ -22,7 +22,7 @@
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.82f11c6b8c34c24a1cf4d44f6e2be2e8d957ad7773056571d1ef6bce584b0f40.css" >
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh.search.min.633f0954bc53488db72539da54455a1e0cf36df85a719735fff712fdd71abab0.js" ></script>
+  <script defer src="/zh.search.min.9abdfc345dc234cdc459b6ee3c60c2e2be0cb395974c5a8c3f34c560f5dde653.js" ></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
 <!--
@@ -391,7 +391,7 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#等腰三角形与等边三角形">等腰三角形与等边三角形</a></li>
         <li><a href="#直角三角形">直角三角形</a></li>
         <li><a href="#三种特殊的三角形">三种特殊的三角形</a></li>
-        <li><a href="#三角形的特殊线和点">三角形的特殊线和点</a></li>
+        <li><a href="#三角形的特殊线和特殊点">三角形的特殊线和特殊点</a></li>
       </ul>
     </li>
   </ul>
@@ -480,7 +480,8 @@ https://github.com/alex-shpak/hugo-book
     <img alt="直角三角形斜边上中线等于斜边的一半" src="/figs/2022/2022-08/2022-0809-2120.svg"></img>
 </myproof>
 <myremark>
-    <p>此例结论简记为: 直角三角形斜边上中线等于斜边的一半. 用坐标系中两点间距离公式可以更简捷地证明该结论.</p>
+    <p>(1) 此例结论简记为: 直角三角形斜边上中线等于斜边的一半. 用坐标系中两点间距离公式可以更简捷地证明该结论.</p>
+    <p>(2) 图中 $MA=MB=MC$, 即 $\triangle AMC$ 与 $\triangle BMC$ 均为等腰三角形.</p>
 </myremark>
 <h2 id="三种特殊的三角形">
   三种特殊的三角形
@@ -490,30 +491,42 @@ https://github.com/alex-shpak/hugo-book
 <p>
   <img src="/figs/2022/2022-08/2022-0809-2130.svg" alt="等腰直角三角形" /></p>
 <p>含 $30^\circ$ 角的直角三角形, 三个内角为 $30^\circ$, $60^\circ$, $90^\circ$. 将其关于长直角边作对称图形, 可形成等边三角形. 因此可知该三角形的三边比为 $1:\sqrt3:2$.</p>
+<p>
+  <img src="/figs/2022/2022-08/2022-0810-2310.svg" alt="含 30° 角的直角三角形" /></p>
 <p>底角为 $30^\circ$ 的等腰三角形, 三个内角为 $30^\circ$, $30^\circ$, $120^\circ$. 该三角形可由含 $30^\circ$ 角的直角三角形关于短直角边作对称图形得到, 所以三边比为 $2:2:2\sqrt3$, 也即 $1:1:\sqrt3$.</p>
-<h2 id="三角形的特殊线和点">
-  三角形的特殊线和点
-  <a class="anchor" href="#%e4%b8%89%e8%a7%92%e5%bd%a2%e7%9a%84%e7%89%b9%e6%ae%8a%e7%ba%bf%e5%92%8c%e7%82%b9">#</a>
+<p>
+  <img src="/figs/2022/2022-08/2022-0810-2320.svg" alt="底角为 30° 的等腰三角形" /></p>
+<h2 id="三角形的特殊线和特殊点">
+  三角形的特殊线和特殊点
+  <a class="anchor" href="#%e4%b8%89%e8%a7%92%e5%bd%a2%e7%9a%84%e7%89%b9%e6%ae%8a%e7%ba%bf%e5%92%8c%e7%89%b9%e6%ae%8a%e7%82%b9">#</a>
 </h2>
 <p>三角形的特殊线 (均为三条) 有</p>
 <ul>
-<li>中线: 顶点连接对边中点</li>
+<li>中线: 各边中点与所对顶点的连线段</li>
 <li>各边中垂线</li>
 <li>各内角平分线</li>
-<li>高线: 顶点到对边的垂线段</li>
+<li>高线: 所对顶点到各边的垂线段</li>
 </ul>
-<p>作图可以验证</p>
-<ul>
-<li>三边中线交于一点, 该点称为<strong>重心</strong>, 一般记为点 $G$ (gravity)</li>
-<li>三边中垂线交于一点, 该点称为<strong>外心</strong> (外接圆圆心), 一般记为点 $O$ (outer)</li>
-<li>三条内角平分线交于一点, 该点称为<strong>内心</strong> (内切圆圆心), 一般记为点 $I$ (inner)</li>
-<li>三条高线交于一点, 该点称为<strong>垂心</strong>, 一般记为点 $H$ (height)</li>
-</ul>
-<p>上述结论中, 第二、三条可以分别由 
+<p>作图可以验证:</p>
+<p>(1) 三边中线交于一点, 该点称为<strong>重心</strong>, 一般记为点 $G$ (gravity);</p>
+<p>
+  <img src="/figs/2022/2022-08/2022-0810-2330.svg" alt="三角形的重心" /></p>
+<p>(2) 三边中垂线交于一点, 该点称为<strong>外心</strong> (外接圆圆心), 一般记为点 $O$ (outer);</p>
+<p>
+  <img src="/figs/2022/2022-08/2022-0810-2340.svg" alt="三角形的外心" /></p>
+<p>(3) 三条内角平分线交于一点, 该点称为<strong>内心</strong> (内切圆圆心), 一般记为点 $I$ (inner);</p>
+<p>
+  <img src="/figs/2022/2022-08/2022-0810-2350.svg" alt="三角形的内心" /></p>
+<p>(4) 三条高线交于一点, 该点称为<strong>垂心</strong>, 一般记为点 $H$ (height).</p>
+<p>
+  <img src="/figs/2022/2022-08/2022-0810-2355.svg" alt="三角形的垂心" /></p>
+<p>上述结论中, (2) 和 (3) 可以分别由 
   <a href="/docs/prerequisite/ms-geometry/#%e4%b8%ad%e5%9e%82%e7%ba%bf">中垂线</a> 和 
-  <a href="/docs/prerequisite/ms-geometry/#%e8%a7%92%e5%b9%b3%e5%88%86%e7%ba%bf">角平分线</a> 的性质得到. 以证明第二条结论为例, 设 $\triangle ABC$ 的 $AB$, $BC$ 边上的中垂线交于点 $O$, 连接 $OA$, $OB$ 和 $OC$. 由中垂线的定义, \[
+  <a href="/docs/prerequisite/ms-geometry/#%e8%a7%92%e5%b9%b3%e5%88%86%e7%ba%bf">角平分线</a> 的性质得到. 以证明 (2) 为例, 设 $\triangle ABC$ 的 $AB$, $BC$ 边上的中垂线交于点 $O$, 连接 $OA$, $OB$ 和 $OC$. 由中垂线的定义, \[
 OA=OB,\quad OB=OC,\quad \text{即}\quad OA=OC,\]
-所以点 $O$ 也在 $AC$ 边的中垂线上, 表明三边中垂线交于一点. 第一、四条结论用纯几何法证明略烦琐 (较简洁的证法分别为坐标法和向量法).</p>
+所以点 $O$ 也在 $AC$ 边的中垂线上, 表明三边中垂线交于一点. 证明 (1) 的一种方法为: 设中线 $AD$, $BE$ 相交于点 $G$, 连接 $DE$ 可知, $DE$ 为中位线, 且 \[
+AB= 2DE,\quad \triangle DGE\sim \triangle AGB,\]
+所以 $AG=2DG$, 即 $AD= 3DG$. 再设中线 $AD$, $CF$ 相交于点 $G&rsquo;$, 同理可知 $AD= 3DG&rsquo;$, 因此 $G$ 与 $G&rsquo;$ 重合, 即三边中线交于一点. 用纯几何法证明 (4) 略烦琐 (较简洁的证法为高中数学的向量法).</p>
 </article>
  
           
@@ -572,7 +585,7 @@ OA=OB,\quad OB=OC,\quad \text{即}\quad OA=OC,\]
         <li><a href="#等腰三角形与等边三角形">等腰三角形与等边三角形</a></li>
         <li><a href="#直角三角形">直角三角形</a></li>
         <li><a href="#三种特殊的三角形">三种特殊的三角形</a></li>
-        <li><a href="#三角形的特殊线和点">三角形的特殊线和点</a></li>
+        <li><a href="#三角形的特殊线和特殊点">三角形的特殊线和特殊点</a></li>
       </ul>
     </li>
   </ul>
