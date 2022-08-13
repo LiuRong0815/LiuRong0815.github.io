@@ -10,7 +10,7 @@ nextPageTitle: 平面图形的面积
 
 # 圆
 
-圆具有轴对称性和中心对称性, 对称轴是任意过圆心的直线, 对称中心是圆心. 以下回顾圆的相关知识.
+圆具有轴对称性和中心对称性, 对称轴是任意过圆心的直线, 对称中心是圆心.
 
 ## 圆的定义
 
@@ -44,6 +44,29 @@ nextPageTitle: 平面图形的面积
     <p>垂径定理本质上是等腰三角形的性质.</p>
 </myremark>
 
+<myexample>
+    <p>如下图所示, 线段 $AB$ 为圆 $O$ 的弦, $C$ 为 $AB$ 的中点, $OD$ 为过点 $C$ 的半径. 若 $AB=8$, $CD=2$, 求圆 $O$ 的半径.</p>
+    <img alt="垂径定理与二次方程-1" src="/figs/2022/2022-08/2022-0813-0910.svg"></img>
+</myexample>
+
+<mysolution>
+    <p>连接 $OA$, 由垂径定理可知, $\triangle OCA$ 为直角三角形, 且 $OC\perp CA$. 设所求半径为 $r$, 则 \[\begin{gathered}
+        OA=r,\quad AC= \frac12 AB=4,\\
+        OC= OD-CD= r-2,
+    \end{gathered}\]
+    代入 $OA^2= OC^2+CA^2$, 可知 \[
+        r^2= (r-2)^2+4^2,\quad r=5.\]</p>
+    <img alt="垂径定理与二次方程-1-辅助线" src="/figs/2022/2022-08/2022-0813-0920.svg"></img>
+</mysolution>
+
+<myexercise>
+    <p>如下图所示, 线段 $AB$ 为圆 $O$ 的弦, 半径 $OD=5$ 且垂直于 $AB$. 若 $AD=2\sqrt5$, 求 $CD$ 的长度.</p>
+    <img alt="垂径定理与二次方程-2" src="/figs/2022/2022-08/2022-0813-1000.svg"></img>
+</myexercise>
+
+<details><summary>参考答案</summary>
+    <p>提示: 仍连接 $OA$ 并用垂径定理. 在 $\mathrm{Rt}\triangle ACO$ 和 $\mathrm{Rt}\triangle ACD$ 中利用勾股定理列关于 $CD$ 和 $AC$ 的方程, 消去 $AC$ 后可以解得 $CD=2$.</p>
+</details>
 
 
 ## 直线与圆、两圆的位置关系
@@ -58,7 +81,34 @@ nextPageTitle: 平面图形的面积
 
 设直线 $l$ 与圆 $C$ 相切于点 $P$, 则 $CP\perp l$, 即过切点的半径垂直于切线. 此时, 圆心 $C$ 到切线 $l$ 的距离为 $CP$, 即圆心到切线的距离等于半径. 判断圆的切线的另一个方法是: 若圆心 $C$ 到直线 $l$ 的距离为半径 $r$, 则 $l$ 与圆 $C$ 相切.
 
-圆 $C_1$ 与圆 $C_2$ 的位置关系有五种:
+<myexample>
+    <p>如下图所示, 在直角梯形 $ABCD$ 中, $AB\parallel DC$, $\angle A= 90^\circ$, $BC=AB+CD$, 圆 $E$ 以 $BC$ 为直径, 求证: 圆 $E$ 与 $AD$ 相切.</p>
+    <img alt="上下底之和等于斜腰的直角梯形, 以斜腰为直径的圆与直腰相切" src="/figs/2022/2022-08/2022-0813-1050.svg"></img>
+</myexample>
+
+<myproof>
+    <p>由已知, 点 $E$ 为 $BC$ 的中点. 取 $AD$ 的中点 $F$, 连接 $EF$, 则 $EF$ 为直角梯形 $ABCD$ 的中位线, 所以 \[
+        EF= \frac12(AB+CD)= \frac12 BC,\quad
+        EF\parallel AB.\]
+    因为 $\angle A= 90^\circ$, 所以可知 $EF\perp AD$. 由此可知, 圆心 $E$ 到直线 $AD$ 的距离 $EF$ 为半径 $\dfrac12 BC$, 表明圆 $E$ 与 $AD$ 相切.</p>
+    <img alt="上下底之和等于斜腰的直角梯形, 以斜腰为直径的圆与直腰相切-辅助线" src="/figs/2022/2022-08/2022-0813-1100.svg"></img>
+</myproof>
+
+<myremark>
+    <p>判断圆与直线相切的两个方法: 圆与直线有唯一的交点; 圆心到直线的距离等于半径, 都应熟知. 两者在高中数学里都会用到.</p>
+</myremark>
+
+<myexercise>
+    <p>如上例的图所示, 在直角梯形 $ABCD$ 中, $AB\parallel DC$, $\angle A= 90^\circ$, 圆 $E$ 以 $BC$ 为直径且与 $AD$ 相切, 求证: $BC=AB+CD$.</p>
+</myexercise>
+
+<details><summary>参考答案</summary>
+    <p>提示: 设圆 $E$ 与 $AD$ 相切于点 $F$, 连接 $EF$, 则 \[
+        EF\perp AD\Rightarrow EF\parallel AB.\]
+    利用平行线分线段成比例和梯形中位线的性质, 可推出 $EF= \dfrac12 (AB+DC)$, 再由 $BC$ 为圆 $E$ 的直径可得结论.</p>
+</details>
+
+圆 $C_1$ 与圆 $C_2$ 的位置关系有五种 (自行补图):
 
 - 外离: 两圆没有交点, 且每个圆的圆心均在另一个圆的外部
 - 外切: 两圆恰有一个交点, 且每个圆的圆心均在另一个圆的外部

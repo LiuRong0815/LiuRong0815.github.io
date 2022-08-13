@@ -14,7 +14,7 @@
 
 </title>
 <g stroke-linejoin="miter" stroke-dashoffset="0.0000" stroke-dasharray="none" stroke-width="1.0000" stroke-miterlimit="10.000" stroke-linecap="square">
-<clipPath id="clip55114484-f960-4a79-bee5-d237ee105a2b">
+<clipPath id="clip80898ce3-3d0b-4005-bad5-5a4a3f60959c">
   <path d="M 0.0000 0.0000 L 0.0000 247.00 L 262.00 247.00 L 262.00 0.0000 z"/>
 </clipPath>
 <g clip-path="url(#clip1)">
@@ -25,7 +25,7 @@
 <g id="misc">
 </g><!-- misc -->
 <g id="layer0">
-<clipPath id="clipe5760e2d-7a7c-40b9-a2f4-1c53cd22da43">
+<clipPath id="clip2eba35a1-9b34-461e-89f3-e1bb62cb5c53">
   <path d="M 0.0000 0.0000 L 0.0000 247.00 L 262.00 247.00 L 262.00 0.0000 z"/>
 </clipPath>
 <g clip-path="url(#clip2)">
@@ -36,7 +36,7 @@
 
 </g> <!-- drawing style -->
 </g> <!-- clip2 -->
-<clipPath id="clip5613112f-d379-413f-9e91-0f82400e393d">
+<clipPath id="clip3c24ec68-1c6d-4fb8-80d6-bc7f16e0c154">
   <path d="M 0.0000 0.0000 L 0.0000 247.00 L 262.00 247.00 L 262.00 0.0000 z"/>
 </clipPath>
 <g clip-path="url(#clip3)">
@@ -47,29 +47,29 @@
 
 </g> <!-- drawing style -->
 </g> <!-- clip3 -->
-<clipPath id="clipe8787965-88c2-460e-ab61-0996dbf6d694">
+<clipPath id="clipaf725bfb-3473-408f-97e7-d26a802d1ed4">
   <path d="M 0.0000 0.0000 L 0.0000 247.00 L 262.00 247.00 L 262.00 0.0000 z"/>
 </clipPath>
 <g clip-path="url(#clip4)">
-<g stroke-linejoin="round" stroke-width="1.5000" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#000000">
+<g stroke-linejoin="round" stroke-dasharray="5.5000,4.0000" stroke-width="1.5000" stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#0000ff">
   <path d="M 128.00 120.00 L 222.49 127.14"/>
 <title>线段 h</title>
 <desc>线段 h: 线段AE</desc>
 
 </g> <!-- drawing style -->
 </g> <!-- clip4 -->
-<clipPath id="clip6e9c61d0-c457-48ea-b581-017e4064108b">
+<clipPath id="clip5003b483-0cb1-4d8e-9858-0ccd10a2067d">
   <path d="M 0.0000 0.0000 L 0.0000 247.00 L 262.00 247.00 L 262.00 0.0000 z"/>
 </clipPath>
 <g clip-path="url(#clip5)">
-<g stroke-linejoin="round" stroke-width="1.5000" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#000000">
+<g stroke-linejoin="round" stroke-dasharray="5.5000,4.0000" stroke-width="1.5000" stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#0000ff">
   <path d="M 128.00 120.00 L 92.279 207.77"/>
 <title>线段 f</title>
 <desc>线段 f: 线段AC</desc>
 
 </g> <!-- drawing style -->
 </g> <!-- clip5 -->
-<clipPath id="clip4b9a35f0-02d0-4825-b09e-dcf097b17e17">
+<clipPath id="clipb09f56c4-f5c2-4308-89a6-6ed1c7423707">
   <path d="M 0.0000 0.0000 L 0.0000 247.00 L 262.00 247.00 L 262.00 0.0000 z"/>
 </clipPath>
 <g clip-path="url(#clip6)">
@@ -80,7 +80,7 @@
 
 </g> <!-- drawing style -->
 </g> <!-- clip6 -->
-<clipPath id="clip0e54aa86-17b5-45f5-8ca0-99abcd0113a7">
+<clipPath id="clipd73d2b87-d1f8-42df-961e-933fb3803683">
   <path d="M 0.0000 0.0000 L 0.0000 247.00 L 262.00 247.00 L 262.00 0.0000 z"/>
 </clipPath>
 <g clip-path="url(#clip7)">
@@ -91,7 +91,7 @@
 
 </g> <!-- drawing style -->
 </g> <!-- clip7 -->
-<clipPath id="clip5ab96a6a-0713-48f1-8a7c-3f239be02aec">
+<clipPath id="clipd6b999c5-3183-410b-bed1-67fe8aaa5a9e">
   <path d="M 0.0000 0.0000 L 0.0000 247.00 L 262.00 247.00 L 262.00 0.0000 z"/>
 </clipPath>
 <g clip-path="url(#clip8)">
@@ -102,9 +102,9 @@
 
 </g> <!-- drawing style -->
 </g> <!-- clip8 -->
-<g transform="matrix(.21000, 0.0000, 0.0000, .21000, 103.00, 105.34)">
-<clipPath id="clipf8f404fa-cc02-41ef-ba67-f8f6eb2746c4">
-  <path d="M -490.48 -501.63 L -490.48 674.56 L 757.14 674.56 L 757.14 -501.63 z"/>
+<g transform="matrix(.21000, 0.0000, 0.0000, .21000, 108.00, 119.34)">
+<clipPath id="clipd2756e05-5a51-49f8-ab90-bb0f3fef4e09">
+  <path d="M -514.29 -568.30 L -514.29 607.89 L 733.33 607.89 L 733.33 -568.30 z"/>
 </clipPath>
 <g clip-path="url(#clip9)">
 <g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
@@ -115,7 +115,7 @@
 </g> <!-- drawing style -->
 </g> <!-- clip9 -->
 </g> <!-- transform -->
-<clipPath id="clip99b8fe82-2acb-44ac-94a5-a178e6ae6aaf">
+<clipPath id="clip853edad3-0ab2-40db-add2-9ce0b27badcf">
   <path d="M 0.0000 0.0000 L 0.0000 247.00 L 262.00 247.00 L 262.00 0.0000 z"/>
 </clipPath>
 <g clip-path="url(#clip10)">
@@ -126,7 +126,7 @@
 
 </g> <!-- drawing style -->
 </g> <!-- clip10 -->
-<clipPath id="clipc69afdee-9919-4193-b5cf-588313533191">
+<clipPath id="clipcbec9395-5a2a-41f6-a997-37da9f5c7d86">
   <path d="M 0.0000 0.0000 L 0.0000 247.00 L 262.00 247.00 L 262.00 0.0000 z"/>
 </clipPath>
 <g clip-path="url(#clip11)">
@@ -138,7 +138,7 @@
 </g> <!-- drawing style -->
 </g> <!-- clip11 -->
 <g transform="matrix(.21000, 0.0000, 0.0000, .21000, 228.00, 134.34)">
-<clipPath id="clip75000902-ee55-4d77-84e1-8904687964a3">
+<clipPath id="clip59057645-8d7d-415d-84f8-a479ac616e7d">
   <path d="M -1085.7 -639.73 L -1085.7 536.46 L 161.90 536.46 L 161.90 -639.73 z"/>
 </clipPath>
 <g clip-path="url(#clip12)">
@@ -150,7 +150,7 @@
 </g> <!-- drawing style -->
 </g> <!-- clip12 -->
 </g> <!-- transform -->
-<clipPath id="clip4b999fb7-0de1-487a-b5f9-46685fb9a4c6">
+<clipPath id="clipefce086c-afd5-4e82-800f-7a1f22b2f402">
   <path d="M 0.0000 0.0000 L 0.0000 247.00 L 262.00 247.00 L 262.00 0.0000 z"/>
 </clipPath>
 <g clip-path="url(#clip13)">
@@ -162,7 +162,7 @@
 </g> <!-- drawing style -->
 </g> <!-- clip13 -->
 <g transform="matrix(.21000, 0.0000, 0.0000, .21000, 72.000, 227.34)">
-<clipPath id="clip5dbfed35-53ff-49e6-9ba2-d4f3000c8c48">
+<clipPath id="clipce3a55e0-a67b-4929-9ca9-f1e4160f9d37">
   <path d="M -342.86 -1082.6 L -342.86 93.605 L 904.76 93.605 L 904.76 -1082.6 z"/>
 </clipPath>
 <g clip-path="url(#clip14)">
@@ -174,7 +174,7 @@
 </g> <!-- drawing style -->
 </g> <!-- clip14 -->
 </g> <!-- transform -->
-<clipPath id="clip1dc209ee-5a9a-478a-8352-dcdd3f2cd712">
+<clipPath id="clip9fc4e0b9-5c63-4c8b-ba51-f60db51b3878">
   <path d="M 0.0000 0.0000 L 0.0000 247.00 L 262.00 247.00 L 262.00 0.0000 z"/>
 </clipPath>
 <g clip-path="url(#clip15)">
@@ -186,7 +186,7 @@
 </g> <!-- drawing style -->
 </g> <!-- clip15 -->
 <g transform="matrix(.21000, 0.0000, 0.0000, .21000, 153.00, 189.34)">
-<clipPath id="clip77b9ba58-4ad1-4de1-bbd7-ef550a2a7477">
+<clipPath id="clipd56b618b-4273-4bef-95bd-50d6b38d5f93">
   <path d="M -728.57 -901.63 L -728.57 274.56 L 519.05 274.56 L 519.05 -901.63 z"/>
 </clipPath>
 <g clip-path="url(#clip16)">

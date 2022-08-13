@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+
+<svg 
+     version="1.1"
+     baseProfile="full"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:ev="http://www.w3.org/2001/xml-events"
+     width="5.0cm"
+     height="3.78cm"
+     viewBox="0 0 248 188"
+     >
+<title>
+
+</title>
+<g stroke-linejoin="miter" stroke-dashoffset="0.0000" stroke-dasharray="none" stroke-width="1.0000" stroke-miterlimit="10.000" stroke-linecap="square">
+<clipPath id="clip2a2662a1-0f3d-41df-85fc-a2a6243c83ce">
+  <path d="M 0.0000 0.0000 L 0.0000 189.00 L 250.00 189.00 L 250.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip1)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#ffffff">
+  <path d="M 0.0000 0.0000 L 250.00 0.0000 L 250.00 189.00 L 0.0000 189.00 L 0.0000 0.0000 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip1 -->
+<g id="misc">
+</g><!-- misc -->
+<g id="layer0">
+<clipPath id="clip8cd85a82-d538-4050-9d77-27b33e08b87c">
+  <path d="M 0.0000 0.0000 L 0.0000 189.00 L 250.00 189.00 L 250.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip2)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 77.000 155.00 L 87.607 155.00 L 87.607 144.39 L 77.000 144.39 L 77.000 155.00"/>
+<title>角度 α</title>
+<desc>角度 α: ∠BEC</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip2 -->
+<g transform="matrix(.21000, 0.0000, 0.0000, .21000, 96.000, 172.05)">
+<clipPath id="clip01aec452-94ac-4116-b10c-e5300db2c23c">
+  <path d="M -457.14 -819.29 L -457.14 80.710 L 733.33 80.710 L 733.33 -819.29 z"/>
+</clipPath>
+<g clip-path="url(#clip3)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 37.297 -37.797 Q 37.797 -41.203 40.406 -42.000 Q 40.906 -42.203 41.500 -42.203 Q 44.094 -42.203 44.406 -39.500 Q 44.406 -38.906 43.703 -36.094 L 40.094 -22.094 Q 38.594 -15.797 37.906 -13.094 Q 36.594 -7.9062 36.594 -5.7031 Q 36.594 -1.0938 39.594 -1.0938 Q 43.406 -1.0938 46.000 -9.0938 Q 46.500 -10.797 47.203 -13.500 Q 48.000 -15.203 48.594 -15.297 Q 49.797 -15.297 49.797 -14.297 Q 49.797 -12.797 48.000 -7.2969 Q 47.406 -5.5938 46.797 -4.4062 Q 44.000 1.0938 39.406 1.0938 Q 33.797 1.0938 31.297 -3.7031 Q 30.594 -4.9062 30.297 -6.4062 Q 24.000 1.0938 17.297 1.0938 Q 9.7969 1.0938 6.2031 -5.7031 Q 4.0000 -9.7031 4.0000 -14.906 Q 4.0000 -25.703 11.500 -34.906 Q 18.500 -43.297 26.703 -44.094 Q 27.406 -44.203 28.094 -44.203 Q 34.203 -44.203 37.297 -37.797 z M 30.797 -11.906 L 30.797 -11.906 L 35.797 -31.500 Q 36.094 -33.000 36.094 -33.203 Q 36.094 -35.297 34.297 -38.297 Q 32.094 -42.000 28.203 -42.000 Q 23.000 -42.000 18.297 -35.203 Q 17.406 -33.906 16.594 -32.406 Q 13.703 -26.594 11.703 -15.906 Q 11.094 -12.500 11.094 -10.500 Q 11.094 -3.7031 14.906 -1.7031 Q 16.000 -1.0938 17.500 -1.0938 Q 23.094 -1.0938 28.797 -8.2031 Q 30.203 -9.7969 30.703 -11.500 L 30.703 -11.594 Q 30.797 -11.797 30.797 -11.906 z"/>
+<title>线段 c</title>
+<desc>线段 c: 线段AB</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip3 -->
+</g> <!-- transform -->
+<clipPath id="clip789d001c-5a70-4820-ba87-88dd0d14f769">
+  <path d="M 0.0000 0.0000 L 0.0000 189.00 L 250.00 189.00 L 250.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip4)">
+<g stroke-linejoin="round" stroke-width="1.5000" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 27.000 155.00 L 177.00 155.00"/>
+<title>线段 c</title>
+<desc>线段 c: 线段AB</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip4 -->
+<clipPath id="clip568c71e8-e6e0-4302-a15d-7a3ebecef17b">
+  <path d="M 0.0000 0.0000 L 0.0000 189.00 L 250.00 189.00 L 250.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip5)">
+<g stroke-linejoin="round" stroke-width="1.5000" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 177.00 155.00 L 77.000 30.000"/>
+<title>线段 a</title>
+<desc>线段 a: 线段BC</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip5 -->
+<clipPath id="clipe1b49478-29dc-4400-8e61-d3c868d66125">
+  <path d="M 0.0000 0.0000 L 0.0000 189.00 L 250.00 189.00 L 250.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip6)">
+<g stroke-linejoin="round" stroke-width="1.5000" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 77.000 30.000 L 27.000 155.00"/>
+<title>线段 b</title>
+<desc>线段 b: 线段CA</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip6 -->
+<clipPath id="clipd7b72cc8-1d77-438c-ab78-852d5adfa51c">
+  <path d="M 0.0000 0.0000 L 0.0000 189.00 L 250.00 189.00 L 250.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip7)">
+<g stroke-linejoin="round" stroke-dasharray="5.5000,4.0000" stroke-width="1.5000" stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 227.00 30.000 L 77.000 30.000"/>
+<title>线段 c&apos;</title>
+<desc>线段 c&apos;: 线段A&apos;B&apos;</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip7 -->
+<clipPath id="clipa789b7fa-d722-4005-a98c-895a5e98e18d">
+  <path d="M 0.0000 0.0000 L 0.0000 189.00 L 250.00 189.00 L 250.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip8)">
+<g stroke-linejoin="round" stroke-width="1.5000" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 77.000 30.000 L 177.00 155.00"/>
+<title>线段 a&apos;</title>
+<desc>线段 a&apos;: 线段B&apos;C&apos;</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip8 -->
+<clipPath id="clipf7f03053-3515-4d01-bc29-fe1bbdc31ff8">
+  <path d="M 0.0000 0.0000 L 0.0000 189.00 L 250.00 189.00 L 250.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip9)">
+<g stroke-linejoin="round" stroke-dasharray="5.5000,4.0000" stroke-width="1.5000" stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 177.00 155.00 L 227.00 30.000"/>
+<title>线段 b&apos;</title>
+<desc>线段 b&apos;: 线段C&apos;A&apos;</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip9 -->
+<g transform="matrix(.21000, 0.0000, 0.0000, .21000, 82.000, 106.57)">
+<clipPath id="clip51cc5fb0-1aa9-4d71-9313-a310a39bfed7">
+  <path d="M -390.48 -507.50 L -390.48 392.50 L 800.00 392.50 L 800.00 -507.50 z"/>
+</clipPath>
+<g clip-path="url(#clip10)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 28.703 -68.297 L 20.906 -36.500 Q 27.094 -44.203 35.703 -44.203 Q 44.594 -44.203 46.703 -37.297 L 46.703 -37.203 Q 47.203 -35.500 47.203 -33.500 Q 47.203 -27.906 41.094 -11.500 Q 39.297 -7.0938 39.297 -4.4062 Q 39.297 -1.0938 41.703 -1.0938 Q 47.906 -1.0938 51.500 -12.094 L 51.906 -13.500 Q 52.406 -15.094 52.906 -15.203 L 52.906 -15.297 L 53.406 -15.297 Q 54.594 -15.297 54.594 -14.297 Q 54.594 -12.594 52.500 -8.0000 Q 48.203 1.0938 41.500 1.0938 Q 36.406 1.0938 34.203 -3.2031 Q 33.297 -5.0000 33.297 -7.0938 Q 33.297 -8.9062 34.594 -12.594 Q 40.797 -28.406 40.797 -35.000 Q 40.797 -42.000 35.406 -42.000 Q 30.594 -42.000 25.797 -38.500 Q 22.094 -35.594 19.297 -29.906 L 19.000 -29.297 Q 18.594 -26.906 17.906 -24.797 Q 17.406 -22.500 16.203 -18.094 L 14.000 -9.0938 L 12.094 -1.5000 Q 11.406 .59375 9.0000 1.0000 Q 8.7031 1.0938 8.4062 1.0938 Q 6.0000 1.0938 5.5938 -1.0000 Q 5.5000 -1.4062 5.5000 -1.7031 Q 5.5000 -2.5000 5.9062 -3.9062 L 20.406 -61.500 L 20.703 -63.500 Q 20.703 -64.594 19.297 -64.906 L 19.297 -64.906 Q 18.094 -65.203 15.703 -65.203 Q 13.500 -65.203 13.297 -66.406 Q 13.297 -68.094 15.203 -68.406 L 27.406 -69.406 Q 28.703 -69.406 28.703 -68.297 z"/>
+<title>线段 f</title>
+<desc>线段 f: 线段CE</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip10 -->
+</g> <!-- transform -->
+<clipPath id="clip914aa442-93ac-417d-b433-a42579f2656e">
+  <path d="M 0.0000 0.0000 L 0.0000 189.00 L 250.00 189.00 L 250.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip11)">
+<g stroke-linejoin="round" stroke-width="1.5000" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 77.000 30.000 L 77.000 155.00"/>
+<title>线段 f</title>
+<desc>线段 f: 线段CE</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip11 -->
+<clipPath id="clip570ab122-85e4-4d6f-9dea-f2e630b5d66a">
+  <path d="M 0.0000 0.0000 L 0.0000 189.00 L 250.00 189.00 L 250.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip12)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 28.000 155.00 C 28.000 155.55 27.552 156.00 27.000 156.00 C 26.448 156.00 26.000 155.55 26.000 155.00 C 26.000 154.45 26.448 154.00 27.000 154.00 C 27.552 154.00 28.000 154.45 28.000 155.00 z"/>
+<title>点 A</title>
+<desc>A = (0, 0)</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip12 -->
+<clipPath id="clip9fe4307e-92f8-454b-b2d1-1724a73683ee">
+  <path d="M 0.0000 0.0000 L 0.0000 189.00 L 250.00 189.00 L 250.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip13)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 178.00 155.00 C 178.00 155.55 177.55 156.00 177.00 156.00 C 176.45 156.00 176.00 155.55 176.00 155.00 C 176.00 154.45 176.45 154.00 177.00 154.00 C 177.55 154.00 178.00 154.45 178.00 155.00 z"/>
+<title>点 B</title>
+<desc>B = (3, 0)</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip13 -->
+<clipPath id="clipb1d202be-bd44-46a5-b17e-ba0d49d3b530">
+  <path d="M 0.0000 0.0000 L 0.0000 189.00 L 250.00 189.00 L 250.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip14)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 78.000 30.000 C 78.000 30.552 77.552 31.000 77.000 31.000 C 76.448 31.000 76.000 30.552 76.000 30.000 C 76.000 29.448 76.448 29.000 77.000 29.000 C 77.552 29.000 78.000 29.448 78.000 30.000 z"/>
+<title>点 C</title>
+<desc>C = (1, 2.5)</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip14 -->
+<clipPath id="clip28961d40-9486-4eb3-b840-4f40021a3dd3">
+  <path d="M 0.0000 0.0000 L 0.0000 189.00 L 250.00 189.00 L 250.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip15)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 128.00 92.500 C 128.00 93.052 127.55 93.500 127.00 93.500 C 126.45 93.500 126.00 93.052 126.00 92.500 C 126.00 91.948 126.45 91.500 127.00 91.500 C 127.55 91.500 128.00 91.948 128.00 92.500 z"/>
+<title>点 D</title>
+<desc>点 D: a 的中点</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip15 -->
+<clipPath id="clip6c8450e5-ec13-49ce-b5cf-1709848c8574">
+  <path d="M 0.0000 0.0000 L 0.0000 189.00 L 250.00 189.00 L 250.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip16)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 228.00 30.000 C 228.00 30.552 227.55 31.000 227.00 31.000 C 226.45 31.000 226.00 30.552 226.00 30.000 C 226.00 29.448 226.45 29.000 227.00 29.000 C 227.55 29.000 228.00 29.448 228.00 30.000 z"/>
+<title>点 A&apos;</title>
+<desc>点 A&apos;: A 关于 D 的镜像</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip16 -->
+<clipPath id="clip27ebae8c-a9ec-4c66-bb38-7d1ffb047632">
+  <path d="M 0.0000 0.0000 L 0.0000 189.00 L 250.00 189.00 L 250.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip17)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 78.000 30.000 C 78.000 30.552 77.552 31.000 77.000 31.000 C 76.448 31.000 76.000 30.552 76.000 30.000 C 76.000 29.448 76.448 29.000 77.000 29.000 C 77.552 29.000 78.000 29.448 78.000 30.000 z"/>
+<title>点 B&apos;</title>
+<desc>点 B&apos;: B 关于 D 的镜像</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip17 -->
+<clipPath id="clipa3b3b649-5f26-4030-847a-7f71e09c3b7b">
+  <path d="M 0.0000 0.0000 L 0.0000 189.00 L 250.00 189.00 L 250.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip18)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 178.00 155.00 C 178.00 155.55 177.55 156.00 177.00 156.00 C 176.45 156.00 176.00 155.55 176.00 155.00 C 176.00 154.45 176.45 154.00 177.00 154.00 C 177.55 154.00 178.00 154.45 178.00 155.00 z"/>
+<title>点 C&apos;</title>
+<desc>点 C&apos;: C 关于 D 的镜像</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip18 -->
+<clipPath id="clip99363f99-d382-43fb-90a6-2ef832d2a008">
+  <path d="M 0.0000 0.0000 L 0.0000 189.00 L 250.00 189.00 L 250.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip19)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 78.000 155.00 C 78.000 155.55 77.552 156.00 77.000 156.00 C 76.448 156.00 76.000 155.55 76.000 155.00 C 76.000 154.45 76.448 154.00 77.000 154.00 C 77.552 154.00 78.000 154.45 78.000 155.00 z"/>
+<title>点 E</title>
+<desc>点 E: (x(C), 0)</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip19 -->
+</g><!-- layer0 -->
+</g> <!-- default stroke -->
+</svg> <!-- bounding box -->
