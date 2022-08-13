@@ -39,7 +39,7 @@ nextPageTitle: 数轴与平面直角坐标系
 
 ![锐角三角函数值](/figs/2022/2022-08/2022-0813-1540.svg)
 
-<p>特殊的锐角三角函数值有 \[\begin{array}{c|ccc}
+<p>特殊的锐角三角函数值罗列如下: \[\begin{array}{c|ccc}
     \hline
     \rule[-1ex]{0ex}{3.5ex}\angle A& 30^\circ & 45^\circ & 60^\circ \\
     \hline
