@@ -1,6 +1,6 @@
 ---
 # bookCollapseSection: true
-title: 二次函数
+title: 二次函数与二次不等式
 weight: 3
 prevPage: ../linear-inverse
 prevPageTitle: 一次函数与反比例函数
@@ -8,7 +8,7 @@ nextPage: ../graph-tranform
 nextPageTitle: 函数图象的变换
 ---
 
-# 二次函数
+# 二次函数与二次不等式
 
 二次函数的图形是对称图形, 能取到最值, 且与二次方程、二次不等式都有联系.
 
