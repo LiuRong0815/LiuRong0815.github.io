@@ -67,7 +67,3 @@ nextPageTitle: 预备知识
 - 会从“数”与“形”两方面考虑问题
 
 总之，学习高中数学需要投入不少时间。
-
-## 联系方式
-
-如果发现本站资料错误，或有建议，可发邮件至 [rong.liu@mail.bnu.edu.cn](mailto:rong.liu@mail.bnu.edu.cn)。
