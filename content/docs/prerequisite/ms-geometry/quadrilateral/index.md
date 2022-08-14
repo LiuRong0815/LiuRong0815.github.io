@@ -108,7 +108,7 @@ nextPageTitle: 圆
     <p>上例和下面的练习, 用坐标法证明更方便.</p>
 </myremark>
 
-<myexercise>
+<myexercise id="三角形向外作两个正方形-中点连线为垂线">
     <p>如下图所示, 以 $\triangle ABC$ 的两边 $AB$, $AC$ 为边长, 向外作分别作正方形 $ABDE$ 和正方形 $ACFG$. 点 $H$ 为 $BC$ 中点, 点 $I$ 为 $DF$ 中点. 求证: \[
         HI\perp BC,\quad HI= \frac12 BC.\]</p>
     <img alt="三角形向外作两个正方形-中点连线为垂线" src="/figs/2022/2022-08/2022-0812-2030.svg"></img>
