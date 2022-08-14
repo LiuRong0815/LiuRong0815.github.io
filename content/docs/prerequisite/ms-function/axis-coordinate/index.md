@@ -101,6 +101,34 @@ nextPageTitle: 一次函数与反比例函数
     <p>利用中点坐标公式和两点之间距离公式直接计算 (从此题可以看出坐标法的优势).</p>
 </details>
 
+<myexample>
+    <p>已知 $A(2,3)$, $B(4,2)$, 求 $\triangle OAB$ 的面积 $S_{\triangle OAB}$ .</p>
+    <img alt="求坐标系中三角形的面积" src="/figs/2022/2022-08/2022-0814-1850.svg"></img>
+</myexample>
+
+<mysolution>
+    <p>作如下图所示的辅助线, 可知所求面积为矩形面积减去三个三角形的面积, 即 \[\begin{aligned}
+        S_{\triangle OAB} &= S_{ODEC}- S_{\triangle ODB}
+            - S_{\triangle BEA}- S_{\triangle OAC} \\
+        &= 4\times 3- \frac{4\times 2}2- \frac{1\times 2}2- \frac{3\times 2}2\\
+        &= 12- 4- 1- 3= 4.
+    \end{aligned}\]</p>
+    <img alt="求坐标系中三角形的面积-辅助线" src="/figs/2022/2022-08/2022-0814-1900.svg"></img>
+</mysolution>
+
+<myremark>
+    <p>(1) 上例有多种解法 (高中数学还会提供更通用的解法).</p>
+    <p>(2) 若三角形的顶点均不为原点, 则可以仿照上述解法, 构造包围三角形的矩形; 或先将三角形整体平移, 使其一个顶点与原点重合, 再用上述解法.</p>
+</myremark>
+
+<myexercise>
+    <p>用另一种方法解上例.</p>
+</myexercise>
+
+<details><summary>参考答案</summary>
+    <p>提示: (方法一) 分别过点 $A$, $B$ 作 $x$ 轴 (或 $y$ 轴) 的垂线; (方法二) 求出直线 $AB$ 与坐标轴的交点.</p>
+</details>
+
 ## 点的变换
 
 点的变换一般指点的平移、轴对称、中心对称、旋转, 下面简要介绍在平面直角坐标系中的相关结论, 所有结论均应结合图形 (自行作图) 来理解和记忆.
