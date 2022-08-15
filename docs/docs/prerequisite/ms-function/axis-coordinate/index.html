@@ -22,7 +22,7 @@
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.82f11c6b8c34c24a1cf4d44f6e2be2e8d957ad7773056571d1ef6bce584b0f40.css" >
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh.search.min.63b5f9ec0a10d45ebaf16c26b11d058dd7c2e7c1988efa76142054c362e244a4.js" ></script>
+  <script defer src="/zh.search.min.4aec76e54db9b97c4c55b9a45c5251f50313e7d787c510ce7e3023a975650b03.js" ></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
 <!--
@@ -304,7 +304,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/prerequisite/ms-function/quadratic-function-inequality/" class="">二次函数</a>
+    <a href="/docs/prerequisite/ms-function/quadratic-function-inequality/" class="">二次函数与二次不等式</a>
   
 
         </li>
@@ -494,6 +494,29 @@ x_0= \frac{x_1+x_2}2.\]
 <details><summary>参考答案</summary>
     <p>利用中点坐标公式和两点之间距离公式直接计算 (从此题可以看出坐标法的优势).</p>
 </details>
+<myexample>
+    <p>已知 $A(2,3)$, $B(4,2)$, 求 $\triangle OAB$ 的面积 $S_{\triangle OAB}$ .</p>
+    <img alt="求坐标系中三角形的面积" src="/figs/2022/2022-08/2022-0814-1850.svg"></img>
+</myexample>
+<mysolution>
+    <p>作如下图所示的辅助线, 可知所求面积为矩形面积减去三个三角形的面积, 即 \[\begin{aligned}
+        S_{\triangle OAB} &= S_{ODEC}- S_{\triangle ODB}
+            - S_{\triangle BEA}- S_{\triangle OAC} \\
+        &= 4\times 3- \frac{4\times 2}2- \frac{1\times 2}2- \frac{3\times 2}2\\
+        &= 12- 4- 1- 3= 4.
+    \end{aligned}\]</p>
+    <img alt="求坐标系中三角形的面积-辅助线" src="/figs/2022/2022-08/2022-0814-1900.svg"></img>
+</mysolution>
+<myremark>
+    <p>(1) 上例有多种解法 (高中数学还会提供更通用的解法).</p>
+    <p>(2) 若三角形的顶点均不为原点, 则可以仿照上述解法, 构造包围三角形的矩形; 或先将三角形整体平移, 使其一个顶点与原点重合, 再用上述解法.</p>
+</myremark>
+<myexercise>
+    <p>用另一种方法解上例.</p>
+</myexercise>
+<details><summary>参考答案</summary>
+    <p>提示: (方法一) 分别过点 $A$, $B$ 作 $x$ 轴 (或 $y$ 轴) 的垂线; (方法二) 利用一次函数求出直线 $AB$ 与坐标轴的两个交点 (或一个交点); (方法三) 将点 $A$ 沿平行于 $OB$ 的方向平移至 $y$ 轴上, 或将点 $B$ 沿平行于 $OA$ 的方向平移至 $x$ 轴上 (均可用一次函数或相似确定平移后点的坐标).</p>
+</details>
 <h2 id="点的变换">
   点的变换
   <a class="anchor" href="#%e7%82%b9%e7%9a%84%e5%8f%98%e6%8d%a2">#</a>
@@ -587,7 +610,11 @@ x_0= \frac{x_1+x_2}2.\]
         <a class="docs-next button" href="../linear-inverse">
           <span>一次函数与反比例函数</span><span class="arrow-next"> →</span></a>
       
-      </div>
+    </div>
+
+    <p>作者邮箱 rong.liu@mail.bnu.edu.cn。</p>
+    <p>读者的支持是作者持续更新的动力😊</p>
+    
 
       <footer class="book-footer">
         
