@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/docs/prerequisite/set-logic/set-def/</loc>
-  </url><url>
     <loc>/docs/prerequisite/ms-algebra/</loc>
   </url><url>
     <loc>/docs/prerequisite/ms-geometry/symmetric-congruence-similar/</loc>
   </url><url>
     <loc>/docs/prerequisite/ms-algebra/quadratic-factorization/</loc>
+  </url><url>
+    <loc>/docs/prerequisite/set-logic/set-def/</loc>
   </url><url>
     <loc>/docs/prerequisite/ms-function/axis-coordinate/</loc>
   </url><url>
@@ -16,9 +16,9 @@
   </url><url>
     <loc>/docs/analytic-geometry/line/slope/</loc>
   </url><url>
-    <loc>/docs/prerequisite/set-logic/proposition-iff/</loc>
-  </url><url>
     <loc>/docs/prerequisite/ms-geometry/</loc>
+  </url><url>
+    <loc>/docs/prerequisite/set-logic/set-operation/</loc>
   </url><url>
     <loc>/docs/prerequisite/ms-geometry/triangle/</loc>
   </url><url>
@@ -32,6 +32,8 @@
   </url><url>
     <loc>/docs/algebra/pow-exp-log/</loc>
   </url><url>
+    <loc>/docs/prerequisite/set-logic/proposition-iff/</loc>
+  </url><url>
     <loc>/docs/prerequisite/ms-geometry/quadrilateral/</loc>
   </url><url>
     <loc>/docs/prerequisite/ms-algebra/veite-theorem/</loc>
@@ -41,6 +43,8 @@
     <loc>/docs/prerequisite/ms-function/graph-tranform/</loc>
   </url><url>
     <loc>/docs/prerequisite/set-logic/</loc>
+  </url><url>
+    <loc>/docs/prerequisite/set-logic/basic-logic/</loc>
   </url><url>
     <loc>/docs/prerequisite/ms-geometry/circle/</loc>
   </url><url>

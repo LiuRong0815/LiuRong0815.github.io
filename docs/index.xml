@@ -39,12 +39,12 @@
     </item>
     
     <item>
-      <title>2.2 充要条件</title>
-      <link>/docs/prerequisite/set-logic/proposition-iff/</link>
+      <title>集合的运算</title>
+      <link>/docs/prerequisite/set-logic/set-operation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/prerequisite/set-logic/proposition-iff/</guid>
-      <description>2.2 充要条件 # 这里是充要条件</description>
+      <guid>/docs/prerequisite/set-logic/set-operation/</guid>
+      <description>集合的运算 # 这里是集合的运算</description>
     </item>
     
     <item>
@@ -99,6 +99,15 @@
     </item>
     
     <item>
+      <title>命题与充要条件</title>
+      <link>/docs/prerequisite/set-logic/proposition-iff/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/prerequisite/set-logic/proposition-iff/</guid>
+      <description>命题与充要条件 # 这里是命题与充要条件</description>
+    </item>
+    
+    <item>
       <title>四边形</title>
       <link>/docs/prerequisite/ms-geometry/quadrilateral/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -134,6 +143,15 @@ $AB= CD$, $AD= BC$, 即两组对边分别相等 $AO=OC$, $BO=OD$, 即对角线�
 任取新图象上一点 $P&amp;rsquo;(x&amp;rsquo;,y&amp;rsquo;)$, 向左平移 $1$ 个单位长后, 得到抛物线 $y=x^2$ 上的对应点 $P(x&amp;rsquo;-1,y&amp;rsquo;)$, 由抛物线 $y=x^2$ 上点的横、纵坐标之间的关系可知 $y&amp;rsquo;= (x&amp;rsquo;-1)^2$. 这就是新图象上点的横、纵坐标之间的关系, 换成常用的记号可得所求解析式为 $y= (x-1)^2$.
 上述解法的思路是先对新图象上的任一点作与原变换相反的变换, 得到在旧图象上的对应点, 再由旧图象上点的横、纵坐标之间的关系直接得到所求解析式. 这也是求解由函数图象的变换所得的新解析式的通用方法, 即先还原点的位置, 再代入旧解析式.
 再比如, 抛物线 $y= x^2+2x$ 向左平移 $1$ 个单位长度后, 新图象上的任一点 $(x&amp;rsquo;,y&amp;rsquo;)$ (向右平移 $1$ 个单位长度) 对应旧图象上的点 $(x&amp;rsquo;+1,y&amp;rsquo;)$, 所以 \[ y&amp;rsquo;= (x&amp;rsquo;+1)^2+2(x&amp;rsquo;+1)= x&amp;rsquo;^2+4x&amp;rsquo;+3,\] 即新图象的解析式为 $y=x^2+4x+3$ (图象仍为抛物线).</description>
+    </item>
+    
+    <item>
+      <title>简易逻辑</title>
+      <link>/docs/prerequisite/set-logic/basic-logic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/prerequisite/set-logic/basic-logic/</guid>
+      <description>简易逻辑 # 这里是简易逻辑</description>
     </item>
     
     <item>
