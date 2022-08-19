@@ -5,8 +5,8 @@ weight: 3
 bookHidden: true
 prevPage: ../../set-operation
 prevPageTitle: 集合的运算
-nextPage: ../basic-logic
-nextPageTitle: 简易逻辑
+nextPage: ../logical-quantifier
+nextPageTitle: 逻辑量词
 ---
 
 # 命题与充要条件
