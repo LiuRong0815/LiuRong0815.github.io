@@ -5,20 +5,26 @@ weight: 1
 # bookHidden: true
 prevPage: ../../set-logic
 prevPageTitle: 集合与简易逻辑
-nextPage: ../set-operation
-nextPageTitle: 集合的运算
+# nextPage: ../set-operation
+# nextPageTitle: 集合的运算
 ---
 
 # 集合的定义
 
 <p>
-集合 (set) 是一类有共性的对象的全体, 一般用大写字母表示, 所考察的对象称为集合的元素 (element). 集合的基本表示方法是把考察对象的全体放在大括号 (花括号) 内, 比如, 设集合 $A$ 表示所有不大于 $3$ 的正整数, 则 $A=\{1,2,3\}$, 也可以写成 $A=\{\text{不大于 $3$ 的正整数}\}$.
+集合 (set) 是一类有共性的对象的全体, 一般用大写字母表示, 所考察的对象称为集合的元素 (element). 集合的基本表示方法是把所有考察的对象放在大括号 (花括号) 内, 比如, 设集合 $A$ 表示所有不大于 $3$ 的正整数, 则 $A=\{1,2,3\}$, 也可以写成 $A=\{\text{不大于 $3$ 的正整数}\}$. 集合 $A$ 中的元素为 $1$, $2$, $3$.
+</p>
+
+<p>
+若元素 $x$ 在集合 $A$ 中, 则称 $x$ 属于 $A$, 记成 $x\in A$; 反之, 则称 $x$ 不属于 $A$, 记成 $x\notin A$. 例如, $1\in\{1,2,3\}$; “整数 $a$ 不能被 $3$ 整除”可以记成 \[
+    a\notin \{3k\mid k\ \text{为整数}\}.\]
+从上面的例子可以看出, 集合记号一般比文字语言简洁, 且更容易用表达式表现本质.
 </p>
 
 ## 列举法与描述法
 
 <p>
-将 $A$ 写成 $\{1,2,3\}$ 时用的是列举法, 即逐一列出集合中的元素. 当集合中的元素个数不多时, 用列举法能够看出所有的元素. 若集合中的元素较多, 但有明显的规律, 也可以用列举法. 例如, 小于 $10$ 的正整数全体可以写成 $\{1,2,\cdots,9\}$, 全体整数构成的集合可以写成 $\{0,1,-1,2,-2,\cdots\}$.
+将 $A$ 写成 $\{1,2,3\}$ 时用的是列举法, 即逐一列出集合中的元素. 当集合中的元素个数不多时, 用列举法能够显示所有元素. 若集合中的元素较多, 但有明显的规律, 也可以用列举法. 例如, 小于 $10$ 的正整数全体可以写成 $\{1,2,\cdots,9\}$, 全体整数构成的集合可以写成 $\{0,1,-1,2,-2,\cdots\}$.
 </p>
 
 <myremark>
@@ -29,7 +35,7 @@ nextPageTitle: 集合的运算
 
 <p>
 将 $A$ 写成 $\{\text{不大于 $3$ 的正整数}\}$ 时用的是描述法, 这时 $A$ 也可以改写成 \[
-    \{x\mid x\leqslant 3\ \text{且 $x$ 为正整数}\}.\]
+    \{x\mid x\leqslant 3,\ \text{$x$ 为正整数}\}.\]
 后一种是更常用的形式. 描述法的一般形式为 $\{x\mid p(x)\}$, 其中 $x$ 代表被描述的对象 (可以换成其他字母或式子), $p(x)$ 是关于 $x$ 的约束条件. 例如, 所有大于 $1$ 的数构成的集合可以写成 $\{a\mid a>1\}$. 用描述法表示集合, 通常是为了突出集合中的元素的共同特征.
 </p>
 
@@ -39,52 +45,121 @@ nextPageTitle: 集合的运算
     </p>
 </myremark>
 
-
-## 常见的数集与点集
-
 <p>
-$\{x\mid 1< x\leqslant 2\}$ 写为 $(1,2]$ (左开右闭区间).\\
-常见数集的简写有: 
-</p>
-
-<p>
-$\mathbf{N}$ (或 $\mathbb{N}$) 表示自然数集; 
-$\mathbf{Z}$ (或 $\mathbb{Z}$) 表示整数集; 
-</p>
-
-<p>
-$\mathbf{Q}$ (或 $\mathbb{Q}$) 表示有理数集;
-$\mathbf{R}$ (或 $\mathbb{R}$) 表示实数集, 等等.\\
-常见的点集有: 
-</p>
-
-<p>
-例如, 设线段 $AB$ 的中垂线为 $l$, 则点 $P$ 在 $l$ 上等价于 $PA=PB$, 即线段的中垂线是到线段两端距离相等的点的集合, 此时 \[
-    l= \{P\mid PA=PB\}.\]
-而圆是到定点的距离等于定长的点的集合, 则半径为 $r$ 的圆 $C$ (作为点集) 可以写成 \[
-    \{P\mid PC=r\}.\]
-</p>
-
-## 集合的元素
-
-<p>
-上面列举的集合中的元素都是数字, 这些集合均称为数集. 集合的元素也可以是点、直线、图形、函数等, 对应的集合称为点集、直线集、图形集、函数集等. 
-所有平行于直线 $AB$ 的直线构成的集合可以写成 \[
-    \{l\mid l\parallel AB\}.\]
+上面提到的集合中的元素都是数字, 这些集合均称为数集. 集合的元素也可以是点、直线、图形、函数等, 对应的集合分别称为点集、直线集、图形集、函数集等. 例如, 直线由点组成, 故为点集, 设一次函数 $y=2x+1$ 的图象为直线 $l$, 则 \[
+    l= \{(x,y)\mid y=2x+1\};\]
+所有平行于 $l$ 的直线构成的集合可以写成 \[
+    \{l'\mid l'\parallel l\};\]
 所有过点 $(1,1)$ 的二次函数构成的集合可以写成 \[
-    \{ax^2+bx+c\mid a\neq0,\ a+b+c=1\}.\]
+    \{y=ax^2+bx+c\mid a\neq0,\ a+b+c=1\}.\]
 </p>
 
 <myremark>
     <p>
-    (1) 集合的元素甚至可以是集合. 例如, 由直线是点集可知, 平面上所有直线构成的集合, 就是这些直线对应的点集构成的集合.
+    (1) 集合的元素甚至可以是集合. 例如, 由直线是点集可知, 上述 $\{l'\mid l'\parallel l\}$ 就是点集构成的集合.
     </p>
     <p>
     (2) 从前面的例子可以看出, 用描述法的关键是准确地将集合中元素的特征用表达式描述, 要做到这一点, 需要对涉及的定义、性质等十分熟悉. 例如, 前述所有过点 $(1,1)$ 的二次函数构成的集合不能写成 \[
-    \{ax^2+bx+c\mid a+b+c=1\},\]
+    \{y=ax^2+bx+c\mid a+b+c=1\},\]
     原因是二次函数的二次项系数不能为零, 所以还需补上 $a\neq 0$.
     </p>
 </myremark>
+
+
+<myexample>
+    <p>已知集合 $A=\{0,1,2\}$, 求下列集合 中元素的个数:</p>
+    <p>(1) $B=\{x-y\mid x,y\in A\}$;</p>
+    <p>(2) $C=\{x+y\mid x,y\in A\}$.</p>
+</myexample>
+
+<mysolution>
+    <p>(1) $B=\{-2,-1,0,1,2\}$, 共 $5$ 个元素.</p>
+    <p>(2) $C=\{0,1,2,3,4\}$, 共 $5$ 个元素.</p>
+</mysolution>
+
+<myremark>
+    <p>将上例推广: 设集合 $A=\{0,1,2,\cdots,n\}$, 其中 $n$ 为正整数, \[
+        B=\{x-y\mid x,y\in A\},\quad C=\{x+y\mid x,y\in A\},\]
+    则 \[\begin{gathered}
+        B=\{-n,-n+1,\cdots,0,\cdots,n-1,n\},\\
+        C=\{0,1,2,\cdots,2n\}
+    \end{gathered}\]
+    均有 $2n+1$ 个元素. 由于集合 $B$, $C$ 中的元素可以从小到大排列, 且相邻两数差值为 $1$, 所以在列出这些元素时, 只须考虑最大值和最小值.</p>
+</myremark>
+
+<myexercise>
+    <p>(1) 设集合 $A=\{(x,y)\mid x,y=0,1,2\}$, \[
+        B=\{(x_1+x_2,y_1+y_2)\mid (x_1,y_1), (x_2,y_2)\in A\},\]
+    求 $B$ 中的元素个数;</p>
+    <p>(2) 设集合 $P=\{1,2,3\}$, $Q=\{4,5\}$, \[
+        M=\{x\mid x=a+b,a\in P,b\in Q\},\]
+    求 $M$ 中的元素个数.</p>
+</myexercise>
+
+<details><summary>参考答案</summary>
+    <p>(1) 注意, $A$, $B$ 均为点集. $B=\{(x,y)\mid x,y=0,1,2,3,4\}$, 共 $25$ 个元素.</p>
+    <p>(2) $M=\{5,6,7,8\}$, 共 $4$ 个元素.</p>
+</details>
+
+## 常见的数集与点集
+
+<p>
+自然数集 (非负整数集)、整数集、有理数集、实数集是数学中常见的数集, 为了简化记号, 一般用 
+</p>
+
+- $\mathbf{N}$ (或 $\mathbb{N}$) 表示自然数集 (源自 Natural, 自然的); 
+- $\mathbf{Z}$ (或 $\mathbb{Z}$) 表示整数集 (源自德语 Zahl, 数字) ; 
+- $\mathbf{Q}$ (或 $\mathbb{Q}$) 表示有理数集 (源自 Quotient, 商);
+- $\mathbf{R}$ (或 $\mathbb{R}$) 表示实数集 (源自 Real, 实的).
+
+<p>
+建议结合自然数、整数、有理数、实数的定义牢记以上简化记号. 借用上述记号, 可以很方便地表示相关集合. 例如, 正整数集可以表示为 $\mathbf{N}^*$, $\mathbf{N}_+$ 或 $\mathbf{Z}_+$ 之一, 负有理数集可以表示为 $\mathbf{Q}_-$.
+</p>
+
+<p>
+再比如, 偶数是能被 $2$ 整除的整数, 也即 $2$ 的倍数, 因此偶数集可以写成 \[
+    \{2k\mid k\ \text{为整数}\}.\]
+类似地, 奇数集可以写成 \[
+    \{2k+1\mid k\ \text{为整数}\}.\]
+</p>
+
+<p>
+常见的点集有函数图象、中垂线、角平分线、圆等. 例如, 设二次函数 $y=x^2+2x$ 的图象为抛物线 $G$, 则 \[
+    G= \{(x,y)\mid y=x^2+2x\};\]
+设线段 $AB$ 的中垂线为 $l$, 则点 $P$ 在 $l$ 上等价于 $PA=PB$, 即线段的中垂线是到线段两端距离相等的点的集合, 此时 \[
+    l= \{P\mid PA=PB\};\]
+圆是到定点的距离等于定长的点的集合, 则半径为 $r$ 的圆 $C$ (作为点集) 可以写成 \[
+    \{P\mid PC=r\}.\]
+</p>
+
+<myexample>
+    <p>分别绘出下列集合对应的图形:</p>
+    <p>(1) $A=\{(x,y)\mid x,y=0,1\}$;</p>
+    <p>(2) $B=\{(x,y)\mid |x|+|y|\leqslant 3, x,y\in\mathbf{Z}\}$.</p>
+</myexample>
+
+<mysolution>
+    <p>(1) 由题意, $A=\{(0,0), (1,0), (0,1), (1,1)\}$ (图略).</p>
+    <p>(2) $x$, $y$ 的正负号不影响 $|x|+|y|\leqslant 3$ 是否成立, 所以可以只考虑第一象限内及坐标轴上的图形 (对应 $x$, $y\geqslant 0$), 然后对各点的横坐标、纵坐标分别添上负号, 即作关于 $y$ 轴、$x$ 轴的对称点, 就可以得到点集 $B$ 的完整图形.</p>
+    <p>限定 $x$, $y\geqslant 0$, 则 \[\begin{aligned}
+        &x=0,\quad y=0,1,2,3;\\
+        &x=1,\quad y=0,1,2;\\
+        &x=2,\quad y=0,1;\\
+        &x=3,\quad y=0.
+    \end{aligned}\]
+    作出各点后, 再作关于 $y$ 轴、$x$ 轴的对称点, 得到下图. 
+    </p>
+    <img alt="利用对称性作含绝对值条件的点集的图形" src="/figs/2022/2022-08/2022-0820-1740.svg"></img>
+</mysolution>
+
+<myremark>
+    <p>(1) 图形对应的条件中含绝对值时, 常利用对称性作图.</p>
+    <p>(2)利用上例的信息, 若集合 \[
+        M=\{(x_1+x_2,y_1+y_2)\mid (x_1,y_1)\in A, (x_2,y_2)\in B\},\]
+    则作图可知, $M$ 共有 $40$ 个元素 (本质上是将集合 $B$ 中的点按照 $A$ 中的点指定的方向平移).</p>
+</myremark>
+
+## 集合中元素的性质
 
 <p>
 为了确保准确地描述集合, 集合的元素应有如下性质:
@@ -103,484 +178,104 @@ $\mathbf{R}$ (或 $\mathbb{R}$) 表示实数集, 等等.\\
 数学中用列举法或含约束条件的描述法表示的集合, 其元素一般都满足确定性, 通常需要关注是否还满足互异性和无序性.
 </p>
 
+<myexample>
+    <p>  设集合 $A=\{1, \sqrt{a}\}$, $a\in A$, 求实数 $a$ 的值.</p>
+</myexample>
+
+<mysolution>
+    <p>集合 $A$ 中的元素应满足互异性, 由此分类讨论:</p>
+    <p>(1) 若 $a=1$, 则 $\sqrt{a}=1$, 不合题意;</p>
+    <p>(2) 若 $a=\sqrt{a}$, 则 $a=0$ 或 $1$, 检验知 $a=0$.</p>
+    <p>综上所述, $a=0$.</p>
+</mysolution>
 
 ## 集合的子集
-<p>
-元素与集合的关系为\myemph{属于} ($\in$) 或<strong>不属于</strong> ($\notin$),  \mymarginpar{<strong>集合的子集</strong>\\  $\varnothing$ 的子集为 $\varnothing$, 共 $1$ 个;
-  $\{a_1\}$ 的子集为 $\varnothing$,$\{a_1\}$, 共 $2$ 个;
-  $\{a_1,a_2\}$ 的子集为 $\varnothing$,$\{a_1\}$,$\{a_2\}$,$\{a_1,a_2\}$, 
-  共 $4$ 个. 归纳推理可知, $\{a_1,a_2,\cdots,a_n\}$ 的子集有 $2^n$ 个.}
-集合与集合的关系为\myemph{包含} ($\subseteq$) 或<strong>不包含</strong> ($\nsubseteq$).$A$ 为 $B$ 的子集记作 $A\subseteq B$, 
-$A$ 为 $B$ 的真子集记作 $A\subsetneqq B$, 
-则 $A\subseteq B$ 且 $A\supseteq B \Leftrightarrow A=B$.
-规定空集 ($\varnothing$) 为任何集合的子集, 
-并可以推得: 含 $n$ 个元素的集合有 $2^n$ 个子集.
-</p>
-
 
 <p>
-. 有时也用\myemph{韦恩} (Venn) <strong>图</strong>表示集合.
+若集合 $A$ 中的元素都在集合 $B$ 中, 则称 $A$ 含于 $B$, 记成 $A\subseteq B$; 或称 $B$ 包含 $A$, 记成 $B\supseteq A$ (符号的开口均向着范围较大的集合). 这时, 称 $A$ 为 $B$ 的子集. 将不含任何元素的集合称为空集, 记成 $\{\}$ 或 $\varnothing$, 并规定空集为任何集合的子集. 例如, \[
+    \{1\}\subset \{1,2,3\},\quad
+    \varnothing= \{x\mid x^2-3x+2=0\}.\]
 </p>
 
 <p>
-\lianxi
-<myexercise>
-    <p>  已知集合 $A=\{1,3\}$, $B=\{1,9\}$, 那么 $A\cup B=$\,?
-</p>
-</myexercise>
+由此可知, 任何集合都是自身的子集. 两个集合 $A$ 与 $B$ 相等, 记成 $A=B$, 表示它们含有相同的元素, 因此 $A\subseteq B$ 且 $A\supseteq B$, 反之亦然. 这是证明两个集合相等的常用方法, 即证明它们互为子集.
 </p>
 
 <p>
-<mysolution>
-    <p>
-  $A\cup B=\{1,3,9\}$.
-</p>
-</mysolution>
+若 $A\subseteq B$, 且 $B$ 中至少含一个不在 $A$ 中的元素, 则称 $A$ 真含于 $B$, 记成 $A\subsetneqq B$; 或称 $B$ 真包含 $A$, 记成 $B\supsetneqq A$. 这时, 称 $A$ 为 $B$ 的真子集. 因此空集 $\varnothing$ 为任意非空子集的真子集.
 </p>
 
-<p>
-<myexercise>
-    <p>  设集合 $P=\{x\mid x>1\}$, $Q=\{x\mid x-2>0\}$, 则 $P\underline{\qquad}Q$
-  (填“$\subseteq$”或“$\supseteq$”).
-</p>
-</myexercise>
-</p>
+<myremark>
+    <p>(1) 子集与真子集的关系, 和 $\leqslant$ 与 $<$ 的关系有些类似.</p>
+    <p>(2) 集合之间不一定存在包含关系, 例如, 集合 $A= \{1,2\}$ 与 $B= \{2,3\}$ 就是互不包含.</p>
+</myremark>
 
-<p>
-<mysolution>
-    <p>
-  $Q=\{x\mid x>2\}$, 则 $P\supseteq Q$.
-</p>
-</mysolution>
-</p>
-
-<p>
-<myexercise>
-    <p>  设集合 $A=\{1,2,3\}$, $B=\{1,x\}$, 若 $A\cup B=A$, 则实数 $x$ 的值为\,?
-</p>
-</myexercise>
-</p>
-
-<p>
-<mysolution>
-    <p>
-  \(B\subseteq A\), 则 \(x=2\) 或 \(3\).
-</p>
-</mysolution>
-</p>
-
-<p>
-<myexercise>
-    <p>  已知集合 $A=\{-1,a\}$, $B=\{2a,b\}$. 若 $A\cap B=\{1\}$, 则 $A\cup B=$\,?
-</p>
-</myexercise>
-</p>
-
-<p>
-<mysolution>
-    <p>
-  \(1\in A\) 且 \(1\in B\), 则 \(a=1\), $A=\{-1,1\}$, $B=\{2,b\}$, 
-  所以 $b=1$, $B=\{2,1\}$, 故 $A\cup B=\{-1,1,2\}$.
-</p>
-
-<p>
-  \varexercise 已知集合 $A=\{-1,a\}$, $B=\{2a,a^2\}$. 
-  若 $A\cap B=\{-1\}$, 则 $A\cup B=$\,?
-</p>
-
-<p>
-  此时仍有 $-1\in B\Rightarrow 2a=-1$, $a=-\frac12$, 
-  故 $A\cup B=\Big\{-1,-\frac12,\frac14\Big\}$.
-</p>
-</mysolution>
-</p>
-
-<p>
-<myexercise>
-    <p>  已知集合 $A=\{x\mid -2< x< 1\}$, $B=\{x\mid x-a< 0\}$. 若 $A\subseteq B$, 
-  则实数 $a$ 的取值范围是\,?
-</p>
-</myexercise>
-</p>
-
-<p>
-<mysolution>
-    <p>
-  $B=(-\infty,a)$, 则 $a\geqslant 1$ 即 $a\in [1,+\infty)$.
-</p>
-</mysolution>
-</p>
-
-<p>
-\subsection{要点导学\quad 各个击破}
-\subsubsection{集合的运算}
 <span id="example-"></span>
+
 <myexample>
-    <p>
-  (1)  已知全集 $U=\{1,2,3,4\}$, 集合 $A=\{1,2\}$, $B=\{2,3\}$, 
-  那么 $\complement_U (A\cup B)=$\,?
-</p>
-
-<p>
-  (2) 已知集合 $A=\{x\mid 0< \log_4 x< 1\}$, $B=\{x\mid x\leqslant 2\}$, 
-  那么 $A\cap B=$\,?
-</p>
-
-<p>
-  (3) 若集合 $A=\{1,2,3\}$, $B=\{1,3,4\}$, 则 $A\cap B$ 的子集个数为\,?
-</p>
+    <p>(1) 设集合 $P=\{x\mid x>1\}$, $Q=\{x\mid x-2>0\}$, 求 $P$ 与 $Q$ 的包含关系.</p>
+    <p>(2) 设集合 \[\begin{gathered}
+        A=\{x\mid 2\leqslant x\leqslant 6\},\\
+        B=\{x\mid 2a\leqslant x\leqslant a+3\},
+    \end{gathered}\]
+    且 $B\subseteq A$, 求实数 $a$ 的取值范围.</p>
 </myexample>
-</p>
 
-<p>
 <mysolution>
-    <p>
-  (1) $A\cup B=\{1,2,3\}$, $\complement_U (A\cup B)=\{4\}$;
-  (2) $A=\{x\mid 1< x< 4\}$, $A\cap B=\{x\mid 1< x\leqslant 2\}$;
-  (3) $A\cap B= \{1,3\}$, 子集共 $2^2=4$ 个.
-</p>
+    <p>(1) $Q=\{x\mid x>2\}$, 则 $P\supseteq Q$.</p>
+    <p>(2) 若 $B=\varnothing$, 则 $2a>a+3$, 即 $a>3$;</p>
+    <p>若 $B\neq\varnothing$, 则 \[
+        2\leqslant 2a\leqslant a+3\leqslant 6,\]
+    解得 $1\leqslant a\leqslant 3$.</p>
+    <p>综上所述, $a\geqslant 1$.</p>
 </mysolution>
-</p>
 
-<p>
-\lianxi
 <myexercise>
-    <p>  设集合 $A=\{x\mid  0.5< x< 2\}$, $B=\{x\mid x^2\leqslant 1\}$, 则 $A\cup B=$\,?
-</p>
+    <p>(1) 已知集合 $A=\{x\mid -2< x< 1\}$, $B=\{x\mid x-a< 0\}$. 若 $A\subseteq B$, 求实数 $a$ 的取值范围.</p>
+    <p>(2) 设集合 $A=\{1,4,2x\}$, $B=\{1,x^2\}$, 若 $B\subseteq A$, 求实数 $x$ 的值.</p>
 </myexercise>
-</p>
+
+<details><summary>参考答案</summary>
+    <p>(1) $B=\{x\mid x< a\}$, 则 $a\geqslant 1$ ;</p>
+    <p>(2) 考虑集合元素的互异性. 若 $x^2=4$, 则 $x=\pm2$, 检验知 $x=-2$; 若 $x^2=2x$, 则 $x=0$ 或 $2$, 检验知 $x=0$. 所以, $x=-2$ 或 $0$.</p>
+</details>
 
 <p>
-<mysolution>
-    <p>
-  $B=\{x\mid -1\leqslant x\leqslant 1\}$, $A\cup B=\{x\mid -1\leqslant x< 2\}$.
-</p>
-</mysolution>
+通常用维恩 (Venn) 图表示集合之间的包含关系. 如下图所示, 用圆形与矩形围住的区域分别表示集合 $A$ 与 $B$, 则 $A\subseteq B$. 在维恩图中, 集合也可以用其他图形 (如圆环、三角形) 围住的区域来表示.
 </p>
 
-<p>
-<myexercise>
-    <p>  若全集 $U=\{1,2,3,4\}$, 集合 $M=\{1,2\}$, $N=\{2,3\}$, 
-  则 $\complement_U (M\cup N)=$\,?
-</p>
-</myexercise>
-</p>
+<img alt="维恩图" src="/figs/2022/2022-08/2022-0820-1510.svg"></img>
 
-<p>
-<mysolution>
-    <p>
-  $M\cup N= \{1,2,3\}$, $\complement_U (M\cup N)=\{4\}$.
-</p>
-</mysolution>
-</p>
-
-<p>
-<myexercise>
-    <p>  设全集为 $\mathbb{R}$, 集合 $A=\{u\mid u^2 -9< 0\}$, 
-  $B=\{x\mid -1< x\leqslant 5\}$, 则 $A\cap (\complement_{\mathbb{R}} B)=$\,?
-</p>
-</myexercise>
-</p>
-
-<p>
-<mysolution>
-    <p>
-  $A=\{u\mid -3< u< 3\}=(-3,3)$, $\complement_{\mathbb{R}} B=(-\infty,-1]\cup (5,+\infty)$, 则 $A\cap (\complement_{\mathbb{R}} B)= (-3,-1]$.
-</p>
-</mysolution>
-</p>
-
-<p>
-\subsubsection{集合与集合的关系}
-<span id="example-"></span>
 <myexample>
-    <p>
-  设集合 $A=\{x\mid 2\leqslant x\leqslant 6\}$, 
-  $B=\{x\mid 2a\leqslant x\leqslant a+3\}$, 若 $B\subseteq A$, 
-  求实数 $a$ 的取值范围.
-</p>
+    <p>求集合 $A=\{1,2,3\}$ 的子集个数和真子集个数.</p>
 </myexample>
-</p>
 
-<p>
 <mysolution>
-    <p>
-  (1) 若 $B=\varnothing$, 则 $2a>a+3$, $a>3$;
-  (2) 若 $B\neq\varnothing$, 则 $2\leqslant 2a\leqslant a+3\leqslant 6$, 解得 $1\leqslant a\leqslant 3$.
-</p>
-
-<p>
-  综上知, $a\in [1,+\infty)$.
-</p>
+    <p>方法一: 分别按所含元素的个数列出 $A$ 的子集, 可知</p>
+    <p>(1) 含 $0$ 个元素的子集为 $\varnothing$, 仅 $1$ 个;</p>
+    <p>(2) 含 $1$ 个元素的子集为 $\{1\}$, $\{2\}$, $\{3\}$, 共 $3$ 个;</p>
+    <p>(3) 含 $2$ 个元素的子集为 $\{1,2\}$, $\{1,3\}$, $\{2,3\}$, 共 $3$ 个;</p>
+    <p>(4) 含 $3$ 个元素的子集为 $\{1,2,3\}$ ($A$ 自身), 仅 $1$ 个.</p>
+    <p>综上可知, $A$ 的子集共 $8$ 个, 真子集共 $7$ 个 (真子集不能为 $A$ 自身).</p>
+    <p>方法二: 分别考虑 $A$ 中的各个元素是否出现在子集中, 列树形图可知, $A$ 的子集个数为 \[
+        2\times 2\times 2= 2^3= 8,\]
+    真子集个数为 $7$.</p>
+    <img alt="用树形图求 $n$ 元集的子集" src="/figs/2022/2022-08/2022-0820-1600.svg"></img>
+    <p>方法三: 在集合 $\{\underline{\ \ }, \underline{\ \ }, \underline{\ \ }\}$ 中填数, 三条横线处分别填写 $1$, $2$, $3$ 或者保持空缺, 最后可以得到相应的子集. 例如, $\{1,\underline{\ \ }, \underline{\ \ }\}$ 对应子集 $\{1\}$, $\{\underline{\ \ },2, 3\}$ 对应子集 $\{2,3\}$. 再依次考虑三条横线处是填数还是空缺, 每次的决定都将已有子集数加倍, 由此可知, $A$ 的子集个数为 \[
+        2\times 2\times 2= 2^3= 8,\]
+    真子集个数为 $7$.</p>
 </mysolution>
-</p>
 
-<p>
-\lianxi
-\begin{exercise}[s]
-  设集合 $A=\{1,4,2x\}$, $B=\{1,x^2\}$, 若 $B\subseteq A$, 则实数 $x=$\,?
-</p>
-</myexercise>
-</p>
+<myremark>
+    <p>利用方法二或方法三, 上述结论可以推广为: 含 $n$ 个元素的集合有 $2^n$ 个子集.</p>
+</myremark>
 
-<p>
-<mysolution>
-    <p>
-  (1) 若 $x^2=4$, 则 $x=\pm2$, 检验知 $x=-2$;
-  \mymarginpar{此题解出 $x$ 后必须检验是否合题意, 即是否满足集合元素的互异性.}
-  (2) 若 $x^2=2x$, 则 $x=0$ 或 $2$, 检验知 $x=0$.
-</p>
-
-<p>
-  综上知, $x=-2$ 或 $0$.
-</p>
-</mysolution>
-</p>
-
-<p>
-\subsubsection{课堂评价}
 <myexercise>
-    <p>  已知集合 $A=\{1,2,3,4\}$, $B=\{x\mid x< 2\}$, 那么 $A\cap B=$\,?
-</p>
+    <p>已知集合 $A=\{1,2\}$, \[
+        B=\{x\mid 0< x< 5, x\in\mathbf{N}\},\]
+    若 $A\subseteq C\subseteq B$, 求满足条件的集合 $C$ 的个数.</p>
 </myexercise>
-</p>
 
-<p>
-<mysolution>
-    <p>
-  $A\cap B=\{1\}$.
-</p>
-</mysolution>
-</p>
-
-<p>
-<myexercise>
-    <p>  设集合 $A=\{1, \sqrt{a}\}$, $B=\{a\}$, 若 $B\subseteq A$, 
-  则实数 $a$ 的值为\,?
-</p>
-</myexercise>
-</p>
-
-<p>
-<mysolution>
-    <p>
-  (1) 若 $a=1$, 则 $\sqrt{a}=1$, 不合题意;
-  (2) 若 $a=\sqrt{a}$, 则 $a=0$ 或 $1$, 检验知 $a=0$.
-</p>
-
-<p>
-  综上知, $a=0$.
-</p>
-</mysolution>
-</p>
-
-<p>
-<myexercise>
-    <p>  已知集合 $A=\{0,1,2\}$, 那么集合 $B=\{x-y\mid x,y\in A\}$ 中元素的个数是\,?
-</p>
-</myexercise>
-</p>
-
-<p>
-<mysolution>
-    <p>
-  $B=\{-2,-1,0,1,2\}$, 共 $5$ 个元素.
-</p>
-
-<p>
-  \varexercise $A$ 不变, $B$ 改为 $B=\{x+y\mid x,y\in A\}$.
-</p>
-
-<p>
-  此时 $B=\{0,1,2,3,4\}$, 共 $5$ 个元素.
-</p>
-
-<p>
-  \varexercise $A=\{0,1,2,\cdots,n\}$, 其中 $n$ 为正整数, $B=\{x-y\mid x,y\in A\}$, $C=\{x+y\mid x,y\in A\}$.
-</p>
-
-<p>
-  此时 $B=\{-n,-(n-1),\cdots,0,\cdots,n-1,n\}$, 
-  $C=\{0,1,2,\cdots,2n\}$, 共 $2n+1$ 个元素.
-</p>
-
-<p>
-  \varexercise $A=\{(x,y)\mid x,y=0,1,2\}$, $B=\{(x_1+x_2,y_1+y_2)\mid (x_1,y_1), (x_2,y_2)\in A\}$.
-</p>
-
-<p>
-  此时 $B=\{(x,y)\mid x,y=0,1,2,3,4\}$, 共 $25$ 个元素.
-</p>
-
-<p>
-  \varexercise $A=\{(x,y)\mid x,y=0,1,2,\cdots,n\}$, 其中 $n$ 为正整数, $B$ 同上.
-</p>
-
-<p>
-  此时 $B=\{(x,y)\mid x,y=0,1,2,\cdots,2n,2n+1\}$, 共 $(2n+1)^2$ 个元素.
-</p>
-</mysolution>
-</p>
-
-<p>
-\subsection{课后练习}
-<myexercise>
-    <p>  设集合 $A=\{-2,0,2\}$, $B=\{x\mid x^2-x-2=0\}$, 则 $A\cap B=$\,?
-</p>
-</myexercise>
-</p>
-
-<p>
-<mysolution>
-    <p>
-  $B=\{-1,2\}$, $A\cap B=\{2\}$.
-</p>
-
-<p>
-  \varexercise $A$ 不变, $B=\{x\mid x^2-x-2\leqslant 0\}$, 则 $B=[-1,2]$, $A\cap B=\{0,2\}$.
-</p>
-
-<p>
-  \varexercise $A$ 不变, $B=\{x\mid x^2-x-2> 0\}$, 则 $B=(-\infty,-1)\cup(2,+\infty)$, $A\cap B=\{-2\}$.
-</p>
-</mysolution>
-</p>
-
-<p>
-<myexercise>
-    <p>  设集合 $A=\{x\mid x^2-2x< 0\}$, $B=\{x\mid 1\leqslant x\leqslant 4\}$, 
-  则 $A\cap B=$\,?
-</p>
-</myexercise>
-</p>
-
-<p>
-<mysolution>
-    <p>
-  $A=\{0,2\}$, $A\cap B=[1,2)$.
-</p>
-</mysolution>
-</p>
-
-<p>
-<myexercise>
-    <p>  设集合 $A=\{1,2,3\}$, $B=\{4,5\}$, $M=\{x\mid x=a+b,a\in A,b\in B\}$, 
-  则 $M$ 中的元素个数为\,?
-</p>
-</myexercise>
-</p>
-
-<p>
-<mysolution>
-    <p>
-  $M=\{5,6,7,8\}$, 共 $4$ 个元素.
-</p>
-
-<p>
-  \varexercise 若 $A=\{(x,y)\mid |x|+|y|\leqslant 3, x,y\in\mathbb{Z}\}$, $B=\{(x,y)\mid x,y=0,1\}$, $M=\{(x_1+x_2,y_1+y_2)\mid (x_1,y_1)\in A, (x_2,y_2)\in B\}$, 则画图可知, $M$ 共有 $40$ 个元素.
-</p>
-</mysolution>
-</p>
-
-<p>
-<myexercise>
-    <p>  若集合 $A=\{x\mid y=\sqrt{x-1}\}$, $B=\{y\mid y=x^2 +2\}$, 则 $A\cap B=$\,?
-</p>
-</myexercise>
-</p>
-
-<p>
-<mysolution>
-    <p>
-  $A=[1,+\infty)$, $B=[2,+\infty)$, 则 $A\cap B=[2,+\infty)$.
-</p>
-</mysolution>
-</p>
-
-<p>
-<myexercise>
-    <p>  已知全集为 $\mathbb{R}$, 集合 $A=\Bigl\{x\Bigm|\Big(\dfrac12\Big)^x\leqslant 1\Bigr\}$,
-  $B=\{x\mid x^2-6x+8\leqslant 0\}$, 那么 $A\cap (\complement_{\mathbb{R}} B)=$\,?
-</p>
-</myexercise>
-</p>
-
-<p>
-<mysolution>
-    <p>
-  $A=[0,+\infty)$, $B=[2,4]$, 则 $\complement_{\mathbb{R}} B= (-\infty,2)\cup (4,+\infty)$, $A\cap (\complement_{\mathbb{R}} B)=[0,2)\cup (4,+\infty)$.
-</p>
-</mysolution>
-</p>
-
-<p>
-<myexercise>
-    <p>  已知集合 $A=\{1,2\}$, $B=\{x\mid 0< x< 5, x\in\mathbb{N}\}$, 
-  若 $A\subseteq C\subseteq B$, 求满足条件的集合 $C$ 的个数.
-</p>
-</myexercise>
-</p>
-
-<p>
-<mysolution>
-    <p>
-  $B=\{1,2,3,4\}$, 则 $C$ 的个数为 $\{3,4\}$ 子集的个数, 即 $2^2=4$ 个.
-</p>
-</mysolution>
-</p>
-
-<p>
-<myexercise>
-    <p>  已知集合 $A=\{x\mid x^2-px+15=0\}$, $B=\{x\mid x^2-ax-b=0\}$, 
-  $A\cup B=\{2,3,5\}$, $A\cap B=\{3\}$, 求 $p$, $a$, $b$ 的值.
-</p>
-</myexercise>
-</p>
-
-<p>
-<mysolution>
-    <p>
-  由 $3\in A$ 知 $p=8$, $A=\{3,5\}$, 所以 $B=\{2,3\}$. 由韦达定理, $a=5$, $-b=6$ 即 $b=-6$.
-</p>
-</mysolution>
-</p>
-
-<p>
-<myexercise>
-    <p>  已知集合 $A=\{x\mid 1< x< 3\}$, 集合 $B=\{x\mid 2m< x< 1-m\}$.
-</p>
-
-<p>
-  (1) 当 $m=-1$ 时, 求 $A\cup B$;
-</p>
-
-<p>
-  (2) 若 $A\subseteq B$, 求实数 $m$ 的取值范围;
-</p>
-
-<p>
-  (3) 若 $A\cap B=\varnothing$, 求实数 $m$ 的取值范围.
-</p>
-</myexercise>
-</p>
-
-<p>
-<mysolution>
-    <p>
-  (1) 当 $m=-1$ 时, $B=(-2,2)$, $A\cup B= (-2,3)$.
-</p>
-
-<p>
-  (2) $A\subseteq B$ 表明 $2m\leqslant 1< 3\leqslant 1-m$, 解得 $m\in(-\infty,-2]$.
-</p>
-
-<p>
-  (3) 若 $B=\varnothing$, 则 $2m\geqslant 1-m$, $m\geqslant \frac13$.
-  若 $B\neq\varnothing$, 则 $2m< 1-m\leqslant 1$ 或 $3\leqslant 2m< 1-m$, 即 $0\leqslant m< \frac13$ 或 $m\in\varnothing$.
-</p>
-
-<p>
-  综上知, $m\in[0,+\infty)$. 
-</p>
-</mysolution>
-</p>
+<details><summary>参考答案</summary>
+    <p>$B=\{1,2,3,4\}$, 则 $C$ 的个数为 $\{3,4\}$ 子集的个数, 即 $2^2=4$ 个.</p>
+</details>

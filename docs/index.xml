@@ -27,6 +27,15 @@
     </item>
     
     <item>
+      <title>集合的定义</title>
+      <link>/docs/prerequisite/set-logic/set-def/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/prerequisite/set-logic/set-def/</guid>
+      <description>集合的定义 # 集合 (set) 是一类有共性的对象的全体, 一般用大写字母表示, 所考察的对象称为集合的元素 (element). 集合的基本表示方法是把所有考察的对象放在大括号 (花括号) 内, 比如, 设集合 $A$ 表示所有不大于 $3$ 的正整数, 则 $A=\{1,2,3\}$, 也可以写成 $A=\{\text{不大于 $3$ 的正整数}\}$. 集合 $A$ 中的元素为 $1$, $2$, $3$. 若元素 $x$ 在集合 $A$ 中, 则称 $x$ 属于 $A$, 记成 $x\in A$; 反之, 则称 $x$ 不属于 $A$, 记成 $x\notin A$. 例如, $1\in\{1,2,3\}$; “整数 $a$ 不能被 $3$ 整除”可以记成 \[ a\notin \{3k\mid k\ \text{为整数}\}.\] 从上面的例子可以看出, 集合记号一般比文字语言简洁, 且更容易用表达式表现本质. 列举法与描述法 # 将 $A$ 写成 $\{1,2,3\}$ 时用的是列举法, 即逐一列出集合中的元素.</description>
+    </item>
+    
+    <item>
       <title>数轴与平面直角坐标系</title>
       <link>/docs/prerequisite/ms-function/axis-coordinate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -44,7 +53,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/prerequisite/set-logic/set-operation/</guid>
-      <description>集合的运算 # 这里是集合的运算</description>
+      <description> 集合的运算 # 这里是集合的运算
+区间与 # 高中数学常考虑的集合是数集和点集. 有的数集也可简写为\myindex{区间} (interval), 如 $\{x\mid 1&lt; x&lt; 2\}$ 写为 $(1,2)$ (开区间);$\{x\mid 1\leqslant x\leqslant 2\}$ 写为 $[1,2]$ (闭区间);$\{x\mid 1&lt; x\leqslant 2\}$ 写为 $(1,2]$ (左开右闭区间).\\常见数集的简写有: </description>
     </item>
     
     <item>
@@ -146,12 +156,12 @@ $AB= CD$, $AD= BC$, 即两组对边分别相等 $AO=OC$, $BO=OD$, 即对角线�
     </item>
     
     <item>
-      <title>简易逻辑</title>
-      <link>/docs/prerequisite/set-logic/basic-logic/</link>
+      <title>逻辑量词</title>
+      <link>/docs/prerequisite/set-logic/logical-quantifier/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/prerequisite/set-logic/basic-logic/</guid>
-      <description>简易逻辑 # 这里是简易逻辑</description>
+      <guid>/docs/prerequisite/set-logic/logical-quantifier/</guid>
+      <description>逻辑量词 # 这里是逻辑量词</description>
     </item>
     
     <item>
