@@ -65,7 +65,6 @@ prevPageTitle: 集合与简易逻辑
     </p>
 </myremark>
 
-
 <myexample>
     <p>已知集合 $A=\{0,1,2\}$, 求下列集合 中元素的个数:</p>
     <p>(1) $B=\{x-y\mid x,y\in A\}$;</p>
@@ -194,7 +193,7 @@ prevPageTitle: 集合与简易逻辑
 <p>
 若集合 $A$ 中的元素都在集合 $B$ 中, 则称 $A$ 含于 $B$, 记成 $A\subseteq B$; 或称 $B$ 包含 $A$, 记成 $B\supseteq A$ (符号的开口均向着范围较大的集合). 这时, 称 $A$ 为 $B$ 的子集. 将不含任何元素的集合称为空集, 记成 $\{\}$ 或 $\varnothing$, 并规定空集为任何集合的子集. 例如, \[
     \{1\}\subset \{1,2,3\},\quad
-    \varnothing= \{x\mid x^2-3x+2=0\}.\]
+    \varnothing\subset \{x\mid x^2-3x+2=0\}.\]
 </p>
 
 <p>
@@ -208,6 +207,7 @@ prevPageTitle: 集合与简易逻辑
 <myremark>
     <p>(1) 子集与真子集的关系, 和 $\leqslant$ 与 $<$ 的关系有些类似.</p>
     <p>(2) 集合之间不一定存在包含关系, 例如, 集合 $A= \{1,2\}$ 与 $B= \{2,3\}$ 就是互不包含.</p>
+    <p>(3) 元素与集合是属于、不属于的关系, 集合与集合是包含、不包含的关系, 两者的记号不能混淆. 例如, 表达式 $\varnothing\in \{1,2\}$ 是错误的, 应改成 $\varnothing\subseteq \{1,2\}$; 表达式 $1\subseteq \{1,2\}$ 也不正确, 应改成 $\{1\}\subseteq \{1,2\}$.</p>
 </myremark>
 
 <span id="example-"></span>
@@ -229,6 +229,10 @@ prevPageTitle: 集合与简易逻辑
     解得 $1\leqslant a\leqslant 3$.</p>
     <p>综上所述, $a\geqslant 1$.</p>
 </mysolution>
+
+<myremark>
+    <p>讨论集合的子集时, 必须先考虑该子集是否为空集, 否则容易漏解.</p>
+</myremark>
 
 <myexercise>
     <p>(1) 已知集合 $A=\{x\mid -2< x< 1\}$, $B=\{x\mid x-a< 0\}$. 若 $A\subseteq B$, 求实数 $a$ 的取值范围.</p>
