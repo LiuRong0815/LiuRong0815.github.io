@@ -79,8 +79,8 @@ nextPageTitle: 函数图象的变换
     <p>$a< m< n< b$.</p>
 </details>
 
+<span id="二次不等式的解法"></span>
 类似地, 关于 $x$ 的二次不等式 $ax^2+bx+c>0$ 的解集对应抛物线 $y= ax^2+bx+c$ 在 $x$ 轴上方部分的横坐标 $x$ 的取值范围, 而 $ax^2+bx+c\leqslant 0$ 的解集对应抛物线 $y= ax^2+bx+c$ 在 $x$ 轴上及下方部分的横坐标 $x$ 的取值范围, 所以 $a$ 和 $\Delta$ 的正、负号共同决定了二次不等式 $ax^2+bx+c>0$ 等是否有解.
-
 
 <myexample>
     <p>解下列不等式:</p>
@@ -113,3 +113,8 @@ nextPageTitle: 函数图象的变换
 <details><summary>参考答案</summary>
     <p>(1) $5\leqslant x\leqslant 6$;&emsp; (2) $x<-3$ 或 $x>4$.</p>
 </details>
+
+<p>
+对于较简单的二次不等式 $x^2< 1$, 除了将其化为 $x^2-1< 0$ 然后用抛物线 $y= x^2-1$ 求解, 也可以直接利用抛物线 $y= x^2$: 此时 $x^2< 1$ 对应的是抛物线 $y= x^2$ 上纵坐标 $y$ 小于 $1$ 的所有点的取值范围. 因为由 $x^2=1$ 得 $x= \pm1$, 而抛物线 $y= x^2$ 开口向上, 所以 $x^2< 1$ 表明 $-1< x< 1$. 类似地, \[
+    x^2\geqslant 1\Rightarrow x\leqslant -1\ \text{或}\ x\geqslant 1.\]
+</p>
