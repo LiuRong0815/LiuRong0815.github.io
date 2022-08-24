@@ -11,15 +11,33 @@ nextPageTitle: 逻辑量词
 
 # 命题与充要条件
 
+<p>
+可以判断真假的陈述句称为命题 (proposition), 判断为真的语句称为<strong>真命题</strong>, 判断为假的语句称为<strong>假命题</strong>. 
 </p>
 
 <p>
-  可以判断真假的陈述句叫做\myindex{命题} (proposition), 
-  其中判断为真的语句叫做\myemph{真命题}, 判断为假的语句叫做<strong>假命题</strong>.  在判断命题的真假 (true or false) 时, 对真命题需要证明, 对假命题则只需要举出一个反例. 
-  例如由不等式的性质知“若 $x>2$, $y>1$, 则 $x+y>3$”是真命题, 
-  但“若 $x>2$, $y>1$, 则 $x-y>1$”是假命题, 
-  因为可取 $x=3$, $y=5$ 满足前提但不满足结论. 后一个假命题也表明, <strong>同向不等式不能相减</strong>.</p>
+在判断命题的真假 (true or false) 时, 对真命题需要证明, 对假命题则只需要举出一个反例. 例如由不等式的性质知“若 $x>2$, $y>1$, 则 $x+y>3$”是真命题, 但“若 $x>2$, $y>1$, 则 $x-y>1$”是假命题, 因为可取 $x=3$, $y=5$ 满足前提但不满足结论. 后一个假命题也表明, <strong>同向不等式不能相减</strong>.</p>
 
+
+## 充分条件、必要条件
+
+<p>
+若条件 $p$ 能推出条件 $q$, 则称 $p$ 为 $q$ 的充分条件 (sufficient condition), $q$ 为 $p$ 的必要条件 (necessary condition). 
+  \mymarginpar{可简记为“充分”即是“已知”,“必要”即是“结论”.}
+若条件 $p$, $q$ 能互推, 则称 $p$ 为 $q$ 的\myindex{充要条件} (necessary and sufficient condition), 也称 $p$, $q$ 等价, 此时 $q$ 也为 $p$ 的充要条件. 例如, 设 $p\colon x>2$, $q\colon x>1$, 则 $p\Rightarrow q$ 但 $q\nRightarrow p$, 所以 $p$ 是 $q$ 的充分不必要条件, 而 $q$ 是 $p$ 的必要不充分条件. 
+</p>
+
+<p>
+判断条件 $p$ 对 $q$ 的充分性或必要性时, 可以先确定与两个条件描述对象等价的集合, 
+  再由集合的包含关系判断充分性或必要性. 上例中 $p$ 对应区间 $A=(2,+\infty)$, 
+  $q$ 对应区间 $B=(1,+\infty)$, 而 $A\subseteq B$ (参考数轴表示),
+  所以 $p$ 是 $q$ 的充分不必要条件. 
+  \mymarginpar{或简记为 (说法不严谨):\\
+    <strong>小集合是充分的, 大集合是必要的</strong>.}  判断多个条件之间的充分性或必要性时, 可以作出推理关系图, 见下面的练习 3.
+</p>
+
+
+## 原命题、逆命题、否命题、逆否命题
 <p>
   形如“若 $p$, 则 $q$”的命题可以写出其逆命题、否命题和逆否命题. 四种命题的形式如下:
   \mymarginpar{逆命题和否命题也是互为逆否命题.}
@@ -28,26 +46,6 @@ nextPageTitle: 逻辑量词
     否命题: 若 $\neg p$, 则 $\neg q$;\quad 逆否命题: 若 $\neg q$, 则 $\neg p$.
   </center>
   写否命题时, 一般只需要把原命题的判断词改为其否定形式, 比如“$=$”改为“$\neq$”,“$>$”改为“$\leqslant$”.   注意, <strong>原命题和否命题的真假没有必然联系</strong>.  \mymarginpar{同样也有例子说明原命题和逆命题的真假没有必然联系, 但是<strong>原命题和其逆否命题却是同真假的</strong>.}  例如,“若 $x=1$, 则 $x^2=1$”的否命题为“若 $x\neq 1$, 则 $x^2\neq 1$”, 前者真后者假 (为什么?); 而“若 $x=1$, 则 $x^3=1$”的否命题为“若 $x\neq 1$, 则 $x^3\neq 1$”, 两者都是真命题. 
-</p>
-
-<p>
-</p>
-
-<p>
-  若条件 $p$ 能推出条件 $q$, 则称 $p$ 为 $q$ 的\myindex{充分条件} 
-  (sufficient condition), $q$ 为 $p$ 的\myindex{必要条件} (necessary condition). 
-  \mymarginpar{可简记为“充分”即是“已知”,“必要”即是“结论”.}
-  若条件 $p$, $q$ 能互推, 则称 $p$ 为 $q$ 的\myindex{充要条件} (necessary and sufficient condition), 也称 $p$, $q$ 等价, 此时 $q$ 也为 $p$ 的充要条件.
-  例如, 设 $p\colon x>2$, $q\colon x>1$, 则 $p\Rightarrow q$ 但 $q\nRightarrow p$, 所以 $p$ 是 $q$ 的充分不必要条件, 而 $q$ 是 $p$ 的必要不充分条件. 
-</p>
-
-<p>
-  判断条件 $p$ 对 $q$ 的充分性或必要性时, 可以先确定与两个条件描述对象等价的集合, 
-  再由集合的包含关系判断充分性或必要性. 上例中 $p$ 对应区间 $A=(2,+\infty)$, 
-  $q$ 对应区间 $B=(1,+\infty)$, 而 $A\subseteq B$ (参考数轴表示),
-  所以 $p$ 是 $q$ 的充分不必要条件. 
-  \mymarginpar{或简记为 (说法不严谨):\\
-    <strong>小集合是充分的, 大集合是必要的</strong>.}  判断多个条件之间的充分性或必要性时, 可以作出推理关系图, 见下面的练习 3.
 </p>
 
 <p>
@@ -147,39 +145,6 @@ nextPageTitle: 逻辑量词
 </mysolution>
 </p>
 
-<p>
-  \subsection{要点导学\quad 各个击破}
-  \subsubsection{命题的真假判定}
-  <span id="example-"></span>
-<myexample>
-    <p>
-    设原命题为“若 $z_1$, $z_2$ 互为共轭复数, 则 $|z_1|=|z_2|$”,
-    关于它的逆命题、否命题、逆否命题真假性的判断依次如下, 其中正确的是\,?(填序号)
-</p>
-
-<p>
-    (1) 真、假、真;\qquad (2) 假、假、真;
-</p>
-
-<p>
-    (3) 真、真、假;\qquad (4) 假、假、假.
-  </p>
-</myexample>
-</p>
-
-<p>
-  <mysolution>
-    <p>
-    逆命题: 若 $|z_1|=|z_2|$, 则 $z_1=\overline{z_2}$; 
-    否命题: 若 $z_1\neq\overline{z_2}$, 则 $|z_1|\neq|z_2|$; 
-    逆否命题: 若 $|z_1|\neq|z_2|$, 则 $z_1\neq\overline{z_2}$.
-</p>
-
-<p>
-    因为 $z_1=\overline{z_2}\Leftrightarrow z_1$, $z_2$ 关于 $x$ 轴对称, $|z_1|=|z_2|\Leftrightarrow z_1$, $z_2$ 到原点的距离相等, 所以逆命题和否命题均为假, 逆否命题为真.
-  </p>
-</mysolution>
-</p>
 
 <p>
   \lianxi
@@ -196,10 +161,6 @@ nextPageTitle: 逻辑量词
 </p>
 
 <p>
-    (3) 函数 $y=\sin\Bigl(2x+\dfrac{\pi}3\Bigr)$ 的最小正周期是 $\pi$;
-</p>
-
-<p>
     (4)“$(x-3)(x-4)=0$”是“$x-3=0$”的充分不必要条件.
   </p>
 </myexercise>
@@ -213,10 +174,6 @@ nextPageTitle: 逻辑量词
 
 <p>
     (2) 错误, $x^2-5x-6=0\Leftrightarrow x=-1$ 或 $6$, 故“$x=-1$”是“$x^2-5x-6=0$”的充分不必要条件.
-</p>
-
-<p>
-    (3) 正确, $T=\frac{2\pi}2= \pi$.
 </p>
 
 <p>
@@ -357,10 +314,8 @@ nextPageTitle: 逻辑量词
 </p>
 
 <p>
-  \subsection{课后练习}
   <myexercise>
-    <p>    命题“若函数 $f(x)=\log_ a x$ ($a>0$, $a\neq 1$) 是减函数,
-    则 $\log_a 2< 0$”的真假性是\,?
+    <p>   “$\sqrt M>\sqrt N$”是“$M>N$”的$\underline{\qquad\qquad}$条件.
   </p>
 </myexercise>
 </p>
@@ -368,63 +323,8 @@ nextPageTitle: 逻辑量词
 <p>
   <mysolution>
     <p>
-    $f(x)\searrow$ 表明 $f(2)< f(1)$, 即 $\log_a 2< 0$. 另: 也可先求得 $0< a< 1$.
-  </p>
-</mysolution>
-</p>
-
-<p>
-  <myexercise>
-    <p>   “$\log_3 M>\log_3 N$”是“$M>N$”的$\underline{\qquad\qquad}$条件.
-  </p>
-</myexercise>
-</p>
-
-<p>
-  <mysolution>
-    <p>
-    前者等价于 $M>N>0$, 为后者的充分不必要条件.
+    前者等价于 $M>N\geqslant 0$, 为后者的充分不必要条件.
     \mymarginpar{对数式应注意真数一定大于 $0$.}
-  </p>
-</mysolution>
-</p>
-
-<p>
-  <myexercise>
-    <p>   “$m=1$”是“两直线 $x-y=0$ 和 $x+my=0$ 互相垂直”
-    的$\underline{\qquad\qquad}$条件.
-  </p>
-</myexercise>
-</p>
-
-<p>
-  <mysolution>
-    <p>
-    后者等价于 $1\cdot 1+(-1)\cdot m=0$, 即 $m=1$.
-  </p>
-</mysolution>
-</p>
-
-<p>
-  <myexercise>
-    <p>    在 $\triangle ABC$ 中,“$A=60^\circ$”是“$\cos A= \dfrac12$”
-    的$\underline{\qquad\qquad}$条件.
-  </p>
-</myexercise>
-</p>
-
-<p>
-  <mysolution>
-    <p>
-    $A\in(0^\circ, 180^\circ)$, 故 $A=60^\circ\Leftrightarrow\cos A= \dfrac12$.
-</p>
-
-<p>
-    \varexercise 题中, 只把“$\cos A= \dfrac12$”换成“$\sin A= \dfrac{\sqrt3}2$”. 
-</p>
-
-<p>
-    此时 $\sin A= \dfrac{\sqrt3}2\Leftrightarrow A=60^\circ$ 或 $120^\circ$, 答案改为“充分不必要”.
   </p>
 </mysolution>
 </p>
@@ -476,32 +376,3 @@ nextPageTitle: 逻辑量词
   </p>
 </mysolution>
 </p>
-
-<p>
-</p>
-
-<p>
-  <myexercise>
-    <p>    直线 $l\colon y=kx+1$ 与圆 $O\colon x^2 +y^2 =1$ 相交于 $A$, $B$ 两点, 
-    则“$k=1$”是“$\triangle OAB$ 的面积为 $\dfrac12$”
-    的$\underline{\qquad\qquad}$条件.
-  </p>
-</myexercise>
-</p>
-
-<p>
-  <mysolution>
-    <p>
-    $l$ 过定点 $(0,1)$, 设为 $A$, 
-    \mymarginpar{高中求三角形的面积时, 面积定理也很常用.}
-    则 
-    \[\begin{aligned}
-      S_{\triangle OAB}=\frac12 
-      &\Leftrightarrow \frac12 |OA|\cdot|OB|\sin\angle AOB= \frac12 
-       \Leftrightarrow \angle AOB= 90^\circ \\
-      &\Leftrightarrow B(1,0) \text{\ 或\ } (-1,0) 
-       \Leftrightarrow k=\pm1,
-    \end{aligned}\]
-    填“充分不必要”.
-  </p>
-</mysolution>
