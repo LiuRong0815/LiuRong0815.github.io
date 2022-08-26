@@ -16,9 +16,9 @@
 <title>集合的运算 | 高中数学资料</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.82f11c6b8c34c24a1cf4d44f6e2be2e8d957ad7773056571d1ef6bce584b0f40.css" >
+<link rel="stylesheet" href="/book.min.0ea964dfd939ec410a2a39593431f6f339bf806ba9aac813a1870c7fca3262b0.css" >
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh.search.min.b403bdb0e88be3cdd6ef5b0797f107fbeb1477c8c8d96e26b10c90d9b6df146f.js" ></script>
+  <script defer src="/zh.search.min.a0025f844a506043e6d378197e2b7f3947b3708ca3507e1931a2114c082e955a.js" ></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
 <!--
@@ -366,6 +366,19 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/set-logic/proposition-iff/" class="">命题与充要条件</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -477,7 +490,7 @@ https://github.com/alex-shpak/hugo-book
     <p>(2) 数学中的“或”与生活中的“或”的意义不完全一样, “$x\in A$ 或 $x\in B$”表示两者之一成立即可, 也可以同时成立.</p>
 </myremark>
 <p>
-通常的数学问题都是在某个范围内考虑的, 例如, 求解平面几何问题只在考虑某个确定的平面, 而不考虑平面所在的空间; 求方程的整数解只考虑整数集 $\mathbf{Z}$, 而不考虑有理数集 $\mathbf{Q}$ 或实数集 $\mathbf{R}$. 这种事先规定的讨论问题的范围构成的集合, 称为全集. 设全集为 $U$, 则集合 $A$ 在 $U$ 中的补集由所有属于 $U$ 但不属于 $A$ 的元素构成, 记为 $\complement_U A$, 读作“$A$ 在 $U$ 中的补集”. 由定义, \[
+通常的数学问题都是在某个范围内考虑的, 例如, 求解平面几何问题只在考虑某个确定的平面, 而不考虑平面所在的空间; 求方程的整数解只考虑整数集 $\mathbf{Z}$, 而不考虑有理数集 $\mathbf{Q}$ 或实数集 $\mathbf{R}$. 这种事先规定的讨论问题的范围构成的集合, 称为全集. 设全集为 $U$, 则集合 $A$ 在 $U$ 中的补集由所有属于 $U$ 但不属于 $A$ 的元素构成, 记为 $\complement_U A$, 读作“$A$ 在 $U$ 中的补集”或更简洁的“$A$ 补”. 由定义, \[
     \complement_U A= \{x\mid x\in U\ \text{且}\ x\notin A\},\]
 用维恩图可以表示如下, 其中矩形、圆围成的区域分别对应集合 $U$, $A$, 阴影部分为 $\complement_U A$.
 </p>
@@ -591,7 +604,7 @@ https://github.com/alex-shpak/hugo-book
 借助于并集运算的维恩图表示, 还可以得到 \[
     A\cup B= A\Leftrightarrow B\subseteq A.\]
 </p>
-<p>
+<p id="德摩根律">
 此外, 设全集为 $U$, 对集合 $A$, $B$, 由维恩图可得, \[\begin{aligned}
     \complement_U (A\cap B)&= \complement_U A\cup \complement_U B,\\
     \complement_U (A\cup B)&= \complement_U A\cap \complement_U B.
@@ -638,8 +651,8 @@ https://github.com/alex-shpak/hugo-book
           <span class="arrow-prev">← </span><span>集合的定义</span></a>
       
       
-        <a class="docs-next button" href="">
-          <span></span><span class="arrow-next"> →</span></a>
+        <a class="docs-next button" href="../proposition-iff">
+          <span>命题与充要条件</span><span class="arrow-next"> →</span></a>
       
     </div>
 

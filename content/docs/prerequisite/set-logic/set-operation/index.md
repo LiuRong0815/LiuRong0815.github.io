@@ -5,8 +5,8 @@ weight: 2
 # bookHidden: true
 prevPage: ../set-def
 prevPageTitle: 集合的定义
-# nextPage: ../proposition-iff
-# nextPageTitle: 命题与充要条件
+nextPage: ../proposition-iff
+nextPageTitle: 命题与充要条件
 ---
 
 # 集合的运算
@@ -173,7 +173,7 @@ prevPageTitle: 集合的定义
     A\cup B= A\Leftrightarrow B\subseteq A.\]
 </p>
 
-<p>
+<p id="德摩根律">
 此外, 设全集为 $U$, 对集合 $A$, $B$, 由维恩图可得, \[\begin{aligned}
     \complement_U (A\cap B)&= \complement_U A\cup \complement_U B,\\
     \complement_U (A\cup B)&= \complement_U A\cap \complement_U B.
@@ -215,4 +215,3 @@ prevPageTitle: 集合的定义
 <details><summary>参考答案</summary>
     <p>\(B\subseteq A\), 则 \(x=2\) 或 \(3\).</p>
 </details>
-

@@ -30,7 +30,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/prerequisite/set-logic/proposition-iff/</guid>
-      <description>命题与充要条件 # 这里是命题与充要条件</description>
+      <description>命题与充要条件 # 可以判断真假 (成立与否) 的陈述句称为命题 (proposition). 一些命题描述的是两个条件的因果关系, 这种因果关系也称为条件的充分性或必要性.
+命题的真假 # 判断为真的命题称为真命题, 判断为假的命题称为假命题. 例如, 下面是三个命题的真假性: 命题 $P$: $1+2+3+\cdots +10= 55$ (真命题); 命题 $Q$: 若 $x&gt;1$, 则 $-x&lt;-1$ (真命题); 命题 $R$: 对所有的 $x\in\mathbf{R}$, $x^2-1&gt;0$ (假命题). 如果命题可以写成“若 $p$, 则 $q$”的形式, 则将条件 $p$ 称为前提, 条件 $q$ 称为结论. 有时将这种命题简记为 $p\Rightarrow q$, 并称由条件 $p$ 可得条件 $q$. 上述命题 $Q$ 的前提是 $x&gt;1$, 结论是 $-x&lt;-1$, 且可以改写成 \[ x&gt;1\Rightarrow -x&lt;-1.\] 命题 $P$ 和命题 $R$ 则不便于改写成“若 $p$, 则 $q$”的形式. 有些命题在改写成“若 $p$, 则 $q$”的形式时, 还需额外写出讨论范围.</description>
     </item>
     
     <item>

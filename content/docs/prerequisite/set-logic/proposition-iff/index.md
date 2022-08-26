@@ -2,11 +2,11 @@
 # bookCollapseSection: true
 title: 命题与充要条件
 weight: 3
-bookHidden: true
-prevPage: ../../set-operation
+# bookHidden: true
+prevPage: ../set-operation
 prevPageTitle: 集合的运算
-nextPage: ../logical-quantifier
-nextPageTitle: 逻辑量词
+# nextPage: ../logical-quantifier
+# nextPageTitle: 逻辑量词
 ---
 
 # 命题与充要条件
@@ -42,10 +42,10 @@ nextPageTitle: 逻辑量词
 </myremark>
 
 <p>
-在判断命题的真假 (true or false) 时, 对真命题需要证明, 对假命题则只需要举出一个反例. 例如由不等式的性质知“若 $x>2$, $y>1$, 则 $x+y>3$”是真命题, 但“若 $x>2$, $y>1$, 则 $x-y>1$”是假命题, 因为可取 $x=3$, $y=5$ 满足前提但不满足结论. 后一个假命题也表明, <strong>同向不等式不能相减</strong>.</p>
+在判断命题的真假 (true or false) 时, 对真命题需要证明, 对假命题则只需要举出一个反例. 例如, 由不等式的性质知“若 $x>2$, $y>1$, 则 $x+y>3$”是真命题; “若 $x>2$, $y>1$, 则 $x-y>1$”是假命题, 因为可取 $x=3$, $y=5$ 满足前提但不满足结论. 后一个假命题也表明, <strong>同向不等式不能相减</strong>.</p>
 
 <myexample>
-    <p>已知 $p(x)$ 是与实数 $x$ 有关的命题 $x^2 +2x-m>0$, 若 $p(1)$ 是假命题, $p(2)$ 是真命题, 求实数 $m$ 的取值范围.
+    <p>已知 $p(x)\colon x^2 +2x-m>0$ 是与实数 $x$ 有关的命题, 若 $p(1)$ 是假命题, $p(2)$ 是真命题, 求实数 $m$ 的取值范围.
     </p>
 </myexample>
 
@@ -58,16 +58,16 @@ nextPageTitle: 逻辑量词
 <myexample>
     <p>已知命题“关于 $x$ 的方程 $x^2 +x+a=0$ 有实根”为真命题, 求 $a$ 的取值范围.
     </p>
-</myexercise>
+</myexample>
 
 <mysolution>
     <p>
-    判别式 $\Delta= 1-4a\geqslant 0$, 则 $a\in\Bigl(-\infty,-\frac14\Bigr]$.
+    判别式 $\Delta= 1-4a\geqslant 0$, 则 $a\in\Bigl(-\infty,-\dfrac14\Bigr]$.
     </p>
 </mysolution>
 
 <myexercise>
-    <p>判断命题“若 $a>b$, $ab\neq 0$, 则 $\frac1a< \frac1b$”的真假.</p>
+    <p>判断命题“若 $a>b$, $ab\neq 0$, 则 $\dfrac1a< \dfrac1b$”的真假.</p>
 </myexercise>
 
 <details><summary>参考答案</summary>
@@ -77,12 +77,12 @@ nextPageTitle: 逻辑量词
 ## 充分条件、必要条件
 
 <p>
-若由条件 $p$ 能推出条件 $q$, 则称 $p$ 为 $q$ 的充分条件 (sufficient condition), $q$ 为 $p$ 的必要条件 (necessary condition). (可简记为“充分”即是“前提”,“必要”即是“结论”.) 若条件 $p$, $q$ 能互相推出, 则称 $p$ 为 $q$ 的充要条件 (necessary and sufficient condition), 也称 $p$, $q$ 等价, 此时 $q$ 也为 $p$ 的充要条件.
+若由条件 $p$ 能推出条件 $q$, 则称 $p$ 为 $q$ 的充分条件 (sufficient condition), $q$ 为 $p$ 的必要条件 (necessary condition). (可简记为“充分”即是“前提”, “必要”即是“结论”.) 若条件 $p$, $q$ 能互相推出, 则称 $p$ 为 $q$ 的充要条件 (necessary and sufficient condition), 也称 $p$, $q$ 等价, 此时 $q$ 也为 $p$ 的充要条件.
 </p>
 
 <p>例如, 设 $p\colon x>2$, $q\colon x>1$, 则 $p\Rightarrow q$ 但 $q\nRightarrow p$, 所以 $p$ 是 $q$ 的充分不必要条件, 而 $q$ 是 $p$ 的必要不充分条件. 再设 $r\colon 2>x>1$, 则可知 \[
     p\nRightarrow r,\ r\nRightarrow p,\quad 
-    q\nRightarrow r,\ r \Rightarrow q\]
+    q\nRightarrow r,\ r\Rightarrow q,\]
 即 $p$ 为 $r$ 的既不充分也不必要条件, 而 $r$ 是 $q$ 的充分不必要条件. 判断多个条件之间的充分性或必要性时, 可以列出推理关系, 帮助理清思路.
 </p>
 
@@ -108,6 +108,7 @@ nextPageTitle: 逻辑量词
 
 <mysolution>
     <p>作出推理关系图, 可知 $r$ 是 $q$ 的充要条件, $p$ 是 $q$ 的必要条件.</p>
+    <img alt="用推理关系图判断充分性、必要性" src="/figs/2022/2022-08/2022-0826-1940.svg"></img>
 </mysolution>
 
 <myexample>
@@ -149,12 +150,12 @@ nextPageTitle: 逻辑量词
     <p>判断下列各组条件的充分性和必要性:</p>
     <p>(1) $p_1\colon x^3>0$, $q_1\colon x^2 \geqslant -x$;</p>
     <p>(2) $p_2\colon \sqrt M>\sqrt N$, $q_2\colon M>N$;</p>
-    <p>(3) $p_3\colon |x|\geqslant 1$, $q_3\colon x>2$$.
+    <p>(3) $p_3\colon |x|\geqslant 1$, $q_3\colon x>2$.</p>
 </myexercise>
 
 <details><summary>参考答案</summary>
     <p>(1) $p_1\colon x\geqslant 0$, $q_1\colon x\leqslant -1$ 或 $x\geqslant 0$, 则 $p_1$ 是 $q_1$ 的充分不必要条件.</p>
-    <p>(2) $p_2$ 等价于 $M>N\geqslant 0$, 为 $q_2$ 的充分不必要条件. (二次根式应注意被开方数一定大于或等于 $0$.</p>
+    <p>(2) $p_2$ 等价于 $M>N\geqslant 0$, 为 $q_2$ 的充分不必要条件. (二次根式应注意被开方数一定大于或等于 $0$.)</p>
     <p>(3) $p_3$ 等价于 $x\leqslant -1$ 或 $x\geqslant 1$, 为 $q_2$ 的既不充分也不必要条件.</p>
 </details>
 
@@ -165,18 +166,12 @@ nextPageTitle: 逻辑量词
 </p>
 
 <p>
-原命题: 若 $p$, 则 $q$;
-</p>
-
-<p>
+原命题: 若 $p$, 则 $q$;&emsp; &emsp; 
 逆命题: 若 $q$, 则 $p$;
 </p>
 
 <p>
-否命题: 若 $\neg p$, 则 $\neg q$;
-</p>
-
-<p>
+否命题: 若 $\neg p$, 则 $\neg q$;&emsp; &emsp; 
 逆否命题: 若 $\neg q$, 则 $\neg p$.
 </p>
 
@@ -185,15 +180,28 @@ nextPageTitle: 逻辑量词
 </p>
 
 <p>
+有些条件是由两个条件用“且”“或”连接而成的. 例如, 条件 $p\colon x< 0$ 或 $x>1$ 就是由 $x< 0$ 与 $x>1$ 用“或”连接而成的, 考虑 $p$ 对应集合的补集知, $\neg p\colon 0\leqslant x\leqslant 1$. 用<a href="/docs/prerequisite/set-logic/set-operation/#德摩根律">德摩根律</a>可以解释否定此类命题的更一般的规律. 设条件 $s\colon x< 0$, 条件 $t\colon x>1$, 则条件 $p$ 可以写成“$s$ 或 $t$”. 此时, 将条件 $s$, $t$ 分别视为其对应的集合 $S$, $T$, 由德摩根律可知, \[\begin{aligned}
+    \neg p
+    &= \neg(s\ \text{或}\ t)= \complement (S\cup T)\\
+    &= \complement\, S\cap \complement\, T
+     = \neg s\ \text{且}\ \neg t.
+\end{aligned}\]
+上面省略了当前讨论范围对应的全集. 同样地, \[
+    \neg(s\ \text{且}\ t)= \neg s\ \text{或}\ \neg t.\]
+由此可知, 否定用“且”“或”连接的两个条件时, 分别否定每个条件, 再将“且”与“或”互换即可. 例如, 对前面的条件 $p\colon x< 0$ 或 $x>1$, 有 \[
+    \neg p\colon \neg(x< 0)\ \text{且}\ \neg(x>1),\]
+进一步化简可知, $\neg p\colon 0\leqslant x\leqslant 1$.
+</p>
+
+<p>
 <strong>原命题与否命题的真假没有必然联系</strong>. 例如, “若 $x=1$, 则 $x^2=1$”的否命题为“若 $x\neq 1$, 则 $x^2\neq 1$”, 前者真, 后者假; 而“若 $x=1$, 则 $x^3=1$”的否命题为“若 $x\neq 1$, 则 $x^3\neq 1$”, 两者都是真命题. 
 </p>
 
 <p>
-同样也有例子说明原命题和逆命题的真假没有必然联系. 但是<strong>原命题和其逆否命题却是同真假的</strong>, 利用维恩图很容易看出这一点. 若原命题“若 $p$, 则 $q$”为真, 设条件 $p$, $q$ 分别对应集合 $A$, $B$, 当前讨论的对象范围为全集 $U$, 则由 $p\Rightarrow q$ 知 $A\subseteq B$, 从而 $\complement_U B\subseteq \complement_U A$,所以 $\neq q\Rightarrow \neq p$, 即逆否命题“若 $\neg q$, 则 $\neg p$”为真. 同理可说明, 若原命题“若 $p$, 则 $q$”为假, 则逆否命题“若 $\neg q$, 则 $\neg p$”也为假.
+同样也有例子说明原命题和逆命题的真假没有必然联系. 但是<strong>原命题和其逆否命题却是同真假的</strong>, 利用维恩图很容易看出这一点. 若原命题“若 $p$, 则 $q$”为真, 设条件 $p$, $q$ 分别对应集合 $A$, $B$, 当前讨论的对象范围为全集 $U$, 则由 $p\Rightarrow q$ 知 $A\subseteq B$, 从而 $\complement_U B\subseteq \complement_U A$,所以 $\neg q\Rightarrow \neg p$, 即逆否命题“若 $\neg q$, 则 $\neg p$”为真. 同理可说明, 若原命题“若 $p$, 则 $q$”为假, 则逆否命题“若 $\neg q$, 则 $\neg p$”也为假.
 </p>
 
 ![原命题与逆否命题同真假集合示意图](/figs/2022/2022-08/2022-0825-2030.svg)
-
 
 <myexample>
     <p>判断命题“若 $ab=0$, 则 $b=0$”和其否命题的真假.

@@ -3,9 +3,9 @@
 title: 逻辑量词
 weight: 4
 bookHidden: true
-prevPage: ../../proposition-iff
+prevPage: ../proposition-iff
 prevPageTitle: 命题与充要条件
-nextPage: ../../inequality
+nextPage: ../inequality
 nextPageTitle: 不等式
 ---
 

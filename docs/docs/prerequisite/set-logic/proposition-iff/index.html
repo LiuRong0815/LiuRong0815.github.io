@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="命题与充要条件 # 这里是命题与充要条件">
+<meta name="description" content="命题与充要条件 # 可以判断真假 (成立与否) 的陈述句称为命题 (proposition). 一些命题描述的是两个条件的因果关系, 这种因果关系也称为条件的充分性或必要性.
+命题的真假 # 判断为真的命题称为真命题, 判断为假的命题称为假命题. 例如, 下面是三个命题的真假性: 命题 $P$: $1&#43;2&#43;3&#43;\cdots &#43;10= 55$ (真命题); 命题 $Q$: 若 $x&gt;1$, 则 $-x&lt;-1$ (真命题); 命题 $R$: 对所有的 $x\in\mathbf{R}$, $x^2-1&gt;0$ (假命题). 如果命题可以写成“若 $p$, 则 $q$”的形式, 则将条件 $p$ 称为前提, 条件 $q$ 称为结论. 有时将这种命题简记为 $p\Rightarrow q$, 并称由条件 $p$ 可得条件 $q$. 上述命题 $Q$ 的前提是 $x&gt;1$, 结论是 $-x&lt;-1$, 且可以改写成 \[ x&gt;1\Rightarrow -x&lt;-1.\] 命题 $P$ 和命题 $R$ 则不便于改写成“若 $p$, 则 $q$”的形式. 有些命题在改写成“若 $p$, 则 $q$”的形式时, 还需额外写出讨论范围.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="命题与充要条件" />
-<meta property="og:description" content="命题与充要条件 # 这里是命题与充要条件" />
+<meta property="og:description" content="命题与充要条件 # 可以判断真假 (成立与否) 的陈述句称为命题 (proposition). 一些命题描述的是两个条件的因果关系, 这种因果关系也称为条件的充分性或必要性.
+命题的真假 # 判断为真的命题称为真命题, 判断为假的命题称为假命题. 例如, 下面是三个命题的真假性: 命题 $P$: $1&#43;2&#43;3&#43;\cdots &#43;10= 55$ (真命题); 命题 $Q$: 若 $x&gt;1$, 则 $-x&lt;-1$ (真命题); 命题 $R$: 对所有的 $x\in\mathbf{R}$, $x^2-1&gt;0$ (假命题). 如果命题可以写成“若 $p$, 则 $q$”的形式, 则将条件 $p$ 称为前提, 条件 $q$ 称为结论. 有时将这种命题简记为 $p\Rightarrow q$, 并称由条件 $p$ 可得条件 $q$. 上述命题 $Q$ 的前提是 $x&gt;1$, 结论是 $-x&lt;-1$, 且可以改写成 \[ x&gt;1\Rightarrow -x&lt;-1.\] 命题 $P$ 和命题 $R$ 则不便于改写成“若 $p$, 则 $q$”的形式. 有些命题在改写成“若 $p$, 则 $q$”的形式时, 还需额外写出讨论范围." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/prerequisite/set-logic/proposition-iff/" /><meta property="article:section" content="docs" />
 
@@ -14,9 +16,9 @@
 <title>命题与充要条件 | 高中数学资料</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.82f11c6b8c34c24a1cf4d44f6e2be2e8d957ad7773056571d1ef6bce584b0f40.css" >
+<link rel="stylesheet" href="/book.min.0ea964dfd939ec410a2a39593431f6f339bf806ba9aac813a1870c7fca3262b0.css" >
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh.search.min.b403bdb0e88be3cdd6ef5b0797f107fbeb1477c8c8d96e26b10c90d9b6df146f.js" ></script>
+  <script defer src="/zh.search.min.a0025f844a506043e6d378197e2b7f3947b3708ca3507e1931a2114c082e955a.js" ></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
 <!--
@@ -364,6 +366,19 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/set-logic/proposition-iff/" class=" active">命题与充要条件</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -426,7 +441,13 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#命题与充要条件">命题与充要条件</a></li>
+    <li><a href="#命题与充要条件">命题与充要条件</a>
+      <ul>
+        <li><a href="#命题的真假">命题的真假</a></li>
+        <li><a href="#充分条件必要条件">充分条件、必要条件</a></li>
+        <li><a href="#原命题逆命题否命题逆否命题">原命题、逆命题、否命题、逆否命题</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -443,19 +464,192 @@ https://github.com/alex-shpak/hugo-book
   命题与充要条件
   <a class="anchor" href="#%e5%91%bd%e9%a2%98%e4%b8%8e%e5%85%85%e8%a6%81%e6%9d%a1%e4%bb%b6">#</a>
 </h1>
-<p>这里是命题与充要条件</p>
+<p>可以判断真假 (成立与否) 的陈述句称为命题 (proposition). 一些命题描述的是两个条件的因果关系, 这种因果关系也称为条件的充分性或必要性.</p>
+<h2 id="命题的真假">
+  命题的真假
+  <a class="anchor" href="#%e5%91%bd%e9%a2%98%e7%9a%84%e7%9c%9f%e5%81%87">#</a>
+</h2>
+<p>
+判断为真的命题称为<strong>真命题</strong>, 判断为假的命题称为<strong>假命题</strong>. 例如, 下面是三个命题的真假性:
+</p>
+<p>
+命题 $P$: $1+2+3+\cdots +10= 55$ (真命题);
+</p>
+<p>
+命题 $Q$: 若 $x>1$, 则 $-x<-1$ (真命题);
+</p>
+<p>
+命题 $R$: 对所有的 $x\in\mathbf{R}$, $x^2-1>0$ (假命题). 
+</p>
+<p>
+如果命题可以写成“若 $p$, 则 $q$”的形式, 则将条件 $p$ 称为前提, 条件 $q$ 称为结论. 有时将这种命题简记为 $p\Rightarrow q$, 并称由条件 $p$ 可得条件 $q$. 上述命题 $Q$ 的前提是 $x>1$, 结论是 $-x<-1$, 且可以改写成 \[
+    x>1\Rightarrow -x<-1.\]
+命题 $P$ 和命题 $R$ 则不便于改写成“若 $p$, 则 $q$”的形式.
+</p>
+<myremark>
+    <p>有些命题在改写成“若 $p$, 则 $q$”的形式时, 还需额外写出讨论范围. 例如, 命题“三角形中, 大边对大角”, 可以改写成: 在 $\triangle ABC$ 中, 若 $\angle A> \angle B$, 则 $BC> AC$.</p>
+</myremark>
+<p>
+在判断命题的真假 (true or false) 时, 对真命题需要证明, 对假命题则只需要举出一个反例. 例如, 由不等式的性质知“若 $x>2$, $y>1$, 则 $x+y>3$”是真命题; “若 $x>2$, $y>1$, 则 $x-y>1$”是假命题, 因为可取 $x=3$, $y=5$ 满足前提但不满足结论. 后一个假命题也表明, <strong>同向不等式不能相减</strong>.</p>
+<myexample>
+    <p>已知 $p(x)\colon x^2 +2x-m>0$ 是与实数 $x$ 有关的命题, 若 $p(1)$ 是假命题, $p(2)$ 是真命题, 求实数 $m$ 的取值范围.
+    </p>
+</myexample>
+<mysolution>
+    <p>
+    由题: $1+2-m\leqslant 0$ 且 $4+4-m>0$, 解得 $m\in[3,8)$.
+    </p>
+</mysolution>
+<myexample>
+    <p>已知命题“关于 $x$ 的方程 $x^2 +x+a=0$ 有实根”为真命题, 求 $a$ 的取值范围.
+    </p>
+</myexample>
+<mysolution>
+    <p>
+    判别式 $\Delta= 1-4a\geqslant 0$, 则 $a\in\Bigl(-\infty,-\dfrac14\Bigr]$.
+    </p>
+</mysolution>
+<myexercise>
+    <p>判断命题“若 $a>b$, $ab\neq 0$, 则 $\dfrac1a< \dfrac1b$”的真假.</p>
+</myexercise>
+<details><summary>参考答案</summary>
+    <p>举反例 (如 $a=1$, $b=-1$) 可知该命题为假命题. 也可利用反比例函数 $y=\dfrac1x$ 分段递减的性质.</p>
+</details>
+<h2 id="充分条件必要条件">
+  充分条件、必要条件
+  <a class="anchor" href="#%e5%85%85%e5%88%86%e6%9d%a1%e4%bb%b6%e5%bf%85%e8%a6%81%e6%9d%a1%e4%bb%b6">#</a>
+</h2>
+<p>
+若由条件 $p$ 能推出条件 $q$, 则称 $p$ 为 $q$ 的充分条件 (sufficient condition), $q$ 为 $p$ 的必要条件 (necessary condition). (可简记为“充分”即是“前提”, “必要”即是“结论”.) 若条件 $p$, $q$ 能互相推出, 则称 $p$ 为 $q$ 的充要条件 (necessary and sufficient condition), 也称 $p$, $q$ 等价, 此时 $q$ 也为 $p$ 的充要条件.
+</p>
+<p>例如, 设 $p\colon x>2$, $q\colon x>1$, 则 $p\Rightarrow q$ 但 $q\nRightarrow p$, 所以 $p$ 是 $q$ 的充分不必要条件, 而 $q$ 是 $p$ 的必要不充分条件. 再设 $r\colon 2>x>1$, 则可知 \[
+    p\nRightarrow r,\ r\nRightarrow p,\quad 
+    q\nRightarrow r,\ r\Rightarrow q,\]
+即 $p$ 为 $r$ 的既不充分也不必要条件, 而 $r$ 是 $q$ 的充分不必要条件. 判断多个条件之间的充分性或必要性时, 可以列出推理关系, 帮助理清思路.
+</p>
+<p>
+判断两个条件 $p$, $q$ 相互的充分性或必要性时, 可以先确定两个条件对应的集合, 再由集合的包含关系判断充分性或必要性. 若条件 $p$, $q$ 描述的对象 (记为 $x$) 分别组成集合 $A$, $B$, 且不妨设 $A\subseteq B$, 则由 $x\in A$ 可得 $x\in B$, 即满足条件 $p$ 的所有对象均满足条件 $q$, 因此 $p\Rightarrow q$, 此时 $p$ 是 $q$ 的充分条件, $q$ 是 $p$ 的必要条件. 一个不严谨的记法是: <strong>小集合是充分的, 大集合是必要的</strong>.
+</p>
+<p>
+  <img src="/figs/2022/2022-08/2022-0825-1930.svg" alt="充分、必要条件推理集合示意图" /></p>
+<p>
+上例中 $p$ 对应区间 $A=(2,+\infty)$, $q$ 对应区间 $B=(1,+\infty)$, 而 $A\subseteq B$ (参考数轴表示), 所以 $p$ 是 $q$ 的充分不必要条件.
+</p>
+<myremark>
+    <p>(1) 有时条件 $p$, $q$ 对应的集合 $A$, $B$ 没有包含关系, 表明这两个条件之间并无充分性或必要性. 例如, $p\colon x^2-1=0$ 对应集合 $\{-1,1\}$, $q\colon x^2-x=0$ 对应集合 $\{0,1\}$, 由于这两个集合没有包含关系, 所以 $p$ 为 $q$ 的既不充分也不必要条件.</p>
+    <p>(2) 并非所有的充分性、必要性都可以直接用集合的包含关系来判断, 有时需要利用推理或计算.</p>
+</myremark>
+<myexample>
+    <p>已知 $p$, $q$ 都是 $r$ 的必要条件, $s$ 是 $r$ 的充分条件, $q$ 是 $s$ 的充分条件, 分别判断 $r$ 与 $q$, $p$ 与 $q$ 的充分性和必要性.
+    </p>
+</myexample>
+<mysolution>
+    <p>作出推理关系图, 可知 $r$ 是 $q$ 的充要条件, $p$ 是 $q$ 的必要条件.</p>
+    <img alt="用推理关系图判断充分性、必要性" src="/figs/2022/2022-08/2022-0826-1940.svg"></img>
+</mysolution>
+<myexample>
+    <p>判断下列各组条件的充分性和必要性:</p>
+    <p>(1) $p_1\colon x=-1$, $q_1\colon x^2-5x-6=0$;</p>
+    <p>(2) $p_2\colon a>b$, $q_2\colon a|a|>b|b|$.</p>
+</myexample>
+<mysolution>
+    <p>(1) $x^2-5x-6=0$ 的解集为 $\{-1,6\}$, 故 $p_1$ 是 $q_1$ 的充分不必要条件.</p>
+    <p>(2) 作函数 \[
+        y= x|x|= \begin{cases}
+            x^2,& x\geqslant 0,\\
+            -x^2,& x< 0 \end{cases}\]
+    的图象知, 函数是单调递增的, 所以 $a>b\Leftrightarrow a|a|>b|b|$, 即 $p_2$ 是 $q_2$ 的充要条件.</p>
+</mysolution>
+<myexample>
+    <p>已知 $p\colon x^2-8x-20\leqslant 0$, $q\colon 1-m\leqslant x\leqslant 1+m$.
+    </p>
+    <p>(1) 当 $m=1$ 时, 判断 $p$ 与 $q$ 充分性和必要性;
+    </p>
+    <p>(2) 若 $p$ 是 $q$ 的必要不充分条件, 求实数 $m$ 的取值范围.
+    </p>
+</myexample>
+<mysolution>
+    <p>解不等式得, $p\colon -2\leqslant x\leqslant 10$.
+    </p>
+    <p>(1) 当 $m=1$ 时, $q\colon 0\leqslant x\leqslant 2$, 则 $p$ 是 $q$ 的必要不充分条件.
+    </p>
+    <p>(2) 由题意, \[
+        1-m\leqslant -2< 10\leqslant 1+m,\]
+    且等号不能同时成立, 解得 $m\in[9,+\infty)$.
+    </p>
+</mysolution>
+<myexercise>
+    <p>判断下列各组条件的充分性和必要性:</p>
+    <p>(1) $p_1\colon x^3>0$, $q_1\colon x^2 \geqslant -x$;</p>
+    <p>(2) $p_2\colon \sqrt M>\sqrt N$, $q_2\colon M>N$;</p>
+    <p>(3) $p_3\colon |x|\geqslant 1$, $q_3\colon x>2$.</p>
+</myexercise>
+<details><summary>参考答案</summary>
+    <p>(1) $p_1\colon x\geqslant 0$, $q_1\colon x\leqslant -1$ 或 $x\geqslant 0$, 则 $p_1$ 是 $q_1$ 的充分不必要条件.</p>
+    <p>(2) $p_2$ 等价于 $M>N\geqslant 0$, 为 $q_2$ 的充分不必要条件. (二次根式应注意被开方数一定大于或等于 $0$.)</p>
+    <p>(3) $p_3$ 等价于 $x\leqslant -1$ 或 $x\geqslant 1$, 为 $q_2$ 的既不充分也不必要条件.</p>
+</details>
+<h2 id="原命题逆命题否命题逆否命题">
+  原命题、逆命题、否命题、逆否命题
+  <a class="anchor" href="#%e5%8e%9f%e5%91%bd%e9%a2%98%e9%80%86%e5%91%bd%e9%a2%98%e5%90%a6%e5%91%bd%e9%a2%98%e9%80%86%e5%90%a6%e5%91%bd%e9%a2%98">#</a>
+</h2>
+<p>
+形如“若 $p$, 则 $q$”的命题可以写出对应的逆命题、否命题和逆否命题. 四种命题的形式如下:
+</p>
+<p>
+原命题: 若 $p$, 则 $q$;&emsp; &emsp; 
+逆命题: 若 $q$, 则 $p$;
+</p>
+<p>
+否命题: 若 $\neg p$, 则 $\neg q$;&emsp; &emsp; 
+逆否命题: 若 $\neg q$, 则 $\neg p$.
+</p>
+<p>
+上面的 $\neg p$ 指的是否定条件 $p$, 例如, 否定 $x=1$ 得到 $x\neq 1$. 但是, 否定一个条件并非简单地将判断词改成其反义词: 否定 $x> 1$ 并不得到 $x< 1$, 而是得到 $x\leqslant 1$. 否定条件 $p$, 其实是求出 $p$ 对应集合的补集, 此时的全集视当前讨论的对象而定. 因为 $x> 1$ 对应区间 $(1,+\infty)$, 结合数轴知, 该区间的补集为 $(-\infty,1]$, 所以否定 $x> 1$ 得到 $x\leqslant 1$.
+</p>
+<p>
+有些条件是由两个条件用“且”“或”连接而成的. 例如, 条件 $p\colon x< 0$ 或 $x>1$ 就是由 $x< 0$ 与 $x>1$ 用“或”连接而成的, 考虑 $p$ 对应集合的补集知, $\neg p\colon 0\leqslant x\leqslant 1$. 用<a href="/docs/prerequisite/set-logic/set-operation/#德摩根律">德摩根律</a>可以解释否定此类命题的更一般的规律. 设条件 $s\colon x< 0$, 条件 $t\colon x>1$, 则条件 $p$ 可以写成“$s$ 或 $t$”. 此时, 将条件 $s$, $t$ 分别视为其对应的集合 $S$, $T$, 由德摩根律可知, \[\begin{aligned}
+    \neg p
+    &= \neg(s\ \text{或}\ t)= \complement (S\cup T)\\
+    &= \complement\, S\cap \complement\, T
+     = \neg s\ \text{且}\ \neg t.
+\end{aligned}\]
+上面省略了当前讨论范围对应的全集. 同样地, \[
+    \neg(s\ \text{且}\ t)= \neg s\ \text{或}\ \neg t.\]
+由此可知, 否定用“且”“或”连接的两个条件时, 分别否定每个条件, 再将“且”与“或”互换即可. 例如, 对前面的条件 $p\colon x< 0$ 或 $x>1$, 有 \[
+    \neg p\colon \neg(x< 0)\ \text{且}\ \neg(x>1),\]
+进一步化简可知, $\neg p\colon 0\leqslant x\leqslant 1$.
+</p>
+<p>
+<strong>原命题与否命题的真假没有必然联系</strong>. 例如, “若 $x=1$, 则 $x^2=1$”的否命题为“若 $x\neq 1$, 则 $x^2\neq 1$”, 前者真, 后者假; 而“若 $x=1$, 则 $x^3=1$”的否命题为“若 $x\neq 1$, 则 $x^3\neq 1$”, 两者都是真命题. 
+</p>
+<p>
+同样也有例子说明原命题和逆命题的真假没有必然联系. 但是<strong>原命题和其逆否命题却是同真假的</strong>, 利用维恩图很容易看出这一点. 若原命题“若 $p$, 则 $q$”为真, 设条件 $p$, $q$ 分别对应集合 $A$, $B$, 当前讨论的对象范围为全集 $U$, 则由 $p\Rightarrow q$ 知 $A\subseteq B$, 从而 $\complement_U B\subseteq \complement_U A$,所以 $\neg q\Rightarrow \neg p$, 即逆否命题“若 $\neg q$, 则 $\neg p$”为真. 同理可说明, 若原命题“若 $p$, 则 $q$”为假, 则逆否命题“若 $\neg q$, 则 $\neg p$”也为假.
+</p>
+<p>
+  <img src="/figs/2022/2022-08/2022-0825-2030.svg" alt="原命题与逆否命题同真假集合示意图" /></p>
+<myexample>
+    <p>判断命题“若 $ab=0$, 则 $b=0$”和其否命题的真假.
+    </p>
+</myexample>
+<mysolution>
+    <p>因为 $ab=0$ 等价于 $a=0$ 或 $b=0$, 是 $b=0$ 的必要条件, 所以原命题为假.
+    </p>
+    <p>否命题: 若 $ab\neq 0$, 则 $b\neq 0$. 因为 $ab\neq0$ 等价于 $a\neq 0$ 且 $b\neq 0$, 是 $b=0$ 的充分条件, 所以原命题为真.
+    </p>
+</mysolution>
 </article>
  
           
     
     <div class="docs-prevnext">
     
-        <a class="docs-prev button" href="../../set-operation">
+        <a class="docs-prev button" href="../set-operation">
           <span class="arrow-prev">← </span><span>集合的运算</span></a>
       
       
-        <a class="docs-next button" href="../logical-quantifier">
-          <span>逻辑量词</span><span class="arrow-next"> →</span></a>
+        <a class="docs-next button" href="">
+          <span></span><span class="arrow-next"> →</span></a>
       
     </div>
 
@@ -500,7 +694,13 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#命题与充要条件">命题与充要条件</a></li>
+    <li><a href="#命题与充要条件">命题与充要条件</a>
+      <ul>
+        <li><a href="#命题的真假">命题的真假</a></li>
+        <li><a href="#充分条件必要条件">充分条件、必要条件</a></li>
+        <li><a href="#原命题逆命题否命题逆否命题">原命题、逆命题、否命题、逆否命题</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
