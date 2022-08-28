@@ -1,0 +1,190 @@
+{"chapters":[
+    {"weight":"1", "chapNameE":"prerequisite", "chapNameC": "预备知识", 
+    "sections":[
+        {"weight":"1", "secNameE":"ms-algebra", "secNameC":"初中代数提要",
+        "subsections":[
+            {"weight":"1", "subsecNameE":"quadratic-factorization", "subsecNameC":"二次三项式的因式分解"},
+            {"weight":"2", "subsecNameE":"quadratic-equation", "subsecNameC":"一元二次方程的解法"},
+            {"weight":"3", "subsecNameE":"veite-theorem", "subsecNameC":"韦达定理"}
+        ]},
+        {"weight":"2", "secNameE":"ms-geometry", "secNameC":"初中几何提要",
+        "subsections":[
+            {"weight":"1", "subsecNameE":"symmetric-congruence-similar", "subsecNameC":"对称、全等与相似"},
+            {"weight":"2", "subsecNameE":"triangle", "subsecNameC":"三角形"},
+            {"weight":"3", "subsecNameE":"quadrilateral", "subsecNameC":"四边形"},
+            {"weight":"4", "subsecNameE":"circle", "subsecNameC":"圆"},
+            {"weight":"5", "subsecNameE":"area", "subsecNameC":"平面图形的面积"}
+        ]},
+        {"weight":"3", "secNameE":"ms-function", "secNameC":"初中函数提要",
+        "subsections":[
+            {"weight":"1", "subsecNameE":"axis-coordinate", "subsecNameC":"数轴与平面直角坐标系"},
+            {"weight":"2", "subsecNameE":"linear-inverse", "subsecNameC":"一次函数与反比例函数"},
+            {"weight":"3", "subsecNameE":"quadratic-function-inequality", "subsecNameC":"二次函数与二次不等式"},
+            {"weight":"4", "subsecNameE":"graph-tranform", "subsecNameC":"函数图象的变换"}
+        ]},
+        {"weight":"4", "secNameE":"set-logic", "secNameC":"集合与简易逻辑",
+        "subsections":[
+            {"weight":"1", "subsecNameE":"set-def", "subsecNameC":"集合的定义"},
+            {"weight":"2", "subsecNameE":"set-operation", "subsecNameC":"集合的运算"},
+            {"weight":"3", "subsecNameE":"proposition-iff", "subsecNameC":"命题与充要条件"},
+            {"weight":"4", "subsecNameE":"logical-quantifier", "subsecNameC":"逻辑量词"}
+        ]},
+        {"weight":"5", "secNameE":"inequality", "secNameC":"不等式",
+        "subsections":[
+            {"weight":"1", "subsecNameE":"inequality-property", "subsecNameC":"不等式的性质"},
+            {"weight":"2", "subsecNameE":"fraction-high-order-inequality", "subsecNameC":"分式不等式与高次不等式"},
+            {"weight":"3", "subsecNameE":"mean-value-inequality", "subsecNameC":"均值不等式"}
+        ]}
+    ]},
+    {"weight":"2", "chapNameE":"algebra", "chapNameC": "代数", 
+    "sections":[
+        {"weight":"1", "secNameE":"function", "secNameC":"函数的定义、性质与图象",
+        "subsections":[
+            {"weight":"1", "subsecNameE":"function-def", "subsecNameC":"函数的定义"},
+            {"weight":"2", "subsecNameE":"function-monotone", "subsecNameC":"函数的单调性"},
+            {"weight":"3", "subsecNameE":"function-oddeven", "subsecNameC":"函数的奇偶性"},
+            {"weight":"4", "subsecNameE":"function-graph", "subsecNameC":"函数的图象"},
+            {"weight":"5", "subsecNameE":"function-equation", "subsecNameC":"利用函数图象研究方程"}
+        ]},
+        {"weight":"2", "secNameE":"pow-exp-log", "secNameC":"幂函数、指数函数、对数函数",
+        "subsections":[
+            {"weight":"1", "subsecNameE":"power-function", "subsecNameC":"幂函数"},
+            {"weight":"2", "subsecNameE":"exponent-function", "subsecNameC":"指数函数"},
+            {"weight":"3", "subsecNameE":"logarithm-calculation", "subsecNameC":"对数运算"},
+            {"weight":"4", "subsecNameE":"logarithm-function", "subsecNameC":"对数函数"},
+            {"weight":"5", "subsecNameE":"inverse-function", "subsecNameC":"反函数"}
+        ]},
+        {"weight":"3", "secNameE":"sequence", "secNameC":"数列",
+        "subsections":[
+            {"weight":"1", "subsecNameE":"sequence-def", "subsecNameC":"数列的定义"},
+            {"weight":"2", "subsecNameE":"common-diff", "subsecNameC":"等差数列"},
+            {"weight":"3", "subsecNameE":"common-ratio", "subsecNameC":"等比数列"},
+            {"weight":"4", "subsecNameE":"sequence-application", "subsecNameC":"数列的应用"},
+            {"weight":"5", "subsecNameE":"general-term-fomula", "subsecNameC":"特殊通项公式的求法"},
+            {"weight":"6", "subsecNameE":"mathematical-induction", "subsecNameC":"数学归纳法"}
+        ]}
+    ]},
+    {"weight":"3", "chapNameE":"trigonometry", "chapNameC": "三角", 
+    "sections":[
+        {"weight":"1", "secNameE":"trigonometric-function", "secNameC":"三角函数",
+        "subsections":[
+            {"weight":"1", "subsecNameE":"trig-def-radian", "subsecNameC":"任意角的三角函数与弧度制"},
+            {"weight":"2", "subsecNameE":"trig-induce", "subsecNameC":"三角函数的诱导公式"},
+            {"weight":"3", "subsecNameE":"trig-sum-diff", "subsecNameC":"三角函数的和差角公式"},
+            {"weight":"4", "subsecNameE":"trig-double-auxiliary", "subsecNameC":"倍角公式与辅助角公式"},
+            {"weight":"5", "subsecNameE":"trig-sum-prod", "subsecNameC":"和差化积公式与积化和差公式"}
+        ]},
+        {"weight":"2", "secNameE":"sine-cosine-law", "secNameC":"正弦定理与余弦定理",
+        "subsections":[
+            {"weight":"1", "subsecNameE":"sine-law", "subsecNameC":"正弦定理"},
+            {"weight":"2", "subsecNameE":"cosine-law", "subsecNameC":"余弦定理"},
+            {"weight":"3", "subsecNameE":"solving-triangles", "subsecNameC":"解三角形"}
+        ]},   
+        {"weight":"3", "secNameE":"vector", "secNameC":"向量",
+        "subsections":[
+            {"weight":"1", "subsecNameE":"vec-def", "subsecNameC":"向量的定义"},
+            {"weight":"2", "subsecNameE":"vec-basic-theorem", "subsecNameC":"平面向量基本定理"},
+            {"weight":"3", "subsecNameE":"dot-product", "subsecNameC":"向量的内积"},
+            {"weight":"4", "subsecNameE":"space-vector", "subsecNameC":"空间向量"}
+        ]},
+        {"weight":"4", "secNameE":"complex-number", "secNameC":"复数",
+        "subsections":[
+            {"weight":"1", "subsecNameE":"complex-number-def", "subsecNameC":"复数的定义"},
+            {"weight":"2", "subsecNameE":"complex-number-operation", "subsecNameC":"复数的运算"}
+        ]}
+    ]},
+    {"weight":"4", "chapNameE":"analytic-geometry", "chapNameC": "解析几何", 
+    "sections":[
+        {"weight":"1", "secNameE":"line", "secNameC":"直线",
+        "subsections":[
+            {"weight":"1", "subsecNameE":"slope", "subsecNameC":"直线的斜率"},
+            {"weight":"2", "subsecNameE":"line-equation", "subsecNameC":"直线的方程"},
+            {"weight":"3", "subsecNameE":"line-parallel-perp", "subsecNameC":"直线的平行与垂直"}
+        ]},
+        {"weight":"2", "secNameE":"circle", "secNameC":"圆",
+        "subsections":[
+            {"weight":"1", "subsecNameE":"circle-equation", "subsecNameC":"圆的方程"},
+            {"weight":"2", "subsecNameE":"circle-line", "subsecNameC":"圆与直线的位置关系"},
+            {"weight":"3", "subsecNameE":"circle-circle", "subsecNameC":"圆与圆的位置关系"}
+        ]},
+        {"weight":"3", "secNameE":"conic-curves", "secNameC":"圆锥曲线",
+        "subsections":[
+            {"weight":"1", "subsecNameE":"ellipse", "subsecNameC":"椭圆"},
+            {"weight":"2", "subsecNameE":"hyperbola", "subsecNameC":"双曲线"},
+            {"weight":"3", "subsecNameE":"parabola", "subsecNameC":"抛物线"},
+            {"weight":"4", "subsecNameE":"conic-curves-line", "subsecNameC":"圆锥曲线综合"}
+        ]}
+    ]},
+    {"weight":"5", "chapNameE":"solid-geometry", "chapNameC": "空间几何", 
+    "sections":[
+        {"weight":"1", "secNameE":"solid", "secNameC":"几何体",
+        "subsections":[
+            {"weight":"1", "subsecNameE":"solid-classification", "subsecNameC":"几何体的分类"},
+            {"weight":"2", "subsecNameE":"pyramid-pillar-area-volume", "subsecNameC":"锥和柱的表面积与体积"}
+        ]},
+        {"weight":"2", "secNameE":"line-plane", "secNameC":"直线与平面",
+        "subsections":[
+            {"weight":"1", "subsecNameE":"position", "subsecNameC":"直线与平面的位置关系"},
+            {"weight":"2", "subsecNameE":"line-plane-parallel", "subsecNameC":"线面平行"},
+            {"weight":"3", "subsecNameE":"line-plane-perp", "subsecNameC":"线面垂直"},
+            {"weight":"4", "subsecNameE":"plane-parallel", "subsecNameC":"面面平行"},
+            {"weight":"5", "subsecNameE":"plane-perp", "subsecNameC":"面面垂直"}
+        ]},
+        {"weight":"3", "secNameE":"line-plane-space-vector", "secNameC":"用空间向量表示线面关系",
+        "subsections":[
+            {"weight":"1", "subsecNameE":"directional-norm-vector", "subsecNameC":"方向向量与法向量"},
+            {"weight":"2", "subsecNameE":"line-plane-parallel", "subsecNameC":"线、面平行"},
+            {"weight":"3", "subsecNameE":"line-plane-perp", "subsecNameC":"线、面垂直"},
+            {"weight":"4", "subsecNameE":"line-plane-angle", "subsecNameC":"线、面夹角"}
+        ]}
+    ]},
+    {"weight":"6", "chapNameE":"derivative", "chapNameC": "导数", 
+    "sections":[
+        {"weight":"1", "secNameE":"limit", "secNameC":"极限",
+        "subsections":[
+            {"weight":"1", "subsecNameE":"sequence-limit", "subsecNameC":"数列的极限"},
+            {"weight":"2", "subsecNameE":"function-limit", "subsecNameC":"函数的极限"},
+            {"weight":"3", "subsecNameE":"limit-rules", "subsecNameC":"极限的运算"}
+        ]},
+        {"weight":"2", "secNameE":"derivative", "secNameC":"导数",
+        "subsections":[
+            {"weight":"1", "subsecNameE":"derivative-def", "subsecNameC":"导数的定义与意义"},
+            {"weight":"2", "subsecNameE":"derivative-calc", "subsecNameC":"常见导数公式"},
+            {"weight":"3", "subsecNameE":"derivative-laws", "subsecNameC":"导数的运算法则"},
+            {"weight":"4", "subsecNameE":"monotone-max-min", "subsecNameC":"利用导数求函数的单调性与最值"}
+        ]}
+    ]},
+    {"weight":"7", "chapNameE":"probability-statistics", "chapNameC": "概率与统计", 
+    "sections":[
+        {"weight":"1", "secNameE":"permutation-combination", "secNameC":"排列与组合",
+        "subsections":[
+            {"weight":"1", "subsecNameE":"permutation", "subsecNameC":"排列"},
+            {"weight":"2", "subsecNameE":"combination", "subsecNameC":"组合"},
+            {"weight":"3", "subsecNameE":"binomial-theorem", "subsecNameC":"二项式定理"}
+        ]},
+        {"weight":"2", "secNameE":"statistics", "secNameC":"统计",
+        "subsections":[
+            {"weight":"1", "subsecNameE":"mean-variation", "subsecNameC":"平均值与方差"},
+            {"weight":"2", "subsecNameE":"histogram", "subsecNameC":"直方图"},
+            {"weight":"3", "subsecNameE":"", "subsecNameC":""},
+            {"weight":"4", "subsecNameE":"", "subsecNameC":""},
+            {"weight":"5", "subsecNameE":"", "subsecNameC":""}
+        ]},
+        {"weight":"3", "secNameE":"probability", "secNameC":"概率",
+        "subsections":[
+            {"weight":"1", "subsecNameE":"classical-probability", "subsecNameC":"古典概型"},
+            {"weight":"2", "subsecNameE":"geometric-probability", "subsecNameC":"几何概型"},
+            {"weight":"3", "subsecNameE":"conditional-probability", "subsecNameC":"条件概率"},
+            {"weight":"4", "subsecNameE":"expectation-variation", "subsecNameC":"期望与方差"}
+        ]},
+        {"weight":"4", "secNameE":"probability-distribution", "secNameC":"概率分布",
+        "subsections":[
+            {"weight":"1", "subsecNameE":"binomial-distribution", "subsecNameC":"二项分布"},
+            {"weight":"2", "subsecNameE":"normal-distribution", "subsecNameC":"正态分布"}
+        ]}
+    ]}
+]}
+
+
+ 
+

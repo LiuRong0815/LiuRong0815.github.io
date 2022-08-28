@@ -21,5 +21,6 @@ nextPageTitle: 初中代数提要
 1. [初中代数提要](./ms-algebra)
 2. [初中几何提要](./ms-geometry)
 3. [初中函数提要](./ms-function)
-<!-- 4. [集合与简易逻辑](./set-logic) -->
+4. [集合与简易逻辑](./set-logic)
+<!-- 5. [不等式](./inequality/) -->
   

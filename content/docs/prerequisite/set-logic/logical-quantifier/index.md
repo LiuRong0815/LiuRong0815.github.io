@@ -5,8 +5,8 @@ weight: 4
 # bookHidden: true
 prevPage: ../proposition-iff
 prevPageTitle: 命题与充要条件
-# nextPage: ../../inequality
-# nextPageTitle: 不等式
+nextPage: ../../inequality
+nextPageTitle: 不等式
 ---
 
 # 逻辑量词

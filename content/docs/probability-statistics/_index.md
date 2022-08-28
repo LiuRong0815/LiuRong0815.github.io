@@ -1,12 +1,13 @@
 ---
 bookCollapseSection: true
 title: 概率与统计
-weight: 12
+weight: 7
 bookHidden: true
+prevPage: /docs/derivative/derivative/monotone-max-min
+prevPageTitle: 利用导数求函数的单调性与最值
+nextPage: 
+nextPageTitle: 
 ---
 
 # 概率与统计
 
-这里是高中数学概率与统计
-
-$a^2+b^2=c^2$

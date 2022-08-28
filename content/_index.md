@@ -37,8 +37,8 @@ nextPageTitle: 预备知识
     - [初中代数提要](/docs/prerequisite/ms-algebra)
     - [初中几何提要](/docs/prerequisite/ms-geometry)
     - [初中函数提要](/docs/prerequisite/ms-function) 
-  <!-- - [集合]() -->
-  <!-- - [简易逻辑] -->
+    - [集合与简易逻辑](/docs/prerequisite/set-logic)
+  <!-- - [] -->
 <!-- - [幂函数、指数函数、对数函数](/docs/)（待补） -->
 <!-- - 三角函数 -->
 <!-- - 平面向量与复数 -->
