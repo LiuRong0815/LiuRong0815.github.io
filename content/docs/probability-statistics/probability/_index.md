@@ -5,8 +5,8 @@ weight: 3
 bookHidden: true
 prevPage: /docs/probability-statistics/statistics/
 prevPageTitle: 
-nextPage: 
-nextPageTitle: 
+nextPage: /docs/probability-statistics/probability/classical-probability
+nextPageTitle: 古典概型
 ---
 
 # 概率

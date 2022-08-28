@@ -5,8 +5,8 @@ weight: 1
 bookHidden: true
 prevPage: /docs/analytic-geometry/circle
 prevPageTitle: 圆
-nextPage: 
-nextPageTitle: 
+nextPage: /docs/analytic-geometry/circle/circle-line
+nextPageTitle: 圆与直线的位置关系
 ---
 
 # 圆的方程

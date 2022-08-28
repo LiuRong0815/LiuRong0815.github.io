@@ -5,7 +5,7 @@ weight: 2
 bookHidden: true
 prevPage: /docs/probability-statistics/statistics/mean-variation
 prevPageTitle: 平均值与方差
-nextPage: 
+nextPage: /docs/probability-statistics/statistics/
 nextPageTitle: 
 ---
 

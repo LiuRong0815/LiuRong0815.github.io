@@ -5,8 +5,8 @@ weight: 1
 bookHidden: true
 prevPage: /docs/derivative
 prevPageTitle: 导数
-nextPage: 
-nextPageTitle: 
+nextPage: /docs/derivative/limit/sequence-limit
+nextPageTitle: 数列的极限
 ---
 
 # 极限

@@ -5,8 +5,8 @@ weight: 2
 bookHidden: true
 prevPage: /docs/analytic-geometry/line/line-parallel-perp
 prevPageTitle: 直线的平行与垂直
-nextPage: 
-nextPageTitle: 
+nextPage: /docs/analytic-geometry/circle/circle-equation
+nextPageTitle: 圆的方程
 ---
 
 # 圆

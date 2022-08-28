@@ -5,8 +5,8 @@ weight: 2
 bookHidden: true
 prevPage: /docs/prerequisite/inequality/mean-value-inequality
 prevPageTitle: 均值不等式
-nextPage: 
-nextPageTitle: 
+nextPage: /docs/algebra/function
+nextPageTitle: 函数的定义、性质与图象
 ---
 
 # 代数

@@ -5,8 +5,8 @@ weight: 4
 bookHidden: true
 prevPage: /docs/solid-geometry/line-plane/line-plane-perp
 prevPageTitle: 线面垂直
-nextPage: 
-nextPageTitle: 
+nextPage: /docs/solid-geometry/line-plane/plane-perp
+nextPageTitle: 面面垂直
 ---
 
 # 面面平行

@@ -5,8 +5,8 @@ weight: 2
 bookHidden: true
 prevPage: /docs/probability-statistics/probability/classical-probability
 prevPageTitle: 古典概型
-nextPage: 
-nextPageTitle: 
+nextPage: /docs/probability-statistics/probability/conditional-probability
+nextPageTitle: 条件概率
 ---
 
 # 几何概型

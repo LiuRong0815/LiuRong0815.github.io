@@ -5,8 +5,8 @@ weight: 1
 bookHidden: true
 prevPage: /docs/probability-statistics/probability
 prevPageTitle: 概率
-nextPage: 
-nextPageTitle: 
+nextPage: /docs/probability-statistics/probability/geometric-probability
+nextPageTitle: 几何概型
 ---
 
 # 古典概型

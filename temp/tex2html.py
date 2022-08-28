@@ -40,7 +40,7 @@ if(texFileNum == 0):
 #开始转换，并准备必要的数据
 for num in range(0,texFileNum):
 
-    fp = open(texFileNames[num]+'.md','w') # 新建 md
+    fptemp = open(texFileNames[num]+'.temp','w') # 新建 tmp
     lines = open(texFileNames[num]+'.tex','r').readlines()  #读入每一行
 
     # 替换各种环境和文字
@@ -59,26 +59,29 @@ for num in range(0,texFileNum):
         oneline = oneline.replace('``', '“')
         oneline = oneline.replace("''", '”')
 
+        # mathbb
+        oneline = oneline.replace('mathbb', 'mathbf')
+
         # example
-        oneline = oneline.replace('\\begin{example}', \
-            '<span id="example-"></span>\n<myexample>\n    <p>')
+        oneline = oneline.replace('\\begin{example}\n', \
+            '<myexample>\n<p>')
         oneline = oneline.replace('\\end{example}', '</p>\n</myexample>')
 
         # solution
         oneline = oneline.replace('\\beginsolution', \
             '<mysolution>\n    <p>')
         oneline = oneline.replace('\\endsolution', '</p>\n</mysolution>')
-        oneline = oneline.replace('\\begin{solution}', \
+        oneline = oneline.replace('\\begin{solution}\n', \
             '<mysolution>\n    <p>')
         oneline = oneline.replace('\\end{solution}', '</p>\n</mysolution>')
         
         # proof
-        oneline = oneline.replace('\\begin{proof}', \
+        oneline = oneline.replace('\\begin{proof}\n', \
             '<myproof>\n    <p>')
         oneline = oneline.replace('\\end{proof}', '</p>\n</myproof>')
 
         # remark
-        oneline = oneline.replace('\\begin{remark}',\
+        oneline = oneline.replace('\\begin{remark}\n',\
             '<myremark>\n    <p>')
         oneline = oneline.replace('\\end{remark}', '</p>\n</myremark>')
         
@@ -96,21 +99,21 @@ for num in range(0,texFileNum):
         oneline = oneline.replace('\\begin{center}', '<center>')
         oneline = oneline.replace('\\end{center}', '</center>')
         
-        # figs
-        figName = re.search('\\includegraphics.*\{(.*)\}', oneline)
-        if(figName):
-            oneline = '  <embed src="/figs/' + figName.group(1) + '.svg">\n'
-            fp.write(oneline)
-            continue
+        # # figs
+        # figName = re.search('\\includegraphics.*\{(.*)\}', oneline)
+        # if(figName):
+        #     oneline = '  <embed src="/figs/' + figName.group(1) + '.svg">\n'
+        #     fp.write(oneline)
+        #     continue
         
-        # item
-        myItem = re.search( r'\\item', oneline)
-        if(myItem):
-            # 先替换开头的 \item，再去掉结尾的换行符
-            oneline = oneline.replace('\\item', '<p>').rstrip()
-            oneline += '</p>\n'  # 补上换行符
-            fp.write(oneline)
-            continue
+        # # item
+        # myItem = re.search( r'\\item', oneline)
+        # if(myItem):
+        #     # 先替换开头的 \item，再去掉结尾的换行符
+        #     oneline = oneline.replace('\\item', '<p>').rstrip()
+        #     oneline += '</p>\n'  # 补上换行符
+        #     fp.write(oneline)
+        #     continue
         
         # myemph
         myemph = re.search( r'(.*)\\myemph\{(.*?)\}(.*)', oneline)
@@ -121,10 +124,26 @@ for num in range(0,texFileNum):
         # 各段加段落标签
         realLine = oneline.strip() # 删掉开头结尾的空字符
         if( 0 == len(realLine) ):
-            oneline = '</p>\n\n<p>\n'
-        
+            oneline = '</p>\n<p>'
+
         # 逐行写入
-        fp.write(oneline)
-    fp.close()
+        fptemp.write(oneline)
+    fptemp.close()
+
+    fpmd = open(texFileNames[num]+'.md','w') # 新建 md
+    lines = open(texFileNames[num]+'.temp','r').readlines()  #读入每一行
+
+    # 替换各种环境和文字
+    for oneline in lines:
+
+        # 删除 <p> 后的空格
+        oneline = oneline.replace('<p>    ', '<p>')
+        oneline = oneline.replace('<p>   ', '<p>')
+        oneline = oneline.replace('<p>  ', '<p>')
+        oneline = oneline.replace('<p> ', '<p>')
+        oneline = oneline.replace('<p>\n', '<p>')
+        # 逐行写入
+        fpmd.write(oneline)
+    fptemp.close()
 
 print('finished converting ' + str(texFileNum) + ' tex files!')

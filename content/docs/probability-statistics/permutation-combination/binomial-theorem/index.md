@@ -5,8 +5,8 @@ weight: 3
 bookHidden: true
 prevPage: /docs/probability-statistics/permutation-combination/combination
 prevPageTitle: 组合
-nextPage: 
-nextPageTitle: 
+nextPage: /docs/probability-statistics/statistics
+nextPageTitle: 统计
 ---
 
 # 二项式定理

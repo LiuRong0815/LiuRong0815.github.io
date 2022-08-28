@@ -5,8 +5,8 @@ weight: 2
 bookHidden: true
 prevPage: /docs/algebra/sequence/sequence-def
 prevPageTitle: 数列的定义
-nextPage: 
-nextPageTitle: 
+nextPage: /docs/algebra/sequence/common-ratio
+nextPageTitle: 等比数列
 ---
 
 # 等差数列

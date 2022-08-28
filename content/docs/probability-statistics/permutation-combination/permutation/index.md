@@ -5,8 +5,8 @@ weight: 1
 bookHidden: true
 prevPage: /docs/probability-statistics/permutation-combination
 prevPageTitle: 排列与组合
-nextPage: 
-nextPageTitle: 
+nextPage: /docs/probability-statistics/permutation-combination/combination
+nextPageTitle: 组合
 ---
 
 # 排列
