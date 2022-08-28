@@ -2,18 +2,18 @@
 # bookCollapseSection: true
 title: 逻辑量词
 weight: 4
-bookHidden: true
+# bookHidden: true
 prevPage: ../proposition-iff
 prevPageTitle: 命题与充要条件
-nextPage: ../../inequality
-nextPageTitle: 不等式
+# nextPage: ../../inequality
+# nextPageTitle: 不等式
 ---
 
 # 逻辑量词
 
-<p>除了能写成“若 $p$, 则 $q$”形式的命题, 还有能写成“对所有 $x\in M$, $p(x)$ 成立”或“存在 $x\in M$, $p(x)$ 成立”形式的命题, 其中 $p(x)$ 是与 $x$ 有关的条件. 后一种形式命题中的“所有”是全称量词, “存在”是存在量词, 两者统称为逻辑量词, 分别协助限定了条件 $p(x)$ 成立的范围. 
+<p>除了有能写成“若 $p$, 则 $q$”形式的命题, 还有能写成“对所有 $x\in M$, $p(x)$ 成立”或“存在 $x\in M$, $p(x)$ 成立”形式的命题, 其中 $p(x)$ 是与 $x$ 有关的条件. 后一种形式命题中的“所有”是全称量词, “存在”是存在量词, 两者统称为逻辑量词, 分别协助限定了条件 $p(x)$ 成立的范围. 
 </p>
-<p>为了简化叙述, 将全称量词“所有”简记为符号“$\forall$”(for all), 存在量词“存在”简记为符号“$\exists$”(exists). 前面的两种命题可以进一步简化为 \[
+<p>为了简化叙述, 将全称量词“所有”(for all) 简记为符号“$\forall$”, 存在量词“存在”(exists) 简记为符号“$\exists$”. 前面的两种命题可以进一步简化为 \[
     \forall\, x\in M, p(x);\quad
     \exists\, x\in M, p(x).\]
 从逻辑量词的形状可以看出, “$\forall$”可由字母 A 上下翻转得到, “$\exists$”可由字母 E 左右翻转得到.
@@ -23,7 +23,7 @@ nextPageTitle: 不等式
 </myremark>
 
 <myexample>
-    <p>若命题“$\exists\, x_0\in \mathbb{R}$, $x_0^2+ 2ax_0+2-a=0$”是真命题, 求实数 $a$ 的取值范围.
+    <p>若命题“$\exists\, x_0\in \mathbf{R}$, $x_0^2+ 2ax_0+2-a=0$”是真命题, 求实数 $a$ 的取值范围.
     </p>
 </myexample>
 
@@ -74,7 +74,7 @@ nextPageTitle: 不等式
 <myexample>
     <p>判断下列命题的真假, 并写出其否定:
     </p>
-    <p>(1) $\forall\, x\in \mathbb{R}$, $x^2-2x+2>0$;
+    <p>(1) $\forall\, x\in \mathbf{R}$, $x^2-2x+2>0$;
     </p>
     <p>(2) 存在一个无理数, 它的平方是有理数;
     </p>
@@ -86,7 +86,7 @@ nextPageTitle: 不等式
     <p>(1) 配方可得, \[
         x^2-2x+2= (x-1)^2+1>0,\]
     所以原命题正确. 其否定为 \[
-        \exists\, x\in \mathbb{R}, x^2-2x+2\leqslant 0.\]
+        \exists\, x\in \mathbf{R}, x^2-2x+2\leqslant 0.\]
     </p>
     <p>(2) 无理数 $\sqrt2$ 的平方为 $1$, 是有理数, 所以原命题正确. 其否定为: 所有的无理数的平方都是无理数.
     </p>
@@ -98,18 +98,18 @@ nextPageTitle: 不等式
 </mysolution>
 
 <myexercise>
-    <p>若命题“$\exists\,x\in \mathbb{R}$, $x^2 +2x+m\leqslant 0$”是假命题, 求实数 $m$ 的取值范围.
+    <p>若命题“$\exists\,x\in \mathbf{R}$, $x^2 +2x+m\leqslant 0$”是假命题, 求实数 $m$ 的取值范围.
     </p>
 </myexercise>
 
 <details><summary>参考答案</summary>
-    <p>命题“$\forall\,x\in \mathbb{R}$, $x^2 +2x+m> 0$”是真命题, 则 $\Delta=2^2-4m< 0$, $m\in(1,+\infty)$.
+    <p>命题“$\forall\,x\in \mathbf{R}$, $x^2 +2x+m> 0$”是真命题, 则 $\Delta=2^2-4m< 0$, $m\in(1,+\infty)$.
     </p>
 </details>
 
 ## 逻辑连接词
 
-<p>有些条件是由两个条件用“且”“或”连接而成的. 例如, 条件 $p\colon x< 0$ 或 $x>1$ 就是由 $x< 0$ 与 $x>1$ 用“或”连接而成的. “且”“或”以及表示否定的“非”均为逻辑联结词, 且有对应的符号: “且” 的符号为 $\wedge$, “或”的符号为 $\vee$, “非”的符号为 $\neg$. 前两个符号可以类比求交集的符号“$\cap$”和求并集的符号“$\cup$”来记忆.
+<p>有些条件是由两个条件用“且”“或”连接而成的. 例如, 条件 $p\colon x< 0$ 或 $x>1$ 就是由 $x< 0$ 与 $x>1$ 用“或”连接而成的. “且”“或”以及表示否定的“非”均为逻辑联结词, 且有对应的符号: “且” 的符号为 $\wedge$, “或”的符号为 $\vee$, “非”的符号为 $\neg$. 这两个符号可以类比求交集的符号“$\cap$”和求并集的符号“$\cup$”来记忆.
 </p>
 <p>考虑 $p$ 对应集合的补集知, $\neg p\colon 0\leqslant x\leqslant 1$. 用<a href="/docs/prerequisite/set-logic/set-operation/#德摩根律">德摩根律</a>可以解释否定此类条件的更一般的规律. 设条件 $s\colon x< 0$, 条件 $t\colon x>1$, 则条件 $p$ 可以写成“$s\vee t$”. 此时, 将条件 $s$, $t$ 分别视为其对应的集合 $S$, $T$, 由德摩根律可知, \[\begin{aligned}
     \neg p

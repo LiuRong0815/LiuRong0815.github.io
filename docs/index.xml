@@ -6,6 +6,15 @@
     <description>Recent content in 本站介绍 on 高中数学资料</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>不等式的性质</title>
+      <link>/docs/prerequisite/inequality/inequality-property/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/prerequisite/inequality/inequality-property/</guid>
+      <description> 不等式的性质 # </description>
+    </item>
+    
+    <item>
       <title>对称、全等与相似</title>
       <link>/docs/prerequisite/ms-geometry/symmetric-congruence-similar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -45,6 +54,15 @@
 数轴 # 数轴是规定了原点 (记为 $O$) 和正方向 (通常由左至右) 的直线, 其上的点与实数一一对应,
 点在原点的左、右对应实数的正、负 点到原点的距离对应实数的绝对值 例如, 若点 $A$ 在原点左侧, 且到原点的距离为 $2$, 则点 $A$ 表示实数 $-2$; 实数 $\sqrt3$ 对应的点在原点右侧, 且到原点的距离为 $\sqrt3$. 由 $|-2|&amp;gt;|\sqrt3|$ 知, 点 $B$ 离原点 $O$ 更近一些.
 若点 $A$ 与实数 $x_1$ 对应, 则称 $x_1$ 为点 $A$ 的坐标, 可记为 $A(x_1)$ (或将点 $A$ 称为点 $x_1$). 对于点 $A(x_1)$ 和 $B(x_2)$, 若 $x_1&amp;gt; x_2$, 则可验证 $|AB|= x_1-x_2$; 而若 $x_1&amp;lt; x_2$, 则 $|AB|= x_2-x_1$ (即总是“大数减小数”), 因此可得 $A(x_1)$, $B(x_2)$ 两点之间距离公式 \[ |AB|= |x_1-x_2|.</description>
+    </item>
+    
+    <item>
+      <title>分式不等式与高次不等式</title>
+      <link>/docs/prerequisite/inequality/fraction-high-order-inequality/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/prerequisite/inequality/fraction-high-order-inequality/</guid>
+      <description> 分式不等式与高次不等式 # </description>
     </item>
     
     <item>
@@ -109,6 +127,15 @@
     </item>
     
     <item>
+      <title>均值不等式</title>
+      <link>/docs/prerequisite/inequality/mean-value-inequality/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/prerequisite/inequality/mean-value-inequality/</guid>
+      <description> 均值不等式 # </description>
+    </item>
+    
+    <item>
       <title>命题与充要条件</title>
       <link>/docs/prerequisite/set-logic/proposition-iff/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -162,7 +189,8 @@ $AB= CD$, $AD= BC$, 即两组对边分别相等 $AO=OC$, $BO=OD$, 即对角线�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/prerequisite/set-logic/logical-quantifier/</guid>
-      <description>逻辑量词 # 这里是逻辑量词</description>
+      <description>逻辑量词 # 除了有能写成“若 $p$, 则 $q$”形式的命题, 还有能写成“对所有 $x\in M$, $p(x)$ 成立”或“存在 $x\in M$, $p(x)$ 成立”形式的命题, 其中 $p(x)$ 是与 $x$ 有关的条件. 后一种形式命题中的“所有”是全称量词, “存在”是存在量词, 两者统称为逻辑量词, 分别协助限定了条件 $p(x)$ 成立的范围. 为了简化叙述, 将全称量词“所有”(for all) 简记为符号“$\forall$”, 存在量词“存在”(exists) 简记为符号“$\exists$”. 前面的两种命题可以进一步简化为 \[ \forall\, x\in M, p(x);\quad \exists\, x\in M, p(x).\] 从逻辑量词的形状可以看出, “$\forall$”可由字母 A 上下翻转得到, “$\exists$”可由字母 E 左右翻转得到. 全称量词“所有”有时也写成“任意”“每一个”“任给”等, 存在量词“存在”有时也写成“有些”“至少有一个”等.
+若命题“$\exists\, x_0\in \mathbf{R}$, $x_0^2+ 2ax_0+2-a=0$”是真命题, 求实数 $a$ 的取值范围. 已知表明, 二次方程 $x^2+ 2ax+2-a=0$ 有实根 $x_0$, 则 \[ \Delta= (2a)^2-4(2-a)\geqslant 0,\] 解得 $a\in(-\infty,-2]\cup[1,+\infty)$.</description>
     </item>
     
     <item>

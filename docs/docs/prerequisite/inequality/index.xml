@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>不等式 on 高中数学资料</title>
+    <link>/docs/prerequisite/inequality/</link>
+    <description>Recent content in 不等式 on 高中数学资料</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/docs/prerequisite/inequality/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>不等式的性质</title>
+      <link>/docs/prerequisite/inequality/inequality-property/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/prerequisite/inequality/inequality-property/</guid>
+      <description> 不等式的性质 # </description>
+    </item>
+    
+    <item>
+      <title>分式不等式与高次不等式</title>
+      <link>/docs/prerequisite/inequality/fraction-high-order-inequality/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/prerequisite/inequality/fraction-high-order-inequality/</guid>
+      <description> 分式不等式与高次不等式 # </description>
+    </item>
+    
+    <item>
+      <title>均值不等式</title>
+      <link>/docs/prerequisite/inequality/mean-value-inequality/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/prerequisite/inequality/mean-value-inequality/</guid>
+      <description> 均值不等式 # </description>
+    </item>
+    
+  </channel>
+</rss>

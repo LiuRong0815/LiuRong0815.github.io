@@ -3,17 +3,22 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="直线与圆 # 初中数学已经介绍了直线与圆的相关概念, 也指出一次函数 (如 $y=x&#43;1$) 的图形是直线. 高中数学将学习在平面直角坐标系中直线与圆的表示方法, 即利用图形上点 $(x,y)$ 的特征来表示直线与圆. 这些特征一般用含 $x$, $y$ 的等式描述, 并称为对应图形的方程.
-有了图形的方程, 就可以利用代数方法来研究图形之间的关系, 这也是解析几何的主要研究方法. 直线与圆的方程是解析几何的入门内容. 初中数学有些几何题利用图形的方程可以更容易解决. 这里的“容易”指的是解题思路更程序化, 同一解题思路对多种题型都有效, 无需针对不同的题型采用不同的解题思路. 现举一例说明.
-在 $\triangle ABC$ 中, $AC=BC$, 点 $D$ 为 $AB$ 中点, 点 $E$ 为 $CD$ 中点, $AE$ 交 $BC$ 于点 $F$, 求证: $BF= 2FC$.
-这个例子中的条件“$AC=BC$”是多余的, 保留该条件是为了让代数法的解题过程更容易理解 (见这里(补链接)). 去掉条件“$AC=BC$”后, 代数法仍适用 (见这里(补链接)).
-上面这个例子的初中几何解法是: 过点 $D$ 作 $DG\parallel BC$ 交 $AF$ 于点 $G$, 则可证明 $BF= 2DG$, $CF=DG$, 所以 $BF= 2FC$.">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="直线与圆" />
+<meta name="description" content="不等式 # 集合是数学中比较基本的概念, 其作用是将研究对象分类描述, 并简化各种关系的表示方法. 数学中的各种结论都以命题的形式呈现, 简易逻辑则研究命题之间的关系. 命题之间的关系也可以用集合来描述. 下面结合 《2020 年课标》介绍这两部分的学习要求.
+集合 # 集合是刻画各类事物的语言和工具. 学习集合是为了使用集合的语言简洁、准确地表述数学的研究对象, 积累数学抽象的经验. 内容包括：集合的概念与表示、集合的基本关系、集合的基本运算.
+学习集合的概念与表示时, 应做到
+通过实例, 了解集合的含义, 理解元素与集合的属于关系. 针对具体问题, 能用自然语言、图形和符号表示集合. 在具体情境中, 了解全集与空集的含义. 学习集合的基本关系时, 应理解集合之间包含与相等的含义, 能识别给定集合的子集.
+学习集合的基本运算时, 应做到
+能求两个集合的并集与交集. 能求给定集合中一个子集的补集. 能使用维恩 (Venn) 图表示集合的基本关系与基本运算. 简易逻辑 # 简易逻辑是数学表达和交流的工具. 学习简易逻辑的目的是: 了解原命题与其逆、否命题的关系, 使用常用逻辑用语表达数学对象, 提高交流的严谨性与准确性. 内容包括：原命题与其逆命题、否命题, 充分条件、必要条件, 全称量词与存在量词, 含逻辑量词的命题的否定.
+学习原命题与其逆命题、否命题时, 应做到
+掌握“若 $p$, 则 $q$”形式的命题的逆命题、否命题的构造方式. 了解原命题及逆命题、否命题与集合的关系. 理解原命题与其逆否命题等价. 学习充分条件、必要条件时, 应理解充分条件、必要条件的涵义, 掌握判定充分条件、必要条件的方法.
+学习全称量词与存在量词时, 应理解全称量词与存在量词的意义, 能正确地对含全称量词、存在量词的命题进行否定.
+后续内容 # 以下介绍集合的定义、集合的运算、命题与充要条件、逻辑量词.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="不等式" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="/docs/analytic-geometry/line/" />
+<meta property="og:url" content="/docs/prerequisite/inequality/" />
 
-<title>直线与圆 | 高中数学资料</title>
+<title>不等式 | 高中数学资料</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.0ea964dfd939ec410a2a39593431f6f339bf806ba9aac813a1870c7fca3262b0.css" >
@@ -21,7 +26,7 @@
   <script defer src="/zh.search.min.5679ba0e79b6af795401ba8b072e1eaf8c8043b8d4a827bb50606ca3fabdf592.js" ></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
-<link rel="alternate" type="application/rss+xml" href="/docs/analytic-geometry/line/index.xml" title="高中数学资料" />
+<link rel="alternate" type="application/rss+xml" href="/docs/prerequisite/inequality/index.xml" title="高中数学资料" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -97,7 +102,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-7fbb26c6156d78d59d607292b53948a4" class="toggle"  />
+    <input type="checkbox" id="section-7fbb26c6156d78d59d607292b53948a4" class="toggle" checked />
     <label for="section-7fbb26c6156d78d59d607292b53948a4" class="flex justify-between">
       <a href="/docs/prerequisite/" class="">预备知识</a>
     </label>
@@ -439,7 +444,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>直线与圆</strong>
+  <strong>不等式</strong>
 
   <label for="toc-control">
     
@@ -455,7 +460,13 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#直线与圆">直线与圆</a></li>
+    <li><a href="#不等式">不等式</a>
+      <ul>
+        <li><a href="#集合">集合</a></li>
+        <li><a href="#简易逻辑">简易逻辑</a></li>
+        <li><a href="#后续内容">后续内容</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -468,48 +479,60 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="直线与圆">
-  直线与圆
-  <a class="anchor" href="#%e7%9b%b4%e7%ba%bf%e4%b8%8e%e5%9c%86">#</a>
+  <article class="markdown"><h1 id="不等式">
+  不等式
+  <a class="anchor" href="#%e4%b8%8d%e7%ad%89%e5%bc%8f">#</a>
 </h1>
-<p>初中数学已经介绍了直线与圆的相关概念, 也指出一次函数 (如 $y=x+1$) 的图形是直线. 高中数学将学习在平面直角坐标系中直线与圆的表示方法, 即利用图形上点 $(x,y)$ 的特征来表示直线与圆. 这些特征一般用含 $x$, $y$ 的等式描述, 并称为对应图形的方程.</p>
-<p>有了图形的方程, 就可以利用代数方法来研究图形之间的关系, 这也是解析几何的主要研究方法. 直线与圆的方程是解析几何的入门内容. 初中数学有些几何题利用图形的方程可以更容易解决. 这里的“容易”指的是解题思路更程序化, 同一解题思路对多种题型都有效, 无需针对不同的题型采用不同的解题思路. 现举一例说明.</p>
-<myexample>
-    <p>在 $\triangle ABC$ 中, $AC=BC$, 点 $D$ 为 $AB$ 中点, 点 $E$ 为 $CD$ 中点, $AE$ 交 $BC$ 于点 $F$, 求证: $BF= 2FC$.</p>
-</myexample>
-<p>
-  <img src="/figs/2021/2021-10/2021-1028-1930.svg" alt="代数方法解几何题" /></p>
-<myremark>
-    <p>这个例子中的条件“$AC=BC$”是多余的, 保留该条件是为了让代数法的解题过程更容易理解 (见这里(补链接)). 去掉条件“$AC=BC$”后, 代数法仍适用 (见这里(补链接)).</p>
-</myremark>
-<p>上面这个例子的初中几何解法是: 过点 $D$ 作 $DG\parallel BC$ 交 $AF$ 于点 $G$, 则可证明 $BF= 2DG$, $CF=DG$, 所以 $BF= 2FC$. 这个解法看似很简洁, 但问题是有时不容易想到辅助线的作法. 若将这个图置于平面直角坐标系内, 则可以通过直接计算直线 $AF$ 与 $BC$ 的坐标来确认点 $F$ 的位置, 无需花费心思琢磨如何添加辅助线.</p>
-<p>解析几何的首要任务是用方程表示图形, 因此需要适当地描述图形的特征, 然后将该特征用点的坐标来表示, 这个过程也称为解析法. 对同一图形有时会有不同的描述方法, 比如线段 $AB$ 的中垂线 $CD$ 可以描述为</p>
-<ol>
-<li>(中垂线的定义) 过线段 $AB$ 的中点且与 $AB$ 垂直的直线;</li>
-<li>(中垂线的性质) 到点 $A$,$B$ 的距离相等的所有点.</li>
-</ol>
-<p>由上述两种不同的描述方法可以得到看似不同的方程 (变形后一致), 计算量也有区别. 运用解析法解决问题时, 常常需要选择适当的描述图形的方法. 此外, 描述图形的特征时, 常常用到两点之间的距离和中点, 在学习后面的内容之前必须熟悉在平面直角坐标系中的相关结论 (见 
-  <a href="/docs/prerequisite/ms-function/axis-coordinate/">数轴与平面直角坐标系</a>).</p>
-<p>本章目录为</p>
+<p>集合是数学中比较基本的概念, 其作用是将研究对象分类描述, 并简化各种关系的表示方法. 数学中的各种结论都以命题的形式呈现, 简易逻辑则研究命题之间的关系. 命题之间的关系也可以用集合来描述. 下面结合
+  <a href="/#2020%e5%b9%b4%e8%af%be%e6%a0%87">《2020 年课标》</a>介绍这两部分的学习要求.</p>
+<h2 id="集合">
+  集合
+  <a class="anchor" href="#%e9%9b%86%e5%90%88">#</a>
+</h2>
+<p>集合是刻画各类事物的语言和工具. 学习集合是为了使用集合的语言简洁、准确地表述数学的研究对象, 积累数学抽象的经验. 内容包括：集合的概念与表示、集合的基本关系、集合的基本运算.</p>
+<p>学习集合的概念与表示时, 应做到</p>
 <ul>
-<li>
-  <a href="/docs/analytic-geometry/line/slope/">直线的斜率</a></li>
-<li>10.2 圆的方程</li>
-<li>10.3 直线与圆的位置关系</li>
-<li>10.4 圆与圆的位置关系 (选学)</li>
+<li>通过实例, 了解集合的含义, 理解元素与集合的属于关系.</li>
+<li>针对具体问题, 能用自然语言、图形和符号表示集合.</li>
+<li>在具体情境中, 了解全集与空集的含义.</li>
 </ul>
+<p>学习集合的基本关系时, 应理解集合之间包含与相等的含义, 能识别给定集合的子集.</p>
+<p>学习集合的基本运算时, 应做到</p>
+<ul>
+<li>能求两个集合的并集与交集.</li>
+<li>能求给定集合中一个子集的补集.</li>
+<li>能使用维恩 (Venn) 图表示集合的基本关系与基本运算.</li>
+</ul>
+<h2 id="简易逻辑">
+  简易逻辑
+  <a class="anchor" href="#%e7%ae%80%e6%98%93%e9%80%bb%e8%be%91">#</a>
+</h2>
+<p>简易逻辑是数学表达和交流的工具. 学习简易逻辑的目的是: 了解原命题与其逆、否命题的关系, 使用常用逻辑用语表达数学对象, 提高交流的严谨性与准确性. 内容包括：原命题与其逆命题、否命题, 充分条件、必要条件, 全称量词与存在量词, 含逻辑量词的命题的否定.</p>
+<p>学习原命题与其逆命题、否命题时, 应做到</p>
+<ul>
+<li>掌握“若 $p$, 则 $q$”形式的命题的逆命题、否命题的构造方式.</li>
+<li>了解原命题及逆命题、否命题与集合的关系.</li>
+<li>理解原命题与其逆否命题等价.</li>
+</ul>
+<p>学习充分条件、必要条件时, 应理解充分条件、必要条件的涵义, 掌握判定充分条件、必要条件的方法.</p>
+<p>学习全称量词与存在量词时, 应理解全称量词与存在量词的意义, 能正确地对含全称量词、存在量词的命题进行否定.</p>
+<h2 id="后续内容">
+  后续内容
+  <a class="anchor" href="#%e5%90%8e%e7%bb%ad%e5%86%85%e5%ae%b9">#</a>
+</h2>
+<p>以下介绍集合的定义、集合的运算、命题与充要条件、逻辑量词.</p>
 </article>
  
           
     
     <div class="docs-prevnext">
     
-        <a class="docs-prev button" href="">
-          <span class="arrow-prev">← </span><span></span></a>
+        <a class="docs-prev button" href="../set-logic/logical-quantifier">
+          <span class="arrow-prev">← </span><span>逻辑量词</span></a>
       
       
-        <a class="docs-next button" href="./line">
-          <span>直线的方程</span><span class="arrow-next"> →</span></a>
+        <a class="docs-next button" href="./inequality-property">
+          <span>不等式的性质</span><span class="arrow-next"> →</span></a>
       
     </div>
 
@@ -554,7 +577,13 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#直线与圆">直线与圆</a></li>
+    <li><a href="#不等式">不等式</a>
+      <ul>
+        <li><a href="#集合">集合</a></li>
+        <li><a href="#简易逻辑">简易逻辑</a></li>
+        <li><a href="#后续内容">后续内容</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
