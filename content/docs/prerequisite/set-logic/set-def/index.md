@@ -68,7 +68,7 @@ nextPageTitle: 集合的运算
 </myremark>
 
 <myexample>
-    <p>已知集合 $A=\{0,1,2\}$, 求下列集合 中元素的个数:</p>
+    <p>已知集合 $A=\{0,1,2\}$, 求下列集合中元素的个数:</p>
     <p>(1) $B=\{x-y\mid x,y\in A\}$;</p>
     <p>(2) $C=\{x+y\mid x,y\in A\}$.</p>
 </myexample>
@@ -215,25 +215,40 @@ nextPageTitle: 集合的运算
 <span id="example-"></span>
 
 <myexample>
-    <p>(1) 设集合 $P=\{x\mid x>1\}$, $Q=\{x\mid x-2>0\}$, 求 $P$ 与 $Q$ 的包含关系.</p>
+    <p>(1) 设集合 $P=\{x\mid x>1\}$, $Q=\{x\mid x-2>0\}$, 求 $P$ 与 $Q$ 的包含关系.
+    </p>
     <p>(2) 设集合 \[\begin{gathered}
-        A=\{x\mid 2\leqslant x\leqslant 6\},\\
-        B=\{x\mid 2a\leqslant x\leqslant a+3\},
+        M=\{x\mid 2\leqslant x\leqslant 6\},\\
+        N=\{x\mid 2a\leqslant x\leqslant a+3\},
     \end{gathered}\]
-    且 $B\subseteq A$, 求实数 $a$ 的取值范围.</p>
+    且 $N\subseteq M$, 求实数 $a$ 的取值范围;
+    </p>
+    <p>(3) 设集合 $A=\{x\mid x^2=1\}$, $B=\{x\mid ax=1\}$, 若 $B\subseteq A$, 求实数 $a$ 的值.
+    </p>
 </myexample>
 
 <mysolution>
-    <p>(1) $Q=\{x\mid x>2\}$, 则 $P\supseteq Q$.</p>
-    <p>(2) 若 $B=\varnothing$, 则 $2a>a+3$, 即 $a>3$;</p>
-    <p>若 $B\neq\varnothing$, 则 \[
+    <p>(1) $Q=\{x\mid x>2\}$, 则 $P\supseteq Q$.
+    </p>
+    <p>(2) 若 $N=\varnothing$, 则 $2a>a+3$, 即 $a>3$; 若 $N\neq\varnothing$, 则 \[
         2\leqslant 2a\leqslant a+3\leqslant 6,\]
-    解得 $1\leqslant a\leqslant 3$.</p>
-    <p>综上所述, $a\geqslant 1$.</p>
+    解得 $1\leqslant a\leqslant 3$.
+    </p>
+    <p>综上所述, $a\geqslant 1$.
+    </p>
+    <p>(3) 集合 $A$ 描述的是方程 $x^2=1$ 的根, 即 $A=\{-1,1\}$; 集合 $B$ 描述的是方程 $ax=1$ 的根.
+    </p>
+    <p>若 $B=\varnothing$, 即方程 $ax=1$ 无根, 此时 $a=0$. 若 $B\neq\varnothing$, 即方程 $ax=1$ 有根, 由该方程为一次方程知 $B= \{-1\}$ 或 $\{1\}$, 相应的 $a=-1$ 或 $1$.
+    </p>
+    <p>综上所述, $a=-1$, $0$ 或 $1$.
+    </p>
 </mysolution>
 
 <myremark>
-    <p>讨论集合的子集时, 必须先考虑该子集是否为空集, 否则容易漏解.</p>
+    <p>(1) 集合的包含关系隐含“小的集合可能是空集”, 所以讨论集合的子集时, 必须先考虑该子集是否为空集, 否则容易漏解.
+    </p>
+    <p>(2) 关于 $x$ 的一次方程 $ax=b$ 无解的等价条件是 $a=0$ 且 $b\neq 0$; 有解的等价条件是 $a\neq 0$ (为什么?). 
+    </p>
 </myremark>
 
 <myexercise>

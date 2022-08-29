@@ -36,21 +36,16 @@ nextPageTitle: 逻辑量词
 <p>在判断命题的真假 (true or false) 时, 对真命题需要证明, 对假命题则只需要举出一个反例. 例如, 由不等式的性质知“若 $x>2$, $y>1$, 则 $x+y>3$”是真命题; “若 $x>2$, $y>1$, 则 $x-y>1$”是假命题, 因为可取 $x=3$, $y=5$ 满足前提但不满足结论. 后一个假命题也表明, <strong>同向不等式不能相减</strong>.</p>
 
 <myexample>
-    <p>已知 $p(x)\colon x^2 +2x-m>0$ 是与实数 $x$ 有关的命题, 若 $p(1)$ 是假命题, $p(2)$ 是真命题, 求实数 $m$ 的取值范围.
+    <p>(1) 已知 $p(x)\colon x^2 +2x-m>0$ 是与实数 $x$ 有关的命题, 若 $p(1)$ 是假命题, $p(2)$ 是真命题, 求 $m$ 的取值范围;
+    </p>
+    <p>(2) 已知命题“关于 $x$ 的方程 $x^2 +x+a=0$ 有实根”为真命题, 求 $a$ 的取值范围.
     </p>
 </myexample>
 
 <mysolution>
-    <p>由题: $1+2-m\leqslant 0$ 且 $4+4-m>0$, 解得 $m\in[3,8)$.</p>
-</mysolution>
-
-<myexample>
-    <p>已知命题“关于 $x$ 的方程 $x^2 +x+a=0$ 有实根”为真命题, 求 $a$ 的取值范围.
+    <p>(1) 由题意, $1+2-m\leqslant 0$ 且 $4+4-m>0$, 解得 $m\in[3,8)$.
     </p>
-</myexample>
-
-<mysolution>
-    <p>    判别式 $\Delta= 1-4a\geqslant 0$, 则 $a\in\Bigl(-\infty,-\dfrac14\Bigr]$.
+    <p>(2) 判别式 $\Delta= 1-4a\geqslant 0$, 则 $a\in\Bigl(-\infty,-\dfrac14\Bigr]$.
     </p>
 </mysolution>
 
@@ -103,17 +98,22 @@ nextPageTitle: 逻辑量词
     </p>
     <p>(1) $p_1\colon x=-1$, $q_1\colon x^2-5x-6=0$;
     </p>
-    <p>(2) $p_2\colon a>b$, $q_2\colon a|a|>b|b|$.</p>
+    <p>(2) $p_2\colon x$, $y$ 为无理数, $q_2\colon x+y$ 为无理数;
+    </p>
+    <p>(3) $p_3\colon a>b$, $q_3\colon a|a|>b|b|$.
+    </p>
 </myexample>
 
 <mysolution>
     <p>(1) $x^2-5x-6=0$ 的解集为 $\{-1,6\}$, 故 $p_1$ 是 $q_1$ 的充分不必要条件.
     </p>
-    <p>(2) 作函数 \[
+    <p>(2) 若 $x=\sqrt2$, $y=-\sqrt2$, 则 $x+y=0$ 为有理数; 若 $x+y=\sqrt2$ 为无理数, 则可能 $x=\sqrt2$ 为无理数, $y=0$ 非无理数. 由这两个反例知,“$x$, $y$ 为无理数”与“$x+y$ 为无理数”没有必然的因果关系, 所以 $p_2$ 是 $q_2$ 的既不充分也不必要条件.
+    </p>
+    <p>(3) 作函数 \[
         y= x|x|= \begin{cases}
             x^2,& x\geqslant 0,\\
             -x^2,& x< 0 \end{cases}\]
-    的图象知, 函数是单调递增的, 所以 $a>b\Leftrightarrow a|a|>b|b|$, 即 $p_2$ 是 $q_2$ 的充要条件.</p>
+    的图象知, 函数是单调递增的, 所以 $a>b\Leftrightarrow a|a|>b|b|$, 即 $p_3$ 是 $q_3$ 的充要条件.</p>
 </mysolution>
 
 <myexample>
