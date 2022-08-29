@@ -129,3 +129,71 @@ nextPageTitle: 不等式
     \forall\, x\in M, \neg p(x)\wedge \neg q(x).\]
 可以类似地写出其他含逻辑量词和逻辑连接词的命题的否定形式.
 </p>
+
+<!-- <p>\subsection{二次不等式恒成立}
+</p>
+<p><myexample>
+<p>如果 $kx^2-2x+6k< 0$ ($k\neq 0$) 的解集为全体实数, 求 $k$ 的取值范围.
+</p>
+</myexample>
+<mysolution>
+    <p>题意表明对应的抛物线恒在 $x$ 轴下方, 所以
+  \[\left\{\!\!\begin{array}{l}
+      k< 0,\\
+      \Delta= (-2)^2- 4k\cdot 6k< 0,
+    \end{array}\right.\ \text{解得}\quad
+    k< -\frac{\sqrt6}6,\]
+  即 $k\in\biggl(-\infty, -\dfrac{\sqrt6}6\biggr)$.
+</p>
+</mysolution>
+</p>
+<p>关于 $x$ 的形如 $Ax^2+Bx+C>0$ 的不等式恒成立问题, 解题步骤如下:
+</p>
+<p>(1) ({\bfseries 重要步骤}) 确认不等式的次数, 即考虑二次项系数 $A$ 是否为 $0$;
+</p>
+<p>(2) 若 $A=0$, 则不等式化为一次不等式 $Bx+C>0$, 它恒成立的充要条件是
+\[B=0\ \text{且}\ C>0;\]
+</p>
+<p>(3) 若 $A\neq0$, 则不等式为二次不等式, 它恒成立的充要条件是
+\[A>0\ \text{且}\ \Delta=B^2-4AC< 0.\]
+</p>
+<p>(4) 综合 (2)(3) 中的取值范围 (取并集).
+</p>
+<p>注意, 如果已知的不等式为 $Ax^2+Bx+C\geqslant(< ,\,\leqslant) 0$, 则上述解题步骤应相应调整.
+</p>
+<p><myexample>
+<p>如果不等式 $(a-2)x^2+2(a-2)x-4< 0$ 对 $x\in\realnum$ 恒成立, 求 $a$ 的取值范围.
+</p>
+</myexample>
+<mysolution>
+    <p>(1) 若 $a-2=0$ 即 $a=2$, 不等式化为 $-4< 0$, 恒成立.
+</p>
+<p>(2) 若 $a-2\neq 0$ 即 $a\neq2$, 不等式为二次不等式, 所以
+  \[\left\{\!\!\begin{array}{l}
+      a-2< 0,\\
+      \Delta= [2(a-2)]^2- 4(a-2)(-4)< 0,
+    \end{array}\right.\quad\text{解得}\quad
+    -2< a< 2,\]
+  即 $a\in(-2,2)$.
+</p>
+<p>综上所述, 所求 $a$ 的取值范围是 $(-2,2]$.
+</p>
+</mysolution>
+</p>
+<p>\begin{example}\label{exa:201020-2000}
+  若不等式 $\dfrac{2x^2+2kx+k}{4x^2+6x+3}< 1$ 对于一切实数 $x$ 都成立, 求实数 $k$ 的取值范围.
+</p>
+</myexample>
+<mysolution>
+    <p>因为分母的判别式 $6^2-4\cdot4\cdot3< 0$ 且二次项系数 $4>0$, 所以分母恒正, 不等式化为 $2x^2+(6-2k)x+(3-k)>0$, 则
+  \[\Delta= (6-2k)^2- 4\cdot2(3-k)< 0,\quad\text{解得}\quad
+    1< k< 3,\]
+  即 $k\in(1,3)$.
+</p>
+</mysolution>
+</p>
+<p>例 \ref{exa:201020-2000} 中分母恒正也可以通过配方确定:
+\[4x^2+6x+3= 4\biggl(x^2+\frac32x+\frac34\biggr)
+  = 4\biggl[\biggl(x+\frac34\biggr)^2+\frac3{16}\biggr].\]
+</p> -->
+
