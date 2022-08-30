@@ -86,3 +86,24 @@ nextPageTitle: 对数函数
 <p>计算例 \ref{exa:201201-2020} 时, 其中的对数都化为以  $\mathrm{e}$ 为底, 也就是化为自然对数. 在计算时, 也可以都化为以 $10$ 为底, 即化为常用对数. 此外, 也可以由 $32= 2^5= \bigg(\dfrac12\biggr)^{-5}$ 知 $\log_{\frac12} 32= -5$.
 </p>
 
+<myexample>
+<p>计算: (1) $\lg \sqrt[5]{100}$;\quad 
+    (2) $\ln\sqrt[8]{\mathrm{e}}$;\quad
+    (3) $9^{\log_3 4}$;\quad
+    (4) $\log_9 27$;\quad (5) $\log_{\sqrt 6}36$.
+</p>
+</myexample>
+<mysolution>
+    <p>幂 (指数)、对数的运算法则见“2020 年 11 月 21 日答疑记录”的第二部分.
+</p>
+<p>(1) $\lg \sqrt[5]{100}= \lg 10^{\frac25}= \dfrac25$.\qquad
+    (2) $\ln\sqrt[8]{\mathrm{e}}= \ln \mathrm{e}^{\frac18}= \dfrac18$.
+</p>
+<p>(3) $9^{\log_3 4}= \big(3^{\log_3 4}\bigr)^2= 4^2= 16$.\qquad
+    (4) $\log_9 27= \dfrac{\ln 27}{\ln9}
+        = \dfrac{3\ln3}{2\ln3}= \dfrac32$.
+</p>
+<p>(5) $\log_{\sqrt6}36= \dfrac{\ln 36}{\ln \sqrt6}
+        = \dfrac{2\ln6}{\dfrac12\ln6}= 4$.
+</p>
+</mysolution>

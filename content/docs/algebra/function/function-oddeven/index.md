@@ -219,3 +219,33 @@ nextPageTitle: 函数的图象
 </p>
 </myremark>
 
+<myexample>
+<p>(1) 若 $f(x)$ 为奇函数, 当 $x>0$ 时, $f(x)=x(1-\sqrt[3]{x})$, 求当 $x< 0$ 时, $f(x)$ 的解析式;
+</p>
+<p>(2) 若 $f(x)$ 为偶函数, 当 $-1\leqslant x< 0$ 时, $f(x)=\sqrt[5]{x}+1$, 求当 $0< x\leqslant 1$ 时, $f(x)$ 的解析式;
+</p>
+</myexample>
+<mysolution>
+    <p>以下过程较简略, 更详细的过程可参考“2020 年 11 月 14 日答疑记录”的例 \ref{exa:201206-1300} 方法一.
+</p>
+<p>(1) 因为 $f(x)$ 为奇函数, 所以当 $x< 0$ 时,
+    \[f(x)= -f(-x)= -(-x)(1-\sqrt[3]{-x})= x(1+\sqrt[3]{x}).\]
+</p>
+<p>(2) 因为 $f(x)$ 为偶函数, 所以当 $0< x\leqslant 1$ 时,
+    \[f(x)= f(-x)= \sqrt[5]{-x}+1= -\sqrt[5]{x}+1.\]
+</p>
+</mysolution>
+</p>
+<p><myexample>
+<p>若函数 $f(x)$ 在 $\realnum$ 上为偶函数, 且当 $x>0$ 时, $f(x)=-x+1$, 求 $f(x)< -1$ 的解集.
+</p>
+</myexample>
+<mysolution>
+    <p>函数 $f(x)$ 在 $\realnum$ 上为偶函数, 表明其图形关于 $y$ 轴对称. 直接根据对称性画图可知, $x\in(-\infty,-2)\cup(2,+\infty)$.
+</p>
+<p><center>
+        \includegraphics[scale=1]{2020-1206-1320-crop}
+    </center>
+</p>
+</mysolution>
+

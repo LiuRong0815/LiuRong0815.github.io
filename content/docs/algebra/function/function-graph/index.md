@@ -5,8 +5,8 @@ weight: 4
 bookHidden: true
 prevPage: /docs/algebra/function/function-oddeven
 prevPageTitle: 函数的奇偶性
-nextPage: /docs/algebra/function/function-equation
-nextPageTitle: 利用函数图象研究方程
+nextPage: /docs/algebra/function/quadratic-function
+nextPageTitle: 二次函数
 ---
 
 # 函数的图象
@@ -69,3 +69,58 @@ nextPageTitle: 利用函数图象研究方程
     <p>例 \ref{201109-2120} 中的二次函数在区间 $[5,20]$ 上若单调递增, 则 $\dfrac{k}8\leqslant 5$; 若单调递减, 则 $\dfrac{k}8\geqslant 20$ (为什么?).
 </p>
 </myremark>
+
+<p>先考虑函数 $y=f(x)$ 与 $y=f(x+1)$ 的图形. 因为点 $A(n,f(n))$ 满足 $y=f(x)$ (此时 $x=n$), 而点 $A'(n-1,f(n))$ 满足 $y=f(x+1)$ (此时 $x=n-1$), 且点 $A$ 向左平移一个单位长度可得点 $A'$, 所以将 $y=f(x)$ 图形上的所有点向左平移一个单位长度可得 $y=f(x+1)$ 的图形.
+</p>
+<p>再考虑函数 $y=f(x)$ 与 $y=f(x)+1$ 的图形. 因为点 $B(n,f(n))$ 满足 $y=f(x)$ (此时 $x=n$), 而点 $B'(n,f(n)+1)$ 满足 $y=f(x+1)$ (此时 $x=n$), 且点 $B$ 向上平移一个单位长度可得点 $B'$, 所以将 $y=f(x)$ 图形上的所有点向上平移一个单位长度可得 $y=f(x)+1$ 的图形.
+</p>
+<p>设 $a>0$, 由同样的分析可以知道, 
+\[\begin{aligned}
+    &\text{向左平移 $a$ 个单位长度:}\ f(x)\rightarrow f(x+a);\\
+    &\text{向右平移 $a$ 个单位长度:}\ f(x)\rightarrow f(x-a);\\
+    &\text{向上平移 $a$ 个单位长度:}\ f(x)\rightarrow f(x)+a;\\
+    &\text{向下平移 $a$ 个单位长度:}\ f(x)\rightarrow f(x)-a.
+\end{aligned}\]
+以上结论可以简记为“左加右减, 上加下减”. 示意图如下($a>0$):
+</p>
+<p><center>
+        \includegraphics[scale=1]{2020-1215-1900-crop}\qquad
+        \includegraphics[scale=1]{2020-1215-1910-crop}
+    </center>
+</p>
+<p>注意, 这些结论均是对 $x$ 或 $f(x)$ (即 $y$) 的整体变换. 例如 $f(2x)$ 的图形往左平移 $1$ 个单位长度, 得到 $f(2(x+1))$ 即 $f(2x+2)$ 的图形; 而由 $f(3x)$ 的图形要得到 $f(3x-1)$ 的图形, 需将前者往右平移 $\dfrac13$ 个单位长度.
+</p>
+<p>接着考虑函数 $y=f(x)$ 与 $y=-f(x)$ 的图形. 因为点 $C(n,f(n))$ 满足 $y=f(x)$ (此时 $x=n$), 而点 $C'(n,-f(n))$ 满足 $y=f(x+1)$ (此时 $x=n$), 且点 $C$ 与 $C'$ 关于 $x$ 轴对称, 所以作 $y=f(x)$ 图形上的所有点关于 $x$ 轴的对称点可得 $y=-f(x)$ 的图形 (两个图形上对应点横坐标相同, 纵坐标互为相反数, 简记为“上下翻转”). 类似地, 作 $y=f(x)$ 图形上的所有点关于 $y$ 轴的对称点可得 $y=f(-x)$ 的图形 (两个图形上对应点横坐标互为相反数, 纵坐标相同, 简记为“左右翻转”). 示意图如下:
+</p>
+<p><center>
+        \includegraphics[scale=1]{2020-1215-1920-crop}\qquad
+        \includegraphics[scale=1]{2020-1215-1930-crop}
+    </center>
+</p>
+<p>上述六种图形变换可以叠加. 例如, $f(x)$ 的图形先上下翻转可得 $-f(x)$ 的图形, 再左右翻转可得 $-f(-x)$ 的图形; $f(x)$ 的图形先左右翻转可得 $f(-x)$ 的图形, 再向右平移 $4$ 个单位长度 (将 $x$ 替换为 $x-4$) 可得 $f(4-x)$ 的图形.
+</p>
+<p><myexample>
+<p>已知 $f(x)=\begin{cases}
+        \dfrac12 x,& -2\leqslant x\leqslant 0,\\
+        -x^2+2x,& 0< x\leqslant 2,
+    \end{cases}$ 画出下列函数的图形:
+</p>
+<p>(1) $f(x)$;\qquad (2) $f(x-2)$;\qquad (3) $-f(x)$;\qquad 
+    (4) $f(-x)$;\qquad (5) $-f(-x)$.
+</p>
+</myexample>
+<mysolution>
+    <p>各函数图形依次如下:
+</p>
+<p><center>
+        \includegraphics[scale=1.2]{2020-1215-1940-crop}\qquad
+        \includegraphics[scale=1.2]{2020-1215-1950-crop}\qquad
+        \includegraphics[scale=1.2]{2020-1215-2000-crop}
+    </center>
+</p>
+<p><center>
+        \includegraphics[scale=1.2]{2020-1215-2010-crop}\qquad
+        \includegraphics[scale=1.2]{2020-1215-2020-crop}
+    </center>
+</p>
+</mysolution>

@@ -483,3 +483,43 @@ nextPageTitle: 函数的单调性
 <p>从图象可以看出, 该函数 (1) 在 $(-\infty,0)$ 和 $(0,+\infty)$ 均单调递减; (2) 值域为 $(-\infty,0)\cup (0,+\infty)$; (3) 以 $x$ 轴和 $y$ 轴为两条渐近线.
 </p>
 </myremark>
+
+
+<myexample>
+<p>(1) 已知函数 $f(x)$ 的定义域为 $[-4,5]$, 求 $f(2x-3)$ 的定义域.
+</p>
+<p>(2) 已知 $f(2x+1)= 3x-2$ 且 $f(a)= 4$, 求 $a$ 的值.
+</p>
+</myexample>
+<mysolution>
+    <p>(1) $f(x)$ 的定义域为 $[-4,5]$ 表明, $f$ 的作用范围是 $[-4,5]$. 对 $f(2x-3)$ 而言, 此时 $f$ 作用于 $2x-3$, 所以 
+    \[2x-3\in[-4,5],\quad\text{即}\quad 
+        x\in \biggl[-\frac12,4\biggr].\]
+</p>
+<p>(2) 由题意, $2x+1$ 与 $a$ 对应, 而  $3x-2$ 与 $4$ 对应, 即
+    \[\left\{\!\!\begin{array}{l}
+        2x+1=a,\\
+        3x-2=4,
+    \end{array}\right.\ \text{解得}\quad
+    \left\{\!\!\begin{array}{l}
+        x=2,\\
+        a=5.
+    \end{array}\right.\]
+</p>
+</mysolution>
+<myremark>
+    <p>若上例 (2) 中的“$f(a)= 4$”改为“$f(4)= a$”, 则
+    \[\left\{\!\!\begin{array}{l}
+        2x+1=4,\\
+        3x-2=a,
+    \end{array}\right.\ \text{解得}\quad
+    \left\{\!\!\begin{array}{l}
+        x=\dfrac32,\\[6pt]
+        a=\dfrac52.
+    \end{array}\right.\]
+</p>
+<p>用这种方法可以求 $f(x)$ 的解析式: 对已知中的 $f(2x+1)= 3x-2$, 先令 $2x+1=t$, 则 $x=\dfrac{t-1}2$, 所以
+    \[f(t)=f(2x+1)= 3x-2= \frac{3t-7}{2},\]
+    即 $f(x)= \dfrac{3x-7}{2}$ (此时的 $x$ 与已知解析式中的 $x$ 含义不同).
+</p>
+</myremark>
