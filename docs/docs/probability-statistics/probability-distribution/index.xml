@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>概率分布 on 高中数学资料</title>
+    <link>/docs/probability-statistics/probability-distribution/</link>
+    <description>Recent content in 概率分布 on 高中数学资料</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/docs/probability-statistics/probability-distribution/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>二项分布</title>
+      <link>/docs/probability-statistics/probability-distribution/binomial-distribution/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/probability-statistics/probability-distribution/binomial-distribution/</guid>
+      <description> 二项分布 # </description>
+    </item>
+    
+    <item>
+      <title>正态分布</title>
+      <link>/docs/probability-statistics/probability-distribution/normal-distribution/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/probability-statistics/probability-distribution/normal-distribution/</guid>
+      <description> 正态分布 # </description>
+    </item>
+    
+  </channel>
+</rss>

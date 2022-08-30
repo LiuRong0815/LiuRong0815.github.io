@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="函数的单调性 # \begin{example}\label{exa:201115-1130} 若函数 $f(x)= \begin{cases} x-1, & x\leqslant 1,\\ x^2&#43;a, & x&gt;1 \end{cases}$ 在 $\realnum$ 上单调递增, 求实数 $a$ 的取值范围. 由题意, \[1-1\leqslant 1^2&#43;a\ \text{即}\ a\geqslant -1,\] 所以 $a\in[-1,&#43;\infty)$. 解分段函数单调性问题时, 只需每段函数均单调, 且分段点处的函数值满足题中单调性. 具体来说, \[\begin{aligned} &f(x)= \begin{cases} g(x), & x\leqslant a,\\ h(x), & x&gt;a \end{cases}\ \text{在 $\realnum$ 上单调递增}\\ \Leftrightarrow{}& \left\{\!\!\begin{array}{l} \text{$g(x)$ 在 $(-\infty,a]$ 上, $h(x)$ 在 $(a,&#43;\infty)$ 上均单调递增},\\ g(a)\leqslant h(a) \end{array}\right.\\ &f(x)= \begin{cases} g(x), & x\leqslant a,\\ h(x), & x&gt;a \end{cases}\ \text{在 $\realnum$ 上单调递减}\\ \Leftrightarrow{}& \left\{\!">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="函数的单调性" />
+<meta property="og:description" content="函数的单调性 # \begin{example}\label{exa:201115-1130} 若函数 $f(x)= \begin{cases} x-1, & x\leqslant 1,\\ x^2&#43;a, & x&gt;1 \end{cases}$ 在 $\realnum$ 上单调递增, 求实数 $a$ 的取值范围. 由题意, \[1-1\leqslant 1^2&#43;a\ \text{即}\ a\geqslant -1,\] 所以 $a\in[-1,&#43;\infty)$. 解分段函数单调性问题时, 只需每段函数均单调, 且分段点处的函数值满足题中单调性. 具体来说, \[\begin{aligned} &f(x)= \begin{cases} g(x), & x\leqslant a,\\ h(x), & x&gt;a \end{cases}\ \text{在 $\realnum$ 上单调递增}\\ \Leftrightarrow{}& \left\{\!\!\begin{array}{l} \text{$g(x)$ 在 $(-\infty,a]$ 上, $h(x)$ 在 $(a,&#43;\infty)$ 上均单调递增},\\ g(a)\leqslant h(a) \end{array}\right.\\ &f(x)= \begin{cases} g(x), & x\leqslant a,\\ h(x), & x&gt;a \end{cases}\ \text{在 $\realnum$ 上单调递减}\\ \Leftrightarrow{}& \left\{\!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/docs/algebra/function/function-monotone/" /><meta property="article:section" content="docs" />
+
+
+
+<title>函数的单调性 | 高中数学资料</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.0ea964dfd939ec410a2a39593431f6f339bf806ba9aac813a1870c7fca3262b0.css" >
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/zh.search.min.d291c56f7a101eb7bc458e3f1a2b0ef94298fb228cc365dff9fb90ae5d5203f2.js" ></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  <link rel="stylesheet" href='/katex/katex.min.css' crossorigin="anonymous">
+
+
+<script defer src='/katex/katex.min.js' crossorigin="anonymous"></script>
+
+
+<script defer src='/katex/auto-render.min.js' 
+    onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        renderMathInElement(document.body, {
+            
+            
+            delimiters: [
+                { left: '$$', right: '$$', display: true },
+                { left: '$', right: '$', display: false },
+                { left: '\\(', right: '\\)', display: false },
+                { left: '\\[', right: '\\]', display: true }
+            ],
+            
+            throwOnError: false
+        });
+    });
+</script>
+
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>高中数学资料</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="搜索" aria-label="搜索" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7fbb26c6156d78d59d607292b53948a4" class="toggle"  />
+    <label for="section-7fbb26c6156d78d59d607292b53948a4" class="flex justify-between">
+      <a href="/docs/prerequisite/" class="">预备知识</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1e2f9b8b873223fe63fc7221375c0eb0" class="toggle"  />
+    <label for="section-1e2f9b8b873223fe63fc7221375c0eb0" class="flex justify-between">
+      <a href="/docs/prerequisite/ms-algebra/" class="">初中代数提要</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-algebra/quadratic-factorization/" class="">二次三项式的因式分解</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-algebra/quadratic-equation/" class="">一元二次方程的解法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-algebra/veite-theorem/" class="">韦达定理</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c1c4f99569969342f46afcb379e41254" class="toggle"  />
+    <label for="section-c1c4f99569969342f46afcb379e41254" class="flex justify-between">
+      <a href="/docs/prerequisite/ms-geometry/" class="">初中几何提要</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/symmetric-congruence-similar/" class="">对称、全等与相似</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/triangle/" class="">三角形</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/quadrilateral/" class="">四边形</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/circle/" class="">圆</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/area/" class="">平面图形的面积</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-53227ed5b540c99051432d70e3c9c4da" class="toggle"  />
+    <label for="section-53227ed5b540c99051432d70e3c9c4da" class="flex justify-between">
+      <a href="/docs/prerequisite/ms-function/" class="">初中函数提要</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-function/axis-coordinate/" class="">数轴与平面直角坐标系</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-function/linear-inverse/" class="">一次函数与反比例函数</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-function/quadratic-function-inequality/" class="">二次函数与二次不等式</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-function/graph-tranform/" class="">函数图象的变换</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4adec7e7d2e2d6fa5eaee0a98a60892e" class="toggle"  />
+    <label for="section-4adec7e7d2e2d6fa5eaee0a98a60892e" class="flex justify-between">
+      <a href="/docs/prerequisite/set-logic/" class="">集合与简易逻辑</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/set-logic/set-def/" class="">集合的定义</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/set-logic/set-operation/" class="">集合的运算</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/set-logic/proposition-iff/" class="">命题与充要条件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/set-logic/logical-quantifier/" class="">逻辑量词</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0efa6e9487d50f8c7308e9898b74ff74" class="toggle"  />
+    <label for="section-0efa6e9487d50f8c7308e9898b74ff74" class="flex justify-between">
+      <a href="/docs/prerequisite/inequality/" class="">不等式</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>函数的单调性</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#函数的单调性">函数的单调性</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="函数的单调性">
+  函数的单调性
+  <a class="anchor" href="#%e5%87%bd%e6%95%b0%e7%9a%84%e5%8d%95%e8%b0%83%e6%80%a7">#</a>
+</h1>
+<p>\begin{example}\label{exa:201115-1130}
+    若函数 $f(x)= \begin{cases}
+        x-1, & x\leqslant 1,\\
+        x^2+a, & x>1
+    \end{cases}$ 在 $\realnum$ 上单调递增, 求实数 $a$ 的取值范围.
+</p>
+</myexample>
+<mysolution>
+    <p>由题意,
+    \[1-1\leqslant 1^2+a\ \text{即}\ a\geqslant -1,\]
+    所以 $a\in[-1,+\infty)$.
+</p>
+</mysolution>
+</p>
+<p>解分段函数单调性问题时, 只需每段函数均单调, 且分段点处的函数值满足题中单调性. 具体来说,
+\[\begin{aligned}
+    &f(x)= \begin{cases}
+            g(x), & x\leqslant a,\\
+            h(x), & x>a
+        \end{cases}\ \text{在 $\realnum$ 上单调递增}\\
+    \Leftrightarrow{}& \left\{\!\!\begin{array}{l}
+        \text{$g(x)$ 在 $(-\infty,a]$ 上, $h(x)$ 在 $(a,+\infty)$ 上均单调递增},\\
+        g(a)\leqslant h(a)
+        \end{array}\right.\\
+    &f(x)= \begin{cases}
+            g(x), & x\leqslant a,\\
+            h(x), & x>a
+        \end{cases}\ \text{在 $\realnum$ 上单调递减}\\
+    \Leftrightarrow{}& \left\{\!\!\begin{array}{l}
+        \text{$g(x)$ 在 $(-\infty,a]$ 上, $h(x)$ 在 $(a,+\infty)$ 上均单调递减},\\
+        g(a)\geqslant h(a)
+        \end{array}\right.\\
+\end{aligned}\]
+建议结合如下函数草图记忆上述结论:
+<center>
+    \includegraphics[scale=1]{2020-1115-1130-1-crop}\qquad
+    \includegraphics[scale=1]{2020-1115-1130-2-crop}
+</center>
+</p>
+<p>如果例 \ref{exa:201115-1130} 改为“函数 $f(x)= \begin{cases}
+    x-1, & x\leqslant 1,\\
+    x^2+2ax, & x>1
+\end{cases}$ 在 $\realnum$ 上单调递增”, 则应限制
+\[\begin{cases}
+    -a\leqslant 1 & (\text{二次函数对称轴在定义域左侧}),\\
+    1-1\leqslant 1^2+ 2a\cdot1 & (\text{分段点处的函数值递增}).
+    \end{cases}\]
+</p>
+<p></p>
+<p>\begin{example}\label{exa:201115-1140}
+    设定义在 $(-1,1)$ 上的奇函数 $f(x)$ 是增函数, 解关于 $a$ 的不等式 
+    \[f(a)+f(2a-1)< 0.\]
+</p>
+</myexample>
+<mysolution>
+    <p>因为 $f(x)$ 是奇函数, 所以已知不等式化为
+    \[f(a)< -f(2a-1)= f(1-2a).\]
+    再结合 $f(x)$ 在 $(-1,1)$ 上是增函数可知
+    \[\left\{\!\!\begin{array}{l}
+        -1< a< 1,\ -1< 1-2a< 1\\
+        a< 1-2a,
+        \end{array}\right.\ \text{解得}\quad a\in\biggl(0,\frac13\biggr).\]
+</p>
+</mysolution>
+<myremark>
+    <p>例 \ref{exa:201115-1140} 中的不等式 $f(a)+f(2a-1)< 0$ 可以称为“抽象不等式”(因为没有具体的表达式), 这类不等式一般先化为“$f(a)< f(b)$”的形式, 再利用函数的单调性去掉“$f$”而转化为具体不等式“$a< b$”或“$a>b$”.
+</p>
+</myremark>
+<p><myexample>
+<p>已知函数 $f(x)=\dfrac{ax^2+b}x$, 且 $f(1)=2$, $f(2)=\dfrac52$.
+</p>
+<p>(1) 确定函数 $f(x)$ 的解析式, 并判断其奇偶性;
+</p>
+<p>(2) ({\bfseries 选学}) 用定义证明函数 $f(x)$ 在区间 $(-\infty,-1)$ 上单调递增;
+</p>
+<p>(3) 求满足 $f(1+2t^2)- f(3+t^2)< 0$ 的实数 $t$ 的取值范围.
+</p>
+</myexample>
+<mysolution>
+    <p>(1) 由题意,
+    \[\left\{\!\!\begin{array}{l}
+        a+b=2,\\
+        \dfrac{4a+b}2= \dfrac52,
+       \end{array}\right.\ \text{解得}\quad
+       \left\{\!\!\begin{array}{l}
+        a=1,\\
+        b=1,
+       \end{array}\right.\]
+    所以 $f(x)=\dfrac{x^2+1}x$. 因为
+    \[f(-x)= \frac{(-x)^2+1}{-x}
+        = -\frac{x^2+1}x= -f(x),\]
+    且 $f(x)$ 的定义域为 $(-\infty,0)\cup (0,+\infty)$, 关于原点对称, 所以 $f(x)$ 为奇函数.
+</p>
+<p>(2) 任取 $x_1< x_2< -1$, 则
+    \[\begin{aligned}
+        f(x_1)-f(x_2)
+        &= \frac{x_1^2+1}{x_1}- \frac{x_2^2+1}{x_2}
+         = \frac{x_2(x_1^2+1)- x_1(x_2^2+1)}{x_1x_2}\\
+        &= \frac{x_1^2 x_2- x_1 x_2^2+x_2- x_1}{x_1x_2}
+         = \frac{x_1 x_2(x_1- x_2)- (x_1- x_2)}{x_1x_2}\\
+        &= (x_1- x_2)\frac{x_1 x_2- 1}{x_1x_2}.
+        \end{aligned}\]
+    由 $x_1< x_2< -1$ 知,
+    \[x_1- x_2< 0,\quad x_1 x_2> 1\ \text{即}\ x_1 x_2- 1>0,\]
+    所以 $f(x_1)-f(x_2)< 0$, 说明函数 $f(x)$ 在区间 $(-\infty,-1)$ 上单调递增.
+</p>
+<p>(3) 不等式化为 $f(1+2t^2)< f(3+t^2)$. 因为 $1+2t^2>1$, $3+t^2>1$, 且
+    \[f(x)= \dfrac{x^2+1}x= x+\dfrac1x\quad (\text{对勾函数})\]
+    在 $(1,+\infty)$ 上单调递增, 所以前述不等式等价于 
+    \[1+2t^2< 3+t^2,\quad \text{解得}\ 
+        t\in(-\infty,-\sqrt2)\cup(\sqrt2,+\infty).\]    
+</p>
+</mysolution>
+</article>
+ 
+          
+    
+    <div class="docs-prevnext">
+    
+        <a class="docs-prev button" href="/docs/algebra/function/function-def">
+          <span class="arrow-prev">← </span><span>函数的定义</span></a>
+      
+      
+        <a class="docs-next button" href="/docs/algebra/function/function-oddeven">
+          <span>函数的奇偶性</span><span class="arrow-next"> →</span></a>
+      
+    </div>
+
+    <p>作者邮箱 rong.liu@mail.bnu.edu.cn。</p>
+    <p>读者的支持是作者持续更新的动力😊</p>
+    
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#函数的单调性">函数的单调性</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

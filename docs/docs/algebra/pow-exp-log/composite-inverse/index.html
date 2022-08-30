@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="复合函数与反函数 # 本次答疑主要讲解复合函数的值域和单调区间的求法. 函数 $f(x)$ 和 $g(x)$ 可以复合成函数 $f(g(x))$, $g(f(x))$, $f(f(x))$ 等, 也可以复合成函数 $f(g(f(x)))$, $g(g(f(x)))$, $g(g(g(g(x))))$ %(此时一般记为 $g\circ g\circ g\circ g(x)$) 等. 例如, 若 $f(x)=x^2$, $g(x)=x&#43;1$, 则 \[\begin{gathered} f(g(x))= (x&#43;1)^2,\quad g(f(x))= x^2&#43;1,\\ f(f(x))= (x^2)^2= x^4,\quad g(g(x))= (x&#43;1)&#43;1= x&#43;2. \end{gathered}\] “复合函数”可以简单理解为“函数套函数”. 有时为了理解方便起见, 对函数 $y=f(g(x))$, 可设 $u=g(x)$ 而将其表示为 $y=f(u)$, 即借助中间变量 $u$ 表示为较简单的形式. 例如, \[\begin{aligned} y=\sqrt{x^2-2x-3}&\colon y=f(u)=\sqrt{u},\ u=g(x)= x^2-2x-3;\\ y=\log_{\frac13} (-x^2-2x&#43;8)&\colon y=f(u)=\log_{\frac13}{u},\ u=g(x)= -x^2-2x&#43;8;\\ y=\frac1{x^2-3x}&\colon y=f(u)=\frac1{u},\ u=g(x)= x^2-3x;\\ y=3^{|x|}&\colon y=f(u)=3^{u},\ u=g(x)= |x|. \end{aligned}\] 这时我们可称 $g(x)$ 为“里层函数”, 而 $f(u)$ 为“外层函数”.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="反函数" />
+<meta property="og:description" content="复合函数与反函数 # 本次答疑主要讲解复合函数的值域和单调区间的求法. 函数 $f(x)$ 和 $g(x)$ 可以复合成函数 $f(g(x))$, $g(f(x))$, $f(f(x))$ 等, 也可以复合成函数 $f(g(f(x)))$, $g(g(f(x)))$, $g(g(g(g(x))))$ %(此时一般记为 $g\circ g\circ g\circ g(x)$) 等. 例如, 若 $f(x)=x^2$, $g(x)=x&#43;1$, 则 \[\begin{gathered} f(g(x))= (x&#43;1)^2,\quad g(f(x))= x^2&#43;1,\\ f(f(x))= (x^2)^2= x^4,\quad g(g(x))= (x&#43;1)&#43;1= x&#43;2. \end{gathered}\] “复合函数”可以简单理解为“函数套函数”. 有时为了理解方便起见, 对函数 $y=f(g(x))$, 可设 $u=g(x)$ 而将其表示为 $y=f(u)$, 即借助中间变量 $u$ 表示为较简单的形式. 例如, \[\begin{aligned} y=\sqrt{x^2-2x-3}&\colon y=f(u)=\sqrt{u},\ u=g(x)= x^2-2x-3;\\ y=\log_{\frac13} (-x^2-2x&#43;8)&\colon y=f(u)=\log_{\frac13}{u},\ u=g(x)= -x^2-2x&#43;8;\\ y=\frac1{x^2-3x}&\colon y=f(u)=\frac1{u},\ u=g(x)= x^2-3x;\\ y=3^{|x|}&\colon y=f(u)=3^{u},\ u=g(x)= |x|. \end{aligned}\] 这时我们可称 $g(x)$ 为“里层函数”, 而 $f(u)$ 为“外层函数”." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/docs/algebra/pow-exp-log/composite-inverse/" /><meta property="article:section" content="docs" />
+
+
+
+<title>反函数 | 高中数学资料</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.0ea964dfd939ec410a2a39593431f6f339bf806ba9aac813a1870c7fca3262b0.css" >
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/zh.search.min.d291c56f7a101eb7bc458e3f1a2b0ef94298fb228cc365dff9fb90ae5d5203f2.js" ></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  <link rel="stylesheet" href='/katex/katex.min.css' crossorigin="anonymous">
+
+
+<script defer src='/katex/katex.min.js' crossorigin="anonymous"></script>
+
+
+<script defer src='/katex/auto-render.min.js' 
+    onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        renderMathInElement(document.body, {
+            
+            
+            delimiters: [
+                { left: '$$', right: '$$', display: true },
+                { left: '$', right: '$', display: false },
+                { left: '\\(', right: '\\)', display: false },
+                { left: '\\[', right: '\\]', display: true }
+            ],
+            
+            throwOnError: false
+        });
+    });
+</script>
+
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>高中数学资料</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="搜索" aria-label="搜索" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7fbb26c6156d78d59d607292b53948a4" class="toggle"  />
+    <label for="section-7fbb26c6156d78d59d607292b53948a4" class="flex justify-between">
+      <a href="/docs/prerequisite/" class="">预备知识</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1e2f9b8b873223fe63fc7221375c0eb0" class="toggle"  />
+    <label for="section-1e2f9b8b873223fe63fc7221375c0eb0" class="flex justify-between">
+      <a href="/docs/prerequisite/ms-algebra/" class="">初中代数提要</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-algebra/quadratic-factorization/" class="">二次三项式的因式分解</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-algebra/quadratic-equation/" class="">一元二次方程的解法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-algebra/veite-theorem/" class="">韦达定理</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c1c4f99569969342f46afcb379e41254" class="toggle"  />
+    <label for="section-c1c4f99569969342f46afcb379e41254" class="flex justify-between">
+      <a href="/docs/prerequisite/ms-geometry/" class="">初中几何提要</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/symmetric-congruence-similar/" class="">对称、全等与相似</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/triangle/" class="">三角形</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/quadrilateral/" class="">四边形</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/circle/" class="">圆</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/area/" class="">平面图形的面积</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-53227ed5b540c99051432d70e3c9c4da" class="toggle"  />
+    <label for="section-53227ed5b540c99051432d70e3c9c4da" class="flex justify-between">
+      <a href="/docs/prerequisite/ms-function/" class="">初中函数提要</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-function/axis-coordinate/" class="">数轴与平面直角坐标系</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-function/linear-inverse/" class="">一次函数与反比例函数</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-function/quadratic-function-inequality/" class="">二次函数与二次不等式</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-function/graph-tranform/" class="">函数图象的变换</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4adec7e7d2e2d6fa5eaee0a98a60892e" class="toggle"  />
+    <label for="section-4adec7e7d2e2d6fa5eaee0a98a60892e" class="flex justify-between">
+      <a href="/docs/prerequisite/set-logic/" class="">集合与简易逻辑</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/set-logic/set-def/" class="">集合的定义</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/set-logic/set-operation/" class="">集合的运算</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/set-logic/proposition-iff/" class="">命题与充要条件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/set-logic/logical-quantifier/" class="">逻辑量词</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0efa6e9487d50f8c7308e9898b74ff74" class="toggle"  />
+    <label for="section-0efa6e9487d50f8c7308e9898b74ff74" class="flex justify-between">
+      <a href="/docs/prerequisite/inequality/" class="">不等式</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>反函数</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#复合函数与反函数">复合函数与反函数</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="复合函数与反函数">
+  复合函数与反函数
+  <a class="anchor" href="#%e5%a4%8d%e5%90%88%e5%87%bd%e6%95%b0%e4%b8%8e%e5%8f%8d%e5%87%bd%e6%95%b0">#</a>
+</h1>
+<p>本次答疑主要讲解复合函数的值域和单调区间的求法. 函数 $f(x)$ 和 $g(x)$ 可以复合成函数 $f(g(x))$, $g(f(x))$, $f(f(x))$ 等, 也可以复合成函数 $f(g(f(x)))$, $g(g(f(x)))$, $g(g(g(g(x))))$ 
+%(此时一般记为 $g\circ g\circ g\circ g(x)$) 
+等. 例如, 若 $f(x)=x^2$, $g(x)=x+1$, 则
+\[\begin{gathered}
+    f(g(x))= (x+1)^2,\quad g(f(x))= x^2+1,\\
+        f(f(x))= (x^2)^2= x^4,\quad g(g(x))= (x+1)+1= x+2.
+\end{gathered}\]
+“复合函数”可以简单理解为“函数套函数”. 
+</p>
+<p>有时为了理解方便起见, 对函数 $y=f(g(x))$, 可设 $u=g(x)$ 而将其表示为 $y=f(u)$, 即借助中间变量 $u$ 表示为较简单的形式. 例如,
+\[\begin{aligned}
+    y=\sqrt{x^2-2x-3}&\colon y=f(u)=\sqrt{u},\ u=g(x)= x^2-2x-3;\\
+    y=\log_{\frac13} (-x^2-2x+8)&\colon y=f(u)=\log_{\frac13}{u},\ u=g(x)= -x^2-2x+8;\\
+    y=\frac1{x^2-3x}&\colon y=f(u)=\frac1{u},\ u=g(x)= x^2-3x;\\
+    y=3^{|x|}&\colon y=f(u)=3^{u},\ u=g(x)= |x|.
+\end{aligned}\]
+这时我们可称 $g(x)$ 为“里层函数”, 而 $f(u)$ 为“外层函数”. 在求值域时, 可以先根据定义域 ($x$ 的取值范围) 求里层函数 (即 $g(x)$) 的值域, 从而得到 $u$ 的取值范围 (即 $f(u)$ 的定义域), 再由 $f(u)$ 的表达式求其值域, 最终得到 $f(g(x))$ 的值域, 即有如下求值流程:
+\[x\xrightarrow{\ g\ } u=g(x)\xrightarrow{\ f\ } y=f(u)= f(g(x))\]
+或简化为
+\[x\xrightarrow{\ g\ } g(x)\xrightarrow{\ f\ } f(g(x)).\]
+例如, 求函数 $y=\sqrt{x^2-2x-3}$ 的值域时, 先由 
+\[x^2-2x-3\geqslant 0\quad\text{解得}\quad x\in(-\infty,-1]\cup[3,+\infty)\quad \text{(自然定义域)},\]
+所以 $u=x^2-2x-3\in[0,+\infty)$, 再由 $y=\sqrt{u}$ 单调递增可知 $y\in[0,+\infty)$.
+</p>
+<p>判断复合函数的单调性则稍微复杂一些, 不过结论很容易记忆: <strong>同增异减</strong>. 具体来说, 就是若里层函数与外层函数</p>
+<p>(1) 单调性相同, 则复合函数单调递增; 
+</p>
+<p>(2) 单调性不同, 则复合函数单调递减. 
+</p>
+<p>理解这一结论时, 需要先弄清楚单调性的定义. 依定义, 若 $f(x)$ 为单调递增函数, 则当 $x$ 增大时, $f(x)$ 也随之增大; 从函数图形来看, 从左往右看时, 图形是上升的. 这一定义表明, 当 $x$ 减小时, $f(x)$ 也随之减小, 即 $x$ 与 $f(x)$ 的\myemph{增减性相同}. 类似地, 若 $f(x)$ 为递减函数, 则 $x$ 与 $f(x)$ 的<strong>增减性相反</strong>. (单调性还有另一种表现形式, 见“2020 年 11 月 14 日答疑记录”的第二个例题及其后的补充说明.) 结合函数单调性和复合函数的定义, 可得\[\begin{aligned}
+    f\nearrow,\ g\nearrow&\colon x\nearrow\xrightarrow{\ g\ } 
+        g(x)\nearrow\xrightarrow{\ f\ } f(g(x))\nearrow,\\
+    f\nearrow,\ g\searrow&\colon x\nearrow\xrightarrow{\ g\ } 
+        g(x)\searrow\xrightarrow{\ f\ } f(g(x))\searrow,\\
+    f\searrow,\ g\nearrow&\colon x\nearrow\xrightarrow{\ g\ } 
+        g(x)\nearrow\xrightarrow{\ f\ } f(g(x))\searrow,\\
+    f\searrow,\ g\searrow&\colon x\nearrow\xrightarrow{\ g\ } 
+        g(x)\searrow\xrightarrow{\ f\ } f(g(x))\nearrow.
+\end{aligned}\]
+此即“同增异减”. 例如, 对函数 $y=\sqrt{x^2-2x-3}$, 其自然定义域为 $(-\infty,-1]\cup[3,+\infty)$, 而 $u=x^2-2x-3$ 分别在 $(-\infty,-1]$ 上单调递减, 在 $[3,+\infty)$ 上单调递增, 所以由 $y=\sqrt{u}$ 单调递增可知 $y=\sqrt{x^2-2x-3}$ 在 $(-\infty,-1]$ 上单调递减, 在 $[3,+\infty)$ 上单调递增.
+</p>
+<p>在求复合函数的值域和单调区间时, 通常需要结合函数图形, 即需要画对应图形的草图. 以下为了过程简便都省略了草图.
+</p>
+<p><myexample>
+<p>求下列函数的定义域、值域和单调区间:
+</p>
+<p>(1) $y=\log_{\frac13} (-x^2-2x+8)$;\qquad
+    (2) $y=\log_{\frac12}(x^2-2x-3)$;\qquad
+    (3) $y=3^{|x|}$;
+</p>
+<p>(4) $y=\sqrt{4-x^2}$;\qquad 
+    (5) $y=\dfrac1{x^2-3x}$, $x\in(0,2]$.
+</p>
+</myexample>
+<mysolution>
+    <p>(1) 由 $-x^2-2x+8> 0$ 知 $x\in(-4,2)$, 所以 $u= -x^2-2x+8\in (0,9]$. 由关于 $u$ 的函数 $y=\log_{\frac13} u$ 单调递减 (结合函数图形) 知, 
+    \[y=\log_{\frac13} (-x^2-2x+8)= \log_{\frac13} u\in \biggl[\log_{\frac13} 9, +\infty\biggl)= [-2,+\infty).\]
+</p>
+<p>因为二次函数 $u= -x^2-2x+8$ 在 $(-4,-1)$ 上单调递增, 在 $[-1,2)$ 上单调递减, 所以 $y=\log_{\frac13} (-x^2-2x+8)$ 在 $(-4,-1)$ 上单调递减, 在 $[-1,2)$ 上单调递增.
+</p>
+<p>(2) 用与 (1) 中相同的方法可得, $x\in(-\infty,-1)\cup (3,+\infty)$, 
+    \[x^2-2x-3\in (0,+\infty),\quad 
+        y= \log_{\frac12}(x^2-2x-3)\in (-\infty,+\infty),\]
+    且函数在 $(-\infty,-1)$ 上单调递增, 在 $(3,+\infty)$ 上单调递减.
+</p>
+<p>(3) 显然 $x\in\realnum$ (不用限制 $x$ 的取值范围). 由 $|x|$ 的图形 (参考“2020 年 9 月 26 日答疑记录”的第二部分) 可知, $u=|x|\in(0,+\infty)$ 且在 $(-\infty,0)$ 上单调递减, 在 $(0,+\infty)$ 上单调递增, 所以 $y=3^u\in(1,+\infty)$ 且 $y=3^{|x|}$ 在 $(-\infty,0)$ 上单调递减, 在 $(0,+\infty)$ 上单调递增.
+</p>
+<p>(4) 用知识点讲解中的方法可知, $y=\sqrt{4-x^2}$ 定义域为 $[-2,2]$, 值域为 $[0,2]$, 且在 $[-2,0]$ 上单调递减, 在 $(0,2]$ 上单调递增.
+</p>
+<p>(5) 因为 $x\in(0,2]$, 所以 $x^2-3x\in\biggl[-\dfrac94,0\biggr)$. 由 $f(x)=\dfrac1x$ 的图形可知, $y=\dfrac1{x^2-3x}\in\biggl(-\infty,-\dfrac49\biggr]$, 且在 $\biggl(0,\dfrac32\biggr)$ 上单调递增, 在 $\biggl[\dfrac32,2\biggr)$ 上单调递减.
+</p>
+</mysolution>
+<myexample>
+<p>求下列函数的定义域、值域和单调区间:
+</p>
+<p>(1) $y=\dfrac{\sqrt{x}-1}{\sqrt{x}+1}$;\qquad
+    (2) $y=\dfrac{1-3^x}{1+3^x}$.
+</p>
+</myexample>
+<mysolution>
+    <p>(1) $x$ 需满足 $\sqrt{x}+1\neq 0$, 即 $x\in[0,+\infty)$. 先将函数用“分离常数法”变形,
+    \[y=\frac{(\sqrt{x}+1)-2}{\sqrt{x}+1}
+        = 1-\frac{2}{\sqrt{x}+1}.\]
+    因为 $\sqrt{x}\in[0,+\infty)$, 所以 
+    \[\begin{gathered}
+        \sqrt{x}+1\in[1,+\infty),\quad 
+            \frac2{\sqrt{x}+1}\in(0,2],\\
+        -\frac2{\sqrt{x}+1}\in[-2,0),\quad
+        1-\frac2{\sqrt{x}+1}\in[-1,1),
+    \end{gathered}\]
+    即 $y\in[-1,1)$, 且按上述过程可知函数在 $[0,+\infty)$ 上单调递增.
+</p>
+<p>(2) $1+3^x\neq0$ 即 $x\in\realnum$. 由 
+    \[y= \frac{-(1+3^x)+2}{1+3^x}= -1+\frac2{1+3^x}\]
+    并仿 (1) 的过程知 $y\in(-1,1]$, 且在 $\realnum$ 上单调递减.
+</p>
+</mysolution>
+</p>
+<p>分离常数法是对形如 $\dfrac{ax+b}{cx+d}$ 的式子变形的常用方法, 以下再举一些例子:
+\[\begin{aligned}
+    \frac{2x+1}{x+1}&= \frac{2(x+1)-1}{x+1}= 2-\frac1{x+1},\\
+    \frac{x+2}{2x+1}&= \frac{\dfrac12(2x+1)+\dfrac32}{2x+1}= \frac12+\frac{\dfrac32}{2x+1},\\
+    \frac{2x+1}{3x-1}&= \frac{\dfrac23(3x-1)+\dfrac53}{3x-1}= \frac23-\frac{\dfrac53}{x+1}.
+\end{aligned}\]
+除了可以用来求函数的值域, 该方法还可以用来画函数图形 (一般需要利用图形变换).
+</p>
+</article>
+ 
+          
+    
+    <div class="docs-prevnext">
+    
+        <a class="docs-prev button" href="/docs/algebra/pow-exp-log/logarithm-function">
+          <span class="arrow-prev">← </span><span>对数函数</span></a>
+      
+      
+        <a class="docs-next button" href="/docs/algebra/pow-exp-log/function-equation">
+          <span>利用函数图象研究方程</span><span class="arrow-next"> →</span></a>
+      
+    </div>
+
+    <p>作者邮箱 rong.liu@mail.bnu.edu.cn。</p>
+    <p>读者的支持是作者持续更新的动力😊</p>
+    
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#复合函数与反函数">复合函数与反函数</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

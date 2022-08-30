@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>函数的定义、性质与图象 on 高中数学资料</title>
+    <link>/docs/algebra/function/</link>
+    <description>Recent content in 函数的定义、性质与图象 on 高中数学资料</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/docs/algebra/function/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>函数的定义</title>
+      <link>/docs/algebra/function/function-def/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/function/function-def/</guid>
+      <description>函数的定义 # 已知二次函数 $y= x^2-2ax+1$, 当 $2&lt; x&lt; 3$ 时, 函数值 $y$ 随 $x$ 的增大而减小, 求实数 $a$ 的取值范围. $y= x^2-2ax+1$ 的图象为开口向上的抛物线, 对称轴为 $x= -\dfrac{-2a}{2\cdot 1}= a$. 由题意, 当 $2&lt; x&lt; 3$ 时, $x$ 在对称轴的左侧, 所以 $3\leqslant a$, 即 $a\in [3,+\infty)$. (1) 二次函数 $y= Ax^2+Bx+C$ ($A\neq 0$) 的单调性可以通过观察其图象 (抛物线) 的开口方向 (由 $A$ 的正负号决定) 和对称轴 $x= -\dfrac{B}{2A}$ 的位置得出. (2) 写二次函数的对称轴时, 只需按照公式的格式写出对应的式子 (见解答第 1 行), 无需明确地写出公式. 如果对称轴容易口算, 也可直接写出, 如本题可直接写“对称轴为 $x= a$”. 对二次函数 $y=x^2-2x+2$, 当 $t\leqslant x\leqslant t+1$ 时, 求函数值 $y$ 的最大值与最小值.</description>
+    </item>
+    
+    <item>
+      <title>函数的单调性</title>
+      <link>/docs/algebra/function/function-monotone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/function/function-monotone/</guid>
+      <description>函数的单调性 # \begin{example}\label{exa:201115-1130} 若函数 $f(x)= \begin{cases} x-1, &amp; x\leqslant 1,\\ x^2+a, &amp; x&gt;1 \end{cases}$ 在 $\realnum$ 上单调递增, 求实数 $a$ 的取值范围. 由题意, \[1-1\leqslant 1^2+a\ \text{即}\ a\geqslant -1,\] 所以 $a\in[-1,+\infty)$. 解分段函数单调性问题时, 只需每段函数均单调, 且分段点处的函数值满足题中单调性. 具体来说, \[\begin{aligned} &amp;f(x)= \begin{cases} g(x), &amp; x\leqslant a,\\ h(x), &amp; x&gt;a \end{cases}\ \text{在 $\realnum$ 上单调递增}\\ \Leftrightarrow{}&amp; \left\{\!\!\begin{array}{l} \text{$g(x)$ 在 $(-\infty,a]$ 上, $h(x)$ 在 $(a,+\infty)$ 上均单调递增},\\ g(a)\leqslant h(a) \end{array}\right.\\ &amp;f(x)= \begin{cases} g(x), &amp; x\leqslant a,\\ h(x), &amp; x&gt;a \end{cases}\ \text{在 $\realnum$ 上单调递减}\\ \Leftrightarrow{}&amp; \left\{\!</description>
+    </item>
+    
+    <item>
+      <title>函数的奇偶性</title>
+      <link>/docs/algebra/function/function-oddeven/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/function/function-oddeven/</guid>
+      <description>函数的奇偶性 # \subsection{二次函数的图象} 已知二次函数 $y=ax^2+bx+10$ 当 $x=3$ 时的函数值与当 $x=2017$ 时的函数值相等, 求当 $x=2020$ 时的函数值. 由题意, 函数图象的对称轴 $x=-\dfrac{b}{2a}=\dfrac{3+2017}2=2010$. 方法一: 上式化为 $b=-2020a$, 所以当 $x=2020$ 时, \[\begin{aligned} y&amp;= a\cdot 2020^2+b\cdot 2020+10\\ &amp;= a\cdot 2020^2-2020a\cdot 2020+10 = 10.\end{aligned}\] 方法二: 画草图易知, 点 $x=2020$ 关于对称轴 $x=1010$ 的对称点为 $x=0$, 此时函数值为 二次函数的常数项, 即 $0$. 已知抛物线 $y=(x-c)(x-d)-4$ 与 $x$ 轴的交点为 $(6,0)$ 和 $(1,0)$, 求 $c$, $d$ 的值. 方法一: 由已知可直接写出抛物线的两根式为 \[y=(x-6)(x-1),\] 所以 \[(x-c)(x-d)-4=(x-6)(x-1)\] 即 \[(x-c)(x-d)= x^2-7x+10=(x-2)(x-5),\] 所以 $c=2$, $d=5$ 或 $c=5$, $d=2$.</description>
+    </item>
+    
+    <item>
+      <title>函数的图象</title>
+      <link>/docs/algebra/function/function-graph/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/function/function-graph/</guid>
+      <description>函数的图象 # \subsection{二次方程根的分布 (选学)} 若方程 $2(m+1)x^2+4mx+3m-2=0$ 有两个负实根, 求实数 $m$ 的取值范围. 由题意, 已知的方程为二次方程, 即 $2(m+1)\neq 0$. 设方程的两根为 $x_1$, $x_2$, 则这两个根均为负数的充要条件是 \[\left\{\!\!\begin{array}{l} x_1+x_2=-\dfrac{4m}{2(m+1)}&lt; 0,\\ x_1x_2=\dfrac{3m-2}{2(m+1)}&gt;0, \end{array}\right.\quad\text{解得}\quad m&lt; -1\ \text{或}\ m&gt;\frac23,\] 所求的 $m$ 的取值范围是 $(-\infty,-1)\cup\biggl(\dfrac23,+\infty\biggr)$. 设关于 $x$ 的二次方程 $Ax^2+Bx+C=0$ ($A\neq0$) 的两根为 $x_1$, $x_2$, 则有以下结论 (为什么?): (1) 两根为正的充要条件是 \[\left\{\!\!\begin{array}{l} x_1+x_2&gt;0,\\ x_1x_2&gt;0, \end{array}\right.\quad\text{即}\quad \left\{\!\!\begin{array}{l} -\dfrac{B}A&gt;0,\\ \dfrac{C}A&gt;0; \end{array}\right.\] (2) 两根为负的充要条件是 \[\left\{\!\!\begin{array}{l} x_1+x_2&lt; 0,\\ x_1x_2&gt;0, \end{array}\right.\quad\text{即}\quad \left\{\!\!\begin{array}{l} -\dfrac{B}A&lt; 0,\\ \dfrac{C}A&gt;0; \end{array}\right.\] (3) 两根一正一负的充要条件是 \[x_1x_2&lt; 0\quad\text{即}\quad\frac{C}A&lt; 0.\] \begin{example}\label{201109-2120} 已知函数 $f(x)= 4x^2-kx-8$ 在 $[5,20]$ 上单调变化, 求实数 $k$ 的取值范围.</description>
+    </item>
+    
+    <item>
+      <title>二次函数</title>
+      <link>/docs/algebra/function/quadratic-function/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/function/quadratic-function/</guid>
+      <description>二次函数 # 如图所示, 已知边长为 $8$ 米的正方形钢板有一个角被锈蚀, 其中 $AE=4$ 米, $CD=6$ 米. 为了合理利用这块钢板, 将在五边形 $ABCDE$ 内截取一个矩形 $BNPM$, 使点 $P$ 在边 $DE$ 上. (1) 设 $MP=x$ 米, $PN=y$ 米, 将 $y$ 表示成 $x$ 的函数, 并求其定义域; (2) 求矩形 $BNPM$ 面积 $S$ 的取值范围. \includegraphics[scale=1]{2020-1206-1240-crop} (1) 由题意, $\triangle DHP\backsim \triangle DEF$, 所以 \[\frac{DH}{HP}= \frac{DF}{FE},\quad\text{即}\quad \frac{y-6}{8-x}= \frac{2}{4}.\] 整理得, $y=\dfrac{20-x}2$, 且由图可知 $x\in[4,8]$. (2) 由 (1) 得, \[S= xy= \frac12 x(20-x)\quad (\text{平方米}),\] 且在 $[4,8]$ 上单调递增, 所以 $S\in[16,24]$ (平方米).</description>
+    </item>
+    
+  </channel>
+</rss>

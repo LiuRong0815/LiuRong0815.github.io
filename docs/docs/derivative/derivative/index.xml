@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>导数 on 高中数学资料</title>
+    <link>/docs/derivative/derivative/</link>
+    <description>Recent content in 导数 on 高中数学资料</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/docs/derivative/derivative/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>导数的定义与意义</title>
+      <link>/docs/derivative/derivative/derivative-def/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/derivative/derivative/derivative-def/</guid>
+      <description> 导数的定义与意义 # </description>
+    </item>
+    
+    <item>
+      <title>常见导数公式</title>
+      <link>/docs/derivative/derivative/derivative-calc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/derivative/derivative/derivative-calc/</guid>
+      <description> 常见导数公式 # </description>
+    </item>
+    
+    <item>
+      <title>导数的运算法则</title>
+      <link>/docs/derivative/derivative/derivative-laws/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/derivative/derivative/derivative-laws/</guid>
+      <description> 导数的运算法则 # </description>
+    </item>
+    
+    <item>
+      <title>利用导数求函数的单调性与最值</title>
+      <link>/docs/derivative/derivative/monotone-max-min/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/derivative/derivative/monotone-max-min/</guid>
+      <description> 利用导数求函数的单调性与最值 # </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>几何体 on 高中数学资料</title>
+    <link>/docs/solid-geometry/solid/</link>
+    <description>Recent content in 几何体 on 高中数学资料</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/docs/solid-geometry/solid/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>几何体的分类</title>
+      <link>/docs/solid-geometry/solid/solid-classification/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solid-geometry/solid/solid-classification/</guid>
+      <description> 几何体的分类 # </description>
+    </item>
+    
+    <item>
+      <title>锥和柱的表面积与体积</title>
+      <link>/docs/solid-geometry/solid/pyramid-pillar-area-volume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solid-geometry/solid/pyramid-pillar-area-volume/</guid>
+      <description> 锥和柱的表面积与体积 # </description>
+    </item>
+    
+  </channel>
+</rss>

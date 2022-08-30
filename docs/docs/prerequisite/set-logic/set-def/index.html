@@ -16,7 +16,7 @@
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.0ea964dfd939ec410a2a39593431f6f339bf806ba9aac813a1870c7fca3262b0.css" >
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh.search.min.5679ba0e79b6af795401ba8b072e1eaf8c8043b8d4a827bb50606ca3fabdf592.js" ></script>
+  <script defer src="/zh.search.min.d291c56f7a101eb7bc458e3f1a2b0ef94298fb228cc365dff9fb90ae5d5203f2.js" ></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
 <!--
@@ -395,6 +395,27 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0efa6e9487d50f8c7308e9898b74ff74" class="toggle"  />
+    <label for="section-0efa6e9487d50f8c7308e9898b74ff74" class="flex justify-between">
+      <a href="/docs/prerequisite/inequality/" class="">不等式</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -527,7 +548,7 @@ https://github.com/alex-shpak/hugo-book
     </p>
 </myremark>
 <myexample>
-    <p>已知集合 $A=\{0,1,2\}$, 求下列集合 中元素的个数:</p>
+    <p>已知集合 $A=\{0,1,2\}$, 求下列集合中元素的个数:</p>
     <p>(1) $B=\{x-y\mid x,y\in A\}$;</p>
     <p>(2) $C=\{x+y\mid x,y\in A\}$.</p>
 </myexample>
@@ -657,23 +678,38 @@ https://github.com/alex-shpak/hugo-book
 </myremark>
 <p><span id="example-"></span></p>
 <myexample>
-    <p>(1) 设集合 $P=\{x\mid x>1\}$, $Q=\{x\mid x-2>0\}$, 求 $P$ 与 $Q$ 的包含关系.</p>
+    <p>(1) 设集合 $P=\{x\mid x>1\}$, $Q=\{x\mid x-2>0\}$, 求 $P$ 与 $Q$ 的包含关系.
+    </p>
     <p>(2) 设集合 \[\begin{gathered}
-        A=\{x\mid 2\leqslant x\leqslant 6\},\\
-        B=\{x\mid 2a\leqslant x\leqslant a+3\},
+        M=\{x\mid 2\leqslant x\leqslant 6\},\\
+        N=\{x\mid 2a\leqslant x\leqslant a+3\},
     \end{gathered}\]
-    且 $B\subseteq A$, 求实数 $a$ 的取值范围.</p>
+    且 $N\subseteq M$, 求实数 $a$ 的取值范围;
+    </p>
+    <p>(3) 设集合 $A=\{x\mid x^2=1\}$, $B=\{x\mid ax=1\}$, 若 $B\subseteq A$, 求实数 $a$ 的值.
+    </p>
 </myexample>
 <mysolution>
-    <p>(1) $Q=\{x\mid x>2\}$, 则 $P\supseteq Q$.</p>
-    <p>(2) 若 $B=\varnothing$, 则 $2a>a+3$, 即 $a>3$;</p>
-    <p>若 $B\neq\varnothing$, 则 \[
+    <p>(1) $Q=\{x\mid x>2\}$, 则 $P\supseteq Q$.
+    </p>
+    <p>(2) 若 $N=\varnothing$, 则 $2a>a+3$, 即 $a>3$; 若 $N\neq\varnothing$, 则 \[
         2\leqslant 2a\leqslant a+3\leqslant 6,\]
-    解得 $1\leqslant a\leqslant 3$.</p>
-    <p>综上所述, $a\geqslant 1$.</p>
+    解得 $1\leqslant a\leqslant 3$.
+    </p>
+    <p>综上所述, $a\geqslant 1$.
+    </p>
+    <p>(3) 集合 $A$ 描述的是方程 $x^2=1$ 的根, 即 $A=\{-1,1\}$; 集合 $B$ 描述的是方程 $ax=1$ 的根.
+    </p>
+    <p>若 $B=\varnothing$, 即方程 $ax=1$ 无根, 此时 $a=0$. 若 $B\neq\varnothing$, 即方程 $ax=1$ 有根, 由该方程为一次方程知 $B= \{-1\}$ 或 $\{1\}$, 相应的 $a=-1$ 或 $1$.
+    </p>
+    <p>综上所述, $a=-1$, $0$ 或 $1$.
+    </p>
 </mysolution>
 <myremark>
-    <p>讨论集合的子集时, 必须先考虑该子集是否为空集, 否则容易漏解.</p>
+    <p>(1) 集合的包含关系隐含“小的集合可能是空集”, 所以讨论集合的子集时, 必须先考虑该子集是否为空集, 否则容易漏解.
+    </p>
+    <p>(2) 关于 $x$ 的一次方程 $ax=b$ 无解的等价条件是 $a=0$ 且 $b\neq 0$; 有解的等价条件是 $a\neq 0$ (为什么?). 
+    </p>
 </myremark>
 <myexercise>
     <p>(1) 已知集合 $A=\{x\mid -2< x< 1\}$, $B=\{x\mid x-a< 0\}$. 若 $A\subseteq B$, 求实数 $a$ 的取值范围.</p>
@@ -711,10 +747,17 @@ https://github.com/alex-shpak/hugo-book
 <myexercise>
     <p>已知集合 $A=\{1,2\}$, \[
         B=\{x\mid 0< x< 5, x\in\mathbf{N}\},\]
-    若 $A\subseteq C\subseteq B$, 求满足条件的集合 $C$ 的个数.</p>
+    求分别满足下列条件的集合 $C$ 的个数:
+    </p>
+    <p>(1) $A\subseteq C\subseteq B$;
+    </p>
+    <p>(2) $A\subsetneqq C\subseteq B$;
+    </p>
+    <p>(3) $A\subsetneqq C\subsetneqq B$.
+    </p>
 </myexercise>
 <details><summary>参考答案</summary>
-    <p>$B=\{1,2,3,4\}$, 则 $C$ 的个数为 $\{3,4\}$ 子集的个数, 即 $2^2=4$ 个.</p>
+    <p>$B=\{1,2,3,4\}$, 则 (1) $C$ 的个数为 $\{3,4\}$ 子集的个数, 即为 $2^2=4$; (2) $C$ 的个数为 $\{3,4\}$ 非空子集的个数, 即为 $2^2-1= 3$; (3) $C$ 的个数为 $\{3,4\}$ 非空真子集的个数, 即为 $2^2-2=2$.</p>
 </details>
 </article>
  

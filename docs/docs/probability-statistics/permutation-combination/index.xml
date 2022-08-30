@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>排列与组合 on 高中数学资料</title>
+    <link>/docs/probability-statistics/permutation-combination/</link>
+    <description>Recent content in 排列与组合 on 高中数学资料</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/docs/probability-statistics/permutation-combination/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>排列</title>
+      <link>/docs/probability-statistics/permutation-combination/permutation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/probability-statistics/permutation-combination/permutation/</guid>
+      <description> 排列 # </description>
+    </item>
+    
+    <item>
+      <title>组合</title>
+      <link>/docs/probability-statistics/permutation-combination/combination/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/probability-statistics/permutation-combination/combination/</guid>
+      <description> 组合 # </description>
+    </item>
+    
+    <item>
+      <title>二项式定理</title>
+      <link>/docs/probability-statistics/permutation-combination/binomial-theorem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/probability-statistics/permutation-combination/binomial-theorem/</guid>
+      <description> 二项式定理 # </description>
+    </item>
+    
+  </channel>
+</rss>

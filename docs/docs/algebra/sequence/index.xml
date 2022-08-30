@@ -5,5 +5,59 @@
     <link>/docs/algebra/sequence/</link>
     <description>Recent content in 数列 on 高中数学资料</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="/docs/algebra/sequence/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>数列的定义</title>
+      <link>/docs/algebra/sequence/sequence-def/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/sequence/sequence-def/</guid>
+      <description> 数列的定义 # </description>
+    </item>
+    
+    <item>
+      <title>等差数列</title>
+      <link>/docs/algebra/sequence/common-diff/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/sequence/common-diff/</guid>
+      <description> 等差数列 # </description>
+    </item>
+    
+    <item>
+      <title>等比数列</title>
+      <link>/docs/algebra/sequence/common-ratio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/sequence/common-ratio/</guid>
+      <description> 等比数列 # </description>
+    </item>
+    
+    <item>
+      <title>数列的应用</title>
+      <link>/docs/algebra/sequence/sequence-application/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/sequence/sequence-application/</guid>
+      <description> 数列的应用 # </description>
+    </item>
+    
+    <item>
+      <title>特殊通项公式的求法</title>
+      <link>/docs/algebra/sequence/general-term-fomula/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/sequence/general-term-fomula/</guid>
+      <description> 特殊通项公式的求法 # </description>
+    </item>
+    
+    <item>
+      <title>数学归纳法</title>
+      <link>/docs/algebra/sequence/mathematical-induction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/sequence/mathematical-induction/</guid>
+      <description> 数学归纳法 # </description>
+    </item>
+    
   </channel>
 </rss>

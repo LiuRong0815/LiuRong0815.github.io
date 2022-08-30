@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>正弦定理与余弦定理 on 高中数学资料</title>
+    <link>/docs/trigonometry/sine-cosine-law/</link>
+    <description>Recent content in 正弦定理与余弦定理 on 高中数学资料</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/docs/trigonometry/sine-cosine-law/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>正弦定理</title>
+      <link>/docs/trigonometry/sine-cosine-law/sine-law/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/trigonometry/sine-cosine-law/sine-law/</guid>
+      <description> 正弦定理 # </description>
+    </item>
+    
+    <item>
+      <title>余弦定理</title>
+      <link>/docs/trigonometry/sine-cosine-law/cosine-law/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/trigonometry/sine-cosine-law/cosine-law/</guid>
+      <description> 余弦定理 # </description>
+    </item>
+    
+    <item>
+      <title>解三角形</title>
+      <link>/docs/trigonometry/sine-cosine-law/solving-triangles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/trigonometry/sine-cosine-law/solving-triangles/</guid>
+      <description> 解三角形 # </description>
+    </item>
+    
+  </channel>
+</rss>

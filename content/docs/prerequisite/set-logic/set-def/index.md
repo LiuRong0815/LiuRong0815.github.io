@@ -294,12 +294,16 @@ nextPageTitle: 集合的运算
 <myexercise>
     <p>已知集合 $A=\{1,2\}$, \[
         B=\{x\mid 0< x< 5, x\in\mathbf{N}\},\]
-    若 $A\subseteq C\subseteq B$, 求满足条件的集合 $C$ 的个数.</p>
+    求分别满足下列条件的集合 $C$ 的个数:
+    </p>
+    <p>(1) $A\subseteq C\subseteq B$;
+    </p>
+    <p>(2) $A\subsetneqq C\subseteq B$;
+    </p>
+    <p>(3) $A\subsetneqq C\subsetneqq B$.
+    </p>
 </myexercise>
 
 <details><summary>参考答案</summary>
-    <p>$B=\{1,2,3,4\}$, 则 $C$ 的个数为 $\{3,4\}$ 子集的个数, 即 $2^2=4$ 个.</p>
+    <p>$B=\{1,2,3,4\}$, 则 (1) $C$ 的个数为 $\{3,4\}$ 子集的个数, 即为 $2^2=4$; (2) $C$ 的个数为 $\{3,4\}$ 非空子集的个数, 即为 $2^2-1= 3$; (3) $C$ 的个数为 $\{3,4\}$ 非空真子集的个数, 即为 $2^2-2=2$.</p>
 </details>
-
-<!-- <p>在例 \ref{exa:201021-1945} 中若已知 $\{1,2\}\subset M\subseteq \{1,2,3,4,5\}$, 或 $\{1,2\}\subseteq M\subset \{1,2,3,4,5\}$, 则所求 $M$ 的个数均为 $2^3-1=7$ 个; 若已知 $\{1,2\}\subset M\subset \{1,2,3,4,5\}$, 则所求 $M$ 的个数均为 $2^3-2=6$ 个.
-</p> -->

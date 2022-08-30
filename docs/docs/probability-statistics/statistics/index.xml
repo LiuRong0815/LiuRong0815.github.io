@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>统计 on 高中数学资料</title>
+    <link>/docs/probability-statistics/statistics/</link>
+    <description>Recent content in 统计 on 高中数学资料</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/docs/probability-statistics/statistics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>平均值与方差</title>
+      <link>/docs/probability-statistics/statistics/mean-variation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/probability-statistics/statistics/mean-variation/</guid>
+      <description> 平均值与方差 # </description>
+    </item>
+    
+    <item>
+      <title>直方图</title>
+      <link>/docs/probability-statistics/statistics/histogram/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/probability-statistics/statistics/histogram/</guid>
+      <description> 直方图 # </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/docs/probability-statistics/statistics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/probability-statistics/statistics/</guid>
+      <description> # </description>
+    </item>
+    
+  </channel>
+</rss>

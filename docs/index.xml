@@ -11,7 +11,16 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/prerequisite/inequality/inequality-property/</guid>
-      <description> 不等式的性质 # </description>
+      <description>不等式的性质 # \subsection{绝对值的几何意义}实数 $a$ 的绝对值定义为\[|a|=\begin{cases}a, &amp; a&gt;0,\\0, &amp; a=0,\\-a, &amp; a&lt; 0\end{cases}= \begin{cases}a, &amp; a\geqslant 0,\\-a, &amp; a&lt; 0,\end{cases}\]其几何意义为数轴上坐标为 $a$ 的点到原点的距离. 进而可以知道, 数轴上两点 $x_1$, $x_2$ 之间的距离为 $|x_1-x_2|$, 如下图所示.\includegraphics[scale=1]{2020-1009-2110-crop}\qquad\includegraphics[scale=1]{2020-1009-2120-crop}例如, $|x-1|$ 表示点 $x$ 到 $1$ 的距离; $|x+2|=|x-(-2)|$ 表示点 $x$ 到 $-2$ 的距离; $|2x-2|= 2|x-1|$ 表示点 $x$ 到 $1$ 的距离的 $2$ 倍; $|4+2x|= 2|x-(-2)|$ 表示点 $x$ 到 $-2$ 的距离的 $2$ 倍.</description>
+    </item>
+    
+    <item>
+      <title>导数的定义与意义</title>
+      <link>/docs/derivative/derivative/derivative-def/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/derivative/derivative/derivative-def/</guid>
+      <description> 导数的定义与意义 # </description>
     </item>
     
     <item>
@@ -36,12 +45,120 @@
     </item>
     
     <item>
+      <title>二项分布</title>
+      <link>/docs/probability-statistics/probability-distribution/binomial-distribution/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/probability-statistics/probability-distribution/binomial-distribution/</guid>
+      <description> 二项分布 # </description>
+    </item>
+    
+    <item>
+      <title>方向向量与法向量</title>
+      <link>/docs/solid-geometry/line-plane-space-vector/directional-norm-vector/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solid-geometry/line-plane-space-vector/directional-norm-vector/</guid>
+      <description> 方向向量与法向量 # </description>
+    </item>
+    
+    <item>
+      <title>复数的定义</title>
+      <link>/docs/trigonometry/complex-number/complex-number-def/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/trigonometry/complex-number/complex-number-def/</guid>
+      <description> 复数的定义 # </description>
+    </item>
+    
+    <item>
+      <title>古典概型</title>
+      <link>/docs/probability-statistics/probability/classical-probability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/probability-statistics/probability/classical-probability/</guid>
+      <description> 古典概型 # </description>
+    </item>
+    
+    <item>
+      <title>函数的定义</title>
+      <link>/docs/algebra/function/function-def/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/function/function-def/</guid>
+      <description>函数的定义 # 已知二次函数 $y= x^2-2ax+1$, 当 $2&lt; x&lt; 3$ 时, 函数值 $y$ 随 $x$ 的增大而减小, 求实数 $a$ 的取值范围. $y= x^2-2ax+1$ 的图象为开口向上的抛物线, 对称轴为 $x= -\dfrac{-2a}{2\cdot 1}= a$. 由题意, 当 $2&lt; x&lt; 3$ 时, $x$ 在对称轴的左侧, 所以 $3\leqslant a$, 即 $a\in [3,+\infty)$. (1) 二次函数 $y= Ax^2+Bx+C$ ($A\neq 0$) 的单调性可以通过观察其图象 (抛物线) 的开口方向 (由 $A$ 的正负号决定) 和对称轴 $x= -\dfrac{B}{2A}$ 的位置得出. (2) 写二次函数的对称轴时, 只需按照公式的格式写出对应的式子 (见解答第 1 行), 无需明确地写出公式. 如果对称轴容易口算, 也可直接写出, 如本题可直接写“对称轴为 $x= a$”. 对二次函数 $y=x^2-2x+2$, 当 $t\leqslant x\leqslant t+1$ 时, 求函数值 $y$ 的最大值与最小值.</description>
+    </item>
+    
+    <item>
       <title>集合的定义</title>
       <link>/docs/prerequisite/set-logic/set-def/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/prerequisite/set-logic/set-def/</guid>
       <description>集合的定义 # 集合 (set) 是一类有共性的对象的全体, 一般用大写字母表示, 所考察的对象称为集合的元素 (element). 集合的基本表示方法是把所有考察的对象放在大括号 (花括号) 内, 比如, 设集合 $A$ 表示所有不大于 $3$ 的正整数, 则 $A=\{1,2,3\}$, 也可以写成 $A=\{\text{不大于 $3$ 的正整数}\}$. 集合 $A$ 中的元素为 $1$, $2$, $3$. 若元素 $x$ 在集合 $A$ 中, 则称 $x$ 属于 $A$, 记成 $x\in A$; 反之, 则称 $x$ 不属于 $A$, 记成 $x\notin A$. 例如, \[ 1\in\{1,2,3\},\quad 4\notin \{1,2,3\}.\] 列举法与描述法 # 将 $A$ 写成 $\{1,2,3\}$ 时用的是列举法, 即逐一列出集合中的元素. 当集合中的元素个数不多时, 用列举法能够显示所有元素. 若集合中的元素较多, 但有明显的规律, 也可以用列举法. 例如, 小于 $10$ 的正整数全体可以写成 $\{1,2,\cdots,9\}$, 全体整数构成的集合可以写成 $\{0,1,-1,2,-2,\cdots\}$.</description>
+    </item>
+    
+    <item>
+      <title>几何体的分类</title>
+      <link>/docs/solid-geometry/solid/solid-classification/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solid-geometry/solid/solid-classification/</guid>
+      <description> 几何体的分类 # </description>
+    </item>
+    
+    <item>
+      <title>幂函数</title>
+      <link>/docs/algebra/pow-exp-log/power-function/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/pow-exp-log/power-function/</guid>
+      <description>幂函数 # 幂函数 $y= x^a$ (均取由 $a$ 对应的自然定义域) 的大致图形如下: \includegraphics[scale=1]{2020-1206-1110-crop} 为了整洁起见, 图中并未画出 $a=0$ (对应 $y=1$) 和 $a=1$ (对应 $y=x$) 的情形, 且对 $0&lt; a&lt; 1$ 只画了 $x&gt;0$ 对应的图形. 由图可知, 幂函数 $y= x^a$ 的特征有 (1) 当 $a&lt; 0$ 且为整数时, 图形有两支, 且以 $x$ 轴和 $y$ 轴为渐近线, 函数分别在 $(-\infty,0)$ 和 $(0,+\infty)$ 上单调递减; (2) 当 $a&gt;0$ 时, 在第一象限内, 函数单调递增, 且 $a$ 越大, 函数值增加速度越快; (3) 恒过点 $(1,1)$ (因为 $1^a=1$). 比大小: (1) $a=1$, $b=0.3^2$, $c=2^{0.3}$; (2) $a= 3^{1.</description>
+    </item>
+    
+    <item>
+      <title>排列</title>
+      <link>/docs/probability-statistics/permutation-combination/permutation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/probability-statistics/permutation-combination/permutation/</guid>
+      <description> 排列 # </description>
+    </item>
+    
+    <item>
+      <title>平均值与方差</title>
+      <link>/docs/probability-statistics/statistics/mean-variation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/probability-statistics/statistics/mean-variation/</guid>
+      <description> 平均值与方差 # </description>
+    </item>
+    
+    <item>
+      <title>任意角的三角函数与弧度制</title>
+      <link>/docs/trigonometry/trigonometric-function/trig-def-radian/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/trigonometry/trigonometric-function/trig-def-radian/</guid>
+      <description>任意角的三角函数与弧度制 # \subsection{弧度制} 角的大小用来描述角的两边 (始边和终边) 张开的幅度. 度量角的大小的方法中, 常见的为如下两种: (1) 将射线绕定点旋转一周所形成的角 (称为周角) 等分为 $360$ 份, 每一份的大小记为 $1^\circ$. 所以周角的大小是 $360^\circ$, 并这种方法称为角度制. (2) 将角的顶点放在圆心, 利用所截弧长来定义角的大小. 当圆心角固定时, 若半径越大, 则所对弧长也越大, 所以定义弧长与半径的比例为圆心角的大小, 并称这种方法为弧度制. 此时周角的大小是 $\dfrac{2\pi r}r= 2\pi\,\mathrm{rad}$. $\mathrm{rad}$ 是弧度制的单位, 念作“弧度”(radian), 通常略去不写. 根据相似形对应线段或弧成比例, 对固定的圆心角, 弧长与半径的比例为定值, 所以第二种方法是合理的. \includegraphics[scale=1]{2020-1218-1940-crop} 高中数学更常用的是弧度制. 由定义, $360^\circ =2\pi$, 并应熟记特殊角 $0^\circ$, $30^\circ$, $45^\circ$, $60^\circ$, $90^\circ$, $120^\circ$, $135^\circ$, $150^\circ$, $180^\circ$ 的角度和弧度. \includegraphics[scale=1]{2020-1220-0920-crop}\quad \includegraphics[scale=1]{2020-1220-0930-crop} 容易得到弧度与角度互换公式: \[1\,\mathrm{rad}= \Big(\frac{180}{\pi}\Big)^{\circ} \approx 57.3^{\circ}, \quad 1^{\circ}= \frac{\pi}{180}\,\mathrm{rad}.\] 若圆心角 $\alpha$ (弧度制, 可能为负) 所对的弧长为 $l$, 则 $|\alpha|=\dfrac{l}{r}$, 其中 $r$ 是圆的半径.</description>
+    </item>
+    
+    <item>
+      <title>数列的定义</title>
+      <link>/docs/algebra/sequence/sequence-def/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/sequence/sequence-def/</guid>
+      <description> 数列的定义 # </description>
+    </item>
+    
+    <item>
+      <title>数列的极限</title>
+      <link>/docs/derivative/limit/sequence-limit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/derivative/limit/sequence-limit/</guid>
+      <description> 数列的极限 # </description>
     </item>
     
     <item>
@@ -57,12 +174,111 @@
     </item>
     
     <item>
+      <title>椭圆</title>
+      <link>/docs/analytic-geometry/conic-curves/ellipse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/analytic-geometry/conic-curves/ellipse/</guid>
+      <description> 椭圆 # </description>
+    </item>
+    
+    <item>
+      <title>向量的定义</title>
+      <link>/docs/trigonometry/vector/vec-def/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/trigonometry/vector/vec-def/</guid>
+      <description> 向量的定义 # </description>
+    </item>
+    
+    <item>
+      <title>圆的方程</title>
+      <link>/docs/analytic-geometry/circle/circle-equation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/analytic-geometry/circle/circle-equation/</guid>
+      <description> 圆的方程 # </description>
+    </item>
+    
+    <item>
+      <title>正弦定理</title>
+      <link>/docs/trigonometry/sine-cosine-law/sine-law/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/trigonometry/sine-cosine-law/sine-law/</guid>
+      <description> 正弦定理 # </description>
+    </item>
+    
+    <item>
+      <title>直线的斜率</title>
+      <link>/docs/analytic-geometry/line/slope/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/analytic-geometry/line/slope/</guid>
+      <description> 直线的斜率 # </description>
+    </item>
+    
+    <item>
+      <title>直线与平面的位置关系</title>
+      <link>/docs/solid-geometry/line-plane/position/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solid-geometry/line-plane/position/</guid>
+      <description> 直线与平面的位置关系 # </description>
+    </item>
+    
+    <item>
+      <title>常见导数公式</title>
+      <link>/docs/derivative/derivative/derivative-calc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/derivative/derivative/derivative-calc/</guid>
+      <description> 常见导数公式 # </description>
+    </item>
+    
+    <item>
+      <title>等差数列</title>
+      <link>/docs/algebra/sequence/common-diff/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/sequence/common-diff/</guid>
+      <description> 等差数列 # </description>
+    </item>
+    
+    <item>
       <title>分式不等式与高次不等式</title>
       <link>/docs/prerequisite/inequality/fraction-high-order-inequality/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/prerequisite/inequality/fraction-high-order-inequality/</guid>
-      <description> 分式不等式与高次不等式 # </description>
+      <description>分式不等式与高次不等式 # \subsection{简单的分式不等式的解法}关于 $x$ 的形如 $\dfrac{Ax+B}{Cx+D}&gt;(\geqslant)\,0$ 的分式不等式, 可以利用分子和分母的正负号关系转化为二次不等式来解. 具体地,\begin{align}\label{eq-201009-1907}\frac{Ax+B}{Cx+D}&gt;0 &amp; \Leftrightarrow (Ax+B)(Cx+D)&gt;0,\\\label{eq-201009-1917}\frac{Ax+B}{Cx+D}\geqslant 0 &amp; \Leftrightarrow \left\{\!\!\begin{array}{l}(Ax+B)(Cx+D)\geqslant 0,\\Cx+D\neq 0.\end{array}\right.\end{align}\eqref{eq-201009-1907} 式中右边不用限制分母非零, 因为乘积非零隐含两个因子均非零; 而 \eqref{eq-201009-1917} 式中右边必须限制分母非零, 因为乘积为零隐含两个因子均可能为零. 解下列不等式:\begin{twocolpro}(1) $\dfrac{x-2}{x-5}&gt;0$; &amp; (2) $\dfrac{x-2}{x-5}\geqslant 0$.\end{twocolpro}(1) 原不等式等价于 $(x-2)(x-5)&gt;0$, 所以 $x\in (-\infty,2)\cup (5,+\infty)$.(2) 原不等式等价于\[\left\{\!\!\begin{array}{l}(x-2)(x-5)\geqslant 0,\\x-5\neq 0,\end{array}\right. \text{解得}\ x\in (-\infty,2]\cup (5,+\infty).\]解二次不等式时, 需要考虑对应抛物线的图象, 尤其应注意开口方向. 也可以先将不等式各因子化为最高次项系数为正的形式, 然后再根据抛物线的图象写出相应的解集.解下列不等式:\begin{twocolpro}(1) $\dfrac{2-x}{x-5}&gt;0$; &amp; (2) $\dfrac{2-x}{x-5}\geqslant 0$.</description>
+    </item>
+    
+    <item>
+      <title>复数的运算</title>
+      <link>/docs/trigonometry/complex-number/complex-number-operation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/trigonometry/complex-number/complex-number-operation/</guid>
+      <description> 复数的运算 # </description>
+    </item>
+    
+    <item>
+      <title>函数的单调性</title>
+      <link>/docs/algebra/function/function-monotone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/function/function-monotone/</guid>
+      <description>函数的单调性 # \begin{example}\label{exa:201115-1130} 若函数 $f(x)= \begin{cases} x-1, &amp; x\leqslant 1,\\ x^2+a, &amp; x&gt;1 \end{cases}$ 在 $\realnum$ 上单调递增, 求实数 $a$ 的取值范围. 由题意, \[1-1\leqslant 1^2+a\ \text{即}\ a\geqslant -1,\] 所以 $a\in[-1,+\infty)$. 解分段函数单调性问题时, 只需每段函数均单调, 且分段点处的函数值满足题中单调性. 具体来说, \[\begin{aligned} &amp;f(x)= \begin{cases} g(x), &amp; x\leqslant a,\\ h(x), &amp; x&gt;a \end{cases}\ \text{在 $\realnum$ 上单调递增}\\ \Leftrightarrow{}&amp; \left\{\!\!\begin{array}{l} \text{$g(x)$ 在 $(-\infty,a]$ 上, $h(x)$ 在 $(a,+\infty)$ 上均单调递增},\\ g(a)\leqslant h(a) \end{array}\right.\\ &amp;f(x)= \begin{cases} g(x), &amp; x\leqslant a,\\ h(x), &amp; x&gt;a \end{cases}\ \text{在 $\realnum$ 上单调递减}\\ \Leftrightarrow{}&amp; \left\{\!</description>
+    </item>
+    
+    <item>
+      <title>函数的极限</title>
+      <link>/docs/derivative/limit/function-limit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/derivative/limit/function-limit/</guid>
+      <description> 函数的极限 # </description>
     </item>
     
     <item>
@@ -76,6 +292,33 @@
     </item>
     
     <item>
+      <title>几何概型</title>
+      <link>/docs/probability-statistics/probability/geometric-probability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/probability-statistics/probability/geometric-probability/</guid>
+      <description> 几何概型 # </description>
+    </item>
+    
+    <item>
+      <title>平面向量基本定理</title>
+      <link>/docs/trigonometry/vector/vec-basic-theorem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/trigonometry/vector/vec-basic-theorem/</guid>
+      <description> 平面向量基本定理 # </description>
+    </item>
+    
+    <item>
+      <title>三角函数的诱导公式</title>
+      <link>/docs/trigonometry/trigonometric-function/trig-induce/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/trigonometry/trigonometric-function/trig-induce/</guid>
+      <description>三角函数的诱导公式 # 诱导公式指的是已知角加上 $90^\circ$ (或 $\dfrac{\pi}2$) 的整数倍后, 所得角与已知角的三角函数值的关系. 最容易理解的是 \[\sin(2\pi+\alpha)= \sin\alpha,\quad \cos(2\pi+\alpha)= \cos\alpha.\] 常用的还有 \[\begin{gathered} \sin(-x)= -\sin x\ (\text{奇函数}),\quad \cos(-x)= \cos x\ (\text{偶函数}),\\ \sin(90^\circ-x)= \cos x,\quad \cos(90^\circ-x)= \sin x,\\ \sin(180^\circ-x)= \sin x,\quad \cos(180^\circ-x)= -\cos x. \end{gathered}\] 分别对应如下图形 (为观察方便, 正弦线、余弦线的位置与通常的定义略有区别): \includegraphics[scale=1.1]{2020-1225-1900-crop}\quad \includegraphics[scale=1.1]{2020-1225-1910-crop}\quad \includegraphics[scale=1.1]{2020-1225-1920-crop} 诱导公式的记忆口诀为: 奇变偶不变, 符号看象限, 其中 (1) “奇”“偶”指所加 $90^\circ$ (或 $\dfrac{\pi}2$) 倍数的奇偶性; (2) “变”指函数名中“正”变“余”或“余”变“正”； (3) “象限”指把已知角视为锐角时所得角对应的象限; (4) “符号”是此时原式的符号. \\ 例如: \begin{gather*} \sin(2x-\pi)= -\sin2x,\quad \tan(x+180^\circ)= \tan x, \\ \cos(3x-270^\circ)= -\sin 3x,\quad \sin\Big(4x-\frac{\pi}2\Big)= -\cos 4x.</description>
+    </item>
+    
+    <item>
       <title>三角形</title>
       <link>/docs/prerequisite/ms-geometry/triangle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -85,6 +328,33 @@
 以下均设在 $\triangle ABC$ 中, $\angle A$, $\angle B$, $\angle C$ 所对的边分别为 $a$, $b$, $c$.
 两个约束条件 # 利用平行线的性质可以证明, $\triangle ABC$ 的内角和为 $180^\circ$, 即 \[\angle A+ \angle B+\angle C= 180^\circ.\] 这是关于角的约束条件. 有时也省略角的符号“$\angle$”而将上述结论写成 $A+B+C=180^\circ$. 推广可知, 如下图所示, $n$ 边形的内角和为 $(n-2)\cdot 180^\circ$, 由此可以计算正 $n$ 边形的各内角大小. $n$ 边形的外角和为 $360^\circ$ (与 $n$ 无关). 注意, 同一顶点处的两个外角相等, 求和时只取其中一个. 此外, 三角形内角和为 $180^\circ$ 的一个推论是: 三角形的外角等于不相邻的两个内角之和, 因此大于不相邻的任一内角.
 利用“两点之间线段最短”可以说明, 三角形的任意两边之和大于第三边, 即 (只列其一) \[a+b&amp;gt;c,\quad\text{或}\quad a&amp;gt;b-c,\] 因此任意两边之差小于第三边.</description>
+    </item>
+    
+    <item>
+      <title>双曲线</title>
+      <link>/docs/analytic-geometry/conic-curves/hyperbola/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/analytic-geometry/conic-curves/hyperbola/</guid>
+      <description> 双曲线 # </description>
+    </item>
+    
+    <item>
+      <title>线、面平行</title>
+      <link>/docs/solid-geometry/line-plane-space-vector/line-plane-parallel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solid-geometry/line-plane-space-vector/line-plane-parallel/</guid>
+      <description> 线、面平行 # </description>
+    </item>
+    
+    <item>
+      <title>线面平行</title>
+      <link>/docs/solid-geometry/line-plane/line-plane-parallel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solid-geometry/line-plane/line-plane-parallel/</guid>
+      <description> 线面平行 # </description>
     </item>
     
     <item>
@@ -115,6 +385,114 @@
     </item>
     
     <item>
+      <title>余弦定理</title>
+      <link>/docs/trigonometry/sine-cosine-law/cosine-law/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/trigonometry/sine-cosine-law/cosine-law/</guid>
+      <description> 余弦定理 # </description>
+    </item>
+    
+    <item>
+      <title>圆与直线的位置关系</title>
+      <link>/docs/analytic-geometry/circle/circle-line/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/analytic-geometry/circle/circle-line/</guid>
+      <description> 圆与直线的位置关系 # </description>
+    </item>
+    
+    <item>
+      <title>正态分布</title>
+      <link>/docs/probability-statistics/probability-distribution/normal-distribution/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/probability-statistics/probability-distribution/normal-distribution/</guid>
+      <description> 正态分布 # </description>
+    </item>
+    
+    <item>
+      <title>直方图</title>
+      <link>/docs/probability-statistics/statistics/histogram/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/probability-statistics/statistics/histogram/</guid>
+      <description> 直方图 # </description>
+    </item>
+    
+    <item>
+      <title>直线的方程</title>
+      <link>/docs/analytic-geometry/line/line-equation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/analytic-geometry/line/line-equation/</guid>
+      <description> 直线的方程 # </description>
+    </item>
+    
+    <item>
+      <title>指数函数</title>
+      <link>/docs/algebra/pow-exp-log/exponent-function/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/pow-exp-log/exponent-function/</guid>
+      <description>指数函数 # \begin{example}\label{exa:201201-2020} 已知函数 \[f(x)= \begin{cases} (4a-3)x+a+\dfrac12, &amp; x&lt; 0,\\ a^x, &amp; x\geqslant 0. \end{cases}\] (1) 若函数的图形经过点 $\biggl(3,\dfrac18\biggr)$, 求 $a$ 的值. (2) 若对任意的 $x_1\neq x_2$, 都有 $\dfrac{f(x_1)-f(x_2)}{x_1-x_2}&lt; 0$ 成立, 求 $a$ 的取值范围. (1) 由题意, $f(3)= \dfrac18$ 即 $a^3=\dfrac18$, 所以 $a=\dfrac12$. (2) $\dfrac{f(x_1)-f(x_2)}{x_1-x_2}&lt; 0$ 表明 $x_1$, $x_2$ 的大小关系与 $f(x_1)$, $f(x_2)$ 的大小关系恰好反过来 (即若 $x_1&lt; x_2$, 则 $f(x_1)&gt;f(x_2)$), 也就是 $f(x)$ 单调递减. 再由 $f(x)$ 的解析式知 (参考“2020 年 10 月 31 日答疑记录”的第三个例子) \[\left\{\!\!\begin{array}{l} 4a-3&lt; 0,\ 0&lt; a&lt; 1,\\ a+\dfrac12\geqslant a^0, \end{array}\right.</description>
+    </item>
+    
+    <item>
+      <title>锥和柱的表面积与体积</title>
+      <link>/docs/solid-geometry/solid/pyramid-pillar-area-volume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solid-geometry/solid/pyramid-pillar-area-volume/</guid>
+      <description> 锥和柱的表面积与体积 # </description>
+    </item>
+    
+    <item>
+      <title>组合</title>
+      <link>/docs/probability-statistics/permutation-combination/combination/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/probability-statistics/permutation-combination/combination/</guid>
+      <description> 组合 # </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/docs/probability-statistics/statistics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/probability-statistics/statistics/</guid>
+      <description> # </description>
+    </item>
+    
+    <item>
+      <title>导数的运算法则</title>
+      <link>/docs/derivative/derivative/derivative-laws/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/derivative/derivative/derivative-laws/</guid>
+      <description> 导数的运算法则 # </description>
+    </item>
+    
+    <item>
+      <title>等比数列</title>
+      <link>/docs/algebra/sequence/common-ratio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/sequence/common-ratio/</guid>
+      <description> 等比数列 # </description>
+    </item>
+    
+    <item>
+      <title>对数运算</title>
+      <link>/docs/algebra/pow-exp-log/logarithm-calculation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/pow-exp-log/logarithm-calculation/</guid>
+      <description>对数运算 # 对数的主要运算法则如下 (以下均设底数 $a\in(0,1)\cup(1,+\infty)$, 真数 $x$, $y&gt;0$): \[\begin{gathered} a^x=y\Leftrightarrow x=\log_a y,\quad \text{由此可得}\ a^{\log_a y}= y,\ x= \log_a a^x,\\ \log_a x+ \log_a y= \log_a xy,\quad \log_a x- \log_a y= \log_a \dfrac{x}y,\\ \frac{\log_a x}{\log_a y}= \log_y x\ (\text{换底公式}),\quad \log_a x^\beta= \beta\log_a x\ (\beta\in\realnum). \end{gathered}\] 以上公式均可以逆用, 如 \[\log_2 6= \log_2 2+\log_2 3= 1+\log_2 3.\] 此外还应注意恒等式 $\log_a a=1$ 和 $\log_a 1= 0$ (均由对数定义可得). 有两个取特殊底的对数是常用的: $\log_{10} x$ 记为 $\lg x$ (\myindex{常用对数}{常用对数}), $\log_{\mathrm{e}} x$ 记为 $\ln x$ (\myindex{自然对数}{自然对数}), 其中 $\mathrm{e}= 2.</description>
+    </item>
+    
+    <item>
       <title>二次函数与二次不等式</title>
       <link>/docs/prerequisite/ms-function/quadratic-function-inequality/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -127,12 +505,48 @@
     </item>
     
     <item>
+      <title>二项式定理</title>
+      <link>/docs/probability-statistics/permutation-combination/binomial-theorem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/probability-statistics/permutation-combination/binomial-theorem/</guid>
+      <description> 二项式定理 # </description>
+    </item>
+    
+    <item>
+      <title>函数的奇偶性</title>
+      <link>/docs/algebra/function/function-oddeven/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/function/function-oddeven/</guid>
+      <description>函数的奇偶性 # \subsection{二次函数的图象} 已知二次函数 $y=ax^2+bx+10$ 当 $x=3$ 时的函数值与当 $x=2017$ 时的函数值相等, 求当 $x=2020$ 时的函数值. 由题意, 函数图象的对称轴 $x=-\dfrac{b}{2a}=\dfrac{3+2017}2=2010$. 方法一: 上式化为 $b=-2020a$, 所以当 $x=2020$ 时, \[\begin{aligned} y&amp;= a\cdot 2020^2+b\cdot 2020+10\\ &amp;= a\cdot 2020^2-2020a\cdot 2020+10 = 10.\end{aligned}\] 方法二: 画草图易知, 点 $x=2020$ 关于对称轴 $x=1010$ 的对称点为 $x=0$, 此时函数值为 二次函数的常数项, 即 $0$. 已知抛物线 $y=(x-c)(x-d)-4$ 与 $x$ 轴的交点为 $(6,0)$ 和 $(1,0)$, 求 $c$, $d$ 的值. 方法一: 由已知可直接写出抛物线的两根式为 \[y=(x-6)(x-1),\] 所以 \[(x-c)(x-d)-4=(x-6)(x-1)\] 即 \[(x-c)(x-d)= x^2-7x+10=(x-2)(x-5),\] 所以 $c=2$, $d=5$ 或 $c=5$, $d=2$.</description>
+    </item>
+    
+    <item>
+      <title>极限的运算</title>
+      <link>/docs/derivative/limit/limit-rules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/derivative/limit/limit-rules/</guid>
+      <description> 极限的运算 # </description>
+    </item>
+    
+    <item>
+      <title>解三角形</title>
+      <link>/docs/trigonometry/sine-cosine-law/solving-triangles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/trigonometry/sine-cosine-law/solving-triangles/</guid>
+      <description> 解三角形 # </description>
+    </item>
+    
+    <item>
       <title>均值不等式</title>
       <link>/docs/prerequisite/inequality/mean-value-inequality/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/prerequisite/inequality/mean-value-inequality/</guid>
-      <description> 均值不等式 # </description>
+      <description>均值不等式 # 对于任意 $x$, $y\in\realnum$, 恒有 $(x-y)^2\geqslant 0$, 展开后移项得\[x^2+y^2\geqslant 2xy\quad\text{即}\quad \frac{x^2+y^2}2\geqslant xy.\]不等式中等号成立的条件是 $x=y$, 也记为:“$=$”成立当且仅当 $x=y$. 把上面两个式子中的 $x$ 和 $y$ 分别换成 $\sqrt{x}$ 和 $\sqrt{y}$ (此时必须限制 $x$, $y\geqslant 0$), 可知\[x+y\geqslant 2\sqrt{xy}\quad\text{即}\quad \frac{x+y}2\geqslant \sqrt{xy}.\]因为 $\dfrac{x+y}2$ 与 $\sqrt{xy}$ 分别叫做非负实数 $x$ 与 $y$ 的\myindex{算术平均值}{算术平均值}与\myindex{几何平均值}{几何平均值}, 所以上面最后一个不等式也称为\myindex{均值不等式}{均值不等式}, 即\[\text{均值不等式:}\ \frac{x+y}2\geqslant \sqrt{xy},\quad x,y\geqslant 0.\]以上不等式均为常用不等式, 且都可以互相推出.利用均值不等式 (或其等价形式) 可以很方便地求特殊形式的式子的最大 (小) 值. 例如, 若 $x&gt;0$, 则 \[x+\dfrac1x\geqslant 2\sqrt{x\cdot\dfrac1x}=2,\]“$=$”成立当且仅当 $x=\dfrac1x$ 即 $x=1$. 一般的, 可得如下结论 (均设 $x$, $y\geqslant 0$):(1) 若 $xy=L$ 为定值, 则 \[x+y\geqslant 2\sqrt{xy}=2\sqrt{L},\] 所以 $x+y$ 的最小值为 $2\sqrt{L}$,“$=$”成立当且仅当 $x=y=\sqrt{L}$;(2) 若 $x+y=M$ 为定值, 则 \[\sqrt{xy}\leqslant \frac{x+y}2=\frac{M}2\quad\text{即}\quadxy\leqslant \biggl(\frac{M}2\biggr)^2= \frac{M^2}4,\]所以 $xy$ 的最大值为 $\dfrac{M^2}4$,“$=$”成立当且仅当 $x=y=\dfrac{M}2$.</description>
     </item>
     
     <item>
@@ -143,6 +557,24 @@
       <guid>/docs/prerequisite/set-logic/proposition-iff/</guid>
       <description>命题与充要条件 # 可以判断真假 (成立与否) 的陈述句称为命题 (proposition). 一些命题描述的是两个条件的因果关系, 这种因果关系也称为条件的充分性或必要性.
 命题的真假 # 判断为真的命题称为真命题, 判断为假的命题称为假命题. 例如, 下面是三个命题的真假性: 命题 $P$: $1+2+3+\cdots +10= 55$ (真命题); 命题 $Q$: 若 $x&gt;1$, 则 $-x&lt;-1$ (真命题); 命题 $R$: 对所有的 $x\in\mathbf{R}$, $x^2-1&gt;0$ (假命题). 如果命题可以写成“若 $p$, 则 $q$”的形式, 则将条件 $p$ 称为前提, 条件 $q$ 称为结论. 有时将这种命题简记为 $p\Rightarrow q$, 并称由条件 $p$ 可得条件 $q$. 上述命题 $Q$ 的前提是 $x&gt;1$, 结论是 $-x&lt;-1$, 且可以改写成 \[ x&gt;1\Rightarrow -x&lt;-1.\] 命题 $P$ 和命题 $R$ 则不便于改写成“若 $p$, 则 $q$”的形式. 有些命题在改写成“若 $p$, 则 $q$”的形式时, 还需额外写出讨论范围.</description>
+    </item>
+    
+    <item>
+      <title>抛物线</title>
+      <link>/docs/analytic-geometry/conic-curves/parabola/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/analytic-geometry/conic-curves/parabola/</guid>
+      <description> 抛物线 # </description>
+    </item>
+    
+    <item>
+      <title>三角函数的和差角公式</title>
+      <link>/docs/trigonometry/trigonometric-function/trig-sum-diff/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/trigonometry/trigonometric-function/trig-sum-diff/</guid>
+      <description> 三角函数的和差角公式 # </description>
     </item>
     
     <item>
@@ -159,6 +591,15 @@ $AB= CD$, $AD= BC$, 即两组对边分别相等 $AO=OC$, $BO=OD$, 即对角线�
     </item>
     
     <item>
+      <title>条件概率</title>
+      <link>/docs/probability-statistics/probability/conditional-probability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/probability-statistics/probability/conditional-probability/</guid>
+      <description> 条件概率 # </description>
+    </item>
+    
+    <item>
       <title>韦达定理</title>
       <link>/docs/prerequisite/ms-algebra/veite-theorem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -167,6 +608,78 @@ $AB= CD$, $AD= BC$, 即两组对边分别相等 $AO=OC$, $BO=OD$, 即对角线�
       <description>韦达定理 # 设关于 $x$ 的一元二次方程 \[ax^2+bx+c=0\quad (a\neq0)\] 的两根为 $x_1$, $x_2$, 则由因式分解知识可知, 该方程必可变形为 \[(x-x_1)(x-x_2)=0.\] 将前者改写为 \[x^2+ \frac{b}a x+ \frac{c}{a}=0,\] 并将后者展开, \[x^2- (x_1+x_2)x+ x_1x_2=0,\] 对比可知 \[\left\{\!\!\begin{array}{l} x_1+x_2= -\dfrac{b}a,\\ x_1x_2= \dfrac{c}a, \end{array}\right.\] 上述结论称为韦达 (Veite, 法国数学家) 定理, 也称为根与系数的关系定理.
 利用上面的方法可以得到一元三次方程的韦达定理 (根与系数的关系). 例如, 关于 $x$ 的三次方程 \[ ax^3+bx^2+cx+d=0\quad (a\neq 0)\] 的三根为 $x_1$, $x_2$, $x_3$, 等价于该方程必可变形为 \[ (x-x_1)(x-x_2)(x-x_3)=0,\] 再展开后与原方程对比系数, 可知 \[ \left\{\!\!\begin{array}{l} x_1+x_2+x_3= -\dfrac{b}a,\\[6pt] x_1x_2+ x_2x_3+ x_3x_1= \dfrac{c}a,\\[6pt] x_1x_2x_3= -\dfrac{d}a. \end{array}\right.\] 更一般的一元 $n$ 次方程的韦达定理也可以同理得出.
 也可以直接用 求根公式 来验证韦达定理: 由 \[ x_{1,2}= \frac{-b\pm\sqrt{b^2-4ac}}{2a}\] 直接计算可得结论.</description>
+    </item>
+    
+    <item>
+      <title>线、面垂直</title>
+      <link>/docs/solid-geometry/line-plane-space-vector/line-plane-perp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solid-geometry/line-plane-space-vector/line-plane-perp/</guid>
+      <description> 线、面垂直 # </description>
+    </item>
+    
+    <item>
+      <title>线面垂直</title>
+      <link>/docs/solid-geometry/line-plane/line-plane-perp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solid-geometry/line-plane/line-plane-perp/</guid>
+      <description> 线面垂直 # </description>
+    </item>
+    
+    <item>
+      <title>向量的内积</title>
+      <link>/docs/trigonometry/vector/dot-product/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/trigonometry/vector/dot-product/</guid>
+      <description> 向量的内积 # </description>
+    </item>
+    
+    <item>
+      <title>圆与圆的位置关系</title>
+      <link>/docs/analytic-geometry/circle/circle-circle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/analytic-geometry/circle/circle-circle/</guid>
+      <description> 圆与圆的位置关系 # </description>
+    </item>
+    
+    <item>
+      <title>直线的平行与垂直</title>
+      <link>/docs/analytic-geometry/line/line-parallel-perp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/analytic-geometry/line/line-parallel-perp/</guid>
+      <description> 直线的平行与垂直 # </description>
+    </item>
+    
+    <item>
+      <title>倍角公式与辅助角公式</title>
+      <link>/docs/trigonometry/trigonometric-function/trig-double-auxiliary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/trigonometry/trigonometric-function/trig-double-auxiliary/</guid>
+      <description> 倍角公式与辅助角公式 # </description>
+    </item>
+    
+    <item>
+      <title>对数函数</title>
+      <link>/docs/algebra/pow-exp-log/logarithm-function/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/pow-exp-log/logarithm-function/</guid>
+      <description>对数函数 # 若函数 $y=\log_a x$ ($a&gt;0$ 且 $a\neq 1$) 的图形过点 $(3,1)$, 求 $\log_2 3 \cdot f(8)$ 的值. 将 $(3,1)$ 代入 $y=\log_a x$ 得 $1= \log_a 3$, 所以 $a=3$, \[\log_2 3 \cdot f(8)= \log_2 3\cdot \log_3 8 = \frac{\ln 3}{\ln 2}\cdot\frac{\ln 8}{\ln 3} = \frac{3\ln 2}{\ln 2}= 3.\] 设 $a= 2^{-\frac13}$, $b=\log_2\dfrac13$, $c= \log_{\frac12}\dfrac13$, 比较这三者的大小. 分别考虑函数 $f(x)= 2^x$, $g(x)= \log_2 x$, $h(x)= \log_{\frac12} x$ 的单调性, 可知 \[\begin{gathered} a= f\biggl(-\dfrac13\biggr)\in (0,1),\quad b= g\biggl(\dfrac13\biggr)\in (-\infty,0),\\ c= h\biggl(\dfrac13\biggr)\in (1,+\infty), \end{gathered}\] 所以 $b&lt; a&lt; c$.</description>
+    </item>
+    
+    <item>
+      <title>函数的图象</title>
+      <link>/docs/algebra/function/function-graph/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/function/function-graph/</guid>
+      <description>函数的图象 # \subsection{二次方程根的分布 (选学)} 若方程 $2(m+1)x^2+4mx+3m-2=0$ 有两个负实根, 求实数 $m$ 的取值范围. 由题意, 已知的方程为二次方程, 即 $2(m+1)\neq 0$. 设方程的两根为 $x_1$, $x_2$, 则这两个根均为负数的充要条件是 \[\left\{\!\!\begin{array}{l} x_1+x_2=-\dfrac{4m}{2(m+1)}&lt; 0,\\ x_1x_2=\dfrac{3m-2}{2(m+1)}&gt;0, \end{array}\right.\quad\text{解得}\quad m&lt; -1\ \text{或}\ m&gt;\frac23,\] 所求的 $m$ 的取值范围是 $(-\infty,-1)\cup\biggl(\dfrac23,+\infty\biggr)$. 设关于 $x$ 的二次方程 $Ax^2+Bx+C=0$ ($A\neq0$) 的两根为 $x_1$, $x_2$, 则有以下结论 (为什么?): (1) 两根为正的充要条件是 \[\left\{\!\!\begin{array}{l} x_1+x_2&gt;0,\\ x_1x_2&gt;0, \end{array}\right.\quad\text{即}\quad \left\{\!\!\begin{array}{l} -\dfrac{B}A&gt;0,\\ \dfrac{C}A&gt;0; \end{array}\right.\] (2) 两根为负的充要条件是 \[\left\{\!\!\begin{array}{l} x_1+x_2&lt; 0,\\ x_1x_2&gt;0, \end{array}\right.\quad\text{即}\quad \left\{\!\!\begin{array}{l} -\dfrac{B}A&lt; 0,\\ \dfrac{C}A&gt;0; \end{array}\right.\] (3) 两根一正一负的充要条件是 \[x_1x_2&lt; 0\quad\text{即}\quad\frac{C}A&lt; 0.\] \begin{example}\label{201109-2120} 已知函数 $f(x)= 4x^2-kx-8$ 在 $[5,20]$ 上单调变化, 求实数 $k$ 的取值范围.</description>
     </item>
     
     <item>
@@ -184,6 +697,24 @@ $AB= CD$, $AD= BC$, 即两组对边分别相等 $AO=OC$, $BO=OD$, 即对角线�
     </item>
     
     <item>
+      <title>空间向量</title>
+      <link>/docs/trigonometry/vector/space-vector/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/trigonometry/vector/space-vector/</guid>
+      <description> 空间向量 # </description>
+    </item>
+    
+    <item>
+      <title>利用导数求函数的单调性与最值</title>
+      <link>/docs/derivative/derivative/monotone-max-min/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/derivative/derivative/monotone-max-min/</guid>
+      <description> 利用导数求函数的单调性与最值 # </description>
+    </item>
+    
+    <item>
       <title>逻辑量词</title>
       <link>/docs/prerequisite/set-logic/logical-quantifier/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -191,6 +722,42 @@ $AB= CD$, $AD= BC$, 即两组对边分别相等 $AO=OC$, $BO=OD$, 即对角线�
       <guid>/docs/prerequisite/set-logic/logical-quantifier/</guid>
       <description>逻辑量词 # 除了有能写成“若 $p$, 则 $q$”形式的命题, 还有能写成“对所有 $x\in M$, $p(x)$ 成立”或“存在 $x\in M$, $p(x)$ 成立”形式的命题, 其中 $p(x)$ 是与 $x$ 有关的条件. 后一种形式命题中的“所有”是全称量词, “存在”是存在量词, 两者统称为逻辑量词, 分别协助限定了条件 $p(x)$ 成立的范围. 为了简化叙述, 将全称量词“所有”(for all) 简记为符号“$\forall$”, 存在量词“存在”(exists) 简记为符号“$\exists$”. 前面的两种命题可以进一步简化为 \[ \forall\, x\in M, p(x);\quad \exists\, x\in M, p(x).\] 从逻辑量词的形状可以看出, “$\forall$”可由字母 A 上下翻转得到, “$\exists$”可由字母 E 左右翻转得到. 全称量词“所有”有时也写成“任意”“每一个”“任给”等, 存在量词“存在”有时也写成“有些”“至少有一个”等.
 若命题“$\exists\, x_0\in \mathbf{R}$, $x_0^2+ 2ax_0+2-a=0$”是真命题, 求实数 $a$ 的取值范围. 已知表明, 二次方程 $x^2+ 2ax+2-a=0$ 有实根 $x_0$, 则 \[ \Delta= (2a)^2-4(2-a)\geqslant 0,\] 解得 $a\in(-\infty,-2]\cup[1,+\infty)$.</description>
+    </item>
+    
+    <item>
+      <title>面面平行</title>
+      <link>/docs/solid-geometry/line-plane/plane-parallel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solid-geometry/line-plane/plane-parallel/</guid>
+      <description> 面面平行 # </description>
+    </item>
+    
+    <item>
+      <title>期望与方差</title>
+      <link>/docs/probability-statistics/probability/expectation-variation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/probability-statistics/probability/expectation-variation/</guid>
+      <description> 期望与方差 # </description>
+    </item>
+    
+    <item>
+      <title>数列的应用</title>
+      <link>/docs/algebra/sequence/sequence-application/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/sequence/sequence-application/</guid>
+      <description> 数列的应用 # </description>
+    </item>
+    
+    <item>
+      <title>线、面夹角</title>
+      <link>/docs/solid-geometry/line-plane-space-vector/line-plane-angle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solid-geometry/line-plane-space-vector/line-plane-angle/</guid>
+      <description> 线、面夹角 # </description>
     </item>
     
     <item>
@@ -205,6 +772,42 @@ $AB= CD$, $AD= BC$, 即两组对边分别相等 $AO=OC$, $BO=OD$, 即对角线�
     </item>
     
     <item>
+      <title>圆锥曲线综合</title>
+      <link>/docs/analytic-geometry/conic-curves/conic-curves-line/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/analytic-geometry/conic-curves/conic-curves-line/</guid>
+      <description> 圆锥曲线综合 # </description>
+    </item>
+    
+    <item>
+      <title>反函数</title>
+      <link>/docs/algebra/pow-exp-log/composite-inverse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/pow-exp-log/composite-inverse/</guid>
+      <description>复合函数与反函数 # 本次答疑主要讲解复合函数的值域和单调区间的求法. 函数 $f(x)$ 和 $g(x)$ 可以复合成函数 $f(g(x))$, $g(f(x))$, $f(f(x))$ 等, 也可以复合成函数 $f(g(f(x)))$, $g(g(f(x)))$, $g(g(g(g(x))))$ %(此时一般记为 $g\circ g\circ g\circ g(x)$) 等. 例如, 若 $f(x)=x^2$, $g(x)=x+1$, 则 \[\begin{gathered} f(g(x))= (x+1)^2,\quad g(f(x))= x^2+1,\\ f(f(x))= (x^2)^2= x^4,\quad g(g(x))= (x+1)+1= x+2. \end{gathered}\] “复合函数”可以简单理解为“函数套函数”. 有时为了理解方便起见, 对函数 $y=f(g(x))$, 可设 $u=g(x)$ 而将其表示为 $y=f(u)$, 即借助中间变量 $u$ 表示为较简单的形式. 例如, \[\begin{aligned} y=\sqrt{x^2-2x-3}&amp;\colon y=f(u)=\sqrt{u},\ u=g(x)= x^2-2x-3;\\ y=\log_{\frac13} (-x^2-2x+8)&amp;\colon y=f(u)=\log_{\frac13}{u},\ u=g(x)= -x^2-2x+8;\\ y=\frac1{x^2-3x}&amp;\colon y=f(u)=\frac1{u},\ u=g(x)= x^2-3x;\\ y=3^{|x|}&amp;\colon y=f(u)=3^{u},\ u=g(x)= |x|. \end{aligned}\] 这时我们可称 $g(x)$ 为“里层函数”, 而 $f(u)$ 为“外层函数”.</description>
+    </item>
+    
+    <item>
+      <title>和差化积公式与积化和差公式</title>
+      <link>/docs/trigonometry/trigonometric-function/trig-sum-prod/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/trigonometry/trigonometric-function/trig-sum-prod/</guid>
+      <description> 和差化积公式与积化和差公式 # </description>
+    </item>
+    
+    <item>
+      <title>面面垂直</title>
+      <link>/docs/solid-geometry/line-plane/plane-perp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solid-geometry/line-plane/plane-perp/</guid>
+      <description> 面面垂直 # </description>
+    </item>
+    
+    <item>
       <title>平面图形的面积</title>
       <link>/docs/prerequisite/ms-geometry/area/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -214,6 +817,51 @@ $AB= CD$, $AD= BC$, 即两组对边分别相等 $AO=OC$, $BO=OD$, 即对角线�
 四边形的面积 # 从切割图形的角度来看, 正方形的面积为边长的平方, 即边长为 $a$ 的正方形的面积为 $a^2$. 例如, 边长为 $2$ 的正方形可以切割为 $2^2= 4$ 个单位正方形. 长为 $a$、宽为 $b$ 的矩形可以分解为多个正方形之和, 所以其面积为 $ab$ (长乘宽).
 底为 $a$、高为 $h$ 的平行四边形可以用割补法拼接为矩形, 故面积为 $ah$ (底乘高). 底为 $a$, $b$, 高为 $h$ 的梯形也可以拼接为平行四边形 (或矩形), 面积为 $\dfrac12(a+b)h$ (两底之和乘高的一半).
 三角形的面积 # 底为 $a$、高为 $h$ 的三角形可以补成平行四边形, 面积为 $\dfrac12 ah$ (底乘高的一半).</description>
+    </item>
+    
+    <item>
+      <title>特殊通项公式的求法</title>
+      <link>/docs/algebra/sequence/general-term-fomula/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/sequence/general-term-fomula/</guid>
+      <description> 特殊通项公式的求法 # </description>
+    </item>
+    
+    <item>
+      <title>二次函数</title>
+      <link>/docs/algebra/function/quadratic-function/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/function/quadratic-function/</guid>
+      <description>二次函数 # 如图所示, 已知边长为 $8$ 米的正方形钢板有一个角被锈蚀, 其中 $AE=4$ 米, $CD=6$ 米. 为了合理利用这块钢板, 将在五边形 $ABCDE$ 内截取一个矩形 $BNPM$, 使点 $P$ 在边 $DE$ 上. (1) 设 $MP=x$ 米, $PN=y$ 米, 将 $y$ 表示成 $x$ 的函数, 并求其定义域; (2) 求矩形 $BNPM$ 面积 $S$ 的取值范围. \includegraphics[scale=1]{2020-1206-1240-crop} (1) 由题意, $\triangle DHP\backsim \triangle DEF$, 所以 \[\frac{DH}{HP}= \frac{DF}{FE},\quad\text{即}\quad \frac{y-6}{8-x}= \frac{2}{4}.\] 整理得, $y=\dfrac{20-x}2$, 且由图可知 $x\in[4,8]$. (2) 由 (1) 得, \[S= xy= \frac12 x(20-x)\quad (\text{平方米}),\] 且在 $[4,8]$ 上单调递增, 所以 $S\in[16,24]$ (平方米).</description>
+    </item>
+    
+    <item>
+      <title>利用函数图象研究方程</title>
+      <link>/docs/algebra/pow-exp-log/function-equation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/pow-exp-log/function-equation/</guid>
+      <description>利用函数图象研究方程 # 求方程的根可以转化为求对应函数图形交点的横坐标, 或求对应函数的零点. 一般有如下两种转化方法: \[\begin{aligned} f(x)=0\text{\ 的根}&amp;\Leftrightarrow \text{$f(x)$ 的图形与 $x$ 轴交点的横坐标};\\ f(x)+g(x)=0\text{\ 的根}&amp;\Leftrightarrow \text{$f(x)$ 与 $-g(x)$ 的图形交点的横坐标}. \end{aligned}\] 前一种方法可视为后一种方法的特例, 而两种方法在使用时都需要考虑函数的单调性. 此外还有 (画图更容易理解) 零点存在性定理: 若 $f(x)$ 在 $[a,b]$ 上连续, 且 $f(a)f(b)&lt; 0$, 则 $f(x)$ 在 $(a,b)$ 上至少有一根. \begin{example}\label{exa:201217-1900} 已知函数 $f(x)= \begin{cases} \dfrac2x, &amp; x\geqslant 2,\\ x^2-3, &amp; x&lt; 2, \end{cases}$ 若关于 $x$ 的方程 $f(x)=k$ 有三个不等的实根, 求 $k$ 的取值范围. 此题应考虑函数 $y=f(x)$ 与 $y=k$ 的图形的交点恰有三个的情形. 画出两者的图形示意图, 容易知道 $k\in(0,1)$. \includegraphics[scale=1]{2020-1214-1900-crop} \begin{example}\label{exa:201214-1905} 求函数 $f(x)=x^2-\log_{\frac12} x$ 的零点个数.</description>
+    </item>
+    
+    <item>
+      <title>三角函数图象</title>
+      <link>/docs/trigonometry/trigonometric-function/trig-function-graph/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/trigonometry/trigonometric-function/trig-function-graph/</guid>
+      <description>三角函数图象 # 根据三角函数线可以分别描点画图，从而作出正弦函数 $y=\sin x$ 和余弦函数 $y=\cos x$ 的图形. 具体做法如下: (1) 由正弦线和余弦线可知, 正、余弦值的最小正周期为 $2\pi$, 且在 $[0,2\pi]$ (一个周期) 内的取值为 {\extrarowheight=7pt\small \begin{tabular}{c|ccccccccc} $x$ &amp; $0$ &amp; $\dfrac\pi6$ &amp; $\dfrac\pi4$ &amp; $\dfrac\pi3$ &amp; $\dfrac\pi2$ &amp; $\dfrac{2\pi}3$ &amp; $\dfrac{3\pi}4$ &amp; $\dfrac{5\pi}6$ &amp; $\pi$ \\ $y=\sin x$ &amp; $0$ &amp; $\dfrac12$ &amp; $\dfrac{\sqrt2}2$ &amp; $\dfrac{\sqrt3}2$ &amp; $1$ &amp; $\dfrac{\sqrt3}2$ &amp; $\dfrac{\sqrt2}2$ &amp; $\dfrac12$ &amp; $0$\\ $x$ &amp; &amp; $\dfrac{7\pi}6$ &amp; $\dfrac{5\pi}4$ &amp; $\dfrac{4\pi}3$ &amp; $\dfrac{3\pi}2$ &amp; $\dfrac{5\pi}3$ &amp; $\dfrac{7\pi}4$ &amp; $\dfrac{11\pi}6$ &amp; $2\pi$\\ $y=\sin x$ &amp; &amp; $-\dfrac12$ &amp; $-\dfrac{\sqrt2}2$ &amp; $-\dfrac{\sqrt3}2$ &amp; $-1$ &amp; $-\dfrac{\sqrt3}2$ &amp; $-\dfrac{\sqrt2}2$ &amp; $-\dfrac12$ &amp; $0$ \end{tabular} \begin{tabular}{c|ccccccccc} $x$ &amp; $0$ &amp; $\dfrac\pi6$ &amp; $\dfrac\pi4$ &amp; $\dfrac\pi3$ &amp; $\dfrac\pi2$ &amp; $\dfrac{2\pi}3$ &amp; $\dfrac{3\pi}4$ &amp; $\dfrac{5\pi}6$ &amp; $\pi$ \\ $y=\cos x$ &amp; $1$ &amp; $\dfrac{\sqrt3}2$ &amp; $\dfrac{\sqrt2}2$ &amp; $\dfrac12$ &amp; $0$ &amp; $-\dfrac12$ &amp; $-\dfrac{\sqrt2}2$ &amp; $-\dfrac{\sqrt3}2$ &amp; $-1$\\ $x$ &amp; &amp; $\dfrac{7\pi}6$ &amp; $\dfrac{5\pi}4$ &amp; $\dfrac{4\pi}3$ &amp; $\dfrac{3\pi}2$ &amp; $\dfrac{5\pi}3$ &amp; $\dfrac{7\pi}4$ &amp; $\dfrac{11\pi}6$ &amp; $2\pi$\\ $y=\cos x$ &amp; &amp; $-\dfrac{\sqrt3}2$ &amp; $-\dfrac{\sqrt2}2$ &amp; $-\dfrac12$ &amp; $0$ &amp; $\dfrac12$ &amp; $\dfrac{\sqrt2}2$ &amp; $\dfrac{\sqrt3}2$ &amp; $1$ \end{tabular} } (2) 由此可以画出 $y=\sin x$ 和 $y=\cos x$ 的图形, 即 \small \begin{tikzpicture}[scale=0.</description>
+    </item>
+    
+    <item>
+      <title>数学归纳法</title>
+      <link>/docs/algebra/sequence/mathematical-induction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/sequence/mathematical-induction/</guid>
+      <description> 数学归纳法 # </description>
     </item>
     
   </channel>

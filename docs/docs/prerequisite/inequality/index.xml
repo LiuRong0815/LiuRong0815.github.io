@@ -11,7 +11,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/prerequisite/inequality/inequality-property/</guid>
-      <description> 不等式的性质 # </description>
+      <description>不等式的性质 # \subsection{绝对值的几何意义}实数 $a$ 的绝对值定义为\[|a|=\begin{cases}a, &amp; a&gt;0,\\0, &amp; a=0,\\-a, &amp; a&lt; 0\end{cases}= \begin{cases}a, &amp; a\geqslant 0,\\-a, &amp; a&lt; 0,\end{cases}\]其几何意义为数轴上坐标为 $a$ 的点到原点的距离. 进而可以知道, 数轴上两点 $x_1$, $x_2$ 之间的距离为 $|x_1-x_2|$, 如下图所示.\includegraphics[scale=1]{2020-1009-2110-crop}\qquad\includegraphics[scale=1]{2020-1009-2120-crop}例如, $|x-1|$ 表示点 $x$ 到 $1$ 的距离; $|x+2|=|x-(-2)|$ 表示点 $x$ 到 $-2$ 的距离; $|2x-2|= 2|x-1|$ 表示点 $x$ 到 $1$ 的距离的 $2$ 倍; $|4+2x|= 2|x-(-2)|$ 表示点 $x$ 到 $-2$ 的距离的 $2$ 倍.</description>
     </item>
     
     <item>
@@ -20,7 +20,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/prerequisite/inequality/fraction-high-order-inequality/</guid>
-      <description> 分式不等式与高次不等式 # </description>
+      <description>分式不等式与高次不等式 # \subsection{简单的分式不等式的解法}关于 $x$ 的形如 $\dfrac{Ax+B}{Cx+D}&gt;(\geqslant)\,0$ 的分式不等式, 可以利用分子和分母的正负号关系转化为二次不等式来解. 具体地,\begin{align}\label{eq-201009-1907}\frac{Ax+B}{Cx+D}&gt;0 &amp; \Leftrightarrow (Ax+B)(Cx+D)&gt;0,\\\label{eq-201009-1917}\frac{Ax+B}{Cx+D}\geqslant 0 &amp; \Leftrightarrow \left\{\!\!\begin{array}{l}(Ax+B)(Cx+D)\geqslant 0,\\Cx+D\neq 0.\end{array}\right.\end{align}\eqref{eq-201009-1907} 式中右边不用限制分母非零, 因为乘积非零隐含两个因子均非零; 而 \eqref{eq-201009-1917} 式中右边必须限制分母非零, 因为乘积为零隐含两个因子均可能为零. 解下列不等式:\begin{twocolpro}(1) $\dfrac{x-2}{x-5}&gt;0$; &amp; (2) $\dfrac{x-2}{x-5}\geqslant 0$.\end{twocolpro}(1) 原不等式等价于 $(x-2)(x-5)&gt;0$, 所以 $x\in (-\infty,2)\cup (5,+\infty)$.(2) 原不等式等价于\[\left\{\!\!\begin{array}{l}(x-2)(x-5)\geqslant 0,\\x-5\neq 0,\end{array}\right. \text{解得}\ x\in (-\infty,2]\cup (5,+\infty).\]解二次不等式时, 需要考虑对应抛物线的图象, 尤其应注意开口方向. 也可以先将不等式各因子化为最高次项系数为正的形式, 然后再根据抛物线的图象写出相应的解集.解下列不等式:\begin{twocolpro}(1) $\dfrac{2-x}{x-5}&gt;0$; &amp; (2) $\dfrac{2-x}{x-5}\geqslant 0$.</description>
     </item>
     
     <item>
@@ -29,7 +29,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/prerequisite/inequality/mean-value-inequality/</guid>
-      <description> 均值不等式 # </description>
+      <description>均值不等式 # 对于任意 $x$, $y\in\realnum$, 恒有 $(x-y)^2\geqslant 0$, 展开后移项得\[x^2+y^2\geqslant 2xy\quad\text{即}\quad \frac{x^2+y^2}2\geqslant xy.\]不等式中等号成立的条件是 $x=y$, 也记为:“$=$”成立当且仅当 $x=y$. 把上面两个式子中的 $x$ 和 $y$ 分别换成 $\sqrt{x}$ 和 $\sqrt{y}$ (此时必须限制 $x$, $y\geqslant 0$), 可知\[x+y\geqslant 2\sqrt{xy}\quad\text{即}\quad \frac{x+y}2\geqslant \sqrt{xy}.\]因为 $\dfrac{x+y}2$ 与 $\sqrt{xy}$ 分别叫做非负实数 $x$ 与 $y$ 的\myindex{算术平均值}{算术平均值}与\myindex{几何平均值}{几何平均值}, 所以上面最后一个不等式也称为\myindex{均值不等式}{均值不等式}, 即\[\text{均值不等式:}\ \frac{x+y}2\geqslant \sqrt{xy},\quad x,y\geqslant 0.\]以上不等式均为常用不等式, 且都可以互相推出.利用均值不等式 (或其等价形式) 可以很方便地求特殊形式的式子的最大 (小) 值. 例如, 若 $x&gt;0$, 则 \[x+\dfrac1x\geqslant 2\sqrt{x\cdot\dfrac1x}=2,\]“$=$”成立当且仅当 $x=\dfrac1x$ 即 $x=1$. 一般的, 可得如下结论 (均设 $x$, $y\geqslant 0$):(1) 若 $xy=L$ 为定值, 则 \[x+y\geqslant 2\sqrt{xy}=2\sqrt{L},\] 所以 $x+y$ 的最小值为 $2\sqrt{L}$,“$=$”成立当且仅当 $x=y=\sqrt{L}$;(2) 若 $x+y=M$ 为定值, 则 \[\sqrt{xy}\leqslant \frac{x+y}2=\frac{M}2\quad\text{即}\quadxy\leqslant \biggl(\frac{M}2\biggr)^2= \frac{M^2}4,\]所以 $xy$ 的最大值为 $\dfrac{M^2}4$,“$=$”成立当且仅当 $x=y=\dfrac{M}2$.</description>
     </item>
     
   </channel>

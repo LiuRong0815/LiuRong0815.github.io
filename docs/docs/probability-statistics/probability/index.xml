@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>概率 on 高中数学资料</title>
+    <link>/docs/probability-statistics/probability/</link>
+    <description>Recent content in 概率 on 高中数学资料</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/docs/probability-statistics/probability/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>古典概型</title>
+      <link>/docs/probability-statistics/probability/classical-probability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/probability-statistics/probability/classical-probability/</guid>
+      <description> 古典概型 # </description>
+    </item>
+    
+    <item>
+      <title>几何概型</title>
+      <link>/docs/probability-statistics/probability/geometric-probability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/probability-statistics/probability/geometric-probability/</guid>
+      <description> 几何概型 # </description>
+    </item>
+    
+    <item>
+      <title>条件概率</title>
+      <link>/docs/probability-statistics/probability/conditional-probability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/probability-statistics/probability/conditional-probability/</guid>
+      <description> 条件概率 # </description>
+    </item>
+    
+    <item>
+      <title>期望与方差</title>
+      <link>/docs/probability-statistics/probability/expectation-variation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/probability-statistics/probability/expectation-variation/</guid>
+      <description> 期望与方差 # </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="三角函数的诱导公式 # 诱导公式指的是已知角加上 $90^\circ$ (或 $\dfrac{\pi}2$) 的整数倍后, 所得角与已知角的三角函数值的关系. 最容易理解的是 \[\sin(2\pi&#43;\alpha)= \sin\alpha,\quad \cos(2\pi&#43;\alpha)= \cos\alpha.\] 常用的还有 \[\begin{gathered} \sin(-x)= -\sin x\ (\text{奇函数}),\quad \cos(-x)= \cos x\ (\text{偶函数}),\\ \sin(90^\circ-x)= \cos x,\quad \cos(90^\circ-x)= \sin x,\\ \sin(180^\circ-x)= \sin x,\quad \cos(180^\circ-x)= -\cos x. \end{gathered}\] 分别对应如下图形 (为观察方便, 正弦线、余弦线的位置与通常的定义略有区别): \includegraphics[scale=1.1]{2020-1225-1900-crop}\quad \includegraphics[scale=1.1]{2020-1225-1910-crop}\quad \includegraphics[scale=1.1]{2020-1225-1920-crop} 诱导公式的记忆口诀为: 奇变偶不变, 符号看象限, 其中 (1) “奇”“偶”指所加 $90^\circ$ (或 $\dfrac{\pi}2$) 倍数的奇偶性; (2) “变”指函数名中“正”变“余”或“余”变“正”； (3) “象限”指把已知角视为锐角时所得角对应的象限; (4) “符号”是此时原式的符号. \\ 例如: \begin{gather*} \sin(2x-\pi)= -\sin2x,\quad \tan(x&#43;180^\circ)= \tan x, \\ \cos(3x-270^\circ)= -\sin 3x,\quad \sin\Big(4x-\frac{\pi}2\Big)= -\cos 4x.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="三角函数的诱导公式" />
+<meta property="og:description" content="三角函数的诱导公式 # 诱导公式指的是已知角加上 $90^\circ$ (或 $\dfrac{\pi}2$) 的整数倍后, 所得角与已知角的三角函数值的关系. 最容易理解的是 \[\sin(2\pi&#43;\alpha)= \sin\alpha,\quad \cos(2\pi&#43;\alpha)= \cos\alpha.\] 常用的还有 \[\begin{gathered} \sin(-x)= -\sin x\ (\text{奇函数}),\quad \cos(-x)= \cos x\ (\text{偶函数}),\\ \sin(90^\circ-x)= \cos x,\quad \cos(90^\circ-x)= \sin x,\\ \sin(180^\circ-x)= \sin x,\quad \cos(180^\circ-x)= -\cos x. \end{gathered}\] 分别对应如下图形 (为观察方便, 正弦线、余弦线的位置与通常的定义略有区别): \includegraphics[scale=1.1]{2020-1225-1900-crop}\quad \includegraphics[scale=1.1]{2020-1225-1910-crop}\quad \includegraphics[scale=1.1]{2020-1225-1920-crop} 诱导公式的记忆口诀为: 奇变偶不变, 符号看象限, 其中 (1) “奇”“偶”指所加 $90^\circ$ (或 $\dfrac{\pi}2$) 倍数的奇偶性; (2) “变”指函数名中“正”变“余”或“余”变“正”； (3) “象限”指把已知角视为锐角时所得角对应的象限; (4) “符号”是此时原式的符号. \\ 例如: \begin{gather*} \sin(2x-\pi)= -\sin2x,\quad \tan(x&#43;180^\circ)= \tan x, \\ \cos(3x-270^\circ)= -\sin 3x,\quad \sin\Big(4x-\frac{\pi}2\Big)= -\cos 4x." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/docs/trigonometry/trigonometric-function/trig-induce/" /><meta property="article:section" content="docs" />
+
+
+
+<title>三角函数的诱导公式 | 高中数学资料</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.0ea964dfd939ec410a2a39593431f6f339bf806ba9aac813a1870c7fca3262b0.css" >
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/zh.search.min.d291c56f7a101eb7bc458e3f1a2b0ef94298fb228cc365dff9fb90ae5d5203f2.js" ></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  <link rel="stylesheet" href='/katex/katex.min.css' crossorigin="anonymous">
+
+
+<script defer src='/katex/katex.min.js' crossorigin="anonymous"></script>
+
+
+<script defer src='/katex/auto-render.min.js' 
+    onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        renderMathInElement(document.body, {
+            
+            
+            delimiters: [
+                { left: '$$', right: '$$', display: true },
+                { left: '$', right: '$', display: false },
+                { left: '\\(', right: '\\)', display: false },
+                { left: '\\[', right: '\\]', display: true }
+            ],
+            
+            throwOnError: false
+        });
+    });
+</script>
+
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>高中数学资料</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="搜索" aria-label="搜索" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7fbb26c6156d78d59d607292b53948a4" class="toggle"  />
+    <label for="section-7fbb26c6156d78d59d607292b53948a4" class="flex justify-between">
+      <a href="/docs/prerequisite/" class="">预备知识</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1e2f9b8b873223fe63fc7221375c0eb0" class="toggle"  />
+    <label for="section-1e2f9b8b873223fe63fc7221375c0eb0" class="flex justify-between">
+      <a href="/docs/prerequisite/ms-algebra/" class="">初中代数提要</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-algebra/quadratic-factorization/" class="">二次三项式的因式分解</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-algebra/quadratic-equation/" class="">一元二次方程的解法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-algebra/veite-theorem/" class="">韦达定理</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c1c4f99569969342f46afcb379e41254" class="toggle"  />
+    <label for="section-c1c4f99569969342f46afcb379e41254" class="flex justify-between">
+      <a href="/docs/prerequisite/ms-geometry/" class="">初中几何提要</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/symmetric-congruence-similar/" class="">对称、全等与相似</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/triangle/" class="">三角形</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/quadrilateral/" class="">四边形</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/circle/" class="">圆</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/area/" class="">平面图形的面积</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-53227ed5b540c99051432d70e3c9c4da" class="toggle"  />
+    <label for="section-53227ed5b540c99051432d70e3c9c4da" class="flex justify-between">
+      <a href="/docs/prerequisite/ms-function/" class="">初中函数提要</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-function/axis-coordinate/" class="">数轴与平面直角坐标系</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-function/linear-inverse/" class="">一次函数与反比例函数</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-function/quadratic-function-inequality/" class="">二次函数与二次不等式</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-function/graph-tranform/" class="">函数图象的变换</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4adec7e7d2e2d6fa5eaee0a98a60892e" class="toggle"  />
+    <label for="section-4adec7e7d2e2d6fa5eaee0a98a60892e" class="flex justify-between">
+      <a href="/docs/prerequisite/set-logic/" class="">集合与简易逻辑</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/set-logic/set-def/" class="">集合的定义</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/set-logic/set-operation/" class="">集合的运算</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/set-logic/proposition-iff/" class="">命题与充要条件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/set-logic/logical-quantifier/" class="">逻辑量词</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0efa6e9487d50f8c7308e9898b74ff74" class="toggle"  />
+    <label for="section-0efa6e9487d50f8c7308e9898b74ff74" class="flex justify-between">
+      <a href="/docs/prerequisite/inequality/" class="">不等式</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>三角函数的诱导公式</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#三角函数的诱导公式">三角函数的诱导公式</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="三角函数的诱导公式">
+  三角函数的诱导公式
+  <a class="anchor" href="#%e4%b8%89%e8%a7%92%e5%87%bd%e6%95%b0%e7%9a%84%e8%af%b1%e5%af%bc%e5%85%ac%e5%bc%8f">#</a>
+</h1>
+<p>诱导公式指的是已知角加上 $90^\circ$ (或 $\dfrac{\pi}2$) 的整数倍后, 所得角与已知角的三角函数值的关系. 最容易理解的是
+\[\sin(2\pi+\alpha)= \sin\alpha,\quad
+    \cos(2\pi+\alpha)= \cos\alpha.\]
+常用的还有
+\[\begin{gathered}
+    \sin(-x)= -\sin x\ (\text{奇函数}),\quad 
+    \cos(-x)= \cos x\ (\text{偶函数}),\\
+    \sin(90^\circ-x)= \cos x,\quad \cos(90^\circ-x)= \sin x,\\
+    \sin(180^\circ-x)= \sin x,\quad \cos(180^\circ-x)= -\cos x.
+\end{gathered}\]
+分别对应如下图形 (为观察方便, 正弦线、余弦线的位置与通常的定义略有区别):
+<center>
+    \includegraphics[scale=1.1]{2020-1225-1900-crop}\quad
+    \includegraphics[scale=1.1]{2020-1225-1910-crop}\quad
+    \includegraphics[scale=1.1]{2020-1225-1920-crop}
+</center>
+</p>
+<p>诱导公式的记忆口诀为: 奇变偶不变, 符号看象限, 其中
+</p>
+<p>(1) “奇”“偶”指所加 $90^\circ$ (或 $\dfrac{\pi}2$) 倍数的奇偶性; 
+</p>
+<p>(2) “变”指函数名中“正”变“余”或“余”变“正”；
+</p>
+<p>(3) “象限”指把已知角视为锐角时所得角对应的象限;
+</p>
+<p>(4) “符号”是此时原式的符号. \\
+例如:
+\begin{gather*}
+    \sin(2x-\pi)= -\sin2x,\quad \tan(x+180^\circ)= \tan x, \\
+    \cos(3x-270^\circ)= -\sin 3x,\quad
+    \sin\Big(4x-\frac{\pi}2\Big)= -\cos 4x.
+\end{gather*}
+可结合如下图形理解诱导公式:
+<center>
+    \includegraphics[scale=1.1]{2020-1225-1930-crop}
+</center>
+</p>
+<p>由上图可知:
+\[\begin{gathered}
+    \sin\biggl(\frac\pi2+\alpha\biggr)= \cos\alpha,\quad
+        \cos\biggl(\frac\pi2+\alpha\biggr)= -\sin\alpha,\\
+    \sin(\pi+\alpha)= -\sin\alpha,\quad
+        \cos(\pi+\alpha)= -\cos\alpha,\\
+    \sin\biggl(\frac{3\pi}2+\alpha\biggr)= -\cos\alpha,\quad
+        \cos\biggl(\frac{3\pi}2+\alpha\biggr)= \sin\alpha,
+    \end{gathered}\]
+恰好验证了诱导公式.
+</p>
+<p><myexample>
+<p>化简: $\dfrac{\sin\biggl(\alpha-\dfrac{11}2\pi\biggr)
+        \cos\biggl(\dfrac{\pi}2-\alpha\biggr)
+        \tan(2\pi-\alpha)}{\cos\biggl(\dfrac{\pi}2+\alpha\biggr)
+        \cos(\alpha-2\pi)\tan(\alpha-5\pi)}$.
+</p>
+</myexample>
+<mysolution>
+    <p>由诱导公式,
+    \[\begin{gathered}
+        \sin\biggl(\alpha-\dfrac{11}2\pi\biggr)
+        = \sin\biggl(\alpha-\dfrac{3}2\pi\biggr)
+        = \sin\biggl(\alpha+\dfrac{\pi}2\biggr)
+        = \cos\alpha,\\
+        \cos\biggl(\dfrac{\pi}2-\alpha\biggr)= \sin\alpha,\qquad
+        \tan(2\pi-\alpha)= \tan(-\alpha)= -\tan\alpha,\\
+        \cos\biggl(\dfrac{\pi}2+\alpha\biggr)= -\sin\alpha,\qquad
+        \cos(\alpha-2\pi)= \cos\alpha,\\
+        \tan(\alpha-5\pi)= \tan(\alpha+\pi)= \tan\alpha,
+    \end{gathered}\]
+    所以
+    \[\text{原式}= \frac{\cos\alpha\sin\alpha(-\tan\alpha)}{
+        -\sin\alpha\cos\alpha\tan\alpha}= 1.\]
+</p>
+</mysolution>
+</p>
+<p>用诱导公式解题时, 应先利用本节第一个公式, 将式中 $\pi$ 的系数的绝对值尽可能变小, 最好是将含 $\pi$ 的项化为 $[-\pi,\pi]$ 内的数.
+</p>
+<p>计算具体的三角函数值, 一般是先利用诱导公式尽量化为较简单的角 (绝对值不超过 $\pi$, 也即 $180^\circ$) 的三角函数.
+</p>
+<p><myexample>
+<p>化简下列各式:
+</p>
+<p>(1) $\sin\dfrac{7\pi}2+ \cos\dfrac{5\pi}2+ \cos(-5\pi)+ \tan\dfrac{5\pi}4$;
+</p>
+<p>(2) $a^2\sin810^\circ- b^2\cos900^\circ+ 2ab\tan1125^\circ$;
+</p>
+<p>(3) $\dfrac{\sin(\pi+ \alpha)\cos(2\pi- \alpha)\tan(- \alpha)}{\tan(-\pi- \alpha)\sin(-\pi- \alpha)}$.
+</p>
+</myexample>
+<mysolution>
+    <p>(1) 先利用周期性 (注意 $y=\sin x$, $y=\cos x$ 的周期均为 $2\pi$, 而 $y=\tan x$ 的周期为 $\pi$), 将题中各式化为绝对值较小的角的三角函数, 即
+    \[\begin{aligned}
+        \sin\frac{7\pi}2 &= \sin\biggl(\frac{7\pi}2 -4\pi\biggr)
+            = \sin\biggl(-\frac{\pi}2\biggr)= -1,\\
+        \cos\frac{5\pi}2 &= \cos\biggl(\frac{5\pi}2 -2\pi\biggr)
+            = \cos\frac{\pi}2 = 0,\\
+        \cos(-5\pi) &= \cos(-5\pi+ 6\pi)= \cos\pi= -1,\\
+        \tan\frac{5\pi}4 &= \tan\biggl(\frac{5\pi}4 -\pi\biggr)
+            = \tan\frac\pi4= 1,
+    \end{aligned}\]
+    所以,
+    \[\text{原式}= -1+0-1+1= -1.\]
+</p>
+<p>(2) 方法同上, 周期均用角度表示, 即
+    \[\begin{aligned}
+        \sin810^\circ &= \sin(810^\circ -720^\circ)
+            = \sin90^\circ= 1,\\
+        \cos900^\circ &= \cos(900^\circ- 720^\circ)
+            = \cos180^\circ = -1,\\
+        \tan1125^\circ &= \tan(1125^\circ- 1080^\circ)
+            = \tan45^\circ= 1,
+    \end{aligned}\]
+    所以,
+    \[\text{原式}= a^2- b^2\cdot(-1)+2ab= (a+b)^2.\]
+</p>
+<p>(3) 直接用诱导公式可得
+    \[\begin{gathered}
+        \sin(\pi+ \alpha) = -\sin\alpha,\quad
+        \cos(2\pi- \alpha) = \cos\alpha,\quad
+        \tan(-\alpha) = -\tan\alpha,\\
+        \tan(-\pi- \alpha) = \tan(-\alpha)= -\tan\alpha,\quad
+        \sin(-\pi- \alpha) = \sin(\pi-\alpha)= \sin\alpha,
+    \end{gathered}\]
+    所以,
+    \[\text{原式}= \frac{-\sin\alpha\cdot \cos\alpha\cdot (-\tan\alpha)}{-\tan\alpha\cdot \sin\alpha}= -\cos\alpha.\]
+</p>
+<p></p>
+</mysolution>
+<myexample>
+<p>计算下列各式的值:
+</p>
+<p>(1) $\cos\dfrac\pi5+ \cos\dfrac{2\pi}5+ \cos\dfrac{3\pi}5+ \cos\dfrac{4\pi}5$;
+</p>
+<p>(2) $\sin240^\circ\cos330^\circ+ \sin(-690^\circ)\cos(-660^\circ)$.
+</p>
+</myexample>
+<mysolution>
+    <p>(1) 本小题的各个角都不是特殊角 (如 $30^\circ$, $135^\circ$ 等), 所以不应试图求出各三角函数值, 而应考虑它们的数量关系. 画图并观察可知, 
+    \[\frac\pi5+ \frac{4\pi}5= \frac{2\pi}5+ \frac{3\pi}5= \pi,\]
+    再由余弦线或诱导公式得
+    \[\begin{gathered}
+        \cos\frac{4\pi}5= \cos\biggl(\pi- \frac\pi5\biggr)= -\cos\frac\pi5,\\
+        \cos\frac{3\pi}5= \cos\biggl(\pi- \frac{2\pi}5\biggr)= -\cos\frac{2\pi}5,
+    \end{gathered}\]
+    由此可知, 原式等于 $0$.
+</p>
+<p>(2) 本小题中的各个角都是特殊角, 所以应直接用诱导公式化为锐角. 因为
+    \[\begin{aligned}
+        \sin240^\circ &= \sin(180^\circ+ 60^\circ)
+            = -\sin60^\circ = -\frac{\sqrt3}2,\\
+        \cos330^\circ &= \cos(360^\circ -30^\circ)
+            = \cos30^\circ = \frac{\sqrt3}2,\\
+        \sin(-690^\circ) &= \sin(720^\circ- 690^\circ)
+            = \sin30^\circ = \frac12,\\
+        \cos(-660^\circ) &= \cos(720^\circ- 660^\circ)
+            = \cos60^\circ = \frac12,
+    \end{aligned}\]
+    所以 
+    \[\text{原式}= -\frac{\sqrt3}2\cdot \frac{\sqrt3}2
+        + \frac12\cdot \frac12= -\frac12.\]
+</p>
+</mysolution>
+</p>
+<p><myexample>
+<p>已知 $\cos\biggl(\alpha+\dfrac\pi6\biggr)= -\dfrac13$, 求 $\sin\biggl(\alpha-\dfrac\pi3\biggr)$ 的值.
+</p>
+</myexample>
+<mysolution>
+    <p>此题应整体考虑, 即先观察两个角 $\alpha+\dfrac\pi6$, $\alpha-\dfrac\pi3$ 的特殊关系, 一般是看它们的和或差是否与特殊角 (如 $30^\circ$, $\dfrac\pi2$ 等) 有关, 或者是否有倍数关系 (后面会学倍角公式) 等. 可观察出 $\biggl(\alpha+ \dfrac\pi6\biggr)- \dfrac\pi2= \alpha-\dfrac\pi3$, 所以由诱导公式,
+    \[\sin\biggl(\alpha-\dfrac\pi3\biggr)
+        = \sin\biggl(\alpha+ \dfrac\pi6- \dfrac\pi2\biggr)
+        = -\cos\biggl(\alpha+ \dfrac\pi6\biggr)
+        = \dfrac13.\]
+</p>
+</mysolution>
+</article>
+ 
+          
+    
+    <div class="docs-prevnext">
+    
+        <a class="docs-prev button" href="/docs/trigonometry/trigonometric-function/trig-def-radian">
+          <span class="arrow-prev">← </span><span>任意角的三角函数与弧度制</span></a>
+      
+      
+        <a class="docs-next button" href="/docs/trigonometry/trigonometric-function/trig-sum-diff">
+          <span>三角函数的和差角公式</span><span class="arrow-next"> →</span></a>
+      
+    </div>
+
+    <p>作者邮箱 rong.liu@mail.bnu.edu.cn。</p>
+    <p>读者的支持是作者持续更新的动力😊</p>
+    
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#三角函数的诱导公式">三角函数的诱导公式</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

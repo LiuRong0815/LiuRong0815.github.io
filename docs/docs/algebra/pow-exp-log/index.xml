@@ -1,9 +1,63 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>幂函数、指数函数与对数函数 on 高中数学资料</title>
+    <title>幂函数、指数函数、对数函数 on 高中数学资料</title>
     <link>/docs/algebra/pow-exp-log/</link>
-    <description>Recent content in 幂函数、指数函数与对数函数 on 高中数学资料</description>
+    <description>Recent content in 幂函数、指数函数、对数函数 on 高中数学资料</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="/docs/algebra/pow-exp-log/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>幂函数</title>
+      <link>/docs/algebra/pow-exp-log/power-function/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/pow-exp-log/power-function/</guid>
+      <description>幂函数 # 幂函数 $y= x^a$ (均取由 $a$ 对应的自然定义域) 的大致图形如下: \includegraphics[scale=1]{2020-1206-1110-crop} 为了整洁起见, 图中并未画出 $a=0$ (对应 $y=1$) 和 $a=1$ (对应 $y=x$) 的情形, 且对 $0&lt; a&lt; 1$ 只画了 $x&gt;0$ 对应的图形. 由图可知, 幂函数 $y= x^a$ 的特征有 (1) 当 $a&lt; 0$ 且为整数时, 图形有两支, 且以 $x$ 轴和 $y$ 轴为渐近线, 函数分别在 $(-\infty,0)$ 和 $(0,+\infty)$ 上单调递减; (2) 当 $a&gt;0$ 时, 在第一象限内, 函数单调递增, 且 $a$ 越大, 函数值增加速度越快; (3) 恒过点 $(1,1)$ (因为 $1^a=1$). 比大小: (1) $a=1$, $b=0.3^2$, $c=2^{0.3}$; (2) $a= 3^{1.</description>
+    </item>
+    
+    <item>
+      <title>指数函数</title>
+      <link>/docs/algebra/pow-exp-log/exponent-function/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/pow-exp-log/exponent-function/</guid>
+      <description>指数函数 # \begin{example}\label{exa:201201-2020} 已知函数 \[f(x)= \begin{cases} (4a-3)x+a+\dfrac12, &amp; x&lt; 0,\\ a^x, &amp; x\geqslant 0. \end{cases}\] (1) 若函数的图形经过点 $\biggl(3,\dfrac18\biggr)$, 求 $a$ 的值. (2) 若对任意的 $x_1\neq x_2$, 都有 $\dfrac{f(x_1)-f(x_2)}{x_1-x_2}&lt; 0$ 成立, 求 $a$ 的取值范围. (1) 由题意, $f(3)= \dfrac18$ 即 $a^3=\dfrac18$, 所以 $a=\dfrac12$. (2) $\dfrac{f(x_1)-f(x_2)}{x_1-x_2}&lt; 0$ 表明 $x_1$, $x_2$ 的大小关系与 $f(x_1)$, $f(x_2)$ 的大小关系恰好反过来 (即若 $x_1&lt; x_2$, 则 $f(x_1)&gt;f(x_2)$), 也就是 $f(x)$ 单调递减. 再由 $f(x)$ 的解析式知 (参考“2020 年 10 月 31 日答疑记录”的第三个例子) \[\left\{\!\!\begin{array}{l} 4a-3&lt; 0,\ 0&lt; a&lt; 1,\\ a+\dfrac12\geqslant a^0, \end{array}\right.</description>
+    </item>
+    
+    <item>
+      <title>对数运算</title>
+      <link>/docs/algebra/pow-exp-log/logarithm-calculation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/pow-exp-log/logarithm-calculation/</guid>
+      <description>对数运算 # 对数的主要运算法则如下 (以下均设底数 $a\in(0,1)\cup(1,+\infty)$, 真数 $x$, $y&gt;0$): \[\begin{gathered} a^x=y\Leftrightarrow x=\log_a y,\quad \text{由此可得}\ a^{\log_a y}= y,\ x= \log_a a^x,\\ \log_a x+ \log_a y= \log_a xy,\quad \log_a x- \log_a y= \log_a \dfrac{x}y,\\ \frac{\log_a x}{\log_a y}= \log_y x\ (\text{换底公式}),\quad \log_a x^\beta= \beta\log_a x\ (\beta\in\realnum). \end{gathered}\] 以上公式均可以逆用, 如 \[\log_2 6= \log_2 2+\log_2 3= 1+\log_2 3.\] 此外还应注意恒等式 $\log_a a=1$ 和 $\log_a 1= 0$ (均由对数定义可得). 有两个取特殊底的对数是常用的: $\log_{10} x$ 记为 $\lg x$ (\myindex{常用对数}{常用对数}), $\log_{\mathrm{e}} x$ 记为 $\ln x$ (\myindex{自然对数}{自然对数}), 其中 $\mathrm{e}= 2.</description>
+    </item>
+    
+    <item>
+      <title>对数函数</title>
+      <link>/docs/algebra/pow-exp-log/logarithm-function/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/pow-exp-log/logarithm-function/</guid>
+      <description>对数函数 # 若函数 $y=\log_a x$ ($a&gt;0$ 且 $a\neq 1$) 的图形过点 $(3,1)$, 求 $\log_2 3 \cdot f(8)$ 的值. 将 $(3,1)$ 代入 $y=\log_a x$ 得 $1= \log_a 3$, 所以 $a=3$, \[\log_2 3 \cdot f(8)= \log_2 3\cdot \log_3 8 = \frac{\ln 3}{\ln 2}\cdot\frac{\ln 8}{\ln 3} = \frac{3\ln 2}{\ln 2}= 3.\] 设 $a= 2^{-\frac13}$, $b=\log_2\dfrac13$, $c= \log_{\frac12}\dfrac13$, 比较这三者的大小. 分别考虑函数 $f(x)= 2^x$, $g(x)= \log_2 x$, $h(x)= \log_{\frac12} x$ 的单调性, 可知 \[\begin{gathered} a= f\biggl(-\dfrac13\biggr)\in (0,1),\quad b= g\biggl(\dfrac13\biggr)\in (-\infty,0),\\ c= h\biggl(\dfrac13\biggr)\in (1,+\infty), \end{gathered}\] 所以 $b&lt; a&lt; c$.</description>
+    </item>
+    
+    <item>
+      <title>反函数</title>
+      <link>/docs/algebra/pow-exp-log/composite-inverse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/pow-exp-log/composite-inverse/</guid>
+      <description>复合函数与反函数 # 本次答疑主要讲解复合函数的值域和单调区间的求法. 函数 $f(x)$ 和 $g(x)$ 可以复合成函数 $f(g(x))$, $g(f(x))$, $f(f(x))$ 等, 也可以复合成函数 $f(g(f(x)))$, $g(g(f(x)))$, $g(g(g(g(x))))$ %(此时一般记为 $g\circ g\circ g\circ g(x)$) 等. 例如, 若 $f(x)=x^2$, $g(x)=x+1$, 则 \[\begin{gathered} f(g(x))= (x+1)^2,\quad g(f(x))= x^2+1,\\ f(f(x))= (x^2)^2= x^4,\quad g(g(x))= (x+1)+1= x+2. \end{gathered}\] “复合函数”可以简单理解为“函数套函数”. 有时为了理解方便起见, 对函数 $y=f(g(x))$, 可设 $u=g(x)$ 而将其表示为 $y=f(u)$, 即借助中间变量 $u$ 表示为较简单的形式. 例如, \[\begin{aligned} y=\sqrt{x^2-2x-3}&amp;\colon y=f(u)=\sqrt{u},\ u=g(x)= x^2-2x-3;\\ y=\log_{\frac13} (-x^2-2x+8)&amp;\colon y=f(u)=\log_{\frac13}{u},\ u=g(x)= -x^2-2x+8;\\ y=\frac1{x^2-3x}&amp;\colon y=f(u)=\frac1{u},\ u=g(x)= x^2-3x;\\ y=3^{|x|}&amp;\colon y=f(u)=3^{u},\ u=g(x)= |x|. \end{aligned}\] 这时我们可称 $g(x)$ 为“里层函数”, 而 $f(u)$ 为“外层函数”.</description>
+    </item>
+    
+    <item>
+      <title>利用函数图象研究方程</title>
+      <link>/docs/algebra/pow-exp-log/function-equation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/algebra/pow-exp-log/function-equation/</guid>
+      <description>利用函数图象研究方程 # 求方程的根可以转化为求对应函数图形交点的横坐标, 或求对应函数的零点. 一般有如下两种转化方法: \[\begin{aligned} f(x)=0\text{\ 的根}&amp;\Leftrightarrow \text{$f(x)$ 的图形与 $x$ 轴交点的横坐标};\\ f(x)+g(x)=0\text{\ 的根}&amp;\Leftrightarrow \text{$f(x)$ 与 $-g(x)$ 的图形交点的横坐标}. \end{aligned}\] 前一种方法可视为后一种方法的特例, 而两种方法在使用时都需要考虑函数的单调性. 此外还有 (画图更容易理解) 零点存在性定理: 若 $f(x)$ 在 $[a,b]$ 上连续, 且 $f(a)f(b)&lt; 0$, 则 $f(x)$ 在 $(a,b)$ 上至少有一根. \begin{example}\label{exa:201217-1900} 已知函数 $f(x)= \begin{cases} \dfrac2x, &amp; x\geqslant 2,\\ x^2-3, &amp; x&lt; 2, \end{cases}$ 若关于 $x$ 的方程 $f(x)=k$ 有三个不等的实根, 求 $k$ 的取值范围. 此题应考虑函数 $y=f(x)$ 与 $y=k$ 的图形的交点恰有三个的情形. 画出两者的图形示意图, 容易知道 $k\in(0,1)$. \includegraphics[scale=1]{2020-1214-1900-crop} \begin{example}\label{exa:201214-1905} 求函数 $f(x)=x^2-\log_{\frac12} x$ 的零点个数.</description>
+    </item>
+    
   </channel>
 </rss>

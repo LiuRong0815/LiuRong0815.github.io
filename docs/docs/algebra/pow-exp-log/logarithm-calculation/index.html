@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="对数运算 # 对数的主要运算法则如下 (以下均设底数 $a\in(0,1)\cup(1,&#43;\infty)$, 真数 $x$, $y&gt;0$): \[\begin{gathered} a^x=y\Leftrightarrow x=\log_a y,\quad \text{由此可得}\ a^{\log_a y}= y,\ x= \log_a a^x,\\ \log_a x&#43; \log_a y= \log_a xy,\quad \log_a x- \log_a y= \log_a \dfrac{x}y,\\ \frac{\log_a x}{\log_a y}= \log_y x\ (\text{换底公式}),\quad \log_a x^\beta= \beta\log_a x\ (\beta\in\realnum). \end{gathered}\] 以上公式均可以逆用, 如 \[\log_2 6= \log_2 2&#43;\log_2 3= 1&#43;\log_2 3.\] 此外还应注意恒等式 $\log_a a=1$ 和 $\log_a 1= 0$ (均由对数定义可得). 有两个取特殊底的对数是常用的: $\log_{10} x$ 记为 $\lg x$ (\myindex{常用对数}{常用对数}), $\log_{\mathrm{e}} x$ 记为 $\ln x$ (\myindex{自然对数}{自然对数}), 其中 $\mathrm{e}= 2.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="对数运算" />
+<meta property="og:description" content="对数运算 # 对数的主要运算法则如下 (以下均设底数 $a\in(0,1)\cup(1,&#43;\infty)$, 真数 $x$, $y&gt;0$): \[\begin{gathered} a^x=y\Leftrightarrow x=\log_a y,\quad \text{由此可得}\ a^{\log_a y}= y,\ x= \log_a a^x,\\ \log_a x&#43; \log_a y= \log_a xy,\quad \log_a x- \log_a y= \log_a \dfrac{x}y,\\ \frac{\log_a x}{\log_a y}= \log_y x\ (\text{换底公式}),\quad \log_a x^\beta= \beta\log_a x\ (\beta\in\realnum). \end{gathered}\] 以上公式均可以逆用, 如 \[\log_2 6= \log_2 2&#43;\log_2 3= 1&#43;\log_2 3.\] 此外还应注意恒等式 $\log_a a=1$ 和 $\log_a 1= 0$ (均由对数定义可得). 有两个取特殊底的对数是常用的: $\log_{10} x$ 记为 $\lg x$ (\myindex{常用对数}{常用对数}), $\log_{\mathrm{e}} x$ 记为 $\ln x$ (\myindex{自然对数}{自然对数}), 其中 $\mathrm{e}= 2." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/docs/algebra/pow-exp-log/logarithm-calculation/" /><meta property="article:section" content="docs" />
+
+
+
+<title>对数运算 | 高中数学资料</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.0ea964dfd939ec410a2a39593431f6f339bf806ba9aac813a1870c7fca3262b0.css" >
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/zh.search.min.d291c56f7a101eb7bc458e3f1a2b0ef94298fb228cc365dff9fb90ae5d5203f2.js" ></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  <link rel="stylesheet" href='/katex/katex.min.css' crossorigin="anonymous">
+
+
+<script defer src='/katex/katex.min.js' crossorigin="anonymous"></script>
+
+
+<script defer src='/katex/auto-render.min.js' 
+    onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        renderMathInElement(document.body, {
+            
+            
+            delimiters: [
+                { left: '$$', right: '$$', display: true },
+                { left: '$', right: '$', display: false },
+                { left: '\\(', right: '\\)', display: false },
+                { left: '\\[', right: '\\]', display: true }
+            ],
+            
+            throwOnError: false
+        });
+    });
+</script>
+
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>高中数学资料</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="搜索" aria-label="搜索" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7fbb26c6156d78d59d607292b53948a4" class="toggle"  />
+    <label for="section-7fbb26c6156d78d59d607292b53948a4" class="flex justify-between">
+      <a href="/docs/prerequisite/" class="">预备知识</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1e2f9b8b873223fe63fc7221375c0eb0" class="toggle"  />
+    <label for="section-1e2f9b8b873223fe63fc7221375c0eb0" class="flex justify-between">
+      <a href="/docs/prerequisite/ms-algebra/" class="">初中代数提要</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-algebra/quadratic-factorization/" class="">二次三项式的因式分解</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-algebra/quadratic-equation/" class="">一元二次方程的解法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-algebra/veite-theorem/" class="">韦达定理</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c1c4f99569969342f46afcb379e41254" class="toggle"  />
+    <label for="section-c1c4f99569969342f46afcb379e41254" class="flex justify-between">
+      <a href="/docs/prerequisite/ms-geometry/" class="">初中几何提要</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/symmetric-congruence-similar/" class="">对称、全等与相似</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/triangle/" class="">三角形</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/quadrilateral/" class="">四边形</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/circle/" class="">圆</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/area/" class="">平面图形的面积</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-53227ed5b540c99051432d70e3c9c4da" class="toggle"  />
+    <label for="section-53227ed5b540c99051432d70e3c9c4da" class="flex justify-between">
+      <a href="/docs/prerequisite/ms-function/" class="">初中函数提要</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-function/axis-coordinate/" class="">数轴与平面直角坐标系</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-function/linear-inverse/" class="">一次函数与反比例函数</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-function/quadratic-function-inequality/" class="">二次函数与二次不等式</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-function/graph-tranform/" class="">函数图象的变换</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4adec7e7d2e2d6fa5eaee0a98a60892e" class="toggle"  />
+    <label for="section-4adec7e7d2e2d6fa5eaee0a98a60892e" class="flex justify-between">
+      <a href="/docs/prerequisite/set-logic/" class="">集合与简易逻辑</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/set-logic/set-def/" class="">集合的定义</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/set-logic/set-operation/" class="">集合的运算</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/set-logic/proposition-iff/" class="">命题与充要条件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/set-logic/logical-quantifier/" class="">逻辑量词</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0efa6e9487d50f8c7308e9898b74ff74" class="toggle"  />
+    <label for="section-0efa6e9487d50f8c7308e9898b74ff74" class="flex justify-between">
+      <a href="/docs/prerequisite/inequality/" class="">不等式</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>对数运算</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#对数运算">对数运算</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="对数运算">
+  对数运算
+  <a class="anchor" href="#%e5%af%b9%e6%95%b0%e8%bf%90%e7%ae%97">#</a>
+</h1>
+<p>对数的主要运算法则如下 (以下均设底数 $a\in(0,1)\cup(1,+\infty)$, 真数 $x$, $y>0$):
+\[\begin{gathered}
+    a^x=y\Leftrightarrow x=\log_a y,\quad \text{由此可得}\ 
+        a^{\log_a y}= y,\ x= \log_a a^x,\\
+    \log_a x+ \log_a y= \log_a xy,\quad 
+        \log_a x- \log_a y= \log_a \dfrac{x}y,\\
+    \frac{\log_a x}{\log_a y}= \log_y x\ (\text{换底公式}),\quad
+        \log_a x^\beta= \beta\log_a x\ (\beta\in\realnum). 
+\end{gathered}\]
+以上公式均可以逆用, 如 
+\[\log_2 6= \log_2 2+\log_2 3= 1+\log_2 3.\]
+此外还应注意恒等式 $\log_a a=1$ 和 $\log_a 1= 0$ (均由对数定义可得). 有两个取特殊底的对数是常用的: $\log_{10} x$ 记为 $\lg x$ (\myindex{常用对数}{常用对数}), $\log_{\mathrm{e}} x$ 记为 $\ln x$ (\myindex{自然对数}{自然对数}), 其中 $\mathrm{e}= 2.718\cdots$ 称为自然对数的底数.
+</p>
+<p><myexample>
+<p>对数练习:
+    \begin{fourcolpro}
+        (1) $\lg 0.0001$; & (2) $\log_2 6- \log_2 3$;
+            & (3) $\ln \sqrt{\mathrm{e}}$; 
+            & (4) $\log_3 5-\log_3 15$;\\
+        (5) $\lg\dfrac14- \lg25$; & (6) $\log_2(\log_2 16)$;
+            & \multicolumn{2}{l}{(7) $(\log_4 3+ \log_8 3)
+            (\log_3 2+\log_9 2)$.}
+    \end{fourcolpro}
+</p>
+</myexample>
+<mysolution>
+    <p>(1) $\lg 0.0001= \lg 10^{-4}= -4$ (注意 $0.1=\dfrac1{10}= 10^{-1}$).
+</p>
+<p>(2) $\log_2 6- \log_2 3= \log_2 \dfrac63= \log_2 2= 1$.
+</p>
+<p>(3) $\ln \sqrt{\mathrm{e}}= \ln \mathrm{e}^{\frac12}= \dfrac12$. 
+</p>
+<p>(4) $\log_3 5-\log_3 15= \log_3 \dfrac{5}{15}= \log_3 \dfrac13= -1$.
+</p>
+<p>(5) $\lg\dfrac14- \lg25= \lg\dfrac1{100}= -2$.
+</p>
+<p>(6) $\log_2(\log_2 16)= \log_2 4= 2$.
+</p>
+<p>(7) 由换底公式 (不妨均化为自然对数),
+    \[\begin{aligned}
+           &(\log_4 3+ \log_8 3)(\log_3 2+\log_9 2)\\
+        ={}& \biggl(\frac{\ln 3}{\ln 4}+ \frac{\ln 3}{\ln 8}\biggr)
+            \biggl(\frac{\ln 2}{\ln 3}+ \frac{\ln 2}{\ln 9}\biggr)\\
+        ={}& \biggl(\frac{\ln 3}{2\ln 2}+ \frac{\ln 3}{3\ln 2}\biggr)
+            \biggl(\frac{\ln 2}{\ln 3}+ \frac{\ln 2}{2\ln 3}\biggr)\\
+        ={}& \biggl(\frac12+\frac13\biggr)\frac{\ln 3}{\ln 2}
+            \biggl(1+\frac12\biggr)\frac{\ln 2}{\ln 3}\\
+        ={}& \frac56\cdot\frac32
+            = \frac54.
+    \end{aligned}\]
+</p>
+</mysolution>
+<p>\begin{example}\label{exa:201201-2030}
+    计算: $\log_4 3\cdot \log_9 2- \log_{\frac12} 32$.
+</p>
+</myexample>
+<mysolution>
+    <p>由对数的运算法则 (参考“2020 年 11 月 8 日答疑记录”对数练习小节), 
+    \[\begin{aligned}
+        \log_4 3\cdot \log_9 2- \log_{\frac12} 32
+        &= \frac{\ln 3}{\ln 4}\cdot \frac{\ln 2}{\ln 9}
+            - \frac{\ln 32}{\ln\dfrac12}\\
+        &= \frac{\ln 3}{2\ln 2}\cdot \frac{\ln 2}{2\ln 3}
+            - \frac{5\ln 2}{-\ln 2}\\
+        &= \frac14+5= \frac{21}4.
+    \end{aligned}\]
+</p>
+</mysolution>
+</p>
+<p>计算例 \ref{exa:201201-2020} 时, 其中的对数都化为以  $\mathrm{e}$ 为底, 也就是化为自然对数. 在计算时, 也可以都化为以 $10$ 为底, 即化为常用对数. 此外, 也可以由 $32= 2^5= \bigg(\dfrac12\biggr)^{-5}$ 知 $\log_{\frac12} 32= -5$.
+</p>
+<myexample>
+<p>计算: (1) $\lg \sqrt[5]{100}$;\quad 
+    (2) $\ln\sqrt[8]{\mathrm{e}}$;\quad
+    (3) $9^{\log_3 4}$;\quad
+    (4) $\log_9 27$;\quad (5) $\log_{\sqrt 6}36$.
+</p>
+</myexample>
+<mysolution>
+    <p>幂 (指数)、对数的运算法则见“2020 年 11 月 21 日答疑记录”的第二部分.
+</p>
+<p>(1) $\lg \sqrt[5]{100}= \lg 10^{\frac25}= \dfrac25$.\qquad
+    (2) $\ln\sqrt[8]{\mathrm{e}}= \ln \mathrm{e}^{\frac18}= \dfrac18$.
+</p>
+<p>(3) $9^{\log_3 4}= \big(3^{\log_3 4}\bigr)^2= 4^2= 16$.\qquad
+    (4) $\log_9 27= \dfrac{\ln 27}{\ln9}
+        = \dfrac{3\ln3}{2\ln3}= \dfrac32$.
+</p>
+<p>(5) $\log_{\sqrt6}36= \dfrac{\ln 36}{\ln \sqrt6}
+        = \dfrac{2\ln6}{\dfrac12\ln6}= 4$.
+</p>
+</mysolution>
+</article>
+ 
+          
+    
+    <div class="docs-prevnext">
+    
+        <a class="docs-prev button" href="/docs/algebra/pow-exp-log/exponent-function">
+          <span class="arrow-prev">← </span><span>指数函数</span></a>
+      
+      
+        <a class="docs-next button" href="/docs/algebra/pow-exp-log/logarithm-function">
+          <span>对数函数</span><span class="arrow-next"> →</span></a>
+      
+    </div>
+
+    <p>作者邮箱 rong.liu@mail.bnu.edu.cn。</p>
+    <p>读者的支持是作者持续更新的动力😊</p>
+    
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#对数运算">对数运算</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

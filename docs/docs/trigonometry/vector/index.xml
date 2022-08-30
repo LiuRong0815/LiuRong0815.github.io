@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>向量 on 高中数学资料</title>
+    <link>/docs/trigonometry/vector/</link>
+    <description>Recent content in 向量 on 高中数学资料</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/docs/trigonometry/vector/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>向量的定义</title>
+      <link>/docs/trigonometry/vector/vec-def/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/trigonometry/vector/vec-def/</guid>
+      <description> 向量的定义 # </description>
+    </item>
+    
+    <item>
+      <title>平面向量基本定理</title>
+      <link>/docs/trigonometry/vector/vec-basic-theorem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/trigonometry/vector/vec-basic-theorem/</guid>
+      <description> 平面向量基本定理 # </description>
+    </item>
+    
+    <item>
+      <title>向量的内积</title>
+      <link>/docs/trigonometry/vector/dot-product/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/trigonometry/vector/dot-product/</guid>
+      <description> 向量的内积 # </description>
+    </item>
+    
+    <item>
+      <title>空间向量</title>
+      <link>/docs/trigonometry/vector/space-vector/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/trigonometry/vector/space-vector/</guid>
+      <description> 空间向量 # </description>
+    </item>
+    
+  </channel>
+</rss>

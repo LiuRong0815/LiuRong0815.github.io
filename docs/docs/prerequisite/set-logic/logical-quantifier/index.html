@@ -18,7 +18,7 @@
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.0ea964dfd939ec410a2a39593431f6f339bf806ba9aac813a1870c7fca3262b0.css" >
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh.search.min.5679ba0e79b6af795401ba8b072e1eaf8c8043b8d4a827bb50606ca3fabdf592.js" ></script>
+  <script defer src="/zh.search.min.d291c56f7a101eb7bc458e3f1a2b0ef94298fb228cc365dff9fb90ae5d5203f2.js" ></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
 <!--
@@ -397,6 +397,27 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0efa6e9487d50f8c7308e9898b74ff74" class="toggle"  />
+    <label for="section-0efa6e9487d50f8c7308e9898b74ff74" class="flex justify-between">
+      <a href="/docs/prerequisite/inequality/" class="">不等式</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -515,6 +536,47 @@ https://github.com/alex-shpak/hugo-book
 <myremark>
     <p>上述解法可以推广, 即与函数有关的恒成立或存在性问题, 一般可以转化为求函数的取值范围问题.</p>
 </myremark>
+<myexample>
+    <p>已知下列命题是真命题, 求对应的实数 $k$ 的取值范围:
+    </p>
+    <p>(1) $\forall\, x\in \mathbf{R}$, $kx^2-2x+6k< 0$;
+    </p>
+    <p>(2) $\forall\, x\in \mathbf{R}$, $\dfrac{2x^2+2kx+k}{4x^2+6x+3}< 1$.
+    </p>
+</myexample>
+<mysolution>
+    <p>(1) 若 $k=0$, 不等式化为 $-2x< 0$, 并非恒成立, 因此 $k\neq 0$. 而题意表明此时抛物线 $y= kx^2-2x+6k$ 恒在 $x$ 轴下方, 所以 \[\left\{\!\!\begin{array}{l}
+        k< 0,\\
+        \Delta= (-2)^2- 4k\cdot 6k< 0,
+    \end{array}\right.\ \text{解得}\quad
+    k< -\frac{\sqrt6}6,\]
+    即 $k\in\biggl(-\infty, -\dfrac{\sqrt6}6\biggr)$.
+    </p>
+    <p>(2) 因为分母的判别式 $6^2-4\cdot4\cdot3< 0$ 且二次项系数 $4>0$, 所以分母恒正, 不等式化为 \[
+        2x^2+(6-2k)x+(3-k)>0,\]
+    则 \[
+        \Delta= (6-2k)^2- 4\cdot2(3-k)< 0,\]
+    解得 $1< k< 3$, 即 $k\in(1,3)$.
+    </p>
+    <p>这里的分母恒正也可以通过配方确定: \[
+    4x^2+6x+3= 4\biggl(x^2+\frac32x+\frac34\biggr)
+        = 4\biggl[\biggl(x+\frac34\biggr)^2+\frac3{16}\biggr].\]</p>
+</mysolution>
+<myremark>
+    <p>关于 $x$ 的形如 $Ax^2+Bx+C>0$ 的不等式恒成立问题, 解题步骤如下:
+    </p>
+    <p>(1) 首先确认不等式的次数, 即考虑二次项系数 $A$ 是否为 $0$;
+    </p>
+    <p>(2) 若 $A=0$, 则不等式化为一次不等式 $Bx+C>0$, 它恒成立的充要条件是 \[
+        B=0\ \text{且}\ C>0;\]
+    </p>
+    <p>(3) 若 $A\neq0$, 则不等式为二次不等式, 它恒成立的充要条件是 \[
+        A>0\ \text{且}\ \Delta=B^2-4AC< 0.\]
+    </p>
+    <p>(4) 综合 (2)(3) 中的取值范围 (取并集).
+    </p>
+    <p>如果已知的不等式为 $Ax^2+Bx+C\geqslant(< ,\,\leqslant) 0$, 则上述解题步骤应相应调整.</p>
+</myremark>
 <h2 id="含逻辑量词命题的否定">
   含逻辑量词命题的否定
   <a class="anchor" href="#%e5%90%ab%e9%80%bb%e8%be%91%e9%87%8f%e8%af%8d%e5%91%bd%e9%a2%98%e7%9a%84%e5%90%a6%e5%ae%9a">#</a>
@@ -596,8 +658,8 @@ https://github.com/alex-shpak/hugo-book
           <span class="arrow-prev">← </span><span>命题与充要条件</span></a>
       
       
-        <a class="docs-next button" href="">
-          <span></span><span class="arrow-next"> →</span></a>
+        <a class="docs-next button" href="../../inequality">
+          <span>不等式</span><span class="arrow-next"> →</span></a>
       
     </div>
 

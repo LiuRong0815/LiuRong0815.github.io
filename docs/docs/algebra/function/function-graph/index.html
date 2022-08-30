@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="函数的图象 # \subsection{二次方程根的分布 (选学)} 若方程 $2(m&#43;1)x^2&#43;4mx&#43;3m-2=0$ 有两个负实根, 求实数 $m$ 的取值范围. 由题意, 已知的方程为二次方程, 即 $2(m&#43;1)\neq 0$. 设方程的两根为 $x_1$, $x_2$, 则这两个根均为负数的充要条件是 \[\left\{\!\!\begin{array}{l} x_1&#43;x_2=-\dfrac{4m}{2(m&#43;1)}&lt; 0,\\ x_1x_2=\dfrac{3m-2}{2(m&#43;1)}&gt;0, \end{array}\right.\quad\text{解得}\quad m&lt; -1\ \text{或}\ m&gt;\frac23,\] 所求的 $m$ 的取值范围是 $(-\infty,-1)\cup\biggl(\dfrac23,&#43;\infty\biggr)$. 设关于 $x$ 的二次方程 $Ax^2&#43;Bx&#43;C=0$ ($A\neq0$) 的两根为 $x_1$, $x_2$, 则有以下结论 (为什么?): (1) 两根为正的充要条件是 \[\left\{\!\!\begin{array}{l} x_1&#43;x_2&gt;0,\\ x_1x_2&gt;0, \end{array}\right.\quad\text{即}\quad \left\{\!\!\begin{array}{l} -\dfrac{B}A&gt;0,\\ \dfrac{C}A&gt;0; \end{array}\right.\] (2) 两根为负的充要条件是 \[\left\{\!\!\begin{array}{l} x_1&#43;x_2&lt; 0,\\ x_1x_2&gt;0, \end{array}\right.\quad\text{即}\quad \left\{\!\!\begin{array}{l} -\dfrac{B}A&lt; 0,\\ \dfrac{C}A&gt;0; \end{array}\right.\] (3) 两根一正一负的充要条件是 \[x_1x_2&lt; 0\quad\text{即}\quad\frac{C}A&lt; 0.\] \begin{example}\label{201109-2120} 已知函数 $f(x)= 4x^2-kx-8$ 在 $[5,20]$ 上单调变化, 求实数 $k$ 的取值范围.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="函数的图象" />
+<meta property="og:description" content="函数的图象 # \subsection{二次方程根的分布 (选学)} 若方程 $2(m&#43;1)x^2&#43;4mx&#43;3m-2=0$ 有两个负实根, 求实数 $m$ 的取值范围. 由题意, 已知的方程为二次方程, 即 $2(m&#43;1)\neq 0$. 设方程的两根为 $x_1$, $x_2$, 则这两个根均为负数的充要条件是 \[\left\{\!\!\begin{array}{l} x_1&#43;x_2=-\dfrac{4m}{2(m&#43;1)}&lt; 0,\\ x_1x_2=\dfrac{3m-2}{2(m&#43;1)}&gt;0, \end{array}\right.\quad\text{解得}\quad m&lt; -1\ \text{或}\ m&gt;\frac23,\] 所求的 $m$ 的取值范围是 $(-\infty,-1)\cup\biggl(\dfrac23,&#43;\infty\biggr)$. 设关于 $x$ 的二次方程 $Ax^2&#43;Bx&#43;C=0$ ($A\neq0$) 的两根为 $x_1$, $x_2$, 则有以下结论 (为什么?): (1) 两根为正的充要条件是 \[\left\{\!\!\begin{array}{l} x_1&#43;x_2&gt;0,\\ x_1x_2&gt;0, \end{array}\right.\quad\text{即}\quad \left\{\!\!\begin{array}{l} -\dfrac{B}A&gt;0,\\ \dfrac{C}A&gt;0; \end{array}\right.\] (2) 两根为负的充要条件是 \[\left\{\!\!\begin{array}{l} x_1&#43;x_2&lt; 0,\\ x_1x_2&gt;0, \end{array}\right.\quad\text{即}\quad \left\{\!\!\begin{array}{l} -\dfrac{B}A&lt; 0,\\ \dfrac{C}A&gt;0; \end{array}\right.\] (3) 两根一正一负的充要条件是 \[x_1x_2&lt; 0\quad\text{即}\quad\frac{C}A&lt; 0.\] \begin{example}\label{201109-2120} 已知函数 $f(x)= 4x^2-kx-8$ 在 $[5,20]$ 上单调变化, 求实数 $k$ 的取值范围." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/docs/algebra/function/function-graph/" /><meta property="article:section" content="docs" />
+
+
+
+<title>函数的图象 | 高中数学资料</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.0ea964dfd939ec410a2a39593431f6f339bf806ba9aac813a1870c7fca3262b0.css" >
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/zh.search.min.d291c56f7a101eb7bc458e3f1a2b0ef94298fb228cc365dff9fb90ae5d5203f2.js" ></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  <link rel="stylesheet" href='/katex/katex.min.css' crossorigin="anonymous">
+
+
+<script defer src='/katex/katex.min.js' crossorigin="anonymous"></script>
+
+
+<script defer src='/katex/auto-render.min.js' 
+    onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        renderMathInElement(document.body, {
+            
+            
+            delimiters: [
+                { left: '$$', right: '$$', display: true },
+                { left: '$', right: '$', display: false },
+                { left: '\\(', right: '\\)', display: false },
+                { left: '\\[', right: '\\]', display: true }
+            ],
+            
+            throwOnError: false
+        });
+    });
+</script>
+
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>高中数学资料</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="搜索" aria-label="搜索" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7fbb26c6156d78d59d607292b53948a4" class="toggle"  />
+    <label for="section-7fbb26c6156d78d59d607292b53948a4" class="flex justify-between">
+      <a href="/docs/prerequisite/" class="">预备知识</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1e2f9b8b873223fe63fc7221375c0eb0" class="toggle"  />
+    <label for="section-1e2f9b8b873223fe63fc7221375c0eb0" class="flex justify-between">
+      <a href="/docs/prerequisite/ms-algebra/" class="">初中代数提要</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-algebra/quadratic-factorization/" class="">二次三项式的因式分解</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-algebra/quadratic-equation/" class="">一元二次方程的解法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-algebra/veite-theorem/" class="">韦达定理</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c1c4f99569969342f46afcb379e41254" class="toggle"  />
+    <label for="section-c1c4f99569969342f46afcb379e41254" class="flex justify-between">
+      <a href="/docs/prerequisite/ms-geometry/" class="">初中几何提要</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/symmetric-congruence-similar/" class="">对称、全等与相似</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/triangle/" class="">三角形</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/quadrilateral/" class="">四边形</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/circle/" class="">圆</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/area/" class="">平面图形的面积</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-53227ed5b540c99051432d70e3c9c4da" class="toggle"  />
+    <label for="section-53227ed5b540c99051432d70e3c9c4da" class="flex justify-between">
+      <a href="/docs/prerequisite/ms-function/" class="">初中函数提要</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-function/axis-coordinate/" class="">数轴与平面直角坐标系</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-function/linear-inverse/" class="">一次函数与反比例函数</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-function/quadratic-function-inequality/" class="">二次函数与二次不等式</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-function/graph-tranform/" class="">函数图象的变换</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4adec7e7d2e2d6fa5eaee0a98a60892e" class="toggle"  />
+    <label for="section-4adec7e7d2e2d6fa5eaee0a98a60892e" class="flex justify-between">
+      <a href="/docs/prerequisite/set-logic/" class="">集合与简易逻辑</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/set-logic/set-def/" class="">集合的定义</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/set-logic/set-operation/" class="">集合的运算</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/set-logic/proposition-iff/" class="">命题与充要条件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/set-logic/logical-quantifier/" class="">逻辑量词</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0efa6e9487d50f8c7308e9898b74ff74" class="toggle"  />
+    <label for="section-0efa6e9487d50f8c7308e9898b74ff74" class="flex justify-between">
+      <a href="/docs/prerequisite/inequality/" class="">不等式</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>函数的图象</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#函数的图象">函数的图象</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="函数的图象">
+  函数的图象
+  <a class="anchor" href="#%e5%87%bd%e6%95%b0%e7%9a%84%e5%9b%be%e8%b1%a1">#</a>
+</h1>
+<p>\subsection{二次方程根的分布 (选学)}
+<myexample>
+<p>若方程 $2(m+1)x^2+4mx+3m-2=0$ 有两个负实根, 求实数 $m$ 的取值范围.
+</p>
+</myexample>
+<mysolution>
+    <p>由题意, 已知的方程为二次方程, 即 $2(m+1)\neq 0$. 设方程的两根为 $x_1$, $x_2$, 则这两个根均为负数的充要条件是
+  \[\left\{\!\!\begin{array}{l}
+      x_1+x_2=-\dfrac{4m}{2(m+1)}< 0,\\
+      x_1x_2=\dfrac{3m-2}{2(m+1)}>0,
+    \end{array}\right.\quad\text{解得}\quad
+    m< -1\ \text{或}\ m>\frac23,\]
+  所求的 $m$ 的取值范围是 $(-\infty,-1)\cup\biggl(\dfrac23,+\infty\biggr)$.
+</p>
+</mysolution>
+</p>
+<p>设关于 $x$ 的二次方程 $Ax^2+Bx+C=0$ ($A\neq0$) 的两根为 $x_1$, $x_2$, 则有以下结论 (为什么?):
+</p>
+<p>(1) 两根为正的充要条件是
+  \[\left\{\!\!\begin{array}{l}
+      x_1+x_2>0,\\
+      x_1x_2>0,
+    \end{array}\right.\quad\text{即}\quad
+    \left\{\!\!\begin{array}{l}
+      -\dfrac{B}A>0,\\
+      \dfrac{C}A>0;
+    \end{array}\right.\]
+</p>
+<p>(2) 两根为负的充要条件是
+  \[\left\{\!\!\begin{array}{l}
+      x_1+x_2< 0,\\
+      x_1x_2>0,
+    \end{array}\right.\quad\text{即}\quad
+    \left\{\!\!\begin{array}{l}
+      -\dfrac{B}A< 0,\\
+      \dfrac{C}A>0;
+    \end{array}\right.\]
+</p>
+<p>(3) 两根一正一负的充要条件是
+  \[x_1x_2< 0\quad\text{即}\quad\frac{C}A< 0.\]
+</p>
+<p>\begin{example}\label{201109-2120}
+    已知函数 $f(x)= 4x^2-kx-8$ 在 $[5,20]$ 上单调变化, 求实数 $k$ 的取值范围.
+</p>
+</myexample>
+<mysolution>
+    <p>$f(x)$ 为二次函数, 单调性由开口方向、对称轴和定义域共同决定. 由题意, $f(x)$ 的对称轴 $x=\dfrac{k}8$ 不在区间 $[5,20]$ 内, 所以
+    \[\frac{k}8\leqslant 5\ \text{或}\ \frac{k}8\geqslant 20,\quad
+        \text{解得}\ k\leqslant 40\ \text{或}\ k\geqslant 160,\]
+    即 $k\in(-\infty,40]\cup [160,+\infty)$.
+</p>
+</mysolution>
+<myremark>
+    <p>例 \ref{201109-2120} 中的二次函数在区间 $[5,20]$ 上若单调递增, 则 $\dfrac{k}8\leqslant 5$; 若单调递减, 则 $\dfrac{k}8\geqslant 20$ (为什么?).
+</p>
+</myremark>
+<p>先考虑函数 $y=f(x)$ 与 $y=f(x+1)$ 的图形. 因为点 $A(n,f(n))$ 满足 $y=f(x)$ (此时 $x=n$), 而点 $A'(n-1,f(n))$ 满足 $y=f(x+1)$ (此时 $x=n-1$), 且点 $A$ 向左平移一个单位长度可得点 $A'$, 所以将 $y=f(x)$ 图形上的所有点向左平移一个单位长度可得 $y=f(x+1)$ 的图形.
+</p>
+<p>再考虑函数 $y=f(x)$ 与 $y=f(x)+1$ 的图形. 因为点 $B(n,f(n))$ 满足 $y=f(x)$ (此时 $x=n$), 而点 $B'(n,f(n)+1)$ 满足 $y=f(x+1)$ (此时 $x=n$), 且点 $B$ 向上平移一个单位长度可得点 $B'$, 所以将 $y=f(x)$ 图形上的所有点向上平移一个单位长度可得 $y=f(x)+1$ 的图形.
+</p>
+<p>设 $a>0$, 由同样的分析可以知道, 
+\[\begin{aligned}
+    &\text{向左平移 $a$ 个单位长度:}\ f(x)\rightarrow f(x+a);\\
+    &\text{向右平移 $a$ 个单位长度:}\ f(x)\rightarrow f(x-a);\\
+    &\text{向上平移 $a$ 个单位长度:}\ f(x)\rightarrow f(x)+a;\\
+    &\text{向下平移 $a$ 个单位长度:}\ f(x)\rightarrow f(x)-a.
+\end{aligned}\]
+以上结论可以简记为“左加右减, 上加下减”. 示意图如下($a>0$):
+</p>
+<p><center>
+        \includegraphics[scale=1]{2020-1215-1900-crop}\qquad
+        \includegraphics[scale=1]{2020-1215-1910-crop}
+    </center>
+</p>
+<p>注意, 这些结论均是对 $x$ 或 $f(x)$ (即 $y$) 的整体变换. 例如 $f(2x)$ 的图形往左平移 $1$ 个单位长度, 得到 $f(2(x+1))$ 即 $f(2x+2)$ 的图形; 而由 $f(3x)$ 的图形要得到 $f(3x-1)$ 的图形, 需将前者往右平移 $\dfrac13$ 个单位长度.
+</p>
+<p>接着考虑函数 $y=f(x)$ 与 $y=-f(x)$ 的图形. 因为点 $C(n,f(n))$ 满足 $y=f(x)$ (此时 $x=n$), 而点 $C'(n,-f(n))$ 满足 $y=f(x+1)$ (此时 $x=n$), 且点 $C$ 与 $C'$ 关于 $x$ 轴对称, 所以作 $y=f(x)$ 图形上的所有点关于 $x$ 轴的对称点可得 $y=-f(x)$ 的图形 (两个图形上对应点横坐标相同, 纵坐标互为相反数, 简记为“上下翻转”). 类似地, 作 $y=f(x)$ 图形上的所有点关于 $y$ 轴的对称点可得 $y=f(-x)$ 的图形 (两个图形上对应点横坐标互为相反数, 纵坐标相同, 简记为“左右翻转”). 示意图如下:
+</p>
+<p><center>
+        \includegraphics[scale=1]{2020-1215-1920-crop}\qquad
+        \includegraphics[scale=1]{2020-1215-1930-crop}
+    </center>
+</p>
+<p>上述六种图形变换可以叠加. 例如, $f(x)$ 的图形先上下翻转可得 $-f(x)$ 的图形, 再左右翻转可得 $-f(-x)$ 的图形; $f(x)$ 的图形先左右翻转可得 $f(-x)$ 的图形, 再向右平移 $4$ 个单位长度 (将 $x$ 替换为 $x-4$) 可得 $f(4-x)$ 的图形.
+</p>
+<p><myexample>
+<p>已知 $f(x)=\begin{cases}
+        \dfrac12 x,& -2\leqslant x\leqslant 0,\\
+        -x^2+2x,& 0< x\leqslant 2,
+    \end{cases}$ 画出下列函数的图形:
+</p>
+<p>(1) $f(x)$;\qquad (2) $f(x-2)$;\qquad (3) $-f(x)$;\qquad 
+    (4) $f(-x)$;\qquad (5) $-f(-x)$.
+</p>
+</myexample>
+<mysolution>
+    <p>各函数图形依次如下:
+</p>
+<p><center>
+        \includegraphics[scale=1.2]{2020-1215-1940-crop}\qquad
+        \includegraphics[scale=1.2]{2020-1215-1950-crop}\qquad
+        \includegraphics[scale=1.2]{2020-1215-2000-crop}
+    </center>
+</p>
+<p><center>
+        \includegraphics[scale=1.2]{2020-1215-2010-crop}\qquad
+        \includegraphics[scale=1.2]{2020-1215-2020-crop}
+    </center>
+</p>
+</mysolution>
+</article>
+ 
+          
+    
+    <div class="docs-prevnext">
+    
+        <a class="docs-prev button" href="/docs/algebra/function/function-oddeven">
+          <span class="arrow-prev">← </span><span>函数的奇偶性</span></a>
+      
+      
+        <a class="docs-next button" href="/docs/algebra/function/quadratic-function">
+          <span>二次函数</span><span class="arrow-next"> →</span></a>
+      
+    </div>
+
+    <p>作者邮箱 rong.liu@mail.bnu.edu.cn。</p>
+    <p>读者的支持是作者持续更新的动力😊</p>
+    
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#函数的图象">函数的图象</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -5,5 +5,41 @@
     <link>/docs/analytic-geometry/conic-curves/</link>
     <description>Recent content in 圆锥曲线 on 高中数学资料</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="/docs/analytic-geometry/conic-curves/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>椭圆</title>
+      <link>/docs/analytic-geometry/conic-curves/ellipse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/analytic-geometry/conic-curves/ellipse/</guid>
+      <description> 椭圆 # </description>
+    </item>
+    
+    <item>
+      <title>双曲线</title>
+      <link>/docs/analytic-geometry/conic-curves/hyperbola/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/analytic-geometry/conic-curves/hyperbola/</guid>
+      <description> 双曲线 # </description>
+    </item>
+    
+    <item>
+      <title>抛物线</title>
+      <link>/docs/analytic-geometry/conic-curves/parabola/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/analytic-geometry/conic-curves/parabola/</guid>
+      <description> 抛物线 # </description>
+    </item>
+    
+    <item>
+      <title>圆锥曲线综合</title>
+      <link>/docs/analytic-geometry/conic-curves/conic-curves-line/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/analytic-geometry/conic-curves/conic-curves-line/</guid>
+      <description> 圆锥曲线综合 # </description>
+    </item>
+    
   </channel>
 </rss>
