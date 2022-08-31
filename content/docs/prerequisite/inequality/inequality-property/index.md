@@ -244,3 +244,74 @@ prevPageTitle: 不等式
     </center>
 </p>
 
+<myexample>
+<p>解不等式:
+    \begin{twocolpro}
+    (1) $|4-2x|>2$; & (2) $\dfrac1{x+1}\geqslant 2$.
+    \end{twocolpro}
+</p>
+</myexample>
+<mysolution>
+    <p>(1) 绝对值的几何意义是: $|a|$ 表示数轴上点 $a$ 到原点的距离, 所以 $|4-2x|>2$ 表明
+    \[4-2x< -2\quad\text{或}\quad 4-2x>2,\]
+    解得 $x\in(-\infty,1)\cup (3,+\infty)$.
+</p>
+<p>(2) 移项通分, 化成分式与 $0$ 比, 再转化为等价的乘积与 $0$ 比:
+    \[\frac1{x+1}-2\geqslant 0
+        \Rightarrow \frac{-1-2x}{x+1}\geqslant 0
+        \Rightarrow \left\{\!\!\begin{array}{l}
+            (2x+1)(x+1)\geqslant 0,\\
+            x+1\neq 0,
+            \end{array}\right. \]
+    解得 $x\in \biggl(-1,\dfrac12\biggr]$.
+</p>
+</mysolution>
+
+<myexample>
+<p>已知 $a_1$, $a_2\in (0,1)$, 记 $M=a_1a_2$, $N= a_1+a_2-1$, 比较 $M$ 与 $N$ 的大小.
+</p>
+</myexample>
+<mysolution>
+    <p>比较大小的一般方法为作差法. 因为
+    \[\begin{aligned}
+        M-N &= a_1a_2- (a_1+a_2-1)
+        = (a_1a_2- a_1)- (a_2-1)\\
+        &= a_1(a_2- 1)- (a_2-1)
+         = (a_1- 1)(a_2-1),
+    \end{aligned}\]
+    而 $a_1$, $a_2\in (0,1)$ 表明 $a_1-1< 0$, $a_2-1< 0$, 所以
+    \[M-N>0,\quad\text{即}\quad M>N.\]
+</p>
+</mysolution>
+
+<myexample>
+<p>设 $a$, $b$ 为非零实数, 且 $a< b$, 判断下列不等式是否恒成立:
+</p>
+<p>(1) $a^3< b^3$;\quad (2) $a^2>ab$;\quad
+    (3) $a^2< b^2$;\quad (4) $\dfrac1{ab^2}< \dfrac1{a^2b}$.
+</p>
+</myexample>
+<mysolution>
+    <p>(1) 由函数 $f(x)=x^3$ 单调递增可知, $f(a)< f(b)$ 即 $a^3< b^3$.
+</p>
+<p>(2) 由 $a< b$ 知 $a-b< 0$, 所以
+    \[a^2>ab\Leftrightarrow a^2-ab> 0\Leftrightarrow a(a-b)>0
+        \Leftrightarrow a< 0,\]
+    但题中并未指明 $a$ 的符号, 所以 $a^2>ab$ 不恒成立.
+</p>
+<p>(3) 与 (2) 类似,
+    \[a^2< b^2\Leftrightarrow a^2-b^2< 0
+        \Leftrightarrow (a+b)(a-b)< 0
+        \Leftrightarrow a+b>0,\]
+    但题中并未指明 $a+b$ 的符号, 所以 $a^2< b^2$ 不恒成立.
+</p>
+<p>(4) 用同样的方法,
+    \[\begin{aligned}
+        \dfrac1{ab^2}< \dfrac1{a^2b}
+        &\Leftrightarrow \dfrac1{ab^2}-\dfrac1{a^2b}< 0
+         \Leftrightarrow \frac{a-b}{a^2b^2}< 0\\
+        &\Leftrightarrow a-b< 0,
+    \end{aligned}\]
+    与题意相符, 故恒成立.
+</p>
+</mysolution>

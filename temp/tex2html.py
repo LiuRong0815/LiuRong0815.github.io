@@ -40,7 +40,7 @@ if(texFileNum == 0):
 #开始转换，并准备必要的数据
 for num in range(0,texFileNum):
 
-    fptemp = open(texFileNames[num]+'.temp','w') # 新建 tmp
+    fptemp = open(texFileNames[num]+'.temp','w') # 新建 temp
     lines = open(texFileNames[num]+'.tex','r').readlines()  #读入每一行
 
     # 替换各种环境和文字
@@ -145,5 +145,9 @@ for num in range(0,texFileNum):
         # 逐行写入
         fpmd.write(oneline)
     fptemp.close()
+
+for file_name in os.listdir("./"):
+    if file_name.endswith('.temp'):
+        os.remove("./" + file_name)
 
 print('finished converting ' + str(texFileNum) + ' tex files!')

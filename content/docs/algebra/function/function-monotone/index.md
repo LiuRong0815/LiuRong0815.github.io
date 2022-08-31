@@ -127,3 +127,60 @@ nextPageTitle: 函数的奇偶性
 </p>
 </mysolution>
 
+<myexample>
+<p>若对于任意实数 $a\in[-1,1]$, 函数 $y=x^2+(a-4)x+4-2a$ 的值恒大于零, 求 $x$ 的取值范围.
+</p>
+</myexample>
+<mysolution>
+    <p>此题可理解为 (反客为主): 关于 $a$ 的函数 
+    \[y=f(a)=x^2+(a-4)x+4-2a\]
+    在 $[-1,1]$ 上恒大于零. 此时
+    \[f(a)= (x-2)a+ x^2-4x+4\]
+    为关于 $a$ 的一次函数, 在 $[-1,1]$ 上的图形为一条线段, 所以只需两个端点纵坐标均大于零, 即
+    \[\left\{\!\!\begin{array}{l}
+        f(-1)= (x-2)\cdot(-1)+ x^2-4x+4>0,\\
+        f(1)= (x-2)\cdot 1+ x^2-4x+4>0,
+    \end{array}\right.\]
+    解得
+    \[\left\{\!\!\begin{array}{l}
+        x< 1\ \text{或}\ x>2,\\
+        x< 2\ \text{或}\ x>3,
+    \end{array}\right.\]
+    所以 $x\in(-\infty,1)\cup (3,+\infty)$.
+</p>
+</mysolution>
+
+<myexample>
+<p>指出下列函数的单调性和值域:
+    \begin{twocolpro}
+    (1) $f(x)=x^2+|x|-2$; & (2) $g(x)= \dfrac{3x+1}{x-1}$.
+    \end{twocolpro}
+</p>
+</myexample>
+<mysolution>
+    <p>(1) 方法一: 根据绝对值的定义可知,
+    \[f(x)=\begin{cases}
+        x^2+x-2,& x\geqslant 0,\\
+        x^2-x-2,& x< 0.
+        \end{cases}\]
+    函数的图形如下 (分别作 $y$ 轴左侧和右侧的图形):
+</p>
+<p><center>
+        \includegraphics[scale=1.1]{2020-1126-1945-crop}
+    </center>
+</p>
+<p>由图得, $f(x)$ 在 $(-\infty,0)$ 上单调递减, 在 $[0,+\infty)$ 上单调递增, 值域为 $[-2,+\infty)$.
+</p>
+<p>方法二: 因为 $f(-x)=f(x)$, 所以 $f(x)$ 为偶函数, 图形关于 $y$ 轴对称. 令 $x\geqslant 0$ 知, $f(x)=x^2+x-2$, 可作出 $f(x)$ 在 $y$ 轴右侧的图形, 再关于 $y$ 轴作对称图形即可. 答案同上. 
+</p>
+<p>(2) 将函数变形 (把分子写成“分母的倍数”加“常数”的形式, 再拆项),
+    \[g(x)= \frac{3(x-1)+4}{x-1}= 3+\frac4{x-1},\]
+    由此可知, $g(x)$ 的图形可由 $h(x)=\dfrac4x$ 的图形向右平移一个单位长度, 再向上平移三个单位长度得到:
+</p>
+<p><center>
+        \includegraphics[scale=1]{2020-1126-2225-crop}
+    </center>
+</p>
+<p>所以, $g(x)$ 在 $(-\infty,1)$ 和 $(1,+\infty)$ 上均单调递减, 值域为 $(-\infty,3)\cup (3,+\infty)$.
+</p>
+</mysolution>

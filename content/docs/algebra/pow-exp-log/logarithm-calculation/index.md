@@ -11,6 +11,239 @@ nextPageTitle: 对数函数
 
 # 对数运算
 
+<myexample>
+<p>化简求值:  $\mathrm{e}^{-\ln 2}$, $\dfrac{\log_8 9}{\log_2 3}$.
+</p>
+</myexample>
+<mysolution>
+    <p>因为 $a^{\log_a b}= b$, 所以 ($\ln x$ 表示以 $\mathrm{e}$ 为底的自然对数)
+    \[\mathrm{e}^{-\ln 2}= \mathrm{e}^{\ln \frac12}= \frac12.\]
+    由换底公式,
+    \[\frac{\log_8 9}{\log_2 3}
+        = \frac{\ln 9}{\ln 8} \cdot \frac{\ln 3}{\ln 2}
+        = \frac{2\ln 3}{3\ln 2} \cdot \frac{\ln 3}{\ln 2}
+        = \frac23.\]
+</p>
+</mysolution>
+
+<myexample>
+<p>一个容器装有细沙 $a\,\text{cm}^3$, 细沙从容器底部一个细微的小孔慢慢地匀速漏出, $t\,\text{min}$ 后剩余的细沙量为 $y= a\mathrm{e}^{-bt}\,(\text{cm}^3)$, 经过 $8\,\text{min}$ 后发现容器内还有一半的沙子, 求需要再经过多少时间, 容器中的沙子只有开始时的八分之一.
+</p>
+</myexample>
+<mysolution>
+    <p>设经过 $t\,\text{min}$ 符合题意, 则由已知,
+    \[\left\{\!\!\begin{array}{l}
+        a\mathrm{e}^{-b\cdot 8}= \dfrac{a}2,\\[5pt]
+        a\mathrm{e}^{-bt}= \dfrac{a}8,
+        \end{array}\right.\ \text{即}
+      \left\{\!\!\begin{array}{l}
+        \mathrm{e}^{-8b}= \dfrac12,\\[3pt]
+        \mathrm{e}^{-bt}= \dfrac18.
+      \end{array}\right.\]
+    因为 $\dfrac18= \biggl(\dfrac12\biggr)^3$, 所以
+    \[\mathrm{e}^{-bt}= (\mathrm{e}^{-8b})^3= \mathrm{e}^{-24b},\]
+    即 $-bt=-24b$, 解得 $t=24$. 这表明需要再经过 $(t-8)\,\text{min}= 16\,\text{min}$, 才能符合题意.
+</p>
+</mysolution>
+
+<myexample>
+<p>根据有关资料, 围棋状态空间复杂度的上限 $M$ 约为 $3^{361}$, 而可观测宇宙中普通物质的原子总数 $N$ 约为 $10^{80}$. 将 $\dfrac{M}{N}$ 表示为 $10$ 的正整数次方 ($\lg 3\approx 0.48$).
+</p>
+</myexample>
+<mysolution>
+    <p>根据对数的运算性质, 
+    \[\begin{aligned}
+        \lg \dfrac{M}{N}
+        &= \lg M-\lg N= \lg 3^{361}- \lg 10^{80}
+         = 361\lg 3- 80\\
+        &\approx 361\cdot 0.48- 80
+         = 93.28,
+       \end{aligned}\]
+    所以 $\dfrac{M}{N}\approx 10^{93}$.
+</p>
+</mysolution>
+
+<myexample>
+<p>设 $A=\{0,1,2\}$, $B= \{\log_m 1, \log_m 2, m\}$, 且 $A=B$, 求实数 $m$ 的值.
+</p>
+</myexample>
+<mysolution>
+    <p>由对数的定义, $B= \{0, \log_m 2, m\}$, 且 $m>0$ 且 $m\neq 1$, 所以由 $A=B$ 知只能 $m=2$. 此时 $\log_m 2=1$, 即 $B=\{0,1,2\}$, 符合题意.
+</p>
+</mysolution>
+<myremark>
+    <p>上题可以直接讨论 $m=0$, $1$ 或 $2$, 但是利用对数定义直接得到 $m=2$ 更方便. 另外, 集合问题一般需要回代求出的数值, 以检验其是否符合题意.
+</p>
+</myremark>
+
+<myexample>
+<p>(1) 化简: $3^{-\log_3 2}$, $\log_{\sqrt3} 81$;
+</p>
+<p>(2) 若 $a=\log_4 3$, 求 $2^a+2^{-a}$ 的值.
+</p>
+</myexample>
+<mysolution>
+    <p>(1) 前者直接用对数恒等式, 
+    \[3^{-\log_3 2}= 3^{\log_3 \frac12}= \dfrac12.\]
+    后者用对数定义 (因为 $3^4= 81$),
+    \[\log_{\sqrt3} 81= \log_{\sqrt3} (\sqrt3)^8= 8,\]
+    或者换底公式,
+    \[\log_{\sqrt3} 81= \frac{\ln 81}{\ln\sqrt3}
+        = \frac{4\ln 3}{\dfrac12\ln 3}= 8.\]
+</p>
+<p>(2) 因为 
+    \[2^a= 2^{\log_4 3}= 4^{\frac12\log_4 3}
+        = 4^{\log_4 \sqrt3}= \sqrt3,\]
+    而 $2^{-a}= \dfrac1{2^a}= \dfrac{\sqrt3}3$, 所以
+    \[2^a+2^{-a}= \sqrt3+ \dfrac{\sqrt3}3
+        = \dfrac{4\sqrt3}3.\]
+</p>
+</mysolution>
+</p>
+<p><myexample>
+<p>若函数 $f(x)$ 满足 $f(2^x)= x$, 求 $f(4)$, $f(6)$ 的值.
+</p>
+</myexample>
+<mysolution>
+    <p>先求 $f(4)$ 的值. 此时 $2^x=4$, 解得 $x=2$, 所以 $f(4)=2$. 同理可求得 $f(6)= \log_2 6$.
+</p>
+</mysolution>
+<myremark>
+    <p>上例中可以求出 $f(x)= \log_2 x$. 更多的例子可参考“2020 年 10 月 21 日答疑记录”(尤其是第二部分).
+</p>
+</myremark>
+</p>
+<p><myexample>
+<p>设 $a=\lg2$, $b= \lg3$, 用 $a$, $b$ 分别表示 $\lg 12$ 和 $\log_2 3$.
+</p>
+</myexample>
+<mysolution>
+    <p>分别用对数运算性质和和换底公式,
+    \[\begin{aligned}
+        \lg 12&= \lg(2^2\cdot 3)= 2\lg2+\lg3= 2a+b,\\
+        \log_2 3&= \dfrac{\lg3}{\lg2}= \dfrac{b}{a}.
+    \end{aligned}\]
+</p>
+</mysolution>
+</p>
+<p><myexample>
+<p>化简: $(\lg2)^2+ \lg4\cdot\lg5+ (\lg5)^2$.
+</p>
+</myexample>
+<mysolution>
+    <p>因为 $\lg4= 2\lg2$, 利用完全平方公式,
+    \[\begin{aligned}
+        &(\lg2)^2+ \lg4\cdot\lg5+ (\lg5)^2\\
+        ={}& (\lg2)^2+ 2\lg2\cdot\lg5+ (\lg5)^2\\
+        ={}& (\lg2+\lg5)^2= 1.
+    \end{aligned}\]
+</p>
+</mysolution>
+
+<myexample>
+<p>(1) 设 $a>0$, 求 $\lg a+\lg\dfrac1a$ 的值.
+</p>
+<p>(2) 设 $\log_3 2=b$, 用 $b$ 表示 $\log_3 8-\log_3 6$.
+</p>
+<p>(3) 设 $\log_2 c= m$, $\log_3 c= n$, 用 $m$, $n$ 表示 $\log_c 6$.
+</p>
+</myexample>
+<mysolution>
+    <p>(1) $\lg a+\lg\dfrac1a= \lg\biggl(a\cdot\dfrac1a\biggr)
+    = \lg 1= 0$.
+</p>
+<p>(2) 由题意,
+    \[\begin{aligned}
+        \log_3 8-\log_3 6
+        &= \log_3 \dfrac86= \log_3 \dfrac43
+         = \log_3 4- \log_3 3\\
+        &= 2\log_3 2- 1= 2a-1.
+    \end{aligned}\]
+</p>
+<p>(3) 由换底公式,
+    \[\log_2 c= m= \frac{\lg c}{\lg 2},\quad
+      \log_3 c= n= \frac{\lg c}{\lg 3},\]
+    则
+    \[\frac{\lg 2}{\lg c}= \frac1m,\quad
+      \frac{\lg 3}{\lg c}= \frac1n,\]
+    所以
+    \[\log_c 6= \frac{\lg6}{\lg c}= \frac{\lg2+\lg3}{\lg c}
+        = \frac1m+ \frac1n.\]
+</p>
+</mysolution>
+</p>
+<p><myexample>
+<p>若函数 $f(x)= f\biggl(\dfrac1x\biggr)\cdot \lg x+ 1$, 求 $f(10)$ 的值.
+</p>
+</myexample>
+<mysolution>
+    <p>分别令 $x=10$, $\dfrac1{10}$, 可得
+    \[\left\{\!\!\begin{array}{l}
+        f(10)= f\biggl(\dfrac1{10}\biggr)\cdot \lg10+ 1,\\
+        f\biggl(\dfrac1{10}\biggr)= f(10)\cdot \lg\frac1{10}+ 1, 
+    \end{array}\right.\]
+    即
+    \[\left\{\!\!\begin{array}{l}
+        f(10)= f\biggl(\dfrac1{10}\biggr)+ 1,\\
+        f\biggl(\dfrac1{10}\biggr)= -f(10)+ 1.
+    \end{array}\right.\]
+    将后一式代入前一式, 可解得 $f(10)= 1$.
+</p>
+</mysolution>
+<myremark>
+    <p>上面的过程可一般化: 将式子中的 $x$ 换为 $\dfrac1x$, 并联立,
+    \[\left\{\!\!\begin{array}{l}
+        f(x)= f\biggl(\dfrac1x\biggr)\cdot \lg x+ 1,\\
+        f\biggl(\dfrac1x\biggr)= -f(x)\cdot \lg x+ 1,
+    \end{array}\right.\]
+    其中用到了 $\lg\dfrac1x= -\lg x$. 仍用代入消元法可解得, 
+    \[f(x)= \dfrac{\lg x+ 1}{1+(\lg x)^2}.\]
+</p>
+</myremark>
+
+<myexample>
+<p>一种放射性物质不断衰变为其他物质, 每经过一年, 该物质剩留的质量约是原来的 $75\%$. 估计经过多少年, 该物质的剩留量是原来的 $\dfrac13$? (结果保留 1 位有效数字, 参考数据: $\lg2\approx 0.3010$, $\lg3\approx 0. 4771$)
+</p>
+</myexample>
+<mysolution>
+    <p>设该物质初始质量为 $m$, 则经过 $t$ 年, 质量为 $m\cdot (75\%)^t$. 由题意, 
+    \[m\cdot (75\%)^t= \frac13 m,\quad\text{解得}\quad
+        t= \log_{75\%} \frac13,\]
+    进一步有,
+    \[\begin{aligned}
+        t
+        &= \frac{\lg \dfrac13}{\lg \dfrac34}
+         = \frac{-\lg 3}{\lg3-2\lg2}\\
+        &\approx \frac{-0.4771}{0.4771-2\times 0.3010}
+        \approx 4,
+    \end{aligned}\]
+    故大约经过 $4$ 年符合题意.
+</p>
+</mysolution>
+
+<myexample>
+<p>某种病毒每经过 $30$ 分钟繁殖为原来数量的 $2$ 倍, 则 $1$ 个病毒经过 $5$ 小时能繁殖为多少个? 设该病毒原有 $a$ 个, 经过 $t$ 小时繁殖为 $y$ 个且 $y= a\mathrm{e}^{kt}$, 求常数 $k$ 的值.
+</p>
+</myexample>
+<mysolution>
+    <p>$5$ 小时共 $10$ 个 $30$ 分钟, 所以 $1$ 个病毒经过 $5$ 小时能繁殖为 $2^{10}= 1024$ 个.
+</p>
+<p>由题意, 当 $t$ 变为 $t+\dfrac12$ 时, $y$ 变为原来的 $2$ 倍, 所以
+    \[a\mathrm{e}^{k(t+\frac12)}= 2\cdot a\mathrm{e}^{kt},\quad
+        \text{解得}\quad k=2\ln 2.\]
+</p>
+</mysolution>
+</p>
+<p><myexample>
+<p>在不考虑空气阻力的情况下, 火箭的最大速度 $v\,\mathrm{m/s}$, 燃料的质量 $M\,\mathrm{kg}$ 和火箭 (除燃料外) 的质量 $m\,\mathrm{kg}$ 的函数关系式为 $v= 2000\ln\biggl(1+\dfrac{M}m\biggr)$. 当燃料质量是火箭质量的多少倍时, 火箭的最大速度可以达到 $12\,\mathrm{km/s}$?
+</p>
+</myexample>
+<mysolution>
+    <p>因为 $12\,\mathrm{km/s}= 12000\,\mathrm{m/s}$, 所以
+    \[12000= 2000\ln\biggl(1+\dfrac{M}m\biggr),\quad
+        \text{解得}\quad \frac{M}{m}= \mathrm{e}^6-1.\]
+</p>
+</mysolution>
 
 <p>对数的主要运算法则如下 (以下均设底数 $a\in(0,1)\cup(1,+\infty)$, 真数 $x$, $y>0$):
 \[\begin{gathered}

@@ -73,7 +73,7 @@
             {"weight":"2", "subsecNameE":"trig-induce", "subsecNameC":"三角函数的诱导公式"},
             {"weight":"3", "subsecNameE":"trig-sum-diff", "subsecNameC":"三角函数的和差角公式"},
             {"weight":"4", "subsecNameE":"trig-double-auxiliary", "subsecNameC":"倍角公式与辅助角公式"},
-            {"weight":"5", "subsecNameE":"trig-sum-prod", "subsecNameC":"和差化积公式与积化和差公式"}
+            {"weight":"5", "subsecNameE":"trig-sum-prod", "subsecNameC":"和差化积公式与积化和差公式"},
             {"weight":"6", "subsecNameE":"trig-function-graph", "subsecNameC":"三角函数图象"}
         ]},
         {"weight":"2", "secNameE":"sine-cosine-law", "secNameC":"正弦定理与余弦定理",
@@ -186,7 +186,3 @@
         ]}
     ]}
 ]}
-
-
- 
-

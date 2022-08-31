@@ -182,3 +182,84 @@ nextPageTitle: 高中数学资料
 <p>(2) 用均值不等式时, 必须考虑等号成立的条件. 如果例 \ref{exa:201115-1040} 中 $t\geqslant 3$, 那么等号就不能成立, 只能写 $f(t)>-2$, 即不能得到 $f_{\min}=-2$ 的结论. 此时的解法参可借用例 \ref{exa:201115-1045} 中的单调性结论.
 </p>
 </myremark>
+
+<myexample>
+<p>(1) 若 $x>0$, $y>0$, $x+y=18$, 求 $xy$ 的最大值.
+</p>
+<p>(2) 若 $0< x< \dfrac12$, 求 $x\sqrt{1-4x^2}$ 的最大值.
+</p>
+</myexample>
+<mysolution>
+    <p>(1) 方法一: 直接用均值不等式,
+    \[\frac{x+y}{2}\geqslant \sqrt{xy},\quad\text{即}\quad
+        9\geqslant \sqrt{xy},\]
+    所以 $xy\leqslant 81$,“$=$”成立当且仅当 $x=y=9$. 因此$xy$ 的最大值为 $81$.
+</p>
+<p>方法二: 先消元化为一元二次函数, 再利用函数图形. 由题可知,
+    $xy= x(18-x)$ 为 $x$ 的二次函数, 且对称轴为 $x=9$, 所以最大值为 $9\cdot(18-9)= 81$.
+</p>
+<p>(2) 方法一: 由已知, 
+    \[x\sqrt{1-4x^2}= \frac12\sqrt{4x^2(1-4x^2)},\]
+    利用均值不等式,
+    \[\sqrt{4x^2(1-4x^2)}\leqslant \frac{4x^2+(1-4x^2)}{2}
+        = \frac12,\]
+   “$=$”成立当且仅当 $4x^2=1-4x^2$ 即 $x^2=\dfrac18$, 所以
+    \[x\sqrt{1-4x^2}\leqslant \frac14.\]
+</p>
+<p>方法二: $x\sqrt{1-4x^2}= \sqrt{x^2(1-4x^2)}$, 再将 $x^2$ 视为整体并设 $t=x^2$, 考虑 $t(1-4t)$ ($0< t< \dfrac14$) 也可得 $x\sqrt{1-4x^2}$ 的最大值为 $\frac14$.
+</p>
+</mysolution>
+
+<myexample>
+<p>若 $x>0$, 求函数 $y=\dfrac{16x}{x^2+1}$ 的最大值.
+</p>
+</myexample>
+<mysolution>
+    <p>方法一: 原式恒正, 先对该式取倒数, 
+    \[\frac{1}{y}= \dfrac{x^2+1}{16x}= \frac1{16}\biggl(x+\frac1x\biggr),\]
+    再由均值不等式,
+    \[x+\frac1x\geqslant 2\sqrt{x\cdot\frac1x}=2,
+        \quad\text{则}\quad
+        \frac{1}{y}\geqslant \frac18,\]
+    所以 $y\leqslant 8$,“$=$”成立当且仅当 $x=\dfrac1x$ 即 $x=1$. 因此所求最大值为 $8$.
+</p>
+<p>方法二: 直接对原式分母用均值不等式 (注意分母变小, 故分式增大), 则
+    \[y= \dfrac{16x}{x^2+1}
+        \leqslant \frac{16x}{2\sqrt{x^2\cdot 1}}= 8,\]
+   “$=$”成立当且仅当 $x=\dfrac1x$ 即 $x=1$. 因此所求最大值为 $8$.
+</p>
+</mysolution>
+
+<myexample>
+<p>若 $a>0$, $b>0$ 且 $a\neq b$, 比较 $\dfrac{a+b}2$, $\sqrt{ab}$, $\sqrt{\dfrac{a^2+b^2}2}$ 的大小.
+</p>
+</myexample>
+<mysolution>
+    <p>由均值不等式, $\sqrt{ab}\leqslant \dfrac{a+b}2$. 但已知 $a\neq b$, 所以等号不成立, 即 $\sqrt{ab}< \dfrac{a+b}2$. 再考虑 $\dfrac{a+b}2$ 和 $\sqrt{\dfrac{a^2+b^2}2}$ 的大小. 因为 (带根号的式子, 先平方去掉根号)
+    \[\biggl(\sqrt{\dfrac{a^2+b^2}2}\biggr)^2- \biggl(\dfrac{a+b}2\biggr)^2= \frac{(a-b)^2}{4}>0,\]
+    所以 $\sqrt{\dfrac{a^2+b^2}2}> \dfrac{a+b}2$, 故
+    \[\sqrt{ab}< \dfrac{a+b}2< \sqrt{\dfrac{a^2+b^2}2}.\]
+</p>
+</mysolution>
+<myremark>
+    <p>进一步可以证明, 若 $a\geqslant 0$, $b\geqslant 0$, 则
+    \[\frac{2ab}{a+b}\leqslant \sqrt{ab}
+        \leqslant \dfrac{a+b}2
+        \leqslant \sqrt{\dfrac{a^2+b^2}2},\]
+   “$=$”成立当且仅当 $a=b$.
+</p>
+</myremark>
+
+<myexample>
+<p>若 $\forall\, x>0$, $x+\dfrac2x+a>0$ 恒成立, 求 $a$ 的取值范围.
+</p>
+</myexample>
+<mysolution>
+    <p>由题意, 只需不等式左边的最小值大于零. 由均值不等式, 
+    \[x+\dfrac2x\geqslant 2\sqrt{x\cdot\dfrac2x}= 2\sqrt2,\]
+   “$=$”成立当且仅当 $x=\dfrac2x$ 即 $x=\sqrt2$, 所以只需
+    \[2\sqrt2+a>0,\quad\text{解得}\quad 
+        a\in(-2\sqrt2,+\infty).\]
+</p>
+</mysolution>
+

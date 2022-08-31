@@ -232,3 +232,139 @@ nextPageTitle: 对数运算
     <p>二元函数求值域, 要么想办法先化为一元函数, 要么直接用均值不等式. 通常优先考虑后者, 但是要注意等号成立的条件. 此外, 上题也可利用 $b=2-a$ 将 $3^a+3^b$ 化为关于 $a$ 的一元函数 $3^a+3^{2-a}$, 但仍需利用均值不等式才能求其最小值. 
 </p>
 </myremark>
+
+<myexample>
+<p>函数 $f(x)= a^{x+1}+ 3$ ($a>0$, 且 $a\neq1$) 过定点  $\underline{\qquad}$.
+</p>
+</myexample>
+<mysolution>
+    <p>利用 $a^0=1$ 对任意 $a\neq0$ 成立可知, 
+    \[f(-1)= a^0+3= 3,\]
+    即 $f(x)$ 过定点 $(-1,3)$.
+</p>
+</mysolution>
+
+<myexample>
+<p>已知函数 
+    \[f(x)= \begin{cases}
+        -x+3-3a, & x< 0,\\
+        a^x, & x\geqslant 0
+    \end{cases}\quad (a>0\ \text{且}\ a\neq 1)\]
+    在 $\mathbf{R}$ 上单调递减, 求 $a$ 的取值范围.
+</p>
+</myexample>
+<mysolution>
+    <p>由分段函数的单调性判断方法 (参考“2020 年 10 月 31 日答疑记录”第三个例题及其后的说明),
+    \[\left\{\!\!\begin{array}{l}
+        0< a< 1,\\
+        -0+3-3a\geqslant a^0,
+    \end{array}\right.\ \text{解得}\quad
+    0< a< \frac23.\]
+    故所求取值范围为 $\biggl(0,\dfrac23\biggr)$.
+</p>
+</mysolution>
+
+<myexample>
+<p>若指数函数 $y=f(x)$ 的图形经过点 $(2,4)$, 求不等式 $f(2x-1)\leqslant \biggl(\dfrac12\biggr)^{1-3x}$ 的解集.
+</p>
+</myexample>
+<mysolution>
+    <p>由题意, $f(2)=4$. 设 $f(x)=a^x$ ($a>0$ 且 $a\neq 1$), 则 $a^2=4$, 解得 $a=2$. 因此不等式化为 (指数式化同底)
+    \[2^{2x-1}\leqslant 2^{-(1-3x)},\quad\text{即}\quad
+        2x-1\leqslant -(1-3x),\]
+    解得 $x\in[0,+\infty)$.
+</p>
+</mysolution>
+
+<myexample>
+<p>若函数 $y= 2^{|x-1|}$ 在区间 $(k-1,k+1)$ 内不单调, 求 $k$ 的取值范围.
+</p>
+</myexample>
+<mysolution>
+    <p>由 $y=2^|x|$ 的图形向右平移一个单位长度可得 $y= 2^{|x-1|}$ 的图形, 而前者为偶函数, 且当 $x\geqslant 0$ 时 $y=2^x$. 由此可以画出 $y= 2^{|x-1|}$ 的图形如下:
+</p>
+<p><center>
+        \includegraphics[scale=1]{2020-1223-2000-crop}
+    </center>
+</p>
+<p>由图可知, $y= 2^{|x-1|}$ 在 $(-\infty,1)$ 上单调递减, 在 $(1,+\infty)$ 上单调递增. 因为题中要求函数 $y= 2^{|x-1|}$ 在区间 $(k-1,k+1)$ 内不单调, 所以
+    \[1\in(k-1,k+1),\quad\text{解得}\quad k\in(0,2).\]
+</p>
+</mysolution>
+
+<myexample>
+<p>画出函数 $y= \dfrac{x a^x}{|x|}$ ($0< a< 1$) 的图形的大致形状.
+</p>
+</myexample>
+<mysolution>
+    <p>利用绝对值的定义, 原函数化为 $y= \begin{cases}
+        -a^x, & x< 0,\\
+        a^x, & x>0,
+    \end{cases}$
+    图形的大致形状如下:
+</p>
+<p><center>
+        \includegraphics[scale=1.1]{2020-1227-1100-crop}
+    </center>
+</p>
+</mysolution>
+
+<myexample>
+<p>已知函数 $f(x) =\begin{cases}
+        3^x, & x\leqslant 0,\\
+        -2x+1, & x>0,
+    \end{cases}$ 若 $f(x)\leqslant \dfrac13$, 求实数 $x$ 的取值范围.
+</p>
+</myexample>
+<mysolution>
+    <p>(1) 若 $x\leqslant 0$, 则 $f(x)\leqslant \dfrac13$ 化为
+    \[3^x\leqslant \frac13= 3^{-1},\quad\text{解得}\quad
+        x\leqslant -1.\]
+</p>
+<p>(2) 若 $x> 0$, 则 $f(x)\leqslant \dfrac13$ 化为
+    \[-2x+1\leqslant \frac13,\quad\text{解得}\quad
+        x\geqslant \frac13.\]
+</p>
+<p>综上所述, $x\in (-\infty,-1]\cup \biggl[\dfrac13,+\infty\biggr)$.
+</p>
+</mysolution>
+</p>
+<p>分段函数分段考虑, 下题也是如此.
+</p>
+<p><myexample>
+<p>已知函数 $f(x)= \begin{cases}
+        ax+2-3a, & x< 0,\\
+        2^x-1, & x\geqslant 0.
+    \end{cases}$ 若存在 $x_1$, $x_2\in\realnum$, $x_1\neq x_2$, 使得 $f(x_1)= f(x_2)$ 成立, 求实数 $a$ 的取值范围.
+</p>
+</myexample>
+<mysolution>
+    <p>题中 $f(x)$ 的图形在 $x< 0$ 的部分为半直线, 在 $x\geqslant 0$ 的部分为 $y=2^x$ 向下平移一个单位长度. 而条件“存在 $x_1\neq x_2$ 使得 $f(x_2)= f(x_2)$ 成立”表明存在水平的直线与 $f(x)$ 的图形有两个不同的交点. 分 $a< 0$, $a=0$ 和 $a>0$ 三种情况 (分别对应半直线不同的增减性) 画图如下:
+</p>
+<p><center>
+        \includegraphics[scale=1.1]{2020-1227-1400-crop}\qquad
+        \includegraphics[scale=1.1]{2020-1227-1410-crop}\qquad
+        \includegraphics[scale=1.1]{2020-1227-1420-crop}
+    </center>
+</p>
+<p>由图可知, 当 $a\leqslant 0$ 时, 图形均合题意; 而当 $a>0$ 时, 需 $2-3a>0$ 即 $a< \dfrac23$. 由此可知, 实数 $a$ 的取值范围为 $\biggl(-\infty,-\dfrac23\biggr)$.
+</p>
+</mysolution>
+
+<myexample>
+<p>随着天气的变化, 某种疾病的感染人数 $y$ 与月份 $x$ 满足关系式 $y=a \cdot 0.5^x +b$. 现已知某城市今年 1 月、2 月该疾病的感染人数分别为 1 万人、1.5 万人, 求 3 月份该疾病的感染人数.
+</p>
+</myexample>
+<mysolution>
+    <p>以“万人”为 $y$ 的单位, 则
+    \[\left\{\!\!\begin{array}{l}
+        1= a\cdot 0.5 +b,\\
+        1.5= a\cdot 0.5^2 +b,
+    \end{array}\right.\ \text{解得}\ 
+    \left\{\!\!\begin{array}{l}
+        a= -2,\\
+        b= 2,
+    \end{array}\right.\]
+    所以当 $x=3$ 时, $y= -2\cdot 0.5^3+2= 1.75$, 即 3 月份该疾病的感染人数为 $1.75$ 万人.
+</p>
+</mysolution>
