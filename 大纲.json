@@ -171,10 +171,11 @@
         ]},
         {"weight":"3", "secNameE":"probability", "secNameC":"概率",
         "subsections":[
-            {"weight":"1", "subsecNameE":"classical-probability", "subsecNameC":"古典概型"},
-            {"weight":"2", "subsecNameE":"geometric-probability", "subsecNameC":"几何概型"},
-            {"weight":"3", "subsecNameE":"conditional-probability", "subsecNameC":"条件概率"},
-            {"weight":"4", "subsecNameE":"expectation-variation", "subsecNameC":"期望与方差"}
+            {"weight":"1", "subsecNameE":"random-event", "subsecNameC":"随机事件的概率"},
+            {"weight":"2", "subsecNameE":"classical-probability", "subsecNameC":"古典概型"},
+            {"weight":"3", "subsecNameE":"geometric-probability", "subsecNameC":"几何概型"},
+            {"weight":"4", "subsecNameE":"conditional-probability", "subsecNameC":"条件概率"},
+            {"weight":"5", "subsecNameE":"expectation-variation", "subsecNameC":"期望与方差"}
         ]},
         {"weight":"4", "secNameE":"probability-distribution", "secNameC":"概率分布",
         "subsections":[

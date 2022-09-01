@@ -1,7 +1,7 @@
 ---
 # bookCollapseSection: true
 title: 条件概率
-weight: 3
+weight: 4
 bookHidden: true
 prevPage: /docs/probability-statistics/probability/geometric-probability
 prevPageTitle: 几何概型

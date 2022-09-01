@@ -1,10 +1,10 @@
 ---
 # bookCollapseSection: true
 title: 古典概型
-weight: 1
+weight: 2
 bookHidden: true
-prevPage: /docs/probability-statistics/probability
-prevPageTitle: 概率
+prevPage: /docs/probability-statistics/probability/random-event
+prevPageTitle: 随机事件的概率
 nextPage: /docs/probability-statistics/probability/geometric-probability
 nextPageTitle: 几何概型
 ---
