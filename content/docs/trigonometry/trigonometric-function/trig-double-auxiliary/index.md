@@ -252,3 +252,15 @@ nextPageTitle: 和差化积公式与积化和差公式
 </p>
 </mysolution>
 
+<myexample>
+<p>已知 $\sin\alpha= \cos2\alpha$, $\alpha\in\biggl(\dfrac\pi2, \pi\biggr)$, 求 $\tan\alpha$ 的值.
+</p>
+</myexample>
+<mysolution>
+    <p>由已知, $\sin\alpha= \cos2\alpha= 1- 2\sin^2\alpha$, 则 \[
+        2\sin^2\alpha+ \sin\alpha- 1= 0,\quad
+        \sin\alpha= \frac12,-1.\]
+    因为 $\alpha\in\biggl(\dfrac\pi2, \pi\biggr)$, 所以 $\sin\alpha= \dfrac12$. 作三角函数线知, $\tan\alpha= -\dfrac{\sqrt3}3$.
+</p>
+</mysolution>
+

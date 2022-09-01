@@ -126,7 +126,7 @@
         ]},
         {"weight":"2", "secNameE":"line-plane", "secNameC":"直线与平面",
         "subsections":[
-            {"weight":"1", "subsecNameE":"position", "subsecNameC":"直线与平面的位置关系"},
+            {"weight":"1", "subsecNameE":"line-plane-position", "subsecNameC":"直线与平面的位置关系"},
             {"weight":"2", "subsecNameE":"line-plane-parallel", "subsecNameC":"线面平行"},
             {"weight":"3", "subsecNameE":"line-plane-perp", "subsecNameC":"线面垂直"},
             {"weight":"4", "subsecNameE":"plane-parallel", "subsecNameC":"面面平行"},
@@ -167,10 +167,7 @@
         {"weight":"2", "secNameE":"statistics", "secNameC":"统计",
         "subsections":[
             {"weight":"1", "subsecNameE":"mean-variation", "subsecNameC":"平均值与方差"},
-            {"weight":"2", "subsecNameE":"histogram", "subsecNameC":"直方图"},
-            {"weight":"3", "subsecNameE":"", "subsecNameC":""},
-            {"weight":"4", "subsecNameE":"", "subsecNameC":""},
-            {"weight":"5", "subsecNameE":"", "subsecNameC":""}
+            {"weight":"2", "subsecNameE":"histogram", "subsecNameC":"直方图"}
         ]},
         {"weight":"3", "secNameE":"probability", "secNameC":"概率",
         "subsections":[

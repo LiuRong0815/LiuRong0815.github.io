@@ -11,6 +11,42 @@ nextPageTitle: 对数运算
 
 # 指数函数
 
+<p>乘方是多个相同式子相乘的简写, 例如, \[
+    a^2= a\cdot a,\quad b^3= b\cdot b\cdot b.\]
+对于正整数 $m,n$, 可知 \[\begin{gathered}
+    a^m \cdot a^n= a^{m+n},\\
+    (a^m)^n= a^{mn},\quad
+    (ab)^m= a^m b^m.
+\end{gathered}\]
+例如, \[
+    (4^2)^3= 4^2\cdot 4^2\cdot 4^2= 4^{2\cdot 3}.\]
+</p>
+<p>当 $a\neq 0$ 且正整数 $m,n$ 满足 $m\geqslant n$ 时, \[
+    \frac{a^m}{a^n}= a^{m-n},\quad
+    \frac{a^n}{a^m}= \frac1{a^{m-n}},\]
+例如, \[
+    \frac{2^5}{2^3}= a^{5-3},\quad
+    \frac{2^3}{2^5}= \frac1{2^{5-3}}.\]
+特别地, 当 $m=n$ 时, 可得 \[
+    a^0= a^{n-n}= \frac{a^n}{a^n}= 1\quad (a\neq 0).\]
+</p>
+<p>在公式 $a^m \cdot a^n= a^{m+n}$ 中令 $m= -n$, 则 \[
+    a^{-n} \cdot a^n= a^{-n+n}= a^0= 1,\]
+所以规定 $a^{-n}= \dfrac1{a^n}$. 在公式 $(a^m)^n= a^{mn}$ 中令 $m= \dfrac1n$, 则 \[
+    (a^{\frac1n})^n= a^{\frac1n\cdot n}= a,\]
+即 $a^{\frac1n}$ 的 $n$ 次方为 $a$, 所以规定 $a^{\frac1n}= \sqrt[n]{a}$.
+</p>
+<p>上述公式汇总如下: \[\begin{gathered}
+    a^m \cdot a^n= a^{m+n},\quad a^0= 1,\\
+    (a^m)^n= a^{mn},\quad
+    (ab)^m= a^m b^m,\\
+    a^{-n}= \dfrac1{a^n},\quad
+    a^{\frac1n}= \sqrt[n]{a}.
+\end{gathered}\]
+虽然在前面均假设 $m,n$ 为正整数, 但是上面的 $6$ 个公式可以推广到 $m,n$ 为任意实数的情形 (记忆时仍不妨只考虑正整数的情形). 最后两个式子可记为“指数中的负号表示取倒数, 分母表示开根号”, 此外“指数中的分子表示乘方”, 例如, \[
+    a^{-\frac34}= \frac1{a^{\frac34}}= \frac1{\sqrt[4]{a^3}}.\]
+</p>
+
 <p>\begin{example}\label{exa:201201-2020}
     已知函数
     \[f(x)= \begin{cases}

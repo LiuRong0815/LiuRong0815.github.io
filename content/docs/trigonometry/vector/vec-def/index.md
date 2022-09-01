@@ -219,3 +219,36 @@ nextPageTitle: 平面向量基本定理
     故 $\overrightarrow{DE}= \dfrac12(\overrightarrow{AC}- \overrightarrow{AB})$.
 </p>
 </mysolution>
+
+<myexample>
+<p>已知非零向量 $\bm{a}$, $\bm{b}$, $\bm{c}$, 判断下列命题的正误:
+</p>
+<p>(1) 若 $\bm{a}\cdot\bm{c}= \bm{b}\cdot\bm{c}$, 则 $\bm{a}=\bm{b}$;
+</p>
+<p>(2) 若 $|\bm{a}+ \bm{b}|= |\bm{a}|+ |\bm{b}|$, 则 $\bm{a}\parallel \bm{b}$;
+</p>
+<p>(3) 若 $|\bm{a}+\bm{b}|= |\bm{a}-\bm{b}|$, 则 $\bm{a}\perp\bm{b}$;
+</p>
+<p>(4) 若  $(\bm{a}+\bm{b})\cdot(\bm{a}-\bm{b})=0$, 则 $\bm{a}=\bm{b}$ 或 $\bm{a}= -\bm{b}$.
+</p>
+</myexample>
+<mysolution>
+    <p>(1) 向量内积运算与实数乘法运算不同, 没有消去律, 仅能推出 $(\bm{a}-\bm{b})\cdot\bm{c}= 0$, 即 $\bm{a}-\bm{b}\perp\bm{c}$. 原结论错误.
+</p>
+<p>(2) 原式两边平方, $(\bm{a}+ \bm{b})^2= (|\bm{a}|+ |\bm{b}|)^2$, 展开整理得 $\bm{a}\cdot\bm{b}= |\bm{a}|\,|\bm{b}|$. 设 $\bm{a}$ 与 $\bm{b}$ 的夹角为 $\theta$, 则由内积的定义, 
+    \[\cos\theta= \frac{\bm{a}\cdot\bm{b}}{|\bm{a}|\,|\bm{b}|}= 1,\]
+    所以 $\theta= 0$, 即 $\bm{a}$ 与 $\bm{b}$ 同向平行. 原结论正确.
+</p>
+<p>此小题的结论也可以从几何角度考虑. 由向量加法的定义, $\bm{a}$, $\bm{b}$ 和 $\bm{a}+\bm{b}$ 可以构成封闭的图形. 如果 $\bm{a}$ 与 $\bm{b}$ 不平行, 那它们比与 $\bm{a}+\bm{b}$ 构成三角形. 由于三角形中任意两边之和大于第三边, 所以 $|\bm{a}+ \bm{b}|< |\bm{a}|+ |\bm{b}|$, 与已知不符. 这说明 $\bm{a}\parallel \bm{b}$, 且作图易知, $\bm{a}$ 与 $\bm{b}$ 同向平行.
+</p>
+<p>(3) 原式两边平方后整理得 $\bm{a}\cdot\bm{b}= 0$, 即 $\bm{a}\perp\bm{b}$. 原结论正确.
+</p>
+<p>(4) 原式展开后整理得, $\bm{a}^2= \bm{b}^2$ 即 $|\bm{a}|^2= |\bm{b}|^2$, 所以 $|\bm{a}|= |\bm{b}|$. 原结论错误.
+</p>
+</mysolution>
+</p>
+<p><myremark>
+    <p>向量内积运算与实数乘法运算虽然有不少类似之处, 但也有很多不同: (1) 中提到, 向量内积运算没有消去律; (4) 中表明, 内积结果无法开方为向量, 只能转化为实数运算. 此外, $|\bm{a}|^2= \bm{a}^2= \bm{a}\cdot\bm{a}$, 即将向量的模平方后化为内积式, 是解题时常用的转化方法. 
+</p>
+</myremark>
+

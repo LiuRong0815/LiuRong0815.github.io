@@ -407,3 +407,22 @@ nextPageTitle: 三角函数的诱导公式
 </p>
 <p></p>
 </mysolution>
+
+<myexample>
+<p>下图为一个观览车示意图, 该观览车半径 $r=4.8\,\text{m}$, 圆上最低点与地面距离为 $0.8\,\text{m}$, $60\,\mathrm{s}$ 转动一周. 图中 $OA$ 与地面垂直, 以 $OA$ 为始边, 逆时针转动 $\theta$ 角到 $OB$, 设点 $B$ 与地面距离为 $h$.
+</p>
+<p>(1) 求 $h$ 与 $\theta$ 之间的函数关系解析式.
+</p>
+<p>(2) 设从 $OA$ 开始转动, 经过 $t\,\mathrm{s}$ 到达 $OB$, 求 $h$ 与 $t$ 之间的函数关系解析式.
+</p>
+</myexample>
+<mysolution>
+    <p>(1) 以 $O$ 为原点, 分别沿水平方向和竖直方向作 $x$ 轴和 $y$ 轴, 建立平面直角坐标系. 设 $OB$ 与 $x$ 轴正方向的夹角为 $\varphi$, 则由三角函数值的定义, 点 $B$ 的纵坐标为 $r\sin\varphi$. 由图可知, \[\varphi= \theta- 90^\circ,\]
+    而点 $O$ 与地面的距离为 $r+0.8= 5.6\,\mathrm{m}$, 所以 \[
+        h= 5.6+4.8\sin(\theta-90^\circ)
+         = 5.6-4.8\cos\theta.\]
+</p>
+<p>(2) 由题意, $OB$ 旋转的速度为 $6^\circ\,\mathrm{s}$, 所以 $\theta= 6t$, 代入上式可知, \[h= 5.6-4.8\cos6t.\]
+</p>
+</mysolution>
+

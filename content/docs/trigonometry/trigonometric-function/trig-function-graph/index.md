@@ -642,3 +642,98 @@ nextPageTitle: 正弦定理与余弦定理
     所以 $f(x)$ 的最小正周期为 $\dfrac{2\pi}{2}= \pi$.
 </p>
 </mysolution>
+
+<myexample>
+<p>求函数 $y= |\sin x|$ 的单调递增区间.
+</p>
+</myexample>
+<mysolution>
+    <p>函数 $y= |\sin x|$ 的图形可由函数 $y= \sin x$ 的图形变换得到. 具体来说, 考虑绝对值的作用可知, 只需将后者在 $x$ 轴下方的部分对称地“翻折”到 $x$ 轴上方, 即关于 $x$ 轴作对称图形. 由函数图形可知, 所求单调递增区间为 $\Bigl[k\pi, \dfrac\pi2+ k\pi\Bigr]$, $k\in\mathbf{Z}$.
+</p>
+</mysolution>
+
+<myexample>
+<p>已知函数 $f(x)= \cos\Bigl(2x-\dfrac\pi3\Bigr)- 2\sin^2 x+1$.
+</p>
+<p>(1) 求函数 $f(x)$ 的最小正周期.
+</p>
+<p>(2) 求函数 $f(x)$ 在区间 $\Bigl[0,\dfrac\pi2\Bigr]$ 上的最大值和最小值.
+</p>
+</myexample>
+<mysolution>
+    <p>(1) 先将 $f(x)$ 化简, \[
+        \begin{aligned}
+            f(x)
+            &= \cos2x\cos\frac\pi3+ \sin2x\sin\frac\pi3- (1-\cos2x)+ 1\\
+            &= \frac12\cos2x+ \frac{\sqrt3}2\sin2x+ \cos2x\\
+            &= \sqrt3\biggl(\frac{\sqrt3}2\cos2x+ \frac12\sin2x\biggr)\\
+            &= \sqrt3\sin\Bigl(2x+\frac\pi3\Bigr),
+        \end{aligned}\]
+    由此可知, 所求最小正周期为 $\dfrac{2\pi}2= \pi$.
+</p>
+<p>(2) 当 $x\in\Bigl[0,\dfrac\pi2\Bigr]$ 时, \[
+        2x+\frac\pi3\in\Bigl[\frac\pi3,\frac{4\pi}3\Bigr],\]
+    结合 $f(x)$ 的解析式可知, 此时 $f(x)\in\biggl[-\dfrac32,\sqrt3\biggr]$, 即最大值为 $\sqrt3$, 最小值为 $-\dfrac32$.
+</p>
+</mysolution>
+
+
+<myexample>
+<p>已知函数 $f(x)= 2\sqrt{3} \sin\dfrac{x}2 \cos\dfrac{x}2 - 2\cos^2\dfrac{x}2$, 求 $f(x)$ 的单调递减区间及对称轴方程.
+</p>
+</myexample>
+<mysolution>
+    <p>先用二倍角公式化简, \[\begin{aligned}
+        f(x)&= \sqrt{3} \sin x - (1+\cos x)\\
+        &= 2\biggl(\dfrac{\sqrt{3}}2\sin x- \dfrac12\cos x\biggr)-1\\
+        &= 2\sin\biggl(x-\dfrac\pi6\biggr)-1.
+    \end{aligned}\]
+    所以当 $f(x)$ 单调递减时, \[\begin{aligned}
+        x-\dfrac\pi6&\in \biggl[\dfrac\pi2+2k\pi, \dfrac{3\pi}2+2k\pi\biggr],\\
+        x&\in \biggl[\dfrac{2\pi}3+2k\pi, \dfrac{5\pi}3+2k\pi\biggr],
+    \end{aligned}\]
+    即所求单调递减区间为 \[
+        \biggl[\dfrac{2\pi}3+2k\pi, \dfrac{5\pi}3+2k\pi\biggr],\quad
+        k\in\mathbf{Z},\]
+    而 $f(x)$ 的对称轴满足 \[
+        x-\dfrac\pi6=\dfrac\pi2+ k\pi\Rightarrow
+        x= \dfrac{2\pi}3+ k\pi,\ k\in\mathbf{Z}.\]
+</p>
+</mysolution>
+</p>
+<p><myexample>
+<p>已知函数 $f(x)= \sin(\omega x+\varphi)$ ($\omega> 0$, $|\varphi|< \dfrac\pi2$) 的周期为 $\pi$, 直线 $x=\dfrac\pi6$ 是 $f(x)$ 图形的一条对称轴.
+</p>
+<p>(1) 求 $f(x)$ 的解析式和单调递减区间;
+</p>
+<p>(2) 若 $x\in\biggl[0,\dfrac\pi3\biggr]$, 求 $f(x)$ 的值域.
+</p>
+</myexample>
+<mysolution>
+    <p>(1) 因为 $f(x)$ 的周期为 $\pi$, 所以 \[
+        \frac{2\pi}{|\omega|}= \pi\Rightarrow |\omega|= 2,\]
+    结合 $\omega> 0$ 知, $\omega= 2$. 由 $x=\dfrac\pi6$ 是对称轴知, \[\begin{gathered}
+        \sin\biggl(\dfrac\pi6\cdot \omega +\varphi\biggr)
+            = \sin\biggl(\dfrac\pi6\cdot 2 +\varphi\biggr)= \pm1,\\
+        \dfrac\pi3 +\varphi= \dfrac\pi2+ k\pi,\\
+        \varphi= \dfrac\pi6+ k\pi,\quad k\in\mathbf{Z}.
+    \end{gathered}\]
+    因为 $|\varphi|< \dfrac\pi2$, 所以 $\varphi= \dfrac\pi6$, 即 \[
+        f(x)= \sin\biggl(2x+\dfrac\pi6\biggr).\]
+    当 $f(x)$ 单调递减时, \[\begin{aligned}
+        2x+\dfrac\pi6&\in \biggl[\dfrac\pi2+2k\pi, \dfrac{3\pi}2+2k\pi\biggr],\\
+        x&\in \biggl[\dfrac{\pi}6+k\pi, \dfrac{2\pi}3+k\pi\biggr],
+    \end{aligned}\]
+    即所求单调递减区间为 \[
+        \biggl[\dfrac{\pi}6+k\pi, \dfrac{2\pi}3+k\pi\biggr],\quad
+        k\in\mathbf{Z},\]
+</p>
+<p>(2) 当 $x\in\biggl[0,\dfrac\pi3\biggr]$ 时, \[
+        2x\in\biggl[0,\dfrac{2\pi}3\biggr]\Rightarrow
+        2x+\dfrac\pi6\in\biggl[\dfrac\pi6,\dfrac{5\pi}6\biggr],\]
+    所以由单位圆中的正弦线可知, \[
+        f(x)\in \biggl[\sin\dfrac\pi6, \sin\dfrac\pi2\biggr]
+        = \biggl[\frac12, 1\biggr]\]
+</p>
+</mysolution>
+
