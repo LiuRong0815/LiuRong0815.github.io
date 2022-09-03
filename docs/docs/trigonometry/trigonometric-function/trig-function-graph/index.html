@@ -14,9 +14,9 @@
 <title>三角函数图象 | 高中数学资料</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.0ea964dfd939ec410a2a39593431f6f339bf806ba9aac813a1870c7fca3262b0.css" >
+<link rel="stylesheet" href="/book.min.6c08f1f220250ecc36dde6a6fa75fdd4247d84aaaa23d4bc157c9b2f8fa595bd.css" >
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh.search.min.d291c56f7a101eb7bc458e3f1a2b0ef94298fb228cc365dff9fb90ae5d5203f2.js" ></script>
+  <script defer src="/zh.search.min.7c8f3c308c7cc4a49e5725aaff2837a3795fa64e6f84159b9c29faa7f139e44e.js" ></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
 <!--
@@ -411,6 +411,19 @@ https://github.com/alex-shpak/hugo-book
           
   <ul>
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/inequality/inequality-property/" class="">不等式的性质</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -769,6 +782,434 @@ https://github.com/alex-shpak/hugo-book
     \frac{3\pi}2+2k\pi\biggr],\quad\text{即}\quad
     x\in\biggl[\frac\pi{12}+k\pi, \frac{7\pi}{12}+k\pi\biggr],\ k\in\mathbf{Z}.\]
 可类似地求上述两个函数的对称轴.
+<myexample>
+<p>已知 $\alpha$, $\beta>0$, 则“$\alpha+\beta< \dfrac\pi2$”是“$\sin\alpha< \cos\beta$”的什么条件?
+</p>
+</myexample>
+<mysolution>
+    <p>若 $\alpha+\beta< \dfrac\pi2$, 则 $0< \alpha< \dfrac\pi2-\beta< \dfrac\pi2$, 由 $y=\sin x$ 在 $\biggl[0,\dfrac\pi2\biggr]$ 上单调递增可知, 
+    \[\sin\alpha< \sin\biggl(\dfrac\pi2-\beta\biggr)= \cos\beta.\]
+</p>
+<p>反之, 取 $\alpha=\pi$, $\beta=2\pi$ 可知这一组值满足 $\sin\alpha< \cos\beta$, 而 $\alpha+\beta= 3\pi>\dfrac\pi2$.
+</p>
+<p>综上可知,“$\alpha+\beta< \dfrac\pi2$”是“$\sin\alpha< \cos\beta$”的充分不必要条件.
+</p>
+</mysolution>
+<myexample>
+<p>求函数 $f(x)= \sin\biggl(2x+\dfrac{\pi}3\biggr)$ 的单调递减区间.
+</p>
+</myexample>
+<mysolution>
+    <p>由正弦函数图形, 当 $f(x)$ 单调递减时,
+    \[2x+\dfrac{\pi}3\in \biggl[\frac{\pi}{2}+2k\pi, \frac{3\pi}{2}+2k\pi\biggr],\quad\text{即}\quad
+    x\in\biggl[\frac{\pi}{12}+k\pi, \frac{7\pi}{12}+k\pi\biggr],\]
+    所以函数 $f(x)$ 的单调递减区间为 $\biggl[\dfrac{\pi}{12}+k\pi, \dfrac{7\pi}{12}+k\pi\biggr]$, $k\in\mathbf{Z}$.
+</p>
+</mysolution>
+<myexample>
+<p>已知函数 $f(x)= \sin\biggl(\dfrac12x+ \varphi\biggr)$ ($0\leqslant \varphi\leqslant \dfrac\pi2$), 且满足 $\underline{\qquad}$. 从以下三个条件中任选一个, 补充在横线处:
+</p>
+<p>(1) $-\dfrac{3\pi}4$ 是函数 $f(x)$ 的一个零点;
+</p>
+<p>(2) 当 $x=-\dfrac\pi4$ 时, $f(x)= \dfrac{\sqrt2}2$;
+</p>
+<p>(3) $f(x)$ 的图形的一条对称轴是直线 $x=\dfrac\pi4$,\\
+    然后解答下列问题:
+</p>
+<p>(1) 求函数 $f(x)$ 的周期;
+</p>
+<p>(2) 求函数 $f(x)$ 的单调增区间;
+</p>
+<p>(3) 求函数 $f(x)$ 在 $[0,2\pi]$ 上的最大值和最小值.
+</p>
+</myexample>
+<mysolution>
+    <p>先以选择条件 (1) 为例, 写出解答过程. 此时
+    \[f\biggl(-\dfrac{3\pi}4\biggr)= \sin\biggl(-\frac{3\pi}8+ \varphi\biggr)=0,\]
+    则
+    \[-\frac{3\pi}8+ \varphi= k\pi,\quad\text{即}\quad \varphi= \frac{3\pi}8+k\pi,\ k\in\integralnum.\]
+    因为 $0\leqslant \varphi\leqslant \dfrac\pi2$, 所以 $k=0$ 而 $\varphi= \dfrac{3\pi}8$, 即 $f(x)= \sin\biggl(\dfrac12x+ \dfrac{3\pi}8\biggr)$.
+</p>
+<p>(1) 由三角函数周期公式, $f(x)$ 的周期为 $T= \dfrac{2\pi}{1/2}= 4\pi$.
+</p>
+<p>(2) 当 $f(x)$ 单调递增时, 
+    \[\dfrac12x+ \dfrac{3\pi}8\in \biggl[-\frac\pi2+2k\pi, \frac\pi2+2k\pi\biggr],\quad\text{即}\quad
+    x\in\biggl[-\frac{7\pi}4+4k\pi, \frac\pi4+4k\pi\biggr],\]
+    所以 $f(x)$ 的单调递增区间为 $\biggl[-\dfrac{7\pi}4+4k\pi, \dfrac\pi4+4k\pi\biggr],\ k\in\mathbf{Z}$.
+</p>
+<p>(3) 因为 $x\in[0,2\pi]$, 所以 $\dfrac12x+ \dfrac{3\pi}8\in\biggl[\dfrac{3\pi}8, \dfrac{11\pi}8\biggr]$. 画正弦线或正弦函数图形可知, $f(x)= \sin\biggl(\dfrac12x+ \dfrac{3\pi}8\biggr)$ 在 $[0,2\pi]$ 上的最大值为 $1$, 最小值为 $\sin\dfrac{11\pi}8$.
+</p>
+<p>若选择条件 (2), 则
+    \[f\biggl(-\dfrac\pi4\biggr)=  \sin\biggl(-\frac\pi8+ \varphi\biggr)= \dfrac{\sqrt2}2,\]
+    所以
+    \[-\frac\pi8+ \varphi= \frac{\pi}4+k\pi\ \text{或}\ \frac{3\pi}4+k\pi,\]
+    即
+    \[\varphi= \frac{3\pi}8+2k\pi\ \text{或}\ \frac{7\pi}8+2k\pi,\quad k\in\integralnum.\]
+    又因为 $0\leqslant \varphi\leqslant \dfrac\pi2$, 所以 $k=0$ 而 $\varphi= \dfrac{3\pi}8$, 其余过程同前述推导.
+</p>
+<p>若选择条件 (3), 则由对称轴的特征可知,
+    \[f\biggl(\dfrac{\pi}4\biggr)= \sin\biggl(\frac{\pi}8+ \varphi\biggr)=\pm1,\]
+    则
+    \[\frac{\pi}8+ \varphi= \frac\pi2+k\pi,\quad\text{即}\quad \varphi= \frac{3\pi}8+k\pi,\ k\in\integralnum.\]
+    同样可得 $\varphi= \dfrac{3\pi}8$.
+</p>
+</mysolution>
+<myexample>
+<p>“$m=\dfrac{5\pi}{12}$”是“函数 $f(x)= \cos\biggl(2x+\dfrac\pi6\biggr)$ 的图形关于直线 $x=m$ 对称”的什么条件?
+</p>
+</myexample>
+<mysolution>
+    <p>函数 $f(x)= \cos\biggl(2x+\dfrac\pi6\biggr)$ 的图形对称轴的横坐标满足
+    \[2x+\dfrac\pi6= k\pi,\quad\text{即}\quad
+        x= -\frac\pi{12}+\frac{k\pi}2,\ k\in\mathbf{Z}.\]
+    因为 $m=\dfrac{5\pi}{12}$ 仅对应 $k=1$ 的情形, 所以“$m=\dfrac{5\pi}{12}$”是“函数 $f(x)= \cos\biggl(2x+\dfrac\pi6\biggr)$ 的图形关于直线 $x=m$ 对称”的充分而不必要条件.
+</p>
+</mysolution>
+<myexample>
+<p>“$\alpha= k\pi+\beta$, $k\in\mathbf{Z}$”是“$\tan\alpha= \tan\beta$”的什么条件?
+</p>
+</myexample>
+<mysolution>
+    <p>因为 $f(x)= \tan x$ 的最小正周期为 $\pi$, 所以大部分时候, 由 $\alpha= k\pi+\beta$ 可得 $\tan\alpha= \tan\beta$. 但是, $f(x)= \tan x$ 中 $x\neq \dfrac\pi2+k\pi$, 因此当 $\alpha= \dfrac\pi2+k\pi$ 时, $\tan\alpha$ 无意义.
+</p>
+<p>反之, 若 $\tan\alpha= \tan\beta$, 则必有
+    \[\alpha= k\pi+\beta\neq \dfrac\pi2+k'\pi,\quad k\in\mathbf{Z}.\]
+    所以“$\alpha= k\pi+\beta$, $k\in\mathbf{Z}$”是“$\tan\alpha= \tan\beta$”的必要不充分条件. 
+</p>
+</mysolution>
+<myremark>
+    <p>利用正弦线、余弦线可知,
+    \[\begin{gathered}
+        \sin\alpha= \sin\beta \Leftrightarrow
+            \alpha= \beta+2k\pi\ \text{或}\ \pi-\beta+2k\pi,\ 
+            k\in\mathbf{Z};\\
+        \cos\alpha= \cos\beta \Leftrightarrow
+            \alpha= \beta+2k\pi\ \text{或}\ -\beta+2k\pi,\ 
+            k\in\mathbf{Z}.
+    \end{gathered}\]
+</p>
+</myremark>
+<myexample>
+<p>已知函数 $f(x)= \sin(\omega x+\varphi)$, 其中 $\omega>0$, $\varphi\in\biggl(0,\dfrac\pi2\biggr)$, 再从如下条件中任意选两个作为已知条件:
+</p>
+<p>(1) $f(x)$ 的最小正周期为 $\pi$;
+</p>
+<p>(2) $f(x)$ 的图形关于点 $\biggl(-\dfrac\pi6,0\biggr)$ 对称;
+</p>
+<p>(3) $f(x)$ 的图形关于直线 $x= \dfrac\pi{12}$ 对称.
+</p>
+<p>求 $f(x)$ 的单调递增区间, 以及其在 $\biggl[0,\dfrac\pi2\biggr]$ 上的值域.
+</p>
+</myexample>
+<mysolution>
+    <p>不妨选条件 (1) 和 (3). 由 (1), $\dfrac{2\pi}{\omega}= \pi$, 所以 $\omega=2$. 由 (3) 和对称轴对应图形的最高点或最低点, 
+    \[f\biggl(\dfrac\pi{12}\biggr)= \pm 1,\quad\text{即}\quad
+        \sin\biggl(2\cdot \frac\pi{12}+ \varphi\biggr)= \pm 1,\]
+    解得
+    \[\frac\pi{6}+ \varphi= \frac\pi2+ k\pi,\quad\text{即}\quad
+        \varphi= \frac\pi3+ k\pi,\ k\in\mathbf{Z}.\]
+    因为 $\varphi\in\biggl(0,\dfrac\pi2\biggr)$, 所以 $k=0$, $\varphi= \dfrac\pi3$. 因此 $f(x)= \sin\biggl(2x+\dfrac\pi3\biggr)$.
+</p>
+<p>$f(x)$ 的单调递增区间满足 
+    \[2x+\dfrac\pi3\in \biggl[-\frac\pi2+2k\pi, \frac\pi2+2k\pi\biggr],\]
+    解得
+    \[x\in\biggl[-\frac{5\pi}{12}+k\pi, \frac{\pi}{12}+k\pi\biggr],\quad k\in\mathbf{Z}.\]
+    由 $x\in\biggl[0,\dfrac\pi2\biggr]$ 知 $2x+\dfrac\pi3\in \biggl[\dfrac\pi3,\dfrac{4\pi}3\biggr]$. 再作正弦线可知, $f(x)\in \biggl[-\dfrac{\sqrt3}2, 1\biggr]$.
+</p>
+</mysolution>
+<myremark>
+    <p>上题若选条件 (1) 和 (2), 则计算过程类似, 且也能得到相同的答案; 若选条件 (2) 和 (3), 只能算出 $\varphi=\dfrac\pi3$, 无法算出 $\omega$ 为确定值.
+</p>
+</myremark>
+<myexample>
+<p>求分别满足下列条件的 $a$ 的取值范围:
+</p>
+<p>(1) $\forall\, x\in\mathbf{R}$, $\sin x+a>0$ 恒成立;
+</p>
+<p>(2) $\forall\, x\in[0,\pi]$, $\sin x+a< 0$ 恒成立;
+</p>
+<p>(3) $\forall\, x\in\biggl[0,\dfrac\pi 2\biggr]$, $\cos \biggl(2x+ \dfrac\pi3\biggr)+ a< 0$ 恒成立.
+</p>
+</myexample>
+<mysolution>
+    <p>仍用最值来计算.
+</p>
+<p>(1) 不等式左边最小值大于零, 即
+    \[-1+a>0,\quad\text{解得}\quad a\in(1,+\infty).\]
+</p>
+<p>(2) 不等式左边最大值小于零, 即
+    \[1+a< 0,\quad\text{解得}\quad a\in(-\infty,-1).\]
+</p>
+<p>(3) 不等式左边最大值小于零. 由 $x\in\biggl[0,\dfrac\pi 2\biggr]$ 可得
+    \[2x+ \dfrac\pi3\in\biggl[\dfrac\pi3,\dfrac{4\pi}3\biggr],\]
+    所以 $\cos \biggl(2x+ \dfrac\pi3\biggr)\in\biggl[-1,\dfrac12\biggr]$, 即
+    \[\frac12+a< 0,\quad\text{解得}\quad a\in\biggl(-\infty,-\frac12\biggr).\]
+</p>
+</mysolution>
+<myexample>
+<p>已知函数 $f(x)= \sin x-\sqrt3\cos x$, 求其最小正周期和 $f\Bigl(\dfrac\pi3\Bigr)$ 的值, 以及 $f(x)$ 在 $\Bigl[\dfrac\pi2,\dfrac{3\pi}2\Bigr]$ 上的值域.
+</p>
+</myexample>
+<mysolution>
+    <p>由辅助角公式,
+    \[\begin{aligned}
+        f(x)&= 2\biggl(\frac12\sin x- \frac{\sqrt3}2\cos x\biggr)\\
+        &= 2\Bigl(\cos\frac\pi3\sin x- \sin\frac\pi3\cos x\Bigr)\\
+        &= 2\sin\Bigl(x- \frac\pi3\Bigr),
+    \end{aligned}\]
+    所以 $f(x)$ 的最小正周期为 $2\pi$, $f\Bigl(\dfrac\pi3\Bigr)=0$. 当 $x\in\Bigl[\dfrac\pi2,\dfrac{3\pi}2\Bigr]$ 时,
+    \[x- \frac\pi3\in \Bigl[\dfrac\pi6,\dfrac{7\pi}6\Bigr],\quad
+        \text{可知}\quad 
+        \sin\Bigl(x- \frac\pi3\Bigr)\in \Bigl[-\dfrac12,1\Bigr],\]
+    故 $f(x)\in[-1,2]$.
+</p>
+</mysolution>
+</p>
+<p><myexample>
+<p>已知函数 $f(x)= \sin x\cos x+ \sqrt3\cos^2 x$, 求其单调递减区间和 $f\Bigl(\dfrac\pi3\Bigr)$ 的值.
+</p>
+</myexample>
+<mysolution>
+    <p>逆用二倍角公式知,
+    \[\begin{aligned}
+        f(x)&= \frac12\sin 2x+ \sqrt3\cdot\frac{1+\cos2x}{2}\\
+        &= \cos\frac\pi3\sin2x+ \sin\frac\pi3\cos 2x+ \frac{\sqrt3}2\\
+        &= \sin\Bigl(2x+ \frac\pi3\Bigr)+ \frac{\sqrt3}2,
+    \end{aligned}\]
+    则 $f\Bigl(\dfrac\pi3\Bigr)= \dfrac{\sqrt3}2$. $f(x)$ 的单调递减区间满足
+    \[\begin{gathered}
+        2x+ \frac\pi3\in \Bigl[-\frac\pi2+2k\pi, 
+            \frac\pi2+2k\pi\Bigr],\quad k\in\mathbf{Z},\\
+        x\in \Bigl[-\frac{5\pi}{12}+k\pi, 
+            \frac{\pi}{12}+2k\pi\Bigr],\quad k\in\mathbf{Z}.
+    \end{gathered}\]
+</p>
+</mysolution>
+</p>
+<p><myexample>
+<p>已知函数 $f(x)= 2\cos\Bigl(x-\dfrac\pi3\Bigr)\sin x$, 求其最小正周期和对称轴方程.
+</p>
+</myexample>
+<mysolution>
+    <p>先展开再合并,
+    \[\begin{aligned}
+        f(x)&= 2\Bigl(\cos x\cos\dfrac\pi3+ \sin x\sin\dfrac\pi3\Bigr)\sin x\\
+        &= (\cos x+\sqrt3\sin x)\sin x\\
+        &= \frac12\sin 2x+ \sqrt3\cdot\frac{1-\cos2x}{2}\\
+        &= \cos\frac\pi3\sin 2x+ \sin\frac\pi3\cos 2x+ \frac{\sqrt3}2\\
+        &= \sin\Bigl(2x+ \frac\pi3\Bigr)+ \frac{\sqrt3}2.
+    \end{aligned}\]
+    由此可知, $f(x)$ 的最小正周期为 $\pi$, 对称轴满足
+    \[\begin{gathered}
+        2x+ \frac\pi3= \frac\pi2+k\pi,\quad k\in\mathbf{Z},\\
+        x= \frac\pi{12}+k\pi,\quad k\in\mathbf{Z}.
+    \end{gathered}\]
+</p>
+</mysolution>
+</p>
+<p><myexample>
+<p>已知函数 $g(x)= \sin\Bigl(x-\dfrac\pi6\Bigr)$, $h(x)= \cos x$, 分别设
+</p>
+<p>(1) $f(x)= g(x)+h(x)$;\quad (2) $f(x)= g(x)h(x)$,\\
+    求 $f(x)$ 的最小正周期和在 $\Bigl[0,\dfrac\pi2\Bigr]$ 上的值域.
+</p>
+</myexample>
+<mysolution>
+    <p>本题的解法与上题相同, 均为先拆开后合并.
+</p>
+<p>(1) 由题意,
+    \[\begin{aligned}
+        f(x)&= \sin\Bigl(x-\dfrac\pi6\Bigr)+ \cos x\\
+        &= \frac{\sqrt3}{2}\sin x- \frac12\cos x+ \cos x\\
+        &= \sin\frac\pi3\sin x+ \cos\frac\pi3\cos x\\
+        &= \cos\Bigl(x-\frac\pi3\Bigr),
+    \end{aligned}\]
+    所以最小正周期为 $2\pi$. 当 $x\in\Bigl[0,\dfrac\pi2\Bigr]$ 时,
+    \[x-\frac\pi3\in \Bigl[-\frac\pi3,\dfrac\pi6\Bigr],\quad
+        \text{可知}\quad
+        f(x)\in\biggl[\frac12,\frac{\sqrt3}{2}\biggr].\]
+</p>
+<p>(2) 本小题略微复杂一点,
+    \[\begin{aligned}
+        f(x)&= \sin\Bigl(x-\dfrac\pi6\Bigr)\cos x\\
+        &= \biggl(\frac{\sqrt3}{2}\sin x- \frac12\cos x\biggr)\cos x\\
+        &= \frac{\sqrt3}{2}\cdot \frac{\sin x}2- \frac12\cdot \frac{1+\cos 2x}2\\
+        &= \frac12\Bigl(\cos\frac\pi6\sin2x- \sin\frac\pi6\cos2x\Bigr)- \frac14,\\
+        &= \frac12\sin\Bigl(2x-\frac\pi6\Bigr)- \frac14,
+    \end{aligned}\]
+    所以最小正周期为 $\pi$. 当 $x\in\Bigl[0,\dfrac\pi2\Bigr]$ 时,
+    \[2x-\frac\pi6\in \Bigl[-\frac\pi6,\dfrac{5\pi}6\Bigr],\quad
+        \text{可知}\quad
+        f(x)\in\Bigl[-\frac12,\frac14\Bigr].\]
+</p>
+</mysolution>
+<myexample>
+<p>将函数 $f(x)= \sin\Bigl(x+ \dfrac\pi3\Bigr)$ 的图形上所有点的横坐标变为原来的 $2$ 倍, 纵坐标不变; 再向右平移 $\dfrac\pi6$ 个单位长度后得到函数 $g(x)= \sin(\omega x+ \varphi)$ ($\omega>0$, $|\varphi|< \dfrac\pi2$) 的图形, 确定 $\omega$ 和 $\varphi$ 的值.
+</p>
+</myexample>
+<mysolution>
+    <p>前一次变换得到 $f_1(x)= \sin\Bigl(\dfrac12 x+ \dfrac\pi3\Bigr)$, 后一次变换得到
+    \[\begin{aligned}
+        g(x)
+        &= f_1\Bigl(x- \dfrac\pi6\Bigr)
+         = \sin\Bigl(\dfrac12 \Bigl(x- \frac\pi6\Bigr)+ \dfrac\pi3\Bigr)\\
+        &= \sin\Bigl(\frac12x+ \frac{\pi}{4}\Bigr),
+    \end{aligned}\]
+    所以 $\omega= \dfrac12$, $\varphi= \dfrac\pi4$.
+</p>
+</mysolution>
+</p>
+<p><myexample>
+<p>将函数 $f(x)= \sin2x- \sqrt3\cos2x$ 的图形向左平移 $\dfrac\pi6$ 个单位长度, 得到函数 $g(x)$ 的图形, 求 $g\Bigl(\dfrac{5\pi}{6}\Bigr)$ 的值.
+</p>
+</myexample>
+<mysolution>
+    <p>此题虽然可以直接代入求值, 但先化简再求值, 会减小计算量. 由辅助角公式,
+    \[f(x)= 2\Bigl(\frac12\sin2x- \frac{\sqrt3}2\cos2x\Bigr)
+        = 2\sin(2x- \frac\pi3),\]
+    所以 $g(x)= f\Bigl(x+\dfrac\pi6\Bigr)= 2\sin2x$, 而 $g\Bigl(\dfrac{5\pi}{6}\Bigr)= -\sqrt3$.
+</p>
+</mysolution>
+</p>
+<p><myexample>
+<p>函数 $f(x)= A\sin(\omega x+ \varphi)$ ($A>0$, $\omega>0$, $|\varphi|< \dfrac\pi2$) 的部分图形如下图所示, 求 $\omega$ 的值和 $f(x)$ 在 $\Bigl[\dfrac\pi3, \pi\Bigr]$ 上的零点.
+</p>
+<p><center>
+        \includegraphics[scale=1.5]{2021-0314-1740-crop}
+    </center>
+</p>
+</myexample>
+<mysolution>
+    <p>由图可知, $A=2$, 最小正周期 $T$ 满足 
+    \[\dfrac{T}{2}= \dfrac\pi3-\Bigl(-\dfrac\pi6\Bigr),\quad
+    \text{即}\quad T= \pi,\]
+    所以 $\omega= \dfrac{2\pi}{T}= 2$. 由图可知 $f(x)$ 有零点 $\dfrac12\Bigl[\Bigl(-\dfrac\pi6\Bigr)+ \dfrac\pi3\Bigr]= \dfrac\pi{12}$, 所以零点的一般表达式为
+    \[\dfrac\pi{12}+ k\cdot\frac{T}{2}
+        = \dfrac\pi{12}+ \frac{k\pi}2,\quad k\in\integralnum.\]
+    当 $x\in\Bigl[\dfrac\pi3, \pi\Bigr]$ 时, $k=1$, 对应零点 $\dfrac{7\pi}{12}$.
+</p>
+</mysolution>
+<myremark>
+    <p>上题也可以先求 $\varphi$, 再求零点的表达式, 最后根据题意确定零点. 具体过程为: 因为 $f\Bigl(\dfrac\pi3\Bigr)=2$, 所以 $\sin\Bigl(2\cdot \dfrac\pi3+\varphi\Bigr)=1$, 即
+    \[\begin{gathered}
+        \dfrac{2\pi}3+\varphi= \dfrac\pi2+2k\pi,\quad k\in\integralnum,\\
+        \varphi= -\dfrac\pi6+2k\pi,\quad k\in\integralnum,\\
+    \end{gathered}\]
+    由 $|\varphi|< \dfrac\pi2$ 知 $\varphi= -\dfrac\pi6$, 则
+    \[f(x)= 2\sin\Bigl(2x-\dfrac\pi6\Bigr),\]
+    对应零点满足
+    \[2x-\dfrac\pi6= k\pi,\ \text{即}\ 
+        x= \dfrac\pi{12}+ \frac{k\pi}2,\quad k\in\integralnum,\]
+    仍然可得所求零点为 $\dfrac{7\pi}{12}$.
+</p>
+<p>这种解法虽然是一般解法, 但是相对来说更繁琐一点.
+</p>
+</myremark>
+<myexample>
+<p>已知函数 $f(x)= \cos^4 x- 2\sin x\cos x- \sin^4 x$, 求 $f(x)$ 的最小正周期.
+</p>
+</myexample>
+<mysolution>
+    <p>先化简 $f(x)$ 的解析式,
+    \[\begin{aligned}
+        f(x)&= (\cos^4 x- \sin^4 x)- 2\sin x\cos x\\
+        &= (\cos^2 x+ \sin^2 x)(\cos^2 x- \sin^2 x)- \sin 2x\\
+        &= \cos2x- \sin2x
+         = \sqrt2\cos(2x+45^\circ),
+    \end{aligned}\]
+    所以 $f(x)$ 的最小正周期为 $\dfrac{2\pi}{2}= \pi$.
+</p>
+</mysolution>
+<myexample>
+<p>求函数 $y= |\sin x|$ 的单调递增区间.
+</p>
+</myexample>
+<mysolution>
+    <p>函数 $y= |\sin x|$ 的图形可由函数 $y= \sin x$ 的图形变换得到. 具体来说, 考虑绝对值的作用可知, 只需将后者在 $x$ 轴下方的部分对称地“翻折”到 $x$ 轴上方, 即关于 $x$ 轴作对称图形. 由函数图形可知, 所求单调递增区间为 $\Bigl[k\pi, \dfrac\pi2+ k\pi\Bigr]$, $k\in\mathbf{Z}$.
+</p>
+</mysolution>
+<myexample>
+<p>已知函数 $f(x)= \cos\Bigl(2x-\dfrac\pi3\Bigr)- 2\sin^2 x+1$.
+</p>
+<p>(1) 求函数 $f(x)$ 的最小正周期.
+</p>
+<p>(2) 求函数 $f(x)$ 在区间 $\Bigl[0,\dfrac\pi2\Bigr]$ 上的最大值和最小值.
+</p>
+</myexample>
+<mysolution>
+    <p>(1) 先将 $f(x)$ 化简, \[
+        \begin{aligned}
+            f(x)
+            &= \cos2x\cos\frac\pi3+ \sin2x\sin\frac\pi3- (1-\cos2x)+ 1\\
+            &= \frac12\cos2x+ \frac{\sqrt3}2\sin2x+ \cos2x\\
+            &= \sqrt3\biggl(\frac{\sqrt3}2\cos2x+ \frac12\sin2x\biggr)\\
+            &= \sqrt3\sin\Bigl(2x+\frac\pi3\Bigr),
+        \end{aligned}\]
+    由此可知, 所求最小正周期为 $\dfrac{2\pi}2= \pi$.
+</p>
+<p>(2) 当 $x\in\Bigl[0,\dfrac\pi2\Bigr]$ 时, \[
+        2x+\frac\pi3\in\Bigl[\frac\pi3,\frac{4\pi}3\Bigr],\]
+    结合 $f(x)$ 的解析式可知, 此时 $f(x)\in\biggl[-\dfrac32,\sqrt3\biggr]$, 即最大值为 $\sqrt3$, 最小值为 $-\dfrac32$.
+</p>
+</mysolution>
+<myexample>
+<p>已知函数 $f(x)= 2\sqrt{3} \sin\dfrac{x}2 \cos\dfrac{x}2 - 2\cos^2\dfrac{x}2$, 求 $f(x)$ 的单调递减区间及对称轴方程.
+</p>
+</myexample>
+<mysolution>
+    <p>先用二倍角公式化简, \[\begin{aligned}
+        f(x)&= \sqrt{3} \sin x - (1+\cos x)\\
+        &= 2\biggl(\dfrac{\sqrt{3}}2\sin x- \dfrac12\cos x\biggr)-1\\
+        &= 2\sin\biggl(x-\dfrac\pi6\biggr)-1.
+    \end{aligned}\]
+    所以当 $f(x)$ 单调递减时, \[\begin{aligned}
+        x-\dfrac\pi6&\in \biggl[\dfrac\pi2+2k\pi, \dfrac{3\pi}2+2k\pi\biggr],\\
+        x&\in \biggl[\dfrac{2\pi}3+2k\pi, \dfrac{5\pi}3+2k\pi\biggr],
+    \end{aligned}\]
+    即所求单调递减区间为 \[
+        \biggl[\dfrac{2\pi}3+2k\pi, \dfrac{5\pi}3+2k\pi\biggr],\quad
+        k\in\mathbf{Z},\]
+    而 $f(x)$ 的对称轴满足 \[
+        x-\dfrac\pi6=\dfrac\pi2+ k\pi\Rightarrow
+        x= \dfrac{2\pi}3+ k\pi,\ k\in\mathbf{Z}.\]
+</p>
+</mysolution>
+</p>
+<p><myexample>
+<p>已知函数 $f(x)= \sin(\omega x+\varphi)$ ($\omega> 0$, $|\varphi|< \dfrac\pi2$) 的周期为 $\pi$, 直线 $x=\dfrac\pi6$ 是 $f(x)$ 图形的一条对称轴.
+</p>
+<p>(1) 求 $f(x)$ 的解析式和单调递减区间;
+</p>
+<p>(2) 若 $x\in\biggl[0,\dfrac\pi3\biggr]$, 求 $f(x)$ 的值域.
+</p>
+</myexample>
+<mysolution>
+    <p>(1) 因为 $f(x)$ 的周期为 $\pi$, 所以 \[
+        \frac{2\pi}{|\omega|}= \pi\Rightarrow |\omega|= 2,\]
+    结合 $\omega> 0$ 知, $\omega= 2$. 由 $x=\dfrac\pi6$ 是对称轴知, \[\begin{gathered}
+        \sin\biggl(\dfrac\pi6\cdot \omega +\varphi\biggr)
+            = \sin\biggl(\dfrac\pi6\cdot 2 +\varphi\biggr)= \pm1,\\
+        \dfrac\pi3 +\varphi= \dfrac\pi2+ k\pi,\\
+        \varphi= \dfrac\pi6+ k\pi,\quad k\in\mathbf{Z}.
+    \end{gathered}\]
+    因为 $|\varphi|< \dfrac\pi2$, 所以 $\varphi= \dfrac\pi6$, 即 \[
+        f(x)= \sin\biggl(2x+\dfrac\pi6\biggr).\]
+    当 $f(x)$ 单调递减时, \[\begin{aligned}
+        2x+\dfrac\pi6&\in \biggl[\dfrac\pi2+2k\pi, \dfrac{3\pi}2+2k\pi\biggr],\\
+        x&\in \biggl[\dfrac{\pi}6+k\pi, \dfrac{2\pi}3+k\pi\biggr],
+    \end{aligned}\]
+    即所求单调递减区间为 \[
+        \biggl[\dfrac{\pi}6+k\pi, \dfrac{2\pi}3+k\pi\biggr],\quad
+        k\in\mathbf{Z},\]
+</p>
+<p>(2) 当 $x\in\biggl[0,\dfrac\pi3\biggr]$ 时, \[
+        2x\in\biggl[0,\dfrac{2\pi}3\biggr]\Rightarrow
+        2x+\dfrac\pi6\in\biggl[\dfrac\pi6,\dfrac{5\pi}6\biggr],\]
+    所以由单位圆中的正弦线可知, \[
+        f(x)\in \biggl[\sin\dfrac\pi6, \sin\dfrac\pi2\biggr]
+        = \biggl[\frac12, 1\biggr]\]
+</p>
+</mysolution>
 </article>
  
           

@@ -29,7 +29,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/trigonometry/trigonometric-function/trig-sum-diff/</guid>
-      <description> 三角函数的和差角公式 # </description>
+      <description>三角函数的和差角公式 # 已知 $\alpha$, $\beta$ 都是锐角, $\cos\alpha=\dfrac17$, $\cos(\alpha+\beta)= -\dfrac{11}{14}$, 求 $\cos\beta$ 的值. 由题意, $\alpha\in\Bigl(0,\dfrac\pi2\Bigr)$, $\alpha+\beta\in(0,\pi)$, 所以 $\sin\alpha=\dfrac{4\sqrt3}7$, $\sin(\alpha+\beta)= \dfrac{5\sqrt3}{14}$, 而 \[\begin{aligned} \cos\beta &amp;= \cos((\alpha+\beta)-\alpha)\\ &amp;= \cos(\alpha+\beta)\cos\alpha- \sin(\alpha+\beta)\sin\alpha\\ &amp;= \biggl(-\dfrac{11}{14}\biggr)\cdot \dfrac17 + \dfrac{5\sqrt3}{14}\cdot \dfrac{4\sqrt3}7 = \frac12. \end{aligned}\] 上题可以顺带求出 $\beta= \dfrac\pi3$. 题中的解法主要是利用 $\alpha$ 和 $\alpha+\beta$ 表示 $\beta$, 以直接利用差角的余弦公式写出 $\cos\beta$ 的表达式.类似的还有 \[\alpha= (45^\circ+\alpha)-45^\circ,\quad \alpha= \frac{\alpha+\beta}{2}+ \frac{\alpha-\beta}{2}.\] 已知 $\sin(30^\circ+ \alpha)= \dfrac35$, $60^\circ&lt; \alpha&lt; 150^\circ$, 求 $\cos\alpha$ 的值. 由题意, $90^\circ&lt; 30^\circ+\alpha&lt; 180^\circ$, 所以 $\cos(30^\circ+ \alpha)= -\dfrac45$, 而 \[\begin{aligned} \cos\alpha &amp;= \cos((30^\circ+\alpha)- 30^\circ)\\ &amp;= \cos(30^\circ+\alpha)\cos30^\circ) + \sin(30^\circ+\alpha)\sin30^\circ\\ &amp;= -\dfrac45\cdot \frac{\sqrt3}{2}+ \dfrac35\cdot\frac12 = \frac{3-4\sqrt3}{10}.</description>
     </item>
     
     <item>
@@ -38,7 +38,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/trigonometry/trigonometric-function/trig-double-auxiliary/</guid>
-      <description> 倍角公式与辅助角公式 # </description>
+      <description>倍角公式与辅助角公式 # 已知 $\cos\dfrac\alpha8= -\dfrac45$, $8\pi&lt; \alpha&lt; 12\pi$, 求 $\sin\dfrac\alpha4$, $\cos\dfrac\alpha4$, $\tan\dfrac\alpha4$ 的值. 因为 $\pi&lt; \dfrac\alpha8&lt; \dfrac{3\pi}2$, 所以 $\sin\dfrac\alpha8= -\dfrac35$, 由二倍角公式, \[\begin{gathered} \sin\dfrac\alpha4 = \sin\Bigl(2\cdot\dfrac\alpha8\Bigr) = 2\sin\dfrac\alpha8 \cos\dfrac\alpha8 = \frac{24}{25},\\ \cos\dfrac\alpha4 = 2\cos^2\dfrac\alpha8- 1 = \frac{7}{25},\\ \tan\dfrac\alpha4 = \frac{\sin\dfrac\alpha4}{\cos\dfrac\alpha4} = \frac{24}{7}. \end{gathered}\] 上题中, $\cos\dfrac\alpha4$ 也可以用公式 $\sin^2 x+\cos^2 x=1$ 求出, 但需要额外判断正负号. $\tan\dfrac\alpha4$ 也可以用二倍角公式计算, 但此处用定义更方便一些. 已知 $\sin(\alpha-\pi)= \dfrac35$, 求 $\cos2\alpha$ 的值. 由诱导公式, $\sin(\alpha-\pi)= -\sin\alpha$, 所以 $\sin\alpha= -\dfrac35$, \[\cos2\alpha= 1-2\sin^2\alpha= \frac{7}{25}.\] 凡三角函数式中含与 $\dfrac\pi2$ (即 $90^\circ$) 的倍数相关的和式, 应先用诱导公式化简.</description>
     </item>
     
     <item>

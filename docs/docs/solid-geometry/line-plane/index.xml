@@ -7,11 +7,11 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="/docs/solid-geometry/line-plane/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>直线与平面的位置关系</title>
-      <link>/docs/solid-geometry/line-plane/position/</link>
+      <link>/docs/solid-geometry/line-plane/line-plane-position/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/solid-geometry/line-plane/position/</guid>
-      <description> 直线与平面的位置关系 # </description>
+      <guid>/docs/solid-geometry/line-plane/line-plane-position/</guid>
+      <description>直线与平面的位置关系 # 若直线 $l$ 与平面 $\alpha$ 相交, 判断下列命题的正误: (1) $\alpha$ 内存在无数条直线与 $l$ 异面; (2) $\alpha$ 内存在唯一一条直线与 $l$ 平行; (3) $\alpha$ 内存在无数条直线与 $l$ 平行; (4) $\alpha$ 内的直线与 $l$ 都相交. (1) 正确. $\alpha$ 内的直线, 只要不与 $l$ 相交, 两者即为异面关系. (2) 错误. 若 $\alpha$ 内存在直线与 $l$ 平行, 那么 $\alpha\parallel l$ (线面平行的判定定理), 与已知条件矛盾. (3) 错误. 理由同上. (4) 错误. 只要在 $\alpha$ 内的直线不过 $l$ 与 $\alpha$ 交点, 该直线就与 $l$ 不相交. 点 $M$, $N$ 分别是正方体 $ABCD$--$A_1B_1C_1D_1$ 的两棱 $AA_1$ 与 $A_1B_1$ 的中点, 点 $P$ 是正方形 $ABCD$ 的中心, 判断 $MN$ 与平面 $PCB_1$ 的位置关系.</description>
     </item>
     
     <item>
@@ -20,7 +20,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/solid-geometry/line-plane/line-plane-parallel/</guid>
-      <description> 线面平行 # </description>
+      <description>线面平行 # 线面平行判定定理: 平面外一条直线与此平面内某条直线平行, 则该直线与此平面平行. 对应的符号语言 (如图 \ref{fig-190630-1800}): $a\not\subset\alpha$, $b\subset\alpha$ 且 $a\parallel b$ $\Rightarrow$ $a\parallel\alpha$. 面面平行判定定理: 一个平面内的两条相交直线与另一个平面平行, 则这两个平面平行. 对应的符号语言 (如图 \ref{fig-190630-1810}): $a\subset\beta$, $b\subset\beta$, $a\cap b= P$, $a\parallel\alpha$, $b\parallel\alpha$ $\Rightarrow$ $\beta\parallel\alpha$. \begin{figure}[htb] \small \centering \begin{minipage}[b]{0.45\linewidth} \centering \begin{tikzpicture}[scale=0.8] \draw (0,0,0) coordinate (A); \draw (3,0,0) coordinate (B); \draw (0,0,-3) coordinate (D); \draw (B)++(D) coordinate (C); \draw (0.5,0) +(0,-0.05)node[above] {$\alpha$}; \def\ay{2} \def\bz{-0.9} \draw (A)--(B)--(C)--(D)--(A) (0.5,0,\bz)--(2.5,0,\bz) (0.9,\ay)--(3,\ay); \draw (1.8,\ay) node[above] {$a$}; \draw (1.5,0,\bz) node[above] {$b$}; \end{tikzpicture} \caption{}\label{fig-190630-1800} \end{minipage} \hskip 0.</description>
     </item>
     
     <item>
@@ -29,7 +29,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/solid-geometry/line-plane/line-plane-perp/</guid>
-      <description> 线面垂直 # </description>
+      <description>线面垂直 # 如图所示, 在四棱锥 $P\text{--}ABCD$ 中, 底面 $ABCD$ 为直角梯形, 且 $AD\parallel BC$, $\angle ABC=\angle PAD= 90^\circ$, 侧面 $PAD\perp$ 底面 $ABCD$, $PA= AB= BC = \dfrac12 AD$. (1) 求证: $CD\perp$ 平面 $PAC$; (2) 侧棱 $PA$ 上是否存在点 $E$, 使得 $BE\parallel$ 平面 $PCD$? 若存在, 指出点 $E$ 的位置并证明; 若不存在, 请说明理由. \includegraphics[scale=1.5]{2022-0430-1800-crop.pdf} 以下简要描述解题过程, 详情可自行补充. (1) 取 $AD$ 中点 $M$, 连接 $CM$, 可证 $\triangle ACD$ 为等腰直角三角形, $DC\perp AC$. 由题意得 $PA\perp$ 面 $ABCD$, 所以 $PA\perp CD$, 则 $CD\perp$ 平面 $PAC$.</description>
     </item>
     
     <item>
@@ -38,7 +38,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/solid-geometry/line-plane/plane-parallel/</guid>
-      <description> 面面平行 # </description>
+      <description>面面平行 # 如图所示, 四棱锥 $P\text{--}ABCD$ 中, $AB\parallel CD$, $AB=2CD$, 点 $E$ 为 $PB$ 的中点. (1) 判断 $CE$ 与平面 $PAD$ 的位置关系, 并说明理由. (2) 若线段 $AB$ 上的点 $F$ 使得平面 $PAD\parallel \text{平面 }CEF$, 求 $\dfrac{AF}{FB}$ 的值. \includegraphics[scale=1.5]{2021-0602-2350-crop}\qquad\qquad \includegraphics[scale=1.5]{2021-0602-2355-crop} (1) 取 $PA$ 中点 $G$, 连接 $GD$, $GE$, 则可证 (自行补全过程) \[\begin{gathered} GE= \frac12 AB= DC,\\ GE\parallel AB\parallel DC, \end{gathered}\] 所以四边形 $DCEG$ 为平行四边形, 且 $CE\parallel DG$, 因此 $CE\parallel\text{平面 }PAD$. (2) 由平面 $PAD\parallel \text{平面 }CEF$ 知, $AD\parallel FC$, 所以四边形 $ADCF$ 为平行四边形, $AF=DC= \dfrac12AB$, 即 $\dfrac{AF}{FB}= 1$.</description>
     </item>
     
     <item>
@@ -47,7 +47,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/solid-geometry/line-plane/plane-perp/</guid>
-      <description> 面面垂直 # </description>
+      <description>面面垂直 # 如左图所示, 已知 $P$ 是边长为 $2a$ 的菱形 $ABCD$ 所在平面外一点, $\angle ABC = 60^\circ$, $PC\perp$ 平面 $ABCD$, $PC =2a$, $E$ 为 $PA$ 的中点. (1) 求证: 平面 $EDB\perp$ 平面 $ABCD$. (2) 求二面角 $A\text{--}EB\text{--}D$ 的正切值. \includegraphics[scale=1.5]{2021-0701-2130-1-crop}\qquad \includegraphics[scale=1.5]{2021-0701-2130-2-crop} (1) 如右图所示, 连接 $AC$, 设其与 $BD$ 交于点 $F$, 则 $F$ 为 $AC$ 中点. 再连接 $EF$. 因为 $E$ 为 $PA$ 的中点, 所以 $PC\parallel EF$. 由 $PC\perp$ 平面 $ABCD$ 知, $EF\perp$ 平面 $ABCD$, 所以平面 $EDB\perp$ 平面 $ABCD$.</description>
     </item>
     
   </channel>

@@ -6,11 +6,12 @@
 <meta name="description" content="不等式 # 不等式用于描述变量或式子之间的不等关系, 含条件不等式和恒成立不等式. 对于前者, 主要研究其解法; 对于后者, 主要研究其证明. 无论是解不等式还是证明不等式, 都需借助不等式的性质. 均值不等式是特殊的恒成立不等式. 下面结合 《2020 年课标》介绍这部分的学习要求.
 不等式的性质 # 相等关系、不等关系是数学中最基本的数量关系, 是构建方程、不等式的基础.
 学习不等式的性质, 应做到
-理解不等式的概念, 掌握不等式的性质, 了解其与等式的性质的差别 掌握比较大小的基本方法——作差法 分式不等式与高次不等式 # 分式不等式可以转化为高次不等式.
-学习分式不等式与高次不等式时, 应掌握解高次不等式的“穿线法”, 能将不等式化为与之等价的不等式.
-均值不等式 # 均值不等式是数学中常用的恒成立不等式.
+理解不等式的概念, 掌握不等式的性质, 了解其与等式的性质的差别, 掌握比较大小的基本方法——作差法. 绝对值不等式与二次不等式 # 绝对值不等式是指含绝对值的不等式, 二次不等式与二次函数密切相关.
+学习绝对值不等式与二次不等式时, 应做到
+能利用绝对值的几何意义解绝对值不等式, 能利用二次函数图象解二次不等式, 理解用分类讨论法解绝对值不等式与含参数的二次不等式 分式不等式与高次不等式 # 分式不等式可以转化为高次不等式. 学习分式不等式与高次不等式时, 应做到
+掌握解高次不等式的“穿线法”, 能将分式不等式化为与之等价的高次不等式. 均值不等式 # 均值不等式是数学中常用的恒成立不等式.
 学习均值不等式时, 应做到
-掌握均值不等式 $\dfrac{a&#43;b}2\geqslant \sqrt{ab}$ ($a$, $b\geqslant 0$), 及式中等号成立的条件 结合具体实例，能用均值不等式解决简单的最大值或最小值问题 后续内容 # 以下介绍不等式的性质、分式不等式与高次不等式、均值不等式.">
+掌握均值不等式 $\dfrac{a&#43;b}2\geqslant \sqrt{ab}$ ($a$, $b\geqslant 0$), 及式中等号成立的条件, 结合具体实例，能用均值不等式解决简单的最大值或最小值问题. 后续内容 # 以下介绍不等式的性质、绝对值不等式与二次不等式、分式不等式与高次不等式、均值不等式.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="不等式" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
@@ -19,9 +20,9 @@
 <title>不等式 | 高中数学资料</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.0ea964dfd939ec410a2a39593431f6f339bf806ba9aac813a1870c7fca3262b0.css" >
+<link rel="stylesheet" href="/book.min.6c08f1f220250ecc36dde6a6fa75fdd4247d84aaaa23d4bc157c9b2f8fa595bd.css" >
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh.search.min.d291c56f7a101eb7bc458e3f1a2b0ef94298fb228cc365dff9fb90ae5d5203f2.js" ></script>
+  <script defer src="/zh.search.min.7c8f3c308c7cc4a49e5725aaff2837a3795fa64e6f84159b9c29faa7f139e44e.js" ></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
 <link rel="alternate" type="application/rss+xml" href="/docs/prerequisite/inequality/index.xml" title="高中数学资料" />
@@ -417,6 +418,19 @@ https://github.com/alex-shpak/hugo-book
           
   <ul>
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/inequality/inequality-property/" class="">不等式的性质</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -482,6 +496,7 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#不等式">不等式</a>
       <ul>
         <li><a href="#不等式的性质">不等式的性质</a></li>
+        <li><a href="#绝对值不等式与二次不等式">绝对值不等式与二次不等式</a></li>
         <li><a href="#分式不等式与高次不等式">分式不等式与高次不等式</a></li>
         <li><a href="#均值不等式">均值不等式</a></li>
         <li><a href="#后续内容">后续内容</a></li>
@@ -512,15 +527,29 @@ https://github.com/alex-shpak/hugo-book
 <p>相等关系、不等关系是数学中最基本的数量关系, 是构建方程、不等式的基础.</p>
 <p>学习不等式的性质, 应做到</p>
 <ul>
-<li>理解不等式的概念, 掌握不等式的性质, 了解其与等式的性质的差别</li>
-<li>掌握比较大小的基本方法——作差法</li>
+<li>理解不等式的概念, 掌握不等式的性质, 了解其与等式的性质的差别,</li>
+<li>掌握比较大小的基本方法——作差法.</li>
+</ul>
+<h2 id="绝对值不等式与二次不等式">
+  绝对值不等式与二次不等式
+  <a class="anchor" href="#%e7%bb%9d%e5%af%b9%e5%80%bc%e4%b8%8d%e7%ad%89%e5%bc%8f%e4%b8%8e%e4%ba%8c%e6%ac%a1%e4%b8%8d%e7%ad%89%e5%bc%8f">#</a>
+</h2>
+<p>绝对值不等式是指含绝对值的不等式, 二次不等式与二次函数密切相关.</p>
+<p>学习绝对值不等式与二次不等式时, 应做到</p>
+<ul>
+<li>能利用绝对值的几何意义解绝对值不等式,</li>
+<li>能利用二次函数图象解二次不等式,</li>
+<li>理解用分类讨论法解绝对值不等式与含参数的二次不等式</li>
 </ul>
 <h2 id="分式不等式与高次不等式">
   分式不等式与高次不等式
   <a class="anchor" href="#%e5%88%86%e5%bc%8f%e4%b8%8d%e7%ad%89%e5%bc%8f%e4%b8%8e%e9%ab%98%e6%ac%a1%e4%b8%8d%e7%ad%89%e5%bc%8f">#</a>
 </h2>
-<p>分式不等式可以转化为高次不等式.</p>
-<p>学习分式不等式与高次不等式时, 应掌握解高次不等式的“穿线法”, 能将不等式化为与之等价的不等式.</p>
+<p>分式不等式可以转化为高次不等式. 学习分式不等式与高次不等式时, 应做到</p>
+<ul>
+<li>掌握解高次不等式的“穿线法”,</li>
+<li>能将分式不等式化为与之等价的高次不等式.</li>
+</ul>
 <h2 id="均值不等式">
   均值不等式
   <a class="anchor" href="#%e5%9d%87%e5%80%bc%e4%b8%8d%e7%ad%89%e5%bc%8f">#</a>
@@ -528,25 +557,25 @@ https://github.com/alex-shpak/hugo-book
 <p>均值不等式是数学中常用的恒成立不等式.</p>
 <p>学习均值不等式时, 应做到</p>
 <ul>
-<li>掌握均值不等式 $\dfrac{a+b}2\geqslant \sqrt{ab}$ ($a$, $b\geqslant 0$), 及式中等号成立的条件</li>
-<li>结合具体实例，能用均值不等式解决简单的最大值或最小值问题</li>
+<li>掌握均值不等式 $\dfrac{a+b}2\geqslant \sqrt{ab}$ ($a$, $b\geqslant 0$), 及式中等号成立的条件,</li>
+<li>结合具体实例，能用均值不等式解决简单的最大值或最小值问题.</li>
 </ul>
 <h2 id="后续内容">
   后续内容
   <a class="anchor" href="#%e5%90%8e%e7%bb%ad%e5%86%85%e5%ae%b9">#</a>
 </h2>
-<p>以下介绍不等式的性质、分式不等式与高次不等式、均值不等式.</p>
+<p>以下介绍不等式的性质、绝对值不等式与二次不等式、分式不等式与高次不等式、均值不等式.</p>
 </article>
  
           
     
     <div class="docs-prevnext">
     
-        <a class="docs-prev button" href="../set-logic/logical-quantifier">
+        <a class="docs-prev button" href="/docs/prerequisite/set-logic/logical-quantifier">
           <span class="arrow-prev">← </span><span>逻辑量词</span></a>
       
       
-        <a class="docs-next button" href="./inequality-property">
+        <a class="docs-next button" href="/docs/prerequisite/inequality/inequality-property">
           <span>不等式的性质</span><span class="arrow-next"> →</span></a>
       
     </div>
@@ -595,6 +624,7 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#不等式">不等式</a>
       <ul>
         <li><a href="#不等式的性质">不等式的性质</a></li>
+        <li><a href="#绝对值不等式与二次不等式">绝对值不等式与二次不等式</a></li>
         <li><a href="#分式不等式与高次不等式">分式不等式与高次不等式</a></li>
         <li><a href="#均值不等式">均值不等式</a></li>
         <li><a href="#后续内容">后续内容</a></li>

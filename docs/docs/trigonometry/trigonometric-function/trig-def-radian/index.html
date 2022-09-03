@@ -14,9 +14,9 @@
 <title>任意角的三角函数与弧度制 | 高中数学资料</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.0ea964dfd939ec410a2a39593431f6f339bf806ba9aac813a1870c7fca3262b0.css" >
+<link rel="stylesheet" href="/book.min.6c08f1f220250ecc36dde6a6fa75fdd4247d84aaaa23d4bc157c9b2f8fa595bd.css" >
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh.search.min.d291c56f7a101eb7bc458e3f1a2b0ef94298fb228cc365dff9fb90ae5d5203f2.js" ></script>
+  <script defer src="/zh.search.min.7c8f3c308c7cc4a49e5725aaff2837a3795fa64e6f84159b9c29faa7f139e44e.js" ></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
 <!--
@@ -411,6 +411,19 @@ https://github.com/alex-shpak/hugo-book
           
   <ul>
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/inequality/inequality-property/" class="">不等式的性质</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -752,6 +765,148 @@ https://github.com/alex-shpak/hugo-book
 \end{array}\right.\]
 这是匀速圆周运动的公式, $T$ 称为运动周期.
 </p>
+<myexample>
+<p>已知 $\tan\theta= 2$, 求 $\sin^2\theta- \sin\theta\cos\theta- \cos^2\theta$ 的值.
+</p>
+</myexample>
+<mysolution>
+    <p>方法一: 由 $\tan\theta= 2$ 画正、余弦线可求得 $\sin\theta= \dfrac2{\sqrt5}$, $\cos\theta= \dfrac1{\sqrt5}$ 或 $\sin\theta= -\dfrac2{\sqrt5}$, $\cos\theta= -\dfrac1{\sqrt5}$. 将前一组值代入所求式子, 
+    \[\sin^2\theta- \sin\theta\cos\theta- \cos^2\theta
+        = \biggl(\dfrac2{\sqrt5}\biggr)^2- \dfrac2{\sqrt5}\cdot\dfrac1{\sqrt5}- \biggl(\dfrac1{\sqrt5}\biggr)^2
+        = \frac15.\]
+    将后一组值代入也可以得到同样的结果.
+</p>
+<p>方法二: 利用 $1=\sin^2\theta+ \cos^2\theta$ 且由 $\tan\theta= 2$ 知 $\cos\theta\neq0$, 可将原式改写为
+    \[\frac{\sin^2\theta- \sin\theta\cos\theta- \cos^2\theta}{\sin^2\theta+ \cos^2\theta}
+    = \frac{\tan^2\theta- \tan\theta- 1}{1+\tan^2\theta},\]
+    再将 $\tan\theta= 2$ 代入可知结果为 $\dfrac15$.
+</p>
+</mysolution>
+<myexample>
+<p>已知 $\sin\alpha+\cos\alpha= -\dfrac{\sqrt5}2$, 且 $\dfrac{5\pi}4< \alpha< \dfrac{3\pi}2$, 求 $\cos\alpha- \sin\alpha$ 的值.
+</p>
+</myexample>
+<mysolution>
+    <p>因为 $\sin^2\alpha+ \cos^2\alpha=1$, 所以
+    \[\begin{gathered}
+        (\sin\alpha+\cos\alpha)^2
+        = 1+ 2\sin\alpha\cos\alpha,\\
+        (\cos\alpha- \sin\alpha)^2
+        = 1- 2\sin\alpha\cos\alpha,
+    \end{gathered}\]
+    两式相加可得, 
+    \[(\sin\alpha+\cos\alpha)^2+ (\cos\alpha- \sin\alpha)^2= 2.\]
+    将 $\sin\alpha+\cos\alpha= -\dfrac{\sqrt5}2$ 代入, 
+    \[\biggl(-\dfrac{\sqrt5}2\biggr)^2+ (\cos\alpha- \sin\alpha)^2= 2,\quad\text{即}\quad
+    |\cos\alpha- \sin\alpha|= \frac{\sqrt3}2.\]
+    又因为 $\dfrac{5\pi}4< \alpha< \dfrac{3\pi}2$, 由正、余弦线可知, $\cos\alpha> \sin\alpha$, 所以
+    \[\cos\alpha- \sin\alpha= \frac{\sqrt3}2.\]
+</p>
+</mysolution>
+<myexample>
+<p>下列关于弧度制的说法中, 正确的有哪些?
+</p>
+<p>(1) 设单位圆上一段弧 $\wideparen{AB}$ 所对的圆心角是 $\alpha\,\mathrm{rad}$, $\wideparen{AB}$ 的长度为 $l$, 则 $|\alpha|=l$.
+</p>
+<p>(2) 在半径为 $r$ 的圆中, 弧长为 $l$ 的弧所对的圆心角为$\alpha\,\mathrm{rad}$; 半径为 $R$ 的圆中, 弧长为 $L$ 的弧所对的圆心角也为 $\alpha\,\mathrm{rad}$, 则必有 $lR= Lr$.
+</p>
+<p>(3) $1\,\mathrm{rad}= \biggl(\dfrac{\pi}{360}\biggr)^\circ$.
+</p>
+<p>(4) $\sin2 > \cos2$.
+</p>
+</myexample>
+<mysolution>
+    <p>本题需要利用弧度的定义: 圆心角 $\alpha$ (可能为负角) 的弧度大小 $|\alpha|$ 为其所对的弧长 $l$ 与半径 $r$ 的比值, 即 $|\alpha|= \dfrac{l}r$.
+</p>
+<p>(1) 单位圆的半径 $r=1$, 所以此时 $|\alpha|= \dfrac{l}1= l$.
+</p>
+<p>(2) 由定义,
+    \[\dfrac{l}r= |\alpha|= \dfrac{L}R,\quad\text{即}\quad lR=Lr.\]
+</p>
+<p>(3) 圆周角 $360^\circ$ 对应弧度 $\dfrac{2\pi r}{r}= 2\pi$, 所以
+    \[360^\circ= 2\pi\,\mathrm{rad},\quad\text{即}\quad 1\,\mathrm{rad}= \biggl(\dfrac{180}{\pi}\biggr)^\circ.\]
+</p>
+<p>(4) 由 (3) 可知, $1\,\mathrm{rad}$ 比 $60^\circ$ 略少一点, 所以 $2\,\mathrm{rad}$ 约为 $120^\circ$, 在第二象限. 因此 $\sin2>0>\cos2$.
+</p>
+</mysolution>
+<myexample>
+<p>判断 $\sin 1$, $\cos 1$, $\tan 1$ 的大小关系.
+</p>
+</myexample>
+<mysolution>
+    <p>由弧度制的定义, $2\pi= 360^\circ$, 因此
+    \[1=\frac{360^\circ}{2\pi}= \frac{180^\circ}{\pi},\]
+    即 $1$ 弧度比 $60^\circ$ 略小一点 (因为 $\pi\approx 3.14$). 画三角函数线可知, $\sin1>\cos1$. 再由 
+    \[\tan1= \frac{\sin 1}{\cos 1} > 1,\quad \sin 1< 1,\]
+    可知 $\cos1< \sin 1< \tan 1$.
+</p>
+</mysolution>
+<myremark>
+    <p>一般地, 若 $\alpha\in\biggl(0,\dfrac\pi2\biggr)$, 则必有 $\tan\alpha> \sin\alpha$. 思考: 此时 $\sin\alpha$ 与 $\cos\alpha$ 的大小关系如何判断? $\tan\alpha$ 与 $\cos\alpha$ 的大小关系呢?
+</p>
+</myremark>
+<myexample>
+<p>下列各式中哪些是正确的?
+</p>
+<p>(1) $\sin\dfrac\pi5> \sin\dfrac{6\pi}5$;\quad 
+    (2) $\cos\biggl(-\dfrac\pi3\biggr)< \cos\dfrac\pi6$;
+</p>
+<p>(3) $\tan\dfrac\pi4> \tan\dfrac{5\pi}4$;\quad 
+    (4) $\sin\dfrac\pi3> \sin\dfrac\pi6$.
+</p>
+</myexample>
+<mysolution>
+    <p>画正弦线、余弦线如下:
+</p>
+<p><center>
+        \includegraphics[scale=1.1]{2020-1227-1300-crop}\qquad
+        \includegraphics[scale=1.1]{2020-1227-1310-crop}\\[5pt]
+        \includegraphics[scale=1.1]{2020-1227-1320-crop}\qquad
+        \includegraphics[scale=1.1]{2020-1227-1330-crop}
+    </center>
+</p>
+<p>由此可知 (正切值由正弦值比余弦值得到)
+    \[\begin{gathered}
+        \sin\dfrac\pi5>0> \sin\dfrac{6\pi}5,\quad 
+        \cos\biggl(-\dfrac\pi3\biggr)=\frac12< \frac{\sqrt3}2=\cos\dfrac\pi6,\\
+        \tan\dfrac\pi4= 1= \tan\dfrac{5\pi}4,\quad 
+        \sin\dfrac\pi3= \frac{\sqrt{3}}2> \frac12=\sin\dfrac\pi6.
+    \end{gathered}\]
+</p>
+</mysolution>
+<myexample>
+<p>圆心角为 $2\alpha$ 的扇形, 它的半径为 $R$, 内切圆的半径为 $r$, 求 $R$ 与 $r$ 的关系.
+</p>
+</myexample>
+<mysolution>
+    <p>如图所示, 在扇形 $AOB$ 中, $\angle AOB= 2\alpha$, $OA=R$, 圆 $M$ 与扇形 $AOB$ 相切于点 $N$, $P$, $Q$. 连接 $ON$, 由对称性知, $ON$ 必过点 $M$, 且 $\angle BON= \dfrac12\angle BOA= \alpha$. 再连接 $MP$, 则 $MP\perp OB$ 且 $MP=r$. 考虑 $\mathrm{Rt}\triangle OMP$ 可知,
+    \[\dfrac{MP}{MO}= \sin\alpha,\quad\text{即}\quad
+        OM= \frac{r}{\sin\alpha}.\]
+    因为 $ON= OM+MP$, 所以 $R=\biggl(1+\dfrac1{\sin\alpha}\biggr)r$.
+</p>
+<p><center>
+        \includegraphics[scale=1.4]{2021-0214-0900-crop}
+    </center>
+</p>
+<p></p>
+</mysolution>
+<myexample>
+<p>下图为一个观览车示意图, 该观览车半径 $r=4.8\,\text{m}$, 圆上最低点与地面距离为 $0.8\,\text{m}$, $60\,\mathrm{s}$ 转动一周. 图中 $OA$ 与地面垂直, 以 $OA$ 为始边, 逆时针转动 $\theta$ 角到 $OB$, 设点 $B$ 与地面距离为 $h$.
+</p>
+<p>(1) 求 $h$ 与 $\theta$ 之间的函数关系解析式.
+</p>
+<p>(2) 设从 $OA$ 开始转动, 经过 $t\,\mathrm{s}$ 到达 $OB$, 求 $h$ 与 $t$ 之间的函数关系解析式.
+</p>
+</myexample>
+<mysolution>
+    <p>(1) 以 $O$ 为原点, 分别沿水平方向和竖直方向作 $x$ 轴和 $y$ 轴, 建立平面直角坐标系. 设 $OB$ 与 $x$ 轴正方向的夹角为 $\varphi$, 则由三角函数值的定义, 点 $B$ 的纵坐标为 $r\sin\varphi$. 由图可知, \[\varphi= \theta- 90^\circ,\]
+    而点 $O$ 与地面的距离为 $r+0.8= 5.6\,\mathrm{m}$, 所以 \[
+        h= 5.6+4.8\sin(\theta-90^\circ)
+         = 5.6-4.8\cos\theta.\]
+</p>
+<p>(2) 由题意, $OB$ 旋转的速度为 $6^\circ\,\mathrm{s}$, 所以 $\theta= 6t$, 代入上式可知, \[h= 5.6-4.8\cos6t.\]
+</p>
+</mysolution>
 </article>
  
           

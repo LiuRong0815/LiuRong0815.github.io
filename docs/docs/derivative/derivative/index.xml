@@ -11,7 +11,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/derivative/derivative/derivative-def/</guid>
-      <description> 导数的定义与意义 # </description>
+      <description>导数的定义与意义 # 导数的定义、公式等知识点, 可以参看基础练习第 12 节“导数的定义和计算”以及第 13 节“导数的意义”. 这里简要回顾导数的定义和函数图形的切线求法, 并补充少量极限知识. 函数 $f(x)$ 的导函数 (简称导数) $f&#39;(x)$ 定义为 \[ f&#39;(x)=\lim_{x_1\to x} \frac{f(x_1)-f(x)}{x_1-x} = \lim_{\Delta x\to 0} \frac{f(x+\Delta x)-f(x)}{\Delta x},\] 式中 $\Delta x= x_1- x$. 导数 $f&#39;(x)$ 的几何含义是曲线 $y=f(x)$ 在点 $P(x,f(x))$ 处切线的斜率, 也是割线 $PQ$ 斜率当点 $Q$ 沿曲线 $y=f(x)$ 趋于点 $P$ 时的极限值. \small \centering \begin{tikzpicture}[line cap=round,line join=round,scale=0.5] \draw[\myaxisarrow] (-1.5,0) -- (4,0) node[below] {$x$}; \draw[\myaxisarrow] (0,-1) -- (0,6) node[left] {$y$}; \draw[line width=0.5pt,smooth,samples=100] plot[domain=-0.5:3.8](\x,{(\x)^2/3+1}); \draw[line width=0.</description>
     </item>
     
     <item>
@@ -20,7 +20,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/derivative/derivative/derivative-calc/</guid>
-      <description> 常见导数公式 # </description>
+      <description>常见导数公式 # 曲线 $y= x^2$ 在点 $P$ 处的切线的倾斜角为 $\dfrac\pi4$, 求点 $P$ 的坐标. 设 $P(x_0,y_0)$, 因为 $y= x^2$ 的导数为 $y&#39;= 2x$, 所以 \[ 2x_0= \tan\frac\pi4,\quad x_0= \frac12,\] 而 $y_0= x_0^2= \dfrac14$. 点 $P$ 的坐标为 $\biggl(\dfrac12,\dfrac14\biggr)$. 已知函数 $f(x)= ax^2+b$ 的图形开口向下, \[ \lim_{\Delta x\to 0} \frac{f(a+\Delta x)- f(a)}{\Delta x}= 4,\] 求 $a$ 的值. 题中式子为导数 $f&#39;(a)$ 的定义, 则 $f&#39;(a)= 4$. 因为 $f&#39;(x)= 2ax$, 所以 \[ 2a\cdot a= 4,\quad a= \pm2.\] 因为函数 $f(x)= ax^2+b$ 的图形开口向下, 所以 $a&lt; 0$, 则 $a=-2$.</description>
     </item>
     
     <item>
@@ -38,7 +38,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/derivative/derivative/monotone-max-min/</guid>
-      <description> 利用导数求函数的单调性与最值 # </description>
+      <description>利用导数求函数的单调性与最值 # 利用导数的正负可以判断函数的单调性, 知识点见基础练习. 下图是 $y=f(x)$ 的导函数 $f(x)$ 的图形, 判断下列四个命题是否正确: (1) $f(x)$ 有三个单调区间;\quad (2) $f(-2)&lt; f(-1)$;\quad (3) $f(-1)&lt; f(1)$; (4) $f(x)$ 在区间 $[-1,2]$ 上单调递增, 在 $(2,4]$ 上单调递增减. \includegraphics[scale=0.5]{2022-0425-2005} 由图可知, \[\begin{array}{c|cccc} x &amp; (-2,-1) &amp; (-1,2) &amp; (2,4) &amp; (4,5) \\ \hline f&#39;(x) &amp; - &amp; + &amp; - &amp; + \\ f(x) &amp; \searrow &amp; \nearrow &amp; \searrow &amp; \nearrow \end{array}\] 由此可知, $f(x)$ 至少有四个单调区间. 由于 $f(x)$ 在 $(-2,-1)$ 上 $\searrow$, 所以 $f(-2)&gt; f(-1)$; 又由于 $f(x)$ 在 $(-1,2)$ 上 $\nearrow$, 所以 $f(-1)&lt; f(1)$.</description>
     </item>
     
   </channel>

@@ -11,7 +11,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/prerequisite/inequality/inequality-property/</guid>
-      <description>不等式的性质 # \subsection{绝对值的几何意义}实数 $a$ 的绝对值定义为\[|a|=\begin{cases}a, &amp; a&gt;0,\\0, &amp; a=0,\\-a, &amp; a&lt; 0\end{cases}= \begin{cases}a, &amp; a\geqslant 0,\\-a, &amp; a&lt; 0,\end{cases}\]其几何意义为数轴上坐标为 $a$ 的点到原点的距离. 进而可以知道, 数轴上两点 $x_1$, $x_2$ 之间的距离为 $|x_1-x_2|$, 如下图所示.\includegraphics[scale=1]{2020-1009-2110-crop}\qquad\includegraphics[scale=1]{2020-1009-2120-crop}例如, $|x-1|$ 表示点 $x$ 到 $1$ 的距离; $|x+2|=|x-(-2)|$ 表示点 $x$ 到 $-2$ 的距离; $|2x-2|= 2|x-1|$ 表示点 $x$ 到 $1$ 的距离的 $2$ 倍; $|4+2x|= 2|x-(-2)|$ 表示点 $x$ 到 $-2$ 的距离的 $2$ 倍.</description>
+      <description>不等式的性质 # 不等式的性质与等式的性质既有相似之处, 又有一些区别, 两者可以类比记忆. 不等式的性质是解不等式和证明不等式的基础.
+这里首先回顾等式的几个性质:(1) 若 $a=b$, $b=c$, 则 \[b=a,\quad a=c.\]一般称前者为“反身性”, 后者为“传递性”.(2) 若 $a=b$, $c=d$, 则 \[a\pm c= b\pm d,\quad ac=bd.\]若还有 $c=d\neq 0$, 则 $\dfrac{a}c= \dfrac{b}d$. 这是等式的四则运算性质.不等式的定义 # 用不等号连接两个代数式就得到不等式, 如 $a&gt;b$, $x^2\leqslant x+1$ 等. 不等式主要用来表示两个式子的大小关系, 用到的不等号有 \[&gt;,\quad &lt;,\quad \geqslant,\quad \leqslant,\quad \neq.\]“$\geqslant$”表示“大于或者等于”, “$\leqslant$”表示“小于或者等于”, 例如, “$5\geqslant 3$”表示“$5&gt;3$ 或者 $5=3$”. 像这种用逻辑连接词“或者”连接的两个命题, 只须其中一个为真, 整个命题即为真. 所以 “$5\geqslant 3$” 是真命题.有时也用不等号连接多个式子, 形成更复杂的不等式, 例如, $a&lt; 1&lt; b$, 表示“$a&lt; 1$ 且 $1&lt; b$”.</description>
     </item>
     
     <item>
@@ -20,7 +21,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/derivative/derivative/derivative-def/</guid>
-      <description> 导数的定义与意义 # </description>
+      <description>导数的定义与意义 # 导数的定义、公式等知识点, 可以参看基础练习第 12 节“导数的定义和计算”以及第 13 节“导数的意义”. 这里简要回顾导数的定义和函数图形的切线求法, 并补充少量极限知识. 函数 $f(x)$ 的导函数 (简称导数) $f&#39;(x)$ 定义为 \[ f&#39;(x)=\lim_{x_1\to x} \frac{f(x_1)-f(x)}{x_1-x} = \lim_{\Delta x\to 0} \frac{f(x+\Delta x)-f(x)}{\Delta x},\] 式中 $\Delta x= x_1- x$. 导数 $f&#39;(x)$ 的几何含义是曲线 $y=f(x)$ 在点 $P(x,f(x))$ 处切线的斜率, 也是割线 $PQ$ 斜率当点 $Q$ 沿曲线 $y=f(x)$ 趋于点 $P$ 时的极限值. \small \centering \begin{tikzpicture}[line cap=round,line join=round,scale=0.5] \draw[\myaxisarrow] (-1.5,0) -- (4,0) node[below] {$x$}; \draw[\myaxisarrow] (0,-1) -- (0,6) node[left] {$y$}; \draw[line width=0.5pt,smooth,samples=100] plot[domain=-0.5:3.8](\x,{(\x)^2/3+1}); \draw[line width=0.</description>
     </item>
     
     <item>
@@ -50,7 +51,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/probability-statistics/probability-distribution/binomial-distribution/</guid>
-      <description> 二项分布 # </description>
+      <description>二项分布 # 某篮球队员在比赛中每次罚球的命中率相同, 且在两次罚球中至多命中一次的概率为 $\dfrac{16}{25}$, 求该队员每次罚球的命中率. 设该队员每次罚球的命中率为 $p$. 因为“在两次罚球中至多命中一次”的反面, 即互斥事件, 是“在两次罚球中两次都命中”, 所以前者的概率为 \[ 1- p^2= \dfrac{16}{25}\Rightarrow p= \frac35.\] 甲、乙两个篮球运动员互不影响地在同一位置投球, 命中率分别为 $\dfrac12$ 与 $p$, 且乙投球 $2$ 次均未命中的概率为 $\dfrac1{16}$. (1) 求乙投球的命中率 $p$; (2) 若乙投球 $2$ 次, 命中的次数记为 $Y$, 求 $Y$ 的分布列. (2) 若甲投球 $1$ 次, 乙投球 $2$ 次, 两人共命中的次数记为 $X$, 求 $X$ 的分布列. (1) 由题意, \[ (1-p)^2= \dfrac1{16}\Rightarrow p= \dfrac34.\] (2) 作树形图可知, \[\begin{aligned} P(Y=0)&amp;= (1-p)^2= \dfrac1{16},\\ P(Y=1)&amp;= p(1-p)+ (1-p)p= \dfrac38,\\ P(Y=2)&amp;= p^2= \dfrac9{16}, \end{aligned}\] 所求 $Y$ 的分布列为 \[\begin{array}{c|ccc} Y &amp; 0 &amp; 1 &amp; 2\\ \hline P(Y) &amp; \dfrac1{16} &amp; \dfrac38 &amp; \dfrac9{16}\phantom{\biggr|} \end{array}\] (3) 记甲命中的次数为 $Z$, 则 $X= Z+Y$.</description>
     </item>
     
     <item>
@@ -68,16 +69,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/trigonometry/complex-number/complex-number-def/</guid>
-      <description> 复数的定义 # </description>
-    </item>
-    
-    <item>
-      <title>古典概型</title>
-      <link>/docs/probability-statistics/probability/classical-probability/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/probability-statistics/probability/classical-probability/</guid>
-      <description> 古典概型 # </description>
+      <description>复数的定义 # 借用平面直角坐标系可以用点表示复数 $z=x+\mathrm{i}y$: 规定 $z$ 对应点 $(x,y)$, 此时的平面也称为复平面. 由此可知, $1+2\mathrm{i}$ 的对应点在第一象限, $2\mathrm{i}-1$ 的对应点在第二象限. $x$ 轴上的点全为实数, 所以称其为实轴; $y$ 轴上的点除原点外全为纯虚数, 所以称其为虚轴. $z$ 的对应点到原点的距离称为 $z$ 的模 (模长), 记作 $|z|$. 勾股定理表明, $|z|=\sqrt{x^2+y^2}$. 为了后续运算方便, 还定义 $z$ 的共轭复数 $\bar{z}= x-\mathrm{i}y$. 由定义, $z$ 与 $\bar{z}$ 关于实轴对称, 且 $z\bar{z}=x^2+y^2=|z|^2$. 还可以利用共轭复数或直接计算验证复数的模满足如下性质 (与实数的情形一致) \[|z_1z_2|=|z_1||z_2|,\quad \Big|\frac{z_1}{z_2}\Big|= \frac{|z_1|}{|z_2|}\ (z_2\neq0).\] 计算 $\biggl| \dfrac{1+\mathrm{i}}{\mathrm{i}}\biggr|$. 方法一: 先化简绝对值内的式子, \[\frac{1+\mathrm{i}}{\mathrm{i}} = \frac{(1+\mathrm{i})\cdot(-\mathrm{i})}{\mathrm{i}\cdot(-\mathrm{i})} = -\mathrm{i}+1,\] 所以 \[\biggl| \dfrac{1+\mathrm{i}}{\mathrm{i}}\biggr| = |1-\mathrm{i}|= \sqrt{2}.\] 方法二: 直接利用模的性质, \[\biggl| \dfrac{1+\mathrm{i}}{\mathrm{i}}\biggr| = \dfrac{|1+\mathrm{i}|}{|\mathrm{i}|} = \sqrt{2}.</description>
     </item>
     
     <item>
@@ -86,7 +78,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/algebra/function/function-def/</guid>
-      <description>函数的定义 # 已知二次函数 $y= x^2-2ax+1$, 当 $2&lt; x&lt; 3$ 时, 函数值 $y$ 随 $x$ 的增大而减小, 求实数 $a$ 的取值范围. $y= x^2-2ax+1$ 的图象为开口向上的抛物线, 对称轴为 $x= -\dfrac{-2a}{2\cdot 1}= a$. 由题意, 当 $2&lt; x&lt; 3$ 时, $x$ 在对称轴的左侧, 所以 $3\leqslant a$, 即 $a\in [3,+\infty)$. (1) 二次函数 $y= Ax^2+Bx+C$ ($A\neq 0$) 的单调性可以通过观察其图象 (抛物线) 的开口方向 (由 $A$ 的正负号决定) 和对称轴 $x= -\dfrac{B}{2A}$ 的位置得出. (2) 写二次函数的对称轴时, 只需按照公式的格式写出对应的式子 (见解答第 1 行), 无需明确地写出公式. 如果对称轴容易口算, 也可直接写出, 如本题可直接写“对称轴为 $x= a$”. 对二次函数 $y=x^2-2x+2$, 当 $t\leqslant x\leqslant t+1$ 时, 求函数值 $y$ 的最大值与最小值.</description>
+      <description>函数的定义 # 已知函数 $f(x)= \dfrac{2x+1}{x+1}$, 求该函数在区间 $[1,4]$ 上的最大值与最小值. 用分离常数法, \[f(x)= \frac{2x+1}{x+1}= \frac{2(x+1)-1}{x+1} = 2-\frac1{x+1}.\] 因为 $x\in[1,4]$, 所以 $\dfrac1{x+1}$ 单调递减, $-\dfrac1{x+1}$ 单调递增, $2-\dfrac1{x+1}$ 也单调递增, 从而 \[f_{\min}= f(1)= \dfrac32,\quad f_{\max}= f(4)= \dfrac95.\] 本次答疑主要讲解常见的定义域的求法. 如果没有特殊说明, 函数的定义域是使函数的表达式有意义的自变量的取值范围. 现阶段常见的表达式对其中的变量限制如下: \[\begin{aligned} \text{二次根式 $\sqrt{x}$}&amp;\colon \text{被开方数非负, 即 $x\geqslant 0$;}\\ \text{分式 $\dfrac1{x}$}&amp;\colon \text{分母不为零, 即 $x\neq 0$;}\\ \text{零次式 $x^0$}&amp;\colon \text{底数不为零, 即 $x\neq 0$,} \end{aligned}\] 其中的零次式 $x^0$ 定义为 $\dfrac{x}x$, 所以需要限制 $x\neq 0$. 这些限制可以组合使用, 如对 $\dfrac1{\sqrt{x}}$, 应限制 \[\begin{cases} \sqrt{x}\neq 0 &amp; (\text{分母不为零}),\\ x\geqslant 0 &amp; (\text{被开方数非负}), \end{cases}\quad\text{解得}\quad x&gt;0.</description>
     </item>
     
     <item>
@@ -122,7 +114,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/probability-statistics/permutation-combination/permutation/</guid>
-      <description> 排列 # </description>
+      <description>排列 # 在计数时, 有两个常用的计数原理 (均可以结合树状图来理解). 加法原理用于分类计数 (即分类讨论, 类似于电路图中的并联), 乘法原理用于分步计数 (类似于电路图中的串联). 实际计数时, 需要结合题意确定计数顺序, 有时还会利用集合中的补集运算, 详见下面的例子. $3$ 个学生从 $4$ 本不同的参考书中各挑选 $1$ 本, 求不同的选法数. 由乘法原理, 选法数为 $4\times 3\times 2= 24$. 由数字 $1$, $2$, $3$ 组成的无重复数字的整数, 求其中偶数的个数. 偶数的特点是末位为偶数, 故先考虑末位. 由于题中没有指定整数的位数, 所以需分位数讨论 (加法原理): (1) 若组成一位数, 则只有 $2$; (2) 若组成两位数, 则有 $12$, $32$; (3) 若组成三位数, 则有 $132$, $123$, 综上所述, 偶数共 $5$ 个. (1) 若上题中的数字改为 $1$, $2$, $\cdots$, $6$, 则需按位数分 $6$ 种情况计算. 每种情况都是先考虑末位 (共 $3$ 种可能), 再计算其他位.</description>
     </item>
     
     <item>
@@ -131,7 +123,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/probability-statistics/statistics/mean-variation/</guid>
-      <description> 平均值与方差 # </description>
+      <description>平均值与方差 # 某学校共有师生 $4\,000$ 人, 现用分层随机抽样的方法从所有师生中抽取一个容量为 $200$ 的样本, 调查师生对学校食堂餐饮问题的建议, 已知从学生中抽取的人数为 $190$, 求该校的教师人数. 分层随机抽样是将总体分为若干类 (各类数量可以不相等), 从每类中抽取的样本数与该类的个体数成比例, 此比例也是样本数与总体数的比例 (为什么?). 从师生 $4\,000$ 人中抽取容量为 $200$ 的样本, 说明抽样比例是 $200:4\,000$, 而从学生中抽取 $190$ 人, 说明从教师中抽取 $(200-190)$ 人. 设该校的教师有 $x$ 人, 由题意, \[200: 4\,000= (200-190): x,\] 解得 $x=200$. 演讲比赛共有 $9$ 位评委分别给出某选手的原始评分, 评定该选手的成绩时, 从$9$ 个原始评分中去掉 $1$ 个最高分、$1$ 个最低分, 得到 $7$ 个有效评分. 将这 $7$ 个有效评分与 $9$ 个原始评分相比, 考虑数字特征: 平均数、方差、中位数和极差, 不变的有哪些? 题中的四个数字特征, 平均数由总分除以人数得到, 方差描述的是全体数据相对平均数的总偏差, 中位数指数据从小到大排列时正中间的那个值, 极差由最大值减最小值得到. 因为去掉 $1$ 个最高分、$1$ 个最低分, 所以只有中位数不受影响.</description>
     </item>
     
     <item>
@@ -174,12 +166,21 @@
     </item>
     
     <item>
+      <title>随机事件的概率</title>
+      <link>/docs/probability-statistics/probability/random-event/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/probability-statistics/probability/random-event/</guid>
+      <description>随机事件的概率 # 已知事件 $A$, $B$ 发生的概率分别为 $P(A)= 0.5$, $P(B)= 0.3$, 分别在下列条件下求概率 $P(A\cup B)$ 和 $P(AB)$: (1) $B\subseteq A$;\quad (2) $A$, $B$ 互斥. (1) 由 $B\subseteq A$ 知, \[ A\cup B= A,\quad AB= B,\] 所以 \[ P(A\cup B)= P(A)= 0.5,\quad P(AB)= P(B)= 0.3.\] (2) 由 $A$, $B$ 互斥知, $AB=\varnothing$, 且 \[ P(A\cup B)= P(A)+P(B)= 0.5+0.3= 0.8,\] 所以 $P(AB)= P(\varnothing)= 0$. 判断下列说法的正误: (1) 若事件 $A$ 与 $B$ 互斥, 则 $P(A)+P(B)= 1$; (2) 若事件 $A$ 与 $B$ 满足 $P(A)+P(B)= 1$, 则这两个事件为对立事件; (3) “事件 $A$ 与 $B$ 互斥”是“事件 $A$ 与 $B$ 对立”的必要不充分条件; (4) 某人打靶时连续射击两次, 则事件“至少有一次中靶”与“至多有一次中靶”互为对立事件.</description>
+    </item>
+    
+    <item>
       <title>椭圆</title>
       <link>/docs/analytic-geometry/conic-curves/ellipse/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/analytic-geometry/conic-curves/ellipse/</guid>
-      <description> 椭圆 # </description>
+      <description>椭圆 # 已知椭圆 $C\colon \dfrac{x^2}{a^2}+ \dfrac{y^2}{b^2}= 1\ (a&gt;b&gt;0)$ 的焦点坐标分别为 $F_1(-1,0)$, $F_2(1,0)$, $P$ 为椭圆 $C$ 上一点, 满足 $3|PF_1|= 5 |PF_2|$ 且 $\cos\angle F_1PF_2= \dfrac35$. (1) 求椭圆 $C$ 的标准方程; (2) 设直线 $l\colon y=kx+m$ 与椭圆 $C$ 交于 $A$, $B$ 两点, 点 $Q\biggl(\dfrac14,0\biggr)$ 使得 $|AQ|= |BQ|$, 求实数 $k$ 的取值范围. (1) 设椭圆 $C$ 的半焦距为 $c$, 则 $c=1$. 由 $3|PF_1|= 5 |PF_2|$ 可设 \[ |PF_1|= 5t,\ |PF_2|= 3t,\quad t&gt;0,\] 按椭圆定义, \[ 2a= |PF_1|+|PF_2|= 8t\Rightarrow a=4t.\] 在 $\triangle PF_1F_2$ 中, 由余弦定理, \[\begin{aligned} \cos\angle F_1PF_2 &amp;= \frac35= \frac{|PF_1|^2+ |PF_2|^2- |F_1F_2|^2}{2|PF_1|\,|PF_2|}\\ &amp;= \frac{(5t)^2+(3t)^2- 2^2}{2\cdot 5t\cdot 3t} = \frac{34t^2- 4}{30t^2}, \end{aligned}\] 解得 $t=\dfrac12$.</description>
     </item>
     
     <item>
@@ -188,7 +189,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/trigonometry/vector/vec-def/</guid>
-      <description> 向量的定义 # </description>
+      <description>向量的定义 # 由向量的加法, $\overrightarrow{AB}+ \overrightarrow{BC}= \overrightarrow{AC}$, 移项得 $\overrightarrow{BC}= \overrightarrow{AC}- \overrightarrow{AB}$, 表明一个向量可以改写为新起点的两个向量之差, 且原向量终点在前, 起点在后, 不妨简称为“终点减去起点”. 类似地, \[\overrightarrow{MN}= \overrightarrow{ON}- \overrightarrow{OM} = \overrightarrow{PN}- \overrightarrow{PM},\] 即新的起点可以任意指定. 在 $\triangle ABC$ 中, $\overrightarrow{BD}= \dfrac13\overrightarrow{BC}$, 用 $\overrightarrow{AB}$, $\overrightarrow{AC}$ 表示 $\overrightarrow{AD}$. 把已知等式拆解为以 $A$ 为起点的向量表示, \[\overrightarrow{AD}- \overrightarrow{AB} = \dfrac13(\overrightarrow{AC}- \overrightarrow{AB}),\] 解得 $\overrightarrow{AD}= \dfrac23\overrightarrow{AB}+ \dfrac13\overrightarrow{AC}$. 上题不画图也能顺利解出, 复杂的题还是建议画图帮助思考解题思路. 用上面的方法很容易得到, 若点 $C$ 为线段 $AB$ 的中点, 则 \[\overrightarrow{OC} = \dfrac12\overrightarrow{OA}+ \dfrac12\overrightarrow{OB}.\] 此结论可以类比中点坐标公式来记忆, 而且解题时可以直接使用. 已知 $O$ 是 $\triangle ABC$ 所在平面内一点, $D$ 为 $BC$ 边的中点, 且 $2\overrightarrow{OA}+ \overrightarrow{OB}+ \overrightarrow{OC}=\bm{0}$, 判断 $\overrightarrow{AO}$ 与 $\overrightarrow{OD}$ 的关系.</description>
     </item>
     
     <item>
@@ -206,7 +207,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/trigonometry/sine-cosine-law/sine-law/</guid>
-      <description> 正弦定理 # </description>
+      <description>正弦定理 # 设 $\triangle ABC$ 中, 角 $A$, $B$, $C$ 的对边分别为 $a$, $b$, $c$, 则由三角形面积公式和任意角正弦的定义可得三角形面积定理 (高中常用): \[S= \frac{1}{2}ab\sin C=\frac{1}{2}bc\sin A=\frac{1}{2}ca\sin B.\] 推导见“2021 年 2 月 28 日答疑记录”的第一个例子. 将三角形面积定理换一种写法就得到正弦定理: \[\frac{a}{\sin A}= \frac{b}{\sin B}= \frac{c}{\sin C},\] 有时也写成 \[\frac{BC}{\sin A}= \frac{AC}{\sin B}= \frac{AB}{\sin C}.\] 作 $\triangle ABC$ 外接圆, 用纯几何法可证明 $\dfrac{a}{\sin A}= 2R$, 其中常数 $R$ 表示外接圆半径. 应用时也常写 $a= 2R\sin A$, 以及 \[\frac{\sin A}a= \frac{\sin B}b= \frac{\sin C}c.\] 有些关于 $a$, $b$ 或 $\sin A$, $\sin B$ 的式子可以利用正弦定理互相转化, 如 \[\sin^2 A= \sin^2 B\Leftrightarrow a\sin A= b\sin B \Leftrightarrow a^2=b^2.</description>
     </item>
     
     <item>
@@ -220,11 +221,11 @@
     
     <item>
       <title>直线与平面的位置关系</title>
-      <link>/docs/solid-geometry/line-plane/position/</link>
+      <link>/docs/solid-geometry/line-plane/line-plane-position/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/solid-geometry/line-plane/position/</guid>
-      <description> 直线与平面的位置关系 # </description>
+      <guid>/docs/solid-geometry/line-plane/line-plane-position/</guid>
+      <description>直线与平面的位置关系 # 若直线 $l$ 与平面 $\alpha$ 相交, 判断下列命题的正误: (1) $\alpha$ 内存在无数条直线与 $l$ 异面; (2) $\alpha$ 内存在唯一一条直线与 $l$ 平行; (3) $\alpha$ 内存在无数条直线与 $l$ 平行; (4) $\alpha$ 内的直线与 $l$ 都相交. (1) 正确. $\alpha$ 内的直线, 只要不与 $l$ 相交, 两者即为异面关系. (2) 错误. 若 $\alpha$ 内存在直线与 $l$ 平行, 那么 $\alpha\parallel l$ (线面平行的判定定理), 与已知条件矛盾. (3) 错误. 理由同上. (4) 错误. 只要在 $\alpha$ 内的直线不过 $l$ 与 $\alpha$ 交点, 该直线就与 $l$ 不相交. 点 $M$, $N$ 分别是正方体 $ABCD$--$A_1B_1C_1D_1$ 的两棱 $AA_1$ 与 $A_1B_1$ 的中点, 点 $P$ 是正方形 $ABCD$ 的中心, 判断 $MN$ 与平面 $PCB_1$ 的位置关系.</description>
     </item>
     
     <item>
@@ -233,7 +234,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/derivative/derivative/derivative-calc/</guid>
-      <description> 常见导数公式 # </description>
+      <description>常见导数公式 # 曲线 $y= x^2$ 在点 $P$ 处的切线的倾斜角为 $\dfrac\pi4$, 求点 $P$ 的坐标. 设 $P(x_0,y_0)$, 因为 $y= x^2$ 的导数为 $y&#39;= 2x$, 所以 \[ 2x_0= \tan\frac\pi4,\quad x_0= \frac12,\] 而 $y_0= x_0^2= \dfrac14$. 点 $P$ 的坐标为 $\biggl(\dfrac12,\dfrac14\biggr)$. 已知函数 $f(x)= ax^2+b$ 的图形开口向下, \[ \lim_{\Delta x\to 0} \frac{f(a+\Delta x)- f(a)}{\Delta x}= 4,\] 求 $a$ 的值. 题中式子为导数 $f&#39;(a)$ 的定义, 则 $f&#39;(a)= 4$. 因为 $f&#39;(x)= 2ax$, 所以 \[ 2a\cdot a= 4,\quad a= \pm2.\] 因为函数 $f(x)= ax^2+b$ 的图形开口向下, 所以 $a&lt; 0$, 则 $a=-2$.</description>
     </item>
     
     <item>
@@ -242,16 +243,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/algebra/sequence/common-diff/</guid>
-      <description> 等差数列 # </description>
-    </item>
-    
-    <item>
-      <title>分式不等式与高次不等式</title>
-      <link>/docs/prerequisite/inequality/fraction-high-order-inequality/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/prerequisite/inequality/fraction-high-order-inequality/</guid>
-      <description>分式不等式与高次不等式 # \subsection{简单的分式不等式的解法}关于 $x$ 的形如 $\dfrac{Ax+B}{Cx+D}&gt;(\geqslant)\,0$ 的分式不等式, 可以利用分子和分母的正负号关系转化为二次不等式来解. 具体地,\begin{align}\label{eq-201009-1907}\frac{Ax+B}{Cx+D}&gt;0 &amp; \Leftrightarrow (Ax+B)(Cx+D)&gt;0,\\\label{eq-201009-1917}\frac{Ax+B}{Cx+D}\geqslant 0 &amp; \Leftrightarrow \left\{\!\!\begin{array}{l}(Ax+B)(Cx+D)\geqslant 0,\\Cx+D\neq 0.\end{array}\right.\end{align}\eqref{eq-201009-1907} 式中右边不用限制分母非零, 因为乘积非零隐含两个因子均非零; 而 \eqref{eq-201009-1917} 式中右边必须限制分母非零, 因为乘积为零隐含两个因子均可能为零. 解下列不等式:\begin{twocolpro}(1) $\dfrac{x-2}{x-5}&gt;0$; &amp; (2) $\dfrac{x-2}{x-5}\geqslant 0$.\end{twocolpro}(1) 原不等式等价于 $(x-2)(x-5)&gt;0$, 所以 $x\in (-\infty,2)\cup (5,+\infty)$.(2) 原不等式等价于\[\left\{\!\!\begin{array}{l}(x-2)(x-5)\geqslant 0,\\x-5\neq 0,\end{array}\right. \text{解得}\ x\in (-\infty,2]\cup (5,+\infty).\]解二次不等式时, 需要考虑对应抛物线的图象, 尤其应注意开口方向. 也可以先将不等式各因子化为最高次项系数为正的形式, 然后再根据抛物线的图象写出相应的解集.解下列不等式:\begin{twocolpro}(1) $\dfrac{2-x}{x-5}&gt;0$; &amp; (2) $\dfrac{2-x}{x-5}\geqslant 0$.</description>
+      <description>等差数列 # 已知两个等差数列 $\{a_n\}$ 和 $\{b_n\}$ 的前 $n$ 项和分别为 $S_n$ 和 $T_n$, 且 $\dfrac{S_n}{T_n}= \dfrac{3n+39}{n+3}$, 计算 $\dfrac{a_3}{b_3}$, $\dfrac{a_n}{b_n}$. 由等差数列求和公式, \[ S_n= \frac12(a_1+a_n)n,\quad T_n= \frac12(b_1+b_n)n,\] 所以已知等式化为 \[ \dfrac{S_n}{T_n}= \frac{a_1+a_n}{b_1+b_n} = \frac{3n+39}{n+3}.\] 再利用等差数列的性质, \[ 2a_3= a_1+ a_5,\quad 2b_3= b_1+ b_5,\] 所以在前式中令 $n= 5$ 可得 \[ \frac{a_3}{b_3}= \frac{a_1+ a_5}{b_1+ b_5} = \frac{3\cdot 5+ 39}{5+ 3}= \frac{27}{4}.\] 类似地, \[ 2a_n= a_1+ a_{2n-1},\quad 2b_n= b_1+ b_{2n-1},\] 所以 \[ \frac{a_n}{b_n}= \frac{a_1+ a_{2n-1}}{b_1+ b_{2n-1}} = \frac{3\cdot (2n-1)+ 39}{(2n-1)+ 3}= \frac{3n+18}{n+1}.</description>
     </item>
     
     <item>
@@ -260,7 +252,16 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/trigonometry/complex-number/complex-number-operation/</guid>
-      <description> 复数的运算 # </description>
+      <description> 复数的运算 # 已知复数 $z= \dfrac{2\mathrm{i}}{1+\mathrm{i}}$, 求值: $\bar{z}$, $|z|$. $\bar{z}$ 表示 $z$ 的共轭复数, 即实部相同而虚部互为相反数, 而 $|z|$ 表示 $z$ 的模, 即 $z$ 在复平面对应的点到原点的距离. 先化简 $z$, \[z= \frac{2\mathrm{i}(1-\mathrm{i})}{(1+\mathrm{i})(1-\mathrm{i})} = \frac{2\mathrm{i}+2}2= 1+\mathrm{i},\] 所以 $\bar{z}= 1-\mathrm{i}$. 再由 $z$ 在复平面内对应点 $(1,1)$ 知, $|z|=\sqrt2$. </description>
+    </item>
+    
+    <item>
+      <title>古典概型</title>
+      <link>/docs/probability-statistics/probability/classical-probability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/probability-statistics/probability/classical-probability/</guid>
+      <description>古典概型 # 两个事件 $A$, $B$ 互斥是指这两个事件“互相排斥”, 即 $A$ 与 $B$ 不会同时发生, 用符号表示为 $A\cap B= \varnothing$, 或 $AB= \varnothing$. 因此 \[P(A\cup B)= P(A)+ P(B).\] 如在抽取扑克牌时, 事件“抽到红牌”与“抽到黑牌”为互斥事件, 因为没有扑克牌既是红牌又是黑牌. 两个事件 $A$, $B$ 对立是指这两个事件“非此即彼”, 即 $A$ 与 $B$ 不会同时发生, 但是必有一个发生. 设总体为 $\Omega$, 则此时 \[ A\cap B= \varnothing,\quad A\cup B=\Omega,\] 因此有 $P(A)+P(B)= P(\Omega)= 1$. “对立”是“互斥”的特殊情况. 两个事件 $A$, $B$ 相互独立是指其中一个事件是否发生不影响另一个事件发生的概率. 设总体为 $\Omega$, 而事件 $A$ 已发生, 则此时事件 $B$ 发生的概率为 \[ \frac{n(AB)}{n(A)} = \frac{n(AB)/n(\Omega)}{n(B)/n(\Omega)} = \frac{P(AB)}{P(A)}.\] 上式等于不考虑事件 $A$ 是否发生时, 事件 $B$ 发生的概率 $P(B)$, 所以 \[ \frac{P(AB)}{P(A)}= P(B),\quad\text{即}\quad P(AB)= P(A)P(B).</description>
     </item>
     
     <item>
@@ -292,12 +293,12 @@
     </item>
     
     <item>
-      <title>几何概型</title>
-      <link>/docs/probability-statistics/probability/geometric-probability/</link>
+      <title>绝对值不等式与二次不等式</title>
+      <link>/docs/prerequisite/inequality/abs-quadratic-inequality/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/probability-statistics/probability/geometric-probability/</guid>
-      <description> 几何概型 # </description>
+      <guid>/docs/prerequisite/inequality/abs-quadratic-inequality/</guid>
+      <description>绝对值不等式与二次不等式 # \subsection{绝对值的几何意义}实数 $a$ 的绝对值定义为\[|a|=\begin{cases}a, &amp; a&gt;0,\\0, &amp; a=0,\\-a, &amp; a&lt; 0\end{cases}= \begin{cases}a, &amp; a\geqslant 0,\\-a, &amp; a&lt; 0,\end{cases}\]其几何意义为数轴上坐标为 $a$ 的点到原点的距离. 进而可以知道, 数轴上两点 $x_1$, $x_2$ 之间的距离为 $|x_1-x_2|$, 如下图所示.\includegraphics[scale=1]{2020-1009-2110-crop}\qquad\includegraphics[scale=1]{2020-1009-2120-crop}例如, $|x-1|$ 表示点 $x$ 到 $1$ 的距离; $|x+2|=|x-(-2)|$ 表示点 $x$ 到 $-2$ 的距离; $|2x-2|= 2|x-1|$ 表示点 $x$ 到 $1$ 的距离的 $2$ 倍; $|4+2x|= 2|x-(-2)|$ 表示点 $x$ 到 $-2$ 的距离的 $2$ 倍.</description>
     </item>
     
     <item>
@@ -306,7 +307,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/trigonometry/vector/vec-basic-theorem/</guid>
-      <description> 平面向量基本定理 # </description>
+      <description>平面向量基本定理 # 已知 $\triangle ABC$ 中, 角 $A$, $B$, $C$ 所对的边分別为 $a$, $b$, $c$, $a=\sqrt7$, $b=2$. 向量 $\bm{m}= (a,\sqrt3b)$, $\bm{n}= (\cos A, \sin B)$, 且 $\bm{m}\parallel\bm{n}$. 求角 $A$ 的大小和 $\triangle ABC$ 的面枳. 因为 $\bm{m}\parallel\bm{n}$, 所以 $a\sin B= \sqrt3b\cos A$. 由正弦定理, \[\sin A\sin B= \sqrt3\sin B\cos A\quad\text{即}\quad \tan A=\sqrt3,\] 则 $A= 60^\circ$. 求三角形面积优先考虑面积定理. 由余弦定理, \[a^2= b^2+c^2- 2bc\cos A\quad\text{即}\quad 7= 4+c^2- 4c\cdot\frac12,\] 解得 $c= 3$ (舍负). 因此 \[S_{\triangle ABC}= \frac12 bc\sin A = \frac12\cdot 2\cdot 3\cdot \frac{\sqrt3}{2} = \frac{3\sqrt3}{2}.</description>
     </item>
     
     <item>
@@ -354,7 +355,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/solid-geometry/line-plane/line-plane-parallel/</guid>
-      <description> 线面平行 # </description>
+      <description>线面平行 # 线面平行判定定理: 平面外一条直线与此平面内某条直线平行, 则该直线与此平面平行. 对应的符号语言 (如图 \ref{fig-190630-1800}): $a\not\subset\alpha$, $b\subset\alpha$ 且 $a\parallel b$ $\Rightarrow$ $a\parallel\alpha$. 面面平行判定定理: 一个平面内的两条相交直线与另一个平面平行, 则这两个平面平行. 对应的符号语言 (如图 \ref{fig-190630-1810}): $a\subset\beta$, $b\subset\beta$, $a\cap b= P$, $a\parallel\alpha$, $b\parallel\alpha$ $\Rightarrow$ $\beta\parallel\alpha$. \begin{figure}[htb] \small \centering \begin{minipage}[b]{0.45\linewidth} \centering \begin{tikzpicture}[scale=0.8] \draw (0,0,0) coordinate (A); \draw (3,0,0) coordinate (B); \draw (0,0,-3) coordinate (D); \draw (B)++(D) coordinate (C); \draw (0.5,0) +(0,-0.05)node[above] {$\alpha$}; \def\ay{2} \def\bz{-0.9} \draw (A)--(B)--(C)--(D)--(A) (0.5,0,\bz)--(2.5,0,\bz) (0.9,\ay)--(3,\ay); \draw (1.8,\ay) node[above] {$a$}; \draw (1.5,0,\bz) node[above] {$b$}; \end{tikzpicture} \caption{}\label{fig-190630-1800} \end{minipage} \hskip 0.</description>
     </item>
     
     <item>
@@ -390,7 +391,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/trigonometry/sine-cosine-law/cosine-law/</guid>
-      <description> 余弦定理 # </description>
+      <description>余弦定理 # 对 $\triangle ABC$, 由直角坐标系中的距离公式或向量的内积运算可得余弦定理: \[a^2= b^2+ c^2- 2bc\cos A,\quad\cos A=\frac{b^2+c^2-a^2}{2bc}.\] 还可以写出 \[b^2= a^2+ c^2- 2ac\cos B,\quad\cos C=\frac{a^2+b^2-c^2}{2ab},\] 即余弦定理共三组公式. 在解三角形时, 一般题中已知等式里角多则先考虑用正弦定理, 边多则先考虑用余弦定理. 在 $\triangle ABC$ 中, $a=\sqrt7$, $b=2$, $A=60^\circ$, 求 $c$ 的值. 将已知条件代入 $a^2= b^2+c^2-2bc\cos A$, 得 \[7= 4+c^2-2c, \quad\text{即}\quad c=3\ (\text{舍负}).\] 在 $\triangle ABC$ 中, $\sin A: \sin B= 3: 5$, $c=2b-a$, 求 $\cos B$ 的值. $\sin A: \sin B= 3: 5$ 等价于 $a:b= 3:5$, 故设 $a=3k$, $b=5k$ ($k&gt;0$).</description>
     </item>
     
     <item>
@@ -399,7 +400,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/analytic-geometry/circle/circle-line/</guid>
-      <description> 圆与直线的位置关系 # </description>
+      <description>圆与直线的位置关系 # 圆 $C$ 经过点 $A(2,-1)$, 与直线 $x+y=1$ 相切, 且圆心在直线 $y=-2x$ 上. (1) 求圆 $C$ 的方程; (2) 已知直线 $l$ 经过原点, 并且被圆 $C$ 截得的弦长为 $2$, 求直线 $l$ 的方程. (1) 由圆心 $C$ 在直线 $y=-2x$ 上可设 $C(a,-2a)$, 再设半径 $r$. 将切线 $x+y=1$ 方程改写为 $x+y-1= 0$, 由题意, \[\left\{\!\!\begin{array}{l} (2-a)^2+ (-1+ 2a)^2= r^2,\\ \dfrac{|a+(-2a)-1|}{\sqrt{1^2+1^2}}= r, \end{array}\right.\] 即 \[\left\{\!\!\begin{array}{l} 5a^2- 8a+ 5= r^2,\\ |a+1|= \sqrt{2} r. \end{array}\right.\] 将后一式平方并代入前一式, \[ 2(5a^2- 8a+ 5)= (a+1)^2,\] 解得 $a= 1$, 所以 $r= \sqrt2$, $C(1,-2)$, 圆 $C$ 的方程为 \[ (x-1)^2+ (y+2)^2= 4.</description>
     </item>
     
     <item>
@@ -435,7 +436,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/algebra/pow-exp-log/exponent-function/</guid>
-      <description>指数函数 # \begin{example}\label{exa:201201-2020} 已知函数 \[f(x)= \begin{cases} (4a-3)x+a+\dfrac12, &amp; x&lt; 0,\\ a^x, &amp; x\geqslant 0. \end{cases}\] (1) 若函数的图形经过点 $\biggl(3,\dfrac18\biggr)$, 求 $a$ 的值. (2) 若对任意的 $x_1\neq x_2$, 都有 $\dfrac{f(x_1)-f(x_2)}{x_1-x_2}&lt; 0$ 成立, 求 $a$ 的取值范围. (1) 由题意, $f(3)= \dfrac18$ 即 $a^3=\dfrac18$, 所以 $a=\dfrac12$. (2) $\dfrac{f(x_1)-f(x_2)}{x_1-x_2}&lt; 0$ 表明 $x_1$, $x_2$ 的大小关系与 $f(x_1)$, $f(x_2)$ 的大小关系恰好反过来 (即若 $x_1&lt; x_2$, 则 $f(x_1)&gt;f(x_2)$), 也就是 $f(x)$ 单调递减. 再由 $f(x)$ 的解析式知 (参考“2020 年 10 月 31 日答疑记录”的第三个例子) \[\left\{\!\!\begin{array}{l} 4a-3&lt; 0,\ 0&lt; a&lt; 1,\\ a+\dfrac12\geqslant a^0, \end{array}\right.</description>
+      <description>指数函数 # 乘方是多个相同式子相乘的简写, 例如, \[ a^2= a\cdot a,\quad b^3= b\cdot b\cdot b.\] 对于正整数 $m,n$, 可知 \[\begin{gathered} a^m \cdot a^n= a^{m+n},\\ (a^m)^n= a^{mn},\quad (ab)^m= a^m b^m. \end{gathered}\] 例如, \[ (4^2)^3= 4^2\cdot 4^2\cdot 4^2= 4^{2\cdot 3}.\] 当 $a\neq 0$ 且正整数 $m,n$ 满足 $m\geqslant n$ 时, \[ \frac{a^m}{a^n}= a^{m-n},\quad \frac{a^n}{a^m}= \frac1{a^{m-n}},\] 例如, \[ \frac{2^5}{2^3}= a^{5-3},\quad \frac{2^3}{2^5}= \frac1{2^{5-3}}.\] 特别地, 当 $m=n$ 时, 可得 \[ a^0= a^{n-n}= \frac{a^n}{a^n}= 1\quad (a\neq 0).\] 在公式 $a^m \cdot a^n= a^{m+n}$ 中令 $m= -n$, 则 \[ a^{-n} \cdot a^n= a^{-n+n}= a^0= 1,\] 所以规定 $a^{-n}= \dfrac1{a^n}$.</description>
     </item>
     
     <item>
@@ -444,7 +445,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/solid-geometry/solid/pyramid-pillar-area-volume/</guid>
-      <description> 锥和柱的表面积与体积 # </description>
+      <description>锥和柱的表面积与体积 # 柱的表面积等于侧面积加两个底面积, 体积等于底面积乘以高. 锥的表面积等于侧面积加底面积, 体积等于 $\dfrac13$ 倍的底面积乘以高. 用 $V$ 表示体积 (volume), $S$ 表示面积 (area), $h$ 表示高 (height), $r$ 表示底面半径 (radius), $l$ 表示圆锥的母线长, 则前述结论可写为以下公式: \begin{gather*} S_{\text{柱}}= S_{\text{侧}}+2S_{\text{底}},\quad S_{\text{圆柱侧}}= 2\pi rh,\\ V_{\text{柱}}= S_{\text{底}}h,\quad V_{\text{圆柱}}= \pi r^2h,\\ S_{\text{锥}}= S_{\text{侧}}+S_{\text{底}},\quad S_{\text{圆锥}}= \pi rl+\pi r^2= \pi r(l+r),\\ V_{\text{锥}}= \frac13S_{\text{底}}h,\quad V_{\text{圆锥}}= \frac13\pi r^2h. \end{gather*} 圆锥的侧面展开图为扇形, 且扇形的弧就是底面圆周, 所以圆锥的侧面积公式就是扇形的面积公式, 而后者与三角形面积公式类似, 故 \[S_{\text{圆锥侧}}= \frac12\cdot 2\pi r\cdot l= \pi rl.\] 已知正四面体的边长为 $a$, 求其表面积和体积. 正四面体的四个面均为正三角形, 而各正三角形面积为 $\dfrac{\sqrt3}4 a^2$, 所以表面积为 $\sqrt3 a^2$.</description>
     </item>
     
     <item>
@@ -453,16 +454,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/probability-statistics/permutation-combination/combination/</guid>
-      <description> 组合 # </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/docs/probability-statistics/statistics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/probability-statistics/statistics/</guid>
-      <description> # </description>
+      <description>组合 # 组合数 $\mathrm{C}_n^m$ 表示从 $n$ 个互异元素中取 $m$ 个元素的方法数, 其中正整数 $m$, $n$ 满足 $m\leqslant n$. 由定义, $\mathrm{C}_n^m= \mathrm{C}_n^{n-m}$, 即“取 $m$ 个元素”对应于“取 $n-m$ 个元素”, 这是组合数的对称性. 再由定义, $\mathrm{C}_n^n=1$, 并规定 $\mathrm{C}_0^0=\mathrm{C}_n^0= 1$, 此时 $\mathrm{C}_n^0= \mathrm{C}_n^n$, 仍有对称性. 组合数的计算公式可由乘法原理得到. 从 $n$ 个互异元素中取 $m$ 个元素, 再从左至右排成一行, 对应的排列数为 $\mathrm{A}_n^m$, 而 $m$ 个元素排成一行的排列数为 $m!$, 所以 \[ \mathrm{C}_n^m\cdot m!= \mathrm{A}_n^m\Rightarrow \mathrm{C}_n^m= \frac{\mathrm{A}_n^m}{m!}= \frac{n!}{m!(n-m)!}.\] 上式也可以改写为 \[ \mathrm{C}_n^m= \frac{n(n-1)\cdots(n-m+1)}{1\cdot 2\cdot\,\cdots\,\cdot m}.\] 实际计算时, 常用后一公式, 而前一式主要用来简化中间计算过程. “2022 年 4 月 10 日答疑记录”中给出了组合数 $\mathrm{C}_n^m$ 关于 $m$ 的单调性: 对固定的 $n$, 随 $m$ 的增加, 函数 $f(m)= \mathrm{C}_n^m$ 的值先增后减, 且在中间取最大值.</description>
     </item>
     
     <item>
@@ -489,7 +481,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/algebra/pow-exp-log/logarithm-calculation/</guid>
-      <description>对数运算 # 对数的主要运算法则如下 (以下均设底数 $a\in(0,1)\cup(1,+\infty)$, 真数 $x$, $y&gt;0$): \[\begin{gathered} a^x=y\Leftrightarrow x=\log_a y,\quad \text{由此可得}\ a^{\log_a y}= y,\ x= \log_a a^x,\\ \log_a x+ \log_a y= \log_a xy,\quad \log_a x- \log_a y= \log_a \dfrac{x}y,\\ \frac{\log_a x}{\log_a y}= \log_y x\ (\text{换底公式}),\quad \log_a x^\beta= \beta\log_a x\ (\beta\in\realnum). \end{gathered}\] 以上公式均可以逆用, 如 \[\log_2 6= \log_2 2+\log_2 3= 1+\log_2 3.\] 此外还应注意恒等式 $\log_a a=1$ 和 $\log_a 1= 0$ (均由对数定义可得). 有两个取特殊底的对数是常用的: $\log_{10} x$ 记为 $\lg x$ (\myindex{常用对数}{常用对数}), $\log_{\mathrm{e}} x$ 记为 $\ln x$ (\myindex{自然对数}{自然对数}), 其中 $\mathrm{e}= 2.</description>
+      <description>对数运算 # 化简求值: $\mathrm{e}^{-\ln 2}$, $\dfrac{\log_8 9}{\log_2 3}$. 因为 $a^{\log_a b}= b$, 所以 ($\ln x$ 表示以 $\mathrm{e}$ 为底的自然对数) \[\mathrm{e}^{-\ln 2}= \mathrm{e}^{\ln \frac12}= \frac12.\] 由换底公式, \[\frac{\log_8 9}{\log_2 3} = \frac{\ln 9}{\ln 8} \cdot \frac{\ln 3}{\ln 2} = \frac{2\ln 3}{3\ln 2} \cdot \frac{\ln 3}{\ln 2} = \frac23.\] 一个容器装有细沙 $a\,\text{cm}^3$, 细沙从容器底部一个细微的小孔慢慢地匀速漏出, $t\,\text{min}$ 后剩余的细沙量为 $y= a\mathrm{e}^{-bt}\,(\text{cm}^3)$, 经过 $8\,\text{min}$ 后发现容器内还有一半的沙子, 求需要再经过多少时间, 容器中的沙子只有开始时的八分之一. 设经过 $t\,\text{min}$ 符合题意, 则由已知, \[\left\{\!\!\begin{array}{l} a\mathrm{e}^{-b\cdot 8}= \dfrac{a}2,\\[5pt] a\mathrm{e}^{-bt}= \dfrac{a}8, \end{array}\right.\ \text{即} \left\{\!</description>
     </item>
     
     <item>
@@ -510,7 +502,16 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/probability-statistics/permutation-combination/binomial-theorem/</guid>
-      <description> 二项式定理 # </description>
+      <description>二项式定理 # $(x+y)^n$ 表示二项式 $x+y$ 的 $n$ 次方. 先观察当 $n$ 较小时, 展开式的结构特点. 当 $n=2$ 时, \[\begin{aligned} (x+y)^2&amp;= (x+y)(x+y)= x(x+y)+ y(x+y)\\ &amp;= (x^2+xy)+ (yx+y^2)= x^2+ 2xy+y^2, \end{aligned}\] 这就是完全平方公式. 展开时主要利用分配律将前一个括号中的 $x,y$ 分别与后一个括号中的 $x,y$ 相乘, 所得 $4$ 个因式合并同类项后共 $3$ 项. 再来看当 $n=3$ 时的情形. 此时, 逐次用分配律再合并, \[\begin{aligned} (x+y)^3&amp;= (x+y)(x+y)(x+y)\\ &amp;= x(x+y)(x+y)+ y(x+y)(x+y)\\ &amp;= [x^2(x+y)+ xy(x+y)]+ [yx(x+y)+ y^2(x+y)]\\ &amp;= \cdots\\ &amp;= x^3+ 3x^2y+ 3xy^2+ y^3. \end{aligned}\] 可以看出, 展开后得到 $8$ 个因式, 合并同类项后共 $4$ 项. 仔细观察上述过程, 可以看出每个因式都是从 $(x+y)(x+y)(x+y)$ 的各括号中分别选取 $x$ 或 $y$ 再相乘得到的, 从而可得如下规律: (1) 每个因式均为 $3$ 次式, 且按 $x$ 的降幂排列为 \[ x^3,\quad x^2y,\quad xy^2,\quad y^3,\] 共 $4$ 项; (2) 要得到 $x^3$, 相当于从每个括号中均取 $x$ 相乘, 即从 $3$ 个 $x$ 中取 $3$ 个 $x$, 共 $\mathrm{C}_3^3$ 种取法, 所以 $x^3$ 的系数为 $\mathrm{C}_3^3= 1$; (3) 要得到 $x^2y$, 相当于从两个括号中取 $x$ 且从剩下的一个括号中取 $y$ 相乘, 即从 $3$ 个 $x$ 中取 $2$ 个 $x$, 共 $\mathrm{C}_3^2$ 种取法, 所以 $x^2y$ 的系数为 $\mathrm{C}_3^2= 3$; (4) 类似地, $xy^2$ 的系数为 $\mathrm{C}_3^1= 3$, $y^3$ 的系数为 $\mathrm{C}_3^0= 1$.</description>
+    </item>
+    
+    <item>
+      <title>分式不等式与高次不等式</title>
+      <link>/docs/prerequisite/inequality/fraction-high-order-inequality/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/prerequisite/inequality/fraction-high-order-inequality/</guid>
+      <description>分式不等式与高次不等式 # \subsection{简单的分式不等式的解法}关于 $x$ 的形如 $\dfrac{Ax+B}{Cx+D}&gt;(\geqslant)\,0$ 的分式不等式, 可以利用分子和分母的正负号关系转化为二次不等式来解. 具体地,\begin{align}\label{eq-201009-1907}\frac{Ax+B}{Cx+D}&gt;0 &amp; \Leftrightarrow (Ax+B)(Cx+D)&gt;0,\\\label{eq-201009-1917}\frac{Ax+B}{Cx+D}\geqslant 0 &amp; \Leftrightarrow \left\{\!\!\begin{array}{l}(Ax+B)(Cx+D)\geqslant 0,\\Cx+D\neq 0.\end{array}\right.\end{align}\eqref{eq-201009-1907} 式中右边不用限制分母非零, 因为乘积非零隐含两个因子均非零; 而 \eqref{eq-201009-1917} 式中右边必须限制分母非零, 因为乘积为零隐含两个因子均可能为零. 解下列不等式:\begin{twocolpro}(1) $\dfrac{x-2}{x-5}&gt;0$; &amp; (2) $\dfrac{x-2}{x-5}\geqslant 0$.\end{twocolpro}(1) 原不等式等价于 $(x-2)(x-5)&gt;0$, 所以 $x\in (-\infty,2)\cup (5,+\infty)$.(2) 原不等式等价于\[\left\{\!\!\begin{array}{l}(x-2)(x-5)\geqslant 0,\\x-5\neq 0,\end{array}\right. \text{解得}\ x\in (-\infty,2]\cup (5,+\infty).\]若 $a&gt;b$, 且 $a-\dfrac1a&gt; b-\dfrac1b$, 求 $ab$ 的取值范围.</description>
     </item>
     
     <item>
@@ -532,21 +533,21 @@
     </item>
     
     <item>
+      <title>几何概型</title>
+      <link>/docs/probability-statistics/probability/geometric-probability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/probability-statistics/probability/geometric-probability/</guid>
+      <description> 几何概型 # </description>
+    </item>
+    
+    <item>
       <title>解三角形</title>
       <link>/docs/trigonometry/sine-cosine-law/solving-triangles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/trigonometry/sine-cosine-law/solving-triangles/</guid>
-      <description> 解三角形 # </description>
-    </item>
-    
-    <item>
-      <title>均值不等式</title>
-      <link>/docs/prerequisite/inequality/mean-value-inequality/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/prerequisite/inequality/mean-value-inequality/</guid>
-      <description>均值不等式 # 对于任意 $x$, $y\in\realnum$, 恒有 $(x-y)^2\geqslant 0$, 展开后移项得\[x^2+y^2\geqslant 2xy\quad\text{即}\quad \frac{x^2+y^2}2\geqslant xy.\]不等式中等号成立的条件是 $x=y$, 也记为:“$=$”成立当且仅当 $x=y$. 把上面两个式子中的 $x$ 和 $y$ 分别换成 $\sqrt{x}$ 和 $\sqrt{y}$ (此时必须限制 $x$, $y\geqslant 0$), 可知\[x+y\geqslant 2\sqrt{xy}\quad\text{即}\quad \frac{x+y}2\geqslant \sqrt{xy}.\]因为 $\dfrac{x+y}2$ 与 $\sqrt{xy}$ 分别叫做非负实数 $x$ 与 $y$ 的\myindex{算术平均值}{算术平均值}与\myindex{几何平均值}{几何平均值}, 所以上面最后一个不等式也称为\myindex{均值不等式}{均值不等式}, 即\[\text{均值不等式:}\ \frac{x+y}2\geqslant \sqrt{xy},\quad x,y\geqslant 0.\]以上不等式均为常用不等式, 且都可以互相推出.利用均值不等式 (或其等价形式) 可以很方便地求特殊形式的式子的最大 (小) 值. 例如, 若 $x&gt;0$, 则 \[x+\dfrac1x\geqslant 2\sqrt{x\cdot\dfrac1x}=2,\]“$=$”成立当且仅当 $x=\dfrac1x$ 即 $x=1$. 一般的, 可得如下结论 (均设 $x$, $y\geqslant 0$):(1) 若 $xy=L$ 为定值, 则 \[x+y\geqslant 2\sqrt{xy}=2\sqrt{L},\] 所以 $x+y$ 的最小值为 $2\sqrt{L}$,“$=$”成立当且仅当 $x=y=\sqrt{L}$;(2) 若 $x+y=M$ 为定值, 则 \[\sqrt{xy}\leqslant \frac{x+y}2=\frac{M}2\quad\text{即}\quadxy\leqslant \biggl(\frac{M}2\biggr)^2= \frac{M^2}4,\]所以 $xy$ 的最大值为 $\dfrac{M^2}4$,“$=$”成立当且仅当 $x=y=\dfrac{M}2$.</description>
+      <description>解三角形 # 在 $\triangle ABC$ 中, $a=\sqrt7$, $b=2$, $A= 60^\circ$, 求 $c$ 的值. 题中有三边一角, 正好用余弦定理. 由 \[a^2= b^2+c^2- 2bc\cos A\quad \text{即}\quad 7= 4+c^2- 2c,\] 解得 $c= 3$. 对于 $\triangle ABC$, 判断下列命题是否正确: (1) 若 $\cos A= \cos B$, 则 $\triangle ABC$ 是等腰三角形; (2) 若 $\triangle ABC$ 为锐角三角形, 则 $A+B&gt; \dfrac\pi2$, 从而 $\sin A&gt; \cos B$; (3) 符合条件 $a=8$, $c=10$, $B=60^\circ$ 的 $\triangle ABC$ 有两个; (4) 若 $\sin^2 A+ \sin^2 B&lt; \sin^2 C$, 则 $\triangle ABC$ 是钝角三角形.</description>
     </item>
     
     <item>
@@ -565,7 +566,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/analytic-geometry/conic-curves/parabola/</guid>
-      <description> 抛物线 # </description>
+      <description>抛物线 # 已知抛物线 $C\colon y^2=2px$ 过点 $P(1,1)$, 过点 $\biggl(0,\dfrac12\biggr)$ 作直线 $l$ 与抛物线 $C$ 交于不同的两点 $M$, $N$. 过点 $M$ 作 $x$ 轴的垂线, 分别与直线 $OP$, $ON$ 交于点 $A$, $B$, 其中 $O$ 为原点. (1) 求抛物线 $C$ 的方程, 并求其焦点坐标和准线方程; (2) 求证: $A$ 为线段 $BM$ 的中点. (1) 将点 $P(1,1)$ 代入抛物线 $C$ 的方程, \[ 1^2= 2p\cdot 1,\quad p=\frac12,\] 所以 $C\colon y^2=x$, 焦点 $\biggl(\dfrac14,0\biggr)$, 准线 $x= -\dfrac14$. (2) 设 $l$ 斜率为 $k$, 则 \[ l\colon y-\frac12= k(x-0)\Rightarrow y= kx+\frac12,\] 代入 $C\colon y^2=x$ 整理得 \[ k^2x^2+ (k-1)x+ \frac14= 0.</description>
     </item>
     
     <item>
@@ -574,7 +575,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/trigonometry/trigonometric-function/trig-sum-diff/</guid>
-      <description> 三角函数的和差角公式 # </description>
+      <description>三角函数的和差角公式 # 已知 $\alpha$, $\beta$ 都是锐角, $\cos\alpha=\dfrac17$, $\cos(\alpha+\beta)= -\dfrac{11}{14}$, 求 $\cos\beta$ 的值. 由题意, $\alpha\in\Bigl(0,\dfrac\pi2\Bigr)$, $\alpha+\beta\in(0,\pi)$, 所以 $\sin\alpha=\dfrac{4\sqrt3}7$, $\sin(\alpha+\beta)= \dfrac{5\sqrt3}{14}$, 而 \[\begin{aligned} \cos\beta &amp;= \cos((\alpha+\beta)-\alpha)\\ &amp;= \cos(\alpha+\beta)\cos\alpha- \sin(\alpha+\beta)\sin\alpha\\ &amp;= \biggl(-\dfrac{11}{14}\biggr)\cdot \dfrac17 + \dfrac{5\sqrt3}{14}\cdot \dfrac{4\sqrt3}7 = \frac12. \end{aligned}\] 上题可以顺带求出 $\beta= \dfrac\pi3$. 题中的解法主要是利用 $\alpha$ 和 $\alpha+\beta$ 表示 $\beta$, 以直接利用差角的余弦公式写出 $\cos\beta$ 的表达式.类似的还有 \[\alpha= (45^\circ+\alpha)-45^\circ,\quad \alpha= \frac{\alpha+\beta}{2}+ \frac{\alpha-\beta}{2}.\] 已知 $\sin(30^\circ+ \alpha)= \dfrac35$, $60^\circ&lt; \alpha&lt; 150^\circ$, 求 $\cos\alpha$ 的值. 由题意, $90^\circ&lt; 30^\circ+\alpha&lt; 180^\circ$, 所以 $\cos(30^\circ+ \alpha)= -\dfrac45$, 而 \[\begin{aligned} \cos\alpha &amp;= \cos((30^\circ+\alpha)- 30^\circ)\\ &amp;= \cos(30^\circ+\alpha)\cos30^\circ) + \sin(30^\circ+\alpha)\sin30^\circ\\ &amp;= -\dfrac45\cdot \frac{\sqrt3}{2}+ \dfrac35\cdot\frac12 = \frac{3-4\sqrt3}{10}.</description>
     </item>
     
     <item>
@@ -588,15 +589,6 @@
 $AB= CD$, $AD= BC$, 即两组对边分别相等 $AO=OC$, $BO=OD$, 即对角线互相平分 平行四边形是中心对称图形, 其对称中心为对角线的交点. 判定平行四边形的常用方法为
 两组对边分别平行 (定义) 一组对边平行且相对 两组对边分别相等 对角线互相平分 对任意四边形 $ABCD$, 顺次连接四边中点 $E$, $F$, $G$, $H$, 求证: 四边形 $EFGH$ 为平行四边形.
 连接 $AC$, 考虑 $\triangle ABC$ 和 $\triangle ADC$ 的中位线知, \[ EF=\frac12 AC= HG,\quad EF\parallel AC\parallel HG,\] 所以四边形 $EFGH$ 为平行四边形.</description>
-    </item>
-    
-    <item>
-      <title>条件概率</title>
-      <link>/docs/probability-statistics/probability/conditional-probability/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/probability-statistics/probability/conditional-probability/</guid>
-      <description> 条件概率 # </description>
     </item>
     
     <item>
@@ -625,7 +617,7 @@ $AB= CD$, $AD= BC$, 即两组对边分别相等 $AO=OC$, $BO=OD$, 即对角线�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/solid-geometry/line-plane/line-plane-perp/</guid>
-      <description> 线面垂直 # </description>
+      <description>线面垂直 # 如图所示, 在四棱锥 $P\text{--}ABCD$ 中, 底面 $ABCD$ 为直角梯形, 且 $AD\parallel BC$, $\angle ABC=\angle PAD= 90^\circ$, 侧面 $PAD\perp$ 底面 $ABCD$, $PA= AB= BC = \dfrac12 AD$. (1) 求证: $CD\perp$ 平面 $PAC$; (2) 侧棱 $PA$ 上是否存在点 $E$, 使得 $BE\parallel$ 平面 $PCD$? 若存在, 指出点 $E$ 的位置并证明; 若不存在, 请说明理由. \includegraphics[scale=1.5]{2022-0430-1800-crop.pdf} 以下简要描述解题过程, 详情可自行补充. (1) 取 $AD$ 中点 $M$, 连接 $CM$, 可证 $\triangle ACD$ 为等腰直角三角形, $DC\perp AC$. 由题意得 $PA\perp$ 面 $ABCD$, 所以 $PA\perp CD$, 则 $CD\perp$ 平面 $PAC$.</description>
     </item>
     
     <item>
@@ -634,7 +626,7 @@ $AB= CD$, $AD= BC$, 即两组对边分别相等 $AO=OC$, $BO=OD$, 即对角线�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/trigonometry/vector/dot-product/</guid>
-      <description> 向量的内积 # </description>
+      <description>向量的内积 # 已知正方形 $ABCD$ 的边长为 $2$, 点 $E$ 为 $AB$ 的中点, 点 $P$ 为对角线 $BD$ 上的动点, 求 $\overrightarrow{PE}\cdot\overrightarrow{PC}$ 的取值范围. 以点 $B$ 为原点, $BC$ 为 $x$ 轴, $BA$ 为 $y$ 轴, 建立平面直角坐标系 (建议作图帮助理解), 则 $E(0,1)$, $C(2,0)$. 由题意可设 $P(p,p)$, 其中 $p\in[0,2]$, 则 \[\overrightarrow{PE}\cdot\overrightarrow{PC} = (-p,1-p)\cdot(2-p,-p) = 2p^2-3p.\] 结合二次函数单调性知, $\overrightarrow{PE}\cdot\overrightarrow{PC} \in \biggl[-\dfrac98,2\biggr]$. 已知向量 $\bm{a}$, $\bm{b}$ 的夹角为 $\dfrac{2\pi}3$, $|\bm{a}|=1$, $|\bm{b}|=2$. 若 $2\bm{a}-\bm{b}$ 与 $t\bm{a}+\bm{b}$ 垂直, 求 $t$ 的值. 由题意, $\bm{a}^2= 1$, $\bm{b}^2= 4$, $\bm{a}\cdot\bm{b}= -1$, \[(2\bm{a}-\bm{b})(t\bm{a}+\bm{b})=0,\quad\text{即}\quad 2t\bm{a}^2+(2-t)\bm{a}\cdot\bm{b}- \bm{b}^2=0,\] 解得 $t= 2$.</description>
     </item>
     
     <item>
@@ -661,7 +653,7 @@ $AB= CD$, $AD= BC$, 即两组对边分别相等 $AO=OC$, $BO=OD$, 即对角线�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/trigonometry/trigonometric-function/trig-double-auxiliary/</guid>
-      <description> 倍角公式与辅助角公式 # </description>
+      <description>倍角公式与辅助角公式 # 已知 $\cos\dfrac\alpha8= -\dfrac45$, $8\pi&lt; \alpha&lt; 12\pi$, 求 $\sin\dfrac\alpha4$, $\cos\dfrac\alpha4$, $\tan\dfrac\alpha4$ 的值. 因为 $\pi&lt; \dfrac\alpha8&lt; \dfrac{3\pi}2$, 所以 $\sin\dfrac\alpha8= -\dfrac35$, 由二倍角公式, \[\begin{gathered} \sin\dfrac\alpha4 = \sin\Bigl(2\cdot\dfrac\alpha8\Bigr) = 2\sin\dfrac\alpha8 \cos\dfrac\alpha8 = \frac{24}{25},\\ \cos\dfrac\alpha4 = 2\cos^2\dfrac\alpha8- 1 = \frac{7}{25},\\ \tan\dfrac\alpha4 = \frac{\sin\dfrac\alpha4}{\cos\dfrac\alpha4} = \frac{24}{7}. \end{gathered}\] 上题中, $\cos\dfrac\alpha4$ 也可以用公式 $\sin^2 x+\cos^2 x=1$ 求出, 但需要额外判断正负号. $\tan\dfrac\alpha4$ 也可以用二倍角公式计算, 但此处用定义更方便一些. 已知 $\sin(\alpha-\pi)= \dfrac35$, 求 $\cos2\alpha$ 的值. 由诱导公式, $\sin(\alpha-\pi)= -\sin\alpha$, 所以 $\sin\alpha= -\dfrac35$, \[\cos2\alpha= 1-2\sin^2\alpha= \frac{7}{25}.\] 凡三角函数式中含与 $\dfrac\pi2$ (即 $90^\circ$) 的倍数相关的和式, 应先用诱导公式化简.</description>
     </item>
     
     <item>
@@ -670,7 +662,7 @@ $AB= CD$, $AD= BC$, 即两组对边分别相等 $AO=OC$, $BO=OD$, 即对角线�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/algebra/pow-exp-log/logarithm-function/</guid>
-      <description>对数函数 # 若函数 $y=\log_a x$ ($a&gt;0$ 且 $a\neq 1$) 的图形过点 $(3,1)$, 求 $\log_2 3 \cdot f(8)$ 的值. 将 $(3,1)$ 代入 $y=\log_a x$ 得 $1= \log_a 3$, 所以 $a=3$, \[\log_2 3 \cdot f(8)= \log_2 3\cdot \log_3 8 = \frac{\ln 3}{\ln 2}\cdot\frac{\ln 8}{\ln 3} = \frac{3\ln 2}{\ln 2}= 3.\] 设 $a= 2^{-\frac13}$, $b=\log_2\dfrac13$, $c= \log_{\frac12}\dfrac13$, 比较这三者的大小. 分别考虑函数 $f(x)= 2^x$, $g(x)= \log_2 x$, $h(x)= \log_{\frac12} x$ 的单调性, 可知 \[\begin{gathered} a= f\biggl(-\dfrac13\biggr)\in (0,1),\quad b= g\biggl(\dfrac13\biggr)\in (-\infty,0),\\ c= h\biggl(\dfrac13\biggr)\in (1,+\infty), \end{gathered}\] 所以 $b&lt; a&lt; c$.</description>
+      <description>对数函数 # 比较下列各组数的大小: (1) $a=\log_3 4$, $b= \cos 2$, $c= 2^{-\frac12}$; (2) $a= \log_5 2$, $b= \log_{0.5} 0.2$, $c= 0.5^{0.2}$. 比较指数式、对数式的大小, 通常先利用对应函数单调性估值, 然后对范围相近的数, 利用同底函数单调性比大小. 对三角函数式, 也可采用类似的方法. (1) 分别考虑函数 $f(x)= \log_3 x$, $g(x)= \cos x$, $h(x)= 2^x$ 的图形可知, \[\begin{gathered} a= f(4)\in [f(3),+\infty)= [\log_3 3,+\infty)= [1,+\infty),\\ b= g(2)\in \biggl[g(\pi),g\biggl(\frac\pi2\biggr)\biggr]= \biggl[\cos\pi,\cos\frac\pi2\biggr]= [-1,0],\\ c= h\biggl(-\frac12\biggl)\in (0,h(0)]= (0, 2^0]= (0,1], \end{gathered}\] 所以 $b&lt; c&lt; a$. (2) 分别考虑函数 $f(x)= \log_5 x$, $g(x)= \log_{0.5} x$, $h(x)= 0.</description>
     </item>
     
     <item>
@@ -679,7 +671,7 @@ $AB= CD$, $AD= BC$, 即两组对边分别相等 $AO=OC$, $BO=OD$, 即对角线�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/algebra/function/function-graph/</guid>
-      <description>函数的图象 # \subsection{二次方程根的分布 (选学)} 若方程 $2(m+1)x^2+4mx+3m-2=0$ 有两个负实根, 求实数 $m$ 的取值范围. 由题意, 已知的方程为二次方程, 即 $2(m+1)\neq 0$. 设方程的两根为 $x_1$, $x_2$, 则这两个根均为负数的充要条件是 \[\left\{\!\!\begin{array}{l} x_1+x_2=-\dfrac{4m}{2(m+1)}&lt; 0,\\ x_1x_2=\dfrac{3m-2}{2(m+1)}&gt;0, \end{array}\right.\quad\text{解得}\quad m&lt; -1\ \text{或}\ m&gt;\frac23,\] 所求的 $m$ 的取值范围是 $(-\infty,-1)\cup\biggl(\dfrac23,+\infty\biggr)$. 设关于 $x$ 的二次方程 $Ax^2+Bx+C=0$ ($A\neq0$) 的两根为 $x_1$, $x_2$, 则有以下结论 (为什么?): (1) 两根为正的充要条件是 \[\left\{\!\!\begin{array}{l} x_1+x_2&gt;0,\\ x_1x_2&gt;0, \end{array}\right.\quad\text{即}\quad \left\{\!\!\begin{array}{l} -\dfrac{B}A&gt;0,\\ \dfrac{C}A&gt;0; \end{array}\right.\] (2) 两根为负的充要条件是 \[\left\{\!\!\begin{array}{l} x_1+x_2&lt; 0,\\ x_1x_2&gt;0, \end{array}\right.\quad\text{即}\quad \left\{\!\!\begin{array}{l} -\dfrac{B}A&lt; 0,\\ \dfrac{C}A&gt;0; \end{array}\right.\] (3) 两根一正一负的充要条件是 \[x_1x_2&lt; 0\quad\text{即}\quad\frac{C}A&lt; 0.\] \begin{example}\label{201109-2120} 已知函数 $f(x)= 4x^2-kx-8$ 在 $[5,20]$ 上单调变化, 求实数 $k$ 的取值范围.</description>
+      <description>函数的图象 # \begin{example}\label{exa:201206-1410} 若 $a$, $b&gt;0$, 则“$a&gt;b$”是“$a-\dfrac1a&gt; b-\dfrac1b$”的什么条件? 方法一: 由例 \ref{exa:201204-1920} 中的变形过程可知 \[a-\dfrac1a&gt; b-\dfrac1b\Rightarrow (a-b)\biggl(1+\frac1{ab}\biggr)&gt;0.\] 再由 $a$, $b&gt;0$ 得 $ab&gt;0$, 即 $1+\dfrac1{ab}&gt;0$, 所以上式等价于 $a-b&gt;0$. 这表明“$a&gt;b$”是“$a-\dfrac1a&gt; b-\dfrac1b$”的充要条件. 方法二: 构造函数 $f(x)=x-\dfrac1x$ ($x&gt;0$), 则不等式 $a-\dfrac1a&gt; b-\dfrac1b$ 化为 $f(a)&gt;f(b)$. 因为 $\dfrac1x$ 在 $(0,+\infty)$ 上单调递减, 所以 $-\dfrac1x$ 在 $(0,+\infty)$ 上单调递增. 而 $x$ 在 $(0,+\infty)$ 上也单调递增, 所以 $f(x)=x-\dfrac1x$ ($x&gt;0$) 单调递增. 这表明 $f(a)&gt;f(b)\Leftrightarrow a&gt;b$, 所求为充要条件. \subsection{二次方程根的分布 (选学)} 若方程 $2(m+1)x^2+4mx+3m-2=0$ 有两个负实根, 求实数 $m$ 的取值范围. 由题意, 已知的方程为二次方程, 即 $2(m+1)\neq 0$.</description>
     </item>
     
     <item>
@@ -697,6 +689,15 @@ $AB= CD$, $AD= BC$, 即两组对边分别相等 $AO=OC$, $BO=OD$, 即对角线�
     </item>
     
     <item>
+      <title>均值不等式</title>
+      <link>/docs/prerequisite/inequality/mean-value-inequality/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/prerequisite/inequality/mean-value-inequality/</guid>
+      <description>均值不等式 # 对于任意 $x$, $y\in\realnum$, 恒有 $(x-y)^2\geqslant 0$, 展开后移项得\[x^2+y^2\geqslant 2xy\quad\text{即}\quad \frac{x^2+y^2}2\geqslant xy.\]不等式中等号成立的条件是 $x=y$, 也记为:“$=$”成立当且仅当 $x=y$. 把上面两个式子中的 $x$ 和 $y$ 分别换成 $\sqrt{x}$ 和 $\sqrt{y}$ (此时必须限制 $x$, $y\geqslant 0$), 可知\[x+y\geqslant 2\sqrt{xy}\quad\text{即}\quad \frac{x+y}2\geqslant \sqrt{xy}.\]因为 $\dfrac{x+y}2$ 与 $\sqrt{xy}$ 分别叫做非负实数 $x$ 与 $y$ 的\myindex{算术平均值}{算术平均值}与\myindex{几何平均值}{几何平均值}, 所以上面最后一个不等式也称为\myindex{均值不等式}{均值不等式}, 即\[\text{均值不等式:}\ \frac{x+y}2\geqslant \sqrt{xy},\quad x,y\geqslant 0.\]以上不等式均为常用不等式, 且都可以互相推出.利用均值不等式 (或其等价形式) 可以很方便地求特殊形式的式子的最大 (小) 值. 例如, 若 $x&gt;0$, 则 \[x+\dfrac1x\geqslant 2\sqrt{x\cdot\dfrac1x}=2,\]“$=$”成立当且仅当 $x=\dfrac1x$ 即 $x=1$. 一般的, 可得如下结论 (均设 $x$, $y\geqslant 0$):(1) 若 $xy=L$ 为定值, 则 \[x+y\geqslant 2\sqrt{xy}=2\sqrt{L},\] 所以 $x+y$ 的最小值为 $2\sqrt{L}$,“$=$”成立当且仅当 $x=y=\sqrt{L}$;(2) 若 $x+y=M$ 为定值, 则 \[\sqrt{xy}\leqslant \frac{x+y}2=\frac{M}2\quad\text{即}\quadxy\leqslant \biggl(\frac{M}2\biggr)^2= \frac{M^2}4,\]所以 $xy$ 的最大值为 $\dfrac{M^2}4$,“$=$”成立当且仅当 $x=y=\dfrac{M}2$.</description>
+    </item>
+    
+    <item>
       <title>空间向量</title>
       <link>/docs/trigonometry/vector/space-vector/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -711,7 +712,7 @@ $AB= CD$, $AD= BC$, 即两组对边分别相等 $AO=OC$, $BO=OD$, 即对角线�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/derivative/derivative/monotone-max-min/</guid>
-      <description> 利用导数求函数的单调性与最值 # </description>
+      <description>利用导数求函数的单调性与最值 # 利用导数的正负可以判断函数的单调性, 知识点见基础练习. 下图是 $y=f(x)$ 的导函数 $f(x)$ 的图形, 判断下列四个命题是否正确: (1) $f(x)$ 有三个单调区间;\quad (2) $f(-2)&lt; f(-1)$;\quad (3) $f(-1)&lt; f(1)$; (4) $f(x)$ 在区间 $[-1,2]$ 上单调递增, 在 $(2,4]$ 上单调递增减. \includegraphics[scale=0.5]{2022-0425-2005} 由图可知, \[\begin{array}{c|cccc} x &amp; (-2,-1) &amp; (-1,2) &amp; (2,4) &amp; (4,5) \\ \hline f&#39;(x) &amp; - &amp; + &amp; - &amp; + \\ f(x) &amp; \searrow &amp; \nearrow &amp; \searrow &amp; \nearrow \end{array}\] 由此可知, $f(x)$ 至少有四个单调区间. 由于 $f(x)$ 在 $(-2,-1)$ 上 $\searrow$, 所以 $f(-2)&gt; f(-1)$; 又由于 $f(x)$ 在 $(-1,2)$ 上 $\nearrow$, 所以 $f(-1)&lt; f(1)$.</description>
     </item>
     
     <item>
@@ -730,16 +731,7 @@ $AB= CD$, $AD= BC$, 即两组对边分别相等 $AO=OC$, $BO=OD$, 即对角线�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/solid-geometry/line-plane/plane-parallel/</guid>
-      <description> 面面平行 # </description>
-    </item>
-    
-    <item>
-      <title>期望与方差</title>
-      <link>/docs/probability-statistics/probability/expectation-variation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/probability-statistics/probability/expectation-variation/</guid>
-      <description> 期望与方差 # </description>
+      <description>面面平行 # 如图所示, 四棱锥 $P\text{--}ABCD$ 中, $AB\parallel CD$, $AB=2CD$, 点 $E$ 为 $PB$ 的中点. (1) 判断 $CE$ 与平面 $PAD$ 的位置关系, 并说明理由. (2) 若线段 $AB$ 上的点 $F$ 使得平面 $PAD\parallel \text{平面 }CEF$, 求 $\dfrac{AF}{FB}$ 的值. \includegraphics[scale=1.5]{2021-0602-2350-crop}\qquad\qquad \includegraphics[scale=1.5]{2021-0602-2355-crop} (1) 取 $PA$ 中点 $G$, 连接 $GD$, $GE$, 则可证 (自行补全过程) \[\begin{gathered} GE= \frac12 AB= DC,\\ GE\parallel AB\parallel DC, \end{gathered}\] 所以四边形 $DCEG$ 为平行四边形, 且 $CE\parallel DG$, 因此 $CE\parallel\text{平面 }PAD$. (2) 由平面 $PAD\parallel \text{平面 }CEF$ 知, $AD\parallel FC$, 所以四边形 $ADCF$ 为平行四边形, $AF=DC= \dfrac12AB$, 即 $\dfrac{AF}{FB}= 1$.</description>
     </item>
     
     <item>
@@ -749,6 +741,15 @@ $AB= CD$, $AD= BC$, 即两组对边分别相等 $AO=OC$, $BO=OD$, 即对角线�
       
       <guid>/docs/algebra/sequence/sequence-application/</guid>
       <description> 数列的应用 # </description>
+    </item>
+    
+    <item>
+      <title>条件概率</title>
+      <link>/docs/probability-statistics/probability/conditional-probability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/probability-statistics/probability/conditional-probability/</guid>
+      <description>条件概率 # 在古典概型中, 设事件 $A$ 和 $B$ 均由样本空间 $\Omega$ 中的部分样本点组成, 用 $n(P)$ 表示集合 $P$ 中元素的个数, 则概率 $P(A)= \dfrac{n(A)}{n(\Omega)}$, 条件概率 \[ P(A|B)= \frac{n(AB)}{n(B)}= \frac{P(AB)}{P(B)}.\] 注意, $P(AB)$ 与 $P(A|B)$ 是有区别的, 前者表示事件 $AB$ 在 $\Omega$ 中所占比例, 后者表示事件 $AB$ 在 $B$ 中所占比例, 所以 $P(AB)&lt; P(A|B)$. 某地区气象台统计, 该地区任一天下雨的概率为 $\dfrac4{15}$, 刮风的概率为 $\dfrac2{15}$, 在下雨天里, 刮风的概率为 $\dfrac38$, 求任一天既刮风又下雨的概率. 用事件 $A$ 表示“下雨”, 事件 $B$ 表示“刮风”, 由题意, \[ P(A)= \frac4{15},\quad P(B)= \frac2{15},\quad P(B|A)= \frac38.\] 因为 $P(B|A)= \dfrac{P(AB)}{P(A)}$, 所以既刮风又下雨的概率为 \[ P(AB)= P(B|A)P(B)= \frac38\cdot \frac4{15} = \frac1{10}.</description>
     </item>
     
     <item>
@@ -777,7 +778,7 @@ $AB= CD$, $AD= BC$, 即两组对边分别相等 $AO=OC$, $BO=OD$, 即对角线�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/analytic-geometry/conic-curves/conic-curves-line/</guid>
-      <description> 圆锥曲线综合 # </description>
+      <description>圆锥曲线综合 # 已知椭圆 $C$ 的中心为坐标原点, 离心率 $e=\dfrac{\sqrt3}2$, 一个焦点的坐标为 $(\sqrt3,0)$. (1) 求椭圆 $C$ 的方程; (2) 设直线 $l\colon y= \dfrac12x+m$ 与圆 $C$ 交于 $A$, $B$ 两点, 线段 $AB$ 的垂直平分线交 $x$ 轴于点 $T$. 当 $m$ 变化时, 求 $\triangle TAB$ 面积的最大值. (1) 设椭圆 $C$ 的方程为 \[ \frac{x^2}{a^2}+ \frac{y^2}{b^2}= 1\quad (a&gt;b&gt;0),\] 半焦距为 $c$, 则 \[ e= \frac{c}{a}= \frac{\sqrt2}2,\quad c= \sqrt3,\quad a^2= b^2+c^2,\] 解得 $a=2$, $b=1$, 所求方程为 \[ \frac{x^2}4+ y^2= 1.\] (2) (自行作草图) 将直线 $l$ 与椭圆 $C$ 的方程联立, \[\left\{\!</description>
     </item>
     
     <item>
@@ -804,7 +805,7 @@ $AB= CD$, $AD= BC$, 即两组对边分别相等 $AO=OC$, $BO=OD$, 即对角线�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/solid-geometry/line-plane/plane-perp/</guid>
-      <description> 面面垂直 # </description>
+      <description>面面垂直 # 如左图所示, 已知 $P$ 是边长为 $2a$ 的菱形 $ABCD$ 所在平面外一点, $\angle ABC = 60^\circ$, $PC\perp$ 平面 $ABCD$, $PC =2a$, $E$ 为 $PA$ 的中点. (1) 求证: 平面 $EDB\perp$ 平面 $ABCD$. (2) 求二面角 $A\text{--}EB\text{--}D$ 的正切值. \includegraphics[scale=1.5]{2021-0701-2130-1-crop}\qquad \includegraphics[scale=1.5]{2021-0701-2130-2-crop} (1) 如右图所示, 连接 $AC$, 设其与 $BD$ 交于点 $F$, 则 $F$ 为 $AC$ 中点. 再连接 $EF$. 因为 $E$ 为 $PA$ 的中点, 所以 $PC\parallel EF$. 由 $PC\perp$ 平面 $ABCD$ 知, $EF\perp$ 平面 $ABCD$, 所以平面 $EDB\perp$ 平面 $ABCD$.</description>
     </item>
     
     <item>
@@ -817,6 +818,15 @@ $AB= CD$, $AD= BC$, 即两组对边分别相等 $AO=OC$, $BO=OD$, 即对角线�
 四边形的面积 # 从切割图形的角度来看, 正方形的面积为边长的平方, 即边长为 $a$ 的正方形的面积为 $a^2$. 例如, 边长为 $2$ 的正方形可以切割为 $2^2= 4$ 个单位正方形. 长为 $a$、宽为 $b$ 的矩形可以分解为多个正方形之和, 所以其面积为 $ab$ (长乘宽).
 底为 $a$、高为 $h$ 的平行四边形可以用割补法拼接为矩形, 故面积为 $ah$ (底乘高). 底为 $a$, $b$, 高为 $h$ 的梯形也可以拼接为平行四边形 (或矩形), 面积为 $\dfrac12(a+b)h$ (两底之和乘高的一半).
 三角形的面积 # 底为 $a$、高为 $h$ 的三角形可以补成平行四边形, 面积为 $\dfrac12 ah$ (底乘高的一半).</description>
+    </item>
+    
+    <item>
+      <title>期望与方差</title>
+      <link>/docs/probability-statistics/probability/expectation-variation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/probability-statistics/probability/expectation-variation/</guid>
+      <description> 期望与方差 # </description>
     </item>
     
     <item>
@@ -843,7 +853,7 @@ $AB= CD$, $AD= BC$, 即两组对边分别相等 $AO=OC$, $BO=OD$, 即对角线�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/algebra/pow-exp-log/function-equation/</guid>
-      <description>利用函数图象研究方程 # 求方程的根可以转化为求对应函数图形交点的横坐标, 或求对应函数的零点. 一般有如下两种转化方法: \[\begin{aligned} f(x)=0\text{\ 的根}&amp;\Leftrightarrow \text{$f(x)$ 的图形与 $x$ 轴交点的横坐标};\\ f(x)+g(x)=0\text{\ 的根}&amp;\Leftrightarrow \text{$f(x)$ 与 $-g(x)$ 的图形交点的横坐标}. \end{aligned}\] 前一种方法可视为后一种方法的特例, 而两种方法在使用时都需要考虑函数的单调性. 此外还有 (画图更容易理解) 零点存在性定理: 若 $f(x)$ 在 $[a,b]$ 上连续, 且 $f(a)f(b)&lt; 0$, 则 $f(x)$ 在 $(a,b)$ 上至少有一根. \begin{example}\label{exa:201217-1900} 已知函数 $f(x)= \begin{cases} \dfrac2x, &amp; x\geqslant 2,\\ x^2-3, &amp; x&lt; 2, \end{cases}$ 若关于 $x$ 的方程 $f(x)=k$ 有三个不等的实根, 求 $k$ 的取值范围. 此题应考虑函数 $y=f(x)$ 与 $y=k$ 的图形的交点恰有三个的情形. 画出两者的图形示意图, 容易知道 $k\in(0,1)$. \includegraphics[scale=1]{2020-1214-1900-crop} \begin{example}\label{exa:201214-1905} 求函数 $f(x)=x^2-\log_{\frac12} x$ 的零点个数.</description>
+      <description>利用函数图象研究方程 # 求函数 $f(x)=4^x-2^x-2$ 的零点. 令 $f(x)=0$, 则 $4^x-2^x-2=0$, 即 \[(2^x)^2-2^x-2=0,\quad (2^x-2)(2^x+1)=0.\] 因为恒有 $2^x&gt;0$, 所以 $2^x=2$, 解得 $x=1$. 故所求零点为 $x=1$. \begin{example}\label{exa:201223-1850} 设方程 $2^{-x}= |\lg x|$ 的两个根为 $x_1$, $x_2$, 求 $x_1x_2$ 的取值范围. 分别画出函数 $f(x)= 2^{-x}$ 和 $g(x)= |\lg x|$ 的图形, 可知两者交点的横坐标为 $x_1$, $x_2$, 且均为正数并分别在 $1$ 的两侧. 不妨设 $x_1\in(0,1)$, $x_2\in(1,+\infty)$, 由 $f(x)$ 单调递减可知, $f(x_1)&gt;f(x_2)$, 即 $g(x_1)&gt;g(x_2)$, 所以 \[|\lg x_1|&gt; |\lg x_2|,\quad -\lg x_1&gt; \lg x_2,\] 整理可得 $\lg (x_1x_2)&lt; 0$. 进一步有 $x_1x_2\in(0,1)$. \includegraphics[scale=1]{2020-1223-1900-crop} 若将例 \ref{exa:201223-1850} 中的方程改为 $k= |\log_a x|$, 其中 $k$ 为正的常数, $a\in(0,1)\cup (1,+\infty)$, 用同样的方法可以知道 $x_1x_2=1$.</description>
     </item>
     
     <item>

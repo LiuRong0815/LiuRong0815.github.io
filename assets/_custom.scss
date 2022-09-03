@@ -55,11 +55,11 @@ mysolution p:first-child::before {
 
 myproof{
     display: block;
-    /*border-style: none none none solid;*/
+    border-style: none none none solid;
     border-color: #fd6;
     background-color: rgba(#fd6, 0.1);
-    padding: 4px;
-    border-radius: 2px;
+    border-width: 5px;
+    padding-left: 8px;
   }
   
 myproof p:first-child::before {

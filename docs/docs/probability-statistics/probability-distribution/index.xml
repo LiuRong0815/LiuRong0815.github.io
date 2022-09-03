@@ -11,7 +11,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/probability-statistics/probability-distribution/binomial-distribution/</guid>
-      <description> 二项分布 # </description>
+      <description>二项分布 # 某篮球队员在比赛中每次罚球的命中率相同, 且在两次罚球中至多命中一次的概率为 $\dfrac{16}{25}$, 求该队员每次罚球的命中率. 设该队员每次罚球的命中率为 $p$. 因为“在两次罚球中至多命中一次”的反面, 即互斥事件, 是“在两次罚球中两次都命中”, 所以前者的概率为 \[ 1- p^2= \dfrac{16}{25}\Rightarrow p= \frac35.\] 甲、乙两个篮球运动员互不影响地在同一位置投球, 命中率分别为 $\dfrac12$ 与 $p$, 且乙投球 $2$ 次均未命中的概率为 $\dfrac1{16}$. (1) 求乙投球的命中率 $p$; (2) 若乙投球 $2$ 次, 命中的次数记为 $Y$, 求 $Y$ 的分布列. (2) 若甲投球 $1$ 次, 乙投球 $2$ 次, 两人共命中的次数记为 $X$, 求 $X$ 的分布列. (1) 由题意, \[ (1-p)^2= \dfrac1{16}\Rightarrow p= \dfrac34.\] (2) 作树形图可知, \[\begin{aligned} P(Y=0)&amp;= (1-p)^2= \dfrac1{16},\\ P(Y=1)&amp;= p(1-p)+ (1-p)p= \dfrac38,\\ P(Y=2)&amp;= p^2= \dfrac9{16}, \end{aligned}\] 所求 $Y$ 的分布列为 \[\begin{array}{c|ccc} Y &amp; 0 &amp; 1 &amp; 2\\ \hline P(Y) &amp; \dfrac1{16} &amp; \dfrac38 &amp; \dfrac9{16}\phantom{\biggr|} \end{array}\] (3) 记甲命中的次数为 $Z$, 则 $X= Z+Y$.</description>
     </item>
     
     <item>

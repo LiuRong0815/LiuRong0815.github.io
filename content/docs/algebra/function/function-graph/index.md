@@ -12,6 +12,20 @@ nextPageTitle: 二次函数
 # 函数的图象
 
 
+<p>\begin{example}\label{exa:201206-1410}
+    若 $a$, $b>0$, 则“$a>b$”是“$a-\dfrac1a> b-\dfrac1b$”的什么条件?
+</p>
+</myexample>
+<mysolution>
+    <p>方法一: 由例 \ref{exa:201204-1920} 中的变形过程可知
+    \[a-\dfrac1a> b-\dfrac1b\Rightarrow
+        (a-b)\biggl(1+\frac1{ab}\biggr)>0.\]
+    再由 $a$, $b>0$ 得 $ab>0$, 即 $1+\dfrac1{ab}>0$, 所以上式等价于 $a-b>0$. 这表明“$a>b$”是“$a-\dfrac1a> b-\dfrac1b$”的充要条件.
+</p>
+<p>方法二: 构造函数 $f(x)=x-\dfrac1x$ ($x>0$), 则不等式 $a-\dfrac1a> b-\dfrac1b$ 化为 $f(a)>f(b)$. 因为 $\dfrac1x$ 在 $(0,+\infty)$ 上单调递减, 所以 $-\dfrac1x$ 在 $(0,+\infty)$ 上单调递增. 而 $x$ 在 $(0,+\infty)$ 上也单调递增, 所以 $f(x)=x-\dfrac1x$ ($x>0$) 单调递增. 这表明 $f(a)>f(b)\Leftrightarrow a>b$, 所求为充要条件.
+</p>
+</mysolution>
+
 <p>\subsection{二次方程根的分布 (选学)}
 <myexample>
 <p>若方程 $2(m+1)x^2+4mx+3m-2=0$ 有两个负实根, 求实数 $m$ 的取值范围.

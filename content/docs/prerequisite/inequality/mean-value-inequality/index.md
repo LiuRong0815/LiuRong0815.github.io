@@ -1,9 +1,9 @@
 ---
 # bookCollapseSection: true
 title: 均值不等式
-weight: 3
+weight: 4
 bookHidden: true
-prevPage: ../fraction-high-order-inequality
+prevPage: /docs/prerequisite/inequality/fraction-high-order-inequality
 prevPageTitle: 分式不等式与高次不等式
 nextPage: /
 nextPageTitle: 高中数学资料

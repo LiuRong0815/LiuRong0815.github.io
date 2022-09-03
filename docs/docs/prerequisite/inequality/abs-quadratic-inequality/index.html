@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="绝对值不等式与二次不等式 # \subsection{绝对值的几何意义}实数 $a$ 的绝对值定义为\[|a|=\begin{cases}a, & a&gt;0,\\0, & a=0,\\-a, & a&lt; 0\end{cases}= \begin{cases}a, & a\geqslant 0,\\-a, & a&lt; 0,\end{cases}\]其几何意义为数轴上坐标为 $a$ 的点到原点的距离. 进而可以知道, 数轴上两点 $x_1$, $x_2$ 之间的距离为 $|x_1-x_2|$, 如下图所示.\includegraphics[scale=1]{2020-1009-2110-crop}\qquad\includegraphics[scale=1]{2020-1009-2120-crop}例如, $|x-1|$ 表示点 $x$ 到 $1$ 的距离; $|x&#43;2|=|x-(-2)|$ 表示点 $x$ 到 $-2$ 的距离; $|2x-2|= 2|x-1|$ 表示点 $x$ 到 $1$ 的距离的 $2$ 倍; $|4&#43;2x|= 2|x-(-2)|$ 表示点 $x$ 到 $-2$ 的距离的 $2$ 倍.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="绝对值不等式与二次不等式" />
+<meta property="og:description" content="绝对值不等式与二次不等式 # \subsection{绝对值的几何意义}实数 $a$ 的绝对值定义为\[|a|=\begin{cases}a, & a&gt;0,\\0, & a=0,\\-a, & a&lt; 0\end{cases}= \begin{cases}a, & a\geqslant 0,\\-a, & a&lt; 0,\end{cases}\]其几何意义为数轴上坐标为 $a$ 的点到原点的距离. 进而可以知道, 数轴上两点 $x_1$, $x_2$ 之间的距离为 $|x_1-x_2|$, 如下图所示.\includegraphics[scale=1]{2020-1009-2110-crop}\qquad\includegraphics[scale=1]{2020-1009-2120-crop}例如, $|x-1|$ 表示点 $x$ 到 $1$ 的距离; $|x&#43;2|=|x-(-2)|$ 表示点 $x$ 到 $-2$ 的距离; $|2x-2|= 2|x-1|$ 表示点 $x$ 到 $1$ 的距离的 $2$ 倍; $|4&#43;2x|= 2|x-(-2)|$ 表示点 $x$ 到 $-2$ 的距离的 $2$ 倍." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/docs/prerequisite/inequality/abs-quadratic-inequality/" /><meta property="article:section" content="docs" />
+
+
+
+<title>绝对值不等式与二次不等式 | 高中数学资料</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.6c08f1f220250ecc36dde6a6fa75fdd4247d84aaaa23d4bc157c9b2f8fa595bd.css" >
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/zh.search.min.7c8f3c308c7cc4a49e5725aaff2837a3795fa64e6f84159b9c29faa7f139e44e.js" ></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  <link rel="stylesheet" href='/katex/katex.min.css' crossorigin="anonymous">
+
+
+<script defer src='/katex/katex.min.js' crossorigin="anonymous"></script>
+
+
+<script defer src='/katex/auto-render.min.js' 
+    onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        renderMathInElement(document.body, {
+            
+            
+            delimiters: [
+                { left: '$$', right: '$$', display: true },
+                { left: '$', right: '$', display: false },
+                { left: '\\(', right: '\\)', display: false },
+                { left: '\\[', right: '\\]', display: true }
+            ],
+            
+            throwOnError: false
+        });
+    });
+</script>
+
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>高中数学资料</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="搜索" aria-label="搜索" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7fbb26c6156d78d59d607292b53948a4" class="toggle" checked />
+    <label for="section-7fbb26c6156d78d59d607292b53948a4" class="flex justify-between">
+      <a href="/docs/prerequisite/" class="">预备知识</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1e2f9b8b873223fe63fc7221375c0eb0" class="toggle"  />
+    <label for="section-1e2f9b8b873223fe63fc7221375c0eb0" class="flex justify-between">
+      <a href="/docs/prerequisite/ms-algebra/" class="">初中代数提要</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-algebra/quadratic-factorization/" class="">二次三项式的因式分解</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-algebra/quadratic-equation/" class="">一元二次方程的解法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-algebra/veite-theorem/" class="">韦达定理</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c1c4f99569969342f46afcb379e41254" class="toggle"  />
+    <label for="section-c1c4f99569969342f46afcb379e41254" class="flex justify-between">
+      <a href="/docs/prerequisite/ms-geometry/" class="">初中几何提要</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/symmetric-congruence-similar/" class="">对称、全等与相似</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/triangle/" class="">三角形</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/quadrilateral/" class="">四边形</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/circle/" class="">圆</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-geometry/area/" class="">平面图形的面积</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-53227ed5b540c99051432d70e3c9c4da" class="toggle"  />
+    <label for="section-53227ed5b540c99051432d70e3c9c4da" class="flex justify-between">
+      <a href="/docs/prerequisite/ms-function/" class="">初中函数提要</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-function/axis-coordinate/" class="">数轴与平面直角坐标系</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-function/linear-inverse/" class="">一次函数与反比例函数</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-function/quadratic-function-inequality/" class="">二次函数与二次不等式</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/ms-function/graph-tranform/" class="">函数图象的变换</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4adec7e7d2e2d6fa5eaee0a98a60892e" class="toggle"  />
+    <label for="section-4adec7e7d2e2d6fa5eaee0a98a60892e" class="flex justify-between">
+      <a href="/docs/prerequisite/set-logic/" class="">集合与简易逻辑</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/set-logic/set-def/" class="">集合的定义</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/set-logic/set-operation/" class="">集合的运算</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/set-logic/proposition-iff/" class="">命题与充要条件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/set-logic/logical-quantifier/" class="">逻辑量词</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0efa6e9487d50f8c7308e9898b74ff74" class="toggle" checked />
+    <label for="section-0efa6e9487d50f8c7308e9898b74ff74" class="flex justify-between">
+      <a href="/docs/prerequisite/inequality/" class="">不等式</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/inequality/inequality-property/" class="">不等式的性质</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>绝对值不等式与二次不等式</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#绝对值不等式与二次不等式">绝对值不等式与二次不等式</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="绝对值不等式与二次不等式">
+  绝对值不等式与二次不等式
+  <a class="anchor" href="#%e7%bb%9d%e5%af%b9%e5%80%bc%e4%b8%8d%e7%ad%89%e5%bc%8f%e4%b8%8e%e4%ba%8c%e6%ac%a1%e4%b8%8d%e7%ad%89%e5%bc%8f">#</a>
+</h1>
+<p>\subsection{绝对值的几何意义}
+</p>
+<p>实数 $a$ 的绝对值定义为
+\[|a|=\begin{cases}
+  a, & a>0,\\
+  0, & a=0,\\
+  -a, & a< 0
+  \end{cases}= \begin{cases}
+    a, & a\geqslant 0,\\
+    -a, & a< 0,
+    \end{cases}\]
+其几何意义为数轴上坐标为 $a$ 的点到原点的距离. 进而可以知道, 数轴上两点 $x_1$, $x_2$ 之间的距离为 $|x_1-x_2|$, 如下图所示.
+</p>
+<p><center>
+  \includegraphics[scale=1]{2020-1009-2110-crop}\qquad
+  \includegraphics[scale=1]{2020-1009-2120-crop}
+</center>
+</p>
+<p>例如, $|x-1|$ 表示点 $x$ 到 $1$ 的距离; $|x+2|=|x-(-2)|$ 表示点 $x$ 到 $-2$ 的距离; $|2x-2|= 2|x-1|$ 表示点 $x$ 到 $1$ 的距离的 $2$ 倍; $|4+2x|= 2|x-(-2)|$ 表示点 $x$ 到 $-2$ 的距离的 $2$ 倍. 注意, 前面运用了绝对值的运算法则: $|ka|= |k|\,|a|$ (为什么?).
+</p>
+<p>再由勾股定理可知, 平面直角坐标系中两点 $A(x_A,y_A)$, $B(x_B,y_B)$ 之间的距离为
+\[\begin{aligned}
+  AB&= \sqrt{CD^2+EF^2}
+     = \sqrt{|x_A-x_B|^2+|y_A-y_B|^2}\\
+    &= \sqrt{(x_A-x_B)^2+(y_A-y_B)^2}.
+\end{aligned}\]
+</p>
+<p><center>
+  \includegraphics[scale=1]{2020-1009-2130-crop}
+</center>
+</p>
+<p>函数 $y=|x|$ 的图象可以通过描点画图或图象变换 (即先画 $y=x$ 的图象, 再把 $x$ 轴下方的部分关于 $x$ 轴对称翻折到 $x$ 轴上方) 得到, 如下图所示:
+</p>
+<p><center>
+  \includegraphics[scale=1]{2020-1011-1000-crop}
+</center>
+</p>
+<p>一般的, $y= |f(x)|$ 的图象可以由 $y=f(x)$ 的图象经过变换得到, 如下图所示:
+</p>
+<p><center>
+  \includegraphics[scale=1]{2020-1011-1010-crop}
+</center>
+</p>
+<p>简单的带绝对值的不等式, 可以根据绝对值的几何意义直接求解. 如不等式 $|x|< 3$, 由 $|x|$ 表示点 $x$ 到原点的距离可知,  $x\in (-3,3)$; 而由不等式 $|x|\geqslant 3$, 可解得 $x\in(-\infty,-3]\cup[3,+\infty)$.
+</p>
+<p><myexample>
+<p>解下列不等式:
+  \begin{threecolpro}
+    (1) $|x-1|\leqslant 2$; & (2) $|2x+1|> 3$; & (3) $|1-2x|\geqslant 5$.
+  \end{threecolpro}
+</p>
+</myexample>
+<mysolution>
+    <p>(1) 由题可将 $x-1$ 视为整体, 则 $-2\leqslant x-1\leqslant 2$, 即 $-1\leqslant x\leqslant 3$, 所以 $x\in [-1,3]$.
+</p>
+<p>(2) 由题, $2x+1< -3$ 或 $2x+1>3$, 即 $x< -2$ 或 $x>1$, 所以 $x\in(-\infty,-2)\cup (1,+\infty)$.
+</p>
+<p>(3) 由题, $1-2x\leqslant -5$ 或 $1-2x\geqslant 5$, 即 $x\geqslant 3$ 或 $x\leqslant -2$, 所以 $x\in(-\infty,-2]\cup [3,+\infty)$.
+</p>
+</mysolution>
+</p>
+<p>稍微复杂一些的带绝对值的不等式, 有的也可以根据绝对值的几何意义来求解. 只含一个绝对值的不等式, 可以按绝对值的几何意义适当讨论; 含两个绝对值的不等式, 讨论起来麻烦一点, 可以先尝试不等式两边平方.
+</p>
+<p><myexample>
+<p>解下列不等式:
+  \begin{threecolpro}
+    (1) $|x+1|< 2x$; & (2) $|x-1|\geqslant 2x$; 
+    & (3) $|2x+1|> |x|$.
+  \end{threecolpro}
+</p>
+</myexample>
+<mysolution>
+    <p>(1) 由题意,
+  \[\left\{\!\!\begin{array}{l}
+    2x>0,\\
+    -2x< x+1< 2x,
+  \end{array}\right.\text{解得}\ x\in(1,+\infty).\]
+</p>
+<p>(2) 若 $2x\leqslant 0$ 即 $x\leqslant 0$, 则不等式已成立. 
+</p>
+<p>若 $2x> 0$ 即 $x> 0$, 则不等式等价于 
+  \[x-1\leqslant -2x\quad \text{或}\quad x-1\geqslant 2x,\]
+  解得 $x\leqslant \dfrac13$ 或 $x\leqslant -1$. 结合 $x>0$ 知, 此时 $0< x\leqslant \dfrac13$. 
+</p>
+<p>综上所述, $x\in\biggl(-\infty,\dfrac13\biggr]$.
+</p>
+<p>(3) 不等式两边平方得 
+  \[(2x+1)^2>x^2\quad \text{即}\quad (x+1)(3x+1)>0,\]
+  解得 $x\in(-\infty,-1)\cup \biggl(\dfrac13,+\infty\biggr)$.
+</p>
+</mysolution>
+<p>\begin{example}\label{exa:2020-1012-1900}
+  解关于 $x$ 的不等式 $x^2-(2+a)x+2a< 0$.
+</p>
+</myexample>
+<mysolution>
+    <p>不等式化为 $(x-2)(x-a)< 0$, 所以根据二次函数 $y=(x-2)(x-a)$ 的图象知,
+</p>
+<p>若 $a< 2$, 则 $x\in (a,2)$; 
+</p>
+<p>若 $a=2$, 则 $x\in \varnothing$; 
+</p>
+<p>若 $a>2$, 则 $x\in (2,a)$.
+</p>
+</mysolution>
+</p>
+<p>例 \ref{exa:2020-1012-1900} 中关于 $x$ 的不等式虽然系数中带了参数 $a$, 但是仍然可以用因式分解的方法求得其解集. 由于系数中带了参数, 所以对应的二次函数图象由参数决定, 写解集时需要分类讨论, 讨论的主要依据是图象与 $x$ 轴交点的坐标. 再看一个复杂一点的例子.
+</p>
+<p>\begin{example}\label{exa:2020-1012-1910} 
+  解关于 $x$ 的不等式:
+  \begin{twocolpro}
+    (1) $x^2+2x+ax+2a>0$; & (2) $2x^2+(2+a)x+a\geqslant 0$;\\ 
+    (3) $x^2+ax-6a^2\leqslant 0$. &
+  \end{twocolpro}
+</p>
+</myexample>
+<mysolution>
+    <p>(1) 不等式化为 
+  \[x^2+(2+a)x+2a>0\quad\text{即}\quad (x+2)(x+a)>0,\]
+  所以根据二次函数 $y=(x+2)(x+a)$ 的图象知, 
+</p>
+<p>若 $-a< -2$ 即 $a>2$, 则 $x\in (-\infty,-a)\cup (-2,+\infty)$; 
+</p>
+<p>若 $-a=-2$ 即 $a=2$, 则 $x\in \{x\mid x\neq-2\}$; 
+</p>
+<p>若 $-a>-2$ 即 $a< 2$, 则 $x\in (-\infty,-2)\cup (-a,+\infty)$.
+</p>
+<p>(2) 不等式化为 $(2x+a)(x+1)\geqslant 0$, 所以根据二次函数 $y=(2x+a)(x+1)$ 的图象知, 
+</p>
+<p>若 $-\dfrac{a}2< -1$ 即 $a>2$, 则 $x\in \biggl(-\infty,-\dfrac{a}2\biggr]\cup [-1,+\infty)$; 
+</p>
+<p>若 $-\dfrac{a}2=-1$ 即 $a=2$, 则 $x\in \realnum$; 
+</p>
+<p>若 $-\dfrac{a}2>-1$ 即 $a< 2$, 则 $x\in (-\infty,-1]\cup \biggl[-\dfrac{a}2,+\infty\biggr)$.
+</p>
+<p>(3) 不等式化为 $(x+3a)(x-2a)\leqslant 0$, 所以根据二次函数 $y=(x+3a)(x-2a)$ 的图象知, 
+</p>
+<p>若 $-3a< 2a$ 即 $a>0$, 则 $x\in [-3a,2a]$; 
+</p>
+<p>若 $-3a=2a$ 即 $a=0$, 则 $x\in \{0\}$; 
+</p>
+<p>若 $-3a>2a$ 即 $a< 0$, 则 $x\in [2a,-3a]$.
+</p>
+</mysolution>
+</p>
+<p>从例 \ref{exa:2020-1012-1910} 可以看出, 解系数带参数的关于 $x$ 的不等式, 步骤一般为: 把不等式整理为 $Ax^2+Bx+C>0$ 的形式 (建议 $A>0$), 再对二次式因式分解, 接着讨论对应二次方程的根的大小, 最后根据讨论的情况和二次函数图象写出对应的解集. 
+</p>
+</article>
+ 
+          
+    
+    <div class="docs-prevnext">
+    
+        <a class="docs-prev button" href="/docs/prerequisite/inequality/inequality-property">
+          <span class="arrow-prev">← </span><span>不等式的性质</span></a>
+      
+      
+        <a class="docs-next button" href="">
+          <span></span><span class="arrow-next"> →</span></a>
+      
+    </div>
+
+    <p>作者邮箱 rong.liu@mail.bnu.edu.cn。</p>
+    <p>读者的支持是作者持续更新的动力😊</p>
+    
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#绝对值不等式与二次不等式">绝对值不等式与二次不等式</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

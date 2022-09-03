@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content=" 平均值与方差 # ">
+<meta name="description" content="平均值与方差 # 某学校共有师生 $4\,000$ 人, 现用分层随机抽样的方法从所有师生中抽取一个容量为 $200$ 的样本, 调查师生对学校食堂餐饮问题的建议, 已知从学生中抽取的人数为 $190$, 求该校的教师人数. 分层随机抽样是将总体分为若干类 (各类数量可以不相等), 从每类中抽取的样本数与该类的个体数成比例, 此比例也是样本数与总体数的比例 (为什么?). 从师生 $4\,000$ 人中抽取容量为 $200$ 的样本, 说明抽样比例是 $200:4\,000$, 而从学生中抽取 $190$ 人, 说明从教师中抽取 $(200-190)$ 人. 设该校的教师有 $x$ 人, 由题意, \[200: 4\,000= (200-190): x,\] 解得 $x=200$. 演讲比赛共有 $9$ 位评委分别给出某选手的原始评分, 评定该选手的成绩时, 从$9$ 个原始评分中去掉 $1$ 个最高分、$1$ 个最低分, 得到 $7$ 个有效评分. 将这 $7$ 个有效评分与 $9$ 个原始评分相比, 考虑数字特征: 平均数、方差、中位数和极差, 不变的有哪些? 题中的四个数字特征, 平均数由总分除以人数得到, 方差描述的是全体数据相对平均数的总偏差, 中位数指数据从小到大排列时正中间的那个值, 极差由最大值减最小值得到. 因为去掉 $1$ 个最高分、$1$ 个最低分, 所以只有中位数不受影响.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="平均值与方差" />
-<meta property="og:description" content=" 平均值与方差 # " />
+<meta property="og:description" content="平均值与方差 # 某学校共有师生 $4\,000$ 人, 现用分层随机抽样的方法从所有师生中抽取一个容量为 $200$ 的样本, 调查师生对学校食堂餐饮问题的建议, 已知从学生中抽取的人数为 $190$, 求该校的教师人数. 分层随机抽样是将总体分为若干类 (各类数量可以不相等), 从每类中抽取的样本数与该类的个体数成比例, 此比例也是样本数与总体数的比例 (为什么?). 从师生 $4\,000$ 人中抽取容量为 $200$ 的样本, 说明抽样比例是 $200:4\,000$, 而从学生中抽取 $190$ 人, 说明从教师中抽取 $(200-190)$ 人. 设该校的教师有 $x$ 人, 由题意, \[200: 4\,000= (200-190): x,\] 解得 $x=200$. 演讲比赛共有 $9$ 位评委分别给出某选手的原始评分, 评定该选手的成绩时, 从$9$ 个原始评分中去掉 $1$ 个最高分、$1$ 个最低分, 得到 $7$ 个有效评分. 将这 $7$ 个有效评分与 $9$ 个原始评分相比, 考虑数字特征: 平均数、方差、中位数和极差, 不变的有哪些? 题中的四个数字特征, 平均数由总分除以人数得到, 方差描述的是全体数据相对平均数的总偏差, 中位数指数据从小到大排列时正中间的那个值, 极差由最大值减最小值得到. 因为去掉 $1$ 个最高分、$1$ 个最低分, 所以只有中位数不受影响." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/probability-statistics/statistics/mean-variation/" /><meta property="article:section" content="docs" />
 
@@ -14,9 +14,9 @@
 <title>平均值与方差 | 高中数学资料</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.0ea964dfd939ec410a2a39593431f6f339bf806ba9aac813a1870c7fca3262b0.css" >
+<link rel="stylesheet" href="/book.min.6c08f1f220250ecc36dde6a6fa75fdd4247d84aaaa23d4bc157c9b2f8fa595bd.css" >
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh.search.min.d291c56f7a101eb7bc458e3f1a2b0ef94298fb228cc365dff9fb90ae5d5203f2.js" ></script>
+  <script defer src="/zh.search.min.7c8f3c308c7cc4a49e5725aaff2837a3795fa64e6f84159b9c29faa7f139e44e.js" ></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
 <!--
@@ -411,6 +411,19 @@ https://github.com/alex-shpak/hugo-book
           
   <ul>
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/inequality/inequality-property/" class="">不等式的性质</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -490,6 +503,24 @@ https://github.com/alex-shpak/hugo-book
   平均值与方差
   <a class="anchor" href="#%e5%b9%b3%e5%9d%87%e5%80%bc%e4%b8%8e%e6%96%b9%e5%b7%ae">#</a>
 </h1>
+<myexample>
+<p>某学校共有师生 $4\,000$ 人, 现用分层随机抽样的方法从所有师生中抽取一个容量为 $200$ 的样本, 调查师生对学校食堂餐饮问题的建议, 已知从学生中抽取的人数为 $190$, 求该校的教师人数.
+</p>
+</myexample>
+<mysolution>
+    <p>分层随机抽样是将总体分为若干类 (各类数量可以不相等), 从每类中抽取的样本数与该类的个体数成比例, 此比例也是样本数与总体数的比例 (为什么?). 从师生 $4\,000$ 人中抽取容量为 $200$ 的样本, 说明抽样比例是 $200:4\,000$, 而从学生中抽取 $190$ 人, 说明从教师中抽取 $(200-190)$ 人. 设该校的教师有 $x$ 人, 由题意,
+    \[200: 4\,000= (200-190): x,\]
+    解得 $x=200$.
+</p>
+</mysolution>
+<myexample>
+<p>演讲比赛共有 $9$ 位评委分别给出某选手的原始评分, 评定该选手的成绩时, 从$9$ 个原始评分中去掉 $1$ 个最高分、$1$ 个最低分, 得到 $7$ 个有效评分. 将这 $7$ 个有效评分与 $9$ 个原始评分相比, 考虑数字特征: 平均数、方差、中位数和极差, 不变的有哪些?
+</p>
+</myexample>
+<mysolution>
+    <p>题中的四个数字特征, 平均数由总分除以人数得到, 方差描述的是全体数据相对平均数的总偏差, 中位数指数据从小到大排列时正中间的那个值, 极差由最大值减最小值得到. 因为去掉 $1$ 个最高分、$1$ 个最低分, 所以只有中位数不受影响. 此外, 极差很可能变小.
+</p>
+</mysolution>
 </article>
  
           

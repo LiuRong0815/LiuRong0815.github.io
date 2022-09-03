@@ -32,6 +32,7 @@
         {"weight":"5", "secNameE":"inequality", "secNameC":"不等式",
         "subsections":[
             {"weight":"1", "subsecNameE":"inequality-property", "subsecNameC":"不等式的性质"},
+            {"weight":"2", "subsecNameE":"abs-quadratic-inequality", "subsecNameC":"绝对值不等式与二次不等式"},
             {"weight":"2", "subsecNameE":"fraction-high-order-inequality", "subsecNameC":"分式不等式与高次不等式"},
             {"weight":"3", "subsecNameE":"mean-value-inequality", "subsecNameC":"均值不等式"}
         ]}

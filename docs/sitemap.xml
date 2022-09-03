@@ -18,8 +18,6 @@
   </url><url>
     <loc>/docs/trigonometry/complex-number/complex-number-def/</loc>
   </url><url>
-    <loc>/docs/probability-statistics/probability/classical-probability/</loc>
-  </url><url>
     <loc>/docs/algebra/function/function-def/</loc>
   </url><url>
     <loc>/docs/algebra/function/</loc>
@@ -50,6 +48,8 @@
   </url><url>
     <loc>/docs/prerequisite/ms-function/axis-coordinate/</loc>
   </url><url>
+    <loc>/docs/probability-statistics/probability/random-event/</loc>
+  </url><url>
     <loc>/docs/analytic-geometry/conic-curves/ellipse/</loc>
   </url><url>
     <loc>/docs/trigonometry/vector/vec-def/</loc>
@@ -64,7 +64,7 @@
   </url><url>
     <loc>/docs/analytic-geometry/line/slope/</loc>
   </url><url>
-    <loc>/docs/solid-geometry/line-plane/position/</loc>
+    <loc>/docs/solid-geometry/line-plane/line-plane-position/</loc>
   </url><url>
     <loc>/docs/derivative/derivative/derivative-calc/</loc>
   </url><url>
@@ -76,9 +76,9 @@
   </url><url>
     <loc>/docs/algebra/sequence/common-diff/</loc>
   </url><url>
-    <loc>/docs/prerequisite/inequality/fraction-high-order-inequality/</loc>
-  </url><url>
     <loc>/docs/trigonometry/complex-number/complex-number-operation/</loc>
+  </url><url>
+    <loc>/docs/probability-statistics/probability/classical-probability/</loc>
   </url><url>
     <loc>/docs/algebra/function/function-monotone/</loc>
   </url><url>
@@ -86,7 +86,7 @@
   </url><url>
     <loc>/docs/prerequisite/set-logic/set-operation/</loc>
   </url><url>
-    <loc>/docs/probability-statistics/probability/geometric-probability/</loc>
+    <loc>/docs/prerequisite/inequality/abs-quadratic-inequality/</loc>
   </url><url>
     <loc>/docs/algebra/pow-exp-log/</loc>
   </url><url>
@@ -130,8 +130,6 @@
   </url><url>
     <loc>/docs/probability-statistics/permutation-combination/combination/</loc>
   </url><url>
-    <loc>/docs/probability-statistics/statistics/</loc>
-  </url><url>
     <loc>/docs/prerequisite/ms-function/</loc>
   </url><url>
     <loc>/docs/derivative/derivative/derivative-laws/</loc>
@@ -144,15 +142,17 @@
   </url><url>
     <loc>/docs/probability-statistics/permutation-combination/binomial-theorem/</loc>
   </url><url>
+    <loc>/docs/prerequisite/inequality/fraction-high-order-inequality/</loc>
+  </url><url>
     <loc>/docs/probability-statistics/probability/</loc>
   </url><url>
     <loc>/docs/algebra/function/function-oddeven/</loc>
   </url><url>
     <loc>/docs/derivative/limit/limit-rules/</loc>
   </url><url>
-    <loc>/docs/trigonometry/sine-cosine-law/solving-triangles/</loc>
+    <loc>/docs/probability-statistics/probability/geometric-probability/</loc>
   </url><url>
-    <loc>/docs/prerequisite/inequality/mean-value-inequality/</loc>
+    <loc>/docs/trigonometry/sine-cosine-law/solving-triangles/</loc>
   </url><url>
     <loc>/docs/prerequisite/set-logic/proposition-iff/</loc>
   </url><url>
@@ -165,8 +165,6 @@
     <loc>/docs/algebra/sequence/</loc>
   </url><url>
     <loc>/docs/prerequisite/ms-geometry/quadrilateral/</loc>
-  </url><url>
-    <loc>/docs/probability-statistics/probability/conditional-probability/</loc>
   </url><url>
     <loc>/docs/prerequisite/ms-algebra/veite-theorem/</loc>
   </url><url>
@@ -202,6 +200,8 @@
   </url><url>
     <loc>/docs/analytic-geometry/</loc>
   </url><url>
+    <loc>/docs/prerequisite/inequality/mean-value-inequality/</loc>
+  </url><url>
     <loc>/docs/trigonometry/vector/space-vector/</loc>
   </url><url>
     <loc>/docs/derivative/derivative/monotone-max-min/</loc>
@@ -210,9 +210,9 @@
   </url><url>
     <loc>/docs/solid-geometry/line-plane/plane-parallel/</loc>
   </url><url>
-    <loc>/docs/probability-statistics/probability/expectation-variation/</loc>
-  </url><url>
     <loc>/docs/algebra/sequence/sequence-application/</loc>
+  </url><url>
+    <loc>/docs/probability-statistics/probability/conditional-probability/</loc>
   </url><url>
     <loc>/docs/solid-geometry/line-plane-space-vector/line-plane-angle/</loc>
   </url><url>
@@ -231,6 +231,8 @@
     <loc>/docs/solid-geometry/line-plane/plane-perp/</loc>
   </url><url>
     <loc>/docs/prerequisite/ms-geometry/area/</loc>
+  </url><url>
+    <loc>/docs/probability-statistics/probability/expectation-variation/</loc>
   </url><url>
     <loc>/docs/algebra/sequence/general-term-fomula/</loc>
   </url><url>

@@ -11,7 +11,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/algebra/function/function-def/</guid>
-      <description>函数的定义 # 已知二次函数 $y= x^2-2ax+1$, 当 $2&lt; x&lt; 3$ 时, 函数值 $y$ 随 $x$ 的增大而减小, 求实数 $a$ 的取值范围. $y= x^2-2ax+1$ 的图象为开口向上的抛物线, 对称轴为 $x= -\dfrac{-2a}{2\cdot 1}= a$. 由题意, 当 $2&lt; x&lt; 3$ 时, $x$ 在对称轴的左侧, 所以 $3\leqslant a$, 即 $a\in [3,+\infty)$. (1) 二次函数 $y= Ax^2+Bx+C$ ($A\neq 0$) 的单调性可以通过观察其图象 (抛物线) 的开口方向 (由 $A$ 的正负号决定) 和对称轴 $x= -\dfrac{B}{2A}$ 的位置得出. (2) 写二次函数的对称轴时, 只需按照公式的格式写出对应的式子 (见解答第 1 行), 无需明确地写出公式. 如果对称轴容易口算, 也可直接写出, 如本题可直接写“对称轴为 $x= a$”. 对二次函数 $y=x^2-2x+2$, 当 $t\leqslant x\leqslant t+1$ 时, 求函数值 $y$ 的最大值与最小值.</description>
+      <description>函数的定义 # 已知函数 $f(x)= \dfrac{2x+1}{x+1}$, 求该函数在区间 $[1,4]$ 上的最大值与最小值. 用分离常数法, \[f(x)= \frac{2x+1}{x+1}= \frac{2(x+1)-1}{x+1} = 2-\frac1{x+1}.\] 因为 $x\in[1,4]$, 所以 $\dfrac1{x+1}$ 单调递减, $-\dfrac1{x+1}$ 单调递增, $2-\dfrac1{x+1}$ 也单调递增, 从而 \[f_{\min}= f(1)= \dfrac32,\quad f_{\max}= f(4)= \dfrac95.\] 本次答疑主要讲解常见的定义域的求法. 如果没有特殊说明, 函数的定义域是使函数的表达式有意义的自变量的取值范围. 现阶段常见的表达式对其中的变量限制如下: \[\begin{aligned} \text{二次根式 $\sqrt{x}$}&amp;\colon \text{被开方数非负, 即 $x\geqslant 0$;}\\ \text{分式 $\dfrac1{x}$}&amp;\colon \text{分母不为零, 即 $x\neq 0$;}\\ \text{零次式 $x^0$}&amp;\colon \text{底数不为零, 即 $x\neq 0$,} \end{aligned}\] 其中的零次式 $x^0$ 定义为 $\dfrac{x}x$, 所以需要限制 $x\neq 0$. 这些限制可以组合使用, 如对 $\dfrac1{\sqrt{x}}$, 应限制 \[\begin{cases} \sqrt{x}\neq 0 &amp; (\text{分母不为零}),\\ x\geqslant 0 &amp; (\text{被开方数非负}), \end{cases}\quad\text{解得}\quad x&gt;0.</description>
     </item>
     
     <item>
@@ -38,7 +38,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/algebra/function/function-graph/</guid>
-      <description>函数的图象 # \subsection{二次方程根的分布 (选学)} 若方程 $2(m+1)x^2+4mx+3m-2=0$ 有两个负实根, 求实数 $m$ 的取值范围. 由题意, 已知的方程为二次方程, 即 $2(m+1)\neq 0$. 设方程的两根为 $x_1$, $x_2$, 则这两个根均为负数的充要条件是 \[\left\{\!\!\begin{array}{l} x_1+x_2=-\dfrac{4m}{2(m+1)}&lt; 0,\\ x_1x_2=\dfrac{3m-2}{2(m+1)}&gt;0, \end{array}\right.\quad\text{解得}\quad m&lt; -1\ \text{或}\ m&gt;\frac23,\] 所求的 $m$ 的取值范围是 $(-\infty,-1)\cup\biggl(\dfrac23,+\infty\biggr)$. 设关于 $x$ 的二次方程 $Ax^2+Bx+C=0$ ($A\neq0$) 的两根为 $x_1$, $x_2$, 则有以下结论 (为什么?): (1) 两根为正的充要条件是 \[\left\{\!\!\begin{array}{l} x_1+x_2&gt;0,\\ x_1x_2&gt;0, \end{array}\right.\quad\text{即}\quad \left\{\!\!\begin{array}{l} -\dfrac{B}A&gt;0,\\ \dfrac{C}A&gt;0; \end{array}\right.\] (2) 两根为负的充要条件是 \[\left\{\!\!\begin{array}{l} x_1+x_2&lt; 0,\\ x_1x_2&gt;0, \end{array}\right.\quad\text{即}\quad \left\{\!\!\begin{array}{l} -\dfrac{B}A&lt; 0,\\ \dfrac{C}A&gt;0; \end{array}\right.\] (3) 两根一正一负的充要条件是 \[x_1x_2&lt; 0\quad\text{即}\quad\frac{C}A&lt; 0.\] \begin{example}\label{201109-2120} 已知函数 $f(x)= 4x^2-kx-8$ 在 $[5,20]$ 上单调变化, 求实数 $k$ 的取值范围.</description>
+      <description>函数的图象 # \begin{example}\label{exa:201206-1410} 若 $a$, $b&gt;0$, 则“$a&gt;b$”是“$a-\dfrac1a&gt; b-\dfrac1b$”的什么条件? 方法一: 由例 \ref{exa:201204-1920} 中的变形过程可知 \[a-\dfrac1a&gt; b-\dfrac1b\Rightarrow (a-b)\biggl(1+\frac1{ab}\biggr)&gt;0.\] 再由 $a$, $b&gt;0$ 得 $ab&gt;0$, 即 $1+\dfrac1{ab}&gt;0$, 所以上式等价于 $a-b&gt;0$. 这表明“$a&gt;b$”是“$a-\dfrac1a&gt; b-\dfrac1b$”的充要条件. 方法二: 构造函数 $f(x)=x-\dfrac1x$ ($x&gt;0$), 则不等式 $a-\dfrac1a&gt; b-\dfrac1b$ 化为 $f(a)&gt;f(b)$. 因为 $\dfrac1x$ 在 $(0,+\infty)$ 上单调递减, 所以 $-\dfrac1x$ 在 $(0,+\infty)$ 上单调递增. 而 $x$ 在 $(0,+\infty)$ 上也单调递增, 所以 $f(x)=x-\dfrac1x$ ($x&gt;0$) 单调递增. 这表明 $f(a)&gt;f(b)\Leftrightarrow a&gt;b$, 所求为充要条件. \subsection{二次方程根的分布 (选学)} 若方程 $2(m+1)x^2+4mx+3m-2=0$ 有两个负实根, 求实数 $m$ 的取值范围. 由题意, 已知的方程为二次方程, 即 $2(m+1)\neq 0$.</description>
     </item>
     
     <item>
