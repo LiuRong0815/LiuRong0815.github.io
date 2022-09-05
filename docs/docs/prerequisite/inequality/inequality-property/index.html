@@ -18,7 +18,7 @@
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.6c08f1f220250ecc36dde6a6fa75fdd4247d84aaaa23d4bc157c9b2f8fa595bd.css" >
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh.search.min.7c8f3c308c7cc4a49e5725aaff2837a3795fa64e6f84159b9c29faa7f139e44e.js" ></script>
+  <script defer src="/zh.search.min.784ab3c077aed3c64574cb6afb6c2069baa00d2088ec733a85e8e0551c41cf97.js" ></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
 <!--
@@ -426,6 +426,19 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/prerequisite/inequality/abs-quadratic-inequality/" class="">绝对值不等式与二次不等式</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -555,10 +568,25 @@ https://github.com/alex-shpak/hugo-book
         \frac1x+ \frac1y= \frac{x+y}{xy}= \frac{-z}{xy}< 0,\]
     而 $\dfrac1z< 0$, 所以 $\dfrac1x+\dfrac1y+\dfrac1z< 0$.
     </p>
-    <p>由 $xyz>0$ 知, $x,y,z$ 均为正数或一正两负, 结合 $x+y+z=0$ 知, $x,y,z$ 一正两负. 不妨设 $x>0$, $y,z< 0$, 后续过程同 (1).</p>
+    <p>(2) 由 $xyz>0$ 知, $x,y,z$ 均为正数或一正两负, 结合 $x+y+z=0$ 知, $x,y,z$ 一正两负. 不妨设 $x>0$, $y,z< 0$, 后续过程同 (1).</p>
 </myproof>
 <myremark>
-    <p>由已知条件大致确定未知数的正负号, 再由求证结论中 $x$, $y$, $z$ 的对称性 (地位均等) 假设三者的正负号, 可以简化推理.</p>
+    <p>(1) 由已知条件大致确定未知数的正负号, 再由求证结论中 $x$, $y$, $z$ 的对称性 (地位均等) 假设三者的正负号, 可以简化推理.
+    </p>
+    <p>(2) 当 $xyz>0$ 时, 也可以通过直接计算证明原不等式: 因为 $x+y= -z$, 所以 \[\begin{aligned}
+        \frac1x+ \frac1y+ \frac1z
+        &= \frac{x+y}{xy}+ \frac1z
+         = \frac{-z}{xy}+ \frac1z\\
+        &= \frac{xy-z^2}{xyz}
+         = \frac{xy-(x+y)^2}{xyz}\\
+        &= -\frac{x^2-xy+y^2}{xyz}.
+    \end{aligned}\]
+    由配方可知, \[
+        x^2-xy+y^2= \Bigl(x-\frac12 y\Bigr)^2+ \frac34 y^2\geqslant 0,\]
+    等号成立必须 $x- \dfrac12 y= 0$ 且 $y=0$, 与 $xyz>0$ 不符, 所以 $x^2-xy+y^2>0$. 结合 $xyz>0$ 知, \[
+        -\frac{x^2-xy+y^2}{xyz}< 0,\]
+    即原不等式成立.
+    </p>
 </myremark>
 <h2 id="常见的不等式性质">
   常见的不等式性质
@@ -715,8 +743,8 @@ https://github.com/alex-shpak/hugo-book
           <span class="arrow-prev">← </span><span>不等式</span></a>
       
       
-        <a class="docs-next button" href="">
-          <span></span><span class="arrow-next"> →</span></a>
+        <a class="docs-next button" href="/docs/prerequisite/inequality/abs-quadratic-inequality">
+          <span>绝对值不等式与二次不等式</span><span class="arrow-next"> →</span></a>
       
     </div>
 

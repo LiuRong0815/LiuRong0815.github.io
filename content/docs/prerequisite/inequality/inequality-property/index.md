@@ -5,8 +5,8 @@ weight: 1
 # bookHidden: true
 prevPage: /docs/prerequisite/inequality
 prevPageTitle: 不等式
-# nextPage: /docs/prerequisite/inequality/abs-quadratic-inequality
-# nextPageTitle: 绝对值不等式与二次不等式
+nextPage: /docs/prerequisite/inequality/abs-quadratic-inequality
+nextPageTitle: 绝对值不等式与二次不等式
 ---
 
 # 不等式的性质

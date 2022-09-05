@@ -154,7 +154,7 @@ nextPageTitle: 逻辑量词
 
 <myexercise>
     <p>条件“$a=-1$”是“函数 $y=ax^2+2x-1$ 的图象与 $x$ 轴只有一个交点”的什么条件?</p>
-</myexample>
+</myexercise>
 
 <details><summary>参考答案</summary>
     <p>对函数 $y=ax^2+2x-1$, 若 $a=0$, 则其为一次函数 $y= 2x-1$, 图象与 $x$ 轴只有一个交点; 若 $a\neq 0$, 则其为二次函数, 只需 $\Delta= 2^2-4a\cdot(-1)=0$, 解得 $a=-1$. 反之, 容易验证当 $a=0$ 或 $-1$ 时, 函数 $y=ax^2+2x-1$ 的图象与 $x$ 轴只有一个交点. 
