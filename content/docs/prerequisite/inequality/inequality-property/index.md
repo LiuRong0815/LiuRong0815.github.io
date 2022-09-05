@@ -56,11 +56,26 @@ prevPageTitle: 不等式
         \frac1x+ \frac1y= \frac{x+y}{xy}= \frac{-z}{xy}< 0,\]
     而 $\dfrac1z< 0$, 所以 $\dfrac1x+\dfrac1y+\dfrac1z< 0$.
     </p>
-    <p>由 $xyz>0$ 知, $x,y,z$ 均为正数或一正两负, 结合 $x+y+z=0$ 知, $x,y,z$ 一正两负. 不妨设 $x>0$, $y,z< 0$, 后续过程同 (1).</p>
+    <p>(2) 由 $xyz>0$ 知, $x,y,z$ 均为正数或一正两负, 结合 $x+y+z=0$ 知, $x,y,z$ 一正两负. 不妨设 $x>0$, $y,z< 0$, 后续过程同 (1).</p>
 </myproof>
 
 <myremark>
-    <p>由已知条件大致确定未知数的正负号, 再由求证结论中 $x$, $y$, $z$ 的对称性 (地位均等) 假设三者的正负号, 可以简化推理.</p>
+    <p>(1) 由已知条件大致确定未知数的正负号, 再由求证结论中 $x$, $y$, $z$ 的对称性 (地位均等) 假设三者的正负号, 可以简化推理.
+    </p>
+    <p>(2) 当 $xyz>0$ 时, 也可以通过直接计算证明原不等式: 因为 $x+y= -z$, 所以 \[\begin{aligned}
+        \frac1x+ \frac1y+ \frac1z
+        &= \frac{x+y}{xy}+ \frac1z
+         = \frac{-z}{xy}+ \frac1z\\
+        &= \frac{xy-z^2}{xyz}
+         = \frac{xy-(x+y)^2}{xyz}\\
+        &= -\frac{x^2-xy+y^2}{xyz}.
+    \end{aligned}\]
+    由配方可知, \[
+        x^2-xy+y^2= \Bigl(x-\frac12 y\Bigr)^2+ \frac34 y^2\geqslant 0,\]
+    等号成立必须 $x- \dfrac12 y= 0$ 且 $y=0$, 与 $xyz>0$ 不符, 所以 $x^2-xy+y^2>0$. 结合 $xyz>0$ 知, \[
+        -\frac{x^2-xy+y^2}{xyz}< 0,\]
+    即原不等式成立.
+    </p>
 </myremark>
 
 
