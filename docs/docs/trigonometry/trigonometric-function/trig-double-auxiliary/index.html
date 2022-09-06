@@ -1,846 +1,122 @@
-<!DOCTYPE html>
-<html lang="zh" dir="ltr">
-<head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="倍角公式与辅助角公式 # 已知 $\cos\dfrac\alpha8= -\dfrac45$, $8\pi&lt; \alpha&lt; 12\pi$, 求 $\sin\dfrac\alpha4$, $\cos\dfrac\alpha4$, $\tan\dfrac\alpha4$ 的值. 因为 $\pi&lt; \dfrac\alpha8&lt; \dfrac{3\pi}2$, 所以 $\sin\dfrac\alpha8= -\dfrac35$, 由二倍角公式, \[\begin{gathered} \sin\dfrac\alpha4 = \sin\Bigl(2\cdot\dfrac\alpha8\Bigr) = 2\sin\dfrac\alpha8 \cos\dfrac\alpha8 = \frac{24}{25},\\ \cos\dfrac\alpha4 = 2\cos^2\dfrac\alpha8- 1 = \frac{7}{25},\\ \tan\dfrac\alpha4 = \frac{\sin\dfrac\alpha4}{\cos\dfrac\alpha4} = \frac{24}{7}. \end{gathered}\] 上题中, $\cos\dfrac\alpha4$ 也可以用公式 $\sin^2 x&#43;\cos^2 x=1$ 求出, 但需要额外判断正负号. $\tan\dfrac\alpha4$ 也可以用二倍角公式计算, 但此处用定义更方便一些. 已知 $\sin(\alpha-\pi)= \dfrac35$, 求 $\cos2\alpha$ 的值. 由诱导公式, $\sin(\alpha-\pi)= -\sin\alpha$, 所以 $\sin\alpha= -\dfrac35$, \[\cos2\alpha= 1-2\sin^2\alpha= \frac{7}{25}.\] 凡三角函数式中含与 $\dfrac\pi2$ (即 $90^\circ$) 的倍数相关的和式, 应先用诱导公式化简.">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="倍角公式与辅助角公式" />
-<meta property="og:description" content="倍角公式与辅助角公式 # 已知 $\cos\dfrac\alpha8= -\dfrac45$, $8\pi&lt; \alpha&lt; 12\pi$, 求 $\sin\dfrac\alpha4$, $\cos\dfrac\alpha4$, $\tan\dfrac\alpha4$ 的值. 因为 $\pi&lt; \dfrac\alpha8&lt; \dfrac{3\pi}2$, 所以 $\sin\dfrac\alpha8= -\dfrac35$, 由二倍角公式, \[\begin{gathered} \sin\dfrac\alpha4 = \sin\Bigl(2\cdot\dfrac\alpha8\Bigr) = 2\sin\dfrac\alpha8 \cos\dfrac\alpha8 = \frac{24}{25},\\ \cos\dfrac\alpha4 = 2\cos^2\dfrac\alpha8- 1 = \frac{7}{25},\\ \tan\dfrac\alpha4 = \frac{\sin\dfrac\alpha4}{\cos\dfrac\alpha4} = \frac{24}{7}. \end{gathered}\] 上题中, $\cos\dfrac\alpha4$ 也可以用公式 $\sin^2 x&#43;\cos^2 x=1$ 求出, 但需要额外判断正负号. $\tan\dfrac\alpha4$ 也可以用二倍角公式计算, 但此处用定义更方便一些. 已知 $\sin(\alpha-\pi)= \dfrac35$, 求 $\cos2\alpha$ 的值. 由诱导公式, $\sin(\alpha-\pi)= -\sin\alpha$, 所以 $\sin\alpha= -\dfrac35$, \[\cos2\alpha= 1-2\sin^2\alpha= \frac{7}{25}.\] 凡三角函数式中含与 $\dfrac\pi2$ (即 $90^\circ$) 的倍数相关的和式, 应先用诱导公式化简." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="/docs/trigonometry/trigonometric-function/trig-double-auxiliary/" /><meta property="article:section" content="docs" />
-
-
-
-<title>倍角公式与辅助角公式 | 高中数学资料</title>
-<link rel="manifest" href="/manifest.json">
-<link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.6c08f1f220250ecc36dde6a6fa75fdd4247d84aaaa23d4bc157c9b2f8fa595bd.css" >
-  <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh.search.min.784ab3c077aed3c64574cb6afb6c2069baa00d2088ec733a85e8e0551c41cf97.js" ></script>
-
-  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
-<!--
-Made with Book Theme
-https://github.com/alex-shpak/hugo-book
--->
-  <link rel="stylesheet" href='/katex/katex.min.css' crossorigin="anonymous">
-
-
-<script defer src='/katex/katex.min.js' crossorigin="anonymous"></script>
-
-
-<script defer src='/katex/auto-render.min.js' 
-    onload="renderMathInElement(document.body);"></script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        renderMathInElement(document.body, {
-            
-            
-            delimiters: [
-                { left: '$$', right: '$$', display: true },
-                { left: '$', right: '$', display: false },
-                { left: '\\(', right: '\\)', display: false },
-                { left: '\\[', right: '\\]', display: true }
-            ],
-            
-            throwOnError: false
-        });
-    });
-</script>
-
-</head>
-<body dir="ltr">
-  <input type="checkbox" class="hidden toggle" id="menu-control" />
-  <input type="checkbox" class="hidden toggle" id="toc-control" />
-  <main class="container flex">
-    <aside class="book-menu">
-      <div class="book-menu-content">
-        
-  <nav>
-<h2 class="book-brand">
-  <a href="/"><span>高中数学资料</span>
-  </a>
-</h2>
-
-
-<div class="book-search">
-  <input type="text" id="book-search-input" placeholder="搜索" aria-label="搜索" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner hidden"></div>
-  <ul id="book-search-results"></ul>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-  
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-7fbb26c6156d78d59d607292b53948a4" class="toggle"  />
-    <label for="section-7fbb26c6156d78d59d607292b53948a4" class="flex justify-between">
-      <a href="/docs/prerequisite/" class="">预备知识</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-1e2f9b8b873223fe63fc7221375c0eb0" class="toggle"  />
-    <label for="section-1e2f9b8b873223fe63fc7221375c0eb0" class="flex justify-between">
-      <a href="/docs/prerequisite/ms-algebra/" class="">初中代数提要</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-algebra/quadratic-factorization/" class="">二次三项式的因式分解</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-algebra/quadratic-equation/" class="">一元二次方程的解法</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-algebra/veite-theorem/" class="">韦达定理</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-c1c4f99569969342f46afcb379e41254" class="toggle"  />
-    <label for="section-c1c4f99569969342f46afcb379e41254" class="flex justify-between">
-      <a href="/docs/prerequisite/ms-geometry/" class="">初中几何提要</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-geometry/symmetric-congruence-similar/" class="">对称、全等与相似</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-geometry/triangle/" class="">三角形</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-geometry/quadrilateral/" class="">四边形</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-geometry/circle/" class="">圆</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-geometry/area/" class="">平面图形的面积</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-53227ed5b540c99051432d70e3c9c4da" class="toggle"  />
-    <label for="section-53227ed5b540c99051432d70e3c9c4da" class="flex justify-between">
-      <a href="/docs/prerequisite/ms-function/" class="">初中函数提要</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-function/axis-coordinate/" class="">数轴与平面直角坐标系</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-function/linear-inverse/" class="">一次函数与反比例函数</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-function/quadratic-function-inequality/" class="">二次函数与二次不等式</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-function/graph-tranform/" class="">函数图象的变换</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-4adec7e7d2e2d6fa5eaee0a98a60892e" class="toggle"  />
-    <label for="section-4adec7e7d2e2d6fa5eaee0a98a60892e" class="flex justify-between">
-      <a href="/docs/prerequisite/set-logic/" class="">集合与简易逻辑</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/set-logic/set-def/" class="">集合的定义</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/set-logic/set-operation/" class="">集合的运算</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/set-logic/proposition-iff/" class="">命题与充要条件</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/set-logic/logical-quantifier/" class="">逻辑量词</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-0efa6e9487d50f8c7308e9898b74ff74" class="toggle"  />
-    <label for="section-0efa6e9487d50f8c7308e9898b74ff74" class="flex justify-between">
-      <a href="/docs/prerequisite/inequality/" class="">不等式</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/inequality/inequality-property/" class="">不等式的性质</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/inequality/abs-quadratic-inequality/" class="">绝对值不等式与二次不等式</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-  </ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</nav>
-
-
-
-
-  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
-
-
- 
-      </div>
-    </aside>
-
-    <div class="book-page">
-      <header class="book-header">
-        
-  <div class="flex align-center justify-between">
-  <label for="menu-control">
-    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
-  </label>
-
-  <strong>倍角公式与辅助角公式</strong>
-
-  <label for="toc-control">
-    
-    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
-    
-  </label>
-</div>
-
-
-  
-  <aside class="hidden clearfix">
-    
-  
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#倍角公式与辅助角公式">倍角公式与辅助角公式</a></li>
-  </ul>
-</nav>
-
-
-
-  </aside>
-  
- 
-      </header>
-
-      
-      
-  <article class="markdown"><h1 id="倍角公式与辅助角公式">
-  倍角公式与辅助角公式
-  <a class="anchor" href="#%e5%80%8d%e8%a7%92%e5%85%ac%e5%bc%8f%e4%b8%8e%e8%be%85%e5%8a%a9%e8%a7%92%e5%85%ac%e5%bc%8f">#</a>
-</h1>
-<myexample>
-<p>已知 $\cos\dfrac\alpha8= -\dfrac45$, $8\pi< \alpha< 12\pi$, 求 $\sin\dfrac\alpha4$, $\cos\dfrac\alpha4$, $\tan\dfrac\alpha4$ 的值.
-</p>
-</myexample>
-<mysolution>
-    <p>因为 $\pi< \dfrac\alpha8< \dfrac{3\pi}2$, 所以  $\sin\dfrac\alpha8= -\dfrac35$, 由二倍角公式,
-    \[\begin{gathered}
-        \sin\dfrac\alpha4
-        = \sin\Bigl(2\cdot\dfrac\alpha8\Bigr)
-        = 2\sin\dfrac\alpha8 \cos\dfrac\alpha8
-        = \frac{24}{25},\\
-        \cos\dfrac\alpha4
-        = 2\cos^2\dfrac\alpha8- 1
-        = \frac{7}{25},\\
-        \tan\dfrac\alpha4
-        = \frac{\sin\dfrac\alpha4}{\cos\dfrac\alpha4}
-        = \frac{24}{7}.
-    \end{gathered}\]
-</p>
-</mysolution>
-<myremark>
-    <p>上题中, $\cos\dfrac\alpha4$ 也可以用公式 $\sin^2 x+\cos^2 x=1$ 求出, 但需要额外判断正负号. $\tan\dfrac\alpha4$ 也可以用二倍角公式计算, 但此处用定义更方便一些.
-</p>
-</myremark>
-</p>
-<p><myexample>
-<p>已知 $\sin(\alpha-\pi)= \dfrac35$, 求 $\cos2\alpha$ 的值.
-</p>
-</myexample>
-<mysolution>
-    <p>由诱导公式, $\sin(\alpha-\pi)= -\sin\alpha$, 所以  $\sin\alpha= -\dfrac35$,
-    \[\cos2\alpha= 1-2\sin^2\alpha= \frac{7}{25}.\]
-</p>
-</mysolution>
-<myremark>
-    <p>凡三角函数式中含与 $\dfrac\pi2$ (即 $90^\circ$) 的倍数相关的和式, 应先用诱导公式化简.
-</p>
-</myremark>
-</p>
-<p><myexample>
-<p>已知 $\sin2\alpha= -\sin\alpha$, $\alpha\in\Bigl(\dfrac\pi2,\pi\Bigr)$, 求 $\tan\alpha$ 的值.
-</p>
-</myexample>
-<mysolution>
-    <p>已知式化为 $2\sin\alpha\cos\alpha= -\sin\alpha$, 即 $\cos\alpha= -\dfrac12$, 结合 $\alpha\in\Bigl(\dfrac\pi2,\pi\Bigr)$ 知 $\tan\alpha= -\sqrt3$ (结果表明 $\alpha= \dfrac{2\pi}3$).
-</p>
-</mysolution>
-</p>
-<p><myexample>
-<p>已知 $\tan2\alpha= \dfrac13$, 求 $\tan\alpha$ 的值.
-</p>
-</myexample>
-<mysolution>
-    <p>由二倍角公式, $\dfrac{2\tan\alpha}{1-\tan^2\alpha}= \dfrac13$, 解得 $\tan\alpha= -3\pm\sqrt{10}$.
-</p>
-</mysolution>
-<myexample>
-<p>已知 $\sin\alpha= \dfrac{\sqrt5}{5}$, 求 $\sin^4\alpha- \cos^4\alpha$ 的值.
-</p>
-</myexample>
-<mysolution>
-    <p>由平方差公式和 $\sin^2\alpha+ \cos^2\alpha=1$ 知,
-    \[\begin{aligned}
-        \sin^4\alpha- \cos^4\alpha
-        &= (\sin^2\alpha+ \cos^2\alpha)(\sin^2\alpha- \cos^2\alpha)\\
-        &= \sin^2\alpha- \cos^2\alpha
-         = 2\sin^2\alpha- 1\\
-        &= -\frac35.
-    \end{aligned}\]
-</p>
-</mysolution>
-</p>
-<p><myexample>
-<p>已知 $\sin\dfrac\alpha2+ \cos\dfrac\alpha2= \dfrac12$, 求 $\cos2\alpha$ 的值.
-</p>
-</myexample>
-<mysolution>
-    <p>将已知式平方得,
-    \[\sin^2\dfrac\alpha2+ \cos^2\dfrac\alpha2
-        + 2\sin\dfrac\alpha2 \cos\dfrac\alpha2= \dfrac14,\]
-    即 $1+\sin\alpha= \dfrac14$, 所以 $\sin\alpha= -\dfrac34$, 而
-    \[\cos2\alpha= 1- 2\sin^2\alpha= -\frac18.\]
-</p>
-</mysolution>
-<myremark>
-    <p>上题的解法主要是利用平方, 将 $\dfrac\alpha2$ 的三角函数式化为 $\alpha$ 的三角函数式. 下题也是相同的解法.
-</p>
-</myremark>
-</p>
-<p><myexample>
-<p>若 $\sin2\alpha= \dfrac14$, $\dfrac\pi4< \alpha< \dfrac\pi2$, 求 $\cos\alpha- \sin\alpha$ 的值.
-</p>
-</myexample>
-<mysolution>
-    <p>因为 $\dfrac\pi4< \alpha< \dfrac\pi2$, 所以画三角函数线知 $\cos\alpha< \sin\alpha$ 即 $\cos\alpha- \sin\alpha< 0$. 而
-    \[(\cos\alpha- \sin\alpha)^2= 1- 2\cos\alpha\sin\alpha
-        = 1-\sin2\alpha= \frac34,\]
-    所以 $\cos\alpha- \sin\alpha= -\dfrac{\sqrt3}{2}$
-</p>
-</mysolution>
-</p>
-<p>\subsection{辅助角公式}
-</p>
-<p>辅助角公式主要用于将形如 $a\sin x\pm b\cos x$ 的式子化为 $r\sin(x\pm\theta)$ 或 $r\cos(x\pm\theta)$ 的形式, 以更方便地得到原式的单调性、最值等信息. 公式的变形过程主要逆向使用和角、差角的正弦、余弦公式
-\begin{gather*}
-    \sin(\alpha\pm \beta)= \sin\alpha\cos\beta\pm \cos\alpha\sin\beta,\\
-    \cos(\alpha\pm \beta)= \cos\alpha\cos\beta\mp \sin\alpha\sin\beta,
-\end{gather*}
-所以实际应用辅助角公式时, 根据式子的形式, 可以有不同的变形结果. 例如, 
+<!doctype html><html lang=zh dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="倍角公式与辅助角公式 # 已知 $\cos\dfrac\alpha8= -\dfrac45$, $8\pi< \alpha< 12\pi$, 求 $\sin\dfrac\alpha4$, $\cos\dfrac\alpha4$, $\tan\dfrac\alpha4$ 的值. 因为 $\pi< \dfrac\alpha8< \dfrac{3\pi}2$, 所以 $\sin\dfrac\alpha8= -\dfrac35$, 由二倍角公式, \[\begin{gathered} \sin\dfrac\alpha4 = \sin\Bigl(2\cdot\dfrac\alpha8\Bigr) = 2\sin\dfrac\alpha8 \cos\dfrac\alpha8 = \frac{24}{25},\\ \cos\dfrac\alpha4 = 2\cos^2\dfrac\alpha8- 1 = \frac{7}{25},\\ \tan\dfrac\alpha4 = \frac{\sin\dfrac\alpha4}{\cos\dfrac\alpha4} = \frac{24}{7}. \end{gathered}\] 上题中, $\cos\dfrac\alpha4$ 也可以用公式 $\sin^2 x+\cos^2 x=1$ 求出, 但需要额外判断正负号. $\tan\dfrac\alpha4$ 也可以用二倍角公式计算, 但此处用定义更方便一些. 已知 $\sin(\alpha-\pi)= \dfrac35$, 求 $\cos2\alpha$ 的值. 由诱导公式, $\sin(\alpha-\pi)= -\sin\alpha$, 所以 $\sin\alpha= -\dfrac35$, \[\cos2\alpha= 1-2\sin^2\alpha= \frac{7}{25}.\] 凡三角函数式中含与 $\dfrac\pi2$ (即 $90^\circ$) 的倍数相关的和式, 应先用诱导公式化简."><meta name=theme-color content="#FFFFFF"><meta property="og:title" content="倍角公式与辅助角公式"><meta property="og:description" content="倍角公式与辅助角公式 # 已知 $\cos\dfrac\alpha8= -\dfrac45$, $8\pi< \alpha< 12\pi$, 求 $\sin\dfrac\alpha4$, $\cos\dfrac\alpha4$, $\tan\dfrac\alpha4$ 的值. 因为 $\pi< \dfrac\alpha8< \dfrac{3\pi}2$, 所以 $\sin\dfrac\alpha8= -\dfrac35$, 由二倍角公式, \[\begin{gathered} \sin\dfrac\alpha4 = \sin\Bigl(2\cdot\dfrac\alpha8\Bigr) = 2\sin\dfrac\alpha8 \cos\dfrac\alpha8 = \frac{24}{25},\\ \cos\dfrac\alpha4 = 2\cos^2\dfrac\alpha8- 1 = \frac{7}{25},\\ \tan\dfrac\alpha4 = \frac{\sin\dfrac\alpha4}{\cos\dfrac\alpha4} = \frac{24}{7}. \end{gathered}\] 上题中, $\cos\dfrac\alpha4$ 也可以用公式 $\sin^2 x+\cos^2 x=1$ 求出, 但需要额外判断正负号. $\tan\dfrac\alpha4$ 也可以用二倍角公式计算, 但此处用定义更方便一些. 已知 $\sin(\alpha-\pi)= \dfrac35$, 求 $\cos2\alpha$ 的值. 由诱导公式, $\sin(\alpha-\pi)= -\sin\alpha$, 所以 $\sin\alpha= -\dfrac35$, \[\cos2\alpha= 1-2\sin^2\alpha= \frac{7}{25}.\] 凡三角函数式中含与 $\dfrac\pi2$ (即 $90^\circ$) 的倍数相关的和式, 应先用诱导公式化简."><meta property="og:type" content="article"><meta property="og:url" content="/docs/trigonometry/trigonometric-function/trig-double-auxiliary/"><meta property="article:section" content="docs"><title>倍角公式与辅助角公式 | 高中数学资料</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.6c08f1f220250ecc36dde6a6fa75fdd4247d84aaaa23d4bc157c9b2f8fa595bd.css><script defer src=/flexsearch.min.js></script>
+<script defer src=/zh.search.min.7287a52d6d4b6df1bd72f5e28bb3775dbf17b637e7c63244f3fb9df429bae232.js></script>
+<script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js></script>
+<link rel=stylesheet href=/katex/katex.min.css crossorigin=anonymous><script defer src=/katex/katex.min.js crossorigin=anonymous></script>
+<script defer src=/katex/auto-render.min.js onload=renderMathInElement(document.body)></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1},{left:"\\[",right:"\\]",display:!0}],throwOnError:!1})})</script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a href=/><span>高中数学资料</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=搜索 aria-label=搜索 maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li><input type=checkbox id=section-7fbb26c6156d78d59d607292b53948a4 class=toggle>
+<label for=section-7fbb26c6156d78d59d607292b53948a4 class="flex justify-between"><a href=/docs/prerequisite/>预备知识</a></label><ul><li><input type=checkbox id=section-1e2f9b8b873223fe63fc7221375c0eb0 class=toggle>
+<label for=section-1e2f9b8b873223fe63fc7221375c0eb0 class="flex justify-between"><a href=/docs/prerequisite/ms-algebra/>初中代数提要</a></label><ul><li><a href=/docs/prerequisite/ms-algebra/quadratic-factorization/>二次三项式的因式分解</a></li><li><a href=/docs/prerequisite/ms-algebra/quadratic-equation/>一元二次方程的解法</a></li><li><a href=/docs/prerequisite/ms-algebra/veite-theorem/>韦达定理</a></li></ul></li><li><input type=checkbox id=section-c1c4f99569969342f46afcb379e41254 class=toggle>
+<label for=section-c1c4f99569969342f46afcb379e41254 class="flex justify-between"><a href=/docs/prerequisite/ms-geometry/>初中几何提要</a></label><ul><li><a href=/docs/prerequisite/ms-geometry/symmetric-congruence-similar/>对称、全等与相似</a></li><li><a href=/docs/prerequisite/ms-geometry/triangle/>三角形</a></li><li><a href=/docs/prerequisite/ms-geometry/quadrilateral/>四边形</a></li><li><a href=/docs/prerequisite/ms-geometry/circle/>圆</a></li><li><a href=/docs/prerequisite/ms-geometry/area/>平面图形的面积</a></li></ul></li><li><input type=checkbox id=section-53227ed5b540c99051432d70e3c9c4da class=toggle>
+<label for=section-53227ed5b540c99051432d70e3c9c4da class="flex justify-between"><a href=/docs/prerequisite/ms-function/>初中函数提要</a></label><ul><li><a href=/docs/prerequisite/ms-function/axis-coordinate/>数轴与平面直角坐标系</a></li><li><a href=/docs/prerequisite/ms-function/linear-inverse/>一次函数与反比例函数</a></li><li><a href=/docs/prerequisite/ms-function/quadratic-function-inequality/>二次函数与二次不等式</a></li><li><a href=/docs/prerequisite/ms-function/graph-tranform/>函数图象的变换</a></li></ul></li><li><input type=checkbox id=section-4adec7e7d2e2d6fa5eaee0a98a60892e class=toggle>
+<label for=section-4adec7e7d2e2d6fa5eaee0a98a60892e class="flex justify-between"><a href=/docs/prerequisite/set-logic/>集合与简易逻辑</a></label><ul><li><a href=/docs/prerequisite/set-logic/set-def/>集合的定义</a></li><li><a href=/docs/prerequisite/set-logic/set-operation/>集合的运算</a></li><li><a href=/docs/prerequisite/set-logic/proposition-iff/>命题与充要条件</a></li><li><a href=/docs/prerequisite/set-logic/logical-quantifier/>逻辑量词</a></li></ul></li><li><input type=checkbox id=section-0efa6e9487d50f8c7308e9898b74ff74 class=toggle>
+<label for=section-0efa6e9487d50f8c7308e9898b74ff74 class="flex justify-between"><a href=/docs/prerequisite/inequality/>不等式</a></label><ul><li><a href=/docs/prerequisite/inequality/inequality-property/>不等式的性质</a></li><li><a href=/docs/prerequisite/inequality/abs-quadratic-inequality/>绝对值不等式与二次不等式</a></li></ul></li></ul></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
+<strong>倍角公式与辅助角公式</strong>
+<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#倍角公式与辅助角公式>倍角公式与辅助角公式</a></li></ul></nav></aside></header><article class=markdown><h1 id=倍角公式与辅助角公式>倍角公式与辅助角公式
+<a class=anchor href=#%e5%80%8d%e8%a7%92%e5%85%ac%e5%bc%8f%e4%b8%8e%e8%be%85%e5%8a%a9%e8%a7%92%e5%85%ac%e5%bc%8f>#</a></h1><myexample><p>已知 $\cos\dfrac\alpha8= -\dfrac45$, $8\pi< \alpha< 12\pi$, 求 $\sin\dfrac\alpha4$, $\cos\dfrac\alpha4$, $\tan\dfrac\alpha4$ 的值.</p></myexample><mysolution><p>因为 $\pi< \dfrac\alpha8< \dfrac{3\pi}2$, 所以 $\sin\dfrac\alpha8= -\dfrac35$, 由二倍角公式,
+\[\begin{gathered}
+\sin\dfrac\alpha4
+= \sin\Bigl(2\cdot\dfrac\alpha8\Bigr)
+= 2\sin\dfrac\alpha8 \cos\dfrac\alpha8
+= \frac{24}{25},\\
+\cos\dfrac\alpha4
+= 2\cos^2\dfrac\alpha8- 1
+= \frac{7}{25},\\
+\tan\dfrac\alpha4
+= \frac{\sin\dfrac\alpha4}{\cos\dfrac\alpha4}
+= \frac{24}{7}.
+\end{gathered}\]</p></mysolution><myremark><p>上题中, $\cos\dfrac\alpha4$ 也可以用公式 $\sin^2 x+\cos^2 x=1$ 求出, 但需要额外判断正负号. $\tan\dfrac\alpha4$ 也可以用二倍角公式计算, 但此处用定义更方便一些.</p></myremark></p><p><myexample><p>已知 $\sin(\alpha-\pi)= \dfrac35$, 求 $\cos2\alpha$ 的值.</p></myexample><mysolution><p>由诱导公式, $\sin(\alpha-\pi)= -\sin\alpha$, 所以 $\sin\alpha= -\dfrac35$,
+\[\cos2\alpha= 1-2\sin^2\alpha= \frac{7}{25}.\]</p></mysolution><myremark><p>凡三角函数式中含与 $\dfrac\pi2$ (即 $90^\circ$) 的倍数相关的和式, 应先用诱导公式化简.</p></myremark></p><p><myexample><p>已知 $\sin2\alpha= -\sin\alpha$, $\alpha\in\Bigl(\dfrac\pi2,\pi\Bigr)$, 求 $\tan\alpha$ 的值.</p></myexample><mysolution><p>已知式化为 $2\sin\alpha\cos\alpha= -\sin\alpha$, 即 $\cos\alpha= -\dfrac12$, 结合 $\alpha\in\Bigl(\dfrac\pi2,\pi\Bigr)$ 知 $\tan\alpha= -\sqrt3$ (结果表明 $\alpha= \dfrac{2\pi}3$).</p></mysolution></p><p><myexample><p>已知 $\tan2\alpha= \dfrac13$, 求 $\tan\alpha$ 的值.</p></myexample><mysolution><p>由二倍角公式, $\dfrac{2\tan\alpha}{1-\tan^2\alpha}= \dfrac13$, 解得 $\tan\alpha= -3\pm\sqrt{10}$.</p></mysolution><myexample><p>已知 $\sin\alpha= \dfrac{\sqrt5}{5}$, 求 $\sin^4\alpha- \cos^4\alpha$ 的值.</p></myexample><mysolution><p>由平方差公式和 $\sin^2\alpha+ \cos^2\alpha=1$ 知,
 \[\begin{aligned}
-    \frac{1}{2}\sin x+ \frac{\sqrt3}{2}\cos x
-    &= \sin x\cos60^\circ+ \cos x\sin60^\circ
-     = \sin(x+60^\circ),\\
-    \frac{\sqrt2}{2}\cos x+ \frac{\sqrt2}{2}\sin x
-    &= \cos45^\circ\cos x+ \sin45^\circ\sin x
-     = \cos(x-45^\circ).
+\sin^4\alpha- \cos^4\alpha
+&= (\sin^2\alpha+ \cos^2\alpha)(\sin^2\alpha- \cos^2\alpha)\\
+&= \sin^2\alpha- \cos^2\alpha
+     = 2\sin^2\alpha- 1\\
+&= -\frac35.
+    \end{aligned}\]</p></mysolution></p><p><myexample><p>已知 $\sin\dfrac\alpha2+ \cos\dfrac\alpha2= \dfrac12$, 求 $\cos2\alpha$ 的值.</p></myexample><mysolution><p>将已知式平方得,
+\[\sin^2\dfrac\alpha2+ \cos^2\dfrac\alpha2
++ 2\sin\dfrac\alpha2 \cos\dfrac\alpha2= \dfrac14,\]
+即 $1+\sin\alpha= \dfrac14$, 所以 $\sin\alpha= -\dfrac34$, 而
+\[\cos2\alpha= 1- 2\sin^2\alpha= -\frac18.\]</p></mysolution><myremark><p>上题的解法主要是利用平方, 将 $\dfrac\alpha2$ 的三角函数式化为 $\alpha$ 的三角函数式. 下题也是相同的解法.</p></myremark></p><p><myexample><p>若 $\sin2\alpha= \dfrac14$, $\dfrac\pi4< \alpha< \dfrac\pi2$, 求 $\cos\alpha- \sin\alpha$ 的值.</p></myexample><mysolution><p>因为 $\dfrac\pi4< \alpha< \dfrac\pi2$, 所以画三角函数线知 $\cos\alpha< \sin\alpha$ 即 $\cos\alpha- \sin\alpha< 0$. 而
+\[(\cos\alpha- \sin\alpha)^2= 1- 2\cos\alpha\sin\alpha
+= 1-\sin2\alpha= \frac34,\]
+所以 $\cos\alpha- \sin\alpha= -\dfrac{\sqrt3}{2}$</p></mysolution></p><p>\subsection{辅助角公式}</p><p>辅助角公式主要用于将形如 $a\sin x\pm b\cos x$ 的式子化为 $r\sin(x\pm\theta)$ 或 $r\cos(x\pm\theta)$ 的形式, 以更方便地得到原式的单调性、最值等信息. 公式的变形过程主要逆向使用和角、差角的正弦、余弦公式
+\begin{gather*}
+\sin(\alpha\pm \beta)= \sin\alpha\cos\beta\pm \cos\alpha\sin\beta,\\
+\cos(\alpha\pm \beta)= \cos\alpha\cos\beta\mp \sin\alpha\sin\beta,
+\end{gather*}
+所以实际应用辅助角公式时, 根据式子的形式, 可以有不同的变形结果. 例如,
+\[\begin{aligned}
+\frac{1}{2}\sin x+ \frac{\sqrt3}{2}\cos x
+&= \sin x\cos60^\circ+ \cos x\sin60^\circ
+= \sin(x+60^\circ),\\
+\frac{\sqrt2}{2}\cos x+ \frac{\sqrt2}{2}\sin x
+&= \cos45^\circ\cos x+ \sin45^\circ\sin x
+= \cos(x-45^\circ).
 \end{aligned}\]
-后一式也可以写为 $\cos(45^\circ-x)$.
-</p>
-<p>一般地, 对形如 
+后一式也可以写为 $\cos(45^\circ-x)$.</p><p>一般地, 对形如
 \[a\sin x+ b\cos x\quad (a>0, b>0)\]
 的式子, 可先提出系数 $r=\sqrt{a^2+b^2}$, 将原式化为 $r\Bigl(\dfrac{a}r\sin x+ \dfrac{b}r\cos x\Bigr)$. 此时 $a$, $b$, $r$ 可以分别构成某个直角三角形的直角边和斜边, 因此 $\dfrac{a}r$ 和 $\dfrac{b}r$ 可以表示为同一个锐角 (设为 $\theta$) 的正弦、余弦值 (或余弦、正弦值, 依题意而定). 由此可得,
 \[\begin{aligned}
-    r\Bigl(\dfrac{a}r\sin x+ \dfrac{b}r\cos x\Bigr)
-    &= r\Bigl(\cos\theta\sin x+ \sin\theta\cos x\Bigr)\\
-    &= r\sin(x+\theta),
+r\Bigl(\dfrac{a}r\sin x+ \dfrac{b}r\cos x\Bigr)
+&= r\Bigl(\cos\theta\sin x+ \sin\theta\cos x\Bigr)\\
+&= r\sin(x+\theta),
 \end{aligned}\]
-此即辅助角公式. 当 $a$, $b$ 中有负数时, 也可以作类似的变形.
-</p>
-<p>辅助角公式是和角、差角的正弦、余弦公式的逆向运用, 所以提出 $r$ 后, 需参考后者的形式适当变形, 重点是将两个系数化为同一个锐角的正弦、余弦值. 比如
+此即辅助角公式. 当 $a$, $b$ 中有负数时, 也可以作类似的变形.</p><p>辅助角公式是和角、差角的正弦、余弦公式的逆向运用, 所以提出 $r$ 后, 需参考后者的形式适当变形, 重点是将两个系数化为同一个锐角的正弦、余弦值. 比如
 \[\begin{aligned}
-    \sin x+ \sqrt3\cos x
-    &= 2\Bigl(\frac12\sin x+ \frac{\sqrt3}2\cos x\Bigr)\\
-    &= 2(\cos60^\circ\sin x+ \sin60^\circ\cos x),
+\sin x+ \sqrt3\cos x
+&= 2\Bigl(\frac12\sin x+ \frac{\sqrt3}2\cos x\Bigr)\\
+&= 2(\cos60^\circ\sin x+ \sin60^\circ\cos x),
 \end{aligned}\]
 然后就可以逆用和角的正弦公式. 上述最后一式也可写为
 \[2(\sin30^\circ\sin x+ \cos30^\circ\cos x),\]
 或者写为
 \[2(\sin30^\circ\sin x+ \sin60^\circ\cos x).\]
-但是很明显, 只有前一种写法能逆用差角的余弦公式, 后一种写法无法继续合并.
-</p>
-<p>在和角的三角函数公式中令 $\beta=\alpha$, 可得二倍角的三角函数公式
+但是很明显, 只有前一种写法能逆用差角的余弦公式, 后一种写法无法继续合并.</p><p>在和角的三角函数公式中令 $\beta=\alpha$, 可得二倍角的三角函数公式
 \begin{gather*}
-    \sin2\alpha= 2\sin\alpha\cos\alpha, \quad
-    \tan2\alpha= \frac{2\tan\alpha}{1- \tan^2\alpha},\\
-    \cos2\alpha= \cos^2\alpha- \sin^2\alpha= 2\cos^2\alpha- 1= 1- 2\sin^2\alpha.
+\sin2\alpha= 2\sin\alpha\cos\alpha, \quad
+\tan2\alpha= \frac{2\tan\alpha}{1- \tan^2\alpha},\\
+\cos2\alpha= \cos^2\alpha- \sin^2\alpha= 2\cos^2\alpha- 1= 1- 2\sin^2\alpha.
 \end{gather*}
 最后的式子中用到了 $\sin^2\alpha+\cos^2\alpha=1$, 该式也可改写为
-\[\cos^2 \alpha= \frac{1+\cos2\alpha}2,\quad 
-    \sin^2 \alpha= \frac{1-\cos2\alpha}2.\]
+\[\cos^2 \alpha= \frac{1+\cos2\alpha}2,\quad
+\sin^2 \alpha= \frac{1-\cos2\alpha}2.\]
 在解题时, 只要所考虑的两个角有二倍的关系即可使用这些公式, 例如
 \[\sin x= 2\sin\frac{x}2\cos\frac{x}2,\quad
-    \cos^2 2x= \frac{1+\cos4x}2.\]
-</p>
-<myexample>
-<p>如图, 在平面直角坐标系中, 以 $Ox$ 正半轴为始边作两个锐角 $\alpha$, $\beta$, 它们的终边分别与单位圆交于点 $A$, $B$, 横坐标分别为 $\dfrac{\sqrt2}{10}$, $\dfrac{2\sqrt5}{5}$. 求 $\tan(\alpha+\beta)$ 和 $\alpha+2\beta$ 的值.
-</p>
-<p><center>
-        \includegraphics[scale=1.5]{2021-0307-1150-crop}
-    </center>
-</p>
-</myexample>
-<mysolution>
-    <p>由三角函数值的定义, 点 $A$ 的坐标为 $(\cos\alpha,\sin\alpha)$, 点 $B$ 的坐标为 $(\cos\beta,\sin\beta)$. 结合已知可得,
-    \[\cos\alpha= \dfrac{\sqrt2}{10},\ 
-        \sin\alpha= \dfrac{7\sqrt2}{10},\quad
-    \cos\beta= \dfrac{2\sqrt5}{5},\ 
-        \sin\beta= \dfrac{\sqrt5}{5},\]
-    所以 $\tan\alpha= 7$, $\tan\beta= \dfrac12$, 而
-    \[\tan(\alpha+\beta)
-        = \frac{\tan\alpha+ \tan\beta}{1- \tan\alpha\tan\beta}
-        = -3.\]
-</p>
-<p>同理, 由 $\tan(\alpha+2\beta)= \tan((\alpha+\beta)+ \beta)$ 可以算出 $\tan(\alpha+2\beta)= -1$. 而已知表明,
-    \[\alpha\in \Bigl(\frac\pi4,\frac\pi2\Bigr),\ 
-        \beta\in \Bigl(0,\frac\pi4\Bigr),\quad\text{即}\quad 
-    \alpha+2\beta\in \Bigl(\frac\pi4,\pi\Bigr),\]
-    所以 $\alpha+2\beta= \dfrac{3\pi}4$.
-</p>
-</mysolution>
-<myremark>
-    <p>通过求角的三角函数值可以确定角的大小, 但是需要根据题中角的取值范围选择合适的三角函数值, 以保证能得到唯一确定的角的大小. 例如, 若角的取值范围是 $(0,\pi)$, 则优先考虑余弦值; 若角的取值范围是 $\Bigl(-\dfrac\pi2,\dfrac\pi2\Bigr)$, 则优先考虑正弦值. 对前述两个取值范围, 均可以考虑正切值 (为什么?).
-</p>
-</myremark>
-<myexample>
-<p>若 $|\cos\theta|= \dfrac15$, $\dfrac{5\pi}{2}< \theta< 3\pi$, 求 $\sin\dfrac\theta2$ 的值.
-</p>
-</myexample>
-<mysolution>
-    <p>由题意, $\cos\theta< 0$, 所以 $\cos\theta= -\dfrac15$, 即
-    \[1- 2\sin^2\frac\theta2= -\dfrac15,\quad\text{即}\quad
-        \sin^2\frac\theta2= \frac35.\]
-    因为 $\dfrac{5\pi}{4}< \dfrac\theta2< \dfrac{3\pi}2$, 所以 $\sin\dfrac\theta2< 0$, 故 $\sin\dfrac\theta2= -\dfrac{\sqrt{15}}{5}$.
-</p>
-</mysolution>
-</p>
-<p><myexample>
-<p>比较大小: $a= \dfrac{\sqrt2}{2}(\sin17^\circ+ \cos17^\circ)$, $b= 2\cos^2 13^\circ- 1$, $c=\dfrac{\sqrt3}{2}$.
-</p>
-</myexample>
-<mysolution>
-    <p>由于 $a$, $b$ 均不能计算具体值, 所以应将三者转化为同名 (即同为正弦或同为余弦) 三角函数式, 利用对应函数的单调性比较大小. 因为
-    \[\begin{aligned}
-        a&= \frac{\sqrt2}{2}(\sin17^\circ+ \cos17^\circ)\\
-        &= \cos45^\circ\sin17^\circ+ \sin45^\circ\cos17^\circ\\
-        &= \sin(17^\circ+ 45^\circ)= \sin62^\circ,
-    \end{aligned}\]
-    而 $b= \cos 26^\circ= \sin 64^\circ$, $c= \sin 60^\circ$, 由正弦函数在 $(0^\circ, 90^\circ)$ 上单调递增可知, $b>a>c$.
-</p>
-</mysolution>
-<myremark>
-    <p>上题对 $b$ 的变形用了辅助角公式 $\cos\alpha= \sin(90^\circ- \alpha)$. 此外, 也可以将 $a$, $b$, $c$ 分别化为 $\cos28^\circ$, $\cos26^\circ$, $\cos30^\circ$, 利用余弦函数在 $(0^\circ, 90^\circ)$ 上单调递减仍可得上述结果.
-</p>
-</myremark>
-<myexample>
-<p>(1) 化简: $\dfrac1{\sin10^\circ}- \dfrac{\sqrt3}{\cos10^\circ}$;\quad
-    (2) 验证: $\dfrac{1- \cos2\theta}{1+ \cos2\theta}= \tan^2\theta$.
-</p>
-</myexample>
-<mysolution>
-    <p>(1) 通分后用辅助角公式和二倍角公式, 原式化为
-    \[\begin{aligned}
-        & \frac{\cos10^\circ- \sqrt3\sin10^\circ}{\sin10^\circ\cos10^\circ}
-        = \frac{2\Bigl(\dfrac12 \cos10^\circ- \dfrac{\sqrt3}{2}\sin10^\circ\Bigr)}{\dfrac12\sin20^\circ}\\
-        ={}& \frac4{\sin20^\circ}(\sin30^\circ\cos10^\circ- \cos30^\circ\sin10^\circ)\\
-        ={}& \frac4{\sin20^\circ}\sin(30^\circ- 10^\circ)
-         = 4.
-    \end{aligned}\]
-</p>
-<p>(2) 将二倍角公式 $\cos2\theta= 1-2\sin^2\theta= 2\cos^2\theta-1$ 分别代入分式的分子和分母, 可得
-    \[\dfrac{1- (1-2\sin^2\theta)}{1+ (2\cos^2\theta-1)}
-        = \frac{\sin^2\theta}{\cos^2\theta},\]
-    此即为 $\tan^2\theta$.
-</p>
-</mysolution>
-<myexample>
-<p>已知 $\sin\alpha= \cos2\alpha$, $\alpha\in\biggl(\dfrac\pi2, \pi\biggr)$, 求 $\tan\alpha$ 的值.
-</p>
-</myexample>
-<mysolution>
-    <p>由已知, $\sin\alpha= \cos2\alpha= 1- 2\sin^2\alpha$, 则 \[
-        2\sin^2\alpha+ \sin\alpha- 1= 0,\quad
-        \sin\alpha= \frac12,-1.\]
-    因为 $\alpha\in\biggl(\dfrac\pi2, \pi\biggr)$, 所以 $\sin\alpha= \dfrac12$. 作三角函数线知, $\tan\alpha= -\dfrac{\sqrt3}3$.
-</p>
-</mysolution>
-</article>
- 
-          
-    
-    <div class="docs-prevnext">
-    
-        <a class="docs-prev button" href="/docs/trigonometry/trigonometric-function/trig-sum-diff">
-          <span class="arrow-prev">← </span><span>三角函数的和差角公式</span></a>
-      
-      
-        <a class="docs-next button" href="/docs/trigonometry/trigonometric-function/trig-sum-prod">
-          <span>和差化积公式与积化和差公式</span><span class="arrow-next"> →</span></a>
-      
-    </div>
-
-    <p>作者邮箱 rong.liu@mail.bnu.edu.cn。</p>
-    <p>读者的支持是作者持续更新的动力😊</p>
-    
-
-      <footer class="book-footer">
-        
-  <div class="flex flex-wrap justify-between">
-
-
-
-
-
-</div>
-
-
-
-  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
-
-
- 
-        
-      </footer>
-
-      
-  
-  <div class="book-comments">
-
-</div>
-  
- 
-
-      <label for="menu-control" class="hidden book-menu-overlay"></label>
-    </div>
-
-    
-    <aside class="book-toc">
-      <div class="book-toc-content">
-        
-  
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#倍角公式与辅助角公式">倍角公式与辅助角公式</a></li>
-  </ul>
-</nav>
-
-
- 
-      </div>
-    </aside>
-    
-  </main>
-
-  
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
+\cos^2 2x= \frac{1+\cos4x}2.\]</p><myexample><p>如图, 在平面直角坐标系中, 以 $Ox$ 正半轴为始边作两个锐角 $\alpha$, $\beta$, 它们的终边分别与单位圆交于点 $A$, $B$, 横坐标分别为 $\dfrac{\sqrt2}{10}$, $\dfrac{2\sqrt5}{5}$. 求 $\tan(\alpha+\beta)$ 和 $\alpha+2\beta$ 的值.</p><p><center>\includegraphics[scale=1.5]{2021-0307-1150-crop}</center></p></myexample><mysolution><p>由三角函数值的定义, 点 $A$ 的坐标为 $(\cos\alpha,\sin\alpha)$, 点 $B$ 的坐标为 $(\cos\beta,\sin\beta)$. 结合已知可得,
+\[\cos\alpha= \dfrac{\sqrt2}{10},\
+\sin\alpha= \dfrac{7\sqrt2}{10},\quad
+\cos\beta= \dfrac{2\sqrt5}{5},\
+\sin\beta= \dfrac{\sqrt5}{5},\]
+所以 $\tan\alpha= 7$, $\tan\beta= \dfrac12$, 而
+\[\tan(\alpha+\beta)
+= \frac{\tan\alpha+ \tan\beta}{1- \tan\alpha\tan\beta}
+= -3.\]</p><p>同理, 由 $\tan(\alpha+2\beta)= \tan((\alpha+\beta)+ \beta)$ 可以算出 $\tan(\alpha+2\beta)= -1$. 而已知表明,
+\[\alpha\in \Bigl(\frac\pi4,\frac\pi2\Bigr),\
+\beta\in \Bigl(0,\frac\pi4\Bigr),\quad\text{即}\quad
+\alpha+2\beta\in \Bigl(\frac\pi4,\pi\Bigr),\]
+所以 $\alpha+2\beta= \dfrac{3\pi}4$.</p></mysolution><myremark><p>通过求角的三角函数值可以确定角的大小, 但是需要根据题中角的取值范围选择合适的三角函数值, 以保证能得到唯一确定的角的大小. 例如, 若角的取值范围是 $(0,\pi)$, 则优先考虑余弦值; 若角的取值范围是 $\Bigl(-\dfrac\pi2,\dfrac\pi2\Bigr)$, 则优先考虑正弦值. 对前述两个取值范围, 均可以考虑正切值 (为什么?).</p></myremark><myexample><p>若 $|\cos\theta|= \dfrac15$, $\dfrac{5\pi}{2}< \theta< 3\pi$, 求 $\sin\dfrac\theta2$ 的值.</p></myexample><mysolution><p>由题意, $\cos\theta< 0$, 所以 $\cos\theta= -\dfrac15$, 即
+\[1- 2\sin^2\frac\theta2= -\dfrac15,\quad\text{即}\quad
+\sin^2\frac\theta2= \frac35.\]
+因为 $\dfrac{5\pi}{4}< \dfrac\theta2< \dfrac{3\pi}2$, 所以 $\sin\dfrac\theta2< 0$, 故 $\sin\dfrac\theta2= -\dfrac{\sqrt{15}}{5}$.</p></mysolution></p><p><myexample><p>比较大小: $a= \dfrac{\sqrt2}{2}(\sin17^\circ+ \cos17^\circ)$, $b= 2\cos^2 13^\circ- 1$, $c=\dfrac{\sqrt3}{2}$.</p></myexample><mysolution><p>由于 $a$, $b$ 均不能计算具体值, 所以应将三者转化为同名 (即同为正弦或同为余弦) 三角函数式, 利用对应函数的单调性比较大小. 因为
+\[\begin{aligned}
+a&= \frac{\sqrt2}{2}(\sin17^\circ+ \cos17^\circ)\\
+&= \cos45^\circ\sin17^\circ+ \sin45^\circ\cos17^\circ\\
+&= \sin(17^\circ+ 45^\circ)= \sin62^\circ,
+\end{aligned}\]
+而 $b= \cos 26^\circ= \sin 64^\circ$, $c= \sin 60^\circ$, 由正弦函数在 $(0^\circ, 90^\circ)$ 上单调递增可知, $b>a>c$.</p></mysolution><myremark><p>上题对 $b$ 的变形用了辅助角公式 $\cos\alpha= \sin(90^\circ- \alpha)$. 此外, 也可以将 $a$, $b$, $c$ 分别化为 $\cos28^\circ$, $\cos26^\circ$, $\cos30^\circ$, 利用余弦函数在 $(0^\circ, 90^\circ)$ 上单调递减仍可得上述结果.</p></myremark><myexample><p>(1) 化简: $\dfrac1{\sin10^\circ}- \dfrac{\sqrt3}{\cos10^\circ}$;\quad
+(2) 验证: $\dfrac{1- \cos2\theta}{1+ \cos2\theta}= \tan^2\theta$.</p></myexample><mysolution><p>(1) 通分后用辅助角公式和二倍角公式, 原式化为
+\[\begin{aligned}
+& \frac{\cos10^\circ- \sqrt3\sin10^\circ}{\sin10^\circ\cos10^\circ}
+= \frac{2\Bigl(\dfrac12 \cos10^\circ- \dfrac{\sqrt3}{2}\sin10^\circ\Bigr)}{\dfrac12\sin20^\circ}\\
+={}& \frac4{\sin20^\circ}(\sin30^\circ\cos10^\circ- \cos30^\circ\sin10^\circ)\\
+={}& \frac4{\sin20^\circ}\sin(30^\circ- 10^\circ)
+= 4.
+\end{aligned}\]</p><p>(2) 将二倍角公式 $\cos2\theta= 1-2\sin^2\theta= 2\cos^2\theta-1$ 分别代入分式的分子和分母, 可得
+\[\dfrac{1- (1-2\sin^2\theta)}{1+ (2\cos^2\theta-1)}
+= \frac{\sin^2\theta}{\cos^2\theta},\]
+此即为 $\tan^2\theta$.</p></mysolution><myexample><p>已知 $\sin\alpha= \cos2\alpha$, $\alpha\in\biggl(\dfrac\pi2, \pi\biggr)$, 求 $\tan\alpha$ 的值.</p></myexample><mysolution><p>由已知, $\sin\alpha= \cos2\alpha= 1- 2\sin^2\alpha$, 则 \[
+2\sin^2\alpha+ \sin\alpha- 1= 0,\quad
+\sin\alpha= \frac12,-1.\]
+因为 $\alpha\in\biggl(\dfrac\pi2, \pi\biggr)$, 所以 $\sin\alpha= \dfrac12$. 作三角函数线知, $\tan\alpha= -\dfrac{\sqrt3}3$.</p></mysolution></article><div class=docs-prevnext><a class="docs-prev button" href=/docs/trigonometry/trigonometric-function/trig-sum-diff><span class=arrow-prev>← </span><span>三角函数的和差角公式</span></a>
+<a class="docs-next button" href=/docs/trigonometry/trigonometric-function/trig-sum-prod><span>和差化积公式与积化和差公式</span><span class=arrow-next> →</span></a></div><p>作者邮箱 rong.liu@mail.bnu.edu.cn。</p><p>读者的支持是作者持续更新的动力😊</p><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#倍角公式与辅助角公式>倍角公式与辅助角公式</a></li></ul></nav></div></aside></main></body></html>

@@ -1,974 +1,152 @@
-<!DOCTYPE html>
-<html lang="zh" dir="ltr">
-<head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="指数函数 # 乘方是多个相同式子相乘的简写, 例如, \[ a^2= a\cdot a,\quad b^3= b\cdot b\cdot b.\] 对于正整数 $m,n$, 可知 \[\begin{gathered} a^m \cdot a^n= a^{m&#43;n},\\ (a^m)^n= a^{mn},\quad (ab)^m= a^m b^m. \end{gathered}\] 例如, \[ (4^2)^3= 4^2\cdot 4^2\cdot 4^2= 4^{2\cdot 3}.\] 当 $a\neq 0$ 且正整数 $m,n$ 满足 $m\geqslant n$ 时, \[ \frac{a^m}{a^n}= a^{m-n},\quad \frac{a^n}{a^m}= \frac1{a^{m-n}},\] 例如, \[ \frac{2^5}{2^3}= a^{5-3},\quad \frac{2^3}{2^5}= \frac1{2^{5-3}}.\] 特别地, 当 $m=n$ 时, 可得 \[ a^0= a^{n-n}= \frac{a^n}{a^n}= 1\quad (a\neq 0).\] 在公式 $a^m \cdot a^n= a^{m&#43;n}$ 中令 $m= -n$, 则 \[ a^{-n} \cdot a^n= a^{-n&#43;n}= a^0= 1,\] 所以规定 $a^{-n}= \dfrac1{a^n}$.">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="指数函数" />
-<meta property="og:description" content="指数函数 # 乘方是多个相同式子相乘的简写, 例如, \[ a^2= a\cdot a,\quad b^3= b\cdot b\cdot b.\] 对于正整数 $m,n$, 可知 \[\begin{gathered} a^m \cdot a^n= a^{m&#43;n},\\ (a^m)^n= a^{mn},\quad (ab)^m= a^m b^m. \end{gathered}\] 例如, \[ (4^2)^3= 4^2\cdot 4^2\cdot 4^2= 4^{2\cdot 3}.\] 当 $a\neq 0$ 且正整数 $m,n$ 满足 $m\geqslant n$ 时, \[ \frac{a^m}{a^n}= a^{m-n},\quad \frac{a^n}{a^m}= \frac1{a^{m-n}},\] 例如, \[ \frac{2^5}{2^3}= a^{5-3},\quad \frac{2^3}{2^5}= \frac1{2^{5-3}}.\] 特别地, 当 $m=n$ 时, 可得 \[ a^0= a^{n-n}= \frac{a^n}{a^n}= 1\quad (a\neq 0).\] 在公式 $a^m \cdot a^n= a^{m&#43;n}$ 中令 $m= -n$, 则 \[ a^{-n} \cdot a^n= a^{-n&#43;n}= a^0= 1,\] 所以规定 $a^{-n}= \dfrac1{a^n}$." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="/docs/algebra/pow-exp-log/exponent-function/" /><meta property="article:section" content="docs" />
-
-
-
-<title>指数函数 | 高中数学资料</title>
-<link rel="manifest" href="/manifest.json">
-<link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.6c08f1f220250ecc36dde6a6fa75fdd4247d84aaaa23d4bc157c9b2f8fa595bd.css" >
-  <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh.search.min.784ab3c077aed3c64574cb6afb6c2069baa00d2088ec733a85e8e0551c41cf97.js" ></script>
-
-  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
-<!--
-Made with Book Theme
-https://github.com/alex-shpak/hugo-book
--->
-  <link rel="stylesheet" href='/katex/katex.min.css' crossorigin="anonymous">
-
-
-<script defer src='/katex/katex.min.js' crossorigin="anonymous"></script>
-
-
-<script defer src='/katex/auto-render.min.js' 
-    onload="renderMathInElement(document.body);"></script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        renderMathInElement(document.body, {
-            
-            
-            delimiters: [
-                { left: '$$', right: '$$', display: true },
-                { left: '$', right: '$', display: false },
-                { left: '\\(', right: '\\)', display: false },
-                { left: '\\[', right: '\\]', display: true }
-            ],
-            
-            throwOnError: false
-        });
-    });
-</script>
-
-</head>
-<body dir="ltr">
-  <input type="checkbox" class="hidden toggle" id="menu-control" />
-  <input type="checkbox" class="hidden toggle" id="toc-control" />
-  <main class="container flex">
-    <aside class="book-menu">
-      <div class="book-menu-content">
-        
-  <nav>
-<h2 class="book-brand">
-  <a href="/"><span>高中数学资料</span>
-  </a>
-</h2>
-
-
-<div class="book-search">
-  <input type="text" id="book-search-input" placeholder="搜索" aria-label="搜索" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner hidden"></div>
-  <ul id="book-search-results"></ul>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-  
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-7fbb26c6156d78d59d607292b53948a4" class="toggle"  />
-    <label for="section-7fbb26c6156d78d59d607292b53948a4" class="flex justify-between">
-      <a href="/docs/prerequisite/" class="">预备知识</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-1e2f9b8b873223fe63fc7221375c0eb0" class="toggle"  />
-    <label for="section-1e2f9b8b873223fe63fc7221375c0eb0" class="flex justify-between">
-      <a href="/docs/prerequisite/ms-algebra/" class="">初中代数提要</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-algebra/quadratic-factorization/" class="">二次三项式的因式分解</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-algebra/quadratic-equation/" class="">一元二次方程的解法</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-algebra/veite-theorem/" class="">韦达定理</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-c1c4f99569969342f46afcb379e41254" class="toggle"  />
-    <label for="section-c1c4f99569969342f46afcb379e41254" class="flex justify-between">
-      <a href="/docs/prerequisite/ms-geometry/" class="">初中几何提要</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-geometry/symmetric-congruence-similar/" class="">对称、全等与相似</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-geometry/triangle/" class="">三角形</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-geometry/quadrilateral/" class="">四边形</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-geometry/circle/" class="">圆</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-geometry/area/" class="">平面图形的面积</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-53227ed5b540c99051432d70e3c9c4da" class="toggle"  />
-    <label for="section-53227ed5b540c99051432d70e3c9c4da" class="flex justify-between">
-      <a href="/docs/prerequisite/ms-function/" class="">初中函数提要</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-function/axis-coordinate/" class="">数轴与平面直角坐标系</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-function/linear-inverse/" class="">一次函数与反比例函数</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-function/quadratic-function-inequality/" class="">二次函数与二次不等式</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-function/graph-tranform/" class="">函数图象的变换</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-4adec7e7d2e2d6fa5eaee0a98a60892e" class="toggle"  />
-    <label for="section-4adec7e7d2e2d6fa5eaee0a98a60892e" class="flex justify-between">
-      <a href="/docs/prerequisite/set-logic/" class="">集合与简易逻辑</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/set-logic/set-def/" class="">集合的定义</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/set-logic/set-operation/" class="">集合的运算</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/set-logic/proposition-iff/" class="">命题与充要条件</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/set-logic/logical-quantifier/" class="">逻辑量词</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-0efa6e9487d50f8c7308e9898b74ff74" class="toggle"  />
-    <label for="section-0efa6e9487d50f8c7308e9898b74ff74" class="flex justify-between">
-      <a href="/docs/prerequisite/inequality/" class="">不等式</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/inequality/inequality-property/" class="">不等式的性质</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/inequality/abs-quadratic-inequality/" class="">绝对值不等式与二次不等式</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-  </ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</nav>
-
-
-
-
-  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
-
-
- 
-      </div>
-    </aside>
-
-    <div class="book-page">
-      <header class="book-header">
-        
-  <div class="flex align-center justify-between">
-  <label for="menu-control">
-    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
-  </label>
-
-  <strong>指数函数</strong>
-
-  <label for="toc-control">
-    
-    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
-    
-  </label>
-</div>
-
-
-  
-  <aside class="hidden clearfix">
-    
-  
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#指数函数">指数函数</a></li>
-  </ul>
-</nav>
-
-
-
-  </aside>
-  
- 
-      </header>
-
-      
-      
-  <article class="markdown"><h1 id="指数函数">
-  指数函数
-  <a class="anchor" href="#%e6%8c%87%e6%95%b0%e5%87%bd%e6%95%b0">#</a>
-</h1>
-<p>乘方是多个相同式子相乘的简写, 例如, \[
-    a^2= a\cdot a,\quad b^3= b\cdot b\cdot b.\]
+<!doctype html><html lang=zh dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="指数函数 # 乘方是多个相同式子相乘的简写, 例如, \[ a^2= a\cdot a,\quad b^3= b\cdot b\cdot b.\] 对于正整数 $m,n$, 可知 \[\begin{gathered} a^m \cdot a^n= a^{m+n},\\ (a^m)^n= a^{mn},\quad (ab)^m= a^m b^m. \end{gathered}\] 例如, \[ (4^2)^3= 4^2\cdot 4^2\cdot 4^2= 4^{2\cdot 3}.\] 当 $a\neq 0$ 且正整数 $m,n$ 满足 $m\geqslant n$ 时, \[ \frac{a^m}{a^n}= a^{m-n},\quad \frac{a^n}{a^m}= \frac1{a^{m-n}},\] 例如, \[ \frac{2^5}{2^3}= a^{5-3},\quad \frac{2^3}{2^5}= \frac1{2^{5-3}}.\] 特别地, 当 $m=n$ 时, 可得 \[ a^0= a^{n-n}= \frac{a^n}{a^n}= 1\quad (a\neq 0).\] 在公式 $a^m \cdot a^n= a^{m+n}$ 中令 $m= -n$, 则 \[ a^{-n} \cdot a^n= a^{-n+n}= a^0= 1,\] 所以规定 $a^{-n}= \dfrac1{a^n}$."><meta name=theme-color content="#FFFFFF"><meta property="og:title" content="指数函数"><meta property="og:description" content="指数函数 # 乘方是多个相同式子相乘的简写, 例如, \[ a^2= a\cdot a,\quad b^3= b\cdot b\cdot b.\] 对于正整数 $m,n$, 可知 \[\begin{gathered} a^m \cdot a^n= a^{m+n},\\ (a^m)^n= a^{mn},\quad (ab)^m= a^m b^m. \end{gathered}\] 例如, \[ (4^2)^3= 4^2\cdot 4^2\cdot 4^2= 4^{2\cdot 3}.\] 当 $a\neq 0$ 且正整数 $m,n$ 满足 $m\geqslant n$ 时, \[ \frac{a^m}{a^n}= a^{m-n},\quad \frac{a^n}{a^m}= \frac1{a^{m-n}},\] 例如, \[ \frac{2^5}{2^3}= a^{5-3},\quad \frac{2^3}{2^5}= \frac1{2^{5-3}}.\] 特别地, 当 $m=n$ 时, 可得 \[ a^0= a^{n-n}= \frac{a^n}{a^n}= 1\quad (a\neq 0).\] 在公式 $a^m \cdot a^n= a^{m+n}$ 中令 $m= -n$, 则 \[ a^{-n} \cdot a^n= a^{-n+n}= a^0= 1,\] 所以规定 $a^{-n}= \dfrac1{a^n}$."><meta property="og:type" content="article"><meta property="og:url" content="/docs/algebra/pow-exp-log/exponent-function/"><meta property="article:section" content="docs"><title>指数函数 | 高中数学资料</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.6c08f1f220250ecc36dde6a6fa75fdd4247d84aaaa23d4bc157c9b2f8fa595bd.css><script defer src=/flexsearch.min.js></script>
+<script defer src=/zh.search.min.7287a52d6d4b6df1bd72f5e28bb3775dbf17b637e7c63244f3fb9df429bae232.js></script>
+<script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js></script>
+<link rel=stylesheet href=/katex/katex.min.css crossorigin=anonymous><script defer src=/katex/katex.min.js crossorigin=anonymous></script>
+<script defer src=/katex/auto-render.min.js onload=renderMathInElement(document.body)></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1},{left:"\\[",right:"\\]",display:!0}],throwOnError:!1})})</script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a href=/><span>高中数学资料</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=搜索 aria-label=搜索 maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li><input type=checkbox id=section-7fbb26c6156d78d59d607292b53948a4 class=toggle>
+<label for=section-7fbb26c6156d78d59d607292b53948a4 class="flex justify-between"><a href=/docs/prerequisite/>预备知识</a></label><ul><li><input type=checkbox id=section-1e2f9b8b873223fe63fc7221375c0eb0 class=toggle>
+<label for=section-1e2f9b8b873223fe63fc7221375c0eb0 class="flex justify-between"><a href=/docs/prerequisite/ms-algebra/>初中代数提要</a></label><ul><li><a href=/docs/prerequisite/ms-algebra/quadratic-factorization/>二次三项式的因式分解</a></li><li><a href=/docs/prerequisite/ms-algebra/quadratic-equation/>一元二次方程的解法</a></li><li><a href=/docs/prerequisite/ms-algebra/veite-theorem/>韦达定理</a></li></ul></li><li><input type=checkbox id=section-c1c4f99569969342f46afcb379e41254 class=toggle>
+<label for=section-c1c4f99569969342f46afcb379e41254 class="flex justify-between"><a href=/docs/prerequisite/ms-geometry/>初中几何提要</a></label><ul><li><a href=/docs/prerequisite/ms-geometry/symmetric-congruence-similar/>对称、全等与相似</a></li><li><a href=/docs/prerequisite/ms-geometry/triangle/>三角形</a></li><li><a href=/docs/prerequisite/ms-geometry/quadrilateral/>四边形</a></li><li><a href=/docs/prerequisite/ms-geometry/circle/>圆</a></li><li><a href=/docs/prerequisite/ms-geometry/area/>平面图形的面积</a></li></ul></li><li><input type=checkbox id=section-53227ed5b540c99051432d70e3c9c4da class=toggle>
+<label for=section-53227ed5b540c99051432d70e3c9c4da class="flex justify-between"><a href=/docs/prerequisite/ms-function/>初中函数提要</a></label><ul><li><a href=/docs/prerequisite/ms-function/axis-coordinate/>数轴与平面直角坐标系</a></li><li><a href=/docs/prerequisite/ms-function/linear-inverse/>一次函数与反比例函数</a></li><li><a href=/docs/prerequisite/ms-function/quadratic-function-inequality/>二次函数与二次不等式</a></li><li><a href=/docs/prerequisite/ms-function/graph-tranform/>函数图象的变换</a></li></ul></li><li><input type=checkbox id=section-4adec7e7d2e2d6fa5eaee0a98a60892e class=toggle>
+<label for=section-4adec7e7d2e2d6fa5eaee0a98a60892e class="flex justify-between"><a href=/docs/prerequisite/set-logic/>集合与简易逻辑</a></label><ul><li><a href=/docs/prerequisite/set-logic/set-def/>集合的定义</a></li><li><a href=/docs/prerequisite/set-logic/set-operation/>集合的运算</a></li><li><a href=/docs/prerequisite/set-logic/proposition-iff/>命题与充要条件</a></li><li><a href=/docs/prerequisite/set-logic/logical-quantifier/>逻辑量词</a></li></ul></li><li><input type=checkbox id=section-0efa6e9487d50f8c7308e9898b74ff74 class=toggle>
+<label for=section-0efa6e9487d50f8c7308e9898b74ff74 class="flex justify-between"><a href=/docs/prerequisite/inequality/>不等式</a></label><ul><li><a href=/docs/prerequisite/inequality/inequality-property/>不等式的性质</a></li><li><a href=/docs/prerequisite/inequality/abs-quadratic-inequality/>绝对值不等式与二次不等式</a></li></ul></li></ul></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
+<strong>指数函数</strong>
+<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#指数函数>指数函数</a></li></ul></nav></aside></header><article class=markdown><h1 id=指数函数>指数函数
+<a class=anchor href=#%e6%8c%87%e6%95%b0%e5%87%bd%e6%95%b0>#</a></h1><p>乘方是多个相同式子相乘的简写, 例如, \[
+a^2= a\cdot a,\quad b^3= b\cdot b\cdot b.\]
 对于正整数 $m,n$, 可知 \[\begin{gathered}
-    a^m \cdot a^n= a^{m+n},\\
-    (a^m)^n= a^{mn},\quad
-    (ab)^m= a^m b^m.
+a^m \cdot a^n= a^{m+n},\\
+(a^m)^n= a^{mn},\quad
+(ab)^m= a^m b^m.
 \end{gathered}\]
 例如, \[
-    (4^2)^3= 4^2\cdot 4^2\cdot 4^2= 4^{2\cdot 3}.\]
-</p>
-<p>当 $a\neq 0$ 且正整数 $m,n$ 满足 $m\geqslant n$ 时, \[
-    \frac{a^m}{a^n}= a^{m-n},\quad
-    \frac{a^n}{a^m}= \frac1{a^{m-n}},\]
+(4^2)^3= 4^2\cdot 4^2\cdot 4^2= 4^{2\cdot 3}.\]</p><p>当 $a\neq 0$ 且正整数 $m,n$ 满足 $m\geqslant n$ 时, \[
+\frac{a^m}{a^n}= a^{m-n},\quad
+\frac{a^n}{a^m}= \frac1{a^{m-n}},\]
 例如, \[
-    \frac{2^5}{2^3}= a^{5-3},\quad
-    \frac{2^3}{2^5}= \frac1{2^{5-3}}.\]
+\frac{2^5}{2^3}= a^{5-3},\quad
+\frac{2^3}{2^5}= \frac1{2^{5-3}}.\]
 特别地, 当 $m=n$ 时, 可得 \[
-    a^0= a^{n-n}= \frac{a^n}{a^n}= 1\quad (a\neq 0).\]
-</p>
-<p>在公式 $a^m \cdot a^n= a^{m+n}$ 中令 $m= -n$, 则 \[
-    a^{-n} \cdot a^n= a^{-n+n}= a^0= 1,\]
+a^0= a^{n-n}= \frac{a^n}{a^n}= 1\quad (a\neq 0).\]</p><p>在公式 $a^m \cdot a^n= a^{m+n}$ 中令 $m= -n$, 则 \[
+a^{-n} \cdot a^n= a^{-n+n}= a^0= 1,\]
 所以规定 $a^{-n}= \dfrac1{a^n}$. 在公式 $(a^m)^n= a^{mn}$ 中令 $m= \dfrac1n$, 则 \[
-    (a^{\frac1n})^n= a^{\frac1n\cdot n}= a,\]
-即 $a^{\frac1n}$ 的 $n$ 次方为 $a$, 所以规定 $a^{\frac1n}= \sqrt[n]{a}$.
-</p>
-<p>上述公式汇总如下: \[\begin{gathered}
-    a^m \cdot a^n= a^{m+n},\quad a^0= 1,\\
-    (a^m)^n= a^{mn},\quad
-    (ab)^m= a^m b^m,\\
-    a^{-n}= \dfrac1{a^n},\quad
-    a^{\frac1n}= \sqrt[n]{a}.
+(a^{\frac1n})^n= a^{\frac1n\cdot n}= a,\]
+即 $a^{\frac1n}$ 的 $n$ 次方为 $a$, 所以规定 $a^{\frac1n}= \sqrt[n]{a}$.</p><p>上述公式汇总如下: \[\begin{gathered}
+a^m \cdot a^n= a^{m+n},\quad a^0= 1,\\
+(a^m)^n= a^{mn},\quad
+(ab)^m= a^m b^m,\\
+a^{-n}= \dfrac1{a^n},\quad
+a^{\frac1n}= \sqrt[n]{a}.
 \end{gathered}\]
 虽然在前面均假设 $m,n$ 为正整数, 但是上面的 $6$ 个公式可以推广到 $m,n$ 为任意实数的情形 (记忆时仍不妨只考虑正整数的情形). 最后两个式子可记为“指数中的负号表示取倒数, 分母表示开根号”, 此外“指数中的分子表示乘方”, 例如, \[
-    a^{-\frac34}= \frac1{a^{\frac34}}= \frac1{\sqrt[4]{a^3}}.\]
-</p>
-<p>\begin{example}\label{exa:201201-2020}
-    已知函数
-    \[f(x)= \begin{cases}
-        (4a-3)x+a+\dfrac12, & x< 0,\\
+a^{-\frac34}= \frac1{a^{\frac34}}= \frac1{\sqrt[4]{a^3}}.\]</p><p>\begin{example}\label{exa:201201-2020}
+已知函数
+\[f(x)= \begin{cases}
+(4a-3)x+a+\dfrac12, & x< 0,\\
         a^x, & x\geqslant 0.
-    \end{cases}\]
-</p>
-<p>(1) 若函数的图形经过点 $\biggl(3,\dfrac18\biggr)$, 求 $a$ 的值.
-</p>
-<p>(2) 若对任意的 $x_1\neq x_2$, 都有 $\dfrac{f(x_1)-f(x_2)}{x_1-x_2}< 0$ 成立, 求 $a$ 的取值范围.
-</p>
-</myexample>
-<mysolution>
-    <p>(1) 由题意, $f(3)= \dfrac18$ 即 $a^3=\dfrac18$, 所以 $a=\dfrac12$.
-</p>
-<p>(2) $\dfrac{f(x_1)-f(x_2)}{x_1-x_2}< 0$ 表明 $x_1$, $x_2$ 的大小关系与 $f(x_1)$, $f(x_2)$ 的大小关系恰好反过来 (即若 $x_1< x_2$, 则 $f(x_1)>f(x_2)$), 也就是 $f(x)$ 单调递减. 再由 $f(x)$ 的解析式知 (参考“2020 年 10 月 31 日答疑记录”的第三个例子)
-    \[\left\{\!\!\begin{array}{l}
-        4a-3< 0,\ 0< a< 1,\\
-        a+\dfrac12\geqslant a^0,
-        \end{array}\right.\ \text{解得}\quad 0< a< \frac12,\]
-    所以 $a\in\biggl(0,\dfrac12\biggr)$.
-</p>
-</mysolution>
-</p>
-<p>例 \ref{exa:201201-2020} 中 $\dfrac{f(x_1)-f(x_2)}{x_1-x_2}< 0$ 表明 $f(x)$ 单调递减, 类似的结论 (需理解并熟记) 还有
+\end{cases}\]</p><p>(1) 若函数的图形经过点 $\biggl(3,\dfrac18\biggr)$, 求 $a$ 的值.</p><p>(2) 若对任意的 $x_1\neq x_2$, 都有 $\dfrac{f(x_1)-f(x_2)}{x_1-x_2}< 0$ 成立, 求 $a$ 的取值范围.</p></myexample><mysolution><p>(1) 由题意, $f(3)= \dfrac18$ 即 $a^3=\dfrac18$, 所以 $a=\dfrac12$.</p><p>(2) $\dfrac{f(x_1)-f(x_2)}{x_1-x_2}< 0$ 表明 $x_1$, $x_2$ 的大小关系与 $f(x_1)$, $f(x_2)$ 的大小关系恰好反过来 (即若 $x_1< x_2$, 则 $f(x_1)>f(x_2)$), 也就是 $f(x)$ 单调递减. 再由 $f(x)$ 的解析式知 (参考“2020 年 10 月 31 日答疑记录”的第三个例子)
+\[\left\{\!\!\begin{array}{l}
+4a-3< 0,\ 0< a< 1,\\
+a+\dfrac12\geqslant a^0,
+\end{array}\right.\ \text{解得}\quad 0< a< \frac12,\]
+所以 $a\in\biggl(0,\dfrac12\biggr)$.</p></mysolution></p><p>例 \ref{exa:201201-2020} 中 $\dfrac{f(x_1)-f(x_2)}{x_1-x_2}< 0$ 表明 $f(x)$ 单调递减, 类似的结论 (需理解并熟记) 还有
 \[\begin{gathered}
-    \dfrac{f(x_1)-f(x_2)}{x_1-x_2}>0
-    \Leftrightarrow (f(x_1)-f(x_2))(x_1-x_2)>0
-    \Leftrightarrow \text{$f(x)$ 单调递增,}\\
-    \dfrac{f(x_1)-f(x_2)}{x_1-x_2}< 0
-    \Leftrightarrow (f(x_1)-f(x_2))(x_1-x_2)< 0
-    \Leftrightarrow \text{$f(x)$ 单调递减.}
+\dfrac{f(x_1)-f(x_2)}{x_1-x_2}>0
+\Leftrightarrow (f(x_1)-f(x_2))(x_1-x_2)>0
+\Leftrightarrow \text{$f(x)$ 单调递增,}\\
+\dfrac{f(x_1)-f(x_2)}{x_1-x_2}< 0
+\Leftrightarrow (f(x_1)-f(x_2))(x_1-x_2)< 0
+\Leftrightarrow \text{$f(x)$ 单调递减.}
+\end{gathered}\]</p><p>常用的幂 (指数) 的运算法则有 (以下均假设 $a>0$, $m$, $n\in\realnum$):
+\[\begin{gathered}
+a^m\cdot a^n= a^{m+n},\quad \frac{a^m}{a^n}= a^{m-n},\quad
+(a^m)^n= a^{mn},\quad (ab)^m= a^mb^m,\\
+a^0= 1,\quad a^{-n}= \frac1{a^n},\quad a^{\frac1m}=\sqrt[m]{a}.
 \end{gathered}\]
-</p>
-<p>常用的幂 (指数) 的运算法则有 (以下均假设 $a>0$, $m$, $n\in\realnum$):
-\[\begin{gathered}
-    a^m\cdot a^n= a^{m+n},\quad \frac{a^m}{a^n}= a^{m-n},\quad 
-        (a^m)^n= a^{mn},\quad (ab)^m= a^mb^m,\\
-    a^0= 1,\quad a^{-n}= \frac1{a^n},\quad a^{\frac1m}=\sqrt[m]{a}.
-    \end{gathered}\]
 以上法则中, 前四个可以按 $m$, $n$ 为正整数记忆, 后三个可以由前三个得到. 最后两个可以简记为: 指数中的负号表示“取倒数”, 分数表示“开方”. 此外, 这些法则还可以嵌套使用, 比如
 \[a^{-\frac1m}= \frac1{\sqrt[m]{a}},\quad
-    a^{\frac{m}n}= (a^m)^\frac1n= \sqrt[n]{a^m}.\]
-</p>
-<p>常用的对数运算法则见“2020 年 11 月 8 日答疑记录”的第二部分.
-</p>
-<p><myexample>
-<p>计算: 
-    (1) $2\sqrt{3}\times 3\sqrt[3]{1.5}\times \sqrt[6]{12}$;\qquad
-    (2) $32^{-\frac35}- \biggl(2\dfrac{10}{27}\biggr)^{-\frac23}+ 0.5^{-2}$.
-</p>
-</myexample>
-<mysolution>
-    <p>根据指数的运算法则,
-    \[\begin{aligned}
-        2\sqrt{3}\times 3\sqrt[3]{1.5}\times \sqrt[6]{12}
-        &= 2\times 3^{\frac12}\times 3\times 
-            \biggl(\frac32\biggr)^{\frac13}\times
-            (2^2\times 3)^{\frac16}\\
-        &= 2^{1-\frac13+\frac26}\times 3^{\frac12+1+\frac13+\frac16}\\
-        &= 2\times 3^2= 18,\\
+a^{\frac{m}n}= (a^m)^\frac1n= \sqrt[n]{a^m}.\]</p><p>常用的对数运算法则见“2020 年 11 月 8 日答疑记录”的第二部分.</p><p><myexample><p>计算:
+(1) $2\sqrt{3}\times 3\sqrt[3]{1.5}\times \sqrt[6]{12}$;\qquad
+(2) $32^{-\frac35}- \biggl(2\dfrac{10}{27}\biggr)^{-\frac23}+ 0.5^{-2}$.</p></myexample><mysolution><p>根据指数的运算法则,
+\[\begin{aligned}
+2\sqrt{3}\times 3\sqrt[3]{1.5}\times \sqrt[6]{12}
+&= 2\times 3^{\frac12}\times 3\times
+\biggl(\frac32\biggr)^{\frac13}\times
+(2^2\times 3)^{\frac16}\\
+&= 2^{1-\frac13+\frac26}\times 3^{\frac12+1+\frac13+\frac16}\\
+&= 2\times 3^2= 18,\\
         32^{-\frac35}- \biggl(2\frac{10}{27}\biggr)^{-\frac23}+ 0.5^{-2}
-        &= 2^{5\times(-\frac35)}+ \biggl(\frac{64}{27}\biggr)^{-\frac23}+ 2^{(-1)\times(-2)}\\
-        &= 2^{-3}+ \frac{3^{3\times\frac23}}{2^{6\times\frac23}}+ 2^2\\
-        &= \frac18- \frac9{16}+ 4= \frac{57}{16}.
-    \end{aligned}\]
-</p>
-</mysolution>
-</p>
-<p>计算指数式, 一般先化为整数表示, 即小数化最简分数, 根式化分数指数, 同时注意分解质因数, 然后合并同底数的指数即可.
-</p>
-<p>指数函数 $y= a^x$ ($x\in\realnum$, $a>0$ 且 $a\neq 1$) 的大致图形如下:
-</p>
-<p><center>
-        \includegraphics[scale=1]{2020-1206-1030-crop}\qquad
-        \includegraphics[scale=1]{2020-1206-1040-crop}
-    </center>
-</p>
-<p>由图可知, 指数函数 $y= a^x$ 的特征有
-</p>
-<p>(1) 当 $0< a< 1$ 时, 函数单调递减; 当 $a>1$ 时, 函数单调递增;
-</p>
-<p>(2) 恒过点 $(0,1)$ (因为 $a^0=1$), 且以 $x$ 轴为渐近线.
-</p>
-<p>幂函数、指数函数和对数函数相关的“图形过定点”问题, 一般是考虑利用恒等式
+&= 2^{5\times(-\frac35)}+ \biggl(\frac{64}{27}\biggr)^{-\frac23}+ 2^{(-1)\times(-2)}\\
+&= 2^{-3}+ \frac{3^{3\times\frac23}}{2^{6\times\frac23}}+ 2^2\\
+&= \frac18- \frac9{16}+ 4= \frac{57}{16}.
+\end{aligned}\]</p></mysolution></p><p>计算指数式, 一般先化为整数表示, 即小数化最简分数, 根式化分数指数, 同时注意分解质因数, 然后合并同底数的指数即可.</p><p>指数函数 $y= a^x$ ($x\in\realnum$, $a>0$ 且 $a\neq 1$) 的大致图形如下:</p><p><center>\includegraphics[scale=1]{2020-1206-1030-crop}\qquad
+\includegraphics[scale=1]{2020-1206-1040-crop}</center></p><p>由图可知, 指数函数 $y= a^x$ 的特征有</p><p>(1) 当 $0< a< 1$ 时, 函数单调递减; 当 $a>1$ 时, 函数单调递增;</p><p>(2) 恒过点 $(0,1)$ (因为 $a^0=1$), 且以 $x$ 轴为渐近线.</p><p>幂函数、指数函数和对数函数相关的“图形过定点”问题, 一般是考虑利用恒等式
 \[a^0=1\ (a\neq0),\quad \log_a 1=0\ (a>0,\ a\neq1)\]
-将函数中含参数的部分化为常数.
-</p>
-<p><myexample>
-<p>(1) 若 $a>0$ 且 $a\neq 1$, 求函数 $y=a^x+1$ 的图形所过的定点.
-</p>
-<p>(2) 若 $a>0$ 且 $a\neq 1$, 求函数 $y=\log_a x-1$ 的图形所过的定点.
-</p>
-</myexample>
-<mysolution>
-    <p>(1) 令 $x=0$ 知, 无论 $a$ 为何值, 总有 $y=2$, 即函数 $y=a^x+1$ 的图形过定点 $(0,2)$.
-</p>
-<p>(2) 令 $x=1$ 知, 无论 $a$ 为何值, 总有 $y=-1$, 即函数 $y=\log_a x-1$ 的图形过定点 $(1,-1)$.
-</p>
-</mysolution>
-</p>
-<p>用类似的方法可以求得
-</p>
-<p>$y=a^x-1$ 的图形过定点 $(0,0)$;
-</p>
-<p>$y=2a^x+1$ 的图形过定点 $(0,3)$; 
-</p>
-<p>$y=3a^{x-1}+3$ 的图形过定点 $(1,6)$; 
-</p>
-<p>$y=\log_a (2x+1)+4$ 的图形过定点 $(0,4)$; 等等.
-</p>
-<myexample>
-<p>已知 $x+2y=1$, 求 $2^x+4^y$ 的最小值.
-</p>
-</myexample>
-<mysolution>
-    <p>因为 $x+2y=1$, 而由均值不等式,
-    \[2^x+4^y\geqslant 2\sqrt{2^x\cdot 4^y}
-        = 2\sqrt{2^{x+2y}}= 2\sqrt2,\]
-   “$=$”成立当且仅当 $2^x=4^y$ 即 $x=2y=\dfrac12$, 所以 $2^x+4^y$ 的最小值为 $2\sqrt2$.
-</p>
-</mysolution>
-<myexample>
-<p>设函数 $f(x)=\begin{cases}
-        \biggl(\dfrac12\biggr)^x-1, & x< 0,\\
+将函数中含参数的部分化为常数.</p><p><myexample><p>(1) 若 $a>0$ 且 $a\neq 1$, 求函数 $y=a^x+1$ 的图形所过的定点.</p><p>(2) 若 $a>0$ 且 $a\neq 1$, 求函数 $y=\log_a x-1$ 的图形所过的定点.</p></myexample><mysolution><p>(1) 令 $x=0$ 知, 无论 $a$ 为何值, 总有 $y=2$, 即函数 $y=a^x+1$ 的图形过定点 $(0,2)$.</p><p>(2) 令 $x=1$ 知, 无论 $a$ 为何值, 总有 $y=-1$, 即函数 $y=\log_a x-1$ 的图形过定点 $(1,-1)$.</p></mysolution></p><p>用类似的方法可以求得</p><p>$y=a^x-1$ 的图形过定点 $(0,0)$;</p><p>$y=2a^x+1$ 的图形过定点 $(0,3)$;</p><p>$y=3a^{x-1}+3$ 的图形过定点 $(1,6)$;</p><p>$y=\log_a (2x+1)+4$ 的图形过定点 $(0,4)$; 等等.</p><myexample><p>已知 $x+2y=1$, 求 $2^x+4^y$ 的最小值.</p></myexample><mysolution><p>因为 $x+2y=1$, 而由均值不等式,
+\[2^x+4^y\geqslant 2\sqrt{2^x\cdot 4^y}
+= 2\sqrt{2^{x+2y}}= 2\sqrt2,\]
+“$=$”成立当且仅当 $2^x=4^y$ 即 $x=2y=\dfrac12$, 所以 $2^x+4^y$ 的最小值为 $2\sqrt2$.</p></mysolution><myexample><p>设函数 $f(x)=\begin{cases}
+\biggl(\dfrac12\biggr)^x-1, & x< 0,\\
         x^{\frac12}, & x\geqslant 0,
-    \end{cases}$ 求不等式 $f(x)\geqslant 1$ 的解.
-</p>
-</myexample>
-<mysolution>
-    <p>(1) 若 $x< 0$, 则不等式化为 
-    \[\biggl(\frac12\biggr)^x-1\geqslant 1,\quad \text{即}\quad
-        \biggl(\frac12\biggr)^x\geqslant 2= \biggl(\frac12\biggr)^{-1}.\]
-    由函数 $y=\biggl(\dfrac12\biggr)^x$ 单调递减可知, $x\in(-\infty,-1]$.
-</p>
-<p>(2) 若 $x\geqslant 0$, 则不等式化为 $x^{\frac12}\geqslant 1$. 由函数 $y=x^{\frac12}$ 在 $[0,+\infty)$ 上单调递增可知, $x\in[1,+\infty)$.
-</p>
-<p>综上所述, $x\in(-\infty,-1]\cup [1,+\infty)$.
-</p>
-</mysolution>
-<p>解简单的指数、对数方程或不等式, 一般是利用指数、对数的单调性 (参考“2020 年 11 月 21 日答疑记录”). 具体来说, 有两种方法.
-</p>
-<p>方法一: 化为同底的指数或对数 (简记为“化同底”). 例如, 指数方程 $2^x=4$ 可化为 $2^x=2^2$, 由 $y=2^x$ 单调递增可知, $x=2$. 类似地, $\log_2 x= 2$ 可化为 $\log_2 x= \log_2 4$, 由 $y=\log_2 x$ 单调递增可知, $x=4$. 再如, $2^x>4$ 可化为 $2^x>2^2$, 则 $x>2$; $\log_{0.5} x> 2$ 可化为 $\log_{0.5} x> \log_{0.5} 0.5^2$, 由 $y=\log_{0.5} x$ 单调递减可知, $0< x< 0.25$. 注意, 对数函数有自然定义域, 即真数 (此处的 $x$) 大于零.
-</p>
-<p>方法二: 直接取对数或构造指数式. 此方法涉及指数和对数的运算法则 (参考“2020 年 11 月 8 日答疑记录”). 例如, 对方程 $2^x=4$ 两边取以 $2$ 为底的对数, 可得 $\log_2 2^x= \log_2 4$, 即 $x=2$. 类似地, 将 $\log_2 x< 2$ 化为 $2^{\log_2 x}< 2^2$, 可知 $0< x< 4$ (注意对数函数的自然定义域). 再如, 由 $2^x>3$ 可得 $x>\log_2 3$ (这个例子用前一个方法来解并不方便). 在这些例子中, 新构造的对数式或指数式的底均应与原式中的相同.
-</p>
-<p><myexample>
-<p>解下列不等式: 
-</p>
-<p>(1) $\biggl(\dfrac12\biggr)^x>4$;\qquad
-    (2) $\log_3 x> 2$;\qquad
-    (3) $3^{x^2+x}>9$;\qquad
-    (4) $\log_5 (x^2-4x)\leqslant 1$.
-</p>
-</myexample>
-<mysolution>
-    <p>(1) 方法一: 不等式化为 $\biggl(\dfrac12\biggr)^x> \biggl(\dfrac12\biggr)^{-2}$, 所以 $x\in(-\infty,-2)$.
-</p>
-<p>方法二: 不等式化为 $\log_{\frac12}\biggl(\dfrac12\biggr)^x< \log_{\frac12} 4= \log_{\frac12} \biggl(\dfrac12\biggr)^{-2}$, 所以 $x\in(-\infty,-2)$.
-</p>
-<p>(2) 方法一: 不等式化为 $\log_3 x> \log_3 9$, 所以 $x\in(9,+\infty)$.
-</p>
-<p>方法二: 不等式化为 $3^{\log_3 x}> 3^2$, 所以 $x\in(9,+\infty)$.
-</p>
-<p>(3) 方法一: 不等式化为 
-    \[3^{x^2+x}>3^2,\quad\text{即}\quad x^2+x>2,\]
-    解得 $x\in(-\infty,-2)\cup (1,+\infty)$.
-</p>
-<p>方法二: 不等式化为 $\log_3 3^{x^2+x}>\log_3 9$, 仍可解得 $x\in(-\infty,-2)\cup (1,+\infty)$.
-</p>
-<p>(4) 方法一: 不等式化为 
-    \[\log_5 (x^2-4x)\leqslant \log_5 5,\quad\text{即}\quad 0< x^2-4x\leqslant 5,\]
-    解得 $x\in[-1,0)\cup (4,5]$.
-</p>
-<p>方法二: 不等式化为 $5^{\log_5 (x^2-4x)}\leqslant 5^1$, 仍可解得 $x\in[-1,0)\cup (4,5]$.
-</p>
-</mysolution>
-<myexample>
-<p>设 $a=\biggl(\dfrac35\biggr)^{\frac25}$, $b=\biggl(\dfrac25\biggr)^{\frac35}$, $c=\biggl(\dfrac25\biggr)^{\frac25}$, 比较这三者的大小.
-</p>
-</myexample>
-<mysolution>
-    <p>方法一: 因为 $a$, $c$ 指数相同, 所以考虑幂函数 $f(x)=x^{\frac25}$. 由 $f(x)$ 单调递增可知, $f\biggl(\dfrac35\biggr)> f\biggl(\dfrac25\biggr)$, 即 $a>c$.
-</p>
-<p>因为 $b$, $c$ 底数相同, 所以考虑指数函数 $g(x)=\biggl(\dfrac25\biggr)^x$. 由 $g(x)$ 单调递减可知, $g\biggl(\dfrac35\biggr)< g\biggl(\dfrac25\biggr)$, 即 $b< c$.
-</p>
-<p>综上所述, $b< c< a$.
-</p>
-<p>方法二: 也可以先考虑 $a^5=\biggl(\dfrac35\biggr)^2$, $b^5=\biggl(\dfrac25\biggr)^3$, $c^5=\biggl(\dfrac25\biggr)^2$, 这三者的大小. 因为
-    \[\biggl(\dfrac35\biggr)^2= \frac{45}{125},\quad
-      \biggl(\dfrac25\biggr)^3= \frac{8}{125},\quad
-      \biggl(\dfrac25\biggr)^2= \frac{20}{125},\]
-    所以 $b^5< c^5< a^5$. 由 $h(x)= x^5$ 单调递增可知, $b< c< a$.
-</p>
-</mysolution>
-<myexample>
-<p>若实数 $a$, $b$ 满足 $a+b=2$, 求 $3^a+3^b$ 的最小值.
-</p>
-</myexample>
-<mysolution>
-    <p>由均值不等式, 
-    \[3^a+3^b\geqslant 2\sqrt{3^a\cdot 3^b}
-        = 2\sqrt{3^{a+b}}= 2\sqrt{3^2}= 6,\]
-   “$=$”成立当且仅当 $3^a=3^b$ 即 $a=b=1$, 所以 $3^a+3^b$ 的最小值为 $6$. 
-</p>
-</mysolution>
-<myremark>
-    <p>二元函数求值域, 要么想办法先化为一元函数, 要么直接用均值不等式. 通常优先考虑后者, 但是要注意等号成立的条件. 此外, 上题也可利用 $b=2-a$ 将 $3^a+3^b$ 化为关于 $a$ 的一元函数 $3^a+3^{2-a}$, 但仍需利用均值不等式才能求其最小值. 
-</p>
-</myremark>
-<myexample>
-<p>函数 $f(x)= a^{x+1}+ 3$ ($a>0$, 且 $a\neq1$) 过定点  $\underline{\qquad}$.
-</p>
-</myexample>
-<mysolution>
-    <p>利用 $a^0=1$ 对任意 $a\neq0$ 成立可知, 
-    \[f(-1)= a^0+3= 3,\]
-    即 $f(x)$ 过定点 $(-1,3)$.
-</p>
-</mysolution>
-<myexample>
-<p>已知函数 
-    \[f(x)= \begin{cases}
-        -x+3-3a, & x< 0,\\
+\end{cases}$ 求不等式 $f(x)\geqslant 1$ 的解.</p></myexample><mysolution><p>(1) 若 $x< 0$, 则不等式化为
+\[\biggl(\frac12\biggr)^x-1\geqslant 1,\quad \text{即}\quad
+\biggl(\frac12\biggr)^x\geqslant 2= \biggl(\frac12\biggr)^{-1}.\]
+由函数 $y=\biggl(\dfrac12\biggr)^x$ 单调递减可知, $x\in(-\infty,-1]$.</p><p>(2) 若 $x\geqslant 0$, 则不等式化为 $x^{\frac12}\geqslant 1$. 由函数 $y=x^{\frac12}$ 在 $[0,+\infty)$ 上单调递增可知, $x\in[1,+\infty)$.</p><p>综上所述, $x\in(-\infty,-1]\cup [1,+\infty)$.</p></mysolution><p>解简单的指数、对数方程或不等式, 一般是利用指数、对数的单调性 (参考“2020 年 11 月 21 日答疑记录”). 具体来说, 有两种方法.</p><p>方法一: 化为同底的指数或对数 (简记为“化同底”). 例如, 指数方程 $2^x=4$ 可化为 $2^x=2^2$, 由 $y=2^x$ 单调递增可知, $x=2$. 类似地, $\log_2 x= 2$ 可化为 $\log_2 x= \log_2 4$, 由 $y=\log_2 x$ 单调递增可知, $x=4$. 再如, $2^x>4$ 可化为 $2^x>2^2$, 则 $x>2$; $\log_{0.5} x> 2$ 可化为 $\log_{0.5} x> \log_{0.5} 0.5^2$, 由 $y=\log_{0.5} x$ 单调递减可知, $0< x< 0.25$. 注意, 对数函数有自然定义域, 即真数 (此处的 $x$) 大于零.</p><p>方法二: 直接取对数或构造指数式. 此方法涉及指数和对数的运算法则 (参考“2020 年 11 月 8 日答疑记录”). 例如, 对方程 $2^x=4$ 两边取以 $2$ 为底的对数, 可得 $\log_2 2^x= \log_2 4$, 即 $x=2$. 类似地, 将 $\log_2 x< 2$ 化为 $2^{\log_2 x}< 2^2$, 可知 $0< x< 4$ (注意对数函数的自然定义域). 再如, 由 $2^x>3$ 可得 $x>\log_2 3$ (这个例子用前一个方法来解并不方便). 在这些例子中, 新构造的对数式或指数式的底均应与原式中的相同.</p><p><myexample><p>解下列不等式:</p><p>(1) $\biggl(\dfrac12\biggr)^x>4$;\qquad
+(2) $\log_3 x> 2$;\qquad
+(3) $3^{x^2+x}>9$;\qquad
+(4) $\log_5 (x^2-4x)\leqslant 1$.</p></myexample><mysolution><p>(1) 方法一: 不等式化为 $\biggl(\dfrac12\biggr)^x> \biggl(\dfrac12\biggr)^{-2}$, 所以 $x\in(-\infty,-2)$.</p><p>方法二: 不等式化为 $\log_{\frac12}\biggl(\dfrac12\biggr)^x< \log_{\frac12} 4= \log_{\frac12} \biggl(\dfrac12\biggr)^{-2}$, 所以 $x\in(-\infty,-2)$.</p><p>(2) 方法一: 不等式化为 $\log_3 x> \log_3 9$, 所以 $x\in(9,+\infty)$.</p><p>方法二: 不等式化为 $3^{\log_3 x}> 3^2$, 所以 $x\in(9,+\infty)$.</p><p>(3) 方法一: 不等式化为
+\[3^{x^2+x}>3^2,\quad\text{即}\quad x^2+x>2,\]
+解得 $x\in(-\infty,-2)\cup (1,+\infty)$.</p><p>方法二: 不等式化为 $\log_3 3^{x^2+x}>\log_3 9$, 仍可解得 $x\in(-\infty,-2)\cup (1,+\infty)$.</p><p>(4) 方法一: 不等式化为
+\[\log_5 (x^2-4x)\leqslant \log_5 5,\quad\text{即}\quad 0< x^2-4x\leqslant 5,\]
+解得 $x\in[-1,0)\cup (4,5]$.</p><p>方法二: 不等式化为 $5^{\log_5 (x^2-4x)}\leqslant 5^1$, 仍可解得 $x\in[-1,0)\cup (4,5]$.</p></mysolution><myexample><p>设 $a=\biggl(\dfrac35\biggr)^{\frac25}$, $b=\biggl(\dfrac25\biggr)^{\frac35}$, $c=\biggl(\dfrac25\biggr)^{\frac25}$, 比较这三者的大小.</p></myexample><mysolution><p>方法一: 因为 $a$, $c$ 指数相同, 所以考虑幂函数 $f(x)=x^{\frac25}$. 由 $f(x)$ 单调递增可知, $f\biggl(\dfrac35\biggr)> f\biggl(\dfrac25\biggr)$, 即 $a>c$.</p><p>因为 $b$, $c$ 底数相同, 所以考虑指数函数 $g(x)=\biggl(\dfrac25\biggr)^x$. 由 $g(x)$ 单调递减可知, $g\biggl(\dfrac35\biggr)< g\biggl(\dfrac25\biggr)$, 即 $b< c$.</p><p>综上所述, $b< c< a$.</p><p>方法二: 也可以先考虑 $a^5=\biggl(\dfrac35\biggr)^2$, $b^5=\biggl(\dfrac25\biggr)^3$, $c^5=\biggl(\dfrac25\biggr)^2$, 这三者的大小. 因为
+\[\biggl(\dfrac35\biggr)^2= \frac{45}{125},\quad
+\biggl(\dfrac25\biggr)^3= \frac{8}{125},\quad
+\biggl(\dfrac25\biggr)^2= \frac{20}{125},\]
+所以 $b^5< c^5< a^5$. 由 $h(x)= x^5$ 单调递增可知, $b< c< a$.</p></mysolution><myexample><p>若实数 $a$, $b$ 满足 $a+b=2$, 求 $3^a+3^b$ 的最小值.</p></myexample><mysolution><p>由均值不等式,
+\[3^a+3^b\geqslant 2\sqrt{3^a\cdot 3^b}
+= 2\sqrt{3^{a+b}}= 2\sqrt{3^2}= 6,\]
+“$=$”成立当且仅当 $3^a=3^b$ 即 $a=b=1$, 所以 $3^a+3^b$ 的最小值为 $6$.</p></mysolution><myremark><p>二元函数求值域, 要么想办法先化为一元函数, 要么直接用均值不等式. 通常优先考虑后者, 但是要注意等号成立的条件. 此外, 上题也可利用 $b=2-a$ 将 $3^a+3^b$ 化为关于 $a$ 的一元函数 $3^a+3^{2-a}$, 但仍需利用均值不等式才能求其最小值.</p></myremark><myexample><p>函数 $f(x)= a^{x+1}+ 3$ ($a>0$, 且 $a\neq1$) 过定点 $\underline{\qquad}$.</p></myexample><mysolution><p>利用 $a^0=1$ 对任意 $a\neq0$ 成立可知,
+\[f(-1)= a^0+3= 3,\]
+即 $f(x)$ 过定点 $(-1,3)$.</p></mysolution><myexample><p>已知函数
+\[f(x)= \begin{cases}
+-x+3-3a, & x< 0,\\
         a^x, & x\geqslant 0
-    \end{cases}\quad (a>0\ \text{且}\ a\neq 1)\]
-    在 $\mathbf{R}$ 上单调递减, 求 $a$ 的取值范围.
-</p>
-</myexample>
-<mysolution>
-    <p>由分段函数的单调性判断方法 (参考“2020 年 10 月 31 日答疑记录”第三个例题及其后的说明),
-    \[\left\{\!\!\begin{array}{l}
-        0< a< 1,\\
-        -0+3-3a\geqslant a^0,
-    \end{array}\right.\ \text{解得}\quad
-    0< a< \frac23.\]
-    故所求取值范围为 $\biggl(0,\dfrac23\biggr)$.
-</p>
-</mysolution>
-<myexample>
-<p>若指数函数 $y=f(x)$ 的图形经过点 $(2,4)$, 求不等式 $f(2x-1)\leqslant \biggl(\dfrac12\biggr)^{1-3x}$ 的解集.
-</p>
-</myexample>
-<mysolution>
-    <p>由题意, $f(2)=4$. 设 $f(x)=a^x$ ($a>0$ 且 $a\neq 1$), 则 $a^2=4$, 解得 $a=2$. 因此不等式化为 (指数式化同底)
-    \[2^{2x-1}\leqslant 2^{-(1-3x)},\quad\text{即}\quad
-        2x-1\leqslant -(1-3x),\]
-    解得 $x\in[0,+\infty)$.
-</p>
-</mysolution>
-<myexample>
-<p>若函数 $y= 2^{|x-1|}$ 在区间 $(k-1,k+1)$ 内不单调, 求 $k$ 的取值范围.
-</p>
-</myexample>
-<mysolution>
-    <p>由 $y=2^|x|$ 的图形向右平移一个单位长度可得 $y= 2^{|x-1|}$ 的图形, 而前者为偶函数, 且当 $x\geqslant 0$ 时 $y=2^x$. 由此可以画出 $y= 2^{|x-1|}$ 的图形如下:
-</p>
-<p><center>
-        \includegraphics[scale=1]{2020-1223-2000-crop}
-    </center>
-</p>
-<p>由图可知, $y= 2^{|x-1|}$ 在 $(-\infty,1)$ 上单调递减, 在 $(1,+\infty)$ 上单调递增. 因为题中要求函数 $y= 2^{|x-1|}$ 在区间 $(k-1,k+1)$ 内不单调, 所以
-    \[1\in(k-1,k+1),\quad\text{解得}\quad k\in(0,2).\]
-</p>
-</mysolution>
-<myexample>
-<p>画出函数 $y= \dfrac{x a^x}{|x|}$ ($0< a< 1$) 的图形的大致形状.
-</p>
-</myexample>
-<mysolution>
-    <p>利用绝对值的定义, 原函数化为 $y= \begin{cases}
-        -a^x, & x< 0,\\
+\end{cases}\quad (a>0\ \text{且}\ a\neq 1)\]
+在 $\mathbf{R}$ 上单调递减, 求 $a$ 的取值范围.</p></myexample><mysolution><p>由分段函数的单调性判断方法 (参考“2020 年 10 月 31 日答疑记录”第三个例题及其后的说明),
+\[\left\{\!\!\begin{array}{l}
+0< a< 1,\\
+-0+3-3a\geqslant a^0,
+\end{array}\right.\ \text{解得}\quad
+0< a< \frac23.\]
+故所求取值范围为 $\biggl(0,\dfrac23\biggr)$.</p></mysolution><myexample><p>若指数函数 $y=f(x)$ 的图形经过点 $(2,4)$, 求不等式 $f(2x-1)\leqslant \biggl(\dfrac12\biggr)^{1-3x}$ 的解集.</p></myexample><mysolution><p>由题意, $f(2)=4$. 设 $f(x)=a^x$ ($a>0$ 且 $a\neq 1$), 则 $a^2=4$, 解得 $a=2$. 因此不等式化为 (指数式化同底)
+\[2^{2x-1}\leqslant 2^{-(1-3x)},\quad\text{即}\quad
+2x-1\leqslant -(1-3x),\]
+解得 $x\in[0,+\infty)$.</p></mysolution><myexample><p>若函数 $y= 2^{|x-1|}$ 在区间 $(k-1,k+1)$ 内不单调, 求 $k$ 的取值范围.</p></myexample><mysolution><p>由 $y=2^|x|$ 的图形向右平移一个单位长度可得 $y= 2^{|x-1|}$ 的图形, 而前者为偶函数, 且当 $x\geqslant 0$ 时 $y=2^x$. 由此可以画出 $y= 2^{|x-1|}$ 的图形如下:</p><p><center>\includegraphics[scale=1]{2020-1223-2000-crop}</center></p><p>由图可知, $y= 2^{|x-1|}$ 在 $(-\infty,1)$ 上单调递减, 在 $(1,+\infty)$ 上单调递增. 因为题中要求函数 $y= 2^{|x-1|}$ 在区间 $(k-1,k+1)$ 内不单调, 所以
+\[1\in(k-1,k+1),\quad\text{解得}\quad k\in(0,2).\]</p></mysolution><myexample><p>画出函数 $y= \dfrac{x a^x}{|x|}$ ($0< a< 1$) 的图形的大致形状.</p></myexample><mysolution><p>利用绝对值的定义, 原函数化为 $y= \begin{cases}
+-a^x, & x< 0,\\
         a^x, & x>0,
     \end{cases}$
-    图形的大致形状如下:
-</p>
-<p><center>
-        \includegraphics[scale=1.1]{2020-1227-1100-crop}
-    </center>
-</p>
-</mysolution>
-<myexample>
-<p>已知函数 $f(x) =\begin{cases}
-        3^x, & x\leqslant 0,\\
+图形的大致形状如下:</p><p><center>\includegraphics[scale=1.1]{2020-1227-1100-crop}</center></p></mysolution><myexample><p>已知函数 $f(x) =\begin{cases}
+3^x, & x\leqslant 0,\\
         -2x+1, & x>0,
-    \end{cases}$ 若 $f(x)\leqslant \dfrac13$, 求实数 $x$ 的取值范围.
-</p>
-</myexample>
-<mysolution>
-    <p>(1) 若 $x\leqslant 0$, 则 $f(x)\leqslant \dfrac13$ 化为
-    \[3^x\leqslant \frac13= 3^{-1},\quad\text{解得}\quad
-        x\leqslant -1.\]
-</p>
-<p>(2) 若 $x> 0$, 则 $f(x)\leqslant \dfrac13$ 化为
-    \[-2x+1\leqslant \frac13,\quad\text{解得}\quad
-        x\geqslant \frac13.\]
-</p>
-<p>综上所述, $x\in (-\infty,-1]\cup \biggl[\dfrac13,+\infty\biggr)$.
-</p>
-</mysolution>
-</p>
-<p>分段函数分段考虑, 下题也是如此.
-</p>
-<p><myexample>
-<p>已知函数 $f(x)= \begin{cases}
-        ax+2-3a, & x< 0,\\
+\end{cases}$ 若 $f(x)\leqslant \dfrac13$, 求实数 $x$ 的取值范围.</p></myexample><mysolution><p>(1) 若 $x\leqslant 0$, 则 $f(x)\leqslant \dfrac13$ 化为
+\[3^x\leqslant \frac13= 3^{-1},\quad\text{解得}\quad
+x\leqslant -1.\]</p><p>(2) 若 $x> 0$, 则 $f(x)\leqslant \dfrac13$ 化为
+\[-2x+1\leqslant \frac13,\quad\text{解得}\quad
+x\geqslant \frac13.\]</p><p>综上所述, $x\in (-\infty,-1]\cup \biggl[\dfrac13,+\infty\biggr)$.</p></mysolution></p><p>分段函数分段考虑, 下题也是如此.</p><p><myexample><p>已知函数 $f(x)= \begin{cases}
+ax+2-3a, & x< 0,\\
         2^x-1, & x\geqslant 0.
-    \end{cases}$ 若存在 $x_1$, $x_2\in\realnum$, $x_1\neq x_2$, 使得 $f(x_1)= f(x_2)$ 成立, 求实数 $a$ 的取值范围.
-</p>
-</myexample>
-<mysolution>
-    <p>题中 $f(x)$ 的图形在 $x< 0$ 的部分为半直线, 在 $x\geqslant 0$ 的部分为 $y=2^x$ 向下平移一个单位长度. 而条件“存在 $x_1\neq x_2$ 使得 $f(x_2)= f(x_2)$ 成立”表明存在水平的直线与 $f(x)$ 的图形有两个不同的交点. 分 $a< 0$, $a=0$ 和 $a>0$ 三种情况 (分别对应半直线不同的增减性) 画图如下:
-</p>
-<p><center>
-        \includegraphics[scale=1.1]{2020-1227-1400-crop}\qquad
-        \includegraphics[scale=1.1]{2020-1227-1410-crop}\qquad
-        \includegraphics[scale=1.1]{2020-1227-1420-crop}
-    </center>
-</p>
-<p>由图可知, 当 $a\leqslant 0$ 时, 图形均合题意; 而当 $a>0$ 时, 需 $2-3a>0$ 即 $a< \dfrac23$. 由此可知, 实数 $a$ 的取值范围为 $\biggl(-\infty,-\dfrac23\biggr)$.
-</p>
-</mysolution>
-<myexample>
-<p>随着天气的变化, 某种疾病的感染人数 $y$ 与月份 $x$ 满足关系式 $y=a \cdot 0.5^x +b$. 现已知某城市今年 1 月、2 月该疾病的感染人数分别为 1 万人、1.5 万人, 求 3 月份该疾病的感染人数.
-</p>
-</myexample>
-<mysolution>
-    <p>以“万人”为 $y$ 的单位, 则
-    \[\left\{\!\!\begin{array}{l}
-        1= a\cdot 0.5 +b,\\
-        1.5= a\cdot 0.5^2 +b,
-    \end{array}\right.\ \text{解得}\ 
-    \left\{\!\!\begin{array}{l}
-        a= -2,\\
-        b= 2,
-    \end{array}\right.\]
-    所以当 $x=3$ 时, $y= -2\cdot 0.5^3+2= 1.75$, 即 3 月份该疾病的感染人数为 $1.75$ 万人.
-</p>
-</mysolution>
-</article>
- 
-          
-    
-    <div class="docs-prevnext">
-    
-        <a class="docs-prev button" href="/docs/algebra/pow-exp-log/power-function">
-          <span class="arrow-prev">← </span><span>幂函数</span></a>
-      
-      
-        <a class="docs-next button" href="/docs/algebra/pow-exp-log/logarithm-calculation">
-          <span>对数运算</span><span class="arrow-next"> →</span></a>
-      
-    </div>
-
-    <p>作者邮箱 rong.liu@mail.bnu.edu.cn。</p>
-    <p>读者的支持是作者持续更新的动力😊</p>
-    
-
-      <footer class="book-footer">
-        
-  <div class="flex flex-wrap justify-between">
-
-
-
-
-
-</div>
-
-
-
-  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
-
-
- 
-        
-      </footer>
-
-      
-  
-  <div class="book-comments">
-
-</div>
-  
- 
-
-      <label for="menu-control" class="hidden book-menu-overlay"></label>
-    </div>
-
-    
-    <aside class="book-toc">
-      <div class="book-toc-content">
-        
-  
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#指数函数">指数函数</a></li>
-  </ul>
-</nav>
-
-
- 
-      </div>
-    </aside>
-    
-  </main>
-
-  
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
+\end{cases}$ 若存在 $x_1$, $x_2\in\realnum$, $x_1\neq x_2$, 使得 $f(x_1)= f(x_2)$ 成立, 求实数 $a$ 的取值范围.</p></myexample><mysolution><p>题中 $f(x)$ 的图形在 $x< 0$ 的部分为半直线, 在 $x\geqslant 0$ 的部分为 $y=2^x$ 向下平移一个单位长度. 而条件“存在 $x_1\neq x_2$ 使得 $f(x_2)= f(x_2)$ 成立”表明存在水平的直线与 $f(x)$ 的图形有两个不同的交点. 分 $a< 0$, $a=0$ 和 $a>0$ 三种情况 (分别对应半直线不同的增减性) 画图如下:</p><p><center>\includegraphics[scale=1.1]{2020-1227-1400-crop}\qquad
+\includegraphics[scale=1.1]{2020-1227-1410-crop}\qquad
+\includegraphics[scale=1.1]{2020-1227-1420-crop}</center></p><p>由图可知, 当 $a\leqslant 0$ 时, 图形均合题意; 而当 $a>0$ 时, 需 $2-3a>0$ 即 $a< \dfrac23$. 由此可知, 实数 $a$ 的取值范围为 $\biggl(-\infty,-\dfrac23\biggr)$.</p></mysolution><myexample><p>随着天气的变化, 某种疾病的感染人数 $y$ 与月份 $x$ 满足关系式 $y=a \cdot 0.5^x +b$. 现已知某城市今年 1 月、2 月该疾病的感染人数分别为 1 万人、1.5 万人, 求 3 月份该疾病的感染人数.</p></myexample><mysolution><p>以“万人”为 $y$ 的单位, 则
+\[\left\{\!\!\begin{array}{l}
+1= a\cdot 0.5 +b,\\
+1.5= a\cdot 0.5^2 +b,
+\end{array}\right.\ \text{解得}\
+\left\{\!\!\begin{array}{l}
+a= -2,\\
+b= 2,
+\end{array}\right.\]
+所以当 $x=3$ 时, $y= -2\cdot 0.5^3+2= 1.75$, 即 3 月份该疾病的感染人数为 $1.75$ 万人.</p></mysolution></article><div class=docs-prevnext><a class="docs-prev button" href=/docs/algebra/pow-exp-log/power-function><span class=arrow-prev>← </span><span>幂函数</span></a>
+<a class="docs-next button" href=/docs/algebra/pow-exp-log/logarithm-calculation><span>对数运算</span><span class=arrow-next> →</span></a></div><p>作者邮箱 rong.liu@mail.bnu.edu.cn。</p><p>读者的支持是作者持续更新的动力😊</p><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#指数函数>指数函数</a></li></ul></nav></div></aside></main></body></html>

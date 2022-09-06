@@ -1,798 +1,102 @@
-<!DOCTYPE html>
-<html lang="zh" dir="ltr">
-<head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="绝对值不等式与二次不等式 # 绝对值不等式是含绝对值的不等式, 解这种不等式时, 一般是利用绝对值的几何意义去掉不等式中的绝对值符号, 即需要对式中的未知数取值分类讨论. 一些恒成立的绝对值不等式, 可以用于估计代数式的取值范围.
+<!doctype html><html lang=zh dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="绝对值不等式与二次不等式 # 绝对值不等式是含绝对值的不等式, 解这种不等式时, 一般是利用绝对值的几何意义去掉不等式中的绝对值符号, 即需要对式中的未知数取值分类讨论. 一些恒成立的绝对值不等式, 可以用于估计代数式的取值范围.
 前面已经介绍了 简单二次不等式的解法, 这里进一步介绍如何求解含参数的二次不等式.
-绝对值的几何意义 # 实数 $a$ 的绝对值定义为 \[|a|=\begin{cases}a, & a&gt;0,\\0, & a=0,\\-a, & a&lt; 0,\end{cases}\]有时也写成 \[|a|= \begin{cases}a, & a\geqslant 0,\\-a, & a&lt; 0.\end{cases}\]由定义可知, $|a|\geqslant 0$, 即绝对值必为非负数. 又有 $|a|\geqslant a$, 等号成立的条件是 $a\geqslant 0$. 此外还有 $|a|^2= a^2$, 两边取算术平方根, 则 \[|a|= \sqrt{|a|^2}= \sqrt{a^2}.\]这是绝对值的另一种表示. 绝对值的几何意义是数轴上点 $a$ 到原点的距离, 则 $|a|= |-a|$; 进而可知, 数轴上两点 $x_1$, $x_2$ 之间的距离为 $|x_1-x_2|$, 如下图所示:例如, $|x-1|$ 表示点 $x$ 到 $1$ 的距离; $|x&#43;2|=|x-(-2)|$ 表示点 $x$ 到 $-2$ 的距离; $|2x-2|= 2|x-1|$ 表示点 $x$ 到 $1$ 的距离的 $2$ 倍; $|4&#43;2x|= 2|x-(-2)|$ 表示点 $x$ 到 $-2$ 的距离的 $2$ 倍.">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="绝对值不等式与二次不等式" />
-<meta property="og:description" content="绝对值不等式与二次不等式 # 绝对值不等式是含绝对值的不等式, 解这种不等式时, 一般是利用绝对值的几何意义去掉不等式中的绝对值符号, 即需要对式中的未知数取值分类讨论. 一些恒成立的绝对值不等式, 可以用于估计代数式的取值范围.
+绝对值的几何意义 # 实数 $a$ 的绝对值定义为 \[|a|=\begin{cases}a, & a&gt;0,\\0, & a=0,\\-a, & a&lt; 0,\end{cases}\]有时也写成 \[|a|= \begin{cases}a, & a\geqslant 0,\\-a, & a&lt; 0.\end{cases}\]由定义可知, $|a|\geqslant 0$, 即绝对值必为非负数. 又有 $|a|\geqslant a$, 等号成立的条件是 $a\geqslant 0$. 此外还有 $|a|^2= a^2$, 两边取算术平方根, 则 \[|a|= \sqrt{|a|^2}= \sqrt{a^2}.\]这是绝对值的另一种表示. 绝对值的几何意义是数轴上点 $a$ 到原点的距离, 则 $|a|= |-a|$; 进而可知, 数轴上两点 $x_1$, $x_2$ 之间的距离为 $|x_1-x_2|$, 如下图所示:例如, $|x-1|$ 表示点 $x$ 到 $1$ 的距离; $|x+2|=|x-(-2)|$ 表示点 $x$ 到 $-2$ 的距离; $|2x-2|= 2|x-1|$ 表示点 $x$ 到 $1$ 的距离的 $2$ 倍; $|4+2x|= 2|x-(-2)|$ 表示点 $x$ 到 $-2$ 的距离的 $2$ 倍."><meta name=theme-color content="#FFFFFF"><meta property="og:title" content="绝对值不等式与二次不等式"><meta property="og:description" content="绝对值不等式与二次不等式 # 绝对值不等式是含绝对值的不等式, 解这种不等式时, 一般是利用绝对值的几何意义去掉不等式中的绝对值符号, 即需要对式中的未知数取值分类讨论. 一些恒成立的绝对值不等式, 可以用于估计代数式的取值范围.
 前面已经介绍了 简单二次不等式的解法, 这里进一步介绍如何求解含参数的二次不等式.
-绝对值的几何意义 # 实数 $a$ 的绝对值定义为 \[|a|=\begin{cases}a, & a&gt;0,\\0, & a=0,\\-a, & a&lt; 0,\end{cases}\]有时也写成 \[|a|= \begin{cases}a, & a\geqslant 0,\\-a, & a&lt; 0.\end{cases}\]由定义可知, $|a|\geqslant 0$, 即绝对值必为非负数. 又有 $|a|\geqslant a$, 等号成立的条件是 $a\geqslant 0$. 此外还有 $|a|^2= a^2$, 两边取算术平方根, 则 \[|a|= \sqrt{|a|^2}= \sqrt{a^2}.\]这是绝对值的另一种表示. 绝对值的几何意义是数轴上点 $a$ 到原点的距离, 则 $|a|= |-a|$; 进而可知, 数轴上两点 $x_1$, $x_2$ 之间的距离为 $|x_1-x_2|$, 如下图所示:例如, $|x-1|$ 表示点 $x$ 到 $1$ 的距离; $|x&#43;2|=|x-(-2)|$ 表示点 $x$ 到 $-2$ 的距离; $|2x-2|= 2|x-1|$ 表示点 $x$ 到 $1$ 的距离的 $2$ 倍; $|4&#43;2x|= 2|x-(-2)|$ 表示点 $x$ 到 $-2$ 的距离的 $2$ 倍." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="/docs/prerequisite/inequality/abs-quadratic-inequality/" /><meta property="article:section" content="docs" />
-
-
-
-<title>绝对值不等式与二次不等式 | 高中数学资料</title>
-<link rel="manifest" href="/manifest.json">
-<link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.6c08f1f220250ecc36dde6a6fa75fdd4247d84aaaa23d4bc157c9b2f8fa595bd.css" >
-  <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh.search.min.784ab3c077aed3c64574cb6afb6c2069baa00d2088ec733a85e8e0551c41cf97.js" ></script>
-
-  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
-<!--
-Made with Book Theme
-https://github.com/alex-shpak/hugo-book
--->
-  <link rel="stylesheet" href='/katex/katex.min.css' crossorigin="anonymous">
-
-
-<script defer src='/katex/katex.min.js' crossorigin="anonymous"></script>
-
-
-<script defer src='/katex/auto-render.min.js' 
-    onload="renderMathInElement(document.body);"></script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        renderMathInElement(document.body, {
-            
-            
-            delimiters: [
-                { left: '$$', right: '$$', display: true },
-                { left: '$', right: '$', display: false },
-                { left: '\\(', right: '\\)', display: false },
-                { left: '\\[', right: '\\]', display: true }
-            ],
-            
-            throwOnError: false
-        });
-    });
-</script>
-
-</head>
-<body dir="ltr">
-  <input type="checkbox" class="hidden toggle" id="menu-control" />
-  <input type="checkbox" class="hidden toggle" id="toc-control" />
-  <main class="container flex">
-    <aside class="book-menu">
-      <div class="book-menu-content">
-        
-  <nav>
-<h2 class="book-brand">
-  <a href="/"><span>高中数学资料</span>
-  </a>
-</h2>
-
-
-<div class="book-search">
-  <input type="text" id="book-search-input" placeholder="搜索" aria-label="搜索" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner hidden"></div>
-  <ul id="book-search-results"></ul>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-  
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-7fbb26c6156d78d59d607292b53948a4" class="toggle" checked />
-    <label for="section-7fbb26c6156d78d59d607292b53948a4" class="flex justify-between">
-      <a href="/docs/prerequisite/" class="">预备知识</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-1e2f9b8b873223fe63fc7221375c0eb0" class="toggle"  />
-    <label for="section-1e2f9b8b873223fe63fc7221375c0eb0" class="flex justify-between">
-      <a href="/docs/prerequisite/ms-algebra/" class="">初中代数提要</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-algebra/quadratic-factorization/" class="">二次三项式的因式分解</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-algebra/quadratic-equation/" class="">一元二次方程的解法</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-algebra/veite-theorem/" class="">韦达定理</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-c1c4f99569969342f46afcb379e41254" class="toggle"  />
-    <label for="section-c1c4f99569969342f46afcb379e41254" class="flex justify-between">
-      <a href="/docs/prerequisite/ms-geometry/" class="">初中几何提要</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-geometry/symmetric-congruence-similar/" class="">对称、全等与相似</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-geometry/triangle/" class="">三角形</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-geometry/quadrilateral/" class="">四边形</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-geometry/circle/" class="">圆</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-geometry/area/" class="">平面图形的面积</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-53227ed5b540c99051432d70e3c9c4da" class="toggle"  />
-    <label for="section-53227ed5b540c99051432d70e3c9c4da" class="flex justify-between">
-      <a href="/docs/prerequisite/ms-function/" class="">初中函数提要</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-function/axis-coordinate/" class="">数轴与平面直角坐标系</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-function/linear-inverse/" class="">一次函数与反比例函数</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-function/quadratic-function-inequality/" class="">二次函数与二次不等式</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-function/graph-tranform/" class="">函数图象的变换</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-4adec7e7d2e2d6fa5eaee0a98a60892e" class="toggle"  />
-    <label for="section-4adec7e7d2e2d6fa5eaee0a98a60892e" class="flex justify-between">
-      <a href="/docs/prerequisite/set-logic/" class="">集合与简易逻辑</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/set-logic/set-def/" class="">集合的定义</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/set-logic/set-operation/" class="">集合的运算</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/set-logic/proposition-iff/" class="">命题与充要条件</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/set-logic/logical-quantifier/" class="">逻辑量词</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-0efa6e9487d50f8c7308e9898b74ff74" class="toggle" checked />
-    <label for="section-0efa6e9487d50f8c7308e9898b74ff74" class="flex justify-between">
-      <a href="/docs/prerequisite/inequality/" class="">不等式</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/inequality/inequality-property/" class="">不等式的性质</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/inequality/abs-quadratic-inequality/" class=" active">绝对值不等式与二次不等式</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-  </ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</nav>
-
-
-
-
-  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
-
-
- 
-      </div>
-    </aside>
-
-    <div class="book-page">
-      <header class="book-header">
-        
-  <div class="flex align-center justify-between">
-  <label for="menu-control">
-    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
-  </label>
-
-  <strong>绝对值不等式与二次不等式</strong>
-
-  <label for="toc-control">
-    
-    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
-    
-  </label>
-</div>
-
-
-  
-  <aside class="hidden clearfix">
-    
-  
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#绝对值不等式与二次不等式">绝对值不等式与二次不等式</a>
-      <ul>
-        <li><a href="#绝对值的几何意义">绝对值的几何意义</a></li>
-        <li><a href="#绝对值不等式的解法">绝对值不等式的解法</a></li>
-        <li><a href="#含参数的二次不等式的解法">含参数的二次不等式的解法</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-
-
-
-  </aside>
-  
- 
-      </header>
-
-      
-      
-  <article class="markdown"><h1 id="绝对值不等式与二次不等式">
-  绝对值不等式与二次不等式
-  <a class="anchor" href="#%e7%bb%9d%e5%af%b9%e5%80%bc%e4%b8%8d%e7%ad%89%e5%bc%8f%e4%b8%8e%e4%ba%8c%e6%ac%a1%e4%b8%8d%e7%ad%89%e5%bc%8f">#</a>
-</h1>
-<p>绝对值不等式是含绝对值的不等式, 解这种不等式时, 一般是利用绝对值的几何意义去掉不等式中的绝对值符号, 即需要对式中的未知数取值分类讨论. 一些恒成立的绝对值不等式, 可以用于估计代数式的取值范围.</p>
-<p>前面已经介绍了
-  <a href="/docs/prerequisite/ms-function/quadratic-function-inequality/#%e4%ba%8c%e6%ac%a1%e4%b8%8d%e7%ad%89%e5%bc%8f%e7%9a%84%e8%a7%a3%e6%b3%95">简单二次不等式的解法</a>, 这里进一步介绍如何求解含参数的二次不等式.</p>
-<h2 id="绝对值的几何意义">
-  绝对值的几何意义
-  <a class="anchor" href="#%e7%bb%9d%e5%af%b9%e5%80%bc%e7%9a%84%e5%87%a0%e4%bd%95%e6%84%8f%e4%b9%89">#</a>
-</h2>
-<p>实数 $a$ 的绝对值定义为 \[
-    |a|=\begin{cases}
-    a, & a>0,\\
+绝对值的几何意义 # 实数 $a$ 的绝对值定义为 \[|a|=\begin{cases}a, & a&gt;0,\\0, & a=0,\\-a, & a&lt; 0,\end{cases}\]有时也写成 \[|a|= \begin{cases}a, & a\geqslant 0,\\-a, & a&lt; 0.\end{cases}\]由定义可知, $|a|\geqslant 0$, 即绝对值必为非负数. 又有 $|a|\geqslant a$, 等号成立的条件是 $a\geqslant 0$. 此外还有 $|a|^2= a^2$, 两边取算术平方根, 则 \[|a|= \sqrt{|a|^2}= \sqrt{a^2}.\]这是绝对值的另一种表示. 绝对值的几何意义是数轴上点 $a$ 到原点的距离, 则 $|a|= |-a|$; 进而可知, 数轴上两点 $x_1$, $x_2$ 之间的距离为 $|x_1-x_2|$, 如下图所示:例如, $|x-1|$ 表示点 $x$ 到 $1$ 的距离; $|x+2|=|x-(-2)|$ 表示点 $x$ 到 $-2$ 的距离; $|2x-2|= 2|x-1|$ 表示点 $x$ 到 $1$ 的距离的 $2$ 倍; $|4+2x|= 2|x-(-2)|$ 表示点 $x$ 到 $-2$ 的距离的 $2$ 倍."><meta property="og:type" content="article"><meta property="og:url" content="/docs/prerequisite/inequality/abs-quadratic-inequality/"><meta property="article:section" content="docs"><title>绝对值不等式与二次不等式 | 高中数学资料</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.6c08f1f220250ecc36dde6a6fa75fdd4247d84aaaa23d4bc157c9b2f8fa595bd.css><script defer src=/flexsearch.min.js></script>
+<script defer src=/zh.search.min.7287a52d6d4b6df1bd72f5e28bb3775dbf17b637e7c63244f3fb9df429bae232.js></script>
+<script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js></script>
+<link rel=stylesheet href=/katex/katex.min.css crossorigin=anonymous><script defer src=/katex/katex.min.js crossorigin=anonymous></script>
+<script defer src=/katex/auto-render.min.js onload=renderMathInElement(document.body)></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1},{left:"\\[",right:"\\]",display:!0}],throwOnError:!1})})</script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a href=/><span>高中数学资料</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=搜索 aria-label=搜索 maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li><input type=checkbox id=section-7fbb26c6156d78d59d607292b53948a4 class=toggle checked>
+<label for=section-7fbb26c6156d78d59d607292b53948a4 class="flex justify-between"><a href=/docs/prerequisite/>预备知识</a></label><ul><li><input type=checkbox id=section-1e2f9b8b873223fe63fc7221375c0eb0 class=toggle>
+<label for=section-1e2f9b8b873223fe63fc7221375c0eb0 class="flex justify-between"><a href=/docs/prerequisite/ms-algebra/>初中代数提要</a></label><ul><li><a href=/docs/prerequisite/ms-algebra/quadratic-factorization/>二次三项式的因式分解</a></li><li><a href=/docs/prerequisite/ms-algebra/quadratic-equation/>一元二次方程的解法</a></li><li><a href=/docs/prerequisite/ms-algebra/veite-theorem/>韦达定理</a></li></ul></li><li><input type=checkbox id=section-c1c4f99569969342f46afcb379e41254 class=toggle>
+<label for=section-c1c4f99569969342f46afcb379e41254 class="flex justify-between"><a href=/docs/prerequisite/ms-geometry/>初中几何提要</a></label><ul><li><a href=/docs/prerequisite/ms-geometry/symmetric-congruence-similar/>对称、全等与相似</a></li><li><a href=/docs/prerequisite/ms-geometry/triangle/>三角形</a></li><li><a href=/docs/prerequisite/ms-geometry/quadrilateral/>四边形</a></li><li><a href=/docs/prerequisite/ms-geometry/circle/>圆</a></li><li><a href=/docs/prerequisite/ms-geometry/area/>平面图形的面积</a></li></ul></li><li><input type=checkbox id=section-53227ed5b540c99051432d70e3c9c4da class=toggle>
+<label for=section-53227ed5b540c99051432d70e3c9c4da class="flex justify-between"><a href=/docs/prerequisite/ms-function/>初中函数提要</a></label><ul><li><a href=/docs/prerequisite/ms-function/axis-coordinate/>数轴与平面直角坐标系</a></li><li><a href=/docs/prerequisite/ms-function/linear-inverse/>一次函数与反比例函数</a></li><li><a href=/docs/prerequisite/ms-function/quadratic-function-inequality/>二次函数与二次不等式</a></li><li><a href=/docs/prerequisite/ms-function/graph-tranform/>函数图象的变换</a></li></ul></li><li><input type=checkbox id=section-4adec7e7d2e2d6fa5eaee0a98a60892e class=toggle>
+<label for=section-4adec7e7d2e2d6fa5eaee0a98a60892e class="flex justify-between"><a href=/docs/prerequisite/set-logic/>集合与简易逻辑</a></label><ul><li><a href=/docs/prerequisite/set-logic/set-def/>集合的定义</a></li><li><a href=/docs/prerequisite/set-logic/set-operation/>集合的运算</a></li><li><a href=/docs/prerequisite/set-logic/proposition-iff/>命题与充要条件</a></li><li><a href=/docs/prerequisite/set-logic/logical-quantifier/>逻辑量词</a></li></ul></li><li><input type=checkbox id=section-0efa6e9487d50f8c7308e9898b74ff74 class=toggle checked>
+<label for=section-0efa6e9487d50f8c7308e9898b74ff74 class="flex justify-between"><a href=/docs/prerequisite/inequality/>不等式</a></label><ul><li><a href=/docs/prerequisite/inequality/inequality-property/>不等式的性质</a></li><li><a href=/docs/prerequisite/inequality/abs-quadratic-inequality/ class=active>绝对值不等式与二次不等式</a></li></ul></li></ul></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
+<strong>绝对值不等式与二次不等式</strong>
+<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#绝对值不等式与二次不等式>绝对值不等式与二次不等式</a><ul><li><a href=#绝对值的几何意义>绝对值的几何意义</a></li><li><a href=#绝对值不等式的解法>绝对值不等式的解法</a></li><li><a href=#二次不等式>二次不等式</a></li><li><a href=#含参数的二次不等式的解法>含参数的二次不等式的解法</a></li></ul></li></ul></nav></aside></header><article class=markdown><h1 id=绝对值不等式与二次不等式>绝对值不等式与二次不等式
+<a class=anchor href=#%e7%bb%9d%e5%af%b9%e5%80%bc%e4%b8%8d%e7%ad%89%e5%bc%8f%e4%b8%8e%e4%ba%8c%e6%ac%a1%e4%b8%8d%e7%ad%89%e5%bc%8f>#</a></h1><p>绝对值不等式是含绝对值的不等式, 解这种不等式时, 一般是利用绝对值的几何意义去掉不等式中的绝对值符号, 即需要对式中的未知数取值分类讨论. 一些恒成立的绝对值不等式, 可以用于估计代数式的取值范围.</p><p>前面已经介绍了
+<a href=/docs/prerequisite/ms-function/quadratic-function-inequality/#%e4%ba%8c%e6%ac%a1%e4%b8%8d%e7%ad%89%e5%bc%8f%e7%9a%84%e8%a7%a3%e6%b3%95>简单二次不等式的解法</a>, 这里进一步介绍如何求解含参数的二次不等式.</p><h2 id=绝对值的几何意义>绝对值的几何意义
+<a class=anchor href=#%e7%bb%9d%e5%af%b9%e5%80%bc%e7%9a%84%e5%87%a0%e4%bd%95%e6%84%8f%e4%b9%89>#</a></h2><p>实数 $a$ 的绝对值定义为 \[
+|a|=\begin{cases}
+a, & a>0,\\
     0, & a=0,\\
     -a, & a< 0,
 \end{cases}\]
 有时也写成 \[
-    |a|= \begin{cases}
-    a, & a\geqslant 0,\\
+|a|= \begin{cases}
+a, & a\geqslant 0,\\
     -a, & a< 0.
-    \end{cases}\]
+\end{cases}\]
 由定义可知, $|a|\geqslant 0$, 即绝对值必为非负数. 又有 $|a|\geqslant a$, 等号成立的条件是 $a\geqslant 0$. 此外还有 $|a|^2= a^2$, 两边取算术平方根, 则 \[
-    |a|= \sqrt{|a|^2}= \sqrt{a^2}.\]
-这是绝对值的另一种表示. 绝对值的几何意义是数轴上点 $a$ 到原点的距离, 则 $|a|= |-a|$; 进而可知, 数轴上两点 $x_1$, $x_2$ 之间的距离为 $|x_1-x_2|$, 如下图所示:
-</p>
-<p><img alt="绝对值的几何意义" src="/figs/2020/2020-10/2020-1009-2110.svg"></img></p>
-<p><img alt="数轴上两点之间的距离" src="/figs/2020/2020-10/2020-1009-2120.svg"></img></p>
-<p>例如, $|x-1|$ 表示点 $x$ 到 $1$ 的距离; $|x+2|=|x-(-2)|$ 表示点 $x$ 到 $-2$ 的距离; $|2x-2|= 2|x-1|$ 表示点 $x$ 到 $1$ 的距离的 $2$ 倍; $|4+2x|= 2|x-(-2)|$ 表示点 $x$ 到 $-2$ 的距离的 $2$ 倍. 
-</p>
-<p>注意, 前面运用了绝对值的乘法运算法则: $|ka|= |k|\,|a|$. 证明该法则的直接方法是, 依 $k$ 和 $a$ 的正负号分 $4$ 种情况讨论. 更好的证明方法是利用平方去掉绝对值: 该式等价于 \[
-    |ka|^2= (|k|\,|a|)^2\Leftrightarrow (ka)^2= k^2 a^2,\]
+|a|= \sqrt{|a|^2}= \sqrt{a^2}.\]
+这是绝对值的另一种表示. 绝对值的几何意义是数轴上点 $a$ 到原点的距离, 则 $|a|= |-a|$; 进而可知, 数轴上两点 $x_1$, $x_2$ 之间的距离为 $|x_1-x_2|$, 如下图所示:</p><p><img alt=绝对值的几何意义 src=/figs/2020/2020-10/2020-1009-2110.svg></img></p><p><img alt=数轴上两点之间的距离 src=/figs/2020/2020-10/2020-1009-2120.svg></img></p><p>例如, $|x-1|$ 表示点 $x$ 到 $1$ 的距离; $|x+2|=|x-(-2)|$ 表示点 $x$ 到 $-2$ 的距离; $|2x-2|= 2|x-1|$ 表示点 $x$ 到 $1$ 的距离的 $2$ 倍; $|4+2x|= 2|x-(-2)|$ 表示点 $x$ 到 $-2$ 的距离的 $2$ 倍.</p><p>注意, 前面运用了绝对值的乘法运算法则: $|ka|= |k|\,|a|$. 证明该法则的直接方法是, 依 $k$ 和 $a$ 的正负号分 $4$ 种情况讨论. 更好的证明方法是利用平方去掉绝对值: 该式等价于 \[
+|ka|^2= (|k|\,|a|)^2\Leftrightarrow (ka)^2= k^2 a^2,\]
 而最后一式显然成立. 用同样的方法可以证明 \[
-    \Bigl|\frac{a}b\Bigr|= \frac{|a|}{|b|}\quad (b\neq 0).\]
-</p>
-<p>函数 $y=|x|$ 的图象可以分段绘制, 即分别画出函数 $y= -x$ ($x< 0$) 和 $y= x$ ($x\geqslant 0$) 的图象; 也可以通过图象变换得到, 即先画出 $y=x$ 的图象, 再把 $x$ 轴下方的部分关于 $x$ 轴对称翻折到 $x$ 轴上方, 如下图所示:
-</p>
-<p><img alt="函数 $y=|x|$ 的图象" src="/figs/2022/2022-09/2022-0905-2100.svg"></img></p>
-<myexample>
-    <p>设 $a$, $b$ 为任意实数, 证明: $|a+b|\leqslant |a|+ |b|$, 并讨论等号成立的充要条件.
-    </p>
-</myexample>
-<myproof>
-    <p>不等号两边都是非负数, 所以先平方再整理, 原式等价于 \[\begin{aligned}
-        &|a+b|^2\leqslant (|a|+ |b|)^2\\
-        \Leftrightarrow{}& a^2+ 2ab+ b^2\leqslant a^2+ 2|ab|+ b^2\\
-        \Leftrightarrow{}& ab\leqslant |ab|.
+\Bigl|\frac{a}b\Bigr|= \frac{|a|}{|b|}\quad (b\neq 0).\]</p><p>函数 $y=|x|$ 的图象可以分段绘制, 即分别画出函数 $y= -x$ ($x< 0$) 和 $y= x$ ($x\geqslant 0$) 的图象; 也可以通过图象变换得到, 即先画出 $y=x$ 的图象, 再把 $x$ 轴下方的部分关于 $x$ 轴对称翻折到 $x$ 轴上方, 如下图所示:</p><p><img alt="函数 $y=|x|$ 的图象" src=/figs/2022/2022-09/2022-0905-2100.svg></img></p><myexample><p>设 $a$, $b$ 为任意实数, 证明: $|a+b|\leqslant |a|+ |b|$, 并讨论等号成立的充要条件.</p></myexample><myproof><p>不等号两边都是非负数, 所以先平方再整理, 原式等价于 \[\begin{aligned}
+&|a+b|^2\leqslant (|a|+ |b|)^2\\
+ \Leftrightarrow{}& a^2+ 2ab+ b^2\leqslant a^2+ 2|ab|+ b^2\\
+\Leftrightarrow{}& ab\leqslant |ab|.
     \end{aligned}\]
-    由绝对值的定义, 最后一式成立, 所以原式也成立.
-    </p>
-    <p>原式中等号等立, 等价于最后一式等号成立, 结合绝对值的定义, 又等价于 $ab\geqslant 0$. 因此, \[
-        |a+b|= |a|+ |b|\]
-    的充要条件是 $ab\geqslant 0$ (可大致认为 $a$ 与 $b$ 同号).
-    </p>
-</myproof>
-<myremark>
-    <p>将上述不等式中的 $b$ 换成 $-b$, 可得 \[
-        |a-b|\leqslant |a|+ |b|,\]
-    等号成立的充要条件是 $ab\leqslant 0$.
-    </p>
-</myremark>
-<h2 id="绝对值不等式的解法">
-  绝对值不等式的解法
-  <a class="anchor" href="#%e7%bb%9d%e5%af%b9%e5%80%bc%e4%b8%8d%e7%ad%89%e5%bc%8f%e7%9a%84%e8%a7%a3%e6%b3%95">#</a>
-</h2>
-<p>对于简单的绝对值不等式, 可以根据绝对值的几何意义直接求解. 如不等式 $|x|< 3$, 由 $|x|$ 表示点 $x$ 到原点的距离可知, $x\in (-3,3)$; 而由不等式 $|x|\geqslant 3$, 可解得 $x\in(-\infty,-3]\cup[3,+\infty)$.
-</p>
-<myexample>
-    <p>解下列不等式:
-    </p>
-    <p>(1) $|x-1|\leqslant 2$;&emsp; (2) $|2x+1|> 3$;&emsp; 
-       (3) $|1-2x|\geqslant 5$.
-    </p>
-</myexample>
-<mysolution>
-    <p>(1) 将 $x-1$ 视为整体, 则 \[
-        -2\leqslant x-1\leqslant 2,\]
-    即 $-1\leqslant x\leqslant 3$, 所以 $x\in [-1,3]$.
-    </p>
-    <p>(2) 由题意, \[
-        2x+1< -3\quad \text{或}\quad 2x+1>3,\]
-    即 $x< -2$ 或 $x>1$, 所以 $x\in(-\infty,-2)\cup (1,+\infty)$.
-    </p>
-    <p>(3) 由题意, \[
-        1-2x\leqslant -5\quad \text{或}\quad 1-2x\geqslant 5,\]
-    即 $x\geqslant 3$ 或 $x\leqslant -2$, 所以 $x\in(-\infty,-2]\cup [3,+\infty)$.
-    </p>
-</mysolution>
-<p>对于稍微复杂一些的绝对值不等式, 若只含一个绝对值, 则可以按绝对值的几何意义分类讨论; 若含两个绝对值, 除了分类讨论, 也可以先尝试对不等式两边平方.
-</p>
-<myexample>
-    <p>解下列不等式:
-    </p>
-    <p>(1) $|x+1|< 2x$;&emsp;  (2) $|x-1|\geqslant 2x$;&emsp; 
-       (3) $|2x+1|> |x|$.
-    </p>
-</myexample>
-<mysolution>
-    <p>(1) 由题意, \[\left\{\!\!\begin{array}{l}
-        2x>0,\\
-        -2x< x+1< 2x,
-    \end{array}\right.\text{解得}\ x\in(1,+\infty).\]
-    </p>
-    <p>(2) 若 $2x\leqslant 0$ 即 $x\leqslant 0$, 则不等式已成立. 
-    </p>
-    <p>若 $2x> 0$ 即 $x> 0$, 则不等式等价于 \[
-        x-1\leqslant -2x\quad \text{或}\quad x-1\geqslant 2x,\]
-    解得 $x\leqslant \dfrac13$ 或 $x\leqslant -1$. 结合 $x>0$ 知, 此时 $0< x\leqslant \dfrac13$. 
-    </p>
-    <p>综上所述, $x\in\biggl(-\infty,\dfrac13\biggr]$.
-    </p>
-    <p>(3) 不等式两边平方得 \[
-        (2x+1)^2>x^2\quad \text{即}\quad (x+1)(3x+1)>0,\]
-    解得 $x\in(-\infty,-1)\cup \biggl(\dfrac13,+\infty\biggr)$.
-    </p>
-</mysolution>
-<myremark>
-    <p>对上例 (1) 中的不等式, 也可以直接两边平方, 因为可以断定不等号两边均为非负数; 对上例 (2) 中的不等式, 直接两边平方并非等价变形, 所以会得到错误的答案, 例如, 由 $3> -4$ 并不能得到 $3^2> (-4)^2$. 解不等式时, 必须运用等价变形确保不等式的解集没有发生变化. 具体到用两边平方的方法解不等式, 应牢记: 仅当 $a$, $b\geqslant 0$ 时, 才有\[
-        a> b\Leftrightarrow a^2> b^2.\]
-    </p>
-</myremark>
-<h2 id="含参数的二次不等式的解法">
-  含参数的二次不等式的解法
-  <a class="anchor" href="#%e5%90%ab%e5%8f%82%e6%95%b0%e7%9a%84%e4%ba%8c%e6%ac%a1%e4%b8%8d%e7%ad%89%e5%bc%8f%e7%9a%84%e8%a7%a3%e6%b3%95">#</a>
-</h2>
-<p>求解关于 $x$ 的二次不等式 $Ax^2+Bx+C&gt; 0$ ($A\neq 0$), 一般解法是利用对应的二次函数 $y= Ax^2+Bx+C$ 的图象写出解集. 在求该图象与 $x$ 轴的交点时, 通常是用因式分解来解二次方程 $Ax^2+Bx+C= 0$. 若二次不等式的系数含参数, 则对应的抛物线也随参数的取值不同而发生变化, 所以求解含参数的二次不等式时, 必须对参数分类讨论.</p>
-<myexample>
-    <p>解关于 $x$ 的不等式:
-    </p>
-    <p>(1) $x^2-(2+a)x+2a< 0$; &emsp; 
-        (2) $2x^2+(2+a)x+a\geqslant 0$.
-    </p>
-</myexample>
-<mysolution>
-    <p>(1) 不等式化为 \[
-        (x-2)(x-a)< 0,\]
-    所以根据二次函数 $y=(x-2)(x-a)$ 的图象知, 若 $a< 2$, 则 $x\in (a,2)$; 若 $a=2$, 则 $x\in \varnothing$; 若 $a>2$, 则 $x\in (2,a)$.
-    </p>
-    <p>(2) 不等式化为 \[
-        (2x+a)(x+1)\geqslant 0,\]
-    所以根据二次函数 $y=(2x+a)(x+1)$ 的图象知, 
-    </p>
-    <p>若 $-\dfrac{a}2< -1$ 即 $a> 2$, 则 $x\in \biggl(-\infty,-\dfrac{a}2\biggr]\cup [-1,+\infty)$; 
-    </p>
-    <p>若 $-\dfrac{a}2= -1$ 即 $a= 2$, 则 $x\in \mathbf{R}$; 
-    </p>
-    <p>若 $-\dfrac{a}2> -1$ 即 $a< 2$, 则 $x\in (-\infty,-1]\cup \biggl[-\dfrac{a}2,+\infty\biggr)$.
-    </p>
-</mysolution>
-<myexercise>
-    <p>解关于 $x$ 的不等式: \[
-        x^2+2x+ax+2a>0.\]
-    </p>
-</myexercise>
-<details><summary>参考答案</summary>
-    <p>不等式化为 \[
-        x^2+(2+a)x+2a>0\quad\text{即}\quad (x+2)(x+a)>0,\]
-    所以根据二次函数 $y=(x+2)(x+a)$ 的图象知, 
-    </p>
-    <p>若 $-a< -2$ 即 $a>2$, 则 $x\in (-\infty,-a)\cup (-2,+\infty)$; 
-    </p>
-    <p>若 $-a=-2$ 即 $a=2$, 则 $x\in \{x\mid x\neq-2\}$; 
-    </p>
-    <p>若 $-a>-2$ 即 $a< 2$, 则 $x\in (-\infty,-2)\cup (-a,+\infty)$.
-    </p>
-</details>
-<p>上例中关于 $x$ 的不等式虽然系数中带了参数 $a$, 但是仍然可以用因式分解的方法求得其解集. 正是由于系数中带了参数, 所以对应的二次函数图象由参数决定, 写解集时需要分类讨论, 讨论的主要依据是图象与 $x$ 轴交点的坐标. 再看一个复杂一点的例子.
-</p>
-<myexample>
-    <p>解关于 $x$ 的不等式: $x^2+ax-6a^2\leqslant 0$. 
-    </p>
-</myexample>
-<mysolution>
-    <p>不等式化为 \[
-        (x+3a)(x-2a)\leqslant 0,\]
-    所以根据二次函数 $y=(x+3a)(x-2a)$ 的图象知, 
-    </p>
-    <p>若 $-3a< 2a$ 即 $a>0$, 则 $x\in [-3a,2a]$; 
-    </p>
-    <p>若 $-3a=2a$ 即 $a=0$, 则 $x\in \{0\}$; 
-    </p>
-    <p>若 $-3a>2a$ 即 $a< 0$, 则 $x\in [2a,-3a]$.
-    </p>
-</mysolution>
-<p>从上例可以看出, 解含参数的关于 $x$ 的二次不等式, 步骤为: 把不等式整理为 $Ax^2+Bx+C>0$ 的形式 (建议 $A>0$), 再对二次式因式分解, 接着讨论对应二次方程的根的大小, 最后根据讨论的情况和二次函数图象写出对应的解集. 
-</p>
-</article>
- 
-          
-    
-    <div class="docs-prevnext">
-    
-        <a class="docs-prev button" href="/docs/prerequisite/inequality/inequality-property">
-          <span class="arrow-prev">← </span><span>不等式的性质</span></a>
-      
-      
-        <a class="docs-next button" href="">
-          <span></span><span class="arrow-next"> →</span></a>
-      
-    </div>
-
-    <p>作者邮箱 rong.liu@mail.bnu.edu.cn。</p>
-    <p>读者的支持是作者持续更新的动力😊</p>
-    
-
-      <footer class="book-footer">
-        
-  <div class="flex flex-wrap justify-between">
-
-
-
-
-
-</div>
-
-
-
-  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
-
-
- 
-        
-      </footer>
-
-      
-  
-  <div class="book-comments">
-
-</div>
-  
- 
-
-      <label for="menu-control" class="hidden book-menu-overlay"></label>
-    </div>
-
-    
-    <aside class="book-toc">
-      <div class="book-toc-content">
-        
-  
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#绝对值不等式与二次不等式">绝对值不等式与二次不等式</a>
-      <ul>
-        <li><a href="#绝对值的几何意义">绝对值的几何意义</a></li>
-        <li><a href="#绝对值不等式的解法">绝对值不等式的解法</a></li>
-        <li><a href="#含参数的二次不等式的解法">含参数的二次不等式的解法</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-
-
- 
-      </div>
-    </aside>
-    
-  </main>
-
-  
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
+由绝对值的定义, 最后一式成立, 所以原式也成立.</p><p>原式中等号等立, 等价于最后一式等号成立, 结合绝对值的定义, 又等价于 $ab\geqslant 0$. 因此, \[
+|a+b|= |a|+ |b|\]
+的充要条件是 $ab\geqslant 0$ (可大致认为 $a$ 与 $b$ 同号).</p></myproof><myremark><p>将上述不等式中的 $b$ 换成 $-b$, 可得 \[
+|a-b|\leqslant |a|+ |b|,\]
+等号成立的充要条件是 $ab\leqslant 0$.</p></myremark><p>解绝对值不等式的基本方法是<strong>零点分段法</strong>, 具体做法是: 先求出各绝对值内式子的零点 (使式子等于 $0$ 的未知数的值), 再用零点将数轴分为多个区间, 然后在每个区间上分别根据各绝对值内式子的正负号去掉绝对值.</p><myexample><p>解下列不等式:</p><p>(1) $|x-1|\leqslant 2$;&emsp; (2) $|2x-4|\geqslant 3+ |x+1|$.</p></myexample><mysolution><p>(1) 题中应考虑零点 $1$, 将数轴分为两段: $(-\infty,1]$, $(1,+\infty)$.</p><p>若 $x\in (-\infty,1]$, 则原不等式化为 \[
+-(x-1)\leqslant 2\Rightarrow x\geqslant -1,\]
+结合 $x\in (-\infty,1]$ 知, $x\in [-1,1]$.</p><p>若 $x\in (1,+\infty)$, 则原不等式化为 \[
+x-1\leqslant 2\Rightarrow x\leqslant 3,\]
+结合 $x\in (1,+\infty)$ 知, $x\in (1,3]$.</p><p>综上所述, $x\in [-1,3]$.</p><p>(2) 题中应考虑零点 $-1$ 和 $2$, 将数轴分为三段: $(-\infty,-1]$, $(-1,2]$, $(2,+\infty)$.</p><p>若 $x\in (-\infty,-1]$, 则原不等式化为 \[
+-(2x-4)\geqslant 3-(x+1)\Rightarrow x\leqslant 2,\]
+因此 $x\in (-\infty,-1]$.</p><p>若 $x\in (-1,2]$, 则原不等式化为 \[
+-(2x-4)\geqslant 3+(x+1)\Rightarrow x\leqslant 0,\]
+因此 $x\in (-1,0]$.</p><p>若 $x\in (2,+\infty]$, 则原不等式化为 \[
+2x-4\geqslant 3+(x+1)\Rightarrow x\geqslant 8,\]
+因此 $x\in [8,+\infty)$.</p><p>综上所述, $x\in (-\infty,0]\cup [8,+\infty)$.</p></mysolution><myremark><p>用零点对数轴分段时, 一般要求“不重不漏”, 如 (1) 中也可以将数轴分为 $(-\infty,1)$, $[1,+\infty)$, 但是不宜分为 $(-\infty,1]$, $[1,+\infty)$, 且不能分为 $(-\infty,1)$, $(1,+\infty)$.</p></myremark><h2 id=绝对值不等式的解法>绝对值不等式的解法
+<a class=anchor href=#%e7%bb%9d%e5%af%b9%e5%80%bc%e4%b8%8d%e7%ad%89%e5%bc%8f%e7%9a%84%e8%a7%a3%e6%b3%95>#</a></h2><p>虽然零点分段法是求解绝对值不等式的通用方法, 但是适当运用绝对值的几何意义, 有时能简化计算过程.</p><p>对于简单的绝对值不等式, 可以根据绝对值的几何意义直接求解. 如不等式 $|x|< 3$, 由 $|x|$ 表示点 $x$ 到原点的距离可知, $x\in (-3,3)$; 而由不等式 $|x|\geqslant 3$, 可解得 $x\in(-\infty,-3]\cup[3,+\infty)$.</p><myexample><p>解下列不等式:</p><p>(1) $|x-1|\leqslant 2$;&emsp; (2) $|2x+1|> 3$;&emsp;
+(3) $|1-2x|\geqslant 5$.</p></myexample><mysolution><p>(1) 将 $x-1$ 视为整体, 则 \[
+-2\leqslant x-1\leqslant 2,\]
+即 $-1\leqslant x\leqslant 3$, 所以 $x\in [-1,3]$.</p><p>(2) 由题意, \[
+2x+1< -3\quad \text{或}\quad 2x+1>3,\]
+即 $x< -2$ 或 $x>1$, 所以 $x\in(-\infty,-2)\cup (1,+\infty)$.</p><p>(3) 由题意, \[
+1-2x\leqslant -5\quad \text{或}\quad 1-2x\geqslant 5,\]
+即 $x\geqslant 3$ 或 $x\leqslant -2$, 所以 $x\in(-\infty,-2]\cup [3,+\infty)$.</p></mysolution><p>对于稍微复杂一些的绝对值不等式, 若只含一个绝对值, 则可以按绝对值的几何意义分类讨论; 若含两个绝对值, 除了用零点分段法, 也可以先尝试对不等式两边平方.</p><myexample><p>解下列不等式:</p><p>(1) $|x+1|< 2x$;&emsp; (2) $|x-1|\geqslant 2x$;&emsp;
+(3) $|2x+1|> |x|$.</p></myexample><mysolution><p>(1) 由题意, \[\left\{\!\!\begin{array}{l}
+2x>0,\\
+-2x< x+1< 2x,
+\end{array}\right.\text{解得}\ x\in(1,+\infty).\]</p><p>(2) 若 $2x\leqslant 0$ 即 $x\leqslant 0$, 则不等式已成立.</p><p>若 $2x> 0$ 即 $x> 0$, 则不等式等价于 \[
+x-1\leqslant -2x\quad \text{或}\quad x-1\geqslant 2x,\]
+解得 $x\leqslant \dfrac13$ 或 $x\leqslant -1$. 结合 $x>0$ 知, 此时 $0< x\leqslant \dfrac13$.</p><p>综上所述, $x\in\biggl(-\infty,\dfrac13\biggr]$.</p><p>(3) 不等式两边平方得 \[
+(2x+1)^2>x^2\quad \text{即}\quad (x+1)(3x+1)>0,\]
+解得 $x\in(-\infty,-1)\cup \biggl(\dfrac13,+\infty\biggr)$.</p></mysolution><myremark><p>对上例 (1) 中的不等式, 也可以直接两边平方, 因为可以断定不等号两边均为非负数; 对上例 (2) 中的不等式, 直接两边平方并非等价变形, 所以会得到错误的答案, 例如, 由 $3> -4$ 并不能得到 $3^2> (-4)^2$. 解不等式时, 必须运用等价变形确保不等式的解集没有发生变化. 具体到用两边平方的方法解不等式, 应牢记: 仅当 $a$, $b\geqslant 0$ 时, 才有\[
+a> b\Leftrightarrow a^2> b^2.\]</p></myremark><h2 id=二次不等式>二次不等式
+<a class=anchor href=#%e4%ba%8c%e6%ac%a1%e4%b8%8d%e7%ad%89%e5%bc%8f>#</a></h2><p>解二次不等式 $ax^2+bx+c>0$ 或 $ax^2+bx+c\geqslant0$ 时, 一般先因式分解 $ax^2+bx+c$, 再借助对应二次函数的图形来确定不等式的解集. 如 \[
+x^2-x-2>0\Rightarrow (x+1)(x-2)>0,\]
+由图形知 $x< -1$ 或 $x>2$. 为了方便应用此方法, 通常把二次项系数化为正数, 如 $-2x^2-x+1\geqslant 0$ 化为 $2x^2+x-1\leqslant 0$ (注意不等号方向变了).</p><myexercise><p>解下列不等式:</p><p>(1) $-3x^2 +5x+2>0$;&emsp; (2) $(x-2)(x+3)>6$.</p></myexercise><mysolution><p>(1) 先将二次项系数化为正数, 再分解因式, \[
+3x^2- 5x- 2< 0,\quad (3x+1)(x-2)< 0,\]
+则 $x\in\biggl(-\dfrac13,2\biggr)$.</p><p>(2) 化为与 $0$ 比较并整理, \[
+x^2+x-12> 0,\quad (x-3)(x+4)>0,\]
+解得 $x\in(-\infty,-4)\cup (3,+\infty)$.</p></mysolution><p>由二次不等式的解法可知, 两个二次不等式 \[
+ax^2+bx+c>0,\quad ax^2+bx+c\leqslant 0\]
+的解集互为补集 (全集为实数集 $\mathbf{R}$), 且两者解集的端点 (除了 $-\infty$, $+\infty$) 就是对应二次方程 $ax^2+bx+c=0$ 的解. 例如, 由二次不等式 $ax^2+bx+c>0$ 的解集为 $(1,2)$ 可知, $ax^2+bx+c\leqslant 0$ 的解集为 $(-\infty,1]\cup [2,+\infty)$, 且方程 $ax^2+bx+c=0$ 的两根为 $1$, $2$, 进而可由<a href=/docs/prerequisite/ms-algebra/veite-theorem>韦达定理</a>得到 $a$, $b$, $c$ 的数量关系.</p><myexample><p>(1) 若关于 $x$ 的不等式 $x^2 +3x+a>0$ 的解集为 $\{x\mid x< -2\ \text{或}\ x>-1\}$, 求 $a$ 的值;</p><p>(2) 若关于 $x$ 的不等式 $ax^2 +bx-1>0$ 的解集为 $\{x\mid 3< x< 4\}$, 求 $a,b$ 的值.</p></myexample><mysolution><p>(1) 由韦达定理, $a= (-1)\cdot (-2)= 2$.</p><p>(2) $3$ 和 $4$ 为对应二次方程 $ax^2 +bx-1= 0$ 的两根, 由韦达定理, \[
+3+4= -\frac{b}{a},\quad 3\cdot 4= \frac{-1}a,\]
+解得 $a= -\dfrac1{12}$, $b=\dfrac{7}{12}$.</p></mysolution><h2 id=含参数的二次不等式的解法>含参数的二次不等式的解法
+<a class=anchor href=#%e5%90%ab%e5%8f%82%e6%95%b0%e7%9a%84%e4%ba%8c%e6%ac%a1%e4%b8%8d%e7%ad%89%e5%bc%8f%e7%9a%84%e8%a7%a3%e6%b3%95>#</a></h2><p>解二次不等式时, 利用了对应的二次函数图象. 若二次不等式的系数含参数, 则对应的二次函数图象也随参数的取值不同而发生变化. 所以求解含参数的二次不等式时, 必须对参数分类讨论.</p><myexample><p>解关于 $x$ 的不等式:</p><p>(1) $x^2-(2+a)x+2a< 0$; &emsp;
+(2) $2x^2+(2+a)x+a\geqslant 0$.</p></myexample><mysolution><p>(1) 不等式化为 \[
+(x-2)(x-a)< 0,\]
+所以根据二次函数 $y=(x-2)(x-a)$ 的图象知, 若 $a< 2$, 则 $x\in (a,2)$; 若 $a=2$, 则 $x\in \varnothing$; 若 $a>2$, 则 $x\in (2,a)$.</p><p>(2) 不等式化为 \[
+(2x+a)(x+1)\geqslant 0,\]
+所以根据二次函数 $y=(2x+a)(x+1)$ 的图象知,</p><p>若 $-\dfrac{a}2< -1$ 即 $a> 2$, 则 $x\in \biggl(-\infty,-\dfrac{a}2\biggr]\cup [-1,+\infty)$;</p><p>若 $-\dfrac{a}2= -1$ 即 $a= 2$, 则 $x\in \mathbf{R}$;</p><p>若 $-\dfrac{a}2> -1$ 即 $a< 2$, 则 $x\in (-\infty,-1]\cup \biggl[-\dfrac{a}2,+\infty\biggr)$.</p></mysolution><myexercise><p>解关于 $x$ 的不等式: \[
+x^2+2x+ax+2a>0.\]</p></myexercise><details><summary>参考答案</summary><p>不等式化为 \[
+x^2+(2+a)x+2a>0\quad\text{即}\quad (x+2)(x+a)>0,\]
+所以根据二次函数 $y=(x+2)(x+a)$ 的图象知,</p><p>若 $-a< -2$ 即 $a>2$, 则 $x\in (-\infty,-a)\cup (-2,+\infty)$;</p><p>若 $-a=-2$ 即 $a=2$, 则 $x\in \{x\mid x\neq-2\}$;</p><p>若 $-a>-2$ 即 $a< 2$, 则 $x\in (-\infty,-2)\cup (-a,+\infty)$.</p></details><p>上例中关于 $x$ 的不等式含参数 $a$, 所以写解集时需要分类讨论, 讨论的主要依据是对应二次方程两根的大小关系. 再看一个复杂一点的例子.</p><myexample><p>解关于 $x$ 的不等式: $x^2+ax-6a^2\leqslant 0$.</p></myexample><mysolution><p>不等式化为 \[
+(x+3a)(x-2a)\leqslant 0,\]
+所以根据二次函数 $y=(x+3a)(x-2a)$ 的图象知,</p><p>若 $-3a< 2a$ 即 $a>0$, 则 $x\in [-3a,2a]$;</p><p>若 $-3a=2a$ 即 $a=0$, 则 $x\in \{0\}$;</p><p>若 $-3a>2a$ 即 $a< 0$, 则 $x\in [2a,-3a]$.</p></mysolution><p>从上例可以看出, 解含参数的关于 $x$ 的二次不等式, 步骤为: 把不等式整理为 $Ax^2+Bx+C>0$ 的形式 (建议 $A>0$), 再对二次式因式分解, 接着讨论对应二次方程的根的大小, 最后根据讨论的情况和二次函数图象写出对应的解集.</p><myexercise><p>(1) 解关于 $x$ 的不等式: $x^2 -(3a+1)x+2a(a+1)< 0$.</p><p>(2) 若关于 $x$ 的不等式 $x^2 -2ax-8a^2 < 0$ 的解集为 $(x_1,x_2)$, 且 $x_2-x_1=12$, 求 $a$ 的值.</p></myexercise><details><summary>参考答案</summary><p>(1) 提示: 先分解因式, 再比较两根 $2a$ 和 $a+1$ 的大小.</p><p>(2) 若 $a=0$, 则不等式为 $x^2< 0$, 无解. 若 $a>0$, 解不等式可知, $x\in (-2a,4a)$, 则 \[
+x_1= -2a, x_2= 4a,\quad x_2-x_1= 6a.\]
+由 $x_2-x_1=12$ 知 $a= 2$. 类似地, 若 $a< 0$, 可得 $a=-2$.</p></details><myexample><p>已知 $a\in\mathbf{Z}$, 关于 $x$ 的一元二次不等式 $x^2 -6x+a\leqslant0$ 的解集中有且仅有 $3$ 个整数, 求 $a$ 的值.</p></myexample><mysolution><p>方法一: 作二次函数 $y= x^2 -6x+a$ 图象的草图, 开口向上且对称轴为 $x=3$, 所以 $3$ 个整数解必为 $2,3,4$. 结合图象知, 当 $x=2$ 时 $y\leqslant 0$, 当 $x=1$ 时 $y> 0$, 解得 $a\in (5,8]$.</p><p>方法二: 原不等式化为 \[
+(x-3)^2\leqslant 9-a,\quad |x-3|\leqslant \sqrt{9-a},\]
+由题意并结合绝对值的几何意义, \[
+\sqrt{9-a}\in [1,2),\quad a\in(5,8].\]</p></mysolution></article><div class=docs-prevnext><a class="docs-prev button" href=/docs/prerequisite/inequality/inequality-property><span class=arrow-prev>← </span><span>不等式的性质</span></a>
+<a class="docs-next button" href><span></span><span class=arrow-next> →</span></a></div><p>作者邮箱 rong.liu@mail.bnu.edu.cn。</p><p>读者的支持是作者持续更新的动力😊</p><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#绝对值不等式与二次不等式>绝对值不等式与二次不等式</a><ul><li><a href=#绝对值的几何意义>绝对值的几何意义</a></li><li><a href=#绝对值不等式的解法>绝对值不等式的解法</a></li><li><a href=#二次不等式>二次不等式</a></li><li><a href=#含参数的二次不等式的解法>含参数的二次不等式的解法</a></li></ul></li></ul></nav></div></aside></main></body></html>

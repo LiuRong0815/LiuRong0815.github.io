@@ -1,788 +1,95 @@
-<!DOCTYPE html>
-<html lang="zh" dir="ltr">
-<head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="解三角形 # 在 $\triangle ABC$ 中, $a=\sqrt7$, $b=2$, $A= 60^\circ$, 求 $c$ 的值. 题中有三边一角, 正好用余弦定理. 由 \[a^2= b^2&#43;c^2- 2bc\cos A\quad \text{即}\quad 7= 4&#43;c^2- 2c,\] 解得 $c= 3$. 对于 $\triangle ABC$, 判断下列命题是否正确: (1) 若 $\cos A= \cos B$, 则 $\triangle ABC$ 是等腰三角形; (2) 若 $\triangle ABC$ 为锐角三角形, 则 $A&#43;B&gt; \dfrac\pi2$, 从而 $\sin A&gt; \cos B$; (3) 符合条件 $a=8$, $c=10$, $B=60^\circ$ 的 $\triangle ABC$ 有两个; (4) 若 $\sin^2 A&#43; \sin^2 B&lt; \sin^2 C$, 则 $\triangle ABC$ 是钝角三角形.">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="解三角形" />
-<meta property="og:description" content="解三角形 # 在 $\triangle ABC$ 中, $a=\sqrt7$, $b=2$, $A= 60^\circ$, 求 $c$ 的值. 题中有三边一角, 正好用余弦定理. 由 \[a^2= b^2&#43;c^2- 2bc\cos A\quad \text{即}\quad 7= 4&#43;c^2- 2c,\] 解得 $c= 3$. 对于 $\triangle ABC$, 判断下列命题是否正确: (1) 若 $\cos A= \cos B$, 则 $\triangle ABC$ 是等腰三角形; (2) 若 $\triangle ABC$ 为锐角三角形, 则 $A&#43;B&gt; \dfrac\pi2$, 从而 $\sin A&gt; \cos B$; (3) 符合条件 $a=8$, $c=10$, $B=60^\circ$ 的 $\triangle ABC$ 有两个; (4) 若 $\sin^2 A&#43; \sin^2 B&lt; \sin^2 C$, 则 $\triangle ABC$ 是钝角三角形." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="/docs/trigonometry/sine-cosine-law/solving-triangles/" /><meta property="article:section" content="docs" />
-
-
-
-<title>解三角形 | 高中数学资料</title>
-<link rel="manifest" href="/manifest.json">
-<link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.6c08f1f220250ecc36dde6a6fa75fdd4247d84aaaa23d4bc157c9b2f8fa595bd.css" >
-  <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh.search.min.784ab3c077aed3c64574cb6afb6c2069baa00d2088ec733a85e8e0551c41cf97.js" ></script>
-
-  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
-<!--
-Made with Book Theme
-https://github.com/alex-shpak/hugo-book
--->
-  <link rel="stylesheet" href='/katex/katex.min.css' crossorigin="anonymous">
-
-
-<script defer src='/katex/katex.min.js' crossorigin="anonymous"></script>
-
-
-<script defer src='/katex/auto-render.min.js' 
-    onload="renderMathInElement(document.body);"></script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        renderMathInElement(document.body, {
-            
-            
-            delimiters: [
-                { left: '$$', right: '$$', display: true },
-                { left: '$', right: '$', display: false },
-                { left: '\\(', right: '\\)', display: false },
-                { left: '\\[', right: '\\]', display: true }
-            ],
-            
-            throwOnError: false
-        });
-    });
-</script>
-
-</head>
-<body dir="ltr">
-  <input type="checkbox" class="hidden toggle" id="menu-control" />
-  <input type="checkbox" class="hidden toggle" id="toc-control" />
-  <main class="container flex">
-    <aside class="book-menu">
-      <div class="book-menu-content">
-        
-  <nav>
-<h2 class="book-brand">
-  <a href="/"><span>高中数学资料</span>
-  </a>
-</h2>
-
-
-<div class="book-search">
-  <input type="text" id="book-search-input" placeholder="搜索" aria-label="搜索" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner hidden"></div>
-  <ul id="book-search-results"></ul>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-  
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-7fbb26c6156d78d59d607292b53948a4" class="toggle"  />
-    <label for="section-7fbb26c6156d78d59d607292b53948a4" class="flex justify-between">
-      <a href="/docs/prerequisite/" class="">预备知识</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-1e2f9b8b873223fe63fc7221375c0eb0" class="toggle"  />
-    <label for="section-1e2f9b8b873223fe63fc7221375c0eb0" class="flex justify-between">
-      <a href="/docs/prerequisite/ms-algebra/" class="">初中代数提要</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-algebra/quadratic-factorization/" class="">二次三项式的因式分解</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-algebra/quadratic-equation/" class="">一元二次方程的解法</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-algebra/veite-theorem/" class="">韦达定理</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-c1c4f99569969342f46afcb379e41254" class="toggle"  />
-    <label for="section-c1c4f99569969342f46afcb379e41254" class="flex justify-between">
-      <a href="/docs/prerequisite/ms-geometry/" class="">初中几何提要</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-geometry/symmetric-congruence-similar/" class="">对称、全等与相似</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-geometry/triangle/" class="">三角形</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-geometry/quadrilateral/" class="">四边形</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-geometry/circle/" class="">圆</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-geometry/area/" class="">平面图形的面积</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-53227ed5b540c99051432d70e3c9c4da" class="toggle"  />
-    <label for="section-53227ed5b540c99051432d70e3c9c4da" class="flex justify-between">
-      <a href="/docs/prerequisite/ms-function/" class="">初中函数提要</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-function/axis-coordinate/" class="">数轴与平面直角坐标系</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-function/linear-inverse/" class="">一次函数与反比例函数</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-function/quadratic-function-inequality/" class="">二次函数与二次不等式</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-function/graph-tranform/" class="">函数图象的变换</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-4adec7e7d2e2d6fa5eaee0a98a60892e" class="toggle"  />
-    <label for="section-4adec7e7d2e2d6fa5eaee0a98a60892e" class="flex justify-between">
-      <a href="/docs/prerequisite/set-logic/" class="">集合与简易逻辑</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/set-logic/set-def/" class="">集合的定义</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/set-logic/set-operation/" class="">集合的运算</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/set-logic/proposition-iff/" class="">命题与充要条件</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/set-logic/logical-quantifier/" class="">逻辑量词</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-0efa6e9487d50f8c7308e9898b74ff74" class="toggle"  />
-    <label for="section-0efa6e9487d50f8c7308e9898b74ff74" class="flex justify-between">
-      <a href="/docs/prerequisite/inequality/" class="">不等式</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/inequality/inequality-property/" class="">不等式的性质</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/inequality/abs-quadratic-inequality/" class="">绝对值不等式与二次不等式</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-  </ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</nav>
-
-
-
-
-  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
-
-
- 
-      </div>
-    </aside>
-
-    <div class="book-page">
-      <header class="book-header">
-        
-  <div class="flex align-center justify-between">
-  <label for="menu-control">
-    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
-  </label>
-
-  <strong>解三角形</strong>
-
-  <label for="toc-control">
-    
-    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
-    
-  </label>
-</div>
-
-
-  
-  <aside class="hidden clearfix">
-    
-  
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#解三角形">解三角形</a></li>
-  </ul>
-</nav>
-
-
-
-  </aside>
-  
- 
-      </header>
-
-      
-      
-  <article class="markdown"><h1 id="解三角形">
-  解三角形
-  <a class="anchor" href="#%e8%a7%a3%e4%b8%89%e8%a7%92%e5%bd%a2">#</a>
-</h1>
-<myexample>
-<p>在 $\triangle ABC$ 中, $a=\sqrt7$, $b=2$, $A= 60^\circ$, 求 $c$ 的值.
-</p>
-</myexample>
-<mysolution>
-    <p>题中有三边一角, 正好用余弦定理. 由
-    \[a^2= b^2+c^2- 2bc\cos A\quad \text{即}\quad
-        7= 4+c^2- 2c,\]
-    解得 $c= 3$.
-</p>
-</mysolution>
-</p>
-<p><myexample>
-<p>对于 $\triangle ABC$, 判断下列命题是否正确:
-</p>
-<p>(1) 若 $\cos A= \cos B$, 则 $\triangle ABC$ 是等腰三角形;
-</p>
-<p>(2) 若 $\triangle ABC$ 为锐角三角形, 则 $A+B> \dfrac\pi2$, 从而 $\sin A> \cos B$;
-</p>
-<p>(3) 符合条件 $a=8$, $c=10$, $B=60^\circ$ 的 $\triangle ABC$ 有两个;
-</p>
-<p>(4) 若 $\sin^2 A+ \sin^2 B< \sin^2 C$, 则 $\triangle ABC$ 是钝角三角形.
-</p>
-</myexample>
-<mysolution>
-    <p>(1) 因为余弦函数 $f(x)=\cos x$, $x\in(0,\pi)$ 为单调递减函数, 所以 $\cos A= \cos B$ 表明 $A=B$, 结论成立.
-</p>
-<p>(2) 锐角三角形的三个内角均为锐角, 则 
-    \[A+B= \pi-C> \frac\pi2,\]
-    即 $B> \dfrac\pi2- A$. 再由余弦函数 $f(x)=\cos x$, $x\in(0,\pi)$ 为单调递减函数知
-    \[f(B)< f\Bigl(\dfrac\pi2- A\Bigr) \quad\text{即}\quad
-        \cos B< \cos\Bigl(\dfrac\pi2- A\Bigr)= \sin A,\]
-    结论成立.
-</p>
-<p>(3) 由 $b^2= a^2+c^2- 2ac\cos B$ 可算出 $b$ 的值. 所以 $\triangle ABC$ 的三边是确定的, 故符合条件的 $\triangle ABC$ 只有一个. 结论不成立. (本小题也可以结合全等三角形的“边角边”判定法得到唯一性.)
-</p>
-<p>(4) 由正弦定理, 已知不等式化为 $a^2+b^2< c^2$. 再由余弦定理,
-    \[\cos C= \frac{a^2+b^2-c^2}{2ab}< 0,\]
-    表明 $C\in\Bigl(\dfrac\pi2,\pi\Bigr)$, 即 $\triangle ABC$ 为钝角三角形. 结论成立.
-</p>
-</mysolution>
-</p>
-<p><myremark>
-    <p>(1) 上题中前两个小问都用到了余弦函数在区间 $(0,\pi)$ 上的单调递减性质.
-</p>
-<p>(2) 最后一个小问同时用到了正弦定理和余弦定理, 也得到结论: $a^2+b^2< c^2$ $\Leftrightarrow$ 角 $C$ 为钝角.
-</p>
-</myremark>
-<myexample>
-<p>已知在 $\triangle ABC$ 中, $a=\sqrt6$, $b=3\sqrt2$, $A=30^\circ$, 求角 $B$ 的大小.
-</p>
-</myexample>
-<mysolution>
-    <p>由正弦定理, $\dfrac{a}{\sin A}= \dfrac{b}{\sin B}$, 即
-    \[\frac{\sqrt6}{\sin30^\circ}= \frac{3\sqrt2}{\sin B},\quad
-    \text{即}\quad \sin B= \frac{\sqrt3}{2},\]
-    所以 $B= 60^\circ$ 或 $120^\circ$.
-</p>
-</mysolution>
-<myexample>
-<p>已知 $\triangle ABC$ 中, $a\sin A- b\sin B= 4c\sin C$, $\cos A= -\dfrac14$, 求 $\dfrac{c}{b}$ 的值.
-</p>
-</myexample>
-<mysolution>
-    <p>已知两式可分别用正弦定理和余弦定理化为
-    \[a^2- b^2= 4c^2,\quad
-        \frac{b^2+c^2-a^2}{2bc}= -\frac14,\]
-    再将上述前一式代入后一式, 
-    \[b^2+c^2- (b^2+4c^2)= -\frac14\cdot 2bc,\]
-    整理得 $\dfrac{c}{b}= \dfrac16$.
-</p>
-</mysolution>
-<myexample>
-<p>在 $\triangle ABC$ 中, $\cos C= \dfrac17$, $c=8$, $a=7$, 求 $b$ 的值和角 $A$ 的大小.
-</p>
-</myexample>
-<mysolution>
-    <p>由余弦定理, $c^2= a^2+b^2- 2ab\cos C$, 即
-    \[64= 49+ b^2- 14b\cdot\frac17, \quad\text{即}\quad
-        (b+3)(b-5)=0,\]
-    解得 $b=5$ (舍负). 又因为
-    \[\cos A= \frac{b^2+c^2- a^2}{2bc}= \frac12,\]
-    所以 $A= 60^\circ$.
-</p>
-</mysolution>
-</p>
-<p><myexample>
-<p>在 $\triangle ABC$ 中, $\cos B= -\dfrac12$, $b-c=2$, $a=3$, 求 $b$, $c$ 和 $\sin(B+C)$ 的值.
-</p>
-</myexample>
-<mysolution>
-    <p>由余弦定理, $b^2= a^2+c^2- 2ac\cos B$, 将已知条件代入,
-    \[(c+2)^2= 9+c^2- 6c\cdot\biggl(-\frac12\biggr),\]
-    解得 $c=5$, 所以 $b=7$. 又因为
-    \[\cos A= \frac{b^2+c^2- a^2}{2bc}= \frac{13}{14},\]
-    则 $\sin A= \dfrac{3\sqrt3}{14}$, 所以
-    \[\sin(B+C)= \sin(\pi- A)= \sin A= \frac{3\sqrt3}{14}.\]
-</p>
-</mysolution>
-</p>
-<p>在上题中计算 $\sin(B+C)$ 时，不应分别计算 $\cos B$, $\sin B$, $\cos C$ 和 $\sin C$ 后, 将 $\sin(B+C)$ 展开代入求值, 而应利用在 $\triangle ABC$ 中, $\sin(B+C)= \sin A$ 来简化计算.
-</p>
-<myexample>
-<p>在 $\triangle ABC$ 中, $b\sin A= a\cos\Bigl(B- \dfrac\pi6\Bigr)$, $c= 5$, 求角 $B$ 的大小, 并从条件“$b=7$”和“$C=\dfrac\pi4$”中任选一个, 求 $a$ 的值.
-</p>
-</myexample>
-<mysolution>
-    <p>利用正弦定理, 已知等式可变形如下: \[\begin{aligned}
-        \sin B\sin A &= \sin A\cos\Bigl(B- \frac\pi6\Bigr),\\
-        \sin B &= \cos B\cos\frac\pi6+ \sin B\sin\frac\pi6,\\
-        \frac12\sin B &= \frac{\sqrt3}2\cos B,\\
+<!doctype html><html lang=zh dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="解三角形 # 在 $\triangle ABC$ 中, $a=\sqrt7$, $b=2$, $A= 60^\circ$, 求 $c$ 的值. 题中有三边一角, 正好用余弦定理. 由 \[a^2= b^2+c^2- 2bc\cos A\quad \text{即}\quad 7= 4+c^2- 2c,\] 解得 $c= 3$. 对于 $\triangle ABC$, 判断下列命题是否正确: (1) 若 $\cos A= \cos B$, 则 $\triangle ABC$ 是等腰三角形; (2) 若 $\triangle ABC$ 为锐角三角形, 则 $A+B> \dfrac\pi2$, 从而 $\sin A> \cos B$; (3) 符合条件 $a=8$, $c=10$, $B=60^\circ$ 的 $\triangle ABC$ 有两个; (4) 若 $\sin^2 A+ \sin^2 B< \sin^2 C$, 则 $\triangle ABC$ 是钝角三角形."><meta name=theme-color content="#FFFFFF"><meta property="og:title" content="解三角形"><meta property="og:description" content="解三角形 # 在 $\triangle ABC$ 中, $a=\sqrt7$, $b=2$, $A= 60^\circ$, 求 $c$ 的值. 题中有三边一角, 正好用余弦定理. 由 \[a^2= b^2+c^2- 2bc\cos A\quad \text{即}\quad 7= 4+c^2- 2c,\] 解得 $c= 3$. 对于 $\triangle ABC$, 判断下列命题是否正确: (1) 若 $\cos A= \cos B$, 则 $\triangle ABC$ 是等腰三角形; (2) 若 $\triangle ABC$ 为锐角三角形, 则 $A+B> \dfrac\pi2$, 从而 $\sin A> \cos B$; (3) 符合条件 $a=8$, $c=10$, $B=60^\circ$ 的 $\triangle ABC$ 有两个; (4) 若 $\sin^2 A+ \sin^2 B< \sin^2 C$, 则 $\triangle ABC$ 是钝角三角形."><meta property="og:type" content="article"><meta property="og:url" content="/docs/trigonometry/sine-cosine-law/solving-triangles/"><meta property="article:section" content="docs"><title>解三角形 | 高中数学资料</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.6c08f1f220250ecc36dde6a6fa75fdd4247d84aaaa23d4bc157c9b2f8fa595bd.css><script defer src=/flexsearch.min.js></script>
+<script defer src=/zh.search.min.7287a52d6d4b6df1bd72f5e28bb3775dbf17b637e7c63244f3fb9df429bae232.js></script>
+<script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js></script>
+<link rel=stylesheet href=/katex/katex.min.css crossorigin=anonymous><script defer src=/katex/katex.min.js crossorigin=anonymous></script>
+<script defer src=/katex/auto-render.min.js onload=renderMathInElement(document.body)></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1},{left:"\\[",right:"\\]",display:!0}],throwOnError:!1})})</script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a href=/><span>高中数学资料</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=搜索 aria-label=搜索 maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li><input type=checkbox id=section-7fbb26c6156d78d59d607292b53948a4 class=toggle>
+<label for=section-7fbb26c6156d78d59d607292b53948a4 class="flex justify-between"><a href=/docs/prerequisite/>预备知识</a></label><ul><li><input type=checkbox id=section-1e2f9b8b873223fe63fc7221375c0eb0 class=toggle>
+<label for=section-1e2f9b8b873223fe63fc7221375c0eb0 class="flex justify-between"><a href=/docs/prerequisite/ms-algebra/>初中代数提要</a></label><ul><li><a href=/docs/prerequisite/ms-algebra/quadratic-factorization/>二次三项式的因式分解</a></li><li><a href=/docs/prerequisite/ms-algebra/quadratic-equation/>一元二次方程的解法</a></li><li><a href=/docs/prerequisite/ms-algebra/veite-theorem/>韦达定理</a></li></ul></li><li><input type=checkbox id=section-c1c4f99569969342f46afcb379e41254 class=toggle>
+<label for=section-c1c4f99569969342f46afcb379e41254 class="flex justify-between"><a href=/docs/prerequisite/ms-geometry/>初中几何提要</a></label><ul><li><a href=/docs/prerequisite/ms-geometry/symmetric-congruence-similar/>对称、全等与相似</a></li><li><a href=/docs/prerequisite/ms-geometry/triangle/>三角形</a></li><li><a href=/docs/prerequisite/ms-geometry/quadrilateral/>四边形</a></li><li><a href=/docs/prerequisite/ms-geometry/circle/>圆</a></li><li><a href=/docs/prerequisite/ms-geometry/area/>平面图形的面积</a></li></ul></li><li><input type=checkbox id=section-53227ed5b540c99051432d70e3c9c4da class=toggle>
+<label for=section-53227ed5b540c99051432d70e3c9c4da class="flex justify-between"><a href=/docs/prerequisite/ms-function/>初中函数提要</a></label><ul><li><a href=/docs/prerequisite/ms-function/axis-coordinate/>数轴与平面直角坐标系</a></li><li><a href=/docs/prerequisite/ms-function/linear-inverse/>一次函数与反比例函数</a></li><li><a href=/docs/prerequisite/ms-function/quadratic-function-inequality/>二次函数与二次不等式</a></li><li><a href=/docs/prerequisite/ms-function/graph-tranform/>函数图象的变换</a></li></ul></li><li><input type=checkbox id=section-4adec7e7d2e2d6fa5eaee0a98a60892e class=toggle>
+<label for=section-4adec7e7d2e2d6fa5eaee0a98a60892e class="flex justify-between"><a href=/docs/prerequisite/set-logic/>集合与简易逻辑</a></label><ul><li><a href=/docs/prerequisite/set-logic/set-def/>集合的定义</a></li><li><a href=/docs/prerequisite/set-logic/set-operation/>集合的运算</a></li><li><a href=/docs/prerequisite/set-logic/proposition-iff/>命题与充要条件</a></li><li><a href=/docs/prerequisite/set-logic/logical-quantifier/>逻辑量词</a></li></ul></li><li><input type=checkbox id=section-0efa6e9487d50f8c7308e9898b74ff74 class=toggle>
+<label for=section-0efa6e9487d50f8c7308e9898b74ff74 class="flex justify-between"><a href=/docs/prerequisite/inequality/>不等式</a></label><ul><li><a href=/docs/prerequisite/inequality/inequality-property/>不等式的性质</a></li><li><a href=/docs/prerequisite/inequality/abs-quadratic-inequality/>绝对值不等式与二次不等式</a></li></ul></li></ul></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
+<strong>解三角形</strong>
+<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#解三角形>解三角形</a></li></ul></nav></aside></header><article class=markdown><h1 id=解三角形>解三角形
+<a class=anchor href=#%e8%a7%a3%e4%b8%89%e8%a7%92%e5%bd%a2>#</a></h1><myexample><p>在 $\triangle ABC$ 中, $a=\sqrt7$, $b=2$, $A= 60^\circ$, 求 $c$ 的值.</p></myexample><mysolution><p>题中有三边一角, 正好用余弦定理. 由
+\[a^2= b^2+c^2- 2bc\cos A\quad \text{即}\quad
+7= 4+c^2- 2c,\]
+解得 $c= 3$.</p></mysolution></p><p><myexample><p>对于 $\triangle ABC$, 判断下列命题是否正确:</p><p>(1) 若 $\cos A= \cos B$, 则 $\triangle ABC$ 是等腰三角形;</p><p>(2) 若 $\triangle ABC$ 为锐角三角形, 则 $A+B> \dfrac\pi2$, 从而 $\sin A> \cos B$;</p><p>(3) 符合条件 $a=8$, $c=10$, $B=60^\circ$ 的 $\triangle ABC$ 有两个;</p><p>(4) 若 $\sin^2 A+ \sin^2 B< \sin^2 C$, 则 $\triangle ABC$ 是钝角三角形.</p></myexample><mysolution><p>(1) 因为余弦函数 $f(x)=\cos x$, $x\in(0,\pi)$ 为单调递减函数, 所以 $\cos A= \cos B$ 表明 $A=B$, 结论成立.</p><p>(2) 锐角三角形的三个内角均为锐角, 则
+\[A+B= \pi-C> \frac\pi2,\]
+即 $B> \dfrac\pi2- A$. 再由余弦函数 $f(x)=\cos x$, $x\in(0,\pi)$ 为单调递减函数知
+\[f(B)< f\Bigl(\dfrac\pi2- A\Bigr) \quad\text{即}\quad
+\cos B< \cos\Bigl(\dfrac\pi2- A\Bigr)= \sin A,\]
+结论成立.</p><p>(3) 由 $b^2= a^2+c^2- 2ac\cos B$ 可算出 $b$ 的值. 所以 $\triangle ABC$ 的三边是确定的, 故符合条件的 $\triangle ABC$ 只有一个. 结论不成立. (本小题也可以结合全等三角形的“边角边”判定法得到唯一性.)</p><p>(4) 由正弦定理, 已知不等式化为 $a^2+b^2< c^2$. 再由余弦定理,
+\[\cos C= \frac{a^2+b^2-c^2}{2ab}< 0,\]
+表明 $C\in\Bigl(\dfrac\pi2,\pi\Bigr)$, 即 $\triangle ABC$ 为钝角三角形. 结论成立.</p></mysolution></p><p><myremark><p>(1) 上题中前两个小问都用到了余弦函数在区间 $(0,\pi)$ 上的单调递减性质.</p><p>(2) 最后一个小问同时用到了正弦定理和余弦定理, 也得到结论: $a^2+b^2< c^2$ $\Leftrightarrow$ 角 $C$ 为钝角.</p></myremark><myexample><p>已知在 $\triangle ABC$ 中, $a=\sqrt6$, $b=3\sqrt2$, $A=30^\circ$, 求角 $B$ 的大小.</p></myexample><mysolution><p>由正弦定理, $\dfrac{a}{\sin A}= \dfrac{b}{\sin B}$, 即
+\[\frac{\sqrt6}{\sin30^\circ}= \frac{3\sqrt2}{\sin B},\quad
+\text{即}\quad \sin B= \frac{\sqrt3}{2},\]
+所以 $B= 60^\circ$ 或 $120^\circ$.</p></mysolution><myexample><p>已知 $\triangle ABC$ 中, $a\sin A- b\sin B= 4c\sin C$, $\cos A= -\dfrac14$, 求 $\dfrac{c}{b}$ 的值.</p></myexample><mysolution><p>已知两式可分别用正弦定理和余弦定理化为
+\[a^2- b^2= 4c^2,\quad
+\frac{b^2+c^2-a^2}{2bc}= -\frac14,\]
+再将上述前一式代入后一式,
+\[b^2+c^2- (b^2+4c^2)= -\frac14\cdot 2bc,\]
+整理得 $\dfrac{c}{b}= \dfrac16$.</p></mysolution><myexample><p>在 $\triangle ABC$ 中, $\cos C= \dfrac17$, $c=8$, $a=7$, 求 $b$ 的值和角 $A$ 的大小.</p></myexample><mysolution><p>由余弦定理, $c^2= a^2+b^2- 2ab\cos C$, 即
+\[64= 49+ b^2- 14b\cdot\frac17, \quad\text{即}\quad
+(b+3)(b-5)=0,\]
+解得 $b=5$ (舍负). 又因为
+\[\cos A= \frac{b^2+c^2- a^2}{2bc}= \frac12,\]
+所以 $A= 60^\circ$.</p></mysolution></p><p><myexample><p>在 $\triangle ABC$ 中, $\cos B= -\dfrac12$, $b-c=2$, $a=3$, 求 $b$, $c$ 和 $\sin(B+C)$ 的值.</p></myexample><mysolution><p>由余弦定理, $b^2= a^2+c^2- 2ac\cos B$, 将已知条件代入,
+\[(c+2)^2= 9+c^2- 6c\cdot\biggl(-\frac12\biggr),\]
+解得 $c=5$, 所以 $b=7$. 又因为
+\[\cos A= \frac{b^2+c^2- a^2}{2bc}= \frac{13}{14},\]
+则 $\sin A= \dfrac{3\sqrt3}{14}$, 所以
+\[\sin(B+C)= \sin(\pi- A)= \sin A= \frac{3\sqrt3}{14}.\]</p></mysolution></p><p>在上题中计算 $\sin(B+C)$ 时，不应分别计算 $\cos B$, $\sin B$, $\cos C$ 和 $\sin C$ 后, 将 $\sin(B+C)$ 展开代入求值, 而应利用在 $\triangle ABC$ 中, $\sin(B+C)= \sin A$ 来简化计算.</p><myexample><p>在 $\triangle ABC$ 中, $b\sin A= a\cos\Bigl(B- \dfrac\pi6\Bigr)$, $c= 5$, 求角 $B$ 的大小, 并从条件“$b=7$”和“$C=\dfrac\pi4$”中任选一个, 求 $a$ 的值.</p></myexample><mysolution><p>利用正弦定理, 已知等式可变形如下: \[\begin{aligned}
+\sin B\sin A &= \sin A\cos\Bigl(B- \frac\pi6\Bigr),\\
+\sin B &= \cos B\cos\frac\pi6+ \sin B\sin\frac\pi6,\\
+\frac12\sin B &= \frac{\sqrt3}2\cos B,\\
         \tan B&= \sqrt3,
     \end{aligned}\]
-    所以 $B=\dfrac\pi3$. 下面来求 $a$ 的值.
-</p>
-<p>方法一: 若选择条件“$b=7$”, 则是“已知 $b$, $c$ 和 $B$, 求 $a$”, 应选择使用余弦定理. 此时 $\cos B= \dfrac{a^2+c^2- b^2}{2ac}$ 化为 \[
-        \cos\frac\pi3= \frac{a^2+ 25- 49}{2a\cdot 5},
-        \quad\text{解得}\quad a= 8.\]
-</p>
-<p>方法二: 若选择条件“$C=\dfrac\pi4$”, 则是“已知 $B$, $C$ 和 $c$, 求 $a$”, 应选择使用余弦定理. 先求出 \[
-        A= \pi-B-C= \frac{5\pi}{12},
-    \] 因此 \[\begin{aligned}
-        \sin A
-        &= \sin\frac{5\pi}{12}
+    所以 $B=\dfrac\pi3$. 下面来求 $a$ 的值.</p><p>方法一: 若选择条件“$b=7$”, 则是“已知 $b$, $c$ 和 $B$, 求 $a$”, 应选择使用余弦定理. 此时 $\cos B= \dfrac{a^2+c^2- b^2}{2ac}$ 化为 \[
+\cos\frac\pi3= \frac{a^2+ 25- 49}{2a\cdot 5},
+\quad\text{解得}\quad a= 8.\]</p><p>方法二: 若选择条件“$C=\dfrac\pi4$”, 则是“已知 $B$, $C$ 和 $c$, 求 $a$”, 应选择使用余弦定理. 先求出 \[
+A= \pi-B-C= \frac{5\pi}{12},
+\] 因此 \[\begin{aligned}
+\sin A
+&= \sin\frac{5\pi}{12}
          = \sin\Bigl(\frac\pi6+ \frac\pi4\Bigr)\\
-        &= \sin\frac\pi6\cos\frac\pi4+ \cos\frac\pi6\sin\frac\pi4\\
-        &= \frac{\sqrt6+ \sqrt2}{4},
+&= \sin\frac\pi6\cos\frac\pi4+ \cos\frac\pi6\sin\frac\pi4\\
+&= \frac{\sqrt6+ \sqrt2}{4},
     \end{aligned}\] 此时 $\dfrac{a}{\sin A}= \dfrac{c}{\sin C}$ 化为 \[
-        \frac{a}{(\sqrt6+ \sqrt2)/4}= \frac{5}{\sqrt2/2},
-        \quad\text{解得}\quad a= \frac{5(\sqrt3+1)}{2}.\]
-</p>
-</mysolution>
-<myexample>
-<p>在 $\triangle ABC$ 中, 角 $A$, $B$, $C$ 所对的边分别为 $a$, $b$, $c$, 已知 $\dfrac{2b+c}a= \dfrac{\cos(A+B)}{\cos A}$.
-</p>
-<p>(1) 求角 $A$ 的大小;\quad (2) 求 $\sin B\sin C$ 的最大值;
-</p>
-<p>(3) 若 $a= 6$, 求 $\triangle ABC$ 面积的最大值.
-</p>
-</myexample>
-<mysolution>
-    <p>(1) 由正弦定理, 已知等式化为 \[
-        \frac{2\sin B+ \sin C}{\sin A}
-        = \frac{\cos(\pi- C)}{\cos A}
-        = -\frac{\cos C}{\cos A},\]
-    交叉相乘并整理, \[\begin{aligned}
-        (2\sin B+ \sin C)\cos A+ \sin A\cos C&= 0,\\
+\frac{a}{(\sqrt6+ \sqrt2)/4}= \frac{5}{\sqrt2/2},
+\quad\text{解得}\quad a= \frac{5(\sqrt3+1)}{2}.\]</p></mysolution><myexample><p>在 $\triangle ABC$ 中, 角 $A$, $B$, $C$ 所对的边分别为 $a$, $b$, $c$, 已知 $\dfrac{2b+c}a= \dfrac{\cos(A+B)}{\cos A}$.</p><p>(1) 求角 $A$ 的大小;\quad (2) 求 $\sin B\sin C$ 的最大值;</p><p>(3) 若 $a= 6$, 求 $\triangle ABC$ 面积的最大值.</p></myexample><mysolution><p>(1) 由正弦定理, 已知等式化为 \[
+\frac{2\sin B+ \sin C}{\sin A}
+= \frac{\cos(\pi- C)}{\cos A}
+= -\frac{\cos C}{\cos A},\]
+交叉相乘并整理, \[\begin{aligned}
+(2\sin B+ \sin C)\cos A+ \sin A\cos C&= 0,\\
         2\sin B\cos A+ \sin(C+ A)&= 0,\\
         2\sin B\cos A+ \sin B&= 0.
     \end{aligned}\]
-    因为 $\sin B\neq 0$, 所以 $\cos A= -\dfrac12$, 即 $A= \dfrac{2\pi}3$.
-</p>
-<p>(2) 由 (1) 知 $B+C= \pi-A= \dfrac{\pi}{3}$, 则 $B\in \Bigl(0,\dfrac\pi3\Bigr)$, 且 \[\begin{aligned}
-        \sin B\sin C
-        &= \sin B\sin\Bigl(\frac\pi3- B\Bigr)\\
-        &= \sin B\Bigl(\sin\frac\pi3\cos B- \cos\frac\pi3\sin B\Bigr)\\
-        &= \frac{\sqrt3}2\sin B\cos B- \frac12\sin^2 B\\
-        &= \frac{\sqrt3}4\sin 2B- \frac14(1- \cos 2B)\\
-        &= \frac12\biggl(\frac{\sqrt3}2\sin 2B+ \frac12\cos 2B\biggr)- \frac14\\
-        &= \frac12\sin\Bigl(2B+ \frac\pi6\Bigr)- \frac14.
-    \end{aligned}\]
-    因为 $2B+ \dfrac\pi6\in \biggl(\dfrac\pi6,\dfrac{5\pi}6\biggr)$, 所以 \[
-    \sin\Bigl(2B+ \frac\pi6\Bigr)\in \biggl(\frac12, 1\biggr),
-    \] 即 $\sin B\sin C\in \biggl(0,\frac14\biggr]$.
-</p>
-<p>(3) 因为 $\triangle ABC$ 面积为 $\dfrac12 bc\sin A= \dfrac{\sqrt3}4 bc$, 所以其最大值对应 $bc$ 的最大值. 由余弦定理, $a^2= b^2+c^2- 2bc\cos A$, 将题中数据代入, \[
-        36= b^2+c^2+ bc,\quad\text{即}\quad
-        b^2+c^2= 36-bc.\]
-    再由均值不等式, $b^2+c^2\geqslant 2bc$, 所以 \[
-        36-bc\geqslant 2bc,\quad\text{即}\quad bc\leqslant 12.\]
-    由此可知, $\triangle ABC$ 面积的最大值为 $\dfrac{\sqrt3}4\cdot 12= 3\sqrt3$.
-</p>
-</mysolution>
-<myexample>
-<p>设 $\triangle ABC$ 的内角 $A$, $B$, $C$ 的对边分别为 $a$, $b$, $c$, 面积为 $2\sqrt3$, 且 $(\sin B + \sin C)^2 = \sin^2 A + \sin B\sin C$, $b+c=6$, 求角 $A$ 的大小和 $a$ 的值.
-</p>
-</myexample>
-<mysolution>
-    <p>由正弦定理, $(b+c)^2= a^2+bc$, 则 \[\begin{gathered}
-        b^2+c^2-a^2= -bc,\\
-        \cos A= \frac{b^2+c^2-a^2}{2bc}= -\frac12,
-    \end{gathered}\]
-    因此 $A= 120^\circ$. 再由三角形面积定理, \[
-        \frac12bc\sin A= 2\sqrt3 \Rightarrow bc=8,\]
-    所以 \[
-        a^2=(b+c)^2-bc= 28.\]
-</p>
-</mysolution>
-</article>
- 
-          
-    
-    <div class="docs-prevnext">
-    
-        <a class="docs-prev button" href="/docs/trigonometry/sine-cosine-law/cosine-law">
-          <span class="arrow-prev">← </span><span>余弦定理</span></a>
-      
-      
-        <a class="docs-next button" href="/docs/trigonometry/vector">
-          <span>向量</span><span class="arrow-next"> →</span></a>
-      
-    </div>
-
-    <p>作者邮箱 rong.liu@mail.bnu.edu.cn。</p>
-    <p>读者的支持是作者持续更新的动力😊</p>
-    
-
-      <footer class="book-footer">
-        
-  <div class="flex flex-wrap justify-between">
-
-
-
-
-
-</div>
-
-
-
-  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
-
-
- 
-        
-      </footer>
-
-      
-  
-  <div class="book-comments">
-
-</div>
-  
- 
-
-      <label for="menu-control" class="hidden book-menu-overlay"></label>
-    </div>
-
-    
-    <aside class="book-toc">
-      <div class="book-toc-content">
-        
-  
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#解三角形">解三角形</a></li>
-  </ul>
-</nav>
-
-
- 
-      </div>
-    </aside>
-    
-  </main>
-
-  
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
+    因为 $\sin B\neq 0$, 所以 $\cos A= -\dfrac12$, 即 $A= \dfrac{2\pi}3$.</p><p>(2) 由 (1) 知 $B+C= \pi-A= \dfrac{\pi}{3}$, 则 $B\in \Bigl(0,\dfrac\pi3\Bigr)$, 且 \[\begin{aligned}
+\sin B\sin C
+&= \sin B\sin\Bigl(\frac\pi3- B\Bigr)\\
+&= \sin B\Bigl(\sin\frac\pi3\cos B- \cos\frac\pi3\sin B\Bigr)\\
+&= \frac{\sqrt3}2\sin B\cos B- \frac12\sin^2 B\\
+&= \frac{\sqrt3}4\sin 2B- \frac14(1- \cos 2B)\\
+&= \frac12\biggl(\frac{\sqrt3}2\sin 2B+ \frac12\cos 2B\biggr)- \frac14\\
+&= \frac12\sin\Bigl(2B+ \frac\pi6\Bigr)- \frac14.
+\end{aligned}\]
+因为 $2B+ \dfrac\pi6\in \biggl(\dfrac\pi6,\dfrac{5\pi}6\biggr)$, 所以 \[
+\sin\Bigl(2B+ \frac\pi6\Bigr)\in \biggl(\frac12, 1\biggr),
+\] 即 $\sin B\sin C\in \biggl(0,\frac14\biggr]$.</p><p>(3) 因为 $\triangle ABC$ 面积为 $\dfrac12 bc\sin A= \dfrac{\sqrt3}4 bc$, 所以其最大值对应 $bc$ 的最大值. 由余弦定理, $a^2= b^2+c^2- 2bc\cos A$, 将题中数据代入, \[
+36= b^2+c^2+ bc,\quad\text{即}\quad
+b^2+c^2= 36-bc.\]
+再由均值不等式, $b^2+c^2\geqslant 2bc$, 所以 \[
+36-bc\geqslant 2bc,\quad\text{即}\quad bc\leqslant 12.\]
+由此可知, $\triangle ABC$ 面积的最大值为 $\dfrac{\sqrt3}4\cdot 12= 3\sqrt3$.</p></mysolution><myexample><p>设 $\triangle ABC$ 的内角 $A$, $B$, $C$ 的对边分别为 $a$, $b$, $c$, 面积为 $2\sqrt3$, 且 $(\sin B + \sin C)^2 = \sin^2 A + \sin B\sin C$, $b+c=6$, 求角 $A$ 的大小和 $a$ 的值.</p></myexample><mysolution><p>由正弦定理, $(b+c)^2= a^2+bc$, 则 \[\begin{gathered}
+b^2+c^2-a^2= -bc,\\
+\cos A= \frac{b^2+c^2-a^2}{2bc}= -\frac12,
+\end{gathered}\]
+因此 $A= 120^\circ$. 再由三角形面积定理, \[
+\frac12bc\sin A= 2\sqrt3 \Rightarrow bc=8,\]
+所以 \[
+a^2=(b+c)^2-bc= 28.\]</p></mysolution></article><div class=docs-prevnext><a class="docs-prev button" href=/docs/trigonometry/sine-cosine-law/cosine-law><span class=arrow-prev>← </span><span>余弦定理</span></a>
+<a class="docs-next button" href=/docs/trigonometry/vector><span>向量</span><span class=arrow-next> →</span></a></div><p>作者邮箱 rong.liu@mail.bnu.edu.cn。</p><p>读者的支持是作者持续更新的动力😊</p><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#解三角形>解三角形</a></li></ul></nav></div></aside></main></body></html>

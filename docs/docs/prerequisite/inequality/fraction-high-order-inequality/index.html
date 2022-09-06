@@ -1,696 +1,65 @@
-<!DOCTYPE html>
-<html lang="zh" dir="ltr">
-<head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="分式不等式与高次不等式 # \subsection{简单的分式不等式的解法}关于 $x$ 的形如 $\dfrac{Ax&#43;B}{Cx&#43;D}&gt;(\geqslant)\,0$ 的分式不等式, 可以利用分子和分母的正负号关系转化为二次不等式来解. 具体地,\begin{align}\label{eq-201009-1907}\frac{Ax&#43;B}{Cx&#43;D}&gt;0 & \Leftrightarrow (Ax&#43;B)(Cx&#43;D)&gt;0,\\\label{eq-201009-1917}\frac{Ax&#43;B}{Cx&#43;D}\geqslant 0 & \Leftrightarrow \left\{\!\!\begin{array}{l}(Ax&#43;B)(Cx&#43;D)\geqslant 0,\\Cx&#43;D\neq 0.\end{array}\right.\end{align}\eqref{eq-201009-1907} 式中右边不用限制分母非零, 因为乘积非零隐含两个因子均非零; 而 \eqref{eq-201009-1917} 式中右边必须限制分母非零, 因为乘积为零隐含两个因子均可能为零. 解下列不等式:\begin{twocolpro}(1) $\dfrac{x-2}{x-5}&gt;0$; & (2) $\dfrac{x-2}{x-5}\geqslant 0$.\end{twocolpro}(1) 原不等式等价于 $(x-2)(x-5)&gt;0$, 所以 $x\in (-\infty,2)\cup (5,&#43;\infty)$.(2) 原不等式等价于\[\left\{\!\!\begin{array}{l}(x-2)(x-5)\geqslant 0,\\x-5\neq 0,\end{array}\right. \text{解得}\ x\in (-\infty,2]\cup (5,&#43;\infty).\]若 $a&gt;b$, 且 $a-\dfrac1a&gt; b-\dfrac1b$, 求 $ab$ 的取值范围.">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="分式不等式与高次不等式" />
-<meta property="og:description" content="分式不等式与高次不等式 # \subsection{简单的分式不等式的解法}关于 $x$ 的形如 $\dfrac{Ax&#43;B}{Cx&#43;D}&gt;(\geqslant)\,0$ 的分式不等式, 可以利用分子和分母的正负号关系转化为二次不等式来解. 具体地,\begin{align}\label{eq-201009-1907}\frac{Ax&#43;B}{Cx&#43;D}&gt;0 & \Leftrightarrow (Ax&#43;B)(Cx&#43;D)&gt;0,\\\label{eq-201009-1917}\frac{Ax&#43;B}{Cx&#43;D}\geqslant 0 & \Leftrightarrow \left\{\!\!\begin{array}{l}(Ax&#43;B)(Cx&#43;D)\geqslant 0,\\Cx&#43;D\neq 0.\end{array}\right.\end{align}\eqref{eq-201009-1907} 式中右边不用限制分母非零, 因为乘积非零隐含两个因子均非零; 而 \eqref{eq-201009-1917} 式中右边必须限制分母非零, 因为乘积为零隐含两个因子均可能为零. 解下列不等式:\begin{twocolpro}(1) $\dfrac{x-2}{x-5}&gt;0$; & (2) $\dfrac{x-2}{x-5}\geqslant 0$.\end{twocolpro}(1) 原不等式等价于 $(x-2)(x-5)&gt;0$, 所以 $x\in (-\infty,2)\cup (5,&#43;\infty)$.(2) 原不等式等价于\[\left\{\!\!\begin{array}{l}(x-2)(x-5)\geqslant 0,\\x-5\neq 0,\end{array}\right. \text{解得}\ x\in (-\infty,2]\cup (5,&#43;\infty).\]若 $a&gt;b$, 且 $a-\dfrac1a&gt; b-\dfrac1b$, 求 $ab$ 的取值范围." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="/docs/prerequisite/inequality/fraction-high-order-inequality/" /><meta property="article:section" content="docs" />
-
-
-
-<title>分式不等式与高次不等式 | 高中数学资料</title>
-<link rel="manifest" href="/manifest.json">
-<link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.6c08f1f220250ecc36dde6a6fa75fdd4247d84aaaa23d4bc157c9b2f8fa595bd.css" >
-  <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh.search.min.784ab3c077aed3c64574cb6afb6c2069baa00d2088ec733a85e8e0551c41cf97.js" ></script>
-
-  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
-<!--
-Made with Book Theme
-https://github.com/alex-shpak/hugo-book
--->
-  <link rel="stylesheet" href='/katex/katex.min.css' crossorigin="anonymous">
-
-
-<script defer src='/katex/katex.min.js' crossorigin="anonymous"></script>
-
-
-<script defer src='/katex/auto-render.min.js' 
-    onload="renderMathInElement(document.body);"></script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        renderMathInElement(document.body, {
-            
-            
-            delimiters: [
-                { left: '$$', right: '$$', display: true },
-                { left: '$', right: '$', display: false },
-                { left: '\\(', right: '\\)', display: false },
-                { left: '\\[', right: '\\]', display: true }
-            ],
-            
-            throwOnError: false
-        });
-    });
-</script>
-
-</head>
-<body dir="ltr">
-  <input type="checkbox" class="hidden toggle" id="menu-control" />
-  <input type="checkbox" class="hidden toggle" id="toc-control" />
-  <main class="container flex">
-    <aside class="book-menu">
-      <div class="book-menu-content">
-        
-  <nav>
-<h2 class="book-brand">
-  <a href="/"><span>高中数学资料</span>
-  </a>
-</h2>
-
-
-<div class="book-search">
-  <input type="text" id="book-search-input" placeholder="搜索" aria-label="搜索" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner hidden"></div>
-  <ul id="book-search-results"></ul>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-  
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-7fbb26c6156d78d59d607292b53948a4" class="toggle" checked />
-    <label for="section-7fbb26c6156d78d59d607292b53948a4" class="flex justify-between">
-      <a href="/docs/prerequisite/" class="">预备知识</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-1e2f9b8b873223fe63fc7221375c0eb0" class="toggle"  />
-    <label for="section-1e2f9b8b873223fe63fc7221375c0eb0" class="flex justify-between">
-      <a href="/docs/prerequisite/ms-algebra/" class="">初中代数提要</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-algebra/quadratic-factorization/" class="">二次三项式的因式分解</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-algebra/quadratic-equation/" class="">一元二次方程的解法</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-algebra/veite-theorem/" class="">韦达定理</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-c1c4f99569969342f46afcb379e41254" class="toggle"  />
-    <label for="section-c1c4f99569969342f46afcb379e41254" class="flex justify-between">
-      <a href="/docs/prerequisite/ms-geometry/" class="">初中几何提要</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-geometry/symmetric-congruence-similar/" class="">对称、全等与相似</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-geometry/triangle/" class="">三角形</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-geometry/quadrilateral/" class="">四边形</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-geometry/circle/" class="">圆</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-geometry/area/" class="">平面图形的面积</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-53227ed5b540c99051432d70e3c9c4da" class="toggle"  />
-    <label for="section-53227ed5b540c99051432d70e3c9c4da" class="flex justify-between">
-      <a href="/docs/prerequisite/ms-function/" class="">初中函数提要</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-function/axis-coordinate/" class="">数轴与平面直角坐标系</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-function/linear-inverse/" class="">一次函数与反比例函数</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-function/quadratic-function-inequality/" class="">二次函数与二次不等式</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-function/graph-tranform/" class="">函数图象的变换</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-4adec7e7d2e2d6fa5eaee0a98a60892e" class="toggle"  />
-    <label for="section-4adec7e7d2e2d6fa5eaee0a98a60892e" class="flex justify-between">
-      <a href="/docs/prerequisite/set-logic/" class="">集合与简易逻辑</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/set-logic/set-def/" class="">集合的定义</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/set-logic/set-operation/" class="">集合的运算</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/set-logic/proposition-iff/" class="">命题与充要条件</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/set-logic/logical-quantifier/" class="">逻辑量词</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-0efa6e9487d50f8c7308e9898b74ff74" class="toggle" checked />
-    <label for="section-0efa6e9487d50f8c7308e9898b74ff74" class="flex justify-between">
-      <a href="/docs/prerequisite/inequality/" class="">不等式</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/inequality/inequality-property/" class="">不等式的性质</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/inequality/abs-quadratic-inequality/" class="">绝对值不等式与二次不等式</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-  </ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</nav>
-
-
-
-
-  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
-
-
- 
-      </div>
-    </aside>
-
-    <div class="book-page">
-      <header class="book-header">
-        
-  <div class="flex align-center justify-between">
-  <label for="menu-control">
-    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
-  </label>
-
-  <strong>分式不等式与高次不等式</strong>
-
-  <label for="toc-control">
-    
-    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
-    
-  </label>
-</div>
-
-
-  
-  <aside class="hidden clearfix">
-    
-  
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#分式不等式与高次不等式">分式不等式与高次不等式</a></li>
-  </ul>
-</nav>
-
-
-
-  </aside>
-  
- 
-      </header>
-
-      
-      
-  <article class="markdown"><h1 id="分式不等式与高次不等式">
-  分式不等式与高次不等式
-  <a class="anchor" href="#%e5%88%86%e5%bc%8f%e4%b8%8d%e7%ad%89%e5%bc%8f%e4%b8%8e%e9%ab%98%e6%ac%a1%e4%b8%8d%e7%ad%89%e5%bc%8f">#</a>
-</h1>
-<p>\subsection{简单的分式不等式的解法}
-</p>
-<p>关于 $x$ 的形如 $\dfrac{Ax+B}{Cx+D}>(\geqslant)\,0$ 的分式不等式, 可以利用分子和分母的正负号关系转化为二次不等式来解. 具体地,
+<!doctype html><html lang=zh dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="分式不等式与高次不等式 # \subsection{简单的分式不等式的解法}关于 $x$ 的形如 $\dfrac{Ax+B}{Cx+D}>(\geqslant)\,0$ 的分式不等式, 可以利用分子和分母的正负号关系转化为二次不等式来解. 具体地,\begin{align}\label{eq-201009-1907}\frac{Ax+B}{Cx+D}>0 & \Leftrightarrow (Ax&#43;B)(Cx+D)>0,\\\label{eq-201009-1917}\frac{Ax+B}{Cx+D}\geqslant 0 & \Leftrightarrow \left\{\!\!\begin{array}{l}(Ax+B)(Cx+D)\geqslant 0,\\Cx+D\neq 0.\end{array}\right.\end{align}\eqref{eq-201009-1907} 式中右边不用限制分母非零, 因为乘积非零隐含两个因子均非零; 而 \eqref{eq-201009-1917} 式中右边必须限制分母非零, 因为乘积为零隐含两个因子均可能为零. 解下列不等式:\begin{twocolpro}(1) $\dfrac{x-2}{x-5}>0$; & (2) $\dfrac{x-2}{x-5}\geqslant 0$.\end{twocolpro}(1) 原不等式等价于 $(x-2)(x-5)>0$, 所以 $x\in (-\infty,2)\cup (5,+\infty)$.(2) 原不等式等价于\[\left\{\!\!\begin{array}{l}(x-2)(x-5)\geqslant 0,\\x-5\neq 0,\end{array}\right. \text{解得}\ x\in (-\infty,2]\cup (5,+\infty).\]若 $a>b$, 且 $a-\dfrac1a> b-\dfrac1b$, 求 $ab$ 的取值范围."><meta name=theme-color content="#FFFFFF"><meta property="og:title" content="分式不等式与高次不等式"><meta property="og:description" content="分式不等式与高次不等式 # \subsection{简单的分式不等式的解法}关于 $x$ 的形如 $\dfrac{Ax+B}{Cx+D}>(\geqslant)\,0$ 的分式不等式, 可以利用分子和分母的正负号关系转化为二次不等式来解. 具体地,\begin{align}\label{eq-201009-1907}\frac{Ax+B}{Cx+D}>0 & \Leftrightarrow (Ax&#43;B)(Cx+D)>0,\\\label{eq-201009-1917}\frac{Ax+B}{Cx+D}\geqslant 0 & \Leftrightarrow \left\{\!\!\begin{array}{l}(Ax+B)(Cx+D)\geqslant 0,\\Cx+D\neq 0.\end{array}\right.\end{align}\eqref{eq-201009-1907} 式中右边不用限制分母非零, 因为乘积非零隐含两个因子均非零; 而 \eqref{eq-201009-1917} 式中右边必须限制分母非零, 因为乘积为零隐含两个因子均可能为零. 解下列不等式:\begin{twocolpro}(1) $\dfrac{x-2}{x-5}>0$; & (2) $\dfrac{x-2}{x-5}\geqslant 0$.\end{twocolpro}(1) 原不等式等价于 $(x-2)(x-5)>0$, 所以 $x\in (-\infty,2)\cup (5,+\infty)$.(2) 原不等式等价于\[\left\{\!\!\begin{array}{l}(x-2)(x-5)\geqslant 0,\\x-5\neq 0,\end{array}\right. \text{解得}\ x\in (-\infty,2]\cup (5,+\infty).\]若 $a>b$, 且 $a-\dfrac1a> b-\dfrac1b$, 求 $ab$ 的取值范围."><meta property="og:type" content="article"><meta property="og:url" content="/docs/prerequisite/inequality/fraction-high-order-inequality/"><meta property="article:section" content="docs"><title>分式不等式与高次不等式 | 高中数学资料</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.6c08f1f220250ecc36dde6a6fa75fdd4247d84aaaa23d4bc157c9b2f8fa595bd.css><script defer src=/flexsearch.min.js></script>
+<script defer src=/zh.search.min.7287a52d6d4b6df1bd72f5e28bb3775dbf17b637e7c63244f3fb9df429bae232.js></script>
+<script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js></script>
+<link rel=stylesheet href=/katex/katex.min.css crossorigin=anonymous><script defer src=/katex/katex.min.js crossorigin=anonymous></script>
+<script defer src=/katex/auto-render.min.js onload=renderMathInElement(document.body)></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1},{left:"\\[",right:"\\]",display:!0}],throwOnError:!1})})</script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a href=/><span>高中数学资料</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=搜索 aria-label=搜索 maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li><input type=checkbox id=section-7fbb26c6156d78d59d607292b53948a4 class=toggle checked>
+<label for=section-7fbb26c6156d78d59d607292b53948a4 class="flex justify-between"><a href=/docs/prerequisite/>预备知识</a></label><ul><li><input type=checkbox id=section-1e2f9b8b873223fe63fc7221375c0eb0 class=toggle>
+<label for=section-1e2f9b8b873223fe63fc7221375c0eb0 class="flex justify-between"><a href=/docs/prerequisite/ms-algebra/>初中代数提要</a></label><ul><li><a href=/docs/prerequisite/ms-algebra/quadratic-factorization/>二次三项式的因式分解</a></li><li><a href=/docs/prerequisite/ms-algebra/quadratic-equation/>一元二次方程的解法</a></li><li><a href=/docs/prerequisite/ms-algebra/veite-theorem/>韦达定理</a></li></ul></li><li><input type=checkbox id=section-c1c4f99569969342f46afcb379e41254 class=toggle>
+<label for=section-c1c4f99569969342f46afcb379e41254 class="flex justify-between"><a href=/docs/prerequisite/ms-geometry/>初中几何提要</a></label><ul><li><a href=/docs/prerequisite/ms-geometry/symmetric-congruence-similar/>对称、全等与相似</a></li><li><a href=/docs/prerequisite/ms-geometry/triangle/>三角形</a></li><li><a href=/docs/prerequisite/ms-geometry/quadrilateral/>四边形</a></li><li><a href=/docs/prerequisite/ms-geometry/circle/>圆</a></li><li><a href=/docs/prerequisite/ms-geometry/area/>平面图形的面积</a></li></ul></li><li><input type=checkbox id=section-53227ed5b540c99051432d70e3c9c4da class=toggle>
+<label for=section-53227ed5b540c99051432d70e3c9c4da class="flex justify-between"><a href=/docs/prerequisite/ms-function/>初中函数提要</a></label><ul><li><a href=/docs/prerequisite/ms-function/axis-coordinate/>数轴与平面直角坐标系</a></li><li><a href=/docs/prerequisite/ms-function/linear-inverse/>一次函数与反比例函数</a></li><li><a href=/docs/prerequisite/ms-function/quadratic-function-inequality/>二次函数与二次不等式</a></li><li><a href=/docs/prerequisite/ms-function/graph-tranform/>函数图象的变换</a></li></ul></li><li><input type=checkbox id=section-4adec7e7d2e2d6fa5eaee0a98a60892e class=toggle>
+<label for=section-4adec7e7d2e2d6fa5eaee0a98a60892e class="flex justify-between"><a href=/docs/prerequisite/set-logic/>集合与简易逻辑</a></label><ul><li><a href=/docs/prerequisite/set-logic/set-def/>集合的定义</a></li><li><a href=/docs/prerequisite/set-logic/set-operation/>集合的运算</a></li><li><a href=/docs/prerequisite/set-logic/proposition-iff/>命题与充要条件</a></li><li><a href=/docs/prerequisite/set-logic/logical-quantifier/>逻辑量词</a></li></ul></li><li><input type=checkbox id=section-0efa6e9487d50f8c7308e9898b74ff74 class=toggle checked>
+<label for=section-0efa6e9487d50f8c7308e9898b74ff74 class="flex justify-between"><a href=/docs/prerequisite/inequality/>不等式</a></label><ul><li><a href=/docs/prerequisite/inequality/inequality-property/>不等式的性质</a></li><li><a href=/docs/prerequisite/inequality/abs-quadratic-inequality/>绝对值不等式与二次不等式</a></li></ul></li></ul></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
+<strong>分式不等式与高次不等式</strong>
+<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#分式不等式与高次不等式>分式不等式与高次不等式</a></li></ul></nav></aside></header><article class=markdown><h1 id=分式不等式与高次不等式>分式不等式与高次不等式
+<a class=anchor href=#%e5%88%86%e5%bc%8f%e4%b8%8d%e7%ad%89%e5%bc%8f%e4%b8%8e%e9%ab%98%e6%ac%a1%e4%b8%8d%e7%ad%89%e5%bc%8f>#</a></h1><p>\subsection{简单的分式不等式的解法}</p><p>关于 $x$ 的形如 $\dfrac{Ax+B}{Cx+D}>(\geqslant)\,0$ 的分式不等式, 可以利用分子和分母的正负号关系转化为二次不等式来解. 具体地,
 \begin{align}\label{eq-201009-1907}
-  \frac{Ax+B}{Cx+D}>0 & \Leftrightarrow (Ax+B)(Cx+D)>0,\\
-  \label{eq-201009-1917}
-  \frac{Ax+B}{Cx+D}\geqslant 0 & \Leftrightarrow \left\{\!\!
+\frac{Ax+B}{Cx+D}>0 & \Leftrightarrow (Ax+B)(Cx+D)>0,\\
+\label{eq-201009-1917}
+\frac{Ax+B}{Cx+D}\geqslant 0 & \Leftrightarrow \left\{\!\!
     \begin{array}{l}
-      (Ax+B)(Cx+D)\geqslant 0,\\
-      Cx+D\neq 0.
-    \end{array}\right.
+(Ax+B)(Cx+D)\geqslant 0,\\
+Cx+D\neq 0.
+\end{array}\right.
 \end{align}
-\eqref{eq-201009-1907} 式中右边不用限制分母非零, 因为乘积非零隐含两个因子均非零; 而 \eqref{eq-201009-1917} 式中右边必须限制分母非零, 因为乘积为零隐含两个因子均可能为零. 
-</p>
-<p><myexample>
-<p>解下列不等式:
-  \begin{twocolpro}
-    (1) $\dfrac{x-2}{x-5}>0$; & (2) $\dfrac{x-2}{x-5}\geqslant 0$.
-  \end{twocolpro}
-</p>
-</myexample>
-<mysolution>
-    <p>(1) 原不等式等价于 $(x-2)(x-5)>0$, 所以 $x\in (-\infty,2)\cup (5,+\infty)$.
-</p>
-<p>(2) 原不等式等价于
-  \[\left\{\!\!\begin{array}{l}
-        (x-2)(x-5)\geqslant 0,\\
-        x-5\neq 0,
-      \end{array}\right. \text{解得}\ 
-      x\in (-\infty,2]\cup (5,+\infty).\]
-</p>
-</mysolution>
-</p>
-<myexercise>
-    <p>若 $a>b$, 且 $a-\dfrac1a> b-\dfrac1b$, 求 $ab$ 的取值范围.
-    </p>
-</myexercise>
-<mysolution>
-    <p>作差并整理, \[\begin{aligned}
-        a-\frac1a- \biggl(b-\frac1b\biggl)
-        &= a-b+ \frac{a-b}{ab}\\
+\eqref{eq-201009-1907} 式中右边不用限制分母非零, 因为乘积非零隐含两个因子均非零; 而 \eqref{eq-201009-1917} 式中右边必须限制分母非零, 因为乘积为零隐含两个因子均可能为零.</p><p><myexample><p>解下列不等式:
+\begin{twocolpro}
+(1) $\dfrac{x-2}{x-5}>0$; & (2) $\dfrac{x-2}{x-5}\geqslant 0$.
+\end{twocolpro}</p></myexample><mysolution><p>(1) 原不等式等价于 $(x-2)(x-5)>0$, 所以 $x\in (-\infty,2)\cup (5,+\infty)$.</p><p>(2) 原不等式等价于
+\[\left\{\!\!\begin{array}{l}
+(x-2)(x-5)\geqslant 0,\\
+x-5\neq 0,
+\end{array}\right. \text{解得}\
+x\in (-\infty,2]\cup (5,+\infty).\]</p></mysolution></p><myexercise><p>若 $a>b$, 且 $a-\dfrac1a> b-\dfrac1b$, 求 $ab$ 的取值范围.</p></myexercise><mysolution><p>作差并整理, \[\begin{aligned}
+a-\frac1a- \biggl(b-\frac1b\biggl)
+&= a-b+ \frac{a-b}{ab}\\
         &= (a-b)\biggl(1+\frac1{ab}\biggr)>0.
-    \end{aligned}\]
-    由 $a>b$ 知 $a-b>0$, 上式两边同时除以 $a-b$ 得
-    \[1+\frac1{ab}>0.\]
-    将 $ab$ 视为整体, 解得 $ab\in(-\infty,-1)\cup (0,+\infty)$.
-    </p>
-</mysolution>
-<p>解二次不等式时, 需要考虑对应抛物线的图象, 尤其应注意开口方向. 也可以先将不等式各因子化为最高次项系数为正的形式, 然后再根据抛物线的图象写出相应的解集.
-</p>
-<p><myexample>
-<p>解下列不等式:
-  \begin{twocolpro}
-    (1) $\dfrac{2-x}{x-5}>0$; & (2) $\dfrac{2-x}{x-5}\geqslant 0$.
-  \end{twocolpro}
-</p>
-</myexample>
-<mysolution>
-    <p>(1) 原不等式等价于 $(2-x)(x-5)>0$ 即 $(x-2)(x-5)< 0$ , 所以 $x\in (2,5)$.
-</p>
-<p>(2) 原不等式等价于
-  \[\left\{\!\!\begin{array}{l}
-        (2-x)(x-5)\geqslant 0,\\
-        x-5\neq 0,
-      \end{array}\right. \text{解得}\ 
-      x\in [2,5).\]
-</p>
-</mysolution>
-</p>
-<p>关于 $x$ 的形如 $\dfrac{Ax+B}{Cx+D}>(\geqslant)\,E$ 的分式不等式, 也可以改写为
+\end{aligned}\]
+由 $a>b$ 知 $a-b>0$, 上式两边同时除以 $a-b$ 得
+\[1+\frac1{ab}>0.\]
+将 $ab$ 视为整体, 解得 $ab\in(-\infty,-1)\cup (0,+\infty)$.</p></mysolution><p>解二次不等式时, 需要考虑对应抛物线的图象, 尤其应注意开口方向. 也可以先将不等式各因子化为最高次项系数为正的形式, 然后再根据抛物线的图象写出相应的解集.</p><p><myexample><p>解下列不等式:
+\begin{twocolpro}
+(1) $\dfrac{2-x}{x-5}>0$; & (2) $\dfrac{2-x}{x-5}\geqslant 0$.
+\end{twocolpro}</p></myexample><mysolution><p>(1) 原不等式等价于 $(2-x)(x-5)>0$ 即 $(x-2)(x-5)< 0$ , 所以 $x\in (2,5)$.</p><p>(2) 原不等式等价于
+\[\left\{\!\!\begin{array}{l}
+(2-x)(x-5)\geqslant 0,\\
+x-5\neq 0,
+\end{array}\right. \text{解得}\
+x\in [2,5).\]</p></mysolution></p><p>关于 $x$ 的形如 $\dfrac{Ax+B}{Cx+D}>(\geqslant)\,E$ 的分式不等式, 也可以改写为
 \[\frac{Ax+B}{Cx+D}-E>(\geqslant)\,0\quad \text{即}\quad
-  \frac{Ax+B-E(Cx+D)}{Cx+D}>(\geqslant)\,0,\]
-从而化为前面形式的不等式来求解.
-</p>
-<p><myexample>
-<p>解下列不等式:
-  \begin{twocolpro}
-    (1) $\dfrac{2x-3}{x-5}>1$; & (2) $\dfrac{2-x}{x-5}\geqslant 2$.
-  \end{twocolpro}
-</p>
-</myexample>
-<mysolution>
-    <p>(1) 原不等式化为
-  \[\frac{2x-3}{x-5}-1>0\quad \text{即}\quad \frac{x+2}{x-5}>0,\] 
-  所以等价于 $(x+2)(x-5)>0$, 解得 $x\in (-\infty,-2)\cup (5,+\infty)$.
-</p>
-<p>(2) 原不等式化为
-  \[\frac{2-x}{x-5}-2\geqslant 0\quad \text{即}\quad \frac{12-3x}{x-5}\geqslant 0,\] 
-  所以等价于
-  \[\left\{\!\!\begin{array}{l}
-        (12-3x)(x-5)\geqslant 0,\\
-        x-5\neq 0,
-      \end{array}\right. \text{解得}\ 
-      x\in [4,5).\]
-</p>
-</mysolution>
-</article>
- 
-          
-    
-    <div class="docs-prevnext">
-    
-        <a class="docs-prev button" href="/docs/prerequisite/inequality/abs-quadratic-inequality">
-          <span class="arrow-prev">← </span><span>绝对值不等式与二次不等式</span></a>
-      
-      
-        <a class="docs-next button" href="/docs/prerequisite/inequality/mean-value-inequality">
-          <span>均值不等式</span><span class="arrow-next"> →</span></a>
-      
-    </div>
-
-    <p>作者邮箱 rong.liu@mail.bnu.edu.cn。</p>
-    <p>读者的支持是作者持续更新的动力😊</p>
-    
-
-      <footer class="book-footer">
-        
-  <div class="flex flex-wrap justify-between">
-
-
-
-
-
-</div>
-
-
-
-  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
-
-
- 
-        
-      </footer>
-
-      
-  
-  <div class="book-comments">
-
-</div>
-  
- 
-
-      <label for="menu-control" class="hidden book-menu-overlay"></label>
-    </div>
-
-    
-    <aside class="book-toc">
-      <div class="book-toc-content">
-        
-  
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#分式不等式与高次不等式">分式不等式与高次不等式</a></li>
-  </ul>
-</nav>
-
-
- 
-      </div>
-    </aside>
-    
-  </main>
-
-  
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
+\frac{Ax+B-E(Cx+D)}{Cx+D}>(\geqslant)\,0,\]
+从而化为前面形式的不等式来求解.</p><p><myexample><p>解下列不等式:
+\begin{twocolpro}
+(1) $\dfrac{2x-3}{x-5}>1$; & (2) $\dfrac{2-x}{x-5}\geqslant 2$.
+\end{twocolpro}</p></myexample><mysolution><p>(1) 原不等式化为
+\[\frac{2x-3}{x-5}-1>0\quad \text{即}\quad \frac{x+2}{x-5}>0,\]
+所以等价于 $(x+2)(x-5)>0$, 解得 $x\in (-\infty,-2)\cup (5,+\infty)$.</p><p>(2) 原不等式化为
+\[\frac{2-x}{x-5}-2\geqslant 0\quad \text{即}\quad \frac{12-3x}{x-5}\geqslant 0,\]
+所以等价于
+\[\left\{\!\!\begin{array}{l}
+(12-3x)(x-5)\geqslant 0,\\
+x-5\neq 0,
+\end{array}\right. \text{解得}\
+x\in [4,5).\]</p></mysolution></article><div class=docs-prevnext><a class="docs-prev button" href=/docs/prerequisite/inequality/abs-quadratic-inequality><span class=arrow-prev>← </span><span>绝对值不等式与二次不等式</span></a>
+<a class="docs-next button" href=/docs/prerequisite/inequality/mean-value-inequality><span>均值不等式</span><span class=arrow-next> →</span></a></div><p>作者邮箱 rong.liu@mail.bnu.edu.cn。</p><p>读者的支持是作者持续更新的动力😊</p><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#分式不等式与高次不等式>分式不等式与高次不等式</a></li></ul></nav></div></aside></main></body></html>

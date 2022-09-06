@@ -1,733 +1,89 @@
-<!DOCTYPE html>
-<html lang="zh" dir="ltr">
-<head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="三角函数的和差角公式 # 已知 $\alpha$, $\beta$ 都是锐角, $\cos\alpha=\dfrac17$, $\cos(\alpha&#43;\beta)= -\dfrac{11}{14}$, 求 $\cos\beta$ 的值. 由题意, $\alpha\in\Bigl(0,\dfrac\pi2\Bigr)$, $\alpha&#43;\beta\in(0,\pi)$, 所以 $\sin\alpha=\dfrac{4\sqrt3}7$, $\sin(\alpha&#43;\beta)= \dfrac{5\sqrt3}{14}$, 而 \[\begin{aligned} \cos\beta &= \cos((\alpha&#43;\beta)-\alpha)\\ &= \cos(\alpha&#43;\beta)\cos\alpha- \sin(\alpha&#43;\beta)\sin\alpha\\ &= \biggl(-\dfrac{11}{14}\biggr)\cdot \dfrac17 &#43; \dfrac{5\sqrt3}{14}\cdot \dfrac{4\sqrt3}7 = \frac12. \end{aligned}\] 上题可以顺带求出 $\beta= \dfrac\pi3$. 题中的解法主要是利用 $\alpha$ 和 $\alpha&#43;\beta$ 表示 $\beta$, 以直接利用差角的余弦公式写出 $\cos\beta$ 的表达式.类似的还有 \[\alpha= (45^\circ&#43;\alpha)-45^\circ,\quad \alpha= \frac{\alpha&#43;\beta}{2}&#43; \frac{\alpha-\beta}{2}.\] 已知 $\sin(30^\circ&#43; \alpha)= \dfrac35$, $60^\circ&lt; \alpha&lt; 150^\circ$, 求 $\cos\alpha$ 的值. 由题意, $90^\circ&lt; 30^\circ&#43;\alpha&lt; 180^\circ$, 所以 $\cos(30^\circ&#43; \alpha)= -\dfrac45$, 而 \[\begin{aligned} \cos\alpha &= \cos((30^\circ&#43;\alpha)- 30^\circ)\\ &= \cos(30^\circ&#43;\alpha)\cos30^\circ) &#43; \sin(30^\circ&#43;\alpha)\sin30^\circ\\ &= -\dfrac45\cdot \frac{\sqrt3}{2}&#43; \dfrac35\cdot\frac12 = \frac{3-4\sqrt3}{10}.">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="三角函数的和差角公式" />
-<meta property="og:description" content="三角函数的和差角公式 # 已知 $\alpha$, $\beta$ 都是锐角, $\cos\alpha=\dfrac17$, $\cos(\alpha&#43;\beta)= -\dfrac{11}{14}$, 求 $\cos\beta$ 的值. 由题意, $\alpha\in\Bigl(0,\dfrac\pi2\Bigr)$, $\alpha&#43;\beta\in(0,\pi)$, 所以 $\sin\alpha=\dfrac{4\sqrt3}7$, $\sin(\alpha&#43;\beta)= \dfrac{5\sqrt3}{14}$, 而 \[\begin{aligned} \cos\beta &= \cos((\alpha&#43;\beta)-\alpha)\\ &= \cos(\alpha&#43;\beta)\cos\alpha- \sin(\alpha&#43;\beta)\sin\alpha\\ &= \biggl(-\dfrac{11}{14}\biggr)\cdot \dfrac17 &#43; \dfrac{5\sqrt3}{14}\cdot \dfrac{4\sqrt3}7 = \frac12. \end{aligned}\] 上题可以顺带求出 $\beta= \dfrac\pi3$. 题中的解法主要是利用 $\alpha$ 和 $\alpha&#43;\beta$ 表示 $\beta$, 以直接利用差角的余弦公式写出 $\cos\beta$ 的表达式.类似的还有 \[\alpha= (45^\circ&#43;\alpha)-45^\circ,\quad \alpha= \frac{\alpha&#43;\beta}{2}&#43; \frac{\alpha-\beta}{2}.\] 已知 $\sin(30^\circ&#43; \alpha)= \dfrac35$, $60^\circ&lt; \alpha&lt; 150^\circ$, 求 $\cos\alpha$ 的值. 由题意, $90^\circ&lt; 30^\circ&#43;\alpha&lt; 180^\circ$, 所以 $\cos(30^\circ&#43; \alpha)= -\dfrac45$, 而 \[\begin{aligned} \cos\alpha &= \cos((30^\circ&#43;\alpha)- 30^\circ)\\ &= \cos(30^\circ&#43;\alpha)\cos30^\circ) &#43; \sin(30^\circ&#43;\alpha)\sin30^\circ\\ &= -\dfrac45\cdot \frac{\sqrt3}{2}&#43; \dfrac35\cdot\frac12 = \frac{3-4\sqrt3}{10}." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="/docs/trigonometry/trigonometric-function/trig-sum-diff/" /><meta property="article:section" content="docs" />
-
-
-
-<title>三角函数的和差角公式 | 高中数学资料</title>
-<link rel="manifest" href="/manifest.json">
-<link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.6c08f1f220250ecc36dde6a6fa75fdd4247d84aaaa23d4bc157c9b2f8fa595bd.css" >
-  <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh.search.min.784ab3c077aed3c64574cb6afb6c2069baa00d2088ec733a85e8e0551c41cf97.js" ></script>
-
-  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" ></script>
-<!--
-Made with Book Theme
-https://github.com/alex-shpak/hugo-book
--->
-  <link rel="stylesheet" href='/katex/katex.min.css' crossorigin="anonymous">
-
-
-<script defer src='/katex/katex.min.js' crossorigin="anonymous"></script>
-
-
-<script defer src='/katex/auto-render.min.js' 
-    onload="renderMathInElement(document.body);"></script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        renderMathInElement(document.body, {
-            
-            
-            delimiters: [
-                { left: '$$', right: '$$', display: true },
-                { left: '$', right: '$', display: false },
-                { left: '\\(', right: '\\)', display: false },
-                { left: '\\[', right: '\\]', display: true }
-            ],
-            
-            throwOnError: false
-        });
-    });
-</script>
-
-</head>
-<body dir="ltr">
-  <input type="checkbox" class="hidden toggle" id="menu-control" />
-  <input type="checkbox" class="hidden toggle" id="toc-control" />
-  <main class="container flex">
-    <aside class="book-menu">
-      <div class="book-menu-content">
-        
-  <nav>
-<h2 class="book-brand">
-  <a href="/"><span>高中数学资料</span>
-  </a>
-</h2>
-
-
-<div class="book-search">
-  <input type="text" id="book-search-input" placeholder="搜索" aria-label="搜索" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner hidden"></div>
-  <ul id="book-search-results"></ul>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-  
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-7fbb26c6156d78d59d607292b53948a4" class="toggle"  />
-    <label for="section-7fbb26c6156d78d59d607292b53948a4" class="flex justify-between">
-      <a href="/docs/prerequisite/" class="">预备知识</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-1e2f9b8b873223fe63fc7221375c0eb0" class="toggle"  />
-    <label for="section-1e2f9b8b873223fe63fc7221375c0eb0" class="flex justify-between">
-      <a href="/docs/prerequisite/ms-algebra/" class="">初中代数提要</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-algebra/quadratic-factorization/" class="">二次三项式的因式分解</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-algebra/quadratic-equation/" class="">一元二次方程的解法</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-algebra/veite-theorem/" class="">韦达定理</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-c1c4f99569969342f46afcb379e41254" class="toggle"  />
-    <label for="section-c1c4f99569969342f46afcb379e41254" class="flex justify-between">
-      <a href="/docs/prerequisite/ms-geometry/" class="">初中几何提要</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-geometry/symmetric-congruence-similar/" class="">对称、全等与相似</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-geometry/triangle/" class="">三角形</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-geometry/quadrilateral/" class="">四边形</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-geometry/circle/" class="">圆</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-geometry/area/" class="">平面图形的面积</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-53227ed5b540c99051432d70e3c9c4da" class="toggle"  />
-    <label for="section-53227ed5b540c99051432d70e3c9c4da" class="flex justify-between">
-      <a href="/docs/prerequisite/ms-function/" class="">初中函数提要</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-function/axis-coordinate/" class="">数轴与平面直角坐标系</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-function/linear-inverse/" class="">一次函数与反比例函数</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-function/quadratic-function-inequality/" class="">二次函数与二次不等式</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/ms-function/graph-tranform/" class="">函数图象的变换</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-4adec7e7d2e2d6fa5eaee0a98a60892e" class="toggle"  />
-    <label for="section-4adec7e7d2e2d6fa5eaee0a98a60892e" class="flex justify-between">
-      <a href="/docs/prerequisite/set-logic/" class="">集合与简易逻辑</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/set-logic/set-def/" class="">集合的定义</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/set-logic/set-operation/" class="">集合的运算</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/set-logic/proposition-iff/" class="">命题与充要条件</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/set-logic/logical-quantifier/" class="">逻辑量词</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-0efa6e9487d50f8c7308e9898b74ff74" class="toggle"  />
-    <label for="section-0efa6e9487d50f8c7308e9898b74ff74" class="flex justify-between">
-      <a href="/docs/prerequisite/inequality/" class="">不等式</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/inequality/inequality-property/" class="">不等式的性质</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/prerequisite/inequality/abs-quadratic-inequality/" class="">绝对值不等式与二次不等式</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-  </ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</nav>
-
-
-
-
-  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
-
-
- 
-      </div>
-    </aside>
-
-    <div class="book-page">
-      <header class="book-header">
-        
-  <div class="flex align-center justify-between">
-  <label for="menu-control">
-    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
-  </label>
-
-  <strong>三角函数的和差角公式</strong>
-
-  <label for="toc-control">
-    
-    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
-    
-  </label>
-</div>
-
-
-  
-  <aside class="hidden clearfix">
-    
-  
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#三角函数的和差角公式">三角函数的和差角公式</a></li>
-  </ul>
-</nav>
-
-
-
-  </aside>
-  
- 
-      </header>
-
-      
-      
-  <article class="markdown"><h1 id="三角函数的和差角公式">
-  三角函数的和差角公式
-  <a class="anchor" href="#%e4%b8%89%e8%a7%92%e5%87%bd%e6%95%b0%e7%9a%84%e5%92%8c%e5%b7%ae%e8%a7%92%e5%85%ac%e5%bc%8f">#</a>
-</h1>
-<myexample>
-<p>已知 $\alpha$, $\beta$ 都是锐角, $\cos\alpha=\dfrac17$, $\cos(\alpha+\beta)= -\dfrac{11}{14}$, 求 $\cos\beta$ 的值.
-</p>
-</myexample>
-<mysolution>
-    <p>由题意, $\alpha\in\Bigl(0,\dfrac\pi2\Bigr)$, $\alpha+\beta\in(0,\pi)$, 所以 $\sin\alpha=\dfrac{4\sqrt3}7$, $\sin(\alpha+\beta)= \dfrac{5\sqrt3}{14}$, 而
-    \[\begin{aligned}
-        \cos\beta
-        &= \cos((\alpha+\beta)-\alpha)\\
-        &= \cos(\alpha+\beta)\cos\alpha- \sin(\alpha+\beta)\sin\alpha\\
-        &= \biggl(-\dfrac{11}{14}\biggr)\cdot \dfrac17
-            + \dfrac{5\sqrt3}{14}\cdot \dfrac{4\sqrt3}7
-         = \frac12.
-    \end{aligned}\]
-</p>
-</mysolution>
-<myremark>
-    <p>上题可以顺带求出 $\beta= \dfrac\pi3$. 题中的解法主要是利用 $\alpha$ 和 $\alpha+\beta$ 表示 $\beta$, 以直接利用差角的余弦公式写出 $\cos\beta$ 的表达式.类似的还有
-    \[\alpha= (45^\circ+\alpha)-45^\circ,\quad
-      \alpha= \frac{\alpha+\beta}{2}+ \frac{\alpha-\beta}{2}.\]
-</p>
-</myremark>
-</p>
-<p><myexample>
-<p>已知 $\sin(30^\circ+ \alpha)= \dfrac35$, $60^\circ< \alpha< 150^\circ$, 求 $\cos\alpha$ 的值.
-</p>
-</myexample>
-<mysolution>
-    <p>由题意, $90^\circ< 30^\circ+\alpha< 180^\circ$, 所以 $\cos(30^\circ+ \alpha)= -\dfrac45$, 而
-    \[\begin{aligned}
-        \cos\alpha
-        &= \cos((30^\circ+\alpha)- 30^\circ)\\
-        &= \cos(30^\circ+\alpha)\cos30^\circ)
-            + \sin(30^\circ+\alpha)\sin30^\circ\\
-        &= -\dfrac45\cdot \frac{\sqrt3}{2}+ \dfrac35\cdot\frac12
-         = \frac{3-4\sqrt3}{10}.
-    \end{aligned}\]
-</p>
-</mysolution>
-<myremark>
-    <p>上题的另一种做法是将已知式拆为 $\dfrac12\cos\alpha+ \dfrac{\sqrt3}2\sin\alpha= \dfrac35$, 再与 $\sin^2\alpha+ \cos^2\alpha= 1$ 联立求解. 但此方法的计算量明显大一些, 而且由二次方程会得到两组解, 因此还需要讨论相应的取值范围, 以舍掉增根.
-</p>
-</myremark>
-<p>利用距离公式可以推出两角和的余弦公式
+<!doctype html><html lang=zh dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="三角函数的和差角公式 # 已知 $\alpha$, $\beta$ 都是锐角, $\cos\alpha=\dfrac17$, $\cos(\alpha+\beta)= -\dfrac{11}{14}$, 求 $\cos\beta$ 的值. 由题意, $\alpha\in\Bigl(0,\dfrac\pi2\Bigr)$, $\alpha+\beta\in(0,\pi)$, 所以 $\sin\alpha=\dfrac{4\sqrt3}7$, $\sin(\alpha+\beta)= \dfrac{5\sqrt3}{14}$, 而 \[\begin{aligned} \cos\beta &= \cos((\alpha&#43;\beta)-\alpha)\\ &= \cos(\alpha&#43;\beta)\cos\alpha- \sin(\alpha+\beta)\sin\alpha\\ &= \biggl(-\dfrac{11}{14}\biggr)\cdot \dfrac17 + \dfrac{5\sqrt3}{14}\cdot \dfrac{4\sqrt3}7 = \frac12. \end{aligned}\] 上题可以顺带求出 $\beta= \dfrac\pi3$. 题中的解法主要是利用 $\alpha$ 和 $\alpha+\beta$ 表示 $\beta$, 以直接利用差角的余弦公式写出 $\cos\beta$ 的表达式.类似的还有 \[\alpha= (45^\circ+\alpha)-45^\circ,\quad \alpha= \frac{\alpha+\beta}{2}+ \frac{\alpha-\beta}{2}.\] 已知 $\sin(30^\circ+ \alpha)= \dfrac35$, $60^\circ< \alpha< 150^\circ$, 求 $\cos\alpha$ 的值. 由题意, $90^\circ< 30^\circ+\alpha< 180^\circ$, 所以 $\cos(30^\circ+ \alpha)= -\dfrac45$, 而 \[\begin{aligned} \cos\alpha &= \cos((30^\circ&#43;\alpha)- 30^\circ)\\ &= \cos(30^\circ&#43;\alpha)\cos30^\circ) + \sin(30^\circ+\alpha)\sin30^\circ\\ &= -\dfrac45\cdot \frac{\sqrt3}{2}+ \dfrac35\cdot\frac12 = \frac{3-4\sqrt3}{10}."><meta name=theme-color content="#FFFFFF"><meta property="og:title" content="三角函数的和差角公式"><meta property="og:description" content="三角函数的和差角公式 # 已知 $\alpha$, $\beta$ 都是锐角, $\cos\alpha=\dfrac17$, $\cos(\alpha+\beta)= -\dfrac{11}{14}$, 求 $\cos\beta$ 的值. 由题意, $\alpha\in\Bigl(0,\dfrac\pi2\Bigr)$, $\alpha+\beta\in(0,\pi)$, 所以 $\sin\alpha=\dfrac{4\sqrt3}7$, $\sin(\alpha+\beta)= \dfrac{5\sqrt3}{14}$, 而 \[\begin{aligned} \cos\beta &= \cos((\alpha&#43;\beta)-\alpha)\\ &= \cos(\alpha&#43;\beta)\cos\alpha- \sin(\alpha+\beta)\sin\alpha\\ &= \biggl(-\dfrac{11}{14}\biggr)\cdot \dfrac17 + \dfrac{5\sqrt3}{14}\cdot \dfrac{4\sqrt3}7 = \frac12. \end{aligned}\] 上题可以顺带求出 $\beta= \dfrac\pi3$. 题中的解法主要是利用 $\alpha$ 和 $\alpha+\beta$ 表示 $\beta$, 以直接利用差角的余弦公式写出 $\cos\beta$ 的表达式.类似的还有 \[\alpha= (45^\circ+\alpha)-45^\circ,\quad \alpha= \frac{\alpha+\beta}{2}+ \frac{\alpha-\beta}{2}.\] 已知 $\sin(30^\circ+ \alpha)= \dfrac35$, $60^\circ< \alpha< 150^\circ$, 求 $\cos\alpha$ 的值. 由题意, $90^\circ< 30^\circ+\alpha< 180^\circ$, 所以 $\cos(30^\circ+ \alpha)= -\dfrac45$, 而 \[\begin{aligned} \cos\alpha &= \cos((30^\circ&#43;\alpha)- 30^\circ)\\ &= \cos(30^\circ&#43;\alpha)\cos30^\circ) + \sin(30^\circ+\alpha)\sin30^\circ\\ &= -\dfrac45\cdot \frac{\sqrt3}{2}+ \dfrac35\cdot\frac12 = \frac{3-4\sqrt3}{10}."><meta property="og:type" content="article"><meta property="og:url" content="/docs/trigonometry/trigonometric-function/trig-sum-diff/"><meta property="article:section" content="docs"><title>三角函数的和差角公式 | 高中数学资料</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.6c08f1f220250ecc36dde6a6fa75fdd4247d84aaaa23d4bc157c9b2f8fa595bd.css><script defer src=/flexsearch.min.js></script>
+<script defer src=/zh.search.min.7287a52d6d4b6df1bd72f5e28bb3775dbf17b637e7c63244f3fb9df429bae232.js></script>
+<script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js></script>
+<link rel=stylesheet href=/katex/katex.min.css crossorigin=anonymous><script defer src=/katex/katex.min.js crossorigin=anonymous></script>
+<script defer src=/katex/auto-render.min.js onload=renderMathInElement(document.body)></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1},{left:"\\[",right:"\\]",display:!0}],throwOnError:!1})})</script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a href=/><span>高中数学资料</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=搜索 aria-label=搜索 maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li><input type=checkbox id=section-7fbb26c6156d78d59d607292b53948a4 class=toggle>
+<label for=section-7fbb26c6156d78d59d607292b53948a4 class="flex justify-between"><a href=/docs/prerequisite/>预备知识</a></label><ul><li><input type=checkbox id=section-1e2f9b8b873223fe63fc7221375c0eb0 class=toggle>
+<label for=section-1e2f9b8b873223fe63fc7221375c0eb0 class="flex justify-between"><a href=/docs/prerequisite/ms-algebra/>初中代数提要</a></label><ul><li><a href=/docs/prerequisite/ms-algebra/quadratic-factorization/>二次三项式的因式分解</a></li><li><a href=/docs/prerequisite/ms-algebra/quadratic-equation/>一元二次方程的解法</a></li><li><a href=/docs/prerequisite/ms-algebra/veite-theorem/>韦达定理</a></li></ul></li><li><input type=checkbox id=section-c1c4f99569969342f46afcb379e41254 class=toggle>
+<label for=section-c1c4f99569969342f46afcb379e41254 class="flex justify-between"><a href=/docs/prerequisite/ms-geometry/>初中几何提要</a></label><ul><li><a href=/docs/prerequisite/ms-geometry/symmetric-congruence-similar/>对称、全等与相似</a></li><li><a href=/docs/prerequisite/ms-geometry/triangle/>三角形</a></li><li><a href=/docs/prerequisite/ms-geometry/quadrilateral/>四边形</a></li><li><a href=/docs/prerequisite/ms-geometry/circle/>圆</a></li><li><a href=/docs/prerequisite/ms-geometry/area/>平面图形的面积</a></li></ul></li><li><input type=checkbox id=section-53227ed5b540c99051432d70e3c9c4da class=toggle>
+<label for=section-53227ed5b540c99051432d70e3c9c4da class="flex justify-between"><a href=/docs/prerequisite/ms-function/>初中函数提要</a></label><ul><li><a href=/docs/prerequisite/ms-function/axis-coordinate/>数轴与平面直角坐标系</a></li><li><a href=/docs/prerequisite/ms-function/linear-inverse/>一次函数与反比例函数</a></li><li><a href=/docs/prerequisite/ms-function/quadratic-function-inequality/>二次函数与二次不等式</a></li><li><a href=/docs/prerequisite/ms-function/graph-tranform/>函数图象的变换</a></li></ul></li><li><input type=checkbox id=section-4adec7e7d2e2d6fa5eaee0a98a60892e class=toggle>
+<label for=section-4adec7e7d2e2d6fa5eaee0a98a60892e class="flex justify-between"><a href=/docs/prerequisite/set-logic/>集合与简易逻辑</a></label><ul><li><a href=/docs/prerequisite/set-logic/set-def/>集合的定义</a></li><li><a href=/docs/prerequisite/set-logic/set-operation/>集合的运算</a></li><li><a href=/docs/prerequisite/set-logic/proposition-iff/>命题与充要条件</a></li><li><a href=/docs/prerequisite/set-logic/logical-quantifier/>逻辑量词</a></li></ul></li><li><input type=checkbox id=section-0efa6e9487d50f8c7308e9898b74ff74 class=toggle>
+<label for=section-0efa6e9487d50f8c7308e9898b74ff74 class="flex justify-between"><a href=/docs/prerequisite/inequality/>不等式</a></label><ul><li><a href=/docs/prerequisite/inequality/inequality-property/>不等式的性质</a></li><li><a href=/docs/prerequisite/inequality/abs-quadratic-inequality/>绝对值不等式与二次不等式</a></li></ul></li></ul></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
+<strong>三角函数的和差角公式</strong>
+<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#三角函数的和差角公式>三角函数的和差角公式</a></li></ul></nav></aside></header><article class=markdown><h1 id=三角函数的和差角公式>三角函数的和差角公式
+<a class=anchor href=#%e4%b8%89%e8%a7%92%e5%87%bd%e6%95%b0%e7%9a%84%e5%92%8c%e5%b7%ae%e8%a7%92%e5%85%ac%e5%bc%8f>#</a></h1><myexample><p>已知 $\alpha$, $\beta$ 都是锐角, $\cos\alpha=\dfrac17$, $\cos(\alpha+\beta)= -\dfrac{11}{14}$, 求 $\cos\beta$ 的值.</p></myexample><mysolution><p>由题意, $\alpha\in\Bigl(0,\dfrac\pi2\Bigr)$, $\alpha+\beta\in(0,\pi)$, 所以 $\sin\alpha=\dfrac{4\sqrt3}7$, $\sin(\alpha+\beta)= \dfrac{5\sqrt3}{14}$, 而
+\[\begin{aligned}
+\cos\beta
+&= \cos((\alpha+\beta)-\alpha)\\
+  &= \cos(\alpha+\beta)\cos\alpha- \sin(\alpha+\beta)\sin\alpha\\
+&= \biggl(-\dfrac{11}{14}\biggr)\cdot \dfrac17
++ \dfrac{5\sqrt3}{14}\cdot \dfrac{4\sqrt3}7
+= \frac12.
+\end{aligned}\]</p></mysolution><myremark><p>上题可以顺带求出 $\beta= \dfrac\pi3$. 题中的解法主要是利用 $\alpha$ 和 $\alpha+\beta$ 表示 $\beta$, 以直接利用差角的余弦公式写出 $\cos\beta$ 的表达式.类似的还有
+\[\alpha= (45^\circ+\alpha)-45^\circ,\quad
+\alpha= \frac{\alpha+\beta}{2}+ \frac{\alpha-\beta}{2}.\]</p></myremark></p><p><myexample><p>已知 $\sin(30^\circ+ \alpha)= \dfrac35$, $60^\circ< \alpha< 150^\circ$, 求 $\cos\alpha$ 的值.</p></myexample><mysolution><p>由题意, $90^\circ< 30^\circ+\alpha< 180^\circ$, 所以 $\cos(30^\circ+ \alpha)= -\dfrac45$, 而
+\[\begin{aligned}
+\cos\alpha
+&= \cos((30^\circ+\alpha)- 30^\circ)\\
+&= \cos(30^\circ+\alpha)\cos30^\circ)
++ \sin(30^\circ+\alpha)\sin30^\circ\\
+&= -\dfrac45\cdot \frac{\sqrt3}{2}+ \dfrac35\cdot\frac12
+= \frac{3-4\sqrt3}{10}.
+\end{aligned}\]</p></mysolution><myremark><p>上题的另一种做法是将已知式拆为 $\dfrac12\cos\alpha+ \dfrac{\sqrt3}2\sin\alpha= \dfrac35$, 再与 $\sin^2\alpha+ \cos^2\alpha= 1$ 联立求解. 但此方法的计算量明显大一些, 而且由二次方程会得到两组解, 因此还需要讨论相应的取值范围, 以舍掉增根.</p></myremark><p>利用距离公式可以推出两角和的余弦公式
 \[\cos(\alpha+\beta)= \cos\alpha\cos\beta- \sin\alpha\sin\beta,\]
-大致步骤如下:
-</p>
-<p>如图所示, 点 $A$, $B$, $P$, $Q$ 均在单位圆上, 且 $\angle AOP=\alpha$, $\angle POB=\beta$, $\angle AOQ=-\beta$, 则由三角函数的定义 (参考“16 弧度制与任意角的三角函数”), 各点坐标为
+大致步骤如下:</p><p>如图所示, 点 $A$, $B$, $P$, $Q$ 均在单位圆上, 且 $\angle AOP=\alpha$, $\angle POB=\beta$, $\angle AOQ=-\beta$, 则由三角函数的定义 (参考“16 弧度制与任意角的三角函数”), 各点坐标为
 \[\begin{gathered}
-    A(1,0),\quad
-    B(\cos(\alpha+\beta),\sin(\alpha+\beta)),\\
-    P(\cos\alpha,\sin\alpha),\quad
-    Q(\cos\beta,-\sin\beta).
+A(1,0),\quad
+B(\cos(\alpha+\beta),\sin(\alpha+\beta)),\\
+P(\cos\alpha,\sin\alpha),\quad
+Q(\cos\beta,-\sin\beta).
 \end{gathered}\]
 因为 $\angle AOB= \angle QOP= \alpha+\beta$, 所以 $\triangle AOB\cong \triangle QOP$, $|AB|=|PQ|$, 即
 \[\begin{aligned}
-    &\sqrt{[1-\cos(\alpha+\beta)]^2+[\sin(\alpha+\beta)]^2}\\
-    ={}& \sqrt{(\cos\alpha- \cos\beta)^2+ (\sin\alpha+ \sin\beta)^2},
+&\sqrt{[1-\cos(\alpha+\beta)]^2+[\sin(\alpha+\beta)]^2}\\
+={}& \sqrt{(\cos\alpha- \cos\beta)^2+ (\sin\alpha+ \sin\beta)^2},
 \end{aligned}\]
-平方后展开并整理可得两角和的余弦公式.
-</p>
-<p><center>
-    \includegraphics[scale=1.5]{2021-0219-0930-crop}
-</center>
-</p>
-<p>再利用诱导公式并结合
+平方后展开并整理可得两角和的余弦公式.</p><p><center>\includegraphics[scale=1.5]{2021-0219-0930-crop}</center></p><p>再利用诱导公式并结合
 \[\begin{aligned}
-    \cos(\alpha-\beta)&= \cos(\alpha+(-\beta)),\\
+\cos(\alpha-\beta)&= \cos(\alpha+(-\beta)),\\
     \sin(\alpha+\beta)&= \cos(90^\circ-(\alpha+\beta))
-        = \cos((90^\circ-\alpha)-\beta)),\\
-    \sin(\alpha-\beta)&= \sin(\alpha+(-\beta))
+  = \cos((90^\circ-\alpha)-\beta)),\\
+\sin(\alpha-\beta)&= \sin(\alpha+(-\beta))
 \end{aligned}\]
 可推出和角、差角的正弦、余弦公式
 \begin{gather*}
-    \sin(\alpha\pm \beta)= \sin\alpha\cos\beta\pm \cos\alpha\sin\beta,\\
-    \cos(\alpha\pm \beta)= \cos\alpha\cos\beta\mp \sin\alpha\sin\beta.  
+\sin(\alpha\pm \beta)= \sin\alpha\cos\beta\pm \cos\alpha\sin\beta,\\
+\cos(\alpha\pm \beta)= \cos\alpha\cos\beta\mp \sin\alpha\sin\beta.
 \end{gather*}
 而由正切的定义, $\tan(\alpha+\beta)= \dfrac{\sin(\alpha+\beta)}{\cos(\alpha+\beta)}$, 可得
 \[\tan(\alpha\pm \beta)
-    = \frac{\tan\alpha\pm \tan\beta}{1\mp \tan\alpha\tan\beta}.\]
-这六个公式都可以逆向使用, 即从右边推出左边.
-</p>
-<p>和角、差角的三角函数公式的一个简单应用是求 $15^\circ$ 即 $\dfrac{\pi}{12}$ 的整数倍的三角函数值, 需事先利用常见特殊角表示所求的角, 例如
+= \frac{\tan\alpha\pm \tan\beta}{1\mp \tan\alpha\tan\beta}.\]
+这六个公式都可以逆向使用, 即从右边推出左边.</p><p>和角、差角的三角函数公式的一个简单应用是求 $15^\circ$ 即 $\dfrac{\pi}{12}$ 的整数倍的三角函数值, 需事先利用常见特殊角表示所求的角, 例如
 \[\begin{gathered}
-    75^\circ= 45^\circ+30^\circ= 120^\circ-45^\circ,\\
-    105^\circ= 60^\circ+45^\circ= 135^\circ-30^\circ,\\
-    \dfrac{\pi}{12}= \frac\pi3-\frac\pi4= \frac\pi4-\frac\pi6,\\
-    \dfrac{7\pi}{12}= \frac\pi3+\frac\pi4= \frac{3\pi}4-\frac\pi6.
-\end{gathered}\]
-</p>
-<p><myexample>
-<p>求值: $\cos\dfrac\pi{12}$, $\sin105^\circ$.
-</p>
-</myexample>
-<mysolution>
-    <p>利用和角、差角的正弦、余弦公式,
-    \[\begin{aligned}
-        \cos\dfrac\pi{12}
-        &= \cos\Bigl(\frac\pi3-\frac\pi4\Bigr)\\
-        &= \cos\frac\pi3\cos\frac\pi4+ \sin\frac\pi3\sin\frac\pi4\\
-        &= \frac{\sqrt6+\sqrt2}{4}.
+75^\circ= 45^\circ+30^\circ= 120^\circ-45^\circ,\\
+105^\circ= 60^\circ+45^\circ= 135^\circ-30^\circ,\\
+\dfrac{\pi}{12}= \frac\pi3-\frac\pi4= \frac\pi4-\frac\pi6,\\
+\dfrac{7\pi}{12}= \frac\pi3+\frac\pi4= \frac{3\pi}4-\frac\pi6.
+\end{gathered}\]</p><p><myexample><p>求值: $\cos\dfrac\pi{12}$, $\sin105^\circ$.</p></myexample><mysolution><p>利用和角、差角的正弦、余弦公式,
+\[\begin{aligned}
+\cos\dfrac\pi{12}
+&= \cos\Bigl(\frac\pi3-\frac\pi4\Bigr)\\
+&= \cos\frac\pi3\cos\frac\pi4+ \sin\frac\pi3\sin\frac\pi4\\
+&= \frac{\sqrt6+\sqrt2}{4}.
     \end{aligned}\]
-    同理可得, $\sin105^\circ= \dfrac{\sqrt6+\sqrt2}{4}$.
-</p>
-</mysolution>
-<myexample>
-<p>已知 $\tan(\alpha+\beta)= \dfrac25$, $\tan\Bigl(\beta- \dfrac\pi4\Bigr)= \dfrac14$, 求 $\tan\Bigl(\alpha+ \dfrac\pi4\Bigr)$ 的值.
-</p>
-</myexample>
-<mysolution>
-    <p>整体考虑并用差角的正切公式,
-    \[\begin{aligned}
-        \tan\Bigl(\alpha+ \dfrac\pi4\Bigr)
-        &= \tan\Bigl[\Bigl(\alpha+ \beta\Bigr)- \Bigl(\beta- \dfrac\pi4\Bigr)\Bigr]\\
-        &= \frac{\tan(\alpha+\beta)- \tan\Bigl(\beta- \dfrac\pi4\Bigr)}{1+ \tan(\alpha+\beta)\tan\Bigl(\beta- \dfrac\pi4\Bigr)}\\
-        &= \frac3{22}.
-    \end{aligned}\]
-</p>
-</mysolution>
-<myexample>
-<p>已知 $\tan\alpha$, $\tan\beta$ 是方程 $2x^2+3x-5= 0$ 的两个实数根, 求 $\tan(\alpha+\beta)$ 的值.
-</p>
-</myexample>
-<mysolution>
-    <p>由二次方程根与系数的关系, 
-    \[\tan\alpha+\tan\beta= -\frac32,\quad
-        \tan\alpha\tan\beta= -\frac52,\]
-    所以 
-    \[\tan(\alpha+\beta)
-        = \frac{\tan\alpha+ \tan\beta}{1- \tan\alpha\tan\beta}
-        = -\frac37.\]
-</p>
-</mysolution>
-</article>
- 
-          
-    
-    <div class="docs-prevnext">
-    
-        <a class="docs-prev button" href="/docs/trigonometry/trigonometric-function/trig-induce">
-          <span class="arrow-prev">← </span><span>三角函数的诱导公式</span></a>
-      
-      
-        <a class="docs-next button" href="/docs/trigonometry/trigonometric-function/trig-double-auxiliary">
-          <span>倍角公式与辅助角公式</span><span class="arrow-next"> →</span></a>
-      
-    </div>
-
-    <p>作者邮箱 rong.liu@mail.bnu.edu.cn。</p>
-    <p>读者的支持是作者持续更新的动力😊</p>
-    
-
-      <footer class="book-footer">
-        
-  <div class="flex flex-wrap justify-between">
-
-
-
-
-
-</div>
-
-
-
-  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
-
-
- 
-        
-      </footer>
-
-      
-  
-  <div class="book-comments">
-
-</div>
-  
- 
-
-      <label for="menu-control" class="hidden book-menu-overlay"></label>
-    </div>
-
-    
-    <aside class="book-toc">
-      <div class="book-toc-content">
-        
-  
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#三角函数的和差角公式">三角函数的和差角公式</a></li>
-  </ul>
-</nav>
-
-
- 
-      </div>
-    </aside>
-    
-  </main>
-
-  
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
+同理可得, $\sin105^\circ= \dfrac{\sqrt6+\sqrt2}{4}$.</p></mysolution><myexample><p>已知 $\tan(\alpha+\beta)= \dfrac25$, $\tan\Bigl(\beta- \dfrac\pi4\Bigr)= \dfrac14$, 求 $\tan\Bigl(\alpha+ \dfrac\pi4\Bigr)$ 的值.</p></myexample><mysolution><p>整体考虑并用差角的正切公式,
+\[\begin{aligned}
+\tan\Bigl(\alpha+ \dfrac\pi4\Bigr)
+&= \tan\Bigl[\Bigl(\alpha+ \beta\Bigr)- \Bigl(\beta- \dfrac\pi4\Bigr)\Bigr]\\
+&= \frac{\tan(\alpha+\beta)- \tan\Bigl(\beta- \dfrac\pi4\Bigr)}{1+ \tan(\alpha+\beta)\tan\Bigl(\beta- \dfrac\pi4\Bigr)}\\
+&= \frac3{22}.
+    \end{aligned}\]</p></mysolution><myexample><p>已知 $\tan\alpha$, $\tan\beta$ 是方程 $2x^2+3x-5= 0$ 的两个实数根, 求 $\tan(\alpha+\beta)$ 的值.</p></myexample><mysolution><p>由二次方程根与系数的关系,
+\[\tan\alpha+\tan\beta= -\frac32,\quad
+\tan\alpha\tan\beta= -\frac52,\]
+所以
+\[\tan(\alpha+\beta)
+= \frac{\tan\alpha+ \tan\beta}{1- \tan\alpha\tan\beta}
+= -\frac37.\]</p></mysolution></article><div class=docs-prevnext><a class="docs-prev button" href=/docs/trigonometry/trigonometric-function/trig-induce><span class=arrow-prev>← </span><span>三角函数的诱导公式</span></a>
+<a class="docs-next button" href=/docs/trigonometry/trigonometric-function/trig-double-auxiliary><span>倍角公式与辅助角公式</span><span class=arrow-next> →</span></a></div><p>作者邮箱 rong.liu@mail.bnu.edu.cn。</p><p>读者的支持是作者持续更新的动力😊</p><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#三角函数的和差角公式>三角函数的和差角公式</a></li></ul></nav></div></aside></main></body></html>

@@ -34,7 +34,8 @@ nextPageTitle: 命题与充要条件
 <img alt="并集的维恩图" src="/figs/2022/2022-08/2022-0821-1430.svg"></img>
 
 <myremark>
-    <p>(1) 注意分辨交集符号 $\cap$ 与并集符号 $\cup$;</p>
+    <p>(1) 注意分辨交集符号 $\cap$ 与并集符号 $\cup$;
+    </p>
     <p>(2) 数学中的“或”与生活中的“或”的意义不完全一样, “$x\in A$ 或 $x\in B$”表示两者之一成立即可, 也可以同时成立.</p>
 </myremark>
 
@@ -60,7 +61,8 @@ nextPageTitle: 命题与充要条件
 </myexample>
 
 <mysolution>
-    <p>(1) $A\cap B= \{1,3\}$, 子集共 $2^2=4$ 个.</p>
+    <p>(1) $A\cap B= \{1,3\}$, 子集共 $2^2=4$ 个.
+    </p>
     <p>(2) $B=\{x\mid -1\leqslant x\leqslant 1\}$, $A\cup B=\{x\mid -1\leqslant x< 2\}$.</p>
 </mysolution>
 
@@ -124,15 +126,20 @@ nextPageTitle: 命题与充要条件
 
 
 <myexample>
-    <p>设集合 $A=\{-2,0,2\}$, 分别在下列条件下求 $A\cap B$:</p>
-    <p>(1) $B=\{x\mid x^2-x-2=0\}$;</p>
-    <p>(2) $B=\{x\mid x^2-x-2\leqslant 0\}$;</p>
+    <p>设集合 $A=\{-2,0,2\}$, 分别在下列条件下求 $A\cap B$:
+    </p>
+    <p>(1) $B=\{x\mid x^2-x-2=0\}$;
+    </p>
+    <p>(2) $B=\{x\mid x^2-x-2\leqslant 0\}$;
+    </p>
     <p>(2) $B=\{x\mid x^2-x-2> 0\}$.</p>
 </myexample>
 
 <mysolution>
-    <p>(1) $B=\{-1,2\}$, $A\cap B=\{2\}$.</p>
-    <p>(2) $B=[-1,2]$, $A\cap B=\{0,2\}$.</p>
+    <p>(1) $B=\{-1,2\}$, $A\cap B=\{2\}$.
+    </p>
+    <p>(2) $B=[-1,2]$, $A\cap B=\{0,2\}$.
+    </p>
     <p>(3) $B=(-\infty,-1)\cup(2,+\infty)$, $A\cap B=\{-2\}$.</p>
 </mysolution>
 
@@ -149,10 +156,11 @@ nextPageTitle: 命题与充要条件
 </mysolution>
 
 <myexercise>
-    <p>(1) 设集合 $A=\{x\mid x^2-2x< 0\}$, $B=\{x\mid 1\leqslant x\leqslant 4\}$, 求 $A\cap B$;</p>
-    <p>(2) 设集合 $A=\{-1,a\}$, $B=\{2a,b\}$. 若 $A\cap B=\{1\}$, 求 $A\cup B$;</p>
+    <p>(1) 设集合 $A=\{x\mid x^2-2x< 0\}$, $B=\{x\mid 1\leqslant x\leqslant 4\}$, 求 $A\cap B$;
+    </p>
+    <p>(2) 设集合 $A=\{-1,a\}$, $B=\{2a,b\}$. 若 $A\cap B=\{1\}$, 求 $A\cup B$;
+    </p>
     <p>(3) 设集合 $A=\{-1,a\}$, $B=\{2a,a^2\}$. 若 $A\cap B=\{-1\}$, 求 $A\cup B$.</p>
-    
 </myexercise>
 
 <details><summary>参考答案</summary>
@@ -186,32 +194,48 @@ nextPageTitle: 命题与充要条件
 </p>
 <img alt="交、并、补的维恩图" src="/figs/2022/2022-08/2022-0824-1940.svg"></img>
 
+<myremark>
+    <p>用集合 $A$, $B$ 分别表示上图中的 $S_1$, $S_2$, $S_3$, $S_4$, 可得 \[\begin{gathered}
+        S_1= A\cap \complement_U B,\quad
+            S_2= A\cap B,\\
+        S_3= B\cap \complement_U A,\quad
+            S_4= \complement_U A\cap \complement_U B.
+    \end{gathered}\]
+    </p>
+</myremark>
+
 <myexample>
-    <p>设集合 $A=\{x\mid 1< x< 3\}$, $B=\{x\mid 2m< x< 1-m\}$, 分别在下列条件下求实数 $m$ 的取值范围:</p>
+    <p>设集合 $A=\{x\mid 1< x< 3\}$, $B=\{x\mid 2m< x< 1-m\}$, 分别在下列条件下求实数 $m$ 的取值范围:
+    </p>
     <p>(1) $A\cup B=B$;&emsp; (2) $A\cap B=\varnothing$.</p>
 </myexample>
 
 <mysolution>
     <p>(1) 由题意, $A\subseteq B$, 表明 \[
         2m\leqslant 1< 3\leqslant 1-m,\]
-    解得 $m\in(-\infty,-2]$.</p>
+    解得 $m\in(-\infty,-2]$.
+    </p>
     <p>(2) 若 $B=\varnothing$, 则 \[
         2m\geqslant 1-m,\quad m\geqslant \frac13.\]
     若 $B\neq\varnothing$, 则 \[
         2m< 1-m\leqslant 1\quad \text{或}\quad 3\leqslant 2m< 1-m,\]
     解得 \[
-        0\leqslant m< \dfrac13\quad \text{或}\quad m\in\varnothing.\]</p>
+        0\leqslant m< \dfrac13\quad \text{或}\quad m\in\varnothing.\]
+    </p>
     <p>综上知, $m\in[0,+\infty)$.</p>
 </mysolution>
 
 <myremark>
-    <p>解此例时, 结合数轴表示各集合可以更容易列出各不等式.</p>
+    <p>解此例时, 结合数轴表示各集合可以更容易列出各不等式.
+    </p>
 </myremark>
 
 <myexercise>
-    <p>设集合 $A=\{1,2,3\}$, $B=\{1,x\}$, 若 $A\cup B=A$, 求实数 $x$ 的值;</p>
+    <p>设集合 $A=\{1,2,3\}$, $B=\{1,x\}$, 若 $A\cup B=A$, 求实数 $x$ 的值;
+    </p>
 </myexercise>
 
 <details><summary>参考答案</summary>
-    <p>\(B\subseteq A\), 则 \(x=2\) 或 \(3\).</p>
+    <p>\(B\subseteq A\), 则 \(x=2\) 或 \(3\).
+    </p>
 </details>
