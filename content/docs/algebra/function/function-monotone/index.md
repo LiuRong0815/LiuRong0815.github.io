@@ -24,6 +24,20 @@ nextPageTitle: 函数的奇偶性
     所以 $a\in[-1,+\infty)$.
 </p>
 </mysolution>
+
+<myexercise>
+    <p>设函数 $f(x)=\begin{cases}
+      x^2+1, & x\geqslant 0,\\
+      1, & x< 0,\end{cases}$
+    解不等式: $f(3-x^2)>f(2x)$.
+</p>
+</myexercise>
+<mysolution>
+    <p>    $f(x)$ 单调递增, 则原不等式等价于
+    \[3-x^2> 2x,\quad x\in (-3,1).\]
+</p>
+</mysolution>
+
 </p>
 <p>解分段函数单调性问题时, 只需每段函数均单调, 且分段点处的函数值满足题中单调性. 具体来说,
 \[\begin{aligned}
