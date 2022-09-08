@@ -11,6 +11,17 @@ nextPageTitle: 概率与统计
 
 # 利用导数求函数的单调性与最值
 
+<myexercise>
+    <p>若 $a,b>0$, 且函数 $f(x)=4x^3 -ax^2 -2bx+2$ 在 $x=1$ 处有极值, 求 $ab$ 的最大值.
+</p>
+</myexercise>
+<mysolution>
+    <p>    由题意, $f'(x)= 12x^2- 2ax- 2b$ 且 $f'(1)= 0$, 所以
+    \[12- 2a- 2b= 0,\quad a+b= 6.\]
+    再由均值不等式可知 $ab\leqslant 9$, 等号成立当且仅当 $a=b=3$.
+</p>
+</mysolution>
+
 <p>利用导数的正负可以判断函数的单调性, 知识点见基础练习.
 </p>
 <p><myexample>

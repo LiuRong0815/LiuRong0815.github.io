@@ -11,255 +11,293 @@ nextPageTitle: 高中数学资料
 
 # 均值不等式
 
+均值不等式是数学中常用的一类基本不等式, 也被推广为多种不等式. 这里介绍均值不等式最简单的形式.
 
-<p>对于任意 $x$, $y\in\realnum$, 恒有 $(x-y)^2\geqslant 0$, 展开后移项得
-\[x^2+y^2\geqslant 2xy\quad\text{即}\quad \frac{x^2+y^2}2\geqslant xy.\]
-不等式中等号成立的条件是 $x=y$, 也记为:“$=$”成立当且仅当 $x=y$. 把上面两个式子中的 $x$ 和 $y$ 分别换成 $\sqrt{x}$ 和 $\sqrt{y}$ (此时必须限制 $x$, $y\geqslant 0$), 可知
-\[x+y\geqslant 2\sqrt{xy}\quad\text{即}\quad \frac{x+y}2\geqslant \sqrt{xy}.\]
-因为 $\dfrac{x+y}2$ 与 $\sqrt{xy}$ 分别叫做非负实数 $x$ 与 $y$ 的\myindex{算术平均值}{算术平均值}与\myindex{几何平均值}{几何平均值}, 所以上面最后一个不等式也称为\myindex{均值不等式}{均值不等式}, 即
+<p>对于任意 $a$, $b\in\mathbf{R}$, 恒有 $(a-b)^2\geqslant 0$, 展开后移项得 \[
+    a^2+b^2\geqslant 2ab\quad\text{即}\quad 
+    \frac{a^2+b^2}2\geqslant ab.\]
+不等式中等号成立的充要条件是 $a=b$, 也记为: “$=$”成立当且仅当 $a=b$. 把上面两个式子中的 $a$ 和 $b$ 分别换成 $\sqrt{x}$ 和 $\sqrt{y}$ (此时必须限制 $x$, $y\geqslant 0$), 可知 \[
+    x+y\geqslant 2\sqrt{xy}\quad\text{即}\quad 
+    \frac{x+y}2\geqslant \sqrt{xy}.\]
+上式中的 $\dfrac{x+y}2$ 与 $\sqrt{xy}$ 分别叫做非负实数 $x$ 与 $y$ 的<strong>算术平均值</strong>与<strong>几何平均值</strong>, 所以上面最后一个不等式也称为均值不等式, 即
 \[\text{均值不等式:}\ \frac{x+y}2\geqslant \sqrt{xy},\quad x,y\geqslant 0.\]
-以上不等式均为常用不等式, 且都可以互相推出.
+该不等式有时也称为基本不等式. 以上不等式均为常用不等式, 且都可以互相推出.
 </p>
-<p>利用均值不等式 (或其等价形式) 可以很方便地求特殊形式的式子的最大 (小) 值. 例如, 若 $x>0$, 则 
-\[x+\dfrac1x\geqslant 2\sqrt{x\cdot\dfrac1x}=2,\]
-“$=$”成立当且仅当 $x=\dfrac1x$ 即 $x=1$. 一般的, 可得如下结论 (均设 $x$, $y\geqslant 0$):
+<p>使用均值不等式时, 必须检验等号成立的条件. 如对 $x>2$, 由 $x+\dfrac1x\geqslant 2$ 不能得到 $x+\dfrac1x$ 的取值范围是 $[2,+\infty)$, 因为此时等号成立的条件是 $x=1$, 与已知 $x>2$ 不符. 求取值范围时, 正确的解法是先判断函数 $y=x+\dfrac1x$ 在 $x>2$ 时的单调性 (即函数值的增减性).
 </p>
-<p>(1) 若 $xy=L$ 为定值, 则 
-\[x+y\geqslant 2\sqrt{xy}=2\sqrt{L},\] 所以 $x+y$ 的最小值为 $2\sqrt{L}$,“$=$”成立当且仅当 $x=y=\sqrt{L}$;
-</p>
-<p>(2) 若 $x+y=M$ 为定值, 则 
-\[\sqrt{xy}\leqslant \frac{x+y}2=\frac{M}2\quad\text{即}\quad
-  xy\leqslant \biggl(\frac{M}2\biggr)^2= \frac{M^2}4,\]
-所以 $xy$ 的最大值为 $\dfrac{M^2}4$,“$=$”成立当且仅当 $x=y=\dfrac{M}2$.
-</p>
-<p><myexample>
-<p>解答下列问题: 
-  \begin{subproblem}
-    \item 若 $x>0$, 求 $x+\dfrac4x$ 的取值范围;
-    \item 若 $x$, $y\geqslant 0$, $xy=1$, 求 $x+2y$ 的取值范围;
-    \item 若 $x$, $y\geqslant 0$, $2x+y=1$, 求 $xy$ 的取值范围.
-  \end{subproblem}
-</p>
-</myexample>
-<mysolution>
-    <p>(1) 由均值不等式, 
-  \[x+\dfrac4x\geqslant 2\sqrt{x\cdot\dfrac4x}=4,\]“$=$”成立当且仅当 $x=\dfrac4{x}$ 即 $x=2$, 所以 $x+\dfrac4x\in[4,+\infty)$.
-</p>
-<p>(2) 由均值不等式, 
-  \[\frac{2x+y}2\geqslant \sqrt{2x\cdot y}\quad\text{即}\quad
-    2x+y\geqslant 2\sqrt2,\]
- “$=$”成立当且仅当 $2x=y$, 结合 $xy=1$ 知 $x=\dfrac{\sqrt2}2$, $y=\sqrt2$. 所以 $xy\in[2\sqrt2,+\infty)$.
-</p>
-<p>(3) 由均值不等式, 
-  \[\sqrt{2x\cdot y}\leqslant \frac{2x+y}2\quad\text{即}\quad
-    xy\leqslant \frac18,\]
- “$=$”成立当且仅当 $2x=y$, 结合 $2x+y=1$ 知 $x=\dfrac14$, $y=\dfrac12$. 又因为 $x$, $y\geqslant 0$, 所以 $xy\geqslant 0$, 即 $xy\in\biggl[0,\dfrac14\biggr]$.
-</p>
-</mysolution>
-</p>
-<p>利用均值不等式求取值范围时, 一般把要求值的式子写在不等号前面, 等于固定值的式子写在不等号后面, 且有时需要适当的变形.
-</p>
-<p>在应用均值不等式时, 必须限制所考虑的式子 (均值不等式中的 $x$ 与 $y$) 为非负实数, 例如, 对任意的 $x\in\realnum$, 不能断言 $x+\dfrac1x\geqslant 2$ (当 $x\leqslant 0$ 时, 不等号显然不成立); 且应考虑等号成立的条件, 例如, 对任意的 $x\geqslant 2$, 不能由 $x+\dfrac1x\geqslant 2$ 断言 $x+\dfrac1x\in[2,+\infty)$, 因为此时“$=$”成立的条件“$x=1$”与已知条件 $x\geqslant 2$ 冲突 (实际上, 此时  $x+\dfrac1x\in \biggl[\dfrac52,+\infty\biggr)$, 具体解法以后会学到).
-</p>
-<p>有时, 要求取值范围的式子不能直接用均值不等式, 但可以通过变形化为能用均值不等式的形式. 
-</p>
-<p>\begin{example}\label{exa:201016-1940}
-  解答下列问题: 
-  \begin{subproblem}
-    \item 若 $x>-1$, 求 $x+\dfrac1{x+1}$ 的取值范围;
-    \item 若 $0< x< 4$, 求 $x(8-2x)$ 的取值范围;
-    \item 若 $x< 0$, 求 $x+\dfrac1{x}$ 的取值范围.
-  \end{subproblem}
-</p>
-</myexample>
-<mysolution>
-    <p>(1) 由均值不等式, 
-  \[x+\dfrac1{x+1}= (x+1)+\dfrac1{x+1}-1
-    \geqslant 2\sqrt{x\cdot\dfrac1{x+1}}-1=1,\]
- “$=$”成立当且仅当 $x+1=\dfrac1{x+1}$ 即 $x=0$, 所以 $x+\dfrac1{x+1}\in[1,+\infty)$.
-</p>
-<p>(2) 由均值不等式, 
-  \[\sqrt{x(8-2x)}= \sqrt2\sqrt{x(4-x)}
-    \leqslant \sqrt2\cdot\frac{x+(4-x)}2= 2\sqrt2,\]
-  即 $x(8-2x)\leqslant 8$,“$=$”成立当且仅当 $x=4-x$ 即 $x=2$. 又由 $0< x< 4$ 和二次函数的性质可知, $x(8-2x)$ 的最小值在定义域端点处取到, 所以 $x(8-2x)\in(0,8]$. (此题也可以直接用二次函数的性质来解, 即考虑图象的开口方向、对称轴、定义域.)
-</p>
-<p>(3) 因为 $x< 0$, 所以先考虑 $(-x)+\biggl(-\dfrac1{x}\biggr)$. 由均值不等式, 
-  \[(-x)+\biggl(-\dfrac1{x}\biggr)
-    \geqslant 2\sqrt{(-x)\cdot\biggl(-\dfrac1{x}\biggr)}=2,\]
-  即 $x+\dfrac1x\leqslant -2$,“$=$”成立当且仅当 $-x= -\dfrac1{x}$ 即 $x=-1$ (注意, 此时 $x< 0$), 所以 $x+\dfrac1{x}\in (-\infty,-2]$.
-</p>
-</mysolution>
-</p>
-<p>从解题过程可以看出, 此时解题的思路是通过适当改变常数项 (如例 \ref{exa:201016-1940} (1)) 或系数 (如例 \ref{exa:201016-1940} (2)(3)), 想办法{\bfseries 凑}出两个式子, 使它们的积 (如例 \ref{exa:201016-1940} (1)(3)) 或和 (如例 \ref{exa:201016-1940} (2)) 为定值.
 
-<p>本次答疑主要讲解均值不等式及其应用, 2020 年 9 月 29 日答疑记录中已有该不等式的详细推导过程, 这里仅罗列相关结论:
-\[\begin{aligned}
-    \text{均值不等式:}\ &\frac{x+y}2\geqslant \sqrt{xy},\quad x,y\geqslant 0,\\
-    \text{其等价形式:}\ &x+y\geqslant 2\sqrt{xy},\quad x,y\geqslant 0,\\
-        &\frac{x^2+y^2}2\geqslant xy,\quad x,y\in\realnum.\\
-        &x^2+y^2\geqslant 2xy,\quad x,y\in\realnum.
-\end{aligned}\]
-式中“$=$”成立当且仅当 $x=y$. 此外, 如下结论 (均设 $x$, $y\geqslant 0$):
+## 利用均值不等式求最值
+
+<p>利用均值不等式 (或其等价形式) 可以很方便地求特殊形式的式子的最大 (小) 值. 例如, 若 $x>0$, 则 \[
+    x+\dfrac1x\geqslant 2\sqrt{x\cdot\dfrac1x}=2,\]
+“$=$”成立当且仅当 $x=\dfrac1x$ 即 $x=1$. 一般地, 可得如下结论 (均设 $x$, $y\geqslant 0$):
 </p>
-<p>(1) 若 $xy=L$ 为定值, 则 $x+y$ 的最小值为 $2\sqrt{L}$,“$=$”成立当且仅当 $x=y=\sqrt{L}$;
+<p>(1) 若 $xy=L$ 为定值, 则 \[
+    x+y\geqslant 2\sqrt{xy}=2\sqrt{L},\]
+所以 $x+y$ 的最小值为 $2\sqrt{L}$, “$=$”成立当且仅当 $x=y=\sqrt{L}$;
 </p>
-<p>(2) 若 $x+y=M$ 为定值, 则 $xy$ 的最大值为 $\dfrac{M^2}4$,“$=$”成立当且仅当 $x=y=\dfrac{M}2$.
+<p>(2) 若 $x+y=M$ 为定值, 则 \[\begin{gathered}
+    \sqrt{xy}\leqslant \frac{x+y}2=\frac{M}2,\\
+    xy\leqslant \biggl(\frac{M}2\biggr)^2= \frac{M^2}4,
+\end{gathered}\]
+所以 $xy$ 的最大值为 $\dfrac{M^2}4$, “$=$”成立当且仅当 $x=y=\dfrac{M}2$. 这个结论也可以由二次函数的图象得出: $xy= x(M-x)$ 是 $x$ 的二次函数, 对称轴为 $x=\dfrac{M}2$, 图象开口向下, 故最大值为 $\dfrac{M^2}4$.
 </p>
-<p>用均值不等式解题时, 应想办法凑出两个式子, 使它们的积或和为定值, 如对 $x>-1$, 
-\[x+\dfrac1{1+x}=(1+x)+\dfrac1{1+x}-1\geqslant 2\sqrt1-1=1.\]
-除了应注意式中字母的范围 (是非负还是任意实数), 还应检验等号成立的条件, 如对 $x>2$, 虽然由均值不等式知 $x+\dfrac1x\geqslant 2$, 但等号成立当且仅当 $x=\dfrac1x$ 即 $x=1$, 与 $x>2$ 不符, 所以只能写 $x+\dfrac1x>2$.
-</p>
-<p><myexample>
-<p>若 $a$, $b\in\realnum$ 且 $ab>0$, 则下列不等式恒成立的是 (\qquad).
-    \begin{twocolpro}
-    A. $a^2+b^2>2ab$ & B. $a+b\geqslant 2\sqrt{ab}$\\
-    C. $\dfrac1a+\dfrac1b> \dfrac2{\sqrt{ab}}$
-    & D. $\dfrac{b}a+\dfrac{a}b\geqslant 2$
-    \end{twocolpro}
-</p>
+
+<myremark>
+    <p>运用上述结论时, 必须注意均值不等式 $x+y\geqslant 2\sqrt{xy}$ 成立的前提是 $x$, $y\geqslant 0$, 且必须检验等号成立的充要条件 $x=y$. 
+    </p>
+</myremark>
+
+<myexample>
+    <p>(1) 设正数 $x$, $y$ 满足 $xy=4$, 求 $x+2y$ 的最小值;
+    </p>
+    <p>(2) 设正数 $x$, $y$ 满足 $x+2y=4$, 求 $xy$ 的最大值;
+    </p>
+    <p>(3) 设 $a,b$ 为正数, 求 $\dfrac{b}a +\dfrac{3a}b$ 的最小值.
+    </p>
 </myexample>
+
 <mysolution>
-    <p>若只对这四个选项简单地套用均值不等式, 可能会错误地认为全都正确. 但如果仔细检查不等式成立的前提, 可发现其中有三个选项是错的.
-</p>
-<p>对 A, 当 $a=b$ 时, $a^2+b^2=2ab$, 所以 A 不正确.
-</p>
-<p>对 B, 只有 $a$, $b\geqslant 0$ 时, 原不等式才正确, 而题中的 $ab>0$ 可能有 $a$, $b< 0$, 无法用均值不等式.
-</p>
-<p>对 C, 当 $a=b>0$ 时, $\dfrac1a+\dfrac1b= \dfrac2{\sqrt{ab}}$, 所以 C 不正确. 此外, 题中的 $ab>0$ 可能有 $a$, $b< 0$, 无法用均值不等式.
-</p>
-<p>对 D, 由 $ab>0$ 知 $\dfrac{b}a$, $\dfrac{a}b>0$, 所以可用均值不等式得出结论.
-</p>
-</mysolution>
-</p>
-<p><myexample>
-<p>条件“$x>0$”是“$x^2+\dfrac1{x^2}\geqslant 2$”的什么条件?
-</p>
-</myexample>
-<mysolution>
-    <p>因为 $x^2$ 恒非负, 所以只要 $x^2\neq0$, 就有 $x^2>0$, 此时 $x^2+\dfrac1{x^2}\geqslant 2$. 这表明 $x^2+\dfrac1{x^2}\geqslant 2$ 的充要条件是 $x\neq 0$. 再与 $x>0$ 对比可知,“$x>0$”是“$x^2+\dfrac1{x^2}\geqslant 2$”的充分不必要条件.
-</p>
-</mysolution>
-</p>
-<p><myexample>
-<p>若函数 $f(x)= x+\dfrac1{x-2}$ ($x>2$) 在 $x=a$ 处取最小值, 求 $a$ 的值.
-</p>
-</myexample>
-<mysolution>
-    <p>由 $x>2$ 知 $x-2>0$, 所以
-    \[x+\dfrac1{x-2}= (x-2)+\dfrac1{x-2}+2\geqslant 2\sqrt1+2=4,\]
-    等号成立当且仅当 $x-2=\dfrac1{x-2}$ 即 $x=3$ (注意 $x>2$). 故所求的 $a=3$.
-</p>
-</mysolution>
-</p>
-<p><myexample>
-<p>若 $x$, $y\in\realnum^+$ 且 $\dfrac{x}3+\dfrac{y}4=1$, 求 $xy$ 的最大值.
-</p>
-</myexample>
-<mysolution>
-    <p>由均值不等式, 
-    \[\frac{x}3+\frac{y}4\geqslant 2\sqrt{\frac{xy}{12}},
-    \quad\text{即}\quad 1\geqslant 2\sqrt{\frac{xy}{12}},\]
-    解得 $xy\leqslant 3$, 所以 $xy$ 的最大值为 $3$.
-</p>
+    <p>(1) $x+2y\geqslant 2\sqrt{2xy}= 4\sqrt2$, “$=$”成立当且仅当 $x=2y$, 结合 $xy=4$ 知 $x=2\sqrt2$, $y=\sqrt2$, 则 $x+y$ 的最小值为 $4$.
+    </p>
+    <p>(2) $4= x+2y\geqslant 2\sqrt{2xy}$, 则 $xy\leqslant 2$, 等号成立当且仅当 $x=2y$, 结合 $x+2y=4$ 知 $x= 2$, $y=1$ 所以 $xy$ 的最大值为 $2$.
+    </p>
+    <p>(3) 因为 \[
+        \dfrac{b}a +\dfrac{3a}b
+            \geqslant 2\sqrt{\dfrac{b}a\cdot \dfrac{3a}b}=2\sqrt3,\]
+    等号成立当且仅当 $\dfrac{b}a= \dfrac{3a}b$ 即 $\sqrt3a=b$, 所以 $\dfrac{b}a +\dfrac{a}b$ 的最小值为 $2$.
+    </p>
 </mysolution>
 
-<p>\begin{example}\label{exa:201115-1040}
-    求函数 $f(t)= \dfrac{t^2-4t+1}t$ ($t>0$) 的最小值和对应的 $t$ 的值.
+<myremark>
+    <p>(1) 以上各问列出等号成立的条件时, 均需与已知条件联立求解, 以确保所得变量取值合乎已知条件. 
+    </p>
+    <p>(2) 上述 (3) 中, 条件“$a,b$ 为正数”可以进一步放宽为“$ab>0$”. 
+    </p>
+</myremark>
+
+<myexercise>
+    <p>(1) 当函数 $y=x^2 +\dfrac9{x^2}$ ($x\neq 0$) 取最小值时, 求对应的 $x$ 的值.
+    </p>
+    <p>(2) 若实数 $x,y$ 满足 $xy=1$, 求 $x^2 + 4y^2$ 的最小值.
+    </p>
+    <p>(3) 条件“$x>0$”是“$x^2+\dfrac1{x^2}\geqslant 2$”的什么条件?
+    </p>
+</myexercise>
+
+<details><summary>参考答案</summary>
+    <p>(1) $x^2 +\dfrac9{x^2}\geqslant 2\sqrt{9}= 6$, 等号成立当且仅当 $x= \pm3$.
+    </p>
+    <p>(2) $x^2 +4y^2\geqslant 4xy= 4$, 等号成立当且仅当 $x=\pm\sqrt2$, $y=\pm\dfrac{\sqrt2}2$.
+    </p>
+    <p>(3) 因为 $x^2$ 恒非负, 所以只要 $x\neq0$, 就有 $x^2>0$, 此时 $x^2+\dfrac1{x^2}\geqslant 2$. 这表明 $x^2+\dfrac1{x^2}\geqslant 2$ 的充要条件是 $x\neq 0$. 再与 $x>0$ 对比可知, “$x>0$”是“$x^2+\dfrac1{x^2}\geqslant 2$”的充分不必要条件.
+    </p>
+</details>
+
+<p>有时, 要求取值范围的式子不能直接用均值不等式, 但可以通过变形化为能用均值不等式的形式, 或需要利用均值不等式做媒介得到新的不等式. 
 </p>
-</myexample>
+
+<myexample>
+    <p>(1) 若 $x>-3$, 求 $x+\dfrac2{x+3}$ 的最小值;
+    </p>
+    <p>(2) 若正实数 $x,y$ 满足 $2x+y+6=xy$, 求 $xy$ 和 $2x+y$ 各自的最大值.
+    </p>
+</myexercise>
+
 <mysolution>
-    <p>因为 $t>0$, 所以由均值不等式, 
-    \[f(t)= \frac{t^2-4t+1}t= t+\frac1t-4
+    <p>(1) 利用 $x>-3$ 直接凑出均值不等式的形式, \[\begin{aligned}
+         x+\dfrac2{x+3}
+        &= (x+3)+\dfrac2{x+3}- 3\\
+        &\geqslant 2\sqrt2-3,
+    \end{aligned}
+    等号成立当且仅当 $x= \sqrt2-3$, 即 $x+\dfrac2{x+3}$ 的最小值为 $2\sqrt2-3$.
+    </p>
+    <p>(2) 由 $2x+y\geqslant 2\sqrt{2xy}$ 和已知, \[\begin{gathered}
+        xy-6\geqslant 2\sqrt{2xy}\Rightarrow xy\geqslant 18,\\
+        2x+y\geqslant 2\sqrt{2(2x+y+6)}\Rightarrow 2x+y\geqslant 12,
+    \end{gathered}
+    等号成立当且仅当 $2x=y= 6$. 所以 $xy$ 的最大值为 $18$, $2x+y$ 的最大值为 $12$.
+    </p>
+</mysolution>
+
+<myremark>
+    <p>上例 (2) 中得到分别关于 $xy$ 和 $2x+y$ 的根式不等式, 平方后均可按二次不等式求解. 
+    </p>
+</myremark>
+
+<myexercise>
+    <p>(1) 若 $x>3$, 求 $x+\dfrac2{x-3}$ 的最小值;
+    </p>
+    <p>(2) 设正数 $a,b$ 满足 $a^2+2ab+4b^2= 3$, 求 $ab$ 的最大值.
+    </p>
+</myexercise>
+
+<details><summary>参考答案</summary>
+    <p>(1) 因为 $x>3$ 表示 $x-3>0$, 所以 \[\begin{gathered}
+        (x-3)+\dfrac2{x-3}\geqslant 2\sqrt2,\\
+        x+\frac2{x-3}\geqslant 2\sqrt2+3,
+    \end{gathered}\]
+    等号成立当且仅当 $x=3+\sqrt2$, 即 $x+\dfrac2{x-3}$ 的最小值为 $2\sqrt2+3$.
+    </p>
+    <p>(2) 由 $a^2+4b^2\geqslant 4ab$ 和已知, \[
+        3- 2ab\geqslant 4ab,\quad ab\leqslant \frac12,\]
+    等号成立当且仅当 $a^2= 4b^2$ 即 $a=2b$, 结合已知等式解得, $a=1$, $b=\dfrac12$.
+    </p>
+</details>
+
+<myexample>
+    <p>(1) 设 $t>0$, 求 $\dfrac{t^2-4t+1}t$ 的最小值和对应的 $t$ 的值.
+    </p>
+    <p>(2) 若 $x>0$, 求 $\dfrac{16x}{x^2+1}$ 的最大值.
+    </p>
+</myexample>
+
+<mysolution>
+    <p>(1) 方法一: 因为 $t>0$, 所以由均值不等式, \[
+        \frac{t^2-4t+1}t= t+\frac1t-4
         \geqslant 2\sqrt{t\cdot\frac1t}-4= -2,\]
-   “$=$”成立当且仅当 $t=\dfrac1t$ 即 $t=1$. 以上表明 $f_{\min}=-2$, 且对应的 $t=1$.
-</p>
-</mysolution>
-<myremark>
-    <p>(1) 求值域的一般方法是讨论单调性, 但对特殊的分式函数, 则一般先考虑用均值不等式. 例 \ref{exa:201115-1040} 中还可以推导如下:
-    \[f(t)= \frac{t^2-4t+1}t= \frac{t^2+1-4t}t
-        \geqslant \frac{2\sqrt{t^2\cdot1}-4t}t= -2.\]
-</p>
-<p>(2) 用均值不等式时, 必须考虑等号成立的条件. 如果例 \ref{exa:201115-1040} 中 $t\geqslant 3$, 那么等号就不能成立, 只能写 $f(t)>-2$, 即不能得到 $f_{\min}=-2$ 的结论. 此时的解法参可借用例 \ref{exa:201115-1045} 中的单调性结论.
-</p>
-</myremark>
-
-<myexample>
-<p>(1) 若 $x>0$, $y>0$, $x+y=18$, 求 $xy$ 的最大值.
-</p>
-<p>(2) 若 $0< x< \dfrac12$, 求 $x\sqrt{1-4x^2}$ 的最大值.
-</p>
-</myexample>
-<mysolution>
-    <p>(1) 方法一: 直接用均值不等式,
-    \[\frac{x+y}{2}\geqslant \sqrt{xy},\quad\text{即}\quad
-        9\geqslant \sqrt{xy},\]
-    所以 $xy\leqslant 81$,“$=$”成立当且仅当 $x=y=9$. 因此$xy$ 的最大值为 $81$.
-</p>
-<p>方法二: 先消元化为一元二次函数, 再利用函数图形. 由题可知,
-    $xy= x(18-x)$ 为 $x$ 的二次函数, 且对称轴为 $x=9$, 所以最大值为 $9\cdot(18-9)= 81$.
-</p>
-<p>(2) 方法一: 由已知, 
-    \[x\sqrt{1-4x^2}= \frac12\sqrt{4x^2(1-4x^2)},\]
-    利用均值不等式,
-    \[\sqrt{4x^2(1-4x^2)}\leqslant \frac{4x^2+(1-4x^2)}{2}
-        = \frac12,\]
-   “$=$”成立当且仅当 $4x^2=1-4x^2$ 即 $x^2=\dfrac18$, 所以
-    \[x\sqrt{1-4x^2}\leqslant \frac14.\]
-</p>
-<p>方法二: $x\sqrt{1-4x^2}= \sqrt{x^2(1-4x^2)}$, 再将 $x^2$ 视为整体并设 $t=x^2$, 考虑 $t(1-4t)$ ($0< t< \dfrac14$) 也可得 $x\sqrt{1-4x^2}$ 的最大值为 $\frac14$.
-</p>
-</mysolution>
-
-<myexample>
-<p>若 $x>0$, 求函数 $y=\dfrac{16x}{x^2+1}$ 的最大值.
-</p>
-</myexample>
-<mysolution>
-    <p>方法一: 原式恒正, 先对该式取倒数, 
-    \[\frac{1}{y}= \dfrac{x^2+1}{16x}= \frac1{16}\biggl(x+\frac1x\biggr),\]
-    再由均值不等式,
-    \[x+\frac1x\geqslant 2\sqrt{x\cdot\frac1x}=2,
-        \quad\text{则}\quad
-        \frac{1}{y}\geqslant \frac18,\]
-    所以 $y\leqslant 8$,“$=$”成立当且仅当 $x=\dfrac1x$ 即 $x=1$. 因此所求最大值为 $8$.
-</p>
-<p>方法二: 直接对原式分母用均值不等式 (注意分母变小, 故分式增大), 则
-    \[y= \dfrac{16x}{x^2+1}
+    “$=$”成立当且仅当 $t=\dfrac1t$ 即 $t=1$. 所以最小值为 $-2$, 且对应的 $t=1$.
+    </p>
+    <p>方法二: 因为 $t>0$, 所以由均值不等式, $t^2+1\geqslant 2t$, 则 \[
+        \frac{t^2-4t+1}t\geqslant \frac{2t-4t}t= -2,\]
+    “$=$”成立当且仅当 $t=1$. 以上表明 $f_{\min}=-2$, 且对应的 $t=1$.
+    </p>
+    <p>(2) 方法一: 因为 $x>0$, 所以对原式的分子和分母同除以 $x$, 以便于用均值不等式 (注意分母变小, 故分式增大), \[
+        \frac{16x}{x^2+1}= \frac{16}{x+\dfrac1x}
+        \geqslant \frac{16}{2\sqrt{x\cdot\dfrac1x}}
+        =8,\]
+    “$=$”成立当且仅当 $x=\dfrac1x$ 即 $x=1$. 因此所求最大值为 $8$.
+    </p>
+    <p>方法二: 直接对原式分母用均值不等式, 则 \[
+        \dfrac{16x}{x^2+1}
         \leqslant \frac{16x}{2\sqrt{x^2\cdot 1}}= 8,\]
-   “$=$”成立当且仅当 $x=\dfrac1x$ 即 $x=1$. 因此所求最大值为 $8$.
-</p>
+    “$=$”成立当且仅当 $x=\dfrac1x$ 即 $x=1$. 因此所求最大值为 $8$.
+    </p>
 </mysolution>
 
-<myexample>
-<p>若 $a>0$, $b>0$ 且 $a\neq b$, 比较 $\dfrac{a+b}2$, $\sqrt{ab}$, $\sqrt{\dfrac{a^2+b^2}2}$ 的大小.
-</p>
-</myexample>
+## 均值不等式在几何题中的应用
+
+利用均值不等式解几何题时, 关键是要根据题意, 写出其中几何量满足的条件, 所以需要对各几何图形的常见性质比较熟悉.
+
+<myexercise>
+    <p>(1) 设 $\mathrm{Rt}\,\triangle ABC$ 的面积为 $1$, 且 $C=90^\circ$, 求该三角形周长的最小值;
+    </p>
+    <p>(2) 一个矩形内接于半径为 $1$ 的圆, 求该矩形的面积和周长各自的最大值.
+    </p>
+</myexercise>
+
 <mysolution>
-    <p>由均值不等式, $\sqrt{ab}\leqslant \dfrac{a+b}2$. 但已知 $a\neq b$, 所以等号不成立, 即 $\sqrt{ab}< \dfrac{a+b}2$. 再考虑 $\dfrac{a+b}2$ 和 $\sqrt{\dfrac{a^2+b^2}2}$ 的大小. 因为 (带根号的式子, 先平方去掉根号)
-    \[\biggl(\sqrt{\dfrac{a^2+b^2}2}\biggr)^2- \biggl(\dfrac{a+b}2\biggr)^2= \frac{(a-b)^2}{4}>0,\]
-    所以 $\sqrt{\dfrac{a^2+b^2}2}> \dfrac{a+b}2$, 故
-    \[\sqrt{ab}< \dfrac{a+b}2< \sqrt{\dfrac{a^2+b^2}2}.\]
-</p>
+    <p>(1) 设角 $A,B,C$ 的对应边长为 $a,b,c$, 则 $\dfrac12ab=1$ 即 $ab= 2$, 且由勾股定理, $c^2= a^2+b^2$. 所以 \[\begin{gathered}
+        a+b\geqslant 2\sqrt{ab}= 2\sqrt2,\\
+        c= \sqrt{a^2+b^2}\geqslant \sqrt{2ab}= 2,
+    \end{gathered}\]
+    等号成立当且仅当 $a=b=\sqrt2$, 此时 $\triangle ABC$ 为等腰直角三角形, 从而该三角形的周长 \[
+        a+b+c\geqslant 2\sqrt2+ 2,\]
+    即最小值为 $2\sqrt2+ 2$.
+    </p>
+    <p>(2) 设该矩形的两个邻边长为 $a,b$. 由题意, 矩形的对角线为圆的直径, 所以 \[\begin{gathered}
+        a^2+b^2= 2^2= 4,\\
+        ab\leqslant \frac{a^2+b^2}{2}= 2,
+    \end{gathered}\]
+    即矩形面积的最大值为 $2$, 此时 $a=b=\sqrt2$. 因为 \[
+        (a+b)^2= a^2+b^2+2ab\geqslant 4+4= 8,\]
+    所以 $a+b\geqslant 2\sqrt2$, 即矩形周长 $2(a+b)$ 的最大值为 $4\sqrt2$, 此时仍有 $a=b=\sqrt2$.
+    </p>
 </mysolution>
+
 <myremark>
-    <p>进一步可以证明, 若 $a\geqslant 0$, $b\geqslant 0$, 则
-    \[\frac{2ab}{a+b}\leqslant \sqrt{ab}
-        \leqslant \dfrac{a+b}2
-        \leqslant \sqrt{\dfrac{a^2+b^2}2},\]
-   “$=$”成立当且仅当 $a=b$.
-</p>
+    <p>上例 (2) 的结论表明: 定圆的内接矩形中, 正方形的周长和面积均为最大. 这个结论后续可以进一步推广为: 定圆的内接 $n$ 边形中, 正 $n$ 边形的周长和面积均为最大.
+    </p>
 </myremark>
 
+<myexercise>
+    <p>设 $\mathrm{Rt}\,\triangle ABC$ 的周长为 $2+2\sqrt2$, 且 $C=90^\circ$, 求该三角形面积的最大值.
+    </p>
+</myexercise>
+
+<details><summary>参考答案</summary>
+    <p>设角 $A,B,C$ 的对应边长为 $a,b,c$, 则 \[
+        a+b+c= 2+2\sqrt2,\quad c^2= a^2+b^2.\]
+    因为 \[\begin{gathered}
+        a+b\geqslant 2\sqrt{ab},\\
+        c= \sqrt{a^2+b^2}\geqslant \sqrt{2ab}
+    \end{gathered}\]
+    代入周长表达式知, \[
+        2+2\sqrt2\geqslant 2\sqrt{ab}+ \sqrt{2ab},\]
+    解得 $ab\leqslant 2$, 等号成立当且仅当 $a=b=\sqrt2$, 此时 $\triangle ABC$ 为等腰直角三角形. 从而该三角形的面积 $\dfrac12ab\leqslant 1$, 即最大值为 $1$.
+    </p>
+</details>
+
+## 均值不等式与恒成立问题
+
+与代数式有关的恒成立问题, 解法通常是先求代数式的取值范围. 例如, 设正实数 $x,y$ 满足 $x+y=2$, 则 \[
+    x+y\geqslant 2\sqrt{xy}\Rightarrow 2\geqslant 2\sqrt{xy},\]
+所以 $1\geqslant xy$, 等号成立当且仅当 $x= y= 1$. 此时若 $M\geqslant xy$ 恒成立, 可知 $M\geqslant 1$, 即 $M$ 的最小值为 $1$.
+
 <myexample>
-<p>若 $\forall\, x>0$, $x+\dfrac2x+a>0$ 恒成立, 求 $a$ 的取值范围.
-</p>
+    <p>(1) 若 $x$, $y>0$ 且 $\dfrac{2y}x+ \dfrac{8x}y> m^2+2m$ 恒成立, 求 $m$ 的取值范围.
+    </p>
+    <p>(2) 已知二次函数 $f(x)=ax^2 -4x+c$ ($x\in\mathbf{R}$) 的值域为 $[0,+\infty)$, 求 $\dfrac1c +\dfrac9a$ 的最小值.
+    </p>
 </myexample>
 <mysolution>
-    <p>由题意, 只需不等式左边的最小值大于零. 由均值不等式, 
-    \[x+\dfrac2x\geqslant 2\sqrt{x\cdot\dfrac2x}= 2\sqrt2,\]
-   “$=$”成立当且仅当 $x=\dfrac2x$ 即 $x=\sqrt2$, 所以只需
+    <p>(1) 由 $\dfrac{2y}x+ \dfrac{8x}y\geqslant 2\sqrt{16}= 8$, 等号成立当且仅当 $2x= y$, 知 \[
+        8> m^2+2m,\quad m\in(-4,2).\]
+    </p>
+    <p>(2) 由已知, 函数 $f(x)$ 的图形与 $x$ 轴相切, 考虑判别式知, \[
+        \Delta= (-4)^2- 4ac= 0,\quad ac=4,\]
+    所以 \[
+        \frac1c +\frac9a\geqslant 2\sqrt{\frac{9}{ac}}= 3,\]
+    等号成立当且仅当 $a=9c$ 即 $a= 6$, $c= \dfrac23$.
+    </p>
+</mysolution>
+
+<myexercise>
+    <p>若 $\forall\, x>0$, $x+\dfrac2x+a>0$ 恒成立, 求 $a$ 的取值范围.
+    </p>
+</myexercise>
+
+<details><summary>参考答案</summary>
+    <p>由题意, 只需不等式左边的最小值大于零. 由均值不等式, \[
+        x+\dfrac2x\geqslant 2\sqrt{x\cdot\dfrac2x}= 2\sqrt2,\]
+    “$=$”成立当且仅当 $x=\dfrac2x$ 即 $x=\sqrt2$, 所以只需
     \[2\sqrt2+a>0,\quad\text{解得}\quad 
         a\in(-2\sqrt2,+\infty).\]
-</p>
+    </p>
+</details>
+
+## 均值不等式的推广
+
+<myexample>
+    <p>若 $a>0$, $b>0$ 且 $a\neq b$, 比较 $\dfrac{a+b}2$, $\sqrt{ab}$, $\sqrt{\dfrac{a^2+b^2}2}$ 的大小.
+    </p>
+</myexample>
+<mysolution>
+    <p>由均值不等式, $\sqrt{ab}\leqslant \dfrac{a+b}2$. 但已知 $a\neq b$, 所以等号不成立, 即 $\sqrt{ab}< \dfrac{a+b}2$. 再考虑 $\dfrac{a+b}2$ 和 $\sqrt{\dfrac{a^2+b^2}2}$ 的大小. 因为 (带根号的式子, 先平方去掉根号) \[
+        \biggl(\sqrt{\dfrac{a^2+b^2}2}\biggr)^2- \biggl(\dfrac{a+b}2\biggr)^2
+        = \frac{(a-b)^2}{4}>0,\]
+    所以 $\sqrt{\dfrac{a^2+b^2}2}> \dfrac{a+b}2$, 故 \[
+        \sqrt{ab}< \dfrac{a+b}2< \sqrt{\dfrac{a^2+b^2}2}.\]
+    </p>
 </mysolution>
 
+<myremark>
+    <p>进一步可以证明, 若 $a$, $b>0$, 则 \[
+        \frac{2ab}{a+b}\leqslant \sqrt{ab}
+        \leqslant \dfrac{a+b}2
+        \leqslant \sqrt{\dfrac{a^2+b^2}2},\]
+    “$=$”成立当且仅当 $a=b$.
+    </p>
+</myremark>
+
+<myexample>
+    <p>设正数 $a,b$ 满足 $a^2+4b^2+\dfrac1{ab}= 4$, 求 $a,b$ 的值.
+    </p>
+</myexample>
+
+<mysolution>
+    <p>由均值不等式, \[
+        a^2+4b^2+\frac1{ab}\geqslant 4ab+ \frac1{ab} \geqslant 4,\]
+    等号成立当且仅当 $a^2= 4b^2$ 且 $4ab= \dfrac1{ab}$, 解得 $a=1$, $b= \dfrac12$. (这里用了两次均值不等式, 所以需要写出两个等号成立的条件.)
+    </p>
+</mysolution>

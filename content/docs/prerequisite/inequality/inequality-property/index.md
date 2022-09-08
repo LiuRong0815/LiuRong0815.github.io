@@ -213,7 +213,7 @@ nextPageTitle: 绝对值不等式与二次不等式
         \Leftrightarrow a< 0,\]
     但题中并未指明 $a$ 的符号, 所以 $a^2>ab$ 不恒成立.
     </p>
-    <p>与 (1) 类似, \[a^2< b^2\Leftrightarrow a^2-b^2< 0
+    <p>(2) 与 (1) 类似, \[a^2< b^2\Leftrightarrow a^2-b^2< 0
         \Leftrightarrow (a+b)(a-b)< 0
         \Leftrightarrow a+b>0,\]
     但题中并未指明 $a+b$ 的符号, 所以 $a^2< b^2$ 不恒成立.

@@ -208,3 +208,29 @@ nextPageTitle: 向量
 </p>
 </mysolution>
 
+<myexample>
+<p>已知在锐角 $\triangle ABC$ 中, 角 $A,B,C$ 所对的边长分别为 $a,b,c$, $(b^2 +c^2 -a^2)\tan A=\sqrt3 bc$.
+</p>
+<p>(1) 求角 $A$ 的大小;\qquad
+    (2) 若 $a=2$, 求 $\triangle ABC$ 面积 $S$ 的最大值.
+</p>
+</myexample>
+<mysolution>
+    <p>    (1) 由已知和余弦定理,
+    \[2bc\cos A\cdot \tan A= \sqrt3bc,\quad 
+    \sin A= \frac{\sqrt3}2,\]
+    则在锐角 $\triangle ABC$ 中, $A= 60^\circ$.
+</p>
+<p>(2) 仍由余弦定理.,
+    \[\begin{aligned}
+        a^2&= b^2+c^2- 2bc\cos A,\\
+        4&= b^2+c^2- bc.
+    \end{aligned}\]
+    因为 $b^2+c^2\geqslant 2bc$, 所以
+    \[4+bc\geqslant 2bc,\quad bc\leqslant 4,\]
+    则
+    \[S= \frac12bc\sin A= \frac{\sqrt3}{4}bc
+    \leqslant \sqrt3,\]
+    等号成立当且仅当 $b=c=2$.
+</p>
+</mysolution>

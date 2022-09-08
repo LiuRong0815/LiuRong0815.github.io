@@ -203,3 +203,19 @@ nextPageTitle: 导数的运算法则
 </p>
 </mysolution>
 
+<myexercise>
+    <p>已知二次函数 $f(x)=ax^2 +bx+c$ 的导函数 $f'(x)$ 满足 $f'(0)>0$. 若对任意实数 $x$, 有 $f(x)\geqslant 0$, 求 $\dfrac{f(1)}{f'(0)}$ 的最小值.
+</p>
+</myexercise>
+<mysolution>
+    <p>    $f'(x)= 2ax+b$. 由 $f'(0)>0$ 知 $b>0$. 由 $f(x)\geqslant 0$ 恒成立知,
+    \[\Delta= b^2-4ac= 0,\quad b^2= 4ac,\]
+    所以
+    \[\begin{aligned}
+        \frac{f(1)}{f'(0)}
+        &= \frac{a+b+c}{b}= \frac{a+c}{b}+ 1\\
+        &\geqslant \frac{2\sqrt{ac}}{\sqrt{4ac}}+ 1= 2,
+    \end{aligned}\]
+    等号成立当且仅当 $a=c$, $b=2c$.
+</p>
+</mysolution>
