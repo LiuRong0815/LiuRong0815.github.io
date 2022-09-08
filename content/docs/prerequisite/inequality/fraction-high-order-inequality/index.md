@@ -2,11 +2,11 @@
 # bookCollapseSection: true
 title: 分式不等式与高次不等式
 weight: 3
-bookHidden: true
+# bookHidden: true
 prevPage: /docs/prerequisite/inequality/abs-quadratic-inequality
 prevPageTitle: 绝对值不等式与二次不等式
-nextPage: /docs/prerequisite/inequality/mean-value-inequality
-nextPageTitle: 均值不等式
+# nextPage: /docs/prerequisite/inequality/mean-value-inequality
+# nextPageTitle: 均值不等式
 ---
 
 # 分式不等式与高次不等式
@@ -76,11 +76,17 @@ nextPageTitle: 均值不等式
     <p>作差并整理, \[\begin{aligned}
         a-\frac1a- \biggl(b-\frac1b\biggl)
         &= a-b+ \frac{a-b}{ab}\\
-        &= (a-b)\biggl(1+\frac1{ab}\biggr)>0.
+        &= (a-b)\biggl(1+\frac1{ab}\biggr)\\
+        &>0.
     \end{aligned}\]
-    由 $a>b$ 知 $a-b>0$, 上式两边同时除以 $a-b$ 得 $1+\frac1{ab}>0$. 将 $ab$ 视为整体, 解得 $ab\in(-\infty,-1)\cup (0,+\infty)$.
+    由 $a>b$ 知 $a-b>0$, 上式两边同时除以 $a-b$ 得 $1+\dfrac1{ab}>0$. 将 $ab$ 视为整体, 解得 $ab\in(-\infty,-1)\cup (0,+\infty)$.
     </p>
 </mysolution>
+
+<myremark>
+    <p>对不等式 $\dfrac1x< 1$, 常见的错误解法是直接在不等式两边同乘 $x$, 并得到 $1< x$. 这种解法错误的原因是默认 $x$ 为正数, 而忽略了不等式两边乘负数时要变号. 正确的解法是按前述方法先将不等式化为与 $0$ 比大小, 再转化为等价的整式不等式. 还有一个方法是<a href="/docs/prerequisite/ms-function/linear-inverse/#三角形向外作两个正方形-中点连线为垂线">直接利用反比例函数图象</a>. 用这两种解法均可以得到 $\dfrac1x< 1$ 的解集为 $(-\infty,0)\cup (1,+\infty)$.
+    </p>
+</myremark>
 
 ## 高次不等式的解法
 
@@ -93,7 +99,9 @@ nextPageTitle: 均值不等式
     (x+1)(x-2) & + & - & +\\
     \hline
 \end{array}\]
-可知解集为 $(-\infty,-1)\cup (2,+\infty)$. 注意表中略去了零点所在列. 同样地, 考虑 $(x+1)(x-2)(x-3)>0$, 以因式的零点 $-1$, $2$, $3$ 为分界点划分数轴, 可以列出下表 \[\begin{array}{c|cccc}
+可知解集为 $(-\infty,-1)\cup (2,+\infty)$. 注意表中略去了零点所在列. 同样地, 考虑 \[
+    (x+1)(x-2)(x-3)>0,\]
+以因式的零点 $-1$, $2$, $3$ 为分界点划分数轴, 可以列出下表 \[\begin{array}{c|cccc}
     \hline
     x & (-\infty,-1) & (-1,2) & (2,3) & (3,+\infty) \\
     \hline
@@ -111,12 +119,16 @@ nextPageTitle: 均值不等式
 </p>
 <p>(2) 在以 $+\infty$ 为右端点的区间上, 各因式均为正数, 所以乘积式也必为正数. 
 </p>
-<p>正是因为这两个特征, 在求解高次不等式时, 可以根据乘积式的正负号, 结合数轴从右往左大致描出对应函数的图象, 然后写出不等式的解集. 例如, 由不等式 $(x+1)(x-2)(x-3)>0$ 可以描出下图, 并得到解集 $(-1,2)\cup (3,+\infty)$.
+<p>正是因为这两个特征, 在求解高次不等式时, 可以根据乘积式的正负号, 结合数轴从右往左大致描出对应函数的图象, 然后写出不等式的解集. 例如, 由不等式 \[
+    (x+1)(x-2)(x-3)>0\]
+可以描出下图, 并得到解集 $(-1,2)\cup (3,+\infty)$.
 </p>
 
 ![不等式 $(x+1)(x-2)(x-3)>0$ 的穿线法](/figs/2022/2022-09/2022-0907-2140.svg)
 
-<p>上述方法称为<strong>穿根法</strong>, 利用了乘积式在各零点两侧异号的特点. 某些分式不等式与高次不等式等价, 也可以用穿根法求解. 例如, 不等式 $\dfrac{(x+1)(x-2)}{x-3}>0$ 等价于 $(x+1)(x-2)(x-3)>0$, 解集亦为 $(-1,2)\cup (3,+\infty)$.
+<p>上述方法称为<strong>穿根法</strong>, 利用了乘积式在各零点两侧异号的特点. 某些分式不等式与高次不等式等价, 也可以用穿根法求解. 例如, 不等式 $\dfrac{(x+1)(x-2)}{x-3}>0$ 等价于 \[
+    (x+1)(x-2)(x-3)>0,\]
+解集亦为 $(-1,2)\cup (3,+\infty)$.
 </p>
 
 

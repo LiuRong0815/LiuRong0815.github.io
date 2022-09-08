@@ -5,8 +5,8 @@ weight: 2
 # bookHidden: true
 prevPage: /docs/prerequisite/inequality/inequality-property
 prevPageTitle: 不等式的性质
-# nextPage: /docs/prerequisite/inequality/fraction-high-order-inequality
-# nextPageTitle: 分式不等式与高次不等式
+nextPage: /docs/prerequisite/inequality/fraction-high-order-inequality
+nextPageTitle: 分式不等式与高次不等式
 ---
 
 # 绝对值不等式与二次不等式
