@@ -2,11 +2,11 @@
 # bookCollapseSection: true
 title: 均值不等式
 weight: 4
-bookHidden: true
+# bookHidden: true
 prevPage: /docs/prerequisite/inequality/fraction-high-order-inequality
 prevPageTitle: 分式不等式与高次不等式
 nextPage: /
-nextPageTitle: 高中数学资料
+nextPageTitle: 本站介绍
 ---
 
 # 均值不等式
@@ -44,7 +44,7 @@ nextPageTitle: 高中数学资料
 </p>
 
 <myremark>
-    <p>运用上述结论时, 必须注意均值不等式 $x+y\geqslant 2\sqrt{xy}$ 成立的前提是 $x$, $y\geqslant 0$, 且必须检验等号成立的充要条件 $x=y$. 
+    <p>运用上述结论时, 应直接利用均值不等式 $x+y\geqslant 2\sqrt{xy}$ 推理, 且应注意该不等式成立的前提是 $x$, $y\geqslant 0$, 还必须检验等号成立的充要条件“$x=y$”.
     </p>
 </myremark>
 
@@ -102,20 +102,20 @@ nextPageTitle: 高中数学资料
     </p>
     <p>(2) 若正实数 $x,y$ 满足 $2x+y+6=xy$, 求 $xy$ 和 $2x+y$ 各自的最大值.
     </p>
-</myexercise>
+</myexample>
 
 <mysolution>
     <p>(1) 利用 $x>-3$ 直接凑出均值不等式的形式, \[\begin{aligned}
          x+\dfrac2{x+3}
         &= (x+3)+\dfrac2{x+3}- 3\\
         &\geqslant 2\sqrt2-3,
-    \end{aligned}
+    \end{aligned}\]
     等号成立当且仅当 $x= \sqrt2-3$, 即 $x+\dfrac2{x+3}$ 的最小值为 $2\sqrt2-3$.
     </p>
     <p>(2) 由 $2x+y\geqslant 2\sqrt{2xy}$ 和已知, \[\begin{gathered}
         xy-6\geqslant 2\sqrt{2xy}\Rightarrow xy\geqslant 18,\\
         2x+y\geqslant 2\sqrt{2(2x+y+6)}\Rightarrow 2x+y\geqslant 12,
-    \end{gathered}
+    \end{gathered}\]
     等号成立当且仅当 $2x=y= 6$. 所以 $xy$ 的最大值为 $18$, $2x+y$ 的最大值为 $12$.
     </p>
 </mysolution>
@@ -160,9 +160,9 @@ nextPageTitle: 高中数学资料
     </p>
     <p>方法二: 因为 $t>0$, 所以由均值不等式, $t^2+1\geqslant 2t$, 则 \[
         \frac{t^2-4t+1}t\geqslant \frac{2t-4t}t= -2,\]
-    “$=$”成立当且仅当 $t=1$. 以上表明 $f_{\min}=-2$, 且对应的 $t=1$.
+    “$=$”成立当且仅当 $t=1$. 所以最小值为 $-2$, 且对应的 $t=1$.
     </p>
-    <p>(2) 方法一: 因为 $x>0$, 所以对原式的分子和分母同除以 $x$, 以便于用均值不等式 (注意分母变小, 故分式增大), \[
+    <p>(2) 方法一: 因为 $x>0$, 所以对原式的分子和分母同除以 $x$, 以便于用均值不等式 (注意分母为正数且变小, 故分式增大), \[
         \frac{16x}{x^2+1}= \frac{16}{x+\dfrac1x}
         \geqslant \frac{16}{2\sqrt{x\cdot\dfrac1x}}
         =8,\]
@@ -175,7 +175,18 @@ nextPageTitle: 高中数学资料
     </p>
 </mysolution>
 
-## 均值不等式在几何题中的应用
+## 均值不等式与几何题
+
+<p>均值不等式 $\dfrac{x+y}2\geqslant \sqrt{xy}$ ($x$, $y\geqslant 0$) 有明显的几何意义. 如下图所示, 线段 $AB$ 是半圆 $O$ 的直径, 任取半圆上一点 $C$, 作 $CD\perp AB$ 于点 $D$, 则 \[
+    \triangle ADC\sim \triangle CDB\Rightarrow
+    CD^2= AD\cdot DB.\]
+因为半径 $CO\geqslant CD$, 且 \[
+    CO= \frac12 AB= \frac{AD+DB}2,\quad
+    CD= \sqrt{AD\cdot DB},\]
+所以 $\dfrac{AD+DB}2\geqslant \sqrt{AD\cdot DB}$. 这就是均值不等式.
+</p>
+
+![均值不等式的几何意义-半圆](/figs/2022/2022-09/2022-0911-1440.svg)
 
 利用均值不等式解几何题时, 关键是要根据题意, 写出其中几何量满足的条件, 所以需要对各几何图形的常见性质比较熟悉.
 
@@ -220,7 +231,7 @@ nextPageTitle: 高中数学资料
         a+b+c= 2+2\sqrt2,\quad c^2= a^2+b^2.\]
     因为 \[\begin{gathered}
         a+b\geqslant 2\sqrt{ab},\\
-        c= \sqrt{a^2+b^2}\geqslant \sqrt{2ab}
+        c= \sqrt{a^2+b^2}\geqslant \sqrt{2ab},
     \end{gathered}\]
     代入周长表达式知, \[
         2+2\sqrt2\geqslant 2\sqrt{ab}+ \sqrt{2ab},\]
@@ -230,21 +241,22 @@ nextPageTitle: 高中数学资料
 
 ## 均值不等式与恒成立问题
 
-与代数式有关的恒成立问题, 解法通常是先求代数式的取值范围. 例如, 设正实数 $x,y$ 满足 $x+y=2$, 则 \[
+<p>与代数式有关的恒成立问题, 解法通常是先求代数式的取值范围. 例如, 设正实数 $x,y$ 满足 $x+y=2$, 且 $M\geqslant xy$ 恒成立, 由此来确定 $M$ 的最小值. 因为 \[
     x+y\geqslant 2\sqrt{xy}\Rightarrow 2\geqslant 2\sqrt{xy},\]
-所以 $1\geqslant xy$, 等号成立当且仅当 $x= y= 1$. 此时若 $M\geqslant xy$ 恒成立, 可知 $M\geqslant 1$, 即 $M$ 的最小值为 $1$.
+所以 $xy\in (0,1]$, 且 $xy=1$ 当且仅当 $x= y= 1$. 由 $M\geqslant xy$ 恒成立可知 $M\geqslant 1$, 即 $M$ 的最小值为 $1$.
+</p>
 
 <myexample>
     <p>(1) 若 $x$, $y>0$ 且 $\dfrac{2y}x+ \dfrac{8x}y> m^2+2m$ 恒成立, 求 $m$ 的取值范围.
     </p>
-    <p>(2) 已知二次函数 $f(x)=ax^2 -4x+c$ ($x\in\mathbf{R}$) 的值域为 $[0,+\infty)$, 求 $\dfrac1c +\dfrac9a$ 的最小值.
+    <p>(2) 已知二次函数 $y=ax^2 -4x+c$ ($x\in\mathbf{R}$) 的值域为 $[0,+\infty)$, 求 $\dfrac1c +\dfrac9a$ 的最小值.
     </p>
 </myexample>
 <mysolution>
     <p>(1) 由 $\dfrac{2y}x+ \dfrac{8x}y\geqslant 2\sqrt{16}= 8$, 等号成立当且仅当 $2x= y$, 知 \[
         8> m^2+2m,\quad m\in(-4,2).\]
     </p>
-    <p>(2) 由已知, 函数 $f(x)$ 的图形与 $x$ 轴相切, 考虑判别式知, \[
+    <p>(2) 由已知, 抛物线 $y=ax^2 -4x+c$ 与 $x$ 轴相切, 考虑判别式知, \[
         \Delta= (-4)^2- 4ac= 0,\quad ac=4,\]
     所以 \[
         \frac1c +\frac9a\geqslant 2\sqrt{\frac{9}{ac}}= 3,\]
@@ -261,7 +273,7 @@ nextPageTitle: 高中数学资料
     <p>由题意, 只需不等式左边的最小值大于零. 由均值不等式, \[
         x+\dfrac2x\geqslant 2\sqrt{x\cdot\dfrac2x}= 2\sqrt2,\]
     “$=$”成立当且仅当 $x=\dfrac2x$ 即 $x=\sqrt2$, 所以只需
-    \[2\sqrt2+a>0,\quad\text{解得}\quad 
+    \[2\sqrt2+a>0\Rightarrow
         a\in(-2\sqrt2,+\infty).\]
     </p>
 </details>

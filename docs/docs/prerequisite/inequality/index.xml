@@ -42,16 +42,12 @@ x-3\neq 0,
 解得 $x\in (-\infty,2]\cup (3,+\infty)$.
 关于 $x$ 的形如 $\dfrac{Ax+B}{Cx+D}>(\geqslant)\,E$ 的分式不等式, 也可以先移项、合并, 变成与 $0$ 比大小, 即写为 \[
 \frac{Ax+B-E(Cx+D)}{Cx+D}>(\geqslant)\,0,\]
-从而进一步化为二次不等式来求解.</description></item><item><title>均值不等式</title><link>/docs/prerequisite/inequality/mean-value-inequality/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/prerequisite/inequality/mean-value-inequality/</guid><description>均值不等式 # 对于任意 $x$, $y\in\realnum$, 恒有 $(x-y)^2\geqslant 0$, 展开后移项得
-\[x^2+y^2\geqslant 2xy\quad\text{即}\quad \frac{x^2+y^2}2\geqslant xy.\]
-不等式中等号成立的条件是 $x=y$, 也记为:“$=$”成立当且仅当 $x=y$. 把上面两个式子中的 $x$ 和 $y$ 分别换成 $\sqrt{x}$ 和 $\sqrt{y}$ (此时必须限制 $x$, $y\geqslant 0$), 可知
-\[x+y\geqslant 2\sqrt{xy}\quad\text{即}\quad \frac{x+y}2\geqslant \sqrt{xy}.\]
-因为 $\dfrac{x+y}2$ 与 $\sqrt{xy}$ 分别叫做非负实数 $x$ 与 $y$ 的\myindex{算术平均值}{算术平均值}与\myindex{几何平均值}{几何平均值}, 所以上面最后一个不等式也称为\myindex{均值不等式}{均值不等式}, 即
+从而进一步化为二次不等式来求解.</description></item><item><title>均值不等式</title><link>/docs/prerequisite/inequality/mean-value-inequality/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/prerequisite/inequality/mean-value-inequality/</guid><description>均值不等式 # 均值不等式是数学中常用的一类基本不等式, 也被推广为多种不等式. 这里介绍均值不等式最简单的形式.
+对于任意 $a$, $b\in\mathbf{R}$, 恒有 $(a-b)^2\geqslant 0$, 展开后移项得 \[
+a^2+b^2\geqslant 2ab\quad\text{即}\quad \frac{a^2+b^2}2\geqslant ab.\]
+不等式中等号成立的充要条件是 $a=b$, 也记为: “$=$”成立当且仅当 $a=b$. 把上面两个式子中的 $a$ 和 $b$ 分别换成 $\sqrt{x}$ 和 $\sqrt{y}$ (此时必须限制 $x$, $y\geqslant 0$), 可知 \[
+x+y\geqslant 2\sqrt{xy}\quad\text{即}\quad \frac{x+y}2\geqslant \sqrt{xy}.\]
+上式中的 $\dfrac{x+y}2$ 与 $\sqrt{xy}$ 分别叫做非负实数 $x$ 与 $y$ 的算术平均值与几何平均值, 所以上面最后一个不等式也称为均值不等式, 即
 \[\text{均值不等式:}\ \frac{x+y}2\geqslant \sqrt{xy},\quad x,y\geqslant 0.\]
-以上不等式均为常用不等式, 且都可以互相推出.
-利用均值不等式 (或其等价形式) 可以很方便地求特殊形式的式子的最大 (小) 值. 例如, 若 $x>0$, 则 \[x+\dfrac1x\geqslant 2\sqrt{x\cdot\dfrac1x}=2,\]
-“$=$”成立当且仅当 $x=\dfrac1x$ 即 $x=1$. 一般的, 可得如下结论 (均设 $x$, $y\geqslant 0$):
-(1) 若 $xy=L$ 为定值, 则 \[x+y\geqslant 2\sqrt{xy}=2\sqrt{L},\] 所以 $x+y$ 的最小值为 $2\sqrt{L}$,“$=$”成立当且仅当 $x=y=\sqrt{L}$;
-(2) 若 $x+y=M$ 为定值, 则 \[\sqrt{xy}\leqslant \frac{x+y}2=\frac{M}2\quad\text{即}\quad
-xy\leqslant \biggl(\frac{M}2\biggr)^2= \frac{M^2}4,\]
-所以 $xy$ 的最大值为 $\dfrac{M^2}4$,“$=$”成立当且仅当 $x=y=\dfrac{M}2$.</description></item></channel></rss>
+该不等式有时也称为基本不等式. 以上不等式均为常用不等式, 且都可以互相推出.
+使用均值不等式时, 必须检验等号成立的条件. 如对 $x>2$, 由 $x+\dfrac1x\geqslant 2$ 不能得到 $x+\dfrac1x$ 的取值范围是 $[2,+\infty)$, 因为此时等号成立的条件是 $x=1$, 与已知 $x>2$ 不符.</description></item></channel></rss>

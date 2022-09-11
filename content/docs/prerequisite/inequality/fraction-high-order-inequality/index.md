@@ -5,8 +5,8 @@ weight: 3
 # bookHidden: true
 prevPage: /docs/prerequisite/inequality/abs-quadratic-inequality
 prevPageTitle: 绝对值不等式与二次不等式
-# nextPage: /docs/prerequisite/inequality/mean-value-inequality
-# nextPageTitle: 均值不等式
+nextPage: /docs/prerequisite/inequality/mean-value-inequality
+nextPageTitle: 均值不等式
 ---
 
 # 分式不等式与高次不等式
