@@ -39,7 +39,7 @@
     ]},
     {"weight":"2", "chapNameE":"algebra", "chapNameC": "代数", 
     "sections":[
-        {"weight":"1", "secNameE":"function", "secNameC":"函数的定义、性质与图象",
+        {"weight":"1", "secNameE":"function", "secNameC":"函数",
         "subsections":[
             {"weight":"1", "subsecNameE":"function-def", "subsecNameC":"函数的定义"},
             {"weight":"2", "subsecNameE":"function-monotone", "subsecNameC":"函数的单调性"},

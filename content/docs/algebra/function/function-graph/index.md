@@ -138,3 +138,40 @@ nextPageTitle: 二次函数
     </center>
 </p>
 </mysolution>
+
+
+<myexample>
+<p>已知函数 $f(x)= \dfrac{2x+1}{x+1}$, 求该函数在区间 $[1,4]$ 上的最大值与最小值.
+</p>
+</myexample>
+<mysolution>
+    <p>用分离常数法, 
+    \[f(x)= \frac{2x+1}{x+1}= \frac{2(x+1)-1}{x+1}
+        = 2-\frac1{x+1}.\]
+    因为 $x\in[1,4]$, 所以 $\dfrac1{x+1}$ 单调递减, $-\dfrac1{x+1}$ 单调递增, $2-\dfrac1{x+1}$ 也单调递增, 从而 
+    \[f_{\min}= f(1)= \dfrac32,\quad f_{\max}= f(4)= \dfrac95.\]
+</p>
+</mysolution>
+
+<myexample>
+<p>已知 $f(x)=\begin{cases}
+      2x, & x>0,\\
+      f(x+1), & x\leqslant 0,
+    \end{cases}$ 那么 $f\Bigl(-\frac43\Bigr)=$\,? 试作出其图象.
+  </p>
+</myexample>
+</p>
+<p><mysolution>
+    <p>    $f\Bigl(-\frac43\Bigr)=f\Bigl(-\frac13\Bigr)= f\Bigl(\frac23\Bigr)= \frac43$. 图象如右图.
+    \mymarginpar{\centering
+      \begin{tikzpicture}[line cap=round,line join=round,scale=0.7]
+        \draw[\myaxisarrow] (-3,0) -- (2,0) node[below] {$x$};
+        \draw[\myaxisarrow] (0,-0.5) -- (0,3) node[left] {$y$};
+        \draw[fill=black] (0,0)--(1.3,2.6) 
+          (-1,0)--(0,2) node[right] {$2$} circle (1.5pt) (-2,0)
+          --(-1,2) circle (1.5pt);
+        \draw[fill=white] (0,0) node[anchor= north east] {$O$} circle (1.5pt) (-1,0) node[below] {$-1$} circle (1.5pt) 
+          (-2,0) node[below] {$-2$}  circle (1.5pt);
+      \end{tikzpicture}}
+  </p>
+</mysolution>

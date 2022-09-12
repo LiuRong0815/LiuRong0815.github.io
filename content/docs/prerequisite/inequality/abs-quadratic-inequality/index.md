@@ -15,6 +15,8 @@ nextPageTitle: 分式不等式与高次不等式
 
 前面已经介绍了[简单二次不等式的解法](/docs/prerequisite/ms-function/quadratic-function-inequality#二次不等式的解法), 这里进一步介绍如何求解含参数的二次不等式.
 
+<span id="绝对值不等式"></span>
+
 ## 绝对值的几何意义
 
 <p>实数 $a$ 的绝对值定义为 \[

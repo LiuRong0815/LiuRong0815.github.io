@@ -54,6 +54,7 @@ nextPageTitle: 二次函数与二次不等式
     <img alt="求坐标系中三角形的面积-辅助线" src="/figs/2022/2022-08/2022-0814-1900.svg"></img>
 </mysolution>
 
+<span id="反比例函数"></span>
 
 ## 反比例函数
 
