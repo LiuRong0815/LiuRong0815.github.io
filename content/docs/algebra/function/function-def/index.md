@@ -92,7 +92,7 @@ prevPageTitle: 函数
 </myexercise>
 
 <details><summary>参考答案</summary>
-    <p>(1) 由 $f\Big(\frac12\Big)= \frac{\sqrt3}2$, $g\Big(\frac12\Big)= \frac12$ 知 $f(x)\neq g(x)$.
+    <p>(1) 由 $f\Big(\dfrac12\Big)= \dfrac{\sqrt3}2$, $g\Big(\dfrac12\Big)= \dfrac12$ 知 $f(x)\neq g(x)$.
     </p>
     <p>(2) $f(x)$ 定义域为 $[1,+\infty)$, $g(x)$ 定义域为 $(-\infty,-1]\cup [1,+\infty)$, 故 $f(x)\neq g(x)$.
     </p>
@@ -125,7 +125,7 @@ prevPageTitle: 函数
 </myexercise>
 
 <details><summary>参考答案</summary>
-    <p>(1) $\frac{2+a}{2-6}=-1$, 则 $a=2$, $f(1)=-\frac35$.
+    <p>(1) $\dfrac{2+a}{2-6}=-1$, 则 $a=2$, $f(1)=-\dfrac35$.
     </p>
     <p>(2) $f\big(f(1)\big)=f(2)=-6$.
     </p>
