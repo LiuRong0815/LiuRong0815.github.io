@@ -402,3 +402,50 @@ nextPageTitle: 幂函数、指数函数、对数函数
     \[f(1)< f(\sqrt2)< f(\sqrt3)< f(0).\]
 </p>
 </mysolution>
+
+
+
+<p>\subsection{二次函数的图象}
+</p>
+<p><myexample>
+<p>已知二次函数 $y=ax^2+bx+10$ 当 $x=3$ 时的函数值与当 $x=2017$ 时的函数值相等, 求当 $x=2020$ 时的函数值.
+</p>
+</myexample>
+<mysolution>
+    <p>由题意, 函数图象的对称轴 $x=-\dfrac{b}{2a}=\dfrac{3+2017}2=2010$.
+</p>
+<p>方法一: 上式化为 $b=-2020a$, 所以当 $x=2020$ 时, 
+  \[\begin{aligned}
+    y&= a\cdot 2020^2+b\cdot 2020+10\\
+     &= a\cdot 2020^2-2020a\cdot 2020+10
+      = 10.\end{aligned}\]
+</p>
+<p>方法二: 画草图易知, 点 $x=2020$ 关于对称轴 $x=1010$ 的对称点为 $x=0$, 此时函数值为 二次函数的常数项, 即 $0$.
+</p>
+</mysolution>
+</p>
+<p><myexample>
+<p>已知抛物线 $y=(x-c)(x-d)-4$ 与 $x$ 轴的交点为 $(6,0)$ 和 $(1,0)$, 求 $c$, $d$ 的值.
+</p>
+</myexample>
+<mysolution>
+    <p>方法一: 由已知可直接写出抛物线的两根式为 
+  \[y=(x-6)(x-1),\]
+  所以
+  \[(x-c)(x-d)-4=(x-6)(x-1)\]
+  即
+  \[(x-c)(x-d)= x^2-7x+10=(x-2)(x-5),\]
+  所以 $c=2$, $d=5$ 或 $c=5$, $d=2$.
+</p>
+<p>方法二: 将点 $(6,0)$ 和 $(1,0)$ 的坐标代入抛物线表达式,
+  \[\left\{\!\!\begin{array}{l}
+      (6-c)(6-d)-4=0,\\
+      (1-c)(1-d)-4=0,
+    \end{array}\right.\ \text{即}\ 
+    \left\{\!\!\begin{array}{l}
+      c+d=7,\\
+      cd=10,
+    \end{array}\right.\]
+  所以 $c=2$, $d=5$ 或 $c=5$, $d=2$.
+</p>
+</mysolution>

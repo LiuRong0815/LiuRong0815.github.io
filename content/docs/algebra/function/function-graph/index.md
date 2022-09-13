@@ -175,3 +175,25 @@ nextPageTitle: 二次函数
       \end{tikzpicture}}
   </p>
 </mysolution>
+
+
+<p>\lianxi
+  \begin{exercise}[s]
+    设函数 $D(x)=\begin{cases}
+      1, & x\text{ 为有理数,}\\
+      0, & x\text{ 为无理数,}\end{cases}$
+    则下列结论中正确的是\,?(填序号)
+</p>
+<p>(1) $D(x)$ 的值域为 $\{0,1\}$;\qquad
+    (2) $D(x)$ 是偶函数;
+</p>
+<p>(3) $D(x)$ 不是周期函数;\qquad
+    (4) $D(x)$ 不是单调函数.
+  </p>
+</myexercise>
+</p>
+<p><mysolution>
+    <p>    (1) 显然正确; 由 $x$ 与 $-x$ 要么同为有理数, 要么同为无理数知 $D(x)=D(-x)$, (2) 正确; 由 $D(x+1)=D(x)$ 知 (3) 错误 (任一有理数均为 $D(x)$ 的周期); 由 $D(0)=D(2)=1>0=D(\sqrt2)$ 知 (4) 正确.
+  </p>
+</mysolution>
+
