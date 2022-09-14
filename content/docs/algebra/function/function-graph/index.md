@@ -26,48 +26,6 @@ nextPageTitle: 二次函数
 </p>
 </mysolution>
 
-<p>\subsection{二次方程根的分布 (选学)}
-<myexample>
-<p>若方程 $2(m+1)x^2+4mx+3m-2=0$ 有两个负实根, 求实数 $m$ 的取值范围.
-</p>
-</myexample>
-<mysolution>
-    <p>由题意, 已知的方程为二次方程, 即 $2(m+1)\neq 0$. 设方程的两根为 $x_1$, $x_2$, 则这两个根均为负数的充要条件是
-  \[\left\{\!\!\begin{array}{l}
-      x_1+x_2=-\dfrac{4m}{2(m+1)}< 0,\\
-      x_1x_2=\dfrac{3m-2}{2(m+1)}>0,
-    \end{array}\right.\quad\text{解得}\quad
-    m< -1\ \text{或}\ m>\frac23,\]
-  所求的 $m$ 的取值范围是 $(-\infty,-1)\cup\biggl(\dfrac23,+\infty\biggr)$.
-</p>
-</mysolution>
-</p>
-<p>设关于 $x$ 的二次方程 $Ax^2+Bx+C=0$ ($A\neq0$) 的两根为 $x_1$, $x_2$, 则有以下结论 (为什么?):
-</p>
-<p>(1) 两根为正的充要条件是
-  \[\left\{\!\!\begin{array}{l}
-      x_1+x_2>0,\\
-      x_1x_2>0,
-    \end{array}\right.\quad\text{即}\quad
-    \left\{\!\!\begin{array}{l}
-      -\dfrac{B}A>0,\\
-      \dfrac{C}A>0;
-    \end{array}\right.\]
-</p>
-<p>(2) 两根为负的充要条件是
-  \[\left\{\!\!\begin{array}{l}
-      x_1+x_2< 0,\\
-      x_1x_2>0,
-    \end{array}\right.\quad\text{即}\quad
-    \left\{\!\!\begin{array}{l}
-      -\dfrac{B}A< 0,\\
-      \dfrac{C}A>0;
-    \end{array}\right.\]
-</p>
-<p>(3) 两根一正一负的充要条件是
-  \[x_1x_2< 0\quad\text{即}\quad\frac{C}A< 0.\]
-</p>
-
 <p>\begin{example}\label{201109-2120}
     已知函数 $f(x)= 4x^2-kx-8$ 在 $[5,20]$ 上单调变化, 求实数 $k$ 的取值范围.
 </p>
@@ -197,3 +155,37 @@ nextPageTitle: 二次函数
   </p>
 </mysolution>
 
+<myexample>
+<p>指出下列函数的单调性和值域:
+    \begin{twocolpro}
+    (1) $f(x)=x^2+|x|-2$; & (2) $g(x)= \dfrac{3x+1}{x-1}$.
+    \end{twocolpro}
+</p>
+</myexample>
+<mysolution>
+    <p>(1) 方法一: 根据绝对值的定义可知,
+    \[f(x)=\begin{cases}
+        x^2+x-2,& x\geqslant 0,\\
+        x^2-x-2,& x< 0.
+        \end{cases}\]
+    函数的图形如下 (分别作 $y$ 轴左侧和右侧的图形):
+</p>
+<p><center>
+        \includegraphics[scale=1.1]{2020-1126-1945-crop}
+    </center>
+</p>
+<p>由图得, $f(x)$ 在 $(-\infty,0)$ 上单调递减, 在 $[0,+\infty)$ 上单调递增, 值域为 $[-2,+\infty)$.
+</p>
+<p>方法二: 因为 $f(-x)=f(x)$, 所以 $f(x)$ 为偶函数, 图形关于 $y$ 轴对称. 令 $x\geqslant 0$ 知, $f(x)=x^2+x-2$, 可作出 $f(x)$ 在 $y$ 轴右侧的图形, 再关于 $y$ 轴作对称图形即可. 答案同上. 
+</p>
+<p>(2) 将函数变形 (把分子写成“分母的倍数”加“常数”的形式, 再拆项),
+    \[g(x)= \frac{3(x-1)+4}{x-1}= 3+\frac4{x-1},\]
+    由此可知, $g(x)$ 的图形可由 $h(x)=\dfrac4x$ 的图形向右平移一个单位长度, 再向上平移三个单位长度得到:
+</p>
+<p><center>
+        \includegraphics[scale=1]{2020-1126-2225-crop}
+    </center>
+</p>
+<p>所以, $g(x)$ 在 $(-\infty,1)$ 和 $(1,+\infty)$ 上均单调递减, 值域为 $(-\infty,3)\cup (3,+\infty)$.
+</p>
+</mysolution>

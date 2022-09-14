@@ -449,3 +449,46 @@ nextPageTitle: 幂函数、指数函数、对数函数
   所以 $c=2$, $d=5$ 或 $c=5$, $d=2$.
 </p>
 </mysolution>
+
+
+<p>\subsection{二次方程根的分布 (选学)}
+<myexample>
+<p>若方程 $2(m+1)x^2+4mx+3m-2=0$ 有两个负实根, 求实数 $m$ 的取值范围.
+</p>
+</myexample>
+<mysolution>
+    <p>由题意, 已知的方程为二次方程, 即 $2(m+1)\neq 0$. 设方程的两根为 $x_1$, $x_2$, 则这两个根均为负数的充要条件是
+  \[\left\{\!\!\begin{array}{l}
+      x_1+x_2=-\dfrac{4m}{2(m+1)}< 0,\\
+      x_1x_2=\dfrac{3m-2}{2(m+1)}>0,
+    \end{array}\right.\quad\text{解得}\quad
+    m< -1\ \text{或}\ m>\frac23,\]
+  所求的 $m$ 的取值范围是 $(-\infty,-1)\cup\biggl(\dfrac23,+\infty\biggr)$.
+</p>
+</mysolution>
+</p>
+<p>设关于 $x$ 的二次方程 $Ax^2+Bx+C=0$ ($A\neq0$) 的两根为 $x_1$, $x_2$, 则有以下结论 (为什么?):
+</p>
+<p>(1) 两根为正的充要条件是
+  \[\left\{\!\!\begin{array}{l}
+      x_1+x_2>0,\\
+      x_1x_2>0,
+    \end{array}\right.\quad\text{即}\quad
+    \left\{\!\!\begin{array}{l}
+      -\dfrac{B}A>0,\\
+      \dfrac{C}A>0;
+    \end{array}\right.\]
+</p>
+<p>(2) 两根为负的充要条件是
+  \[\left\{\!\!\begin{array}{l}
+      x_1+x_2< 0,\\
+      x_1x_2>0,
+    \end{array}\right.\quad\text{即}\quad
+    \left\{\!\!\begin{array}{l}
+      -\dfrac{B}A< 0,\\
+      \dfrac{C}A>0;
+    \end{array}\right.\]
+</p>
+<p>(3) 两根一正一负的充要条件是
+  \[x_1x_2< 0\quad\text{即}\quad\frac{C}A< 0.\]
+</p>

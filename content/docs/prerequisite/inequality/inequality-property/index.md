@@ -78,6 +78,7 @@ nextPageTitle: 绝对值不等式与二次不等式
     </p>
 </myremark>
 
+<span id="不等式的性质"></span>
 
 ## 常见的不等式性质
 
@@ -128,6 +129,7 @@ nextPageTitle: 绝对值不等式与二次不等式
 \end{aligned}\]
 </p>
 
+<span id="比大小"></span>
 
 ## 比较两个式子的大小
 
