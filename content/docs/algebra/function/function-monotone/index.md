@@ -22,10 +22,27 @@ nextPageTitle: 函数的奇偶性
     &f(x_1)< f(x_2)\Leftrightarrow f(x)\ \text{在 $A$ 上单调递增},\\
     &f(x_1)> f(x_2)\Leftrightarrow f(x)\ \text{在 $A$ 上单调递减}.
 \end{aligned}\]
-将上面的 $A$ 取成 $D$ 时, 就得到函数 $f(x)$ 在其定义域 $D$ 上单调递增或单调递减的定义.
+将上面的 $A$ 取成 $D$ 时, 就可以得到函数 $f(x)$ 在其定义域 $D$ 上单调递增或单调递减的定义.
 </p>
 <p>由定义, 函数单调递增可以从代数式的角度理解为: 单调递增表示自变量的大小与对应函数值的大小一致, 单调递减表示自变量的大小与对应函数值的大小恰好相反.
 </p>
+<p>利用函数的单调性, 可以求出其值域: 对定义在区间 $[a,b]$ 上的增函数 $f(x)$, 其值域显然为 $[f(a),f(b)]$. 对一般的函数 $f(x)$, 也可以根据其在定义域 $D$ 各个部分上的单调性得到对应的取值范围, 然后取并集得到函数值域. 函数 $f(x)$ 在定义域 $D$ 上的最大值 (maximum) 可以记为 $f_{\max}$, 它满足 \[
+    \forall\,x\in D,\ f_{\max}\geqslant f(x);\quad
+    \exists\,x_0\in D,\ f_{\max}= f(x_0).\]
+类似地, 函数 $f(x)$ 在定义域 $D$ 上的最大值 (minimum) 可以记为 $f_{\min}$, 它满足 \[
+    \forall\,x\in D,\ f_{\min}\leqslant f(x);\quad
+    \exists\,x_0\in D,\ f_{\min}= f(x_0).\]
+最大值、最小值统称为最值. 例如, 函数 $f(x)= -x$ 在区间 $[0,1]$ 上单调递减, 其值域为 \[
+    [f_{\min}, f_{\max}]= [f(1),f(0)]= [-1,0].\]
+</p>
+
+<myremark>
+    <p>从上述定义可以看出, 函数的最值必须是函数能取到的值, 因此有些函数没有最值. 例如, 函数 $f(x)= x$ 在实数集 $\mathbf{R}$ 和区间 $(0,1)$ 上都没有最值.
+    </p>
+</myremark>
+
+## 初中常见函数的单调性
+
 <p>由函数图象可知, 初中常见函数的单调性的决定因素如下: 
 </p>
 <p>(1) 一次函数 $f(x)=kx+b$ ($k\neq 0$): $k< 0$ 时单调递减, $k> 0$ 时单调递增;
@@ -69,12 +86,12 @@ nextPageTitle: 函数的奇偶性
 </myremark>
 
 <myexample>
-    <p>(1) 已知函数 $f(x)=ax^2 +4(1-a)x+1$ 在区间 $[1,+\infty)$ 上单调递增, 求实数 $a$ 的取值范围.
+    <p>已知函数 $f(x)=ax^2 +4(1-a)x+1$ 在区间 $[1,+\infty)$ 上单调递增, 求实数 $a$ 的取值范围.
     </p>
 </myexample>
 
 <mysolution>
-    <p>(1) 若 $a=0$, 则 $f(x)=4x+1$ 为单调递增函数. 若 $a\neq 0$, 则 \[\left\{\!\!\begin{array}{l}
+    <p>若 $a=0$, 则 $f(x)=4x+1$, 为单调递增函数. 若 $a\neq 0$, 则 \[\left\{\!\!\begin{array}{l}
         a>0,\\[6pt]
         -\dfrac{4(1-a)}{2a}\geqslant 1
     \end{array}\right.\Rightarrow
@@ -82,7 +99,6 @@ nextPageTitle: 函数的奇偶性
     综上所述, $a\in \{0\}\cup [2,+\infty)$.
     </p>
 </mysolution>
-
 
 ## 单调性的判断方法
 
@@ -110,9 +126,12 @@ nextPageTitle: 函数的奇偶性
     <img alt="f_3(x)= 1+\dfrac1{x+2}" src="/figs/2022/2022-09/2022-0914-2220.svg"></img>
 </mysolution>
 
-
-不少函数的图象是由其单调性决定的, 即只有事先判断函数在其定义域各部分的单调性, 才能较准确地作出函数图象, 所以由图象判断单调性并非总是可行. 判断单调性的一般方法仍旧是根据定义来计算: 设函数 $f(x)$ 定义在 $D$ 上, 任取 $x_1$, $x_2\in D$ 满足 $x_1< x_2$, 若 $f(x_1)< f(x_2)$ 恒成立, 则说明 $f(x)$ 单调递增; 若 $f(x_1)> f(x_2)$ 恒成立, 则说明 $f(x)$ 单调递减. 在判断函数值的大小关系时, 一般用<a href="/docs/prerequisite/inequality/inequality-property/#比大小">作差法</a>.
-
+<p>不少函数的图象是由其单调性决定的, 即只有事先判断函数在其定义域各部分的单调性, 才能较准确地作出函数图象, 所以由图象判断单调性并非总是可行. 判断单调性的一般方法仍旧是根据定义来计算: 设函数 $f(x)$ 定义在 $D$ 上, 任取 $x_1$, $x_2\in D$ 满足 $x_1< x_2$, 则 \[\begin{aligned}
+    f(x_1)< f(x_2) & \Rightarrow f(x)\ \text{单调递增},\\
+    f(x_1)> f(x_2) & \Rightarrow f(x)\ \text{单调递减}.
+\end{aligned}\]
+在判断函数值的大小关系时, 一般用<a href="/docs/prerequisite/inequality/inequality-property/#比大小">作差法</a>.
+</p>
 <p>例如, 由定义判断函数 $f(x)= -x+1$ 的单调性, 可以任取实数 $x_1< x_2$, 则 \[
     f(x_1)- f(x_2)= (-x_1+1)- (-x_2+1)= x_2-x_1.\]
 由 $x_1< x_2$ 知 $x_2-x_1> 0$, 所以 $f(x_1)< f(x_2)$, 即 $f(x)$ 单调递减. 这个结论与由图象得到的单调性相同. 从计算过程可以看出, 当函数解析式较简单时, 可以由定义判断单调性.
@@ -135,8 +154,6 @@ nextPageTitle: 函数的奇偶性
     </p>
 </myremark>
 
-
-
 ## 单调性的等价表示
 
 <p>前面提到, 对函数 $f(x)$ 而言, 单调递增表示 $x$ 越大, $f(x)$ 也越大 (或 $x$ 越小, $f(x)$ 也越小); 单调递减表示 $x$ 越大, $f(x)$ 反而越小 (或 $x$ 越小, $f(x)$ 反而越大). 若只设 $x_1\neq x_2$, 则利用实数乘除运算的符号法则, 单调性有如下等价表示: \[\begin{aligned}
@@ -152,82 +169,61 @@ nextPageTitle: 函数的奇偶性
 所以 $f(x_1)< f(x_2)$, 表明 $f(x)$ 单调递增. 
 </p>
 
+<myexample>
+    <p>已知函数 $f(x)$ 定义在 $\mathbf{R}$ 上, 且对任意 $m\neq n$, 总有 $\dfrac{f(m)-f(n)}{m-n}>0$. 若 $f(-3)=a$, $f(-1)=b$, 求 $f(x)$ 在 $[-3,-1]$ 上的值域 (用 $a$, $b$ 表示).
+    </p>
+</myexample>
+
+<mysolution>
+    <p>题意表明 $f(x)单调递增$, 所以值域为 \[
+        [f_{\min},f_{\max}]= [f(-3),f(-1)]= [a,b].\]
+    </p>
+</mysolution>
+
 <myexercise>
-    <p>已知定义在 $\mathbf{R}$ 上的函数 $f(x)$ 对任意 $m\neq n$, 
-    总有 $\frac{f(m)-f(n)}{m-n}>0$. 
-    若 $f(-3)=a$, $f(-1)=b$, 求 $f(x)$ 在 $[-3,-1]$ 上的最大值
-    (用 $a$, $b$ 表示).
-  </p>
+    <p>判断下列函数是否满足“$\forall\,x_1$, $x_2\in (0,+\infty)$, $(x_1- x_2)[f(x_1)-f(x_2)]< 0$”:
+    </p>
+    <p>(1) $f(x)= \frac1x$;&emsp; (2) $f(x)=(x-1)^2$.
+    </p>
 </myexercise>
-</p>
-<p><mysolution>
-    <p>    题意表明 $f(x)单调递增$, 所以 $f_{\max}= f(-1)=b$.
-  </p>
-</mysolution>
-</p>
-<p><myexercise>
-    <p>下列函数满足“$\forall\,x_1$, $x_2\in (0,+\infty)$, 
-    $(x_1- x_2)\big(f(x_1)-f(x_2)\big)< 0$”的有\,?(填序号)
-</p>
-<p>(1) $f(x)= \frac1x$; (2) $g(x)=(x-1)^2$; (3) $h(x)= \ln(x+1)$.
-  </p>
-</myexercise>
-</p>
-<p><mysolution>
-    <p>    题意表明 $f(x)$ 在 $(0,+\infty) 单调递减$, 故只有 $f(x)$ 符合题意.
-  </p>
-</mysolution>
 
-
+<details><summary>参考答案</summary>
+    <p>题意表明 $f(x)$ 在 $(0,+\infty)$ 单调递减, 故只有 $f(x)= \frac1x$ 符合题意.
+    </p>
+</details>
 
 ## 分段函数的单调性
 
-<p>解分段函数单调性问题时, 只需每段函数均单调, 且分段点处的函数值满足题中单调性. 具体来说,
-\[\begin{aligned}
-    &f(x)= \begin{cases}
-            g(x), & x\leqslant a,\\
-            h(x), & x>a
-        \end{cases}\ \text{在 $\realnum$ 上单调递增}\\
-    \Leftrightarrow{}& \left\{\!\!\begin{array}{l}
-        \text{$g(x)$ 在 $(-\infty,a]$ 上, $h(x)$ 在 $(a,+\infty)$ 上均单调递增},\\
-        g(a)\leqslant h(a)
-        \end{array}\right.\\
-    &f(x)= \begin{cases}
-            g(x), & x\leqslant a,\\
-            h(x), & x>a
-        \end{cases}\ \text{在 $\realnum$ 上单调递减}\\
-    \Leftrightarrow{}& \left\{\!\!\begin{array}{l}
-        \text{$g(x)$ 在 $(-\infty,a]$ 上, $h(x)$ 在 $(a,+\infty)$ 上均单调递减},\\
-        g(a)\geqslant h(a)
-        \end{array}\right.\\
-\end{aligned}\]
-建议结合如下函数草图记忆上述结论:
-<center>
-    \includegraphics[scale=1]{2020-1115-1130-1-crop}\qquad
-    \includegraphics[scale=1]{2020-1115-1130-2-crop}
-</center>
-</p>
-<p>如果例 \ref{exa:201115-1130} 改为“函数 $f(x)= \begin{cases}
-    x-1, & x\leqslant 1,\\
-    x^2+2ax, & x>1
-\end{cases}$ 在 $\realnum$ 上单调递增”, 则应限制
-\[\begin{cases}
-    -a\leqslant 1 & (\text{二次函数对称轴在定义域左侧}),\\
-    1-1\leqslant 1^2+ 2a\cdot1 & (\text{分段点处的函数值递增}).
-    \end{cases}\]
+<p>解分段函数单调性问题时, 只需每段函数以及分段点处的函数值满足题中单调性. 例如, 分段函数 \[
+    f(x)= \begin{cases}
+        g(x), & x\leqslant a,\\
+        h(x), & x>a
+\end{cases}\]
+在 $\mathbf{R}$ 上单调递增, 等价于 $g(x)$ 在 $(-\infty,a]$ 上、$h(x)$ 在 $(a,+\infty)$ 上均单调递增, 且 $g(a)\leqslant h(a)$. 同理可以得到分段函数 \[
+    f(x)= \begin{cases}
+        g(x), & x\leqslant a,\\
+        h(x), & x>a
+\end{cases}\]
+在 $\mathbf{R}$ 上单调递减的等价描述. 建议结合如下函数草图记忆上述结论:
 </p>
 
+<img alt="分段函数单调递增" src="/figs/2020/2020-1115/2020-1115-1135.svg"></img>
+
+<img alt="分段函数单调递减" src="/figs/2020/2020-1115/2020-1115-1130.svg"></img>
+
+
 <myexample>
-    <p>(1) 已知函数 \[f(x)=\begin{cases}
+    <p>(1) 若函数 \[f(x)=\begin{cases}
         (a-3)x+5, & x\leqslant 1,\\[6pt]
         \frac{2a}x, & x>1 \end{cases}\]
-    是 $\mathbf{R}$ 上的单调递减函数, 求 $a$ 的取值范围.
+    在 $\mathbf{R}$ 上单调递减, 求 $a$ 的取值范围;
     </p>
-    <p>(2) 已知函数 $f(x)=\begin{cases}
-      (a^2-3)x+5, & x\leqslant 1,\\[6pt]
-      \frac{3a}x, & x>1 \end{cases}$ 
-    是 $\mathbf{R}$ 上的单调递增函数, 求 $a$ 的取值范围.
-</p>
+    <p>(2) 若函数 \[g(x)= \begin{cases}
+        x-1, & x\leqslant 1,\\
+        x^2+2ax, & x>1
+    \end{cases}\]
+    在 $\mathbf{R}$ 上单调递增, 求 $a$ 的取值范围.
+    </p>
 </myexample>
 
 <mysolution>
@@ -237,108 +233,97 @@ nextPageTitle: 函数的奇偶性
     \end{array}\right.\Rightarrow
         a\in (0,2].\]
     </p>
+    <p>(2) 考虑二次函数 $y= x^2+2ax$ 的图象知, 其对称轴 $x= -a$ 应满足 $-a\leqslant 1$. 再由分段点处的函数值递增知, \[
+        1-1\leqslant 1^2+ 2a\cdot1.\]
+    两个不等式联立, 解得 $a\in \Bigl[-\dfrac12,+\infty\Bigr]$.
+    </p>
+</mysolution>
+
+<myexercise>
+    <p>(1) 若函数 \[f(x)= \begin{cases}
+        x-1, & x\leqslant 1,\\
+        x^2+a, & x>1
+    \end{cases}\]
+    在 $\mathbf{R}$ 上单调递增, 求 $a$ 的取值范围;
+    </p>
+    <p>(2) 若函数 \[g(x)=\begin{cases}
+      (a^2-3)x+5, & x\leqslant 1,\\[6pt]
+      \frac{3a}x, & x>1 \end{cases}\]
+    在 $\mathbf{R}$ 上单调递增, 求 $a$ 的取值范围.
+    </p>
+</myexercise>
+
+<details><summary>参考答案</summary>
+    <p>(1) 由题意, $1-1\leqslant 1^2+a$, 则 $a\in[-1,+\infty)$.
+    </p>
     <p>(2) 此时, $f(x)$ 分段递增且在 $x=1$ 附近单调递增, 则 \[\left\{\!\!\begin{array}{l}
         a^2-3> 0,\ 3a< 0,\\
         (a^2-3)+5\leqslant 3a
     \end{array}\right.\Rightarrow
         a\in \varnothing.\] 
     </p>
-</mysolution>
+</details>
+
+## 单调性的简单应用
+
+利用函数的单调性可以解由简单的抽象函数构成的不等式 (简称抽象不等式) 或方程.
 
 <myexercise>
-    <p>(1) 已知函数 $f(x)=\begin{cases}
-        (a^2-3)x+5, & x\leqslant 1,\\[6pt]
-        \frac{3a}x, & x>1 \end{cases}$ 
-    是 $\mathbf{R}$ 上的单调递减函数, 求 $a$ 的取值范围.
+    <p>(1) 若定义在 $[-1,1]$ 上的函数 $f(x)$ 单调递增, 且 $f(x-1)< f(1-3x)$, 求 $x$ 的取值范围;
     </p>
-    <p>(2) 
+    <p>(2) 解不等式 \[
+        (x-1)^3+ (x-1)< (1-3x)^3+ (1-3x)$.
+    </p>
+</myexercise>
+
+<mysolution>
+    <p>(1) 由题意, $-1\leqslant x-1< 1-3x\leqslant 1$, 解得 $x\in\Big[0,\frac12\Big)$.
+    </p>
+    <p>(2) 设 $g(x)=x^3+x$, 原不等式化为 \[
+        g(x-1)< g(1-3x).\]
+    由 $y=x^3$ 和 $y=x$ 均在 $\mathbf{R}$ 上单调递增知, $g(x)$ 也单调递增, 所以 $x-1< 1-3x$ 即 $x\in\Bigl(-\infty,\frac12\Bigr)$.
+    </p>
+</mysolution>
+
+<myremark>
+    <p>上例 (2) 中, 将具体的不等式化为抽象不等式, 是为了更方便地应用单调性.
+    </p>
+</myremark>
+
+<myexercise>
+    <p>设函数 \[f(x)=\begin{cases}
+      x^2+1, & x\geqslant 0,\\
+      1, & x< 0,\end{cases}\]
+    解不等式: $f(3-x^2)>f(2x)$.
     </p>
 </myexercise>
 
 <details><summary>参考答案</summary>
-    <p>(1) 由题意, $f(x)$ 分段递减且在 $x=1$ 附近单调递减, 则 \[\left\{\!\!\begin{array}{l}
-        a^2-3< 0,\ 3a>0,\\
-        (a^2-3)+5\geqslant 3a
-    \end{array}\right.\Rightarrow
-        a\in (0,1].\]
+    <p>$f(x)$ 仅在 $[0,+\infty)$ 上单调递增, 则原不等式等价于 \[3-x^2> 2x\geqslant 0\Rightarrow x\in [0,1).\]
     </p>
 </details>
 
-<p>\begin{example}\label{exa:201115-1130}
-    若函数 $f(x)= \begin{cases}
-        x-1, & x\leqslant 1,\\
-        x^2+a, & x>1
-    \end{cases}$ 在 $\realnum$ 上单调递增, 求实数 $a$ 的取值范围.
-</p>
-</myexample>
-<mysolution>
-    <p>由题意,
-    \[1-1\leqslant 1^2+a\ \text{即}\ a\geqslant -1,\]
-    所以 $a\in[-1,+\infty)$.
-</p>
-</mysolution>
-
-
-## 单调性的简单应用
-
-利用单调性可以解简单的抽象函数构成的不等式或方程.
-
-<myexercise>
-    <p>若定义在 $[-1,1]$ 上的函数 $f(x)$ 是单调递增, 且 $f(x-1)< f(1-3x)$, 求 $x$ 的取值范围.
-    </p>
-</myexercise>
-
-<mysolution>
-    <p>由题 $-1\leqslant x-1< 1-3x\leqslant 1$, 解得 $x\in\Big[0,\frac12\Big)$.
-</p>
-<p>\varexercise 若 $f(x)=x^3+x$, 解不等式 $f(x-1)< f(1-3x)$.
-</p>
-<p>因为 $f(x)$ 在 $\mathbf{R}$ 上单调递增, 所以 $x-1< 1-3x$ 即 $x\in\Bigl(-\infty,\frac12\Bigr)$.
-</p>
-</mysolution>
-
-<myexercise>
-    <p>设函数 $f(x)=\begin{cases}
-      x^2+1, & x\geqslant 0,\\
-      1, & x< 0,\end{cases}$
-    解不等式: $f(3-x^2)>f(2x)$.
-</p>
-</myexercise>
-<mysolution>
-    <p>    $f(x)$ 单调递增, 则原不等式等价于
-    \[3-x^2> 2x,\quad x\in (-3,1).\]
-</p>
-</mysolution>
-
-<myexercise>
-    <p>求“一次函数 $f(x)= ax+b$ ($a\neq 0$) 在 $[-1,1]$ 上恒正”的充要条件。
-    </p>
-</myexercise>
-
-<mysolution>
-    <p>    $f(-1)>0$ 且 $f(1)>0$, 即 $-a+b>0$ 且 $a+b>0$.
-  </p>
-</mysolution>
-
 <myexample>
-<p>若对于任意实数 $a\in[-1,1]$, 函数 $y=x^2+(a-4)x+4-2a$ 的值恒大于零, 求 $x$ 的取值范围.
-</p>
+    <p>(1) 求“一次函数 $f(x)= ax+b$ ($a\neq 0$) 在 $[-1,1]$ 上恒正”的充要条件;
+    </p>
+    <p>(2) 若对于任意实数 $a\in[-1,1]$, 函数 $y=x^2+(a-4)x+4-2a$ 的值恒大于零, 求 $x$ 的取值范围.
+    </p>
 </myexample>
 <mysolution>
-    <p>此题可理解为 (反客为主): 关于 $a$ 的函数 
-    \[y=f(a)=x^2+(a-4)x+4-2a\]
-    在 $[-1,1]$ 上恒大于零. 此时
-    \[f(a)= (x-2)a+ x^2-4x+4\]
-    为关于 $a$ 的一次函数, 在 $[-1,1]$ 上的图形为一条线段, 所以只需两个端点纵坐标均大于零, 即
-    \[\left\{\!\!\begin{array}{l}
-        f(-1)= (x-2)\cdot(-1)+ x^2-4x+4>0,\\
-        f(1)= (x-2)\cdot 1+ x^2-4x+4>0,
+    <p>(1) 一次函数 $f(x)= ax+b$ 在 $[-1,1]$ 上的图象为一条线段, 所以 $f(x)$ 恒正等价于图象两个端点纵坐标均大于零: $f(-1)>0$ 且 $f(1)>0$, 即 $-a+b>0$ 且 $a+b>0$.
+    </p>
+    <p>(2) 此题可理解为 (反客为主): 关于 $a$ 的函数 \[
+        y= g(a)=x^2+(a-4)x+4-2a\]
+    在 $[-1,1]$ 上恒大于零. 此时 \[
+        g(a)= (x-2)a+ x^2-4x+4\]
+    为关于 $a$ 的一次函数, 所以 \[\left\{\!\!\begin{array}{l}
+        g(-1)= (x-2)\cdot(-1)+ x^2-4x+4>0,\\
+        g(1)= (x-2)\cdot 1+ x^2-4x+4>0,
     \end{array}\right.\]
-    解得
-    \[\left\{\!\!\begin{array}{l}
+    解得 \[\left\{\!\!\begin{array}{l}
         x< 1\ \text{或}\ x>2,\\
         x< 2\ \text{或}\ x>3,
     \end{array}\right.\]
     所以 $x\in(-\infty,1)\cup (3,+\infty)$.
-</p>
+    </p>
 </mysolution>
