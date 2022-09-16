@@ -2,19 +2,21 @@
 # bookCollapseSection: true
 title: 函数的单调性
 weight: 2
-bookHidden: true
+# bookHidden: true
 prevPage: /docs/algebra/function/function-def
 prevPageTitle: 函数的定义
-nextPage: /docs/algebra/function/function-oddeven
-nextPageTitle: 函数的奇偶性
+# nextPage: /docs/algebra/function/function-oddeven
+# nextPageTitle: 函数的奇偶性
 ---
 
 # 函数的单调性
 
-<p>函数的单调性描述的是其图象的变化趋势. 当沿 $x$ 轴正向观察函数 $f(x)$ 的图象时, 若图象上升, 则称 $f(x)$ 单调递增 (单增), 并称 $f(x)$ 为增函数; 若图象下降, 则称 $f(x)$ 单调递减 (单减), 并称 $f(x)$ 为减函数.
-</p>
+<p>函数的单调性描述的是其图象的变化趋势. 当沿 $x$ 轴正向观察函数 $f(x)$ 的图象时, 若图象上升, 则称 $f(x)$ 单调递增 (单增), 并称 $f(x)$ 为增函数;</p>
 
 <img alt="增函数" src="/figs/2022/2022-09/2022-0913-2045.svg"></img>
+
+<p>若图象下降, 则称 $f(x)$ 单调递减 (单减), 并称 $f(x)$ 为减函数.
+</p>
 
 <img alt="减函数" src="/figs/2022/2022-09/2022-0913-2050.svg"></img>
 
@@ -26,18 +28,20 @@ nextPageTitle: 函数的奇偶性
 </p>
 <p>由定义, 函数单调递增可以从代数式的角度理解为: 单调递增表示自变量的大小与对应函数值的大小一致, 单调递减表示自变量的大小与对应函数值的大小恰好相反.
 </p>
-<p>利用函数的单调性, 可以求出其值域: 对定义在区间 $[a,b]$ 上的增函数 $f(x)$, 其值域显然为 $[f(a),f(b)]$. 对一般的函数 $f(x)$, 也可以根据其在定义域 $D$ 各个部分上的单调性得到对应的取值范围, 然后取并集得到函数值域. 函数 $f(x)$ 在定义域 $D$ 上的最大值 (maximum) 可以记为 $f_{\max}$, 它满足 \[
-    \forall\,x\in D,\ f_{\max}\geqslant f(x);\quad
-    \exists\,x_0\in D,\ f_{\max}= f(x_0).\]
-类似地, 函数 $f(x)$ 在定义域 $D$ 上的最大值 (minimum) 可以记为 $f_{\min}$, 它满足 \[
-    \forall\,x\in D,\ f_{\min}\leqslant f(x);\quad
-    \exists\,x_0\in D,\ f_{\min}= f(x_0).\]
-最大值、最小值统称为最值. 例如, 函数 $f(x)= -x$ 在区间 $[0,1]$ 上单调递减, 其值域为 \[
+<p>利用函数的单调性, 可以求出其值域: 对定义在区间 $[a,b]$ 上的增函数 $f(x)$, 其值域显然为 $[f(a),f(b)]$. 对一般的函数 $f(x)$, 也可以根据其在定义域 $D$ 各个部分上的单调性得到对应的取值范围, 然后取并集得到函数值域. 函数 $f(x)$ 在定义域 $D$ 上的最大值 (maximum) 可以记为 $f_{\max}$, 它满足 \[\begin{aligned}
+    &\forall\,x\in D,\ f_{\max}\geqslant f(x);\\
+    &\exists\,x_0\in D,\ f_{\max}= f(x_0).
+\end{aligned}\]
+类似地, 函数 $f(x)$ 在定义域 $D$ 上的最大值 (minimum) 可以记为 $f_{\min}$, 它满足 \[\begin{aligned}
+    &\forall\,x\in D,\ f_{\min}\leqslant f(x);\\
+    &\exists\,x_0\in D,\ f_{\min}= f(x_0).
+\end{aligned}\]
+最大值、最小值统称为<strong>最值</strong>, 可用于描述函数的值域. 例如, 函数 $f(x)= -x$ 在定义域 $[0,1]$ 上单调递减, 其值域为 \[
     [f_{\min}, f_{\max}]= [f(1),f(0)]= [-1,0].\]
 </p>
 
 <myremark>
-    <p>从上述定义可以看出, 函数的最值必须是函数能取到的值, 因此有些函数没有最值. 例如, 函数 $f(x)= x$ 在实数集 $\mathbf{R}$ 和区间 $(0,1)$ 上都没有最值.
+    <p>从上述定义可以看出, 函数的最值必须是函数在定义域上能取到的值, 因此有些函数没有最值或仅有最大 (小) 值. 例如, 函数 $f(x)= x$ 在实数集 $\mathbf{R}$ 和区间 $(0,1)$ 上都没有最值, 在 $[0,1)$ 上仅有最小值, 在 $(0,1]$ 上仅有最大值.
     </p>
 </myremark>
 
@@ -49,7 +53,7 @@ nextPageTitle: 函数的奇偶性
 </p>
 <p>(2) 反比例函数 $f(x)=\dfrac{k}x$ ($k\neq 0$): $k>0$ 时分段单调递减, $k< 0$ 时分段单调递增;
 </p>
-<p>(3) 二次函数 $f(x)=ax^2+bx+c$ ($a\neq 0$): $a$ 决定图象开口方向, $-\frac{b}{2a}$ 决定对称轴位置.
+<p>(3) 二次函数 $f(x)=ax^2+bx+c$ ($a\neq 0$): $a$ 决定图象开口方向, $-\dfrac{b}{2a}$ 决定对称轴位置.
 </p>
 
 二次函数的单调性由其图象的开口方向和对称轴共同决定. 例如, 对函数 $f(x)= x^2-2x$, 其图象开口向上且对称轴为 $x=1$, 所以 $f(x)$ 在区间 $(-\infty,1]$ 上单调递减, 在区间 $[1,+\infty)$ 上单调递增.
@@ -62,11 +66,11 @@ nextPageTitle: 函数的奇偶性
 </myremark>
 
 <myexample>
-    <p>(1) 设二次函数 $f(x)= x^2-(a-1)x+5$ 在区间 $\Big(\frac12,1\Big)$ 上单调递增, 求 $f(2)$ 的取值范围.
+    <p>(1) 设二次函数 $f(x)= x^2-(a-1)x+5$ 在区间 $\Big(\dfrac12,1\Big)$ 上单调递增, 求 $f(2)$ 的取值范围.
     </p>
-    <p>(2) 若函数 $f(x)=-x^2+2ax$ 与 $g(x)=\frac{a}x$ 都在区间 $[1,2]$ 上单调递减, 求实数 $a$ 的取值范围.
+    <p>(2) 若函数 $f(x)=-x^2+2ax$ 与 $g(x)=\dfrac{a}x$ 都在区间 $[1,2]$ 上单调递减, 求实数 $a$ 的取值范围.
     </p>
-</myexercise>
+</myexample>
 
 <mysolution>
     <p>(1) 二次函数 $f(x)$ 图象开口向上, 且对称轴为 $x=\dfrac{a-1}2$, 则 \[
@@ -158,11 +162,11 @@ nextPageTitle: 函数的奇偶性
 
 <p>前面提到, 对函数 $f(x)$ 而言, 单调递增表示 $x$ 越大, $f(x)$ 也越大 (或 $x$ 越小, $f(x)$ 也越小); 单调递减表示 $x$ 越大, $f(x)$ 反而越小 (或 $x$ 越小, $f(x)$ 反而越大). 若只设 $x_1\neq x_2$, 则利用实数乘除运算的符号法则, 单调性有如下等价表示: \[\begin{aligned}
     f(x)\ \text{单调递增}\ 
-        &\Leftrightarrow \frac{f(x_1)-f(x_2)}{x_1-x_2}>0
-        \Leftrightarrow [f(x_1)-f(x_2)](x_1-x_2)>0,\\
+        &\Leftrightarrow \frac{f(x_1)-f(x_2)}{x_1-x_2}>0\\
+        &\Leftrightarrow [f(x_1)-f(x_2)](x_1-x_2)>0,\\
     f(x)\ \text{单调递减}\ 
-        &\Leftrightarrow \frac{f(x_1)-f(x_2)}{x_1-x_2}< 0
-        \Leftrightarrow [f(x_1)-f(x_2)](x_1-x_2)< 0.
+        &\Leftrightarrow \frac{f(x_1)-f(x_2)}{x_1-x_2}< 0\\
+        &\Leftrightarrow [f(x_1)-f(x_2)](x_1-x_2)< 0.
 \end{aligned}\]
 上面两个式子从左往右推导是比较容易的, 下面举例说明如何从右往左推导. 例如, 若 $\dfrac{f(x_1)-f(x_2)}{x_1-x_2}>0$, 且取 $x_1< x_2$, 则 \[
     x_1- x_2< 0,\quad f(x_1)- f(x_2)< 0,\]
@@ -183,12 +187,12 @@ nextPageTitle: 函数的奇偶性
 <myexercise>
     <p>判断下列函数是否满足“$\forall\,x_1$, $x_2\in (0,+\infty)$, $(x_1- x_2)[f(x_1)-f(x_2)]< 0$”:
     </p>
-    <p>(1) $f(x)= \frac1x$;&emsp; (2) $f(x)=(x-1)^2$.
+    <p>(1) $f(x)= \dfrac1x$;&emsp; (2) $f(x)=(x-1)^2$.
     </p>
 </myexercise>
 
 <details><summary>参考答案</summary>
-    <p>题意表明 $f(x)$ 在 $(0,+\infty)$ 单调递减, 故只有 $f(x)= \frac1x$ 符合题意.
+    <p>题意表明 $f(x)$ 在 $(0,+\infty)$ 单调递减, 故只有 $f(x)= \dfrac1x$ 符合题意.
     </p>
 </details>
 
@@ -207,15 +211,15 @@ nextPageTitle: 函数的奇偶性
 在 $\mathbf{R}$ 上单调递减的等价描述. 建议结合如下函数草图记忆上述结论:
 </p>
 
-<img alt="分段函数单调递增" src="/figs/2020/2020-1115/2020-1115-1135.svg"></img>
+<img alt="分段函数单调递增" src="/figs/2020/2020-11/2020-1115-1135.svg"></img>
 
-<img alt="分段函数单调递减" src="/figs/2020/2020-1115/2020-1115-1130.svg"></img>
+<img alt="分段函数单调递减" src="/figs/2020/2020-11/2020-1115-1130.svg"></img>
 
 
 <myexample>
     <p>(1) 若函数 \[f(x)=\begin{cases}
         (a-3)x+5, & x\leqslant 1,\\[6pt]
-        \frac{2a}x, & x>1 \end{cases}\]
+        \dfrac{2a}x, & x>1 \end{cases}\]
     在 $\mathbf{R}$ 上单调递减, 求 $a$ 的取值范围;
     </p>
     <p>(2) 若函数 \[g(x)= \begin{cases}
@@ -248,7 +252,7 @@ nextPageTitle: 函数的奇偶性
     </p>
     <p>(2) 若函数 \[g(x)=\begin{cases}
       (a^2-3)x+5, & x\leqslant 1,\\[6pt]
-      \frac{3a}x, & x>1 \end{cases}\]
+      \dfrac{3a}x, & x>1 \end{cases}\]
     在 $\mathbf{R}$ 上单调递增, 求 $a$ 的取值范围.
     </p>
 </myexercise>
@@ -268,20 +272,20 @@ nextPageTitle: 函数的奇偶性
 
 利用函数的单调性可以解由简单的抽象函数构成的不等式 (简称抽象不等式) 或方程.
 
-<myexercise>
+<myexample>
     <p>(1) 若定义在 $[-1,1]$ 上的函数 $f(x)$ 单调递增, 且 $f(x-1)< f(1-3x)$, 求 $x$ 的取值范围;
     </p>
     <p>(2) 解不等式 \[
-        (x-1)^3+ (x-1)< (1-3x)^3+ (1-3x)$.
+        (x-1)^3+ (x-1)< (1-3x)^3+ (1-3x).\]
     </p>
-</myexercise>
+</myexample>
 
 <mysolution>
-    <p>(1) 由题意, $-1\leqslant x-1< 1-3x\leqslant 1$, 解得 $x\in\Big[0,\frac12\Big)$.
+    <p>(1) 由题意, $-1\leqslant x-1< 1-3x\leqslant 1$, 解得 $x\in\Big[0,\dfrac12\Big)$.
     </p>
     <p>(2) 设 $g(x)=x^3+x$, 原不等式化为 \[
         g(x-1)< g(1-3x).\]
-    由 $y=x^3$ 和 $y=x$ 均在 $\mathbf{R}$ 上单调递增知, $g(x)$ 也单调递增, 所以 $x-1< 1-3x$ 即 $x\in\Bigl(-\infty,\frac12\Bigr)$.
+    由 $y=x^3$ 和 $y=x$ 均在 $\mathbf{R}$ 上单调递增知, $g(x)$ 也单调递增, 所以 $x-1< 1-3x$ 即 $x\in\Bigl(-\infty,\dfrac12\Bigr)$.
     </p>
 </mysolution>
 
@@ -306,14 +310,14 @@ nextPageTitle: 函数的奇偶性
 <myexample>
     <p>(1) 求“一次函数 $f(x)= ax+b$ ($a\neq 0$) 在 $[-1,1]$ 上恒正”的充要条件;
     </p>
-    <p>(2) 若对于任意实数 $a\in[-1,1]$, 函数 $y=x^2+(a-4)x+4-2a$ 的值恒大于零, 求 $x$ 的取值范围.
+    <p>(2) 若对于任意实数 $a\in[-1,1]$, 函数 $f(x)= x^2+(a-4)x+4-2a$ 的值恒大于零, 求 $f(x)$ 的定义域.
     </p>
 </myexample>
 <mysolution>
     <p>(1) 一次函数 $f(x)= ax+b$ 在 $[-1,1]$ 上的图象为一条线段, 所以 $f(x)$ 恒正等价于图象两个端点纵坐标均大于零: $f(-1)>0$ 且 $f(1)>0$, 即 $-a+b>0$ 且 $a+b>0$.
     </p>
     <p>(2) 此题可理解为 (反客为主): 关于 $a$ 的函数 \[
-        y= g(a)=x^2+(a-4)x+4-2a\]
+        g(a)=x^2+(a-4)x+4-2a\]
     在 $[-1,1]$ 上恒大于零. 此时 \[
         g(a)= (x-2)a+ x^2-4x+4\]
     为关于 $a$ 的一次函数, 所以 \[\left\{\!\!\begin{array}{l}
