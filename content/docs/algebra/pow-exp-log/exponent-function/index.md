@@ -47,6 +47,50 @@ nextPageTitle: 对数运算
     a^{-\frac34}= \frac1{a^{\frac34}}= \frac1{\sqrt[4]{a^3}}.\]
 </p>
 
+
+<myexample>
+<p>已知函数 $f(x)= a- \dfrac1{2^x+1}$ 为奇函数.
+</p>
+<p>(1) 求 $a$ 的值, 并判断 $f(x)$ 的单调性;
+</p>
+<p>(2) 若不等式 $f(x-x^2)+ f(x+a)< 0$ 恒成立, 求 $a$ 的取值范围.
+</p>
+</myexample>
+<mysolution>
+    <p>(1) 由已知, $f(-x)= -f(x)$, 即
+    \[a- \dfrac1{2^{-x}+1}= -\biggl(a- \dfrac1{2^x+1}\biggr),\]
+    整理得
+    \[\begin{aligned}
+        a&= \frac12\biggl(\dfrac1{2^x+1}+ \dfrac1{2^{-x}+1}\biggr)
+        = \frac12\cdot \dfrac{2^{-x}+1+ 2^x+1}{(2^x+ 1)(2^{-x}+ 1)}\\
+        &= \frac12\cdot \dfrac{2^{-x}+1+ 2^x+1}{1+ 2^x+ 2^{-x}+ 1}
+        = \frac12.
+    \end{aligned}\]
+    上式也可计算如下
+    \[\begin{aligned}
+        a&= \frac12\biggl(\dfrac1{2^x+1}+ \dfrac1{2^{-x}+1}\biggr)
+        = \frac12\biggl(\dfrac1{2^x+1}+ \dfrac{2^x}{2^x\cdot 2^{-x}+2^x}\biggr)\\
+        &= \frac12\cdot \biggl(\dfrac1{2^x+1}+ \dfrac{2^x}{1+2^{x}}\biggr)
+        = \frac12.
+    \end{aligned}\]
+    因此 $f(x)= \dfrac12- \dfrac1{2^x+1}$.
+</p>
+<p>由复合函数单调性知, 当 $x\nearrow$ 时, $2^x+1\nearrow$ 且恒正, 所以 $\dfrac1{2^x+1}\searrow$, 而
+    \[f(x)= \dfrac12- \dfrac1{2^x+1}\nearrow,\]
+    即 $f(x)$ 为单增函数. 判断单调性也可以直接用定义: 任取 $x_1< x_2$, 计算可知
+    \[f(x_1)-f(x_2)= \dfrac{2^{x_1}- 2^{x_2}}{(2^{x_1}+ 1)(2^{x_2}+ 1)}< 0.\]
+</p>
+<p>(2) 因为 $f(x)$ 为奇函数, 所以不等式化为
+    \[f(x+a)< -f(x-x^2)= f(x^2-x).\]
+    又因为 $f(x)$ 为单增函数, 所以
+    \[x+a< x^2-x,\quad\text{即}\quad x^2-2x-a>0.\]
+    上式恒成立的充要条件是
+    \[\Delta= (-2)^2- 4\cdot(-a)< 0,\quad\text{解得}\quad
+        a< -1,\]
+    所求取值范围是 $(-\infty,-1)$.
+</p>
+</mysolution>
+
 <p>\begin{example}\label{exa:201201-2020}
     已知函数
     \[f(x)= \begin{cases}

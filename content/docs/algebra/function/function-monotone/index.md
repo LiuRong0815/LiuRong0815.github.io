@@ -5,8 +5,8 @@ weight: 2
 # bookHidden: true
 prevPage: /docs/algebra/function/function-def
 prevPageTitle: 函数的定义
-# nextPage: /docs/algebra/function/function-oddeven
-# nextPageTitle: 函数的奇偶性
+nextPage: /docs/algebra/function/function-oddeven
+nextPageTitle: 函数的奇偶性
 ---
 
 # 函数的单调性
@@ -154,9 +154,14 @@ prevPageTitle: 函数的定义
 </p>
 
 <myremark>
-    <p>上述结论也可以从图象的角度来直观理解, 例如, $f(x)+k$ 的图象可由 $f(x)$ 的图象上下平移得到, 故两者单调性相同. 同理, $kf(x)$ 的图象是由 $f(x)$ 的图象相对于 $x$ 轴拉伸或压缩得到的, $f(x)+g(x)$ 的图象可看成由 $f(x)$ 与 $g(x)$ 的图象“叠加”而成.
+    <p>(1) 上述结论也可以从图象的角度来直观理解, 例如, $f(x)+k$ 的图象可由 $f(x)$ 的图象上下平移得到, 故两者单调性相同. 同理, $kf(x)$ 的图象是由 $f(x)$ 的图象相对于 $x$ 轴拉伸或压缩得到的, $f(x)+g(x)$ 的图象可看成由 $f(x)$ 与 $g(x)$ 的图象“叠加”而成.
+    </p>
+    <p>(2) 若 $f(x)$, $g(x)$ 均单调递增 (减), 则仅在两者非负时, 才能得到 $f(x)g(x)$ 单调递增 (减). 例如, $f(x)= x$, $g(x)= x+1$ 均为增函数, 但是 $f(x)g(x)= x(x+1)$ 并非增函数. 
     </p>
 </myremark>
+
+<p>例如, 函数 $f(x)= x$ 与 $g(x)= -\dfrac1x$ 均在 $(-\infty,0)$ 与 $(0,+\infty)$ 上单调递增, 所以 $f(x)+g(x)= x-\dfrac1x$ 也在 $(-\infty,0)$ 与 $(0,+\infty)$ 上单调递增.
+</p>
 
 ## 单调性的等价表示
 
@@ -289,10 +294,25 @@ prevPageTitle: 函数的定义
     </p>
 </mysolution>
 
-<myremark>
-    <p>上例 (2) 中, 将具体的不等式化为抽象不等式, 是为了更方便地应用单调性.
+上例 (2) 中, 将具体的不等式化为抽象不等式, 是为了更方便地应用单调性. 下面的例子也可以用同样的方法.
+
+<myexample>
+    解不等式 $x>\dfrac1x$.
+</myexample>
+<mysolution>
+    <p>方法一: 不等式化为 $x-\dfrac1x>0$. 令 $f(x)= x-\dfrac1x$, 则不等式为 $f(a)> 0$. 根据函数 $f(x)$ 在 $(-\infty,0)$ 和 $(0,+\infty)$ 上均单调递增, 且与 $x$ 轴的交点为 $(-1,0)$ 和 $(1,0)$, 大致描绘 $f(x)$ 的图象. 由此可知, $x\in(-\infty,-1)\cup(1,+\infty)$.
     </p>
-</myremark>
+    <img alt="f(x)= x-\dfrac1x 的图象" src="/figs/2022/2022-09/2022-0917-1140.svg"></img>
+    <p>方法二: 作出函数 $g(x)= x$ 和 $h(x)= \dfrac1x$ 的图象. 不等式表明 $g(x)> h(x)$, 由图可知 $x\in(-\infty,-1)\cup(1,+\infty)$.
+    </p>
+    <img alt="g(x)= x 和 h(x)= \dfrac1x 的图象" src="/figs/2020/2020-11/2020-1129-0950.svg"></img>
+    <p>方法三: 分别讨论 $x>0$ 和 $x< 0$ 的情形, 或将不等式化为 \[
+        x-\frac1x> 0\Rightarrow \frac{x^2-1}x> 0\Rightarrow (x^2-1)x>0,\]
+    再用<a href="/docs/prerequisite/inequality/fraction-high-order-inequality/#穿根法-2022-0917-1150">穿根法</a>.
+    </p>
+</mysolution>
+
+由上例的三种方法可以看出, 借助函数图象有时可以简化不等式的求解过程, 也更能保证正确性.
 
 <myexercise>
     <p>设函数 \[f(x)=\begin{cases}

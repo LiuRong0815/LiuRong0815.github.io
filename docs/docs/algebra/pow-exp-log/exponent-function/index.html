@@ -1,5 +1,5 @@
 <!doctype html><html lang=zh dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="指数函数 # 乘方是多个相同式子相乘的简写, 例如, \[ a^2= a\cdot a,\quad b^3= b\cdot b\cdot b.\] 对于正整数 $m,n$, 可知 \[\begin{gathered} a^m \cdot a^n= a^{m+n},\\ (a^m)^n= a^{mn},\quad (ab)^m= a^m b^m. \end{gathered}\] 例如, \[ (4^2)^3= 4^2\cdot 4^2\cdot 4^2= 4^{2\cdot 3}.\] 当 $a\neq 0$ 且正整数 $m,n$ 满足 $m\geqslant n$ 时, \[ \frac{a^m}{a^n}= a^{m-n},\quad \frac{a^n}{a^m}= \frac1{a^{m-n}},\] 例如, \[ \frac{2^5}{2^3}= a^{5-3},\quad \frac{2^3}{2^5}= \frac1{2^{5-3}}.\] 特别地, 当 $m=n$ 时, 可得 \[ a^0= a^{n-n}= \frac{a^n}{a^n}= 1\quad (a\neq 0).\] 在公式 $a^m \cdot a^n= a^{m+n}$ 中令 $m= -n$, 则 \[ a^{-n} \cdot a^n= a^{-n+n}= a^0= 1,\] 所以规定 $a^{-n}= \dfrac1{a^n}$."><meta name=theme-color content="#FFFFFF"><meta property="og:title" content="指数函数"><meta property="og:description" content="指数函数 # 乘方是多个相同式子相乘的简写, 例如, \[ a^2= a\cdot a,\quad b^3= b\cdot b\cdot b.\] 对于正整数 $m,n$, 可知 \[\begin{gathered} a^m \cdot a^n= a^{m+n},\\ (a^m)^n= a^{mn},\quad (ab)^m= a^m b^m. \end{gathered}\] 例如, \[ (4^2)^3= 4^2\cdot 4^2\cdot 4^2= 4^{2\cdot 3}.\] 当 $a\neq 0$ 且正整数 $m,n$ 满足 $m\geqslant n$ 时, \[ \frac{a^m}{a^n}= a^{m-n},\quad \frac{a^n}{a^m}= \frac1{a^{m-n}},\] 例如, \[ \frac{2^5}{2^3}= a^{5-3},\quad \frac{2^3}{2^5}= \frac1{2^{5-3}}.\] 特别地, 当 $m=n$ 时, 可得 \[ a^0= a^{n-n}= \frac{a^n}{a^n}= 1\quad (a\neq 0).\] 在公式 $a^m \cdot a^n= a^{m+n}$ 中令 $m= -n$, 则 \[ a^{-n} \cdot a^n= a^{-n+n}= a^0= 1,\] 所以规定 $a^{-n}= \dfrac1{a^n}$."><meta property="og:type" content="article"><meta property="og:url" content="/docs/algebra/pow-exp-log/exponent-function/"><meta property="article:section" content="docs"><title>指数函数 | 高中数学资料</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.6c08f1f220250ecc36dde6a6fa75fdd4247d84aaaa23d4bc157c9b2f8fa595bd.css><script defer src=/flexsearch.min.js></script>
-<script defer src=/zh.search.min.96b858b06af04dd6c02ef3c2bc413da1627c760a62e25793e95b5e6a9594ff0e.js></script>
+<script defer src=/zh.search.min.67cd74fba560ddae1ae3d0cf61b466ebed50c1a2cf37863b1a8fbbb3ff130d13.js></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js></script>
 <link rel=stylesheet href=/katex/katex.min.css crossorigin=anonymous><script defer src=/katex/katex.min.js crossorigin=anonymous></script>
 <script defer src=/katex/auto-render.min.js onload=renderMathInElement(document.body)></script>
@@ -12,7 +12,7 @@
 <label for=section-4adec7e7d2e2d6fa5eaee0a98a60892e class="flex justify-between"><a href=/docs/prerequisite/set-logic/>集合与简易逻辑</a></label><ul><li><a href=/docs/prerequisite/set-logic/set-def/>集合的定义</a></li><li><a href=/docs/prerequisite/set-logic/set-operation/>集合的运算</a></li><li><a href=/docs/prerequisite/set-logic/proposition-iff/>命题与充要条件</a></li><li><a href=/docs/prerequisite/set-logic/logical-quantifier/>逻辑量词</a></li></ul></li><li><input type=checkbox id=section-0efa6e9487d50f8c7308e9898b74ff74 class=toggle>
 <label for=section-0efa6e9487d50f8c7308e9898b74ff74 class="flex justify-between"><a href=/docs/prerequisite/inequality/>不等式</a></label><ul><li><a href=/docs/prerequisite/inequality/inequality-property/>不等式的性质</a></li><li><a href=/docs/prerequisite/inequality/abs-quadratic-inequality/>绝对值不等式与二次不等式</a></li><li><a href=/docs/prerequisite/inequality/fraction-high-order-inequality/>分式不等式与高次不等式</a></li><li><a href=/docs/prerequisite/inequality/mean-value-inequality/>均值不等式</a></li></ul></li></ul></li><li><input type=checkbox id=section-6b7b5278f8f5ec430af926e6cf241cb9 class=toggle checked>
 <label for=section-6b7b5278f8f5ec430af926e6cf241cb9 class="flex justify-between"><a href=/docs/algebra/>代数</a></label><ul><li><input type=checkbox id=section-5f6c3d80998cc99feeb36c6361c69467 class=toggle>
-<label for=section-5f6c3d80998cc99feeb36c6361c69467 class="flex justify-between"><a href=/docs/algebra/function/>函数</a></label><ul><li><a href=/docs/algebra/function/function-def/>函数的定义</a></li><li><a href=/docs/algebra/function/function-monotone/>函数的单调性</a></li></ul></li></ul></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
+<label for=section-5f6c3d80998cc99feeb36c6361c69467 class="flex justify-between"><a href=/docs/algebra/function/>函数</a></label><ul><li><a href=/docs/algebra/function/function-def/>函数的定义</a></li><li><a href=/docs/algebra/function/function-monotone/>函数的单调性</a></li><li><a href=/docs/algebra/function/function-oddeven/>函数的奇偶性</a></li></ul></li></ul></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
 <strong>指数函数</strong>
 <label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#指数函数>指数函数</a></li></ul></nav></aside></header><article class=markdown><h1 id=指数函数>指数函数
 <a class=anchor href=#%e6%8c%87%e6%95%b0%e5%87%bd%e6%95%b0>#</a></h1><p>乘方是多个相同式子相乘的简写, 例如, \[
@@ -42,7 +42,33 @@ a^{-n}= \dfrac1{a^n},\quad
 a^{\frac1n}= \sqrt[n]{a}.
 \end{gathered}\]
 虽然在前面均假设 $m,n$ 为正整数, 但是上面的 $6$ 个公式可以推广到 $m,n$ 为任意实数的情形 (记忆时仍不妨只考虑正整数的情形). 最后两个式子可记为“指数中的负号表示取倒数, 分母表示开根号”, 此外“指数中的分子表示乘方”, 例如, \[
-a^{-\frac34}= \frac1{a^{\frac34}}= \frac1{\sqrt[4]{a^3}}.\]</p><p>\begin{example}\label{exa:201201-2020}
+a^{-\frac34}= \frac1{a^{\frac34}}= \frac1{\sqrt[4]{a^3}}.\]</p><myexample><p>已知函数 $f(x)= a- \dfrac1{2^x+1}$ 为奇函数.</p><p>(1) 求 $a$ 的值, 并判断 $f(x)$ 的单调性;</p><p>(2) 若不等式 $f(x-x^2)+ f(x+a)< 0$ 恒成立, 求 $a$ 的取值范围.</p></myexample><mysolution><p>(1) 由已知, $f(-x)= -f(x)$, 即
+\[a- \dfrac1{2^{-x}+1}= -\biggl(a- \dfrac1{2^x+1}\biggr),\]
+整理得
+\[\begin{aligned}
+a&= \frac12\biggl(\dfrac1{2^x+1}+ \dfrac1{2^{-x}+1}\biggr)
+= \frac12\cdot \dfrac{2^{-x}+1+ 2^x+1}{(2^x+ 1)(2^{-x}+ 1)}\\
+&= \frac12\cdot \dfrac{2^{-x}+1+ 2^x+1}{1+ 2^x+ 2^{-x}+ 1}
+= \frac12.
+\end{aligned}\]
+上式也可计算如下
+\[\begin{aligned}
+a&= \frac12\biggl(\dfrac1{2^x+1}+ \dfrac1{2^{-x}+1}\biggr)
+= \frac12\biggl(\dfrac1{2^x+1}+ \dfrac{2^x}{2^x\cdot 2^{-x}+2^x}\biggr)\\
+&= \frac12\cdot \biggl(\dfrac1{2^x+1}+ \dfrac{2^x}{1+2^{x}}\biggr)
+= \frac12.
+\end{aligned}\]
+因此 $f(x)= \dfrac12- \dfrac1{2^x+1}$.</p><p>由复合函数单调性知, 当 $x\nearrow$ 时, $2^x+1\nearrow$ 且恒正, 所以 $\dfrac1{2^x+1}\searrow$, 而
+\[f(x)= \dfrac12- \dfrac1{2^x+1}\nearrow,\]
+即 $f(x)$ 为单增函数. 判断单调性也可以直接用定义: 任取 $x_1< x_2$, 计算可知
+\[f(x_1)-f(x_2)= \dfrac{2^{x_1}- 2^{x_2}}{(2^{x_1}+ 1)(2^{x_2}+ 1)}< 0.\]</p><p>(2) 因为 $f(x)$ 为奇函数, 所以不等式化为
+\[f(x+a)< -f(x-x^2)= f(x^2-x).\]
+又因为 $f(x)$ 为单增函数, 所以
+\[x+a< x^2-x,\quad\text{即}\quad x^2-2x-a>0.\]
+上式恒成立的充要条件是
+\[\Delta= (-2)^2- 4\cdot(-a)< 0,\quad\text{解得}\quad
+a< -1,\]
+所求取值范围是 $(-\infty,-1)$.</p></mysolution><p>\begin{example}\label{exa:201201-2020}
 已知函数
 \[f(x)= \begin{cases}
 (4a-3)x+a+\dfrac12, & x< 0,\\

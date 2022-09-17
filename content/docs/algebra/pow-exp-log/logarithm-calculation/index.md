@@ -11,6 +11,22 @@ nextPageTitle: 对数函数
 
 # 对数运算
 
+
+<myexample>
+<p>已知 $f(x)$ 是定义在 $\mathbf{R}$ 上的偶函数, 且当 $x\in(-\infty,0]$ 时, $f(x)= 2^x+\dfrac13$, 求 $f\biggl(\log_2 \dfrac32\biggr)$ 的值.
+</p>
+</myexample>
+<mysolution>
+    <p>因为 $\log_2 \dfrac32> \log_2 1=0$, 而已知的是当 $x\in(-\infty,0]$ 时的解析式, 且 $f(x)$ 是定义在 $\mathbf{R}$ 上的偶函数知, 
+    \[f\biggl(\log_2 \dfrac32\biggr)
+        = f\biggl(-\log_2 \dfrac32\biggr)
+        = 2^{-\log_2 \frac32}+\dfrac13.\]
+    结合对数运算法则 (参考“2020 年 11 月 8 日答疑记录”的第二部分), 
+    \[2^{-\log_2 \frac32}= 2^{\log_2 \frac23}= \frac23,\]
+    所以 $f\biggl(\log_2 \dfrac32\biggr)=1$.
+</p>
+</mysolution>
+
 <myexample>
 <p>化简求值:  $\mathrm{e}^{-\ln 2}$, $\dfrac{\log_8 9}{\log_2 3}$.
 </p>

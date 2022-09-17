@@ -11,6 +11,32 @@ nextPageTitle: 二次函数
 
 # 函数的图象
 
+## 函数的周期性
+
+<p>\begin{example}\label{exa:201204-2125}
+    已知定义在 $\mathbf{R}$ 上的奇函数 $f(x)$ 满足 $f(x+4)=f(x)$ 且 $f(1)=1$, 求 $f(3)+f(4)+f(5)$ 的值.
+</p>
+</myexample>
+<mysolution>
+    <p>对定义在 $\mathbf{R}$ 上的奇函数 $f(x)$, 恒有 $f(-x)=-f(x)$. 令 $x=0$ 得 $f(0)=-f(0)$, 所以 $f(0)=0$. 结合 $f(x+4)=f(x)$ 知,
+    \[\begin{aligned}
+        \text{令 $x=0$:}&\ f(4)=f(0)=0,\\
+        \text{令 $x=1$:}&\ f(5)=f(1)=1,\\
+        \text{令 $x=-1$:}&\ f(3)=f(-1)=-f(1)=-1.
+    \end{aligned}\]
+    所以 $f(3)+f(4)+f(5)= (-1)+0+1=0$.
+</p>
+</mysolution>
+</p>
+<p><myremark>
+    <p>(1) 由上面的解法可知, 条件“$f(1)=1$”是多余的, 因为只需要推出 $f(4)=0$ 和 $f(3)=-f(1)$ 即可得到最终结论.
+</p>
+<p>(2) 例 \ref{exa:201204-2125} 中还证明了一个结论 (可当作定理直接使用): 若 $f(x)$ 为定义在 $\mathbf{R}$ 上的奇函数, 则 $f(0)=0$.
+</p>
+</myremark>
+
+
+## 高斯函数与狄利克雷函数
 
 <p>\begin{example}\label{exa:201206-1410}
     若 $a$, $b>0$, 则“$a>b$”是“$a-\dfrac1a> b-\dfrac1b$”的什么条件?
@@ -97,6 +123,62 @@ nextPageTitle: 二次函数
 </p>
 </mysolution>
 
+<myexercise>
+    <p>已知 $\mathbf{R}$ 上的奇函数 $f(x)$ 满足 $f(x+2)=-f(x)$,
+    那么 $f(-6)=$\,?
+  </p>
+</myexercise>
+</p>
+<p><mysolution>
+    <p>    由已知 $f(x)=-f(x+2)$, 所以 
+    \mymarginpar{$\mathbf{R}$ 上的奇函数 $f(x)$ 必满足 $f(0)=0$.}
+    \[f(-6)=-f(-4)=f(-2)=-f(0)=0.\]
+  </p>
+</mysolution>
+
+<myexample>
+<p>若 $x$ 为实数, $[x]$ 表示不超过 $x$ 的最大整数, 
+    则下面关于定义域在 $\mathbf{R}$ 上的函数 $f(x)=x-[x]$ 的说法正确的是\,?
+</p>
+<p>(1) 奇函数;\qquad (2) 偶函数;\qquad 
+    (3) 单调递增函数;\qquad (4) 周期函数.
+  </p>
+</myexample>
+</p>
+<p><mysolution>
+    <p>    由 $f(x)$ 的图象可知, 只有 (4) 正确.
+    \mymarginpar{函数 $y=[x]$ 的图象如下\\[4pt]
+      \centering
+      \begin{tikzpicture}[line cap=round,line join=round,scale=0.6]
+        \draw[\myaxisarrow] (-2.5,0) -- (3.7,0) node[below] {$x$};
+        \draw[\myaxisarrow] (0,-2.5) -- (0,2.7) node[left] {$y$};
+        \foreach \i in {-2,1,2}
+          {\draw[line width=0.5pt, densely dashed] (\i,0)--(\i,\i) (\i+1,0)--(\i+1,\i);}
+        \foreach \i in {-2,...,2}
+          {\draw[fill=black,line width=0.6pt] (\i,\i) circle (1.8pt) --(\i+1,\i);
+           \draw[fill=white] (\i+1,\i) circle (1.8pt);}
+        \foreach \i in {-2,-1}
+          {\draw (\i,0) node[above] {$\i$};}
+        \foreach \i in {1,2,3}
+          {\draw (\i,0) node[below] {$\i$};}
+        \draw (0,0) node[anchor=north east] {$O$} (0.1,1.5) node[right] {$y=[x]$};
+      \end{tikzpicture}}
+    <center>
+    \begin{tikzpicture}[line cap=round,line join=round,scale=0.8]
+      \draw[\myaxisarrow] (-2.5,0) -- (2.7,0) node[below] {$x$};
+      \draw[\myaxisarrow] (0,-0.7) -- (0,1.6) node[left] {$y$};
+      \foreach \i in {-1,1,2}
+        {\draw[line width=0.5pt, densely dashed] (\i,0)--(\i,1);}
+      \foreach \i in {-2,-1,0,1}
+        {\draw[fill=black,line width=0.6pt] (\i,0) circle (1.5pt) --(\i+1,1);
+         \draw[fill=white,line width=0.6pt] (\i+1,1) circle (1.5pt);}
+      \foreach \i in {-2,-1,1,2}
+        {\draw (\i,0) node[below] {$\i$};}
+      \draw (0,0) node[anchor=north east] {$O$} (1.5,1.5) node[right] {$f(x)$};
+    \end{tikzpicture}
+    </center>
+  </p>
+</mysolution>
 
 <myexample>
 <p>已知函数 $f(x)= \dfrac{2x+1}{x+1}$, 求该函数在区间 $[1,4]$ 上的最大值与最小值.

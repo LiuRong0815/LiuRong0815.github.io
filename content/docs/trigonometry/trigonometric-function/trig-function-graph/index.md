@@ -737,3 +737,22 @@ nextPageTitle: 正弦定理与余弦定理
 </p>
 </mysolution>
 
+<myexercise>
+    <p>设函数 $f(x)= a\sin x+x^2$, 若 $f(1)=0$, 则 $f(-1)$ 的值为\,?
+  </p>
+</myexercise>
+</p>
+<p><mysolution>
+    <p>    因为 $y=\sin x$ 为奇函数, 所以
+    \[f(1)=a\sin1+1,\quad (-1)=-a\sin1+1,\]
+    相加得 $f(1)+f(-1)=2$, 则 $f(-1)=2$.
+</p>
+<p>\varexercise 设函数 $f(x)= a\sin x+b\tan x+x^2$, 若 $f(1)=0$, 则 $f(-1)$ 的值为\,?
+</p>
+<p>同上方法可知 $f(-1)=1$.
+</p>
+<p>\varexercise 设函数 $f(x)= \frac{a\sin x}{\mathrm{e}^x+\mathrm{e}^{-x}}+x^2$, 若 $f(1)=0$, 则 $f(-1)$ 的值为\,?
+</p>
+<p>仍然可得 $f(-1)=1$.
+  </p>
+</mysolution>
