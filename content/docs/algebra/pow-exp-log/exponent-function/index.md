@@ -91,6 +91,48 @@ nextPageTitle: 对数运算
 </p>
 </mysolution>
 
+<p>\lianxi
+  \begin{exercise}[s]
+    对于每一个实数 $x$, $f(x)$ 取 $4-x$, $x+2$, $3^x$ 三个值中最小的值,
+    则 $f(x)$ 的最大值为\,?
+  </p>
+</myexercise>
+</p>
+<p><mysolution>
+    <p>    作函数 $y=4-x$, $y=x+2$, $y=3^x$ 的图象, 对比可知 $f_{\max}= f(1)=3$.
+    \mymarginpar{\centering
+    \begin{tikzpicture}[line cap=round,line join=round,scale=0.5]
+      \draw[\myaxisarrow] (-3,0) -- (5,0) node[below] {$x$};
+      \draw[\myaxisarrow] (0,-0.7) -- (0,5) node[left] {$y$};
+      \draw[line width=0.6pt,smooth,samples=100] 
+        plot[domain=-1.9:1](\x,{3^(\x)});
+      \draw[line width=0.6pt,smooth,samples=100,dotted]
+        plot[domain=-2.5:-1.9](\x,{3^(\x)})
+        plot[domain=1:1.4](\x,{3^(\x)});
+      \draw[line width= 0.6pt] (-2.6,-0.6)--(-1.8,0.2) (1,3)--(4.7,-0.7);
+      \draw[densely dashed,line width=0.6pt] (-1.9,0.1)--(2,4);
+      \draw[dash dot,line width=0.6pt] (-0.7,4.7)--(1,3);
+      \draw (0,0) node[anchor=north east] {$O$} 
+        (-2,0) node[below,xshift=2pt] {$-2$}
+        (4,0) node[below,xshift=-2pt] {$4$}
+        (1,0) node[below] {$1$} --(1,0.15)
+        (0,4) node[left,yshift=-2pt] {$4$}
+        (1,3) node[right,xshift=2pt] {$(1,3)$};
+    \end{tikzpicture}}
+  </p>
+</mysolution>
+
+<myexercise>
+    <p>若函数 $f(x)$ 的图象向右平移 $1$ 个单位长度所得图象与 
+    $y=\mathrm{e}^x$ 的图象关于 $y$ 轴对称, 则 $f(x)=$\,?
+  </p>
+</myexercise>
+</p>
+<p><mysolution>
+    <p>    $y=\mathrm{e}^x$ 的图象关于 $y$ 轴对称, 再向左平移 $1$ 个单位长度, 可得 $f(x)=\mathrm{e}^{-(x+1)}$.
+  </p>
+</mysolution>
+
 <p>\begin{example}\label{exa:201201-2020}
     已知函数
     \[f(x)= \begin{cases}

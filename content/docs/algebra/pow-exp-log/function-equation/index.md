@@ -11,6 +11,18 @@ nextPageTitle: 数列
 
 # 利用函数图象研究方程
 
+
+<myexercise>
+    <p>函数 $f(x)= \ln x$ 与 $g(x)=x^2 -4x+4$ 的图象的交点个数为\,?
+  </p>
+</myexercise>
+</p>
+<p><mysolution>
+    <p>    作草图可知, 共有两个交点.
+    \mymarginpar{进一步分析可知, 两个交点横坐标分别在 $[1,2]$ 和 $[3,4]$ 内.}
+  </p>
+</mysolution>
+
 <myexample>
 <p>求函数 $f(x)=4^x-2^x-2$ 的零点.
 </p>

@@ -12,6 +12,11 @@ nextPageTitle: 指数函数
 # 幂函数
 
 
+<myexercise>
+    <p>在同一平面直角坐标系中, 作出函数 $f(x)=x^a$ ($x>0$), $g(x)=\log_a x$ 的图象.
+    </p>
+<myexercise>
+
 <p>幂函数 $y= x^a$ (均取由 $a$ 对应的自然定义域) 的大致图形如下:
 </p>
 <p><center>

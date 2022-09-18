@@ -11,14 +11,14 @@ nextPageTitle: 函数的单调性
 
 # 函数的定义
 
-<p>函数是两个非空数集之间特定的对应关系. 设数集 $A$, $B\neq \varnothing$, 若对 $A$ 中的任意元素 $a$, 按确定的对应法则 $f$, 有 $B$ 中的唯一元素 $b$ 与 $a$ 对应, 则称 $f$ 是定义在 $A$ 上的函数 (function), 通常记成 \[
+<p>函数是两个非空数集之间特定的对应关系. 设数集 $D$, $B\neq \varnothing$, 若对 $D$ 中的任意元素 $x$, 按确定的对应法则 $f$, 有 $B$ 中的唯一元素 $y$ 与 $x$ 对应, 则称 $f$ 是定义在 $R$ 上的函数 (function), 通常记成 \[
     y= f(x),\quad x\in A.\]
-有时也记成 $f\colon A\to B$, 或 \[
-    x\in A\xrightarrow{f} y\in B.\]
-此时, 称 $x$ 为自变量, $y$ 为因变量 (也称 $y$ 是 $x$ 的函数), 并称 $A$ 为 $f$ 的定义域 (domain), \[
-    f(A)= \{f(x)\mid x\in A\}\]
-为 $f$ 的值域 (range). 显然 $f(A)\subseteq B$, 即定义中的数集 $B$ 不一定是为值域. 定义在数集 $A$ 上的函数 $f$ 的图象为点集 \[
-    \{(x,y)\mid x\in A,y= f(x)\}.\]
+有时也记成 $f\colon D\to B$, 或 \[
+    x\in D\xrightarrow{f} y\in B.\]
+此时, 称 $x$ 为自变量, $y$ 为因变量 (也称 $y$ 是 $x$ 的函数), 并称 $D$ 为 $f$ 的定义域 (domain), \[
+    f(D)= \{f(x)\mid x\in D\}\]
+为 $f$ 的值域 (range). 显然 $f(D)\subseteq B$, 即定义中的数集 $B$ 包含值域. 定义在数集 $D$ 上的函数 $f$ 的图象为点集 \[
+    \{(x,y)\mid x\in D,y= f(x)\}.\]
 </p>
 
 <p>

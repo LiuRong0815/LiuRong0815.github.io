@@ -11,6 +11,26 @@ nextPageTitle: 复合函数与反函数
 
 # 对数函数
 
+<myexercise>
+    <p>怎样由函数 $y= \lg\dfrac{x+3}{10}$ 的图象得到 $y= \lg x$ 的图象\,?
+  </p>
+</myexercise>
+</p>
+<p><mysolution>
+    <p>    $y=\lg(x+3)-1$, 向左平移 $3$ 个单位长度, 再向下平移 $1$ 个单位长度.
+  </p>
+</mysolution>
+
+<myexercise>
+    <p>怎样由函数 $y=\log_2 x$ 的图象得到 $y=\log_2 \sqrt{x-1}$ 的图象\,?
+  </p>
+</myexercise>
+</p>
+<p><mysolution>
+    <p>    后一函数可化为 $y=\frac12\log_2 (x-1)$, 所以可由 $y=\log_2 x$ 的图象向右平移 $1$ 个单位长度, 然后横坐标不变, 纵坐标变为原来的 $\frac12$ 而得到.
+  </p>
+</mysolution>
+
 <myexample>
 <p>比较下列各组数的大小:
 </p>

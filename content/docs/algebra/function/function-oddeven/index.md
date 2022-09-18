@@ -321,7 +321,9 @@ prevPageTitle: 函数的单调性
     \Rightarrow f(x_1)- f(x_2)< 0,\]
 即 $f(x_1)< f(x_2)$, 表明 $f(x)$ 在 $[1,+\infty)$ 上单调递增.
 </p>
-<p>根据其图象的特征, 函数 $f(x)= x+\dfrac1x$ ($x\neq 0$) 一般形象地称为“对勾”函数. 第一象限图的最低点 $(1,2)$ 可由<a href="/docs/prerequisite/inequality/mean-value-inequality/#均值不等式-2022-0917-1521">均值不等式</a>得到. $f(x)$ 的图象是双曲线, 有两条渐近线: $y=x$ 和 $x=0$ (即 $y$ 轴). 观察 $f(x)$ 的图象可知, 若 $x\geqslant 3$, 则 $f(x)\geqslant f(3)$, 即此时 $f_{\min}=f(3)$. 类似地, 若 $x\geqslant \dfrac12$, 则 $f_{\min}=f(1)$. 
+<p>根据其图象的特征, 函数 $f(x)= x+\dfrac1x$ ($x\neq 0$) 一般形象地称为“对勾”函数. 第一象限图的最低点 $(1,2)$ 可由<a href="/docs/prerequisite/inequality/mean-value-inequality/#均值不等式-2022-0917-1521">均值不等式</a>得到: 当 $x>0$ 时, \[
+    x+\dfrac1x\geqslant 2\sqrt{x\cdot\dfrac1x}= 2,\]
+等号成立当且仅当 $x= \dfrac1x$ 即 $x=1$. $f(x)$ 的图象是双曲线, 有两条渐近线: $y=x$ 和 $x=0$ (即 $y$ 轴). 观察 $f(x)$ 的图象可知, 若 $x\geqslant 3$, 则 $f(x)\geqslant f(3)$, 即此时 $f_{\min}=f(3)$. 类似地, 若 $x\geqslant \dfrac12$, 则 $f_{\min}=f(1)$. 
 </p>
 <p>一般地, $f(x)= x+\dfrac{k}x$ ($k>0$, $x\neq 0$) 均可称为“对勾”函数. 由与前面类似的分析可得, $f(x)$ 是奇函数, 有两条渐近线 $y=x$ 和 $x=0$, 第一象限图象的最低点为 $(\sqrt{k},2\sqrt{k})$, 单调递增区间为 $(-\infty,-\sqrt{k}]$ 和 $[\sqrt{k},+\infty)$, 单调递减区间为 $(-\sqrt{k},0)$ 和 $(0,\sqrt{k})$.
 </p>
