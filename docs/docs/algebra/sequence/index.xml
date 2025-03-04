@@ -1,1 +1,53 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>数列 on 高中数学资料</title><link>/docs/algebra/sequence/</link><description>Recent content in 数列 on 高中数学资料</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/algebra/sequence/index.xml" rel="self" type="application/rss+xml"/><item><title>数列的定义</title><link>/docs/algebra/sequence/sequence-def/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/algebra/sequence/sequence-def/</guid><description> 数列的定义 #</description></item><item><title>等差数列</title><link>/docs/algebra/sequence/common-diff/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/algebra/sequence/common-diff/</guid><description>等差数列 # 已知两个等差数列 $\{a_n\}$ 和 $\{b_n\}$ 的前 $n$ 项和分别为 $S_n$ 和 $T_n$, 且 $\dfrac{S_n}{T_n}= \dfrac{3n+39}{n+3}$, 计算 $\dfrac{a_3}{b_3}$, $\dfrac{a_n}{b_n}$. 由等差数列求和公式, \[ S_n= \frac12(a_1+a_n)n,\quad T_n= \frac12(b_1+b_n)n,\] 所以已知等式化为 \[ \dfrac{S_n}{T_n}= \frac{a_1+a_n}{b_1+b_n} = \frac{3n+39}{n+3}.\] 再利用等差数列的性质, \[ 2a_3= a_1+ a_5,\quad 2b_3= b_1+ b_5,\] 所以在前式中令 $n= 5$ 可得 \[ \frac{a_3}{b_3}= \frac{a_1+ a_5}{b_1+ b_5} = \frac{3\cdot 5+ 39}{5+ 3}= \frac{27}{4}.\] 类似地, \[ 2a_n= a_1+ a_{2n-1},\quad 2b_n= b_1+ b_{2n-1},\] 所以 \[ \frac{a_n}{b_n}= \frac{a_1+ a_{2n-1}}{b_1+ b_{2n-1}} = \frac{3\cdot (2n-1)+ 39}{(2n-1)+ 3}= \frac{3n+18}{n+1}.</description></item><item><title>等比数列</title><link>/docs/algebra/sequence/common-ratio/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/algebra/sequence/common-ratio/</guid><description> 等比数列 # 设 $a,b>0$, 若 $\sqrt3$ 是 $3^a$ 与 $3^b$ 的等比中项, 求 $\dfrac1a +\dfrac1b$ 的最小值. 由已知, \[3^a\cdot 3^b= (\sqrt3)^2= 3,\quad a+b=1.\] 由 $a+b\geqslant 2\sqrt{ab}$ 知 $ab\leqslant \dfrac14$, 所以 \[\frac1a+\frac1b= \frac{a+b}{ab} = \frac{1}{ab}\geqslant 4,\] 等号成立当且仅当 $a=b= \frac12$. \varexercise 若改求 $\dfrac1a+ \dfrac2b$ 的最小值, 则由 \[(a+b)\biggl(\frac1a+\frac2b\biggr) = 3+\frac{b}{a}+ \frac{2a}{b}\geqslant 3+2\sqrt2\] 可知, $\dfrac1a+ \dfrac2b\geqslant 3+2\sqrt2$, 等号成立当且仅当 $b=\sqrt2a$.</description></item><item><title>数列的应用</title><link>/docs/algebra/sequence/sequence-application/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/algebra/sequence/sequence-application/</guid><description> 数列的应用 #</description></item><item><title>特殊通项公式的求法</title><link>/docs/algebra/sequence/general-term-fomula/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/algebra/sequence/general-term-fomula/</guid><description> 特殊通项公式的求法 #</description></item><item><title>数学归纳法</title><link>/docs/algebra/sequence/mathematical-induction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/algebra/sequence/mathematical-induction/</guid><description> 数学归纳法 #</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>数列 on 高中数学资料</title>
+    <link>/docs/algebra/sequence/</link>
+    <description>Recent content in 数列 on 高中数学资料</description>
+    <generator>Hugo</generator>
+    <language>zh</language>
+    <atom:link href="/docs/algebra/sequence/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>数列的定义</title>
+      <link>/docs/algebra/sequence/sequence-def/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/algebra/sequence/sequence-def/</guid>
+      <description>&lt;h1 id=&#34;数列的定义&#34;&gt;数列的定义&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>等差数列</title>
+      <link>/docs/algebra/sequence/common-diff/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/algebra/sequence/common-diff/</guid>
+      <description>&lt;h1 id=&#34;等差数列&#34;&gt;等差数列&lt;/h1&gt;&#xA;&lt;myexample&gt;&#xA;&lt;p&gt;已知两个等差数列 $\{a_n\}$ 和 $\{b_n\}$ 的前 $n$ 项和分别为 $S_n$ 和 $T_n$, 且 $\dfrac{S_n}{T_n}= \dfrac{3n+39}{n+3}$, 计算 $\dfrac{a_3}{b_3}$, $\dfrac{a_n}{b_n}$.&#xA;&lt;/p&gt;&#xA;&lt;/myexample&gt;&#xA;&lt;mysolution&gt;&#xA;    &lt;p&gt;由等差数列求和公式, \[&#xA;        S_n= \frac12(a_1+a_n)n,\quad&#xA;        T_n= \frac12(b_1+b_n)n,\]&#xA;    所以已知等式化为 \[&#xA;        \dfrac{S_n}{T_n}= \frac{a_1+a_n}{b_1+b_n}&#xA;        = \frac{3n+39}{n+3}.\]&#xA;    再利用等差数列的性质, \[&#xA;        2a_3= a_1+ a_5,\quad 2b_3= b_1+ b_5,\]&#xA;    所以在前式中令 $n= 5$ 可得 \[&#xA;        \frac{a_3}{b_3}= \frac{a_1+ a_5}{b_1+ b_5}&#xA;        = \frac{3\cdot 5+ 39}{5+ 3}= \frac{27}{4}.\]&#xA;&lt;/p&gt;&#xA;&lt;p&gt;类似地, \[&#xA;        2a_n= a_1+ a_{2n-1},\quad 2b_n= b_1+ b_{2n-1},\]&#xA;    所以 \[&#xA;        \frac{a_n}{b_n}= \frac{a_1+ a_{2n-1}}{b_1+ b_{2n-1}}&#xA;        = \frac{3\cdot (2n-1)+ 39}{(2n-1)+ 3}= \frac{3n+18}{n+1}.\]&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>等比数列</title>
+      <link>/docs/algebra/sequence/common-ratio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/algebra/sequence/common-ratio/</guid>
+      <description>&lt;h1 id=&#34;等比数列&#34;&gt;等比数列&lt;/h1&gt;&#xA;&lt;myexercise&gt;&#xA;    &lt;p&gt;设 $a,b&gt;0$, 若 $\sqrt3$ 是 $3^a$ 与 $3^b$ 的等比中项, 求 $\dfrac1a +\dfrac1b$ 的最小值.&#xA;&lt;/p&gt;&#xA;&lt;/myexercise&gt;&#xA;&lt;mysolution&gt;&#xA;    &lt;p&gt;    由已知,&#xA;    \[3^a\cdot 3^b= (\sqrt3)^2= 3,\quad a+b=1.\]&#xA;    由 $a+b\geqslant 2\sqrt{ab}$ 知 $ab\leqslant \dfrac14$, 所以&#xA;    \[\frac1a+\frac1b= \frac{a+b}{ab}&#xA;    = \frac{1}{ab}\geqslant 4,\]&#xA;    等号成立当且仅当 $a=b= \frac12$.&#xA;&lt;/p&gt;&#xA;&lt;p&gt;\varexercise 若改求 $\dfrac1a+ \dfrac2b$ 的最小值, 则由&#xA;    \[(a+b)\biggl(\frac1a+\frac2b\biggr)&#xA;    = 3+\frac{b}{a}+ \frac{2a}{b}\geqslant 3+2\sqrt2\]&#xA;    可知, $\dfrac1a+ \dfrac2b\geqslant 3+2\sqrt2$, 等号成立当且仅当 $b=\sqrt2a$.&#xA;&lt;/p&gt;&#xA;&lt;/mysolution&gt;</description>
+    </item>
+    <item>
+      <title>数列的应用</title>
+      <link>/docs/algebra/sequence/sequence-application/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/algebra/sequence/sequence-application/</guid>
+      <description>&lt;h1 id=&#34;数列的应用&#34;&gt;数列的应用&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>特殊通项公式的求法</title>
+      <link>/docs/algebra/sequence/general-term-fomula/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/algebra/sequence/general-term-fomula/</guid>
+      <description>&lt;h1 id=&#34;特殊通项公式的求法&#34;&gt;特殊通项公式的求法&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>数学归纳法</title>
+      <link>/docs/algebra/sequence/mathematical-induction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/algebra/sequence/mathematical-induction/</guid>
+      <description>&lt;h1 id=&#34;数学归纳法&#34;&gt;数学归纳法&lt;/h1&gt;</description>
+    </item>
+  </channel>
+</rss>

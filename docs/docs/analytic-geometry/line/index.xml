@@ -1,1 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>直线 on 高中数学资料</title><link>/docs/analytic-geometry/line/</link><description>Recent content in 直线 on 高中数学资料</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/analytic-geometry/line/index.xml" rel="self" type="application/rss+xml"/><item><title>直线的斜率</title><link>/docs/analytic-geometry/line/slope/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/analytic-geometry/line/slope/</guid><description> 直线的斜率 #</description></item><item><title>直线的方程</title><link>/docs/analytic-geometry/line/line-equation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/analytic-geometry/line/line-equation/</guid><description> 直线的方程 # 过定点 $P(1,2)$ 的直线 $l$ 在 $x$ 正半轴与 $y$ 正半轴上的截距分别为 $a,b$, 求 $ab$ 的最小值. 由已知, $a,b>0$ 且可设 $l\colon \dfrac{x}a+ \dfrac{y}b= 1$, 则 \[\frac1a+ \frac2b= 1\geqslant 2\sqrt{\frac2{ab}},\quad ab\geqslant 8.\]</description></item><item><title>直线的平行与垂直</title><link>/docs/analytic-geometry/line/line-parallel-perp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/analytic-geometry/line/line-parallel-perp/</guid><description> 直线的平行与垂直 # 设 $m\in\mathbf{R}$, 动直线 $l_1\colon x+my=0$ 和 $l_2\colon mx-y-m+3=0$ 分别过定点 $A,B$, $l_1$ 和 $l_2$ 交于点 $P(x,y)$, 求 $|PA|\cdot |PB|$ 的最大值. 由题意, $A(0,0)$, $B(1,3)$ 且 $l_1\perp l_2$, 则 $\triangle PAB$ 为直角三角形, 且 $\angle P= 90^\circ$, 所以 \mymarginpar{发现 $l_1\perp l_2$ 是解本题的关键.} \[|PA|^2+ |PB|^2= |AB|^2= 10.\] 由 $|PA|^2+ |PB|^2\geqslant 2|PA|\cdot |PB|$ 知, \[|PA|\cdot |PB|\leqslant 5,\] 等号成立当且仅当 $|PA|=|PB|= \sqrt5$.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>直线 on 高中数学资料</title>
+    <link>/docs/analytic-geometry/line/</link>
+    <description>Recent content in 直线 on 高中数学资料</description>
+    <generator>Hugo</generator>
+    <language>zh</language>
+    <atom:link href="/docs/analytic-geometry/line/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>直线的斜率</title>
+      <link>/docs/analytic-geometry/line/slope/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/analytic-geometry/line/slope/</guid>
+      <description>&lt;h1 id=&#34;直线的斜率&#34;&gt;直线的斜率&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>直线的方程</title>
+      <link>/docs/analytic-geometry/line/line-equation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/analytic-geometry/line/line-equation/</guid>
+      <description>&lt;h1 id=&#34;直线的方程&#34;&gt;直线的方程&lt;/h1&gt;&#xA;&lt;myexercise&gt;&#xA;    &lt;p&gt;过定点 $P(1,2)$ 的直线 $l$ 在 $x$ 正半轴与 $y$ 正半轴上的截距分别为 $a,b$, 求 $ab$ 的最小值.&#xA;&lt;/p&gt;&#xA;&lt;/myexercise&gt;&#xA;&lt;mysolution&gt;&#xA;    &lt;p&gt;    由已知, $a,b&gt;0$ 且可设 $l\colon \dfrac{x}a+ \dfrac{y}b= 1$, 则&#xA;    \[\frac1a+ \frac2b= 1\geqslant 2\sqrt{\frac2{ab}},\quad&#xA;    ab\geqslant 8.\]&#xA;&lt;/p&gt;&#xA;&lt;/mysolution&gt;</description>
+    </item>
+    <item>
+      <title>直线的平行与垂直</title>
+      <link>/docs/analytic-geometry/line/line-parallel-perp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/analytic-geometry/line/line-parallel-perp/</guid>
+      <description>&lt;h1 id=&#34;直线的平行与垂直&#34;&gt;直线的平行与垂直&lt;/h1&gt;&#xA;&lt;myexercise&gt;&#xA;    设 $m\in\mathbf{R}$, 动直线 $l_1\colon x+my=0$ 和 $l_2\colon mx-y-m+3=0$ 分别过定点 $A,B$, $l_1$ 和 $l_2$ 交于点 $P(x,y)$, 求 $|PA|\cdot |PB|$ 的最大值.&#xA;&lt;/p&gt;&#xA;&lt;/myexercise&gt;&#xA;&lt;mysolution&gt;&#xA;    &lt;p&gt;    由题意, $A(0,0)$, $B(1,3)$ 且 $l_1\perp l_2$, 则 $\triangle PAB$ 为直角三角形, 且 $\angle P= 90^\circ$, 所以&#xA;    \mymarginpar{发现 $l_1\perp l_2$ 是解本题的关键.}&#xA;    \[|PA|^2+ |PB|^2= |AB|^2= 10.\]&#xA;    由 $|PA|^2+ |PB|^2\geqslant 2|PA|\cdot |PB|$ 知,&#xA;    \[|PA|\cdot |PB|\leqslant 5,\]&#xA;    等号成立当且仅当 $|PA|=|PB|= \sqrt5$.&#xA;&lt;/p&gt;&#xA;&lt;/mysolution&gt;</description>
+    </item>
+  </channel>
+</rss>

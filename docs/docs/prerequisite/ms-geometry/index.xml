@@ -1,15 +1,46 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>初中几何提要 on 高中数学资料</title><link>/docs/prerequisite/ms-geometry/</link><description>Recent content in 初中几何提要 on 高中数学资料</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/prerequisite/ms-geometry/index.xml" rel="self" type="application/rss+xml"/><item><title>对称、全等与相似</title><link>/docs/prerequisite/ms-geometry/symmetric-congruence-similar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/prerequisite/ms-geometry/symmetric-congruence-similar/</guid><description>对称、全等与相似 # 对称、全等与相似考虑的都是图形之间的位置与形状. 初高中数学主要考虑轴对称与中心对称, 以及三角形的全等与相似. 轴对称与中心对称既可以用来描述一个图形自身的对称性, 又可以用来描述两个图形的对称性. 两个三角形全等是指它们的形状和大小一样, 相似则仅指它们的形状一样.
-轴对称 # 点 $A$ 和 $A&amp;rsquo;$ 关于直线 $l$ 成轴对称, 是指 $l$ 为线段 $AA&amp;rsquo;$ 的中垂线, 即 $AA&amp;rsquo;\perp l$ 且 $AA&amp;rsquo;$ 的中点在 $l$ 上, 如下图所示. 直线 $l$ 称为对称轴, 点 $A’$ 称为 $A$ 关于 $l$ 的轴对称点 (简称为对称点). 若 $A$ 在 $l$ 上, 则 $A$ 关于 $l$ 的对称点仍为 $A$.
-图形 $G$ 和 $G&amp;rsquo;$ 关于直线 $l$ 成轴对称, 是指这两个图形的对应点关于 $l$ 对称, 即 $l$ 为对应点连线段的中垂线. 直线 $l$ 称为对称轴, 图形 $G&amp;rsquo;$ 称为 $G$ 关于 $l$ 的轴对称图形 (简称为对称图形).</description></item><item><title>三角形</title><link>/docs/prerequisite/ms-geometry/triangle/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/prerequisite/ms-geometry/triangle/</guid><description>三角形 # 三角形的边和角都有相应的约束条件. 特殊的三角形 (如等腰三角形、直角三角形) 有更多的性质. 与三角形有关的特殊线有: 中线、中垂线、角平分线和高线, 常见的三角形的特殊点有: 重心、外心、内心和垂心.
-以下均设在 $\triangle ABC$ 中, $\angle A$, $\angle B$, $\angle C$ 所对的边分别为 $a$, $b$, $c$.
-两个约束条件 # 利用平行线的性质可以证明, $\triangle ABC$ 的内角和为 $180^\circ$, 即 \[\angle A+ \angle B+\angle C= 180^\circ.\] 这是关于角的约束条件. 有时也省略角的符号“$\angle$”而将上述结论写成 $A+B+C=180^\circ$. 推广可知, 如下图所示, $n$ 边形的内角和为 $(n-2)\cdot 180^\circ$, 由此可以计算正 $n$ 边形的各内角大小. $n$ 边形的外角和为 $360^\circ$ (与 $n$ 无关). 注意, 同一顶点处的两个外角相等, 求和时只取其中一个. 此外, 三角形内角和为 $180^\circ$ 的一个推论是: 三角形的外角等于不相邻的两个内角之和, 因此大于不相邻的任一内角.
-利用“两点之间线段最短”可以说明, 三角形的任意两边之和大于第三边, 即 (只列其一) \[a+b&amp;gt;c,\quad\text{或}\quad a&amp;gt;b-c,\] 因此任意两边之差小于第三边.</description></item><item><title>四边形</title><link>/docs/prerequisite/ms-geometry/quadrilateral/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/prerequisite/ms-geometry/quadrilateral/</guid><description>四边形 # 四边形内角和为 $360^\circ$, 与外角和相等. 由两点之间线段最短可知, 四边形的三边之和大于第四边. 下面回顾平行四边形 (也包括矩形、菱形和正方形) 和梯形的性质.
-平行四边形 # 平行四边形 $ABCD$ 是指其两组对边分别平行. 由平行线的性质可知, 平行四边形 $ABCD$ 的对角相等. 连接对角线 $AC$ 和 $BD$, 并设两者交于点 $O$, 利用全等可证
-$AB= CD$, $AD= BC$, 即两组对边分别相等 $AO=OC$, $BO=OD$, 即对角线互相平分 平行四边形是中心对称图形, 其对称中心为对角线的交点. 判定平行四边形的常用方法为
-两组对边分别平行 (定义) 一组对边平行且相对 两组对边分别相等 对角线互相平分 对任意四边形 $ABCD$, 顺次连接四边中点 $E$, $F$, $G$, $H$, 求证: 四边形 $EFGH$ 为平行四边形.
-连接 $AC$, 考虑 $\triangle ABC$ 和 $\triangle ADC$ 的中位线知, \[ EF=\frac12 AC= HG,\quad EF\parallel AC\parallel HG,\] 所以四边形 $EFGH$ 为平行四边形.</description></item><item><title>圆</title><link>/docs/prerequisite/ms-geometry/circle/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/prerequisite/ms-geometry/circle/</guid><description>圆 # 圆具有轴对称性和中心对称性, 对称轴是任意过圆心的直线, 对称中心是圆心.
-圆的定义 # 在平面上取定一点 $C$, 设动点 $P$ 满足 $CP= r$ ($r&amp;gt;0$), 将所有这样的点 $P$ 描绘出来, 就得到半径为 $r$ 的圆 $C$, 点 $C$ 称为圆心. 定义表明, 圆是到定点 (圆心) 的距离等于定长 (半径) 的所有点的全体. 连接圆心 $C$ 和圆上任一点得到圆的半径, 过 $C$ 的直线被圆所截得的线段为圆的直径 (如下图中的线段 $AB$), 长度通常记为 $d$, 即 $d= 2r$.
-圆的周长 $C$ 与直径 $d$ 成正比, 比值为圆周率 $\pi$., 所以圆 $C$ 的周长为 $\pi d= 2\pi r$. 利用半径将圆 $C$ 切割为一些小扇形, 就可以将圆近似看成多个“三角形”之和, 从而说明圆的面积为 \[ \dfrac12 \cdot 2\pi r\cdot r= \pi r^2.</description></item><item><title>平面图形的面积</title><link>/docs/prerequisite/ms-geometry/area/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/prerequisite/ms-geometry/area/</guid><description>平面图形的面积 # 平面图形 $G$ 的面积描述的是其边界所围区域的大小. 将边长为 $1$ 的正方形 $Q$ 称为单位正方形, 所围区域的面积记为 $1$ 个单位. 用单位正方形 $Q$ 来度量 $G$ 所围区域大小, 所得的倍数就是 $G$ 的面积. 以下回顾三角形、四边形、圆、扇形的面积公式的推导方法.
-四边形的面积 # 从切割图形的角度来看, 正方形的面积为边长的平方, 即边长为 $a$ 的正方形的面积为 $a^2$. 例如, 边长为 $2$ 的正方形可以切割为 $2^2= 4$ 个单位正方形. 长为 $a$、宽为 $b$ 的矩形可以分解为多个正方形之和, 所以其面积为 $ab$ (长乘宽).
-底为 $a$、高为 $h$ 的平行四边形可以用割补法拼接为矩形, 故面积为 $ah$ (底乘高). 底为 $a$, $b$, 高为 $h$ 的梯形也可以拼接为平行四边形 (或矩形), 面积为 $\dfrac12(a+b)h$ (两底之和乘高的一半).
-三角形的面积 # 底为 $a$、高为 $h$ 的三角形可以补成平行四边形, 面积为 $\dfrac12 ah$ (底乘高的一半).</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>初中几何提要 on 高中数学资料</title>
+    <link>/docs/prerequisite/ms-geometry/</link>
+    <description>Recent content in 初中几何提要 on 高中数学资料</description>
+    <generator>Hugo</generator>
+    <language>zh</language>
+    <atom:link href="/docs/prerequisite/ms-geometry/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>对称、全等与相似</title>
+      <link>/docs/prerequisite/ms-geometry/symmetric-congruence-similar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/prerequisite/ms-geometry/symmetric-congruence-similar/</guid>
+      <description>&lt;h1 id=&#34;对称全等与相似&#34;&gt;对称、全等与相似&lt;/h1&gt;&#xA;&lt;p&gt;对称、全等与相似考虑的都是图形之间的位置与形状. 初高中数学主要考虑轴对称与中心对称, 以及三角形的全等与相似. 轴对称与中心对称既可以用来描述一个图形自身的对称性, 又可以用来描述两个图形的对称性. 两个三角形全等是指它们的形状和大小一样, 相似则仅指它们的形状一样.&lt;/p&gt;&#xA;&lt;h2 id=&#34;轴对称&#34;&gt;轴对称&lt;/h2&gt;&#xA;&lt;p&gt;点 $A$ 和 $A&amp;rsquo;$ 关于直线 $l$ 成轴对称, 是指 $l$ 为线段 $AA&amp;rsquo;$ 的中垂线, 即 $AA&amp;rsquo;\perp l$ 且 $AA&amp;rsquo;$ 的中点在 $l$ 上, 如下图所示. 直线 $l$ 称为对称轴, 点 $A’$ 称为 $A$ 关于 $l$ 的轴对称点 (简称为对称点). 若 $A$ 在 $l$ 上, 则 $A$ 关于 $l$ 的对称点仍为 $A$.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;/figs/2022/2022-08/2022-0807-1740.svg&#34; alt=&#34;轴对称点&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;图形 $G$ 和 $G&amp;rsquo;$ 关于直线 $l$ 成轴对称, 是指这两个图形的对应点关于 $l$ 对称, 即 $l$ 为对应点连线段的中垂线. 直线 $l$ 称为对称轴, 图形 $G&amp;rsquo;$ 称为 $G$ 关于 $l$ 的轴对称图形 (简称为对称图形). 下图中, $\triangle ABC$ 与 $\triangle A&amp;rsquo;B&amp;rsquo;C&amp;rsquo;$ 关于直线 $l$ 对称.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>三角形</title>
+      <link>/docs/prerequisite/ms-geometry/triangle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/prerequisite/ms-geometry/triangle/</guid>
+      <description>&lt;h1 id=&#34;三角形&#34;&gt;三角形&lt;/h1&gt;&#xA;&lt;p&gt;三角形的边和角都有相应的约束条件. 特殊的三角形 (如等腰三角形、直角三角形) 有更多的性质. 与三角形有关的特殊线有: 中线、中垂线、角平分线和高线, 常见的三角形的特殊点有: 重心、外心、内心和垂心.&lt;/p&gt;&#xA;&lt;p&gt;以下均设在 $\triangle ABC$ 中, $\angle A$, $\angle B$, $\angle C$ 所对的边分别为 $a$, $b$, $c$.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;/figs/2022/2022-08/2022-0809-1950.svg&#34; alt=&#34;三角形的边和角&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;两个约束条件&#34;&gt;两个约束条件&lt;/h2&gt;&#xA;&lt;p&gt;利用平行线的性质可以证明, $\triangle ABC$ 的内角和为 $180^\circ$, 即&#xA;\[\angle A+ \angle B+\angle C= 180^\circ.\]&#xA;这是关于角的约束条件. 有时也省略角的符号“$\angle$”而将上述结论写成 $A+B+C=180^\circ$. 推广可知, 如下图所示, $n$ 边形的内角和为 $(n-2)\cdot 180^\circ$, 由此可以计算正 $n$ 边形的各内角大小. $n$ 边形的外角和为 $360^\circ$ (与 $n$ 无关). 注意, 同一顶点处的两个外角相等, 求和时只取其中一个. 此外, 三角形内角和为 $180^\circ$ 的一个推论是: 三角形的外角等于不相邻的两个内角之和, 因此大于不相邻的任一内角.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;/figs/2022/2022-08/2022-0809-1940.svg&#34; alt=&#34;n 边形的内角和&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;利用“两点之间线段最短”可以说明, 三角形的任意两边之和大于第三边, 即 (只列其一)&#xA;\[a+b&amp;gt;c,\quad\text{或}\quad a&amp;gt;b-c,\]&#xA;因此任意两边之差小于第三边. 这是关于边的约束条件. 也可以将这两个结论整合起来, 得到&#xA;\[|b-c|&amp;lt; a&amp;lt; b+c.\]&#xA;上述三个不等式都可称为“三角形不等式”.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>四边形</title>
+      <link>/docs/prerequisite/ms-geometry/quadrilateral/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/prerequisite/ms-geometry/quadrilateral/</guid>
+      <description>&lt;h1 id=&#34;四边形&#34;&gt;四边形&lt;/h1&gt;&#xA;&lt;p&gt;四边形内角和为 $360^\circ$, 与外角和相等. 由两点之间线段最短可知, 四边形的三边之和大于第四边. 下面回顾平行四边形 (也包括矩形、菱形和正方形) 和梯形的性质.&lt;/p&gt;&#xA;&lt;h2 id=&#34;平行四边形&#34;&gt;平行四边形&lt;/h2&gt;&#xA;&lt;p&gt;平行四边形 $ABCD$ 是指其两组对边分别平行. 由平行线的性质可知, 平行四边形 $ABCD$ 的对角相等. 连接对角线 $AC$ 和 $BD$, 并设两者交于点 $O$, 利用全等可证&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;$AB= CD$, $AD= BC$, 即两组对边分别相等&lt;/li&gt;&#xA;&lt;li&gt;$AO=OC$, $BO=OD$, 即对角线互相平分&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;/figs/2022/2022-08/2022-0811-2310.svg&#34; alt=&#34;平行四边形的性质&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;平行四边形是&lt;strong&gt;中心对称&lt;/strong&gt;图形, 其对称中心为对角线的交点. 判定平行四边形的常用方法为&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;两组对边分别平行 (定义)&lt;/li&gt;&#xA;&lt;li&gt;一组对边平行且相对&lt;/li&gt;&#xA;&lt;li&gt;两组对边分别相等&lt;/li&gt;&#xA;&lt;li&gt;对角线互相平分&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;myexample&gt;&#xA;    &lt;p&gt;对任意四边形 $ABCD$, 顺次连接四边中点 $E$, $F$, $G$, $H$, 求证: 四边形 $EFGH$ 为平行四边形.&lt;/p&gt;&#xA;    &lt;img alt=&#34;任意四边形内的平行四边形&#34; src=&#34;/figs/2022/2022-08/2022-0812-0000.svg&#34;&gt;&lt;/img&gt;&#xA;&lt;/myexample&gt;&#xA;&lt;myproof&gt;&#xA;    &lt;p&gt;连接 $AC$, 考虑 $\triangle ABC$ 和 $\triangle ADC$ 的中位线知, \[&#xA;        EF=\frac12 AC= HG,\quad EF\parallel AC\parallel HG,\]&#xA;    所以四边形 $EFGH$ 为平行四边形.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>圆</title>
+      <link>/docs/prerequisite/ms-geometry/circle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/prerequisite/ms-geometry/circle/</guid>
+      <description>&lt;h1 id=&#34;圆&#34;&gt;圆&lt;/h1&gt;&#xA;&lt;p&gt;圆具有轴对称性和中心对称性, 对称轴是任意过圆心的直线, 对称中心是圆心.&lt;/p&gt;&#xA;&lt;h2 id=&#34;圆的定义&#34;&gt;圆的定义&lt;/h2&gt;&#xA;&lt;p&gt;在平面上取定一点 $C$, 设动点 $P$ 满足 $CP= r$ ($r&amp;gt;0$), 将所有这样的点 $P$ 描绘出来, 就得到半径为 $r$ 的圆 $C$, 点 $C$ 称为圆心. 定义表明, 圆是到定点 (圆心) 的距离等于定长 (半径) 的所有点的全体. 连接圆心 $C$ 和圆上任一点得到圆的半径, 过 $C$ 的直线被圆所截得的线段为圆的直径 (如下图中的线段 $AB$), 长度通常记为 $d$, 即 $d= 2r$.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;/figs/2022/2022-08/2022-0812-2300.svg&#34; alt=&#34;圆的定义&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;圆的周长 $C$ 与直径 $d$ 成正比, 比值为圆周率 $\pi$., 所以圆 $C$ 的周长为 $\pi d= 2\pi r$. 利用半径将圆 $C$ 切割为一些小扇形, 就可以将圆近似看成多个“三角形”之和, 从而说明圆的面积为 \[&#xA;\dfrac12 \cdot 2\pi r\cdot r= \pi r^2.\]&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>平面图形的面积</title>
+      <link>/docs/prerequisite/ms-geometry/area/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/prerequisite/ms-geometry/area/</guid>
+      <description>&lt;h1 id=&#34;平面图形的面积&#34;&gt;平面图形的面积&lt;/h1&gt;&#xA;&lt;p&gt;平面图形 $G$ 的面积描述的是其边界所围区域的大小. 将边长为 $1$ 的正方形 $Q$ 称为单位正方形, 所围区域的面积记为 $1$ 个单位. 用单位正方形 $Q$ 来度量 $G$ 所围区域大小, 所得的倍数就是 $G$ 的面积. 以下回顾三角形、四边形、圆、扇形的面积公式的推导方法.&lt;/p&gt;&#xA;&lt;h2 id=&#34;四边形的面积&#34;&gt;四边形的面积&lt;/h2&gt;&#xA;&lt;p&gt;从切割图形的角度来看, 正方形的面积为边长的平方, 即边长为 $a$ 的正方形的面积为 $a^2$. 例如, 边长为 $2$ 的正方形可以切割为 $2^2= 4$ 个单位正方形. 长为 $a$、宽为 $b$ 的矩形可以分解为多个正方形之和, 所以其面积为 $ab$ (长乘宽).&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;/figs/2022/2022-08/2022-0813-1200.svg&#34; alt=&#34;单位正方形与矩形的面积&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;底为 $a$、高为 $h$ 的平行四边形可以用割补法拼接为矩形, 故面积为 $ah$ (底乘高). 底为 $a$, $b$, 高为 $h$ 的梯形也可以拼接为平行四边形 (或矩形), 面积为 $\dfrac12(a+b)h$ (两底之和乘高的一半).&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;/figs/2022/2022-08/2022-0813-1210.svg&#34; alt=&#34;四边形与梯形的面积&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;三角形的面积&#34;&gt;三角形的面积&lt;/h2&gt;&#xA;&lt;p&gt;底为 $a$、高为 $h$ 的三角形可以补成平行四边形, 面积为 $\dfrac12 ah$ (底乘高的一半). 三角形也可以视为退化的梯形 (上底为 $0$), 则由梯形的面积公式直接得到三角形的面积公式.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

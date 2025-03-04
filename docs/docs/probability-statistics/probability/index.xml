@@ -1,1 +1,46 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>概率 on 高中数学资料</title><link>/docs/probability-statistics/probability/</link><description>Recent content in 概率 on 高中数学资料</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/probability-statistics/probability/index.xml" rel="self" type="application/rss+xml"/><item><title>随机事件的概率</title><link>/docs/probability-statistics/probability/random-event/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/probability-statistics/probability/random-event/</guid><description>随机事件的概率 # 已知事件 $A$, $B$ 发生的概率分别为 $P(A)= 0.5$, $P(B)= 0.3$, 分别在下列条件下求概率 $P(A\cup B)$ 和 $P(AB)$: (1) $B\subseteq A$;\quad (2) $A$, $B$ 互斥. (1) 由 $B\subseteq A$ 知, \[ A\cup B= A,\quad AB= B,\] 所以 \[ P(A\cup B)= P(A)= 0.5,\quad P(AB)= P(B)= 0.3.\] (2) 由 $A$, $B$ 互斥知, $AB=\varnothing$, 且 \[ P(A\cup B)= P(A)+P(B)= 0.5+0.3= 0.8,\] 所以 $P(AB)= P(\varnothing)= 0$. 判断下列说法的正误: (1) 若事件 $A$ 与 $B$ 互斥, 则 $P(A)+P(B)= 1$; (2) 若事件 $A$ 与 $B$ 满足 $P(A)+P(B)= 1$, 则这两个事件为对立事件; (3) “事件 $A$ 与 $B$ 互斥”是“事件 $A$ 与 $B$ 对立”的必要不充分条件; (4) 某人打靶时连续射击两次, 则事件“至少有一次中靶”与“至多有一次中靶”互为对立事件.</description></item><item><title>古典概型</title><link>/docs/probability-statistics/probability/classical-probability/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/probability-statistics/probability/classical-probability/</guid><description>古典概型 # 两个事件 $A$, $B$ 互斥是指这两个事件“互相排斥”, 即 $A$ 与 $B$ 不会同时发生, 用符号表示为 $A\cap B= \varnothing$, 或 $AB= \varnothing$. 因此 \[P(A\cup B)= P(A)+ P(B).\] 如在抽取扑克牌时, 事件“抽到红牌”与“抽到黑牌”为互斥事件, 因为没有扑克牌既是红牌又是黑牌. 两个事件 $A$, $B$ 对立是指这两个事件“非此即彼”, 即 $A$ 与 $B$ 不会同时发生, 但是必有一个发生. 设总体为 $\Omega$, 则此时 \[ A\cap B= \varnothing,\quad A\cup B=\Omega,\] 因此有 $P(A)+P(B)= P(\Omega)= 1$. “对立”是“互斥”的特殊情况. 两个事件 $A$, $B$ 相互独立是指其中一个事件是否发生不影响另一个事件发生的概率. 设总体为 $\Omega$, 而事件 $A$ 已发生, 则此时事件 $B$ 发生的概率为 \[ \frac{n(AB)}{n(A)} = \frac{n(AB)/n(\Omega)}{n(B)/n(\Omega)} = \frac{P(AB)}{P(A)}.\] 上式等于不考虑事件 $A$ 是否发生时, 事件 $B$ 发生的概率 $P(B)$, 所以 \[ \frac{P(AB)}{P(A)}= P(B),\quad\text{即}\quad P(AB)= P(A)P(B).</description></item><item><title>几何概型</title><link>/docs/probability-statistics/probability/geometric-probability/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/probability-statistics/probability/geometric-probability/</guid><description> 几何概型 #</description></item><item><title>条件概率</title><link>/docs/probability-statistics/probability/conditional-probability/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/probability-statistics/probability/conditional-probability/</guid><description>条件概率 # 在古典概型中, 设事件 $A$ 和 $B$ 均由样本空间 $\Omega$ 中的部分样本点组成, 用 $n(P)$ 表示集合 $P$ 中元素的个数, 则概率 $P(A)= \dfrac{n(A)}{n(\Omega)}$, 条件概率 \[ P(A|B)= \frac{n(AB)}{n(B)}= \frac{P(AB)}{P(B)}.\] 注意, $P(AB)$ 与 $P(A|B)$ 是有区别的, 前者表示事件 $AB$ 在 $\Omega$ 中所占比例, 后者表示事件 $AB$ 在 $B$ 中所占比例, 所以 $P(AB)&lt; P(A|B)$. 某地区气象台统计, 该地区任一天下雨的概率为 $\dfrac4{15}$, 刮风的概率为 $\dfrac2{15}$, 在下雨天里, 刮风的概率为 $\dfrac38$, 求任一天既刮风又下雨的概率. 用事件 $A$ 表示“下雨”, 事件 $B$ 表示“刮风”, 由题意, \[ P(A)= \frac4{15},\quad P(B)= \frac2{15},\quad P(B|A)= \frac38.\] 因为 $P(B|A)= \dfrac{P(AB)}{P(A)}$, 所以既刮风又下雨的概率为 \[ P(AB)= P(B|A)P(B)= \frac38\cdot \frac4{15} = \frac1{10}.</description></item><item><title>期望与方差</title><link>/docs/probability-statistics/probability/expectation-variation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/probability-statistics/probability/expectation-variation/</guid><description> 期望与方差 #</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>概率 on 高中数学资料</title>
+    <link>/docs/probability-statistics/probability/</link>
+    <description>Recent content in 概率 on 高中数学资料</description>
+    <generator>Hugo</generator>
+    <language>zh</language>
+    <atom:link href="/docs/probability-statistics/probability/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>随机事件的概率</title>
+      <link>/docs/probability-statistics/probability/random-event/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/probability-statistics/probability/random-event/</guid>
+      <description>&lt;h1 id=&#34;随机事件的概率&#34;&gt;随机事件的概率&lt;/h1&gt;&#xA;&lt;myexample&gt;&#xA;&lt;p&gt;已知事件 $A$, $B$ 发生的概率分别为 $P(A)= 0.5$, $P(B)= 0.3$, 分别在下列条件下求概率 $P(A\cup B)$ 和 $P(AB)$:&#xA;&lt;/p&gt;&#xA;&lt;p&gt;(1) $B\subseteq A$;\quad (2) $A$, $B$ 互斥.&#xA;&lt;/p&gt;&#xA;&lt;/myexample&gt;&#xA;&lt;mysolution&gt;&#xA;    &lt;p&gt;(1) 由 $B\subseteq A$ 知, \[&#xA;        A\cup B= A,\quad AB= B,\]&#xA;    所以 \[&#xA;        P(A\cup B)= P(A)= 0.5,\quad P(AB)= P(B)= 0.3.\]&#xA;&lt;/p&gt;&#xA;&lt;p&gt;(2) 由 $A$, $B$ 互斥知, $AB=\varnothing$, 且 \[&#xA;        P(A\cup B)= P(A)+P(B)= 0.5+0.3= 0.8,\]&#xA;    所以 $P(AB)= P(\varnothing)= 0$.&#xA;&lt;/p&gt;&#xA;&lt;/mysolution&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;myexample&gt;&#xA;&lt;p&gt;判断下列说法的正误:&#xA;&lt;/p&gt;&#xA;&lt;p&gt;(1) 若事件 $A$ 与 $B$ 互斥, 则 $P(A)+P(B)= 1$;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;(2) 若事件 $A$ 与 $B$ 满足 $P(A)+P(B)= 1$, 则这两个事件为对立事件;&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>古典概型</title>
+      <link>/docs/probability-statistics/probability/classical-probability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/probability-statistics/probability/classical-probability/</guid>
+      <description>&lt;h1 id=&#34;古典概型&#34;&gt;古典概型&lt;/h1&gt;&#xA;&lt;p&gt;两个事件 $A$, $B$ 互斥是指这两个事件“互相排斥”, 即 $A$ 与 $B$ 不会同时发生, 用符号表示为 $A\cap B= \varnothing$, 或 $AB= \varnothing$. 因此 \[P(A\cup B)= P(A)+ P(B).\] 如在抽取扑克牌时, 事件“抽到红牌”与“抽到黑牌”为互斥事件, 因为没有扑克牌既是红牌又是黑牌. 两个事件 $A$, $B$ 对立是指这两个事件“非此即彼”, 即 $A$ 与 $B$ 不会同时发生, 但是必有一个发生. 设总体为 $\Omega$, 则此时 \[&#xA;    A\cap B= \varnothing,\quad A\cup B=\Omega,\]&#xA;因此有 $P(A)+P(B)= P(\Omega)= 1$. “对立”是“互斥”的特殊情况.&#xA;&lt;/p&gt;&#xA;&lt;p&gt;两个事件 $A$, $B$ 相互独立是指其中一个事件是否发生不影响另一个事件发生的概率. 设总体为 $\Omega$, 而事件 $A$ 已发生, 则此时事件 $B$ 发生的概率为 \[&#xA;    \frac{n(AB)}{n(A)}&#xA;    = \frac{n(AB)/n(\Omega)}{n(B)/n(\Omega)}&#xA;    = \frac{P(AB)}{P(A)}.\]&#xA;上式等于不考虑事件 $A$ 是否发生时, 事件 $B$ 发生的概率 $P(B)$, 所以 \[&#xA;    \frac{P(AB)}{P(A)}= P(B),\quad\text{即}\quad&#xA;        P(AB)= P(A)P(B).\]&#xA;若假设事件 $B$ 已发生, 同样可以推出 $P(AB)= P(A)P(B)$. 反过来, 由 $P(AB)= P(A)P(B)$ 也可以推出事件 $A$, $B$ 中一个事件是否发生不影响另一个事件发生的概率. 所以要检验两个事件 $A$, $B$ 是否相互独立, 只需要检验 $P(AB)= P(A)P(B)$ 是否成立.&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>几何概型</title>
+      <link>/docs/probability-statistics/probability/geometric-probability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/probability-statistics/probability/geometric-probability/</guid>
+      <description>&lt;h1 id=&#34;几何概型&#34;&gt;几何概型&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>条件概率</title>
+      <link>/docs/probability-statistics/probability/conditional-probability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/probability-statistics/probability/conditional-probability/</guid>
+      <description>&lt;h1 id=&#34;条件概率&#34;&gt;条件概率&lt;/h1&gt;&#xA;&lt;p&gt;在古典概型中, 设事件 $A$ 和 $B$ 均由样本空间 $\Omega$ 中的部分样本点组成, 用 $n(P)$ 表示集合 $P$ 中元素的个数, 则概率 $P(A)= \dfrac{n(A)}{n(\Omega)}$, 条件概率 \[&#xA;    P(A|B)= \frac{n(AB)}{n(B)}= \frac{P(AB)}{P(B)}.\]&#xA;注意, $P(AB)$ 与 $P(A|B)$ 是有区别的, 前者表示事件 $AB$ 在 $\Omega$ 中所占比例, 后者表示事件 $AB$ 在 $B$ 中所占比例, 所以 $P(AB)&lt; P(A|B)$.&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;myexample&gt;&#xA;&lt;p&gt;某地区气象台统计, 该地区任一天下雨的概率为 $\dfrac4{15}$, 刮风的概率为 $\dfrac2{15}$, 在下雨天里, 刮风的概率为 $\dfrac38$, 求任一天既刮风又下雨的概率.&#xA;&lt;/p&gt;&#xA;&lt;/myexample&gt;&#xA;&lt;mysolution&gt;&#xA;    &lt;p&gt;用事件 $A$ 表示“下雨”, 事件 $B$ 表示“刮风”, 由题意, \[&#xA;        P(A)= \frac4{15},\quad P(B)= \frac2{15},\quad&#xA;        P(B|A)= \frac38.\]&#xA;    因为 $P(B|A)= \dfrac{P(AB)}{P(A)}$, 所以既刮风又下雨的概率为 \[&#xA;        P(AB)= P(B|A)P(B)= \frac38\cdot \frac4{15}&#xA;        = \frac1{10}.\]&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>期望与方差</title>
+      <link>/docs/probability-statistics/probability/expectation-variation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/probability-statistics/probability/expectation-variation/</guid>
+      <description>&lt;h1 id=&#34;期望与方差&#34;&gt;期望与方差&lt;/h1&gt;</description>
+    </item>
+  </channel>
+</rss>

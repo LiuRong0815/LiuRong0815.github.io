@@ -1,1 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>正弦定理与余弦定理 on 高中数学资料</title><link>/docs/trigonometry/sine-cosine-law/</link><description>Recent content in 正弦定理与余弦定理 on 高中数学资料</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/trigonometry/sine-cosine-law/index.xml" rel="self" type="application/rss+xml"/><item><title>正弦定理</title><link>/docs/trigonometry/sine-cosine-law/sine-law/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/trigonometry/sine-cosine-law/sine-law/</guid><description>正弦定理 # 设 $\triangle ABC$ 中, 角 $A$, $B$, $C$ 的对边分别为 $a$, $b$, $c$, 则由三角形面积公式和任意角正弦的定义可得三角形面积定理 (高中常用): \[S= \frac{1}{2}ab\sin C=\frac{1}{2}bc\sin A=\frac{1}{2}ca\sin B.\] 推导见“2021 年 2 月 28 日答疑记录”的第一个例子. 将三角形面积定理换一种写法就得到正弦定理: \[\frac{a}{\sin A}= \frac{b}{\sin B}= \frac{c}{\sin C},\] 有时也写成 \[\frac{BC}{\sin A}= \frac{AC}{\sin B}= \frac{AB}{\sin C}.\] 作 $\triangle ABC$ 外接圆, 用纯几何法可证明 $\dfrac{a}{\sin A}= 2R$, 其中常数 $R$ 表示外接圆半径. 应用时也常写 $a= 2R\sin A$, 以及 \[\frac{\sin A}a= \frac{\sin B}b= \frac{\sin C}c.\] 有些关于 $a$, $b$ 或 $\sin A$, $\sin B$ 的式子可以利用正弦定理互相转化, 如 \[\sin^2 A= \sin^2 B\Leftrightarrow a\sin A= b\sin B \Leftrightarrow a^2=b^2.</description></item><item><title>余弦定理</title><link>/docs/trigonometry/sine-cosine-law/cosine-law/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/trigonometry/sine-cosine-law/cosine-law/</guid><description>余弦定理 # 对 $\triangle ABC$, 由直角坐标系中的距离公式或向量的内积运算可得余弦定理: \[a^2= b^2+ c^2- 2bc\cos A,\quad\cos A=\frac{b^2+c^2-a^2}{2bc}.\] 还可以写出 \[b^2= a^2+ c^2- 2ac\cos B,\quad\cos C=\frac{a^2+b^2-c^2}{2ab},\] 即余弦定理共三组公式. 在解三角形时, 一般题中已知等式里角多则先考虑用正弦定理, 边多则先考虑用余弦定理. 在 $\triangle ABC$ 中, $a=\sqrt7$, $b=2$, $A=60^\circ$, 求 $c$ 的值. 将已知条件代入 $a^2= b^2+c^2-2bc\cos A$, 得 \[7= 4+c^2-2c, \quad\text{即}\quad c=3\ (\text{舍负}).\] 在 $\triangle ABC$ 中, $\sin A: \sin B= 3: 5$, $c=2b-a$, 求 $\cos B$ 的值. $\sin A: \sin B= 3: 5$ 等价于 $a:b= 3:5$, 故设 $a=3k$, $b=5k$ ($k>0$).</description></item><item><title>解三角形</title><link>/docs/trigonometry/sine-cosine-law/solving-triangles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/trigonometry/sine-cosine-law/solving-triangles/</guid><description>解三角形 # 在 $\triangle ABC$ 中, $a=\sqrt7$, $b=2$, $A= 60^\circ$, 求 $c$ 的值. 题中有三边一角, 正好用余弦定理. 由 \[a^2= b^2+c^2- 2bc\cos A\quad \text{即}\quad 7= 4+c^2- 2c,\] 解得 $c= 3$. 对于 $\triangle ABC$, 判断下列命题是否正确: (1) 若 $\cos A= \cos B$, 则 $\triangle ABC$ 是等腰三角形; (2) 若 $\triangle ABC$ 为锐角三角形, 则 $A+B> \dfrac\pi2$, 从而 $\sin A> \cos B$; (3) 符合条件 $a=8$, $c=10$, $B=60^\circ$ 的 $\triangle ABC$ 有两个; (4) 若 $\sin^2 A+ \sin^2 B&lt; \sin^2 C$, 则 $\triangle ABC$ 是钝角三角形.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>正弦定理与余弦定理 on 高中数学资料</title>
+    <link>/docs/trigonometry/sine-cosine-law/</link>
+    <description>Recent content in 正弦定理与余弦定理 on 高中数学资料</description>
+    <generator>Hugo</generator>
+    <language>zh</language>
+    <atom:link href="/docs/trigonometry/sine-cosine-law/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>正弦定理</title>
+      <link>/docs/trigonometry/sine-cosine-law/sine-law/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/trigonometry/sine-cosine-law/sine-law/</guid>
+      <description>&lt;h1 id=&#34;正弦定理&#34;&gt;正弦定理&lt;/h1&gt;&#xA;&lt;p&gt;设 $\triangle ABC$ 中, 角 $A$, $B$, $C$ 的对边分别为 $a$, $b$, $c$, 则由三角形面积公式和任意角正弦的定义可得三角形面积定理 (高中常用):&#xA;\[S= \frac{1}{2}ab\sin C=\frac{1}{2}bc\sin A=\frac{1}{2}ca\sin B.\]&#xA;推导见“2021 年 2 月 28 日答疑记录”的第一个例子. &#xA;&lt;/p&gt;&#xA;&lt;p&gt;将三角形面积定理换一种写法就得到正弦定理: &#xA;\[\frac{a}{\sin A}= \frac{b}{\sin B}= \frac{c}{\sin C},\]&#xA;有时也写成&#xA;\[\frac{BC}{\sin A}= \frac{AC}{\sin B}= \frac{AB}{\sin C}.\]&#xA;作 $\triangle ABC$ 外接圆, 用纯几何法可证明 $\dfrac{a}{\sin A}= 2R$, 其中常数 $R$ 表示外接圆半径. 应用时也常写 $a= 2R\sin A$, 以及&#xA;\[\frac{\sin A}a= \frac{\sin B}b= \frac{\sin C}c.\]&#xA;有些关于 $a$, $b$ 或 $\sin A$, $\sin B$ 的式子可以利用正弦定理互相转化, 如&#xA;\[\sin^2 A= \sin^2 B\Leftrightarrow a\sin A= b\sin B&#xA;    \Leftrightarrow a^2=b^2.\]&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>余弦定理</title>
+      <link>/docs/trigonometry/sine-cosine-law/cosine-law/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/trigonometry/sine-cosine-law/cosine-law/</guid>
+      <description>&lt;h1 id=&#34;余弦定理&#34;&gt;余弦定理&lt;/h1&gt;&#xA;&lt;p&gt;对 $\triangle ABC$, 由直角坐标系中的距离公式或向量的内积运算可得余弦定理: &#xA;\[a^2= b^2+ c^2- 2bc\cos A,\quad\cos A=\frac{b^2+c^2-a^2}{2bc}.\]&#xA;还可以写出&#xA;\[b^2= a^2+ c^2- 2ac\cos B,\quad\cos C=\frac{a^2+b^2-c^2}{2ab},\]&#xA;即余弦定理共三组公式. 在解三角形时, 一般题中已知等式里角多则先考虑用正弦定理, 边多则先考虑用余弦定理.&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;myexample&gt;&#xA;&lt;p&gt;在 $\triangle ABC$ 中, $a=\sqrt7$, $b=2$, $A=60^\circ$, 求 $c$ 的值.&#xA;&lt;/p&gt;&#xA;&lt;/myexample&gt;&#xA;&lt;mysolution&gt;&#xA;    &lt;p&gt;将已知条件代入 $a^2= b^2+c^2-2bc\cos A$, 得&#xA;    \[7= 4+c^2-2c, \quad\text{即}\quad c=3\ (\text{舍负}).\]&#xA;&lt;/p&gt;&#xA;&lt;/mysolution&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;myexample&gt;&#xA;&lt;p&gt;在 $\triangle ABC$ 中, $\sin A: \sin B= 3: 5$, $c=2b-a$, 求 $\cos B$ 的值. &#xA;&lt;/p&gt;&#xA;&lt;/myexample&gt;&#xA;&lt;mysolution&gt;&#xA;    &lt;p&gt;$\sin A: \sin B= 3: 5$ 等价于 $a:b= 3:5$, 故设 $a=3k$, $b=5k$ ($k&gt;0$). 再由 $c=2b-a$ 知 $c= 7k$, 所以&#xA;    \[\cos B= \frac{a^2+c^2- b^2}{2ac}= \frac{11}{14}.\]&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>解三角形</title>
+      <link>/docs/trigonometry/sine-cosine-law/solving-triangles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/trigonometry/sine-cosine-law/solving-triangles/</guid>
+      <description>&lt;h1 id=&#34;解三角形&#34;&gt;解三角形&lt;/h1&gt;&#xA;&lt;myexample&gt;&#xA;&lt;p&gt;在 $\triangle ABC$ 中, $a=\sqrt7$, $b=2$, $A= 60^\circ$, 求 $c$ 的值.&#xA;&lt;/p&gt;&#xA;&lt;/myexample&gt;&#xA;&lt;mysolution&gt;&#xA;    &lt;p&gt;题中有三边一角, 正好用余弦定理. 由&#xA;    \[a^2= b^2+c^2- 2bc\cos A\quad \text{即}\quad&#xA;        7= 4+c^2- 2c,\]&#xA;    解得 $c= 3$.&#xA;&lt;/p&gt;&#xA;&lt;/mysolution&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;myexample&gt;&#xA;&lt;p&gt;对于 $\triangle ABC$, 判断下列命题是否正确:&#xA;&lt;/p&gt;&#xA;&lt;p&gt;(1) 若 $\cos A= \cos B$, 则 $\triangle ABC$ 是等腰三角形;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;(2) 若 $\triangle ABC$ 为锐角三角形, 则 $A+B&gt; \dfrac\pi2$, 从而 $\sin A&gt; \cos B$;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;(3) 符合条件 $a=8$, $c=10$, $B=60^\circ$ 的 $\triangle ABC$ 有两个;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;(4) 若 $\sin^2 A+ \sin^2 B&lt; \sin^2 C$, 则 $\triangle ABC$ 是钝角三角形.&#xA;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
